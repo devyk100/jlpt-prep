@@ -44,6 +44,10 @@ pub struct AppConfig {
     pub deepseek_endpoint: String,
     #[serde(default = "default_model")]
     pub deepseek_model: String,
+    #[serde(default)]
+    pub window_x: Option<f32>,
+    #[serde(default)]
+    pub window_y: Option<f32>,
 }
 
 impl Default for AppConfig {
@@ -57,6 +61,8 @@ impl Default for AppConfig {
             deepseek_api_key: String::new(),
             deepseek_endpoint: default_endpoint(),
             deepseek_model: default_model(),
+            window_x: Some(100.0),
+            window_y: Some(100.0),
         }
     }
 }

@@ -8,5 +8,10 @@
   "opacity": 0.94,
   "compact": true,
   "always_on_top": true,
-  "active_profile": "Bottom Subtitles"
+  "active_profile": "Bottom Subtitles",
+  "deepseek_api_key": "",
+  "deepseek_endpoint": "https://api.deepseek.com/chat/completions",
+  "deepseek_model": "deepseek-chat",
+  "window_x": 100.0,
+  "window_y": 100.0
 }

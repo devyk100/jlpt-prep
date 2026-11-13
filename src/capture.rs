@@ -8,12 +8,31 @@ use windows_sys::Win32::Graphics::Gdi::{
     SRCCOPY,
 };
 use windows_sys::Win32::UI::WindowsAndMessaging::{
-    GetSystemMetrics, SetProcessDPIAware, SM_CXSCREEN, SM_CYSCREEN,
+    FindWindowW, GetSystemMetrics, SetProcessDPIAware, SetWindowPos, HWND_TOPMOST,
+    SM_CXSCREEN, SM_CYSCREEN, SWP_NOACTIVATE, SWP_NOMOVE, SWP_NOSIZE,
 };
 
 pub fn init_dpi() {
     unsafe {
         SetProcessDPIAware();
+    }
+}
+
+pub fn force_window_topmost(title: &str) {
+    unsafe {
+        let wide: Vec<u16> = title.encode_utf16().chain(std::iter::once(0)).collect();
+        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
+        if !hwnd.is_null() {
+            SetWindowPos(
+                hwnd,
+                HWND_TOPMOST,
+                0,
+                0,
+                0,
+                0,
+                SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE,
+            );
+        }
     }
 }
 

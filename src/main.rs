@@ -21,11 +21,11 @@ fn main() -> eframe::Result<()> {
     println!("   100% Native Rust • Zero Stutter • Direct Win32 GDI  ");
     println!("========================================================");
 
-    let (screen_w, screen_h) = capture::get_screen_dimensions();
-    let initial_w = 620.0;
+    let config = config::AppConfig::load();
+    let initial_w = 640.0;
     let initial_h = 180.0;
-    let initial_x = (screen_w as f32 - initial_w) / 2.0;
-    let initial_y = screen_h as f32 - initial_h - 100.0;
+    let initial_x = config.window_x.unwrap_or(100.0);
+    let initial_y = config.window_y.unwrap_or(100.0);
 
     let native_options = eframe::NativeOptions {
         viewport: ViewportBuilder::default()

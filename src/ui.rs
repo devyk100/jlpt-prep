@@ -19,7 +19,9 @@ pub struct CaptureResult {
     pub lines: Vec<String>,
     pub tokens: Vec<JapaneseToken>,
     pub grammar: Vec<GrammarNote>,
+    #[allow(dead_code)]
     pub capture_ms: f64,
+    #[allow(dead_code)]
     pub ocr_ms: f64,
     pub total_ms: f64,
 }
@@ -178,6 +180,10 @@ impl eframe::App for YomiFlowApp {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
 
+        // Continuous Always-On-Top enforcement in egui and OS DWM
+        crate::capture::force_window_topmost("YomiFlow");
+        ctx.send_viewport_cmd(ViewportCommand::WindowLevel(egui::WindowLevel::AlwaysOnTop));
+
         // 1. Process Hotkey Events
         while let Ok(evt) = self.hotkeys.receiver.try_recv() {
             match evt {
@@ -186,11 +192,13 @@ impl eframe::App for YomiFlowApp {
                 }
                 HotKeyEvent::ToggleVisibility => {
                     ctx.send_viewport_cmd(ViewportCommand::Visible(true));
+                    ctx.send_viewport_cmd(ViewportCommand::WindowLevel(egui::WindowLevel::AlwaysOnTop));
+                    crate::capture::force_window_topmost("YomiFlow");
                 }
                 HotKeyEvent::ToggleMode => {
                     self.is_expanded = !self.is_expanded;
                     let target_h = if self.is_expanded { 520.0 } else { 180.0 };
-                    ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(620.0, target_h)));
+                    ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(640.0, target_h)));
                 }
                 HotKeyEvent::Dismiss => {
                     ctx.send_viewport_cmd(ViewportCommand::Minimized(true));
@@ -222,21 +230,46 @@ impl eframe::App for YomiFlowApp {
         panel_frame.show(ui, |ui| {
             // === HEADER BAR (Draggable) ===
             ui.horizontal(|ui| {
-                let brand_resp = ui.horizontal(|ui| {
-                    ui.label(RichText::new("⚡ YomiFlow").strong().color(Color32::from_rgb(244, 63, 94)));
-                    ui.label(RichText::new("読みフロー").size(11.0).color(Color32::from_rgb(150, 150, 160)));
-                }).response;
-
-                if brand_resp.hovered() {
-                    ui.ctx().set_cursor_icon(egui::CursorIcon::Grab);
+                // 1. Dedicated Drag Handle Button
+                let drag_btn = ui.add(
+                    egui::Button::new(
+                        RichText::new("⠿ Move")
+                            .size(11.0)
+                            .strong()
+                            .color(Color32::from_rgb(230, 230, 245)),
+                    )
+                    .fill(Color32::from_rgba_premultiplied(255, 255, 255, 30))
+                    .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(255, 255, 255, 60)))
+                    .sense(Sense::click_and_drag()),
+                );
+                if drag_btn.is_pointer_button_down_on() || drag_btn.drag_started() || drag_btn.dragged() {
+                    ctx.send_viewport_cmd(ViewportCommand::StartDrag);
                 }
-                if brand_resp.dragged() {
+
+                // 2. Interactive Title Labels (also draggable)
+                let title_lbl = ui.add(
+                    egui::Label::new(
+                        RichText::new("⚡ YomiFlow").strong().color(Color32::from_rgb(244, 63, 94))
+                    )
+                    .sense(Sense::click_and_drag())
+                );
+                if title_lbl.is_pointer_button_down_on() || title_lbl.drag_started() || title_lbl.dragged() {
+                    ctx.send_viewport_cmd(ViewportCommand::StartDrag);
+                }
+
+                let sub_lbl = ui.add(
+                    egui::Label::new(
+                        RichText::new("読みフロー").size(11.0).color(Color32::from_rgb(150, 150, 160))
+                    )
+                    .sense(Sense::click_and_drag())
+                );
+                if sub_lbl.is_pointer_button_down_on() || sub_lbl.drag_started() || sub_lbl.dragged() {
                     ctx.send_viewport_cmd(ViewportCommand::StartDrag);
                 }
 
                 // Performance Latency Badge
                 if let Some(ref res) = current_res {
-                    let badge_text = format!("{:.1}ms (Cap: {:.1}ms, OCR: {:.1}ms)", res.total_ms, res.capture_ms, res.ocr_ms);
+                    let badge_text = format!("{:.1}ms", res.total_ms);
                     ui.label(
                         RichText::new(badge_text)
                             .size(10.5)
@@ -250,6 +283,13 @@ impl eframe::App for YomiFlowApp {
                     );
                 }
 
+                // 3. Middle empty space as drag area
+                let remaining_w = (ui.available_width() - 250.0).max(10.0);
+                let (_, empty_drag) = ui.allocate_exact_size(Vec2::new(remaining_w, 22.0), Sense::click_and_drag());
+                if empty_drag.is_pointer_button_down_on() || empty_drag.drag_started() || empty_drag.dragged() {
+                    ctx.send_viewport_cmd(ViewportCommand::StartDrag);
+                }
+
                 ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
                     // Minimize button
                     if ui.button(RichText::new("🗕").size(12.0)).on_hover_text("Minimize Overlay (Esc)").clicked() {
@@ -261,7 +301,7 @@ impl eframe::App for YomiFlowApp {
                     if ui.button(RichText::new(mode_lbl).size(11.0)).on_hover_text("Toggle Breakdown (F10)").clicked() {
                         self.is_expanded = !self.is_expanded;
                         let target_h = if self.is_expanded { 520.0 } else { 180.0 };
-                        ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(620.0, target_h)));
+                        ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(640.0, target_h)));
                     }
 
                     // Settings buttons
@@ -270,7 +310,7 @@ impl eframe::App for YomiFlowApp {
                         self.show_region_settings = !self.show_region_settings;
                         if self.show_region_settings && !self.is_expanded {
                             self.is_expanded = true;
-                            ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(620.0, 520.0)));
+                            ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(640.0, 520.0)));
                         }
                     }
 
@@ -418,6 +458,35 @@ impl eframe::App for YomiFlowApp {
                     ui.horizontal(|ui| {
                         ui.label("Overlay Opacity:");
                         if ui.add(egui::Slider::new(&mut self.config.opacity, 0.4..=1.0)).changed() {
+                            self.config.save();
+                        }
+                    });
+
+                    ui.add_space(4.0);
+                    ui.horizontal(|ui| {
+                        ui.label("Snap Window:");
+                        if ui.button("📍 Top Left").clicked() {
+                            ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(100.0, 80.0)));
+                            self.config.window_x = Some(100.0);
+                            self.config.window_y = Some(80.0);
+                            self.config.save();
+                        }
+                        if ui.button("📍 Top Center").clicked() {
+                            ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(450.0, 80.0)));
+                            self.config.window_x = Some(450.0);
+                            self.config.window_y = Some(80.0);
+                            self.config.save();
+                        }
+                        if ui.button("📍 Center").clicked() {
+                            ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(450.0, 260.0)));
+                            self.config.window_x = Some(450.0);
+                            self.config.window_y = Some(260.0);
+                            self.config.save();
+                        }
+                        if ui.button("📍 Bottom Subtitles").clicked() {
+                            ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(350.0, 520.0)));
+                            self.config.window_x = Some(350.0);
+                            self.config.window_y = Some(520.0);
                             self.config.save();
                         }
                     });
