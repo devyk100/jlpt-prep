@@ -1,9 +1,9 @@
 {
   "region": {
-    "x": 200,
-    "y": 720,
-    "width": 1520,
-    "height": 280
+    "x": 0,
+    "y": 0,
+    "width": 1920,
+    "height": 1080
   },
   "opacity": 0.94,
   "compact": true,

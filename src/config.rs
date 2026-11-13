@@ -31,6 +31,10 @@ fn default_model() -> String {
     "deepseek-chat".to_string()
 }
 
+fn default_auto_ai() -> bool {
+    true
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AppConfig {
     pub region: CaptureRegion,
@@ -44,6 +48,8 @@ pub struct AppConfig {
     pub deepseek_endpoint: String,
     #[serde(default = "default_model")]
     pub deepseek_model: String,
+    #[serde(default = "default_auto_ai")]
+    pub auto_ai_explain: bool,
     #[serde(default)]
     pub window_x: Option<f32>,
     #[serde(default)]
@@ -61,6 +67,7 @@ impl Default for AppConfig {
             deepseek_api_key: String::new(),
             deepseek_endpoint: default_endpoint(),
             deepseek_model: default_model(),
+            auto_ai_explain: true,
             window_x: Some(100.0),
             window_y: Some(100.0),
         }
