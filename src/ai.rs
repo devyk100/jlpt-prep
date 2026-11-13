@@ -5,6 +5,7 @@ use windows::Web::Http::{HttpClient, HttpStringContent};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AiExplanation {
+    pub corrected_japanese: Option<String>,
     pub translation: String,
     pub nuance: String,
     pub grammar: String,
@@ -30,8 +31,11 @@ impl FallbackAiClient {
             return Err("DeepSeek/OpenAI API key not set. Configure it in ⚙ Settings.".to_string());
         }
 
-        let system_prompt = "You are a Japanese immersion linguistic tutor for games and visual novels. \
-Respond in concise JSON with these exact fields: \
+        let system_prompt = "You are an expert Japanese immersion linguistic tutor for anime and games. \
+The input line was extracted via screen OCR from anime/game subtitles, so it may contain minor OCR misreads or typos caused by dynamic video backgrounds. \
+First, identify the intended Japanese dialogue line, correcting any obvious OCR artifacts (e.g. against video noise). \
+Then respond in concise JSON with these exact fields: \
+\"corrected_japanese\": the cleaned and corrected Japanese subtitle line, \
 \"translation\": natural English translation, \
 \"nuance\": conversational tone, implied emotion, slang, or character personality, \
 \"grammar\": breakdown of key verb forms or particles.";
@@ -69,7 +73,13 @@ Respond in concise JSON with these exact fields: \
         let parsed: serde_json::Value = serde_json::from_str(content_str)
             .map_err(|e| format!("Failed to parse inner JSON: {}", e))?;
 
+        let corrected = parsed["corrected_japanese"]
+            .as_str()
+            .map(|s| s.to_string())
+            .filter(|s| !s.trim().is_empty());
+
         Ok(AiExplanation {
+            corrected_japanese: corrected,
             translation: parsed["translation"].as_str().unwrap_or("").to_string(),
             nuance: parsed["nuance"].as_str().unwrap_or("").to_string(),
             grammar: parsed["grammar"].as_str().unwrap_or("").to_string(),

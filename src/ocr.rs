@@ -43,8 +43,20 @@ impl NativeOcrEngine {
             None => return ("OCR engine unavailable".to_string(), vec![], 0.0),
         };
 
-        // Encode image as PNG bytes in-memory
+        let preprocessed = Self::preprocess_for_subtitles(img);
+        // Try preprocessed subtitle image first
         let mut png_bytes = Vec::new();
+        if let Ok(()) = preprocessed.write_to(&mut Cursor::new(&mut png_bytes), image::ImageFormat::Png) {
+            if let Ok((text, lines)) = self.recognize_bytes(engine, &png_bytes) {
+                if !text.trim().is_empty() {
+                    let ms = t0.elapsed().as_secs_f64() * 1000.0;
+                    return (text, lines, ms);
+                }
+            }
+        }
+
+        // Fallback to original image (for browser text, manga, dark on light)
+        png_bytes.clear();
         if let Err(e) = img.write_to(&mut Cursor::new(&mut png_bytes), image::ImageFormat::Png) {
             return (format!("Image encode error: {}", e), vec![], 0.0);
         }
@@ -59,6 +71,25 @@ impl NativeOcrEngine {
                 (format!("OCR error: {:?}", e), vec![], 0.0)
             }
         }
+    }
+
+    /// Subtitle Preprocessing for Anime & Games with dynamic backgrounds
+    pub fn preprocess_for_subtitles(img: &RgbaImage) -> RgbaImage {
+        let (w, h) = (img.width(), img.height());
+        // Scale 2x for optimal Japanese character radical resolution
+        let scaled = image::imageops::resize(img, w * 2, h * 2, image::imageops::FilterType::Triangle);
+
+        let mut binarized = scaled.clone();
+        for p in binarized.pixels_mut() {
+            let lum = 0.299 * p[0] as f32 + 0.587 * p[1] as f32 + 0.114 * p[2] as f32;
+            // Subtitle text in anime and games is bright white/yellow
+            if lum > 165.0 {
+                *p = image::Rgba([0, 0, 0, 255]); // Crisp black text
+            } else {
+                *p = image::Rgba([255, 255, 255, 255]); // Pure white background
+            }
+        }
+        binarized
     }
 
     fn recognize_bytes(&self, engine: &OcrEngine, bytes: &[u8]) -> WinResult<(String, Vec<String>)> {
@@ -133,5 +164,22 @@ impl NativeOcrEngine {
             '\u{4E00}'..='\u{9FFF}' | // Kanji
             '\u{3000}'..='\u{303F}'   // CJK punctuation
         )
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_user_jojo_image() {
+        let path = "C:/Users/devyk/.gemini/antigravity/brain/9bfedc6b-8c95-415b-a025-4b7628d5be10/.user_uploaded/media_1794547671450_cdc282d5.jpg";
+        let img = image::open(path).expect("Failed to open image");
+        let rgba = img.to_rgba8();
+        let engine = NativeOcrEngine::new();
+        let (text, lines, ms) = engine.recognize(&rgba);
+        eprintln!("Recognized in {}ms:\n{}", ms, text);
+        eprintln!("Lines: {:?}", lines);
+        assert!(!lines.is_empty());
     }
 }

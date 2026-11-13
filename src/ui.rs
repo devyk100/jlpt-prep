@@ -453,31 +453,46 @@ impl eframe::App for YomiFlowApp {
 
                     // 2. Immediate English Translation (Directly in Compact Mode!)
                     ui.add_space(4.0);
-                    let translation_text = if let Some(Ok(ref expl)) = current_ai {
-                        format!("“{}”", expl.translation)
-                    } else if is_ai_running {
-                        "✨ Analyzing dialogue nuance with AI...".to_string()
-                    } else {
-                        // Offline synthesized gloss
-                        let glosses: Vec<&str> = res.words
-                            .iter()
-                            .filter(|w| !w.is_punct && !w.meaning.is_empty())
-                            .map(|w| w.meaning.split(',').next().unwrap_or(w.meaning.as_str()).trim())
-                            .collect();
-                        if !glosses.is_empty() {
-                            format!("Gloss: {}", glosses.join(" • "))
-                        } else {
-                            String::new()
+                    if let Some(Ok(ref expl)) = current_ai {
+                        if let Some(ref corr) = expl.corrected_japanese {
+                            if corr.trim() != res.text.trim() {
+                                ui.horizontal(|ui| {
+                                    ui.label(RichText::new("✨ Clean:").size(11.5).color(Color32::from_rgb(251, 191, 36)));
+                                    ui.label(RichText::new(corr).size(13.0).strong().color(Color32::from_rgb(241, 245, 249)));
+                                });
+                            }
                         }
-                    };
-
-                    if !translation_text.is_empty() {
                         ui.label(
-                            RichText::new(translation_text)
+                            RichText::new(format!("“{}”", expl.translation))
                                 .size(13.5)
                                 .italics()
                                 .color(Color32::from_rgb(147, 197, 253)),
                         );
+                    } else if is_ai_running {
+                        ui.label(
+                            RichText::new("✨ Analyzing dialogue nuance with AI...")
+                                .size(12.5)
+                                .italics()
+                                .color(Color32::from_rgb(147, 197, 253)),
+                        );
+                    } else {
+                        // Offline synthesized gloss from 466,247-word JMdict
+                        let glosses: Vec<&str> = res.words
+                            .iter()
+                            .filter(|w| !w.is_punct && !w.meaning.is_empty())
+                            .map(|w| {
+                                let first_part = w.meaning.split(';').next().unwrap_or(w.meaning.as_str());
+                                first_part.split(',').next().unwrap_or(first_part).trim()
+                            })
+                            .collect();
+                        if !glosses.is_empty() {
+                            ui.label(
+                                RichText::new(format!("Gloss: {}", glosses.join(" • ")))
+                                    .size(13.0)
+                                    .italics()
+                                    .color(Color32::from_rgb(147, 197, 253)),
+                            );
+                        }
                     }
                 }
             } else {
