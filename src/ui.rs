@@ -1,4 +1,5 @@
 use crate::ai::{AiExplanation, FallbackAiClient};
+use crate::anki::AnkiClient;
 use crate::capture::{capture_screen_region, get_screen_dimensions};
 use crate::config::AppConfig;
 use crate::dictionary::{GrammarNote, LocalDictionary, ParsedWord};
@@ -8,6 +9,7 @@ use crate::ocr::NativeOcrEngine;
 use eframe::egui::{
     self, Align, Color32, CornerRadius, Layout, RichText, Sense, Stroke, Vec2, ViewportCommand,
 };
+use image::RgbaImage;
 use std::sync::{Arc, Mutex};
 use std::thread;
 
@@ -25,7 +27,9 @@ pub struct YomiFlowApp {
     pub ocr: Arc<NativeOcrEngine>,
     pub dict: Arc<LocalDictionary>,
     pub history: Arc<HistoryManager>,
+    pub anki: Arc<AnkiClient>,
     pub latest_result: Arc<Mutex<Option<CaptureResult>>>,
+    pub latest_image: Arc<Mutex<Option<RgbaImage>>>,
     pub ai_explanation: Arc<Mutex<Option<Result<AiExplanation, String>>>>,
     pub is_capturing: Arc<Mutex<bool>>,
     pub is_requesting_ai: Arc<Mutex<bool>>,
@@ -55,7 +59,9 @@ impl YomiFlowApp {
         let ocr = Arc::new(NativeOcrEngine::new());
         let dict = Arc::new(LocalDictionary::new());
         let history = Arc::new(HistoryManager::new());
+        let anki = Arc::new(AnkiClient::new());
         let latest_result = Arc::new(Mutex::new(None));
+        let latest_image = Arc::new(Mutex::new(None));
         let ai_explanation = Arc::new(Mutex::new(None));
         let is_capturing = Arc::new(Mutex::new(false));
         let is_requesting_ai = Arc::new(Mutex::new(false));
@@ -66,7 +72,9 @@ impl YomiFlowApp {
             ocr,
             dict,
             history,
+            anki,
             latest_result,
+            latest_image,
             ai_explanation,
             is_capturing,
             is_requesting_ai,
@@ -93,6 +101,7 @@ impl YomiFlowApp {
         let dict = self.dict.clone();
         let history = self.history.clone();
         let result_store = self.latest_result.clone();
+        let image_store = self.latest_image.clone();
 
         let api_key = self.config.deepseek_api_key.clone();
         let auto_ai = self.config.auto_ai_explain;
@@ -104,6 +113,7 @@ impl YomiFlowApp {
         thread::spawn(move || {
             match capture_screen_region(&region) {
                 Ok((img, cap_ms)) => {
+                    *image_store.lock().unwrap() = Some(img.clone());
                     let (text, _lines, ocr_ms) = ocr.recognize(&img);
                     let words = dict.parse_sentence(&text);
                     let grammar = dict.detect_grammar(&text);
@@ -216,8 +226,9 @@ impl eframe::App for YomiFlowApp {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
 
-        // 1. Always-on-top, borderless DWM, and exclude from capture
+        // 1. Always-on-top, borderless DWM, zero-focus and exclude from capture
         crate::capture::force_window_topmost("YomiFlow");
+        crate::capture::apply_stealth_noactivate_styles("YomiFlow");
         crate::capture::remove_windows_dwm_borders("YomiFlow");
         crate::capture::exclude_window_from_capture("YomiFlow");
         ctx.send_viewport_cmd(ViewportCommand::WindowLevel(egui::WindowLevel::AlwaysOnTop));
@@ -348,6 +359,43 @@ impl eframe::App for YomiFlowApp {
                         }
                     }
 
+                    // Anki Mining Button
+                    if ui.add(
+                        egui::Button::new(
+                            RichText::new("📇 Anki")
+                                .size(11.0)
+                                .color(Color32::from_rgb(56, 189, 248)),
+                        )
+                        .fill(Color32::from_rgba_premultiplied(15, 23, 42, 180))
+                        .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(56, 189, 248, 120)))
+                        .corner_radius(CornerRadius::same(5)),
+                    ).on_hover_text("1-Click Sentence Mine to AnkiConnect (or local export)").clicked() {
+                        if let Some(ref res) = current_res {
+                            let first_word = res.words.iter().find(|w| !w.is_punct);
+                            let word_str = first_word.map(|w| w.surface.as_str()).unwrap_or("");
+                            let reading_str = first_word.map(|w| w.reading.as_str()).unwrap_or("");
+                            let def_str = first_word.map(|w| w.meaning.as_str()).unwrap_or("");
+                            let translation = if let Some(ref ai) = current_ai {
+                                ai.as_ref().map(|a| a.translation.clone()).unwrap_or_default()
+                            } else {
+                                String::new()
+                            };
+                            let img_guard = self.latest_image.lock().unwrap();
+                            match self.anki.export_card(
+                                &res.text,
+                                word_str,
+                                reading_str,
+                                def_str,
+                                &translation,
+                                "GameDialogue",
+                                img_guard.as_ref(),
+                            ) {
+                                Ok(msg) => self.status_message = msg,
+                                Err(err) => self.status_message = format!("Anki error: {}", err),
+                            }
+                        }
+                    }
+
                     // Scan Icon (F8)
                     if ui.add(
                         egui::Button::new(
@@ -365,6 +413,20 @@ impl eframe::App for YomiFlowApp {
             });
 
             draw_subtle_divider(ui);
+
+            if !self.status_message.is_empty() {
+                ui.horizontal(|ui| {
+                    ui.label(
+                        RichText::new(&self.status_message)
+                            .size(11.0)
+                            .color(Color32::from_rgb(52, 211, 153)),
+                    );
+                    if ui.small_button("✕").clicked() {
+                        self.status_message.clear();
+                    }
+                });
+                draw_subtle_divider(ui);
+            }
 
             // === MAIN RECOGNIZED DIALOGUE ===
             if let Some(ref res) = current_res {

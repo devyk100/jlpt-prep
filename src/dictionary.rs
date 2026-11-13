@@ -15,6 +15,7 @@ pub struct WordInfo {
     pub surface: String,
     pub reading: String,
     pub meaning: String,
+    #[allow(dead_code)]
     pub part_of_speech: String,
 }
 
@@ -31,6 +32,7 @@ pub struct ParsedWord {
     pub base_form: String,
     pub reading: String,
     pub meaning: String,
+    #[allow(dead_code)]
     pub part_of_speech: String,
     pub kanji_breakdown: Vec<KanjiInfo>,
     pub is_punct: bool,

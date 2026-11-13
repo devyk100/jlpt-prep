@@ -25,5 +25,9 @@ dist-ssr
 
 
 # Added by cargo
-
 /target
+models/
+*.gz
+edict
+JMdict_e
+test_meiki.py

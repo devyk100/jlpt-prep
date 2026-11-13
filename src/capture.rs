@@ -36,6 +36,34 @@ pub fn force_window_topmost(title: &str) {
     }
 }
 
+pub fn apply_stealth_noactivate_styles(title: &str) {
+    unsafe {
+        use windows_sys::Win32::UI::WindowsAndMessaging::{
+            GetWindowLongPtrW, SetWindowLongPtrW, GWL_EXSTYLE,
+            WS_EX_LAYERED, WS_EX_NOACTIVATE, WS_EX_TOOLWINDOW, WS_EX_TOPMOST,
+            SWP_FRAMECHANGED,
+        };
+        let wide: Vec<u16> = title.encode_utf16().chain(std::iter::once(0)).collect();
+        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
+        if !hwnd.is_null() {
+            let cur_style = GetWindowLongPtrW(hwnd, GWL_EXSTYLE) as u32;
+            let target_style = cur_style | WS_EX_NOACTIVATE | WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_LAYERED;
+            if cur_style != target_style {
+                SetWindowLongPtrW(hwnd, GWL_EXSTYLE, target_style as isize);
+                SetWindowPos(
+                    hwnd,
+                    HWND_TOPMOST,
+                    0,
+                    0,
+                    0,
+                    0,
+                    SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE | SWP_FRAMECHANGED,
+                );
+            }
+        }
+    }
+}
+
 pub fn exclude_window_from_capture(title: &str) {
     unsafe {
         use windows_sys::Win32::UI::WindowsAndMessaging::{FindWindowW, SetWindowDisplayAffinity};
@@ -79,6 +107,10 @@ pub fn remove_windows_dwm_borders(title: &str) {
                 // DWMWA_WINDOW_CORNER_PREFERENCE = 33, DWMWCP_ROUND = 2
                 let corner_pref: u32 = 2;
                 let _ = func(hwnd, 33, &corner_pref as *const u32 as _, 4);
+
+                // DWMWA_SYSTEMBACKDROP_TYPE = 38, DWMSBT_TRANSIENTWINDOW = 3 (Windows 11 Acrylic Backdrop)
+                let backdrop_type: u32 = 3;
+                let _ = func(hwnd, 38, &backdrop_type as *const u32 as _, 4);
             }
         }
     }
@@ -102,46 +134,14 @@ pub fn capture_screen_region(region: &CaptureRegion) -> Result<(RgbaImage, f64),
     let height = region.height.clamp(1, screen_h - y);
 
     unsafe {
-        // Prevent capturing YomiFlow itself if it overlaps the capture rectangle
-        let wide: Vec<u16> = "YomiFlow".encode_utf16().chain(std::iter::once(0)).collect();
-        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
-        let mut did_hide = false;
-
-        if !hwnd.is_null() {
-            use windows_sys::Win32::Foundation::RECT;
-            use windows_sys::Win32::UI::WindowsAndMessaging::{
-                GetWindowRect, IsWindowVisible, ShowWindow, SW_HIDE,
-            };
-            if IsWindowVisible(hwnd) != 0 {
-                let mut r: RECT = std::mem::zeroed();
-                GetWindowRect(hwnd, &mut r);
-                // Check if YomiFlow window overlaps the capture rectangle
-                let overlaps = !(r.right <= x || r.left >= x + width || r.bottom <= y || r.top >= y + height);
-                if overlaps {
-                    ShowWindow(hwnd, SW_HIDE);
-                    did_hide = true;
-                    // Allow DWM compositor 15ms to render desktop without YomiFlow
-                    std::thread::sleep(std::time::Duration::from_millis(15));
-                }
-            }
-        }
-
         let hdc_screen = GetDC(null_mut());
         if hdc_screen.is_null() {
-            if did_hide && !hwnd.is_null() {
-                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
-                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
-            }
             return Err("Failed to get screen DC".into());
         }
 
         let hdc_mem = CreateCompatibleDC(hdc_screen);
         if hdc_mem.is_null() {
             ReleaseDC(null_mut(), hdc_screen);
-            if did_hide && !hwnd.is_null() {
-                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
-                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
-            }
             return Err("Failed to create compatible DC".into());
         }
 
@@ -149,24 +149,14 @@ pub fn capture_screen_region(region: &CaptureRegion) -> Result<(RgbaImage, f64),
         if hbm.is_null() {
             DeleteDC(hdc_mem);
             ReleaseDC(null_mut(), hdc_screen);
-            if did_hide && !hwnd.is_null() {
-                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
-                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
-            }
             return Err("Failed to create compatible bitmap".into());
         }
 
         let old_hbm = SelectObject(hdc_mem, hbm);
 
-        // SRCCOPY | CAPTUREBLT (0x40000000) captures translucent & layered game windows
+        // SRCCOPY | CAPTUREBLT (0x40000000) captures DirectX game surfaces directly
         let rop = SRCCOPY | CAPTUREBLT;
         BitBlt(hdc_mem, 0, 0, width, height, hdc_screen, x, y, rop);
-
-        // Restore YomiFlow window immediately if it was temporarily hidden
-        if did_hide && !hwnd.is_null() {
-            use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
-            ShowWindow(hwnd, SW_SHOWNOACTIVATE);
-        }
 
         let mut bmi: BITMAPINFO = std::mem::zeroed();
         bmi.bmiHeader.biSize = std::mem::size_of::<BITMAPINFOHEADER>() as u32;

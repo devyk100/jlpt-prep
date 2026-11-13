@@ -25,3 +25,5 @@ windows = { version = "0.62.2", features = [
     "Web_Http_Headers",
 ] }
 windows-future = "0.3"
+ureq = { version = "3.5.2", features = ["json"] }
+base64 = "0.23.1"

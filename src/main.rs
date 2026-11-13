@@ -1,4 +1,5 @@
 mod ai;
+mod anki;
 mod capture;
 mod config;
 mod dictionary;
