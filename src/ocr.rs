@@ -77,7 +77,7 @@ impl NativeOcrEngine {
         let ocr_lines = result.Lines()?;
         for line in ocr_lines {
             let line_text = line.Text()?.to_string();
-            let cleaned = Self::clean_cjk_spaces(&line_text);
+            let cleaned = Self::filter_japanese_only(&line_text);
             if !cleaned.trim().is_empty() {
                 lines.push(cleaned);
             }
@@ -85,6 +85,56 @@ impl NativeOcrEngine {
 
         let full_text = lines.join("\n");
         Ok((full_text, lines))
+    }
+
+    /// Strictly filters out English/Latin text, preserving only Japanese dialogue
+    fn filter_japanese_only(text: &str) -> String {
+        // 1. If line has zero Japanese characters, discard immediately
+        if !text.chars().any(Self::is_japanese) {
+            return String::new();
+        }
+
+        // 2. Strip English/ASCII words (e.g. "Meaning", "Level", "Showmore", "Easy")
+        let mut out = String::with_capacity(text.len());
+        let chars: Vec<char> = text.chars().collect();
+        let len = chars.len();
+        let mut i = 0;
+
+        while i < len {
+            let c = chars[i];
+
+            if c.is_ascii_alphabetic() {
+                // Skip the entire English word
+                while i < len && (chars[i].is_ascii_alphabetic() || chars[i].is_ascii_digit()) {
+                    i += 1;
+                }
+                continue;
+            }
+
+            // Skip extraneous ASCII noise like URL colons or slashes
+            if c == ':' || c == '/' || c == '>' || c == '<' || c == '|' {
+                i += 1;
+                continue;
+            }
+
+            out.push(c);
+            i += 1;
+        }
+
+        let trimmed = out.trim();
+        if !trimmed.chars().any(Self::is_japanese) {
+            return String::new();
+        }
+
+        Self::clean_cjk_spaces(trimmed)
+    }
+
+    fn is_japanese(c: char) -> bool {
+        matches!(c,
+            '\u{3040}'..='\u{309F}' | // Hiragana
+            '\u{30A0}'..='\u{30FF}' | // Katakana (includes choonpu 'ー' at \u{30FC})
+            '\u{4E00}'..='\u{9FFF}'   // Kanji
+        )
     }
 
     fn clean_cjk_spaces(text: &str) -> String {

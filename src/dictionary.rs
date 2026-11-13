@@ -530,8 +530,14 @@ impl LocalDictionary {
         while i < len {
             let c = chars[i];
 
-            // 1. Punctuation & Whitespace
-            if c.is_whitespace() || is_cjk_punct(c) || c.is_ascii_punctuation() {
+            // 1. Skip English letters and ASCII noise
+            if c.is_ascii_alphabetic() || c.is_ascii_digit() {
+                i += 1;
+                continue;
+            }
+
+            // 2. Japanese Dialogue Punctuation
+            if is_cjk_punct(c) || c == '？' || c == '！' || c == '?' || c == '!' {
                 results.push(ParsedWord {
                     surface: c.to_string(),
                     base_form: c.to_string(),
@@ -545,7 +551,13 @@ impl LocalDictionary {
                 continue;
             }
 
-            // 2. Longest Prefix Substring Matching (lengths 8 down to 1)
+            // Skip whitespace and stray ASCII symbols
+            if c.is_whitespace() || c.is_ascii_punctuation() {
+                i += 1;
+                continue;
+            }
+
+            // 3. Longest Prefix Substring Matching (lengths 8 down to 1)
             let max_lookahead = (len - i).min(8);
             let mut matched = false;
 
