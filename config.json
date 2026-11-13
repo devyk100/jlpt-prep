@@ -1,67 +1,12 @@
 {
-  "version": "1.0.0",
-  "capture": {
+  "region": {
     "x": 200,
     "y": 720,
     "width": 1520,
-    "height": 280,
-    "profile": "Bottom Dialogue",
-    "profiles": {
-      "Bottom Dialogue": {
-        "x": 200,
-        "y": 720,
-        "width": 1520,
-        "height": 280
-      },
-      "Persona 5 Royal": {
-        "x": 350,
-        "y": 700,
-        "width": 1220,
-        "height": 260
-      },
-      "Genshin Impact": {
-        "x": 400,
-        "y": 750,
-        "width": 1120,
-        "height": 240
-      },
-      "Fullscreen (1080p)": {
-        "x": 0,
-        "y": 0,
-        "width": 1920,
-        "height": 1080
-      }
-    }
+    "height": 280
   },
-  "shortcuts": {
-    "capture": "f8",
-    "toggle_overlay": "f9",
-    "toggle_mode": "f10",
-    "save_history": "f11",
-    "dismiss": "esc"
-  },
-  "overlay": {
-    "compact": true,
-    "opacity": 0.94,
-    "always_on_top": true,
-    "click_through": false,
-    "width": 640,
-    "height": 240,
-    "expanded_height": 580,
-    "theme": "dark"
-  },
-  "ocr": {
-    "engine": "windows_media_ocr",
-    "language": "ja",
-    "auto_detect_change": true,
-    "normalize_cjk_spaces": true
-  },
-  "llm": {
-    "enabled": false,
-    "provider": "deepseek",
-    "model": "deepseek-chat",
-    "api_key": "",
-    "base_url": "https://api.deepseek.com/v1",
-    "temperature": 0.2
-  }
+  "opacity": 0.94,
+  "compact": true,
+  "always_on_top": true,
+  "active_profile": "Bottom Subtitles"
 }

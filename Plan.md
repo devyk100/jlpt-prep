@@ -824,3 +824,4 @@ Do not spend excessive time producing architectural documents without building a
 **Start with Phase 1.** Establish the project, implement the Windows capture and overlay foundation, run it, and demonstrate the first working end-to-end capture workflow before proceeding to subsequent phases.
 
 The ultimate objective is a fast, reliable, always-available Japanese immersion assistant that works across my entire Windows desktop environment.
+
