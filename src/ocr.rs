@@ -77,8 +77,8 @@ impl NativeOcrEngine {
         let ocr_lines = result.Lines()?;
         for line in ocr_lines {
             let line_text = line.Text()?.to_string();
-            // Discard lines that contain zero Japanese characters (e.g. English UI, website headers)
-            if !line_text.chars().any(Self::is_japanese) {
+            // Discard lines that do not contain genuine Japanese dialogue (e.g. English UI, website headers)
+            if !Self::is_genuine_japanese_line(&line_text) {
                 continue;
             }
 
@@ -92,12 +92,22 @@ impl NativeOcrEngine {
         Ok((full_text, lines))
     }
 
-    fn is_japanese(c: char) -> bool {
-        matches!(c,
-            '\u{3040}'..='\u{309F}' | // Hiragana
-            '\u{30A0}'..='\u{30FF}' | // Katakana
-            '\u{4E00}'..='\u{9FFF}'   // Kanji
-        )
+    fn is_genuine_japanese_line(text: &str) -> bool {
+        // Genuine Japanese lines contain Kanji or Hiragana
+        let has_kanji_or_hira = text.chars().any(|c| {
+            matches!(c, '\u{3040}'..='\u{309F}' | '\u{4E00}'..='\u{9FFF}')
+        });
+        if has_kanji_or_hira {
+            return true;
+        }
+
+        // If only katakana, require at least 2 actual Katakana glyphs (excluding single stray dash/choonpu)
+        let katakana_count = text
+            .chars()
+            .filter(|&c| matches!(c, '\u{30A1}'..='\u{30FA}'))
+            .count();
+
+        katakana_count >= 2
     }
 
     fn clean_cjk_spaces(text: &str) -> String {

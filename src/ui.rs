@@ -32,7 +32,6 @@ pub struct YomiFlowApp {
 
     // UI state
     pub is_expanded: bool,
-    pub show_region_settings: bool,
     pub status_message: String,
 }
 
@@ -41,7 +40,7 @@ impl YomiFlowApp {
         let fonts = egui::FontDefinitions::default();
         cc.egui_ctx.set_fonts(fonts);
 
-        // Eliminate all default white borders and strokes from egui visuals
+        // Dark theme: eliminate default harsh borders and white strokes
         let mut visuals = egui::Visuals::dark();
         visuals.window_stroke = Stroke::NONE;
         visuals.widgets.noninteractive.bg_stroke = Stroke::NONE;
@@ -72,8 +71,7 @@ impl YomiFlowApp {
             is_capturing,
             is_requesting_ai,
             is_expanded: false,
-            show_region_settings: false,
-            status_message: "Press F8 to capture Japanese dialogue".to_string(),
+            status_message: String::new(),
         }
     }
 
@@ -87,7 +85,7 @@ impl YomiFlowApp {
             *busy = true;
         }
 
-        // Reset previous AI explanation for new dialogue
+        // Reset previous AI explanation for new capture
         *self.ai_explanation.lock().unwrap() = None;
 
         let region = self.config.region.clone();
@@ -104,7 +102,6 @@ impl YomiFlowApp {
         let model = self.config.deepseek_model.clone();
 
         thread::spawn(move || {
-            crate::capture::exclude_window_from_capture("YomiFlow");
             match capture_screen_region(&region) {
                 Ok((img, cap_ms)) => {
                     let (text, _lines, ocr_ms) = ocr.recognize(&img);
@@ -112,7 +109,6 @@ impl YomiFlowApp {
                     let grammar = dict.detect_grammar(&text);
                     let total_ms = cap_ms + ocr_ms;
 
-                    // Automatically record to persistent history
                     if !text.trim().is_empty() {
                         let token_surfaces: Vec<String> = words
                             .iter()
@@ -190,20 +186,26 @@ impl YomiFlowApp {
 }
 
 fn chrono_now_string() -> String {
-    format!("captured_{}", std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0))
+    format!(
+        "captured_{}",
+        std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .map(|d| d.as_secs())
+            .unwrap_or(0)
+    )
 }
 
 fn draw_subtle_divider(ui: &mut egui::Ui) {
-    ui.add_space(2.0);
+    ui.add_space(3.0);
     let rect = ui.available_rect_before_wrap();
     ui.painter().line_segment(
         [
             egui::pos2(rect.min.x, rect.min.y),
             egui::pos2(rect.max.x, rect.min.y),
         ],
-        Stroke::new(1.0, Color32::from_rgba_premultiplied(244, 63, 94, 40)),
+        Stroke::new(1.0, Color32::from_rgba_premultiplied(51, 65, 85, 90)),
     );
-    ui.add_space(2.0);
+    ui.add_space(3.0);
 }
 
 impl eframe::App for YomiFlowApp {
@@ -214,7 +216,7 @@ impl eframe::App for YomiFlowApp {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
 
-        // 1. Continuous Always-On-Top, Borderless DWM, & Screen Capture Exclusion
+        // 1. Always-on-top, borderless DWM, and exclude from capture
         crate::capture::force_window_topmost("YomiFlow");
         crate::capture::remove_windows_dwm_borders("YomiFlow");
         crate::capture::exclude_window_from_capture("YomiFlow");
@@ -233,7 +235,7 @@ impl eframe::App for YomiFlowApp {
                 }
                 HotKeyEvent::ToggleMode => {
                     self.is_expanded = !self.is_expanded;
-                    let target_h = if self.is_expanded { 540.0 } else { 190.0 };
+                    let target_h = if self.is_expanded { 500.0 } else { 180.0 };
                     ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, target_h)));
                 }
                 HotKeyEvent::Dismiss => {
@@ -252,136 +254,111 @@ impl eframe::App for YomiFlowApp {
         let current_res = self.latest_result.lock().unwrap().clone();
         let current_ai = self.ai_explanation.lock().unwrap().clone();
 
-        // === SLEEK GAMING GLASSMORPHISM FRAME ===
+        // === SLEEK OBSIDIAN SLATE HUD FRAME ===
         let alpha = (self.config.opacity.clamp(0.4, 1.0) * 255.0) as u8;
-        let bg_color = Color32::from_rgba_premultiplied(12, 16, 26, alpha);
-        let border_stroke = Stroke::new(1.0, Color32::from_rgba_premultiplied(244, 63, 94, 85));
+        let bg_color = Color32::from_rgba_premultiplied(10, 14, 23, alpha);
+        let border_stroke = Stroke::new(1.0, Color32::from_rgba_premultiplied(51, 65, 85, 140));
 
         let panel_frame = egui::Frame::new()
             .fill(bg_color)
             .stroke(border_stroke)
-            .corner_radius(CornerRadius::same(14))
+            .corner_radius(CornerRadius::same(12))
             .inner_margin(egui::Margin::symmetric(14, 10));
 
         panel_frame.show(ui, |ui| {
-            // === HEADER BAR (Draggable HUD) ===
+            // === HEADER BAR (Entire Bar is Smoothly Draggable) ===
             ui.horizontal(|ui| {
-                // 1. Move Grip Handle
-                let drag_btn = ui.add(
-                    egui::Button::new(
-                        RichText::new("⠿ MOVE")
-                            .size(10.5)
-                            .strong()
-                            .color(Color32::from_rgb(226, 232, 240)),
-                    )
-                    .fill(Color32::from_rgba_premultiplied(255, 255, 255, 20))
-                    .stroke(Stroke::NONE)
-                    .corner_radius(CornerRadius::same(6))
-                    .sense(Sense::click_and_drag()),
-                );
-                if drag_btn.is_pointer_button_down_on() || drag_btn.drag_started() || drag_btn.dragged() {
-                    ctx.send_viewport_cmd(ViewportCommand::StartDrag);
-                }
-
-                // 2. Neon Brand Title (also draggable)
-                let title_lbl = ui.add(
+                // Left: Sleek Brand Title + Status Pill
+                let title_resp = ui.add(
                     egui::Label::new(
                         RichText::new("⚡ YomiFlow")
                             .strong()
                             .size(13.5)
-                            .color(Color32::from_rgb(251, 113, 133)),
+                            .color(Color32::from_rgb(56, 189, 248)),
                     )
-                    .sense(Sense::click_and_drag())
+                    .sense(Sense::click_and_drag()),
                 );
-                if title_lbl.is_pointer_button_down_on() || title_lbl.drag_started() || title_lbl.dragged() {
+                if title_resp.is_pointer_button_down_on() || title_resp.dragged() {
                     ctx.send_viewport_cmd(ViewportCommand::StartDrag);
                 }
 
-                let sub_lbl = ui.add(
-                    egui::Label::new(
-                        RichText::new("読みフロー")
-                            .size(11.0)
-                            .color(Color32::from_rgb(148, 163, 184)),
-                    )
-                    .sense(Sense::click_and_drag())
-                );
-                if sub_lbl.is_pointer_button_down_on() || sub_lbl.drag_started() || sub_lbl.dragged() {
-                    ctx.send_viewport_cmd(ViewportCommand::StartDrag);
-                }
-
-                // Performance Latency Badge
                 if let Some(ref res) = current_res {
-                    ui.add(
+                    let lat_resp = ui.add(
                         egui::Label::new(
                             RichText::new(format!("{:.1}ms", res.total_ms))
                                 .size(10.5)
                                 .color(Color32::from_rgb(52, 211, 153)),
                         )
+                        .sense(Sense::click_and_drag()),
                     );
+                    if lat_resp.is_pointer_button_down_on() || lat_resp.dragged() {
+                        ctx.send_viewport_cmd(ViewportCommand::StartDrag);
+                    }
                 } else if is_capturing_now {
                     ui.label(
                         RichText::new("Scanning...")
-                            .size(11.0)
+                            .size(10.5)
                             .color(Color32::from_rgb(251, 191, 36)),
                     );
                 }
 
-                // 3. Middle empty space as drag area
-                let remaining_w = (ui.available_width() - 280.0).max(10.0);
-                let (_, empty_drag) = ui.allocate_exact_size(Vec2::new(remaining_w, 24.0), Sense::click_and_drag());
-                if empty_drag.is_pointer_button_down_on() || empty_drag.drag_started() || empty_drag.dragged() {
+                // Middle: Flexible Drag Space
+                let remaining_w = (ui.available_width() - 170.0).max(10.0);
+                let (_, empty_drag) = ui.allocate_exact_size(Vec2::new(remaining_w, 22.0), Sense::click_and_drag());
+                if empty_drag.is_pointer_button_down_on() || empty_drag.dragged() {
                     ctx.send_viewport_cmd(ViewportCommand::StartDrag);
                 }
 
-                // Right-aligned Action Buttons
+                // Right: Minimal Action Icons
                 ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
-                    // Minimize button
-                    if ui.button(RichText::new("🗕").size(12.0).color(Color32::from_rgb(148, 163, 184)))
-                        .on_hover_text("Minimize Overlay (Esc)").clicked()
-                    {
+                    // Minimize icon
+                    if ui.add(
+                        egui::Button::new(RichText::new("—").size(12.0).color(Color32::from_rgb(148, 163, 184)))
+                            .fill(Color32::TRANSPARENT)
+                            .stroke(Stroke::NONE),
+                    ).on_hover_text("Minimize Overlay (Esc)").clicked() {
                         ctx.send_viewport_cmd(ViewportCommand::Minimized(true));
                     }
 
-                    // Mode Toggle (F10)
-                    let mode_lbl = if self.is_expanded { "▲ Compact" } else { "▼ Breakdown" };
-                    let btn_mode = ui.add(
-                        egui::Button::new(RichText::new(mode_lbl).size(11.0).color(Color32::WHITE))
-                            .fill(Color32::from_rgb(30, 41, 59))
-                            .corner_radius(CornerRadius::same(6)),
-                    );
-                    if btn_mode.on_hover_text("Toggle Detailed Breakdown (F10)").clicked() {
+                    // Settings / Drawer Toggle
+                    let gear_color = if self.is_expanded {
+                        Color32::from_rgb(56, 189, 248)
+                    } else {
+                        Color32::from_rgb(148, 163, 184)
+                    };
+                    if ui.add(
+                        egui::Button::new(RichText::new("⚙").size(13.0).color(gear_color))
+                            .fill(Color32::TRANSPARENT)
+                            .stroke(Stroke::NONE),
+                    ).on_hover_text("Settings & Detailed Breakdown (F10)").clicked() {
                         self.is_expanded = !self.is_expanded;
-                        let target_h = if self.is_expanded { 540.0 } else { 190.0 };
+                        let target_h = if self.is_expanded { 500.0 } else { 180.0 };
                         ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, target_h)));
                     }
 
-                    // Settings button
-                    let reg_lbl = if self.show_region_settings { "Close ⚙" } else { "⚙ Settings" };
-                    let btn_set = ui.add(
-                        egui::Button::new(RichText::new(reg_lbl).size(11.0).color(Color32::from_rgb(253, 230, 138)))
-                            .fill(Color32::from_rgb(120, 53, 15))
-                            .corner_radius(CornerRadius::same(6)),
-                    );
-                    if btn_set.clicked() {
-                        self.show_region_settings = !self.show_region_settings;
-                        if self.show_region_settings && !self.is_expanded {
-                            self.is_expanded = true;
-                            ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, 540.0)));
+                    // Copy Icon
+                    if ui.add(
+                        egui::Button::new(RichText::new("📋").size(12.0).color(Color32::from_rgb(148, 163, 184)))
+                            .fill(Color32::TRANSPARENT)
+                            .stroke(Stroke::NONE),
+                    ).on_hover_text("Copy Japanese line to clipboard").clicked() {
+                        if let Some(ref res) = current_res {
+                            ui.ctx().copy_text(res.text.clone());
+                            self.status_message = "Copied to clipboard!".to_string();
                         }
                     }
 
-                    // Capture button (F8)
-                    let btn_cap = ui.add(
+                    // Scan Icon (F8)
+                    if ui.add(
                         egui::Button::new(
-                            RichText::new("📷 Capture (F8)")
-                                .color(Color32::WHITE)
+                            RichText::new("📷 Scan (F8)")
+                                .size(11.0)
                                 .strong()
-                                .size(11.0),
+                                .color(Color32::WHITE),
                         )
                         .fill(Color32::from_rgb(225, 29, 72))
-                        .corner_radius(CornerRadius::same(6)),
-                    );
-                    if btn_cap.clicked() {
+                        .corner_radius(CornerRadius::same(5)),
+                    ).clicked() {
                         self.trigger_capture(ctx.clone());
                     }
                 });
@@ -394,140 +371,244 @@ impl eframe::App for YomiFlowApp {
                 if res.text.trim().is_empty() {
                     ui.vertical_centered(|ui| {
                         ui.add_space(8.0);
-                        ui.label(RichText::new("No Japanese dialogue text found in capture box.").color(Color32::from_rgb(148, 163, 184)));
-                        ui.label(RichText::new("Press F8 in game or adjust capture area with ⚙ Settings.").size(11.0).color(Color32::from_rgb(100, 116, 139)));
+                        ui.label(RichText::new("No Japanese dialogue found in capture area.").color(Color32::from_rgb(148, 163, 184)));
+                        ui.label(RichText::new("Press F8 anywhere in game or adjust capture area with ⚙").size(11.0).color(Color32::from_rgb(100, 116, 139)));
                         ui.add_space(6.0);
                     });
                 } else {
-                    // Display Interactive Japanese Sentence
+                    // 1. Japanese Dialogue (Fluid typography, natural kerning, zero button boxes)
+                    ui.add_space(2.0);
                     ui.horizontal_wrapped(|ui| {
+                        ui.spacing_mut().item_spacing = Vec2::new(1.0, 3.0);
                         for word in &res.words {
                             if word.is_punct {
-                                ui.label(RichText::new(&word.surface).size(18.0).color(Color32::from_rgb(100, 116, 139)));
-                            } else if !word.meaning.is_empty() || !word.kanji_breakdown.is_empty() {
-                                // Rich hover tooltip showing reading, base form, meaning, and kanji
-                                let mut tip = format!("Word: {}", word.surface);
-                                if !word.reading.is_empty() {
-                                    tip.push_str(&format!("  [{}]", word.reading));
-                                }
-                                if word.base_form != word.surface {
-                                    tip.push_str(&format!(" (base: {})", word.base_form));
-                                }
-                                if !word.meaning.is_empty() {
-                                    tip.push_str(&format!("\nMeaning: {}", word.meaning));
-                                }
-                                for k in &word.kanji_breakdown {
-                                    tip.push_str(&format!("\n • {} ({}): {}", k.character, k.onyomi, k.meaning));
-                                }
-
-                                let chip = ui.add(
-                                    egui::Button::new(
-                                        RichText::new(&word.surface)
-                                            .size(18.0)
-                                            .strong()
-                                            .color(Color32::from_rgb(255, 241, 242)),
-                                    )
-                                    .fill(Color32::from_rgba_premultiplied(244, 63, 94, 25))
-                                    .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(251, 113, 133, 90)))
-                                    .corner_radius(CornerRadius::same(5))
-                                    .sense(Sense::click()),
-                                ).on_hover_text(tip);
-
-                                if chip.clicked() {
-                                    if !self.is_expanded {
-                                        self.is_expanded = true;
-                                        ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, 540.0)));
-                                    }
-                                }
+                                ui.label(RichText::new(&word.surface).size(21.0).color(Color32::from_rgb(148, 163, 184)));
                             } else {
-                                ui.label(RichText::new(&word.surface).size(18.0).color(Color32::from_rgb(241, 245, 249)));
+                                let label = egui::Label::new(
+                                    RichText::new(&word.surface)
+                                        .size(21.0)
+                                        .strong()
+                                        .color(Color32::from_rgb(248, 250, 252)),
+                                )
+                                .sense(Sense::hover().union(Sense::click()));
+
+                                let resp = ui.add(label);
+
+                                // Subtle cyan underline when hovered
+                                if resp.hovered() {
+                                    ui.painter().line_segment(
+                                        [
+                                            egui::pos2(resp.rect.left(), resp.rect.bottom() - 1.0),
+                                            egui::pos2(resp.rect.right(), resp.rect.bottom() - 1.0),
+                                        ],
+                                        Stroke::new(2.0, Color32::from_rgb(56, 189, 248)),
+                                    );
+                                }
+
+                                // Floating Rich Yomitan Tooltip Card
+                                let resp = resp.on_hover_ui(|ui| {
+                                    let card_frame = egui::Frame::new()
+                                        .fill(Color32::from_rgb(15, 23, 42))
+                                        .stroke(Stroke::new(1.0, Color32::from_rgb(51, 65, 85)))
+                                        .corner_radius(CornerRadius::same(8))
+                                        .inner_margin(egui::Margin::symmetric(10, 8));
+
+                                    card_frame.show(ui, |ui| {
+                                        ui.horizontal(|ui| {
+                                            ui.label(RichText::new(&word.surface).size(18.0).strong().color(Color32::from_rgb(56, 189, 248)));
+                                            if !word.reading.is_empty() {
+                                                ui.label(RichText::new(format!("【{}】", word.reading)).size(15.0).color(Color32::from_rgb(251, 191, 36)));
+                                            }
+                                            if word.base_form != word.surface && !word.base_form.is_empty() {
+                                                ui.label(RichText::new(format!("(base: {})", word.base_form)).size(11.5).color(Color32::from_rgb(192, 132, 252)));
+                                            }
+                                        });
+
+                                        if !word.meaning.is_empty() {
+                                            ui.add_space(2.0);
+                                            ui.label(RichText::new(&word.meaning).size(13.0).color(Color32::from_rgb(241, 245, 249)));
+                                        }
+
+                                        if !word.kanji_breakdown.is_empty() {
+                                            ui.add_space(4.0);
+                                            for k in &word.kanji_breakdown {
+                                                ui.horizontal(|ui| {
+                                                    ui.label(RichText::new(k.character.to_string()).strong().size(13.0).color(Color32::from_rgb(251, 146, 60)));
+                                                    let on_str = if !k.onyomi.is_empty() { format!("[{}]", k.onyomi) } else { String::new() };
+                                                    ui.label(RichText::new(format!("{} {}", on_str, k.meaning)).size(11.5).color(Color32::from_rgb(203, 213, 225)));
+                                                });
+                                            }
+                                        }
+                                    });
+                                });
+
+                                if resp.clicked() {
+                                    self.is_expanded = !self.is_expanded;
+                                    let target_h = if self.is_expanded { 500.0 } else { 180.0 };
+                                    ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, target_h)));
+                                }
                             }
                         }
                     });
 
-                    // Quick Action Bar
+                    // 2. Immediate English Translation (Directly in Compact Mode!)
                     ui.add_space(4.0);
-                    ui.horizontal(|ui| {
-                        if ui.button(RichText::new("📋 Copy").size(10.5)).clicked() {
-                            ui.ctx().copy_text(res.text.clone());
-                            self.status_message = "Copied Japanese line to clipboard!".to_string();
+                    let translation_text = if let Some(Ok(ref expl)) = current_ai {
+                        format!("“{}”", expl.translation)
+                    } else if is_ai_running {
+                        "✨ Analyzing dialogue nuance with AI...".to_string()
+                    } else {
+                        // Offline synthesized gloss
+                        let glosses: Vec<&str> = res.words
+                            .iter()
+                            .filter(|w| !w.is_punct && !w.meaning.is_empty())
+                            .map(|w| w.meaning.split(',').next().unwrap_or(w.meaning.as_str()).trim())
+                            .collect();
+                        if !glosses.is_empty() {
+                            format!("Gloss: {}", glosses.join(" • "))
+                        } else {
+                            String::new()
                         }
+                    };
 
-                        if ui.button(RichText::new("⭐ Export Anki").size(10.5)).clicked() {
-                            match self.history.export_anki_tsv("yomiflow_anki_export.txt") {
-                                Ok(n) => self.status_message = format!("Exported {} cards to yomiflow_anki_export.txt", n),
-                                Err(e) => self.status_message = format!("Export error: {}", e),
-                            }
-                        }
-
-                        // Fallback AI button
-                        let ai_lbl = if is_ai_running { "✨ Analyzing Nuance..." } else { "✨ AI Nuance & Grammar" };
-                        let btn_ai = ui.add(
-                            egui::Button::new(
-                                RichText::new(ai_lbl).size(10.5).color(Color32::from_rgb(199, 210, 254))
-                            )
-                            .fill(Color32::from_rgb(49, 46, 129))
-                            .corner_radius(CornerRadius::same(5)),
-                        );
-                        if btn_ai.clicked() && !is_ai_running {
-                            if !self.is_expanded {
-                                self.is_expanded = true;
-                                ctx.send_viewport_cmd(ViewportCommand::InnerSize(Vec2::new(660.0, 540.0)));
-                            }
-                            self.trigger_ai_explanation(ctx.clone(), res.text.clone());
-                        }
-
-                        let non_punct_count = res.words.iter().filter(|w| !w.is_punct).count();
+                    if !translation_text.is_empty() {
                         ui.label(
-                            RichText::new(format!("{} words", non_punct_count))
-                                .size(10.5)
-                                .color(Color32::from_rgb(148, 163, 184)),
+                            RichText::new(translation_text)
+                                .size(13.5)
+                                .italics()
+                                .color(Color32::from_rgb(147, 197, 253)),
                         );
-
-                        if !self.status_message.is_empty() {
-                            ui.label(RichText::new(&self.status_message).size(10.5).color(Color32::from_rgb(251, 191, 36)));
-                        }
-                    });
+                    }
                 }
             } else {
                 ui.vertical_centered(|ui| {
-                    ui.add_space(14.0);
+                    ui.add_space(12.0);
                     ui.label(RichText::new("🎮 Ready to capture Japanese dialogue.").strong().size(13.5).color(Color32::from_rgb(241, 245, 249)));
-                    ui.label(RichText::new("Press F8 anywhere in your game to scan subtitles & dialogue instantly.").size(11.5).color(Color32::from_rgb(148, 163, 184)));
+                    ui.label(RichText::new("Press F8 anywhere in game to capture dialogue subtitles instantly.").size(11.5).color(Color32::from_rgb(148, 163, 184)));
                     ui.add_space(8.0);
                 });
             }
 
-            // === EXPANDED BREAKDOWN / SETTINGS DRAWER ===
+            // === EXPANDED SETTINGS & BREAKDOWN DRAWER ===
             if self.is_expanded {
                 draw_subtle_divider(ui);
 
-                if self.show_region_settings {
-                    // === SETTINGS PANEL ===
-                    ui.label(RichText::new("Overlay Settings & Capture Box").strong().color(Color32::from_rgb(251, 113, 133)));
+                egui::ScrollArea::vertical().max_height(300.0).show(ui, |ui| {
+                    // === DRAWER SECTION 1: AI NUANCE & GRAMMAR ===
+                    if let Some(ref res) = current_res {
+                        if let Some(ref ai_res) = current_ai {
+                            match ai_res {
+                                Ok(expl) => {
+                                    let card_frame = egui::Frame::new()
+                                        .fill(Color32::from_rgba_premultiplied(20, 26, 43, 230))
+                                        .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(99, 102, 241, 140)))
+                                        .corner_radius(CornerRadius::same(8))
+                                        .inner_margin(egui::Margin::same(10));
+
+                                    card_frame.show(ui, |ui| {
+                                        ui.label(RichText::new("🤖 AI Dialogue Translation & Nuance").strong().size(12.0).color(Color32::from_rgb(165, 180, 252)));
+                                        ui.add_space(2.0);
+                                        ui.label(RichText::new(format!("\"{}\"", expl.translation)).strong().size(14.0).color(Color32::WHITE));
+
+                                        if !expl.nuance.is_empty() {
+                                            ui.add_space(2.0);
+                                            ui.horizontal(|ui| {
+                                                ui.label(RichText::new("🔥 Nuance:").strong().color(Color32::from_rgb(253, 224, 71)));
+                                                ui.label(RichText::new(&expl.nuance).color(Color32::from_rgb(254, 240, 138)).size(12.0));
+                                            });
+                                        }
+
+                                        if !expl.grammar.is_empty() {
+                                            ui.add_space(2.0);
+                                            ui.horizontal(|ui| {
+                                                ui.label(RichText::new("🧩 Grammar:").strong().color(Color32::from_rgb(110, 231, 183)));
+                                                ui.label(RichText::new(&expl.grammar).color(Color32::from_rgb(209, 250, 229)).size(12.0));
+                                            });
+                                        }
+                                    });
+                                    ui.add_space(6.0);
+                                }
+                                Err(err) => {
+                                    ui.label(RichText::new(format!("AI Note: {}", err)).color(Color32::from_rgb(248, 113, 113)).size(11.5));
+                                    ui.add_space(4.0);
+                                }
+                            }
+                        } else if !self.config.deepseek_api_key.trim().is_empty() && !is_ai_running {
+                            if ui.button(RichText::new("✨ Request AI Nuance & Grammar").size(11.0).color(Color32::from_rgb(199, 210, 254))).clicked() {
+                                self.trigger_ai_explanation(ctx.clone(), res.text.clone());
+                            }
+                            ui.add_space(4.0);
+                        }
+
+                        // === DRAWER SECTION 2: DETECTED GRAMMAR PATTERNS ===
+                        if !res.grammar.is_empty() {
+                            ui.label(RichText::new("Detected Grammar Patterns").strong().color(Color32::from_rgb(192, 132, 252)));
+                            ui.add_space(2.0);
+                            for g in &res.grammar {
+                                ui.horizontal(|ui| {
+                                    ui.label(RichText::new(g.pattern).strong().color(Color32::from_rgb(216, 180, 254)));
+                                    ui.label(RichText::new(format!("— {}", g.meaning)).color(Color32::WHITE).size(12.0));
+                                });
+                                ui.label(RichText::new(g.explanation).size(11.0).color(Color32::from_rgb(148, 163, 184)));
+                                ui.add_space(2.0);
+                            }
+                            ui.add_space(4.0);
+                        }
+
+                        // === DRAWER SECTION 3: WORD & KANJI BREAKDOWN LIST ===
+                        ui.horizontal(|ui| {
+                            ui.label(RichText::new("Vocabulary Breakdown").strong().color(Color32::from_rgb(56, 189, 248)));
+                            ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
+                                if ui.button(RichText::new("⭐ Export Anki").size(10.5)).clicked() {
+                                    match self.history.export_anki_tsv("yomiflow_anki_export.txt") {
+                                        Ok(n) => self.status_message = format!("Exported {} cards to yomiflow_anki_export.txt", n),
+                                        Err(e) => self.status_message = format!("Export error: {}", e),
+                                    }
+                                }
+                            });
+                        });
+                        ui.add_space(2.0);
+
+                        for word in &res.words {
+                            if word.is_punct {
+                                continue;
+                            }
+                            ui.horizontal(|ui| {
+                                ui.label(RichText::new(&word.surface).strong().size(13.5).color(Color32::WHITE));
+                                if !word.reading.is_empty() {
+                                    ui.label(RichText::new(format!("[{}]", word.reading)).size(11.5).color(Color32::from_rgb(252, 211, 77)));
+                                }
+                                if word.base_form != word.surface && !word.base_form.is_empty() {
+                                    ui.label(RichText::new(format!("(base: {})", word.base_form)).size(11.0).color(Color32::from_rgb(192, 132, 252)));
+                                }
+                                if !word.meaning.is_empty() {
+                                    ui.label(RichText::new(&word.meaning).size(12.0).color(Color32::from_rgb(226, 232, 240)));
+                                }
+                            });
+                        }
+                        ui.add_space(6.0);
+                        draw_subtle_divider(ui);
+                    }
+
+                    // === DRAWER SECTION 4: CAPTURE SETTINGS & API KEY ===
+                    ui.label(RichText::new("Overlay & Capture Box Settings").strong().color(Color32::from_rgb(251, 191, 36)));
                     ui.add_space(4.0);
 
                     ui.horizontal(|ui| {
-                        ui.label("Snap Window:");
-                        if ui.button("📍 Top Left").clicked() {
+                        ui.label("Snap Position:");
+                        if ui.button("Top Left").clicked() {
                             ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(100.0, 80.0)));
                             self.config.window_x = Some(100.0);
                             self.config.window_y = Some(80.0);
                             self.config.save();
                         }
-                        if ui.button("📍 Top Center").clicked() {
+                        if ui.button("Top Center").clicked() {
                             ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(450.0, 80.0)));
                             self.config.window_x = Some(450.0);
                             self.config.window_y = Some(80.0);
                             self.config.save();
                         }
-                        if ui.button("📍 Center").clicked() {
-                            ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(450.0, 260.0)));
-                            self.config.window_x = Some(450.0);
-                            self.config.window_y = Some(260.0);
-                            self.config.save();
-                        }
-                        if ui.button("📍 Bottom Subtitles").clicked() {
+                        if ui.button("Bottom Subtitles").clicked() {
                             ctx.send_viewport_cmd(ViewportCommand::OuterPosition(egui::Pos2::new(350.0, 520.0)));
                             self.config.window_x = Some(350.0);
                             self.config.window_y = Some(520.0);
@@ -559,161 +640,31 @@ impl eframe::App for YomiFlowApp {
                         ui.add(egui::DragValue::new(&mut self.config.region.x).speed(5));
                         ui.label("Box Y:");
                         ui.add(egui::DragValue::new(&mut self.config.region.y).speed(5));
-                        ui.label("Width:");
+                        ui.label("W:");
                         ui.add(egui::DragValue::new(&mut self.config.region.width).speed(5).range(100..=3840));
-                        ui.label("Height:");
+                        ui.label("H:");
                         ui.add(egui::DragValue::new(&mut self.config.region.height).speed(5).range(50..=2160));
                     });
 
                     ui.add_space(4.0);
                     ui.horizontal(|ui| {
-                        ui.label("Overlay Opacity:");
+                        ui.label("Opacity:");
                         if ui.add(egui::Slider::new(&mut self.config.opacity, 0.4..=1.0)).changed() {
                             self.config.save();
                         }
-
                         ui.checkbox(&mut self.config.auto_ai_explain, "Auto-run AI on capture");
                     });
 
                     ui.add_space(6.0);
-                    ui.separator();
-                    ui.add_space(4.0);
-
-                    ui.label(RichText::new("DeepSeek / OpenAI API Key (Instant Dialogue Nuance):").strong().size(11.0).color(Color32::from_rgb(165, 180, 252)));
+                    ui.label(RichText::new("DeepSeek / OpenAI API Key:").strong().size(11.0).color(Color32::from_rgb(165, 180, 252)));
                     ui.horizontal(|ui| {
                         ui.add(egui::TextEdit::singleline(&mut self.config.deepseek_api_key).password(true).hint_text("sk-...")).on_hover_text("Stored locally in config.json");
                         if ui.button("💾 Save Key").clicked() {
                             self.config.save();
                             self.status_message = "API key saved!".to_string();
-                            self.show_region_settings = false;
                         }
                     });
-                } else if let Some(ref res) = current_res {
-                    egui::ScrollArea::vertical().max_height(310.0).show(ui, |ui| {
-                        // === MODULE 1: AI LINGUISTIC BREAKDOWN ===
-                        if is_ai_running {
-                            ui.group(|ui| {
-                                ui.horizontal(|ui| {
-                                    ui.label(RichText::new("🤖 DeepSeek is analyzing conversational tone, slang & nuance...").color(Color32::from_rgb(199, 210, 254)));
-                                });
-                            });
-                            ui.add_space(4.0);
-                        } else if let Some(ref ai_res) = current_ai {
-                            match ai_res {
-                                Ok(expl) => {
-                                    let card_frame = egui::Frame::new()
-                                        .fill(Color32::from_rgba_premultiplied(24, 27, 50, 230))
-                                        .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(99, 102, 241, 140)))
-                                        .corner_radius(CornerRadius::same(8))
-                                        .inner_margin(egui::Margin::same(10));
-
-                                    card_frame.show(ui, |ui| {
-                                        ui.horizontal(|ui| {
-                                            ui.label(RichText::new("🤖 AI Dialogue Translation & Nuance").strong().size(12.0).color(Color32::from_rgb(165, 180, 252)));
-                                        });
-                                        ui.add_space(2.0);
-
-                                        // Natural Translation
-                                        ui.label(RichText::new(format!("\"{}\"", expl.translation)).strong().size(14.0).color(Color32::WHITE));
-
-                                        // Conversational Nuance
-                                        if !expl.nuance.is_empty() {
-                                            ui.add_space(2.0);
-                                            ui.horizontal(|ui| {
-                                                ui.label(RichText::new("🔥 Nuance:").strong().color(Color32::from_rgb(253, 224, 71)));
-                                                ui.label(RichText::new(&expl.nuance).color(Color32::from_rgb(254, 240, 138)).size(12.0));
-                                            });
-                                        }
-
-                                        // Grammar Breakdown
-                                        if !expl.grammar.is_empty() {
-                                            ui.add_space(2.0);
-                                            ui.horizontal(|ui| {
-                                                ui.label(RichText::new("🧩 Grammar:").strong().color(Color32::from_rgb(110, 231, 183)));
-                                                ui.label(RichText::new(&expl.grammar).color(Color32::from_rgb(209, 250, 229)).size(12.0));
-                                            });
-                                        }
-                                    });
-                                    ui.add_space(6.0);
-                                }
-                                Err(err) => {
-                                    ui.label(RichText::new(format!("AI Note: {}", err)).color(Color32::from_rgb(248, 113, 113)).size(11.5));
-                                    ui.add_space(4.0);
-                                }
-                            }
-                        } else if self.config.deepseek_api_key.trim().is_empty() {
-                            // Friendly callout to add API key
-                            let banner_frame = egui::Frame::new()
-                                .fill(Color32::from_rgba_premultiplied(30, 27, 45, 180))
-                                .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(251, 191, 36, 90)))
-                                .corner_radius(CornerRadius::same(6))
-                                .inner_margin(egui::Margin::symmetric(10, 6));
-
-                            banner_frame.show(ui, |ui| {
-                                ui.horizontal(|ui| {
-                                    ui.label(RichText::new("🔑 Tip: Add your DeepSeek API key in ⚙ Settings to get instant natural translations, slang nuance, and tone analysis.").size(11.0).color(Color32::from_rgb(253, 230, 138)));
-                                });
-                            });
-                            ui.add_space(6.0);
-                        }
-
-                        // === MODULE 2: DETECTED GRAMMAR PATTERNS ===
-                        if !res.grammar.is_empty() {
-                            ui.label(RichText::new("Detected Grammar & Conjugation Patterns").strong().color(Color32::from_rgb(192, 132, 252)));
-                            ui.add_space(2.0);
-                            for g in &res.grammar {
-                                ui.horizontal(|ui| {
-                                    ui.label(RichText::new(g.pattern).strong().color(Color32::from_rgb(216, 180, 254)));
-                                    ui.label(RichText::new(format!("— {}", g.meaning)).color(Color32::WHITE).size(12.0));
-                                });
-                                ui.label(RichText::new(g.explanation).size(11.0).color(Color32::from_rgb(148, 163, 184)));
-                                ui.add_space(2.0);
-                            }
-                            ui.add_space(3.0);
-                            draw_subtle_divider(ui);
-                            ui.add_space(3.0);
-                        }
-
-                        // === MODULE 3: INSTANT WORD & KANJI BREAKDOWN ===
-                        ui.label(RichText::new("Offline Word & Kanji Breakdown").strong().color(Color32::from_rgb(251, 113, 133)));
-                        ui.add_space(4.0);
-
-                        for word in &res.words {
-                            if word.is_punct {
-                                continue;
-                            }
-                            ui.horizontal(|ui| {
-                                // Word Surface
-                                ui.label(RichText::new(&word.surface).strong().size(14.0).color(Color32::WHITE));
-
-                                // Kana reading
-                                if !word.reading.is_empty() {
-                                    ui.label(RichText::new(format!("[{}]", word.reading)).size(12.0).color(Color32::from_rgb(252, 211, 77)));
-                                }
-
-                                // Base form (if inflected)
-                                if word.base_form != word.surface && !word.base_form.is_empty() {
-                                    ui.label(RichText::new(format!("(base: {})", word.base_form)).size(11.0).color(Color32::from_rgb(192, 132, 252)));
-                                }
-
-                                // English definition
-                                if !word.meaning.is_empty() {
-                                    ui.label(RichText::new(&word.meaning).size(12.0).color(Color32::from_rgb(226, 232, 240)));
-                                }
-
-                                // Component Kanji breakdown
-                                for k in &word.kanji_breakdown {
-                                    ui.label(
-                                        RichText::new(format!("{} [{}]: {}", k.character, k.onyomi, k.meaning))
-                                            .size(11.0)
-                                            .color(Color32::from_rgb(251, 146, 60)),
-                                    );
-                                }
-                            });
-                            ui.add_space(3.0);
-                        }
-                    });
-                }
+                });
             }
         });
     }

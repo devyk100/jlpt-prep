@@ -375,6 +375,121 @@ impl LocalDictionary {
             ("さん", "さん", "Mr./Ms. (polite honorific)", "suffix"),
             ("くん", "くん", "young man / honorific for peers", "suffix"),
             ("ちゃん", "ちゃん", "affectionate honorific", "suffix"),
+            // Essential Dialogue, Story & Game vocabulary
+            ("家族", "かぞく", "family, household", "noun"),
+            ("大事", "だいじ", "important, precious, serious matter", "na-adjective"),
+            ("登る", "のぼる", "to climb, ascend, go up", "verb"),
+            ("登", "とう", "climb, ascend, register", "noun"),
+            ("より", "より", "more than, rather than, from", "particle"),
+            ("くれ", "くれ", "give me, do for me (imperative of くれる)", "verb"),
+            ("くれる", "くれる", "to give (to me), do something for me", "verb"),
+            ("くれた", "くれた", "gave (to me), did for me", "verb-past"),
+            ("くれない", "くれない", "won't you do for me?", "expression"),
+            ("仲間", "なかま", "companion, comrade, ally, crew", "noun"),
+            ("友達", "ともだち", "friend, companion", "noun"),
+            ("親", "おや", "parent", "noun"),
+            ("子供", "こども", "child, children", "noun"),
+            ("兄", "あに", "older brother", "noun"),
+            ("弟", "おとうと", "younger brother", "noun"),
+            ("姉", "あね", "older sister", "noun"),
+            ("妹", "いもうと", "younger sister", "noun"),
+            ("守る", "まもる", "to protect, defend, guard", "verb"),
+            ("倒す", "たおす", "to defeat, bring down, topple", "verb"),
+            ("敵", "てき", "enemy, foe, adversary", "noun"),
+            ("味方", "みかた", "ally, supporter, friend", "noun"),
+            ("攻撃", "こうげき", "attack, strike, offensive", "noun/suru"),
+            ("防御", "ぼうぎょ", "defense, guard", "noun/suru"),
+            ("魔法", "まほう", "magic, sorcery, spell", "noun"),
+            ("スキル", "スキル", "skill, special ability", "noun"),
+            ("武器", "ぶき", "weapon, arms", "noun"),
+            ("装備", "そうび", "equipment, gear", "noun/suru"),
+            ("勝利", "しょうり", "victory, triumph", "noun"),
+            ("敗北", "はいぼく", "defeat, loss", "noun"),
+            ("生きる", "いきる", "to live, exist", "verb"),
+            ("命", "いのち", "life, life force, fate", "noun"),
+            ("魂", "たましい", "soul, spirit", "noun"),
+            ("勇気", "ゆうき", "courage, bravery", "noun"),
+            ("希望", "きぼう", "hope, wish", "noun"),
+            ("絶望", "ぜつぼう", "despair, hopelessness", "noun"),
+            ("記憶", "きおく", "memory, recollection", "noun"),
+            ("思い出", "おもいで", "memories, reminiscence", "noun"),
+            ("許す", "ゆるす", "to forgive, pardon, permit", "verb"),
+            ("頼む", "たのむ", "to request, ask, rely upon", "verb"),
+            ("任せる", "まかせる", "to entrust to, leave to", "verb"),
+            ("理由", "りゆう", "reason, cause", "noun"),
+            ("問題", "もんだい", "problem, issue, question", "noun"),
+            ("事件", "じけん", "incident, case, affair", "noun"),
+            ("警察", "けいさつ", "police", "noun"),
+            ("探偵", "たんてい", "detective, investigator", "noun"),
+            ("犯人", "はんにん", "culprit, criminal", "noun"),
+            ("場所", "ばしょ", "place, location", "noun"),
+            ("名前", "なまえ", "name", "noun"),
+            ("仕事", "しごと", "work, job, duty", "noun"),
+            ("学校", "がっこう", "school", "noun"),
+            ("絶対", "ぜったい", "absolutely, unconditionally", "adverb"),
+            ("必ず", "かならず", "certainly, without fail", "adverb"),
+            ("たぶん", "たぶん", "probably, perhaps", "adverb"),
+            ("きっと", "きっと", "surely, definitely", "adverb"),
+            ("もし", "もし", "if, in case", "adverb"),
+            ("少し", "すこし", "a little, slightly", "adverb"),
+            ("たくさん", "たくさん", "a lot, plenty", "adverb"),
+            ("全部", "ぜんぶ", "all, entirety", "noun/adverb"),
+            ("全て", "すべて", "all, everything", "noun/adverb"),
+            ("大きい", "おおきい", "big, large", "i-adjective"),
+            ("小さい", "ちいさい", "small, tiny", "i-adjective"),
+            ("高い", "たかい", "high, tall, expensive", "i-adjective"),
+            ("安い", "やすい", "cheap, peaceful", "i-adjective"),
+            ("新しい", "あたらしい", "new, fresh", "i-adjective"),
+            ("古い", "ふるい", "old, aged", "i-adjective"),
+            ("良い", "よい", "good, excellent", "i-adjective"),
+            ("いい", "いい", "good, fine, okay", "i-adjective"),
+            ("悪い", "わるい", "bad, evil, wrong", "i-adjective"),
+            ("正しい", "ただしい", "correct, righteous", "i-adjective"),
+            ("違う", "ちがう", "different, wrong, to differ", "verb"),
+            ("美しい", "うつくしい", "beautiful, lovely", "i-adjective"),
+            ("可愛い", "かわいい", "cute, adorable", "i-adjective"),
+            ("面白い", "おもしろい", "interesting, amusing, fun", "i-adjective"),
+            ("悲しい", "かなしい", "sad, sorrowful", "i-adjective"),
+            ("嬉しい", "うれしい", "happy, glad, delighted", "i-adjective"),
+            ("楽しい", "たのしい", "enjoyable, fun", "i-adjective"),
+            ("苦しい", "くるしい", "painful, agonizing", "i-adjective"),
+            ("怒る", "おこる", "to get angry, be mad", "verb"),
+            ("笑う", "わらう", "to laugh, smile", "verb"),
+            ("泣く", "なく", "to weep, cry", "verb"),
+            ("叫ぶ", "さけぶ", "to shout, yell, scream", "verb"),
+            ("黙る", "だまる", "to be silent, shut up", "verb"),
+            ("教える", "おしえる", "to teach, tell, inform", "verb"),
+            ("忘れる", "わすれる", "to forget", "verb"),
+            ("覚える", "おぼえる", "to remember, memorize", "verb"),
+            ("探す", "さがす", "to search for, look for", "verb"),
+            ("見つける", "みつける", "to find, discover", "verb"),
+            ("歩く", "あるく", "to walk", "verb"),
+            ("走る", "はしる", "to run", "verb"),
+            ("止まる", "とまる", "to stop, halt", "verb"),
+            ("動く", "うごく", "to move, operate", "verb"),
+            ("入る", "はいる", "to enter, go in", "verb"),
+            ("出る", "でる", "to exit, leave, appear", "verb"),
+            ("そして", "そして", "and then, and so", "conjunction"),
+            ("しかし", "しかし", "however, but", "conjunction"),
+            ("だから", "だから", "therefore, that's why", "conjunction"),
+            ("でも", "でも", "but, however, even", "conjunction"),
+            ("もう", "もう", "already, anymore", "adverb"),
+            ("まだ", "まだ", "still, not yet", "adverb"),
+            ("もっと", "もっと", "more, further", "adverb"),
+            ("ずっと", "ずっと", "all along, by far, continuously", "adverb"),
+            ("一番", "いちばん", "best, number one, most", "adverb"),
+            ("任せろ", "まかせろ", "leave it to me! (imperative)", "expression"),
+            ("待たせたな", "またせたな", "kept you waiting (greeting)", "expression"),
+            ("ふざけるな", "ふざけるな", "don't mess around! don't screw with me!", "expression"),
+            ("仕方ない", "しかたない", "can't be helped, inevitable", "expression"),
+            ("しょうがない", "しょうがない", "it can't be helped", "expression"),
+            ("さすが", "さすが", "as expected, truly impressive", "na-adjective/adverb"),
+            ("やっぱり", "やっぱり", "as I thought, after all", "adverb"),
+            ("まさか", "まさか", "no way! impossible! surely not!", "adverb"),
+            ("信じられない", "しんじられない", "unbelievable! can't believe it!", "expression"),
+            ("やれやれ", "やれやれ", "good grief, sigh", "interjection"),
+            ("おい", "おい", "hey! (casual call)", "interjection"),
+            ("ちょっと", "ちょっと", "a bit, wait a moment", "adverb"),
         ];
 
         for &(surf, read, mean, pos) in words {
@@ -476,44 +591,45 @@ impl LocalDictionary {
     }
 
     pub fn deinflect(&self, word: &str) -> Option<String> {
-        // Te-form & Past Ta-form
-        if word.ends_with("って") {
+        // Imperative standalone: しろ -> する, して -> する
+        if word == "しろ" || word == "して" {
+            return Some("する".to_string());
+        }
+
+        // Te-form & Past Ta-form for Godan verbs
+        if word.ends_with("って") && word.len() > 6 {
             return Some(format!("{}う", &word[..word.len() - "って".len()]));
         }
-        if word.ends_with("った") {
+        if word.ends_with("った") && word.len() > 6 {
             return Some(format!("{}う", &word[..word.len() - "った".len()]));
         }
-        if word.ends_with("いて") || word.ends_with("いた") {
+        if (word.ends_with("いて") || word.ends_with("いた")) && word.len() >= 6 {
             let base = &word[..word.len() - 6];
             return Some(format!("{}く", base));
         }
-        if word.ends_with("して") || word.ends_with("した") {
+        if (word.ends_with("して") || word.ends_with("した")) && word.len() >= 6 {
             let base = &word[..word.len() - 6];
             return Some(format!("{}す", base));
         }
-        if word.ends_with("んで") || word.ends_with("んだ") {
+        if (word.ends_with("んで") || word.ends_with("んだ")) && word.len() >= 6 {
             let base = &word[..word.len() - 6];
             return Some(format!("{}む", base));
         }
         // Ichidan te/ta: 助けて -> 助ける, 食べた -> 食べる
-        if word.ends_with('て') || word.ends_with('た') {
+        if (word.ends_with('て') || word.ends_with('た')) && word.len() > 3 {
             let base = &word[..word.len() - 3];
             return Some(format!("{}る", base));
         }
         // Negative nai: 食べない -> 食べる, 言わない -> 言う
-        if word.ends_with("ない") {
+        if word.ends_with("ない") && word.len() > 6 {
             let base = &word[..word.len() - "ない".len()];
-            if base.ends_with('わ') {
+            if base.ends_with('わ') && base.len() >= 3 {
                 return Some(format!("{}う", &base[..base.len() - 3]));
             }
             return Some(format!("{}る", base));
         }
-        // Imperative: しろ -> する
-        if word.ends_with("しろ") {
-            return Some("する".to_string());
-        }
         // Imperative e-form: 払え -> 払う, 言え -> 言う
-        if word.ends_with('え') {
+        if word.ends_with('え') && word.len() > 3 {
             let base = &word[..word.len() - 3];
             return Some(format!("{}う", base));
         }
@@ -574,9 +690,15 @@ impl LocalDictionary {
                         }
                     }
 
+                    let base = if let Some(stemmed) = self.deinflect(&candidate) {
+                        stemmed
+                    } else {
+                        info.surface.to_string()
+                    };
+
                     results.push(ParsedWord {
                         surface: candidate.clone(),
-                        base_form: info.surface.to_string(),
+                        base_form: base,
                         reading: info.reading.to_string(),
                         meaning: info.meaning.to_string(),
                         part_of_speech: info.part_of_speech.to_string(),
@@ -767,5 +889,19 @@ mod tests {
         assert!(parsed.iter().any(|p| p.surface == "商売" && p.meaning.contains("business")));
         assert!(parsed.iter().any(|p| p.surface == "しろ" && p.base_form == "する"));
         assert!(parsed.iter().any(|p| p.surface == "言った" && p.base_form == "言う"));
+    }
+
+    #[test]
+    fn test_family_dialogue_parsing() {
+        let dict = LocalDictionary::new();
+        let sentence = "家族より、大事にしてくれよ";
+        let parsed = dict.parse_sentence(sentence);
+
+        let words: Vec<&str> = parsed.iter().map(|p| p.surface.as_str()).collect();
+        println!("Parsed tokens: {:?}", words);
+
+        assert!(parsed.iter().any(|p| p.surface == "家族" && p.meaning.contains("family")));
+        assert!(parsed.iter().any(|p| p.surface == "大事" && p.meaning.contains("important")));
+        assert!(parsed.iter().any(|p| p.surface == "くれ"));
     }
 }

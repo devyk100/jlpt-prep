@@ -102,14 +102,46 @@ pub fn capture_screen_region(region: &CaptureRegion) -> Result<(RgbaImage, f64),
     let height = region.height.clamp(1, screen_h - y);
 
     unsafe {
+        // Prevent capturing YomiFlow itself if it overlaps the capture rectangle
+        let wide: Vec<u16> = "YomiFlow".encode_utf16().chain(std::iter::once(0)).collect();
+        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
+        let mut did_hide = false;
+
+        if !hwnd.is_null() {
+            use windows_sys::Win32::Foundation::RECT;
+            use windows_sys::Win32::UI::WindowsAndMessaging::{
+                GetWindowRect, IsWindowVisible, ShowWindow, SW_HIDE,
+            };
+            if IsWindowVisible(hwnd) != 0 {
+                let mut r: RECT = std::mem::zeroed();
+                GetWindowRect(hwnd, &mut r);
+                // Check if YomiFlow window overlaps the capture rectangle
+                let overlaps = !(r.right <= x || r.left >= x + width || r.bottom <= y || r.top >= y + height);
+                if overlaps {
+                    ShowWindow(hwnd, SW_HIDE);
+                    did_hide = true;
+                    // Allow DWM compositor 15ms to render desktop without YomiFlow
+                    std::thread::sleep(std::time::Duration::from_millis(15));
+                }
+            }
+        }
+
         let hdc_screen = GetDC(null_mut());
         if hdc_screen.is_null() {
+            if did_hide && !hwnd.is_null() {
+                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
+                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
+            }
             return Err("Failed to get screen DC".into());
         }
 
         let hdc_mem = CreateCompatibleDC(hdc_screen);
         if hdc_mem.is_null() {
             ReleaseDC(null_mut(), hdc_screen);
+            if did_hide && !hwnd.is_null() {
+                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
+                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
+            }
             return Err("Failed to create compatible DC".into());
         }
 
@@ -117,6 +149,10 @@ pub fn capture_screen_region(region: &CaptureRegion) -> Result<(RgbaImage, f64),
         if hbm.is_null() {
             DeleteDC(hdc_mem);
             ReleaseDC(null_mut(), hdc_screen);
+            if did_hide && !hwnd.is_null() {
+                use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
+                ShowWindow(hwnd, SW_SHOWNOACTIVATE);
+            }
             return Err("Failed to create compatible bitmap".into());
         }
 
@@ -125,6 +161,12 @@ pub fn capture_screen_region(region: &CaptureRegion) -> Result<(RgbaImage, f64),
         // SRCCOPY | CAPTUREBLT (0x40000000) captures translucent & layered game windows
         let rop = SRCCOPY | CAPTUREBLT;
         BitBlt(hdc_mem, 0, 0, width, height, hdc_screen, x, y, rop);
+
+        // Restore YomiFlow window immediately if it was temporarily hidden
+        if did_hide && !hwnd.is_null() {
+            use windows_sys::Win32::UI::WindowsAndMessaging::{ShowWindow, SW_SHOWNOACTIVATE};
+            ShowWindow(hwnd, SW_SHOWNOACTIVATE);
+        }
 
         let mut bmi: BITMAPINFO = std::mem::zeroed();
         bmi.bmiHeader.biSize = std::mem::size_of::<BITMAPINFOHEADER>() as u32;
