@@ -36,6 +36,19 @@ pub fn force_window_topmost(title: &str) {
     }
 }
 
+pub fn exclude_window_from_capture(title: &str) {
+    unsafe {
+        use windows_sys::Win32::UI::WindowsAndMessaging::{FindWindowW, SetWindowDisplayAffinity};
+        let wide: Vec<u16> = title.encode_utf16().chain(std::iter::once(0)).collect();
+        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
+        if !hwnd.is_null() {
+            // WDA_EXCLUDEFROMCAPTURE = 0x00000011 (Windows 10 2004+ and Windows 11)
+            const WDA_EXCLUDEFROMCAPTURE: u32 = 0x00000011;
+            SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE);
+        }
+    }
+}
+
 pub fn remove_windows_dwm_borders(title: &str) {
     unsafe {
         use windows_sys::Win32::System::LibraryLoader::{GetProcAddress, LoadLibraryA};

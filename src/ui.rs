@@ -104,6 +104,7 @@ impl YomiFlowApp {
         let model = self.config.deepseek_model.clone();
 
         thread::spawn(move || {
+            crate::capture::exclude_window_from_capture("YomiFlow");
             match capture_screen_region(&region) {
                 Ok((img, cap_ms)) => {
                     let (text, _lines, ocr_ms) = ocr.recognize(&img);
@@ -213,9 +214,10 @@ impl eframe::App for YomiFlowApp {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
 
-        // 1. Continuous Always-On-Top & DWM Border Elimination
+        // 1. Continuous Always-On-Top, Borderless DWM, & Screen Capture Exclusion
         crate::capture::force_window_topmost("YomiFlow");
         crate::capture::remove_windows_dwm_borders("YomiFlow");
+        crate::capture::exclude_window_from_capture("YomiFlow");
         ctx.send_viewport_cmd(ViewportCommand::WindowLevel(egui::WindowLevel::AlwaysOnTop));
 
         // 2. Process Hotkey Events

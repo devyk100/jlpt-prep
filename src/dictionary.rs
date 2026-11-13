@@ -1,3 +1,4 @@
+use crate::tokenizer::{is_hiragana, is_kanji, is_katakana};
 use std::collections::HashMap;
 
 #[derive(Debug, Clone)]
@@ -593,27 +594,109 @@ impl LocalDictionary {
                 continue;
             }
 
-            // 3. Fallback: Single character Kanji or Kana
-            let single_ch = chars[i];
-            let mut kanjis = Vec::new();
-            let mut meaning = String::new();
-            let mut reading = String::new();
+            // 4. Consecutive Kanji compound chunk (group consecutive kanji + attached okurigana together)
+            if is_kanji(c) {
+                let mut word = String::new();
+                let mut kanjis = Vec::new();
 
-            if let Some(k) = self.lookup_kanji(single_ch) {
-                reading = k.onyomi.to_string();
-                meaning = k.meaning.to_string();
-                kanjis.push(k.clone());
+                while i < len && is_kanji(chars[i]) {
+                    word.push(chars[i]);
+                    if let Some(k) = self.lookup_kanji(chars[i]) {
+                        kanjis.push(k.clone());
+                    }
+                    i += 1;
+                }
+
+                let mut okuri = 0;
+                while i < len && is_hiragana(chars[i]) && okuri < 3 {
+                    if okuri > 0 && matches!(chars[i], 'は' | 'が' | 'を' | 'に' | 'へ' | 'で' | 'と') {
+                        break;
+                    }
+                    word.push(chars[i]);
+                    okuri += 1;
+                    i += 1;
+                }
+
+                let mut reading = String::new();
+                let mut meaning = String::new();
+                let mut base = word.clone();
+
+                if let Some(info) = self.lookup_word(&word) {
+                    reading = info.reading.to_string();
+                    meaning = info.meaning.to_string();
+                    base = info.surface.to_string();
+                } else if let Some(first_k) = kanjis.first() {
+                    meaning = first_k.meaning.to_string();
+                }
+
+                results.push(ParsedWord {
+                    surface: word,
+                    base_form: base,
+                    reading,
+                    meaning,
+                    part_of_speech: "kanji-word".to_string(),
+                    kanji_breakdown: kanjis,
+                    is_punct: false,
+                });
+                continue;
             }
 
-            results.push(ParsedWord {
-                surface: single_ch.to_string(),
-                base_form: single_ch.to_string(),
-                reading,
-                meaning,
-                part_of_speech: if !kanjis.is_empty() { "kanji".to_string() } else { "kana".to_string() },
-                kanji_breakdown: kanjis,
-                is_punct: false,
-            });
+            // 5. Katakana compound (e.g. ペルソナ, ルカ, ショバ)
+            if is_katakana(c) || c == 'ー' {
+                let mut kata = String::new();
+                while i < len && (is_katakana(chars[i]) || chars[i] == 'ー') {
+                    kata.push(chars[i]);
+                    i += 1;
+                }
+
+                let mut reading = kata.clone();
+                let mut meaning = String::new();
+                if let Some(info) = self.lookup_word(&kata) {
+                    reading = info.reading.to_string();
+                    meaning = info.meaning.to_string();
+                }
+
+                results.push(ParsedWord {
+                    surface: kata.clone(),
+                    base_form: kata,
+                    reading,
+                    meaning,
+                    part_of_speech: "katakana".to_string(),
+                    kanji_breakdown: vec![],
+                    is_punct: false,
+                });
+                continue;
+            }
+
+            // 6. Hiragana particle or phrase
+            if is_hiragana(c) {
+                let mut hira = String::new();
+                while i < len && is_hiragana(chars[i]) && !is_kanji(chars[i]) {
+                    hira.push(chars[i]);
+                    i += 1;
+                    if matches!(chars[i - 1], 'は' | 'が' | 'を' | 'に' | 'へ' | 'で' | 'と' | 'も' | 'ね' | 'よ') {
+                        break;
+                    }
+                }
+
+                let mut meaning = String::new();
+                let mut base = hira.clone();
+                if let Some(info) = self.lookup_word(&hira) {
+                    meaning = info.meaning.to_string();
+                    base = info.surface.to_string();
+                }
+
+                results.push(ParsedWord {
+                    surface: hira.clone(),
+                    base_form: base,
+                    reading: hira,
+                    meaning,
+                    part_of_speech: "hiragana".to_string(),
+                    kanji_breakdown: vec![],
+                    is_punct: false,
+                });
+                continue;
+            }
 
             i += 1;
         }
