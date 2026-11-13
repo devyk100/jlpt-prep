@@ -12,6 +12,7 @@
   "deepseek_api_key": "",
   "deepseek_endpoint": "https://api.deepseek.com/chat/completions",
   "deepseek_model": "deepseek-chat",
-  "window_x": 100.0,
-  "window_y": 100.0
+  "auto_ai_explain": true,
+  "window_x": 350.0,
+  "window_y": 520.0
 }

@@ -36,6 +36,41 @@ pub fn force_window_topmost(title: &str) {
     }
 }
 
+pub fn remove_windows_dwm_borders(title: &str) {
+    unsafe {
+        use windows_sys::Win32::System::LibraryLoader::{GetProcAddress, LoadLibraryA};
+
+        let wide: Vec<u16> = title.encode_utf16().chain(std::iter::once(0)).collect();
+        let hwnd = FindWindowW(std::ptr::null(), wide.as_ptr());
+        if hwnd.is_null() {
+            return;
+        }
+
+        let dwm = LoadLibraryA(b"dwmapi.dll\0".as_ptr());
+        if !dwm.is_null() {
+            type DwmSetWindowAttributeFn = unsafe extern "system" fn(
+                hwnd: *mut std::ffi::c_void,
+                dw_attribute: u32,
+                pv_attribute: *const std::ffi::c_void,
+                cb_attribute: u32,
+            ) -> i32;
+
+            if let Some(set_attr) = GetProcAddress(dwm, b"DwmSetWindowAttribute\0".as_ptr()) {
+                let func: DwmSetWindowAttributeFn = std::mem::transmute(set_attr);
+
+                // DWMWA_BORDER_COLOR = 34
+                // DWMWA_COLOR_NONE = 0xFFFFFFFE (Turns off Windows 11 system white window border)
+                let color_none: u32 = 0xFFFFFFFE;
+                let _ = func(hwnd, 34, &color_none as *const u32 as _, 4);
+
+                // DWMWA_WINDOW_CORNER_PREFERENCE = 33, DWMWCP_ROUND = 2
+                let corner_pref: u32 = 2;
+                let _ = func(hwnd, 33, &corner_pref as *const u32 as _, 4);
+            }
+        }
+    }
+}
+
 pub fn get_screen_dimensions() -> (i32, i32) {
     unsafe {
         let w = GetSystemMetrics(SM_CXSCREEN);

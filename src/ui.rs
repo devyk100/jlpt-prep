@@ -41,6 +41,16 @@ impl YomiFlowApp {
         let fonts = egui::FontDefinitions::default();
         cc.egui_ctx.set_fonts(fonts);
 
+        // Eliminate all default white borders and strokes from egui visuals
+        let mut visuals = egui::Visuals::dark();
+        visuals.window_stroke = Stroke::NONE;
+        visuals.widgets.noninteractive.bg_stroke = Stroke::NONE;
+        visuals.widgets.inactive.bg_stroke = Stroke::NONE;
+        visuals.widgets.hovered.bg_stroke = Stroke::NONE;
+        visuals.widgets.active.bg_stroke = Stroke::NONE;
+        visuals.widgets.open.bg_stroke = Stroke::NONE;
+        cc.egui_ctx.set_visuals(visuals);
+
         let config = AppConfig::load();
         let hotkeys = HotkeyManager::new();
         let ocr = Arc::new(NativeOcrEngine::new());
@@ -182,6 +192,19 @@ fn chrono_now_string() -> String {
     format!("captured_{}", std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0))
 }
 
+fn draw_subtle_divider(ui: &mut egui::Ui) {
+    ui.add_space(2.0);
+    let rect = ui.available_rect_before_wrap();
+    ui.painter().line_segment(
+        [
+            egui::pos2(rect.min.x, rect.min.y),
+            egui::pos2(rect.max.x, rect.min.y),
+        ],
+        Stroke::new(1.0, Color32::from_rgba_premultiplied(244, 63, 94, 40)),
+    );
+    ui.add_space(2.0);
+}
+
 impl eframe::App for YomiFlowApp {
     fn clear_color(&self, _visuals: &egui::Visuals) -> [f32; 4] {
         [0.0, 0.0, 0.0, 0.0]
@@ -190,8 +213,9 @@ impl eframe::App for YomiFlowApp {
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
 
-        // 1. Continuous Always-On-Top enforcement in egui and OS DWM
+        // 1. Continuous Always-On-Top & DWM Border Elimination
         crate::capture::force_window_topmost("YomiFlow");
+        crate::capture::remove_windows_dwm_borders("YomiFlow");
         ctx.send_viewport_cmd(ViewportCommand::WindowLevel(egui::WindowLevel::AlwaysOnTop));
 
         // 2. Process Hotkey Events
@@ -248,8 +272,8 @@ impl eframe::App for YomiFlowApp {
                             .strong()
                             .color(Color32::from_rgb(226, 232, 240)),
                     )
-                    .fill(Color32::from_rgba_premultiplied(255, 255, 255, 28))
-                    .stroke(Stroke::new(1.0, Color32::from_rgba_premultiplied(255, 255, 255, 45)))
+                    .fill(Color32::from_rgba_premultiplied(255, 255, 255, 20))
+                    .stroke(Stroke::NONE)
                     .corner_radius(CornerRadius::same(6))
                     .sense(Sense::click_and_drag()),
                 );
@@ -361,9 +385,7 @@ impl eframe::App for YomiFlowApp {
                 });
             });
 
-            ui.add_space(4.0);
-            ui.separator();
-            ui.add_space(4.0);
+            draw_subtle_divider(ui);
 
             // === MAIN RECOGNIZED DIALOGUE ===
             if let Some(ref res) = current_res {
@@ -476,9 +498,7 @@ impl eframe::App for YomiFlowApp {
 
             // === EXPANDED BREAKDOWN / SETTINGS DRAWER ===
             if self.is_expanded {
-                ui.add_space(6.0);
-                ui.separator();
-                ui.add_space(4.0);
+                draw_subtle_divider(ui);
 
                 if self.show_region_settings {
                     // === SETTINGS PANEL ===
@@ -647,9 +667,9 @@ impl eframe::App for YomiFlowApp {
                                 ui.label(RichText::new(g.explanation).size(11.0).color(Color32::from_rgb(148, 163, 184)));
                                 ui.add_space(2.0);
                             }
-                            ui.add_space(4.0);
-                            ui.separator();
-                            ui.add_space(4.0);
+                            ui.add_space(3.0);
+                            draw_subtle_divider(ui);
+                            ui.add_space(3.0);
                         }
 
                         // === MODULE 3: INSTANT WORD & KANJI BREAKDOWN ===
@@ -688,7 +708,7 @@ impl eframe::App for YomiFlowApp {
                                     );
                                 }
                             });
-                            ui.separator();
+                            ui.add_space(3.0);
                         }
                     });
                 }
