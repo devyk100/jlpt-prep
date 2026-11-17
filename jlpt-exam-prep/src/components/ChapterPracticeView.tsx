@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AnnotatedText } from './AnnotatedText';
 import { orderQuestion } from '../studyUtils';
 import type { QuizOptionExplanation } from '../types';
@@ -42,6 +42,8 @@ interface Props {
   exercises: ChapterExerciseItem[];
   bookTitle: string;
   chapterTitle: string;
+  availableChapters?: { bookId: string; bookTitle: string; chapter: string; count: number }[];
+  onSelectChapter?: (bookId: string, chapter: string) => void;
   onNavigateToLesson: (grammarPointId: string) => void;
   onExitPractice: () => void;
 }
@@ -50,6 +52,8 @@ export const ChapterPracticeView: React.FC<Props> = ({
   exercises,
   bookTitle,
   chapterTitle,
+  availableChapters,
+  onSelectChapter,
   onNavigateToLesson,
   onExitPractice
 }) => {
@@ -57,7 +61,20 @@ export const ChapterPracticeView: React.FC<Props> = ({
   const [userAnswers, setUserAnswers] = useState<Record<string, number>>({});
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [showHint, setShowHint] = useState<Record<string, boolean>>({});
+  const [showTranslationHint, setShowTranslationHint] = useState<Record<string, boolean>>({});
+  const [assistedAttempts, setAssistedAttempts] = useState<Record<string, boolean>>({});
   const [isCompleted, setIsCompleted] = useState(false);
+
+  // Reset question index and state when chapter changes
+  useEffect(() => {
+    setCurrentIndex(0);
+    setUserAnswers({});
+    setRevealed({});
+    setShowHint({});
+    setShowTranslationHint({});
+    setAssistedAttempts({});
+    setIsCompleted(false);
+  }, [bookTitle, chapterTitle]);
 
   const currentExercise = exercises[currentIndex];
 
@@ -105,13 +122,16 @@ export const ChapterPracticeView: React.FC<Props> = ({
     setUserAnswers({});
     setRevealed({});
     setShowHint({});
+    setShowTranslationHint({});
+    setAssistedAttempts({});
     setCurrentIndex(0);
     setIsCompleted(false);
   };
 
   // Score calculation
-  const score = useMemo(() => {
+  const { score, unassistedScore } = useMemo(() => {
     let correct = 0;
+    let unassisted = 0;
     exercises.forEach(ex => {
       const chosen = userAnswers[ex.id];
       if (chosen !== undefined) {
@@ -124,11 +144,14 @@ export const ChapterPracticeView: React.FC<Props> = ({
         const shuffled = [...opts].sort((a, b) => (a.text > b.text ? 1 : -1));
         if (shuffled[chosen]?.isCorrect) {
           correct += 1;
+          if (!assistedAttempts[ex.id]) {
+            unassisted += 1;
+          }
         }
       }
     });
-    return correct;
-  }, [exercises, userAnswers]);
+    return { score: correct, unassistedScore: unassisted };
+  }, [exercises, userAnswers, assistedAttempts]);
 
   if (!currentExercise) {
     return (
@@ -162,10 +185,33 @@ export const ChapterPracticeView: React.FC<Props> = ({
           </button>
 
           <div className="text-center">
-            <span className="text-xs font-bold text-[#1e2d26]">
-              {bookTitle} · {chapterTitle} Practice
-            </span>
-            <div className="text-[10px] text-[#788278]">
+            {availableChapters && availableChapters.length > 1 && onSelectChapter ? (
+              <div className="flex items-center justify-center gap-1.5">
+                <select
+                  aria-label="Select chapter practice"
+                  value={`${bookTitle}::${chapterTitle}`}
+                  onChange={e => {
+                    const [b, c] = e.target.value.split('::');
+                    const target = availableChapters.find(ch => ch.bookTitle === b && ch.chapter === c);
+                    if (target) {
+                      onSelectChapter(target.bookId, target.chapter);
+                    }
+                  }}
+                  className="text-xs font-bold text-[#1e2d26] bg-[#faf9f5] border border-[#cfcebe] rounded px-2.5 py-1 focus:outline-none focus:border-[#467b6b] cursor-pointer"
+                >
+                  {availableChapters.map(ch => (
+                    <option key={`${ch.bookTitle}::${ch.chapter}`} value={`${ch.bookTitle}::${ch.chapter}`}>
+                      {ch.bookTitle} · {ch.chapter} ({ch.count} Qs)
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ) : (
+              <span className="text-xs font-bold text-[#1e2d26]">
+                {bookTitle} · {chapterTitle} Practice
+              </span>
+            )}
+            <div className="text-[10px] text-[#788278] mt-0.5">
               Target grammar hidden to test active recall
             </div>
           </div>
@@ -187,6 +233,11 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 You scored <span className="font-bold text-[#467b6b]">{score}</span> out of{' '}
                 <span className="font-bold">{exercises.length}</span> (
                 {Math.round((score / exercises.length) * 100)}%)
+                {unassistedScore < score && (
+                  <span className="block text-xs text-[#8f7142] mt-1">
+                    ({unassistedScore} answered unassisted without translation hint)
+                  </span>
+                )}
               </p>
             </div>
 
@@ -249,15 +300,60 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 </div>
               )}
 
+              {/* Situational Context (does NOT give away the target grammar or answer) */}
+              {currentExercise.context && (
+                <div className="text-xs text-[#526359] bg-[#f5f4ed] px-3 py-1.5 rounded border border-[#dfded3]">
+                  <span className="font-semibold text-[#283b35]">Context: </span>
+                  <span>{currentExercise.context}</span>
+                </div>
+              )}
+
               {/* Japanese Question Prompt */}
               <div className="font-serif-ja text-xl sm:text-2xl font-bold text-[#1e2d26] leading-relaxed">
                 <AnnotatedText text={currentExercise.question} />
               </div>
 
-              {/* English Context / Translation */}
-              <div className="text-sm text-[#617066] italic">
-                "<AnnotatedText text={currentExercise.translation} />"
-              </div>
+              {/* Translation Hint (Strictly hidden by default; opt-in assisted attempt) */}
+              {!isCurrentRevealed ? (
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowTranslationHint(prev => ({
+                        ...prev,
+                        [currentExercise.id]: !prev[currentExercise.id]
+                      }));
+                      setAssistedAttempts(prev => ({
+                        ...prev,
+                        [currentExercise.id]: true
+                      }));
+                    }}
+                    className="text-xs text-[#617066] hover:text-[#283b35] underline decoration-dotted flex items-center gap-1.5 transition-colors"
+                  >
+                    <Lightbulb className="w-3.5 h-3.5 text-[#8f7142]" />
+                    <span>
+                      {showTranslationHint[currentExercise.id]
+                        ? 'Hide Translation Hint'
+                        : '💡 Show Translation Hint (Assisted Attempt)'}
+                    </span>
+                  </button>
+                  {showTranslationHint[currentExercise.id] && (
+                    <div className="mt-2 text-xs sm:text-sm text-[#5c4a28] italic bg-[#faf8ee] p-2.5 rounded border border-[#e5deca]">
+                      "<AnnotatedText text={currentExercise.translation} />"
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="text-xs sm:text-sm text-[#4a584f] italic bg-[#f5f7f5] p-2.5 rounded border border-[#cfded0]">
+                  <span className="font-semibold not-italic text-[#2d5247]">Sentence Meaning: </span>
+                  "<AnnotatedText text={currentExercise.translation} />"
+                  {assistedAttempts[currentExercise.id] && (
+                    <span className="ml-2 text-[10px] font-semibold uppercase tracking-wider text-[#8f7142] bg-[#fbf3d5] px-1.5 py-0.5 rounded border border-[#d8c38a]">
+                      Assisted
+                    </span>
+                  )}
+                </div>
+              )}
 
               {/* Options Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">

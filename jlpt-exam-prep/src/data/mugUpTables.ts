@@ -8,33 +8,33 @@ export const MASTER_MUG_UP_TABLES: Record<string, MugUpTable> = {
     rows: [
       {
         label: 'Group 1: う・つ・る',
-        cells: ['買う (kau), 待つ (matsu), 取る (toru)', '買って, 待って, 取って', '買った, 待った, 取った', 'う・つ・る → って / った (Small つ + て)'],
-        note: 'Classic rhythm: "u, tsu, ru becomes tte"'
+        cells: ['買う, 待つ, 取る', '買って, 待って, 取って', '買った, 待った, 取った', 'う・つ・る → って / った (促音便: 小さい「っ」+ て)'],
+        note: 'Classic rhythm: "u, tsu, ru" becomes "tte"'
       },
       {
         label: 'Group 1: む・ぶ・ぬ',
-        cells: ['飲む (nomu), 遊ぶ (asobu), 死ぬ (shinu)', '飲んで, 遊んで, 死んで', '飲んだ, 遊んだ, 死んだ', 'む・ぶ・ぬ → んで / んだ (Voiced ん + で)'],
+        cells: ['飲む, 遊ぶ, 死ぬ', '飲んで, 遊んで, 死んで', '飲んだ, 遊んだ, 死んだ', 'む・ぶ・ぬ → んで / んだ (撥音便: 濁音の「で」)'],
         note: 'Voiced consonants always take で, not て.'
       },
       {
         label: 'Group 1: く / ぐ',
-        cells: ['書く (kaku), 泳ぐ (oyogu)', '書いて, 泳いで', '書いた, 泳いだ', 'く → いて, ぐ → いで (Drop consonant, add い)'],
-        note: 'CRITICAL EXCEPTION: 行く (iku) does NOT become いいて! It becomes 行って (itte) / 行った (itta)!'
+        cells: ['書く, 泳ぐ', '書いて, 泳いで', '書いた, 泳いだ', 'く → いて, ぐ → いで (イ音便: い + て/で)'],
+        note: 'CRITICAL EXCEPTION: 行く は「いいて」にならず、「行って・行った」と促音便になります。'
       },
       {
         label: 'Group 1: す',
-        cells: ['話す (hanasu), 出す (dasu)', '話して, 出して', '話した, 出した', 'す → して / した (Regular change)'],
+        cells: ['話す, 出す', '話して, 出して', '話した, 出した', 'す → して / した'],
         note: 'Behaves cleanly like polite shimasu.'
       },
       {
-        label: 'Group 2: る (Ichidan)',
-        cells: ['食べる (taberu), 見る (miru), 起きる (okiru)', '食べて, 見て, 起きて', '食べた, 見た, 起きた', 'Simply drop る and attach て / た'],
-        note: 'Vowel before る is usually e or i (tabe-, mi-).'
+        label: 'Group 2: る (一段動詞)',
+        cells: ['食べる, 見る, 起きる', '食べて, 見て, 起きて', '食べた, 見た, 起きた', 'る を取って「て・た」を付ける'],
+        note: 'Vowel before る is usually e or i (たべ・み).'
       },
       {
-        label: 'Group 3: Irregular (変格)',
-        cells: ['する (suru), 来る (kuru)', 'して, 来て (きて)', 'した, 来た (きた)', 'Completely irregular, mug up pronunciation of 来 (ki-te, ki-ta)!'],
-        note: 'Notice 来る (kuru) changes reading to "ki" in て/た form!'
+        label: 'Group 3: Irregular (変格動詞)',
+        cells: ['する, 来る', 'して, 来て', 'した, 来た', '不規則活用: 来る は「来て（きて）・来た（きた）」と読みが変化します。'],
+        note: 'Notice 来る changes reading to 「き」 in て/た form: 来て（きて）, 来た（きた）.'
       }
     ]
   },
@@ -259,16 +259,16 @@ genki1TimeAndAgeMatrix: {
           'Geminate / Voiced ぷん: 1分(いっぷん), 3分(さんぷん), 4分(よんぷん), 6分(ろっぷん), 8分(はっぷん/はちふん), 10分(じゅっぷん/じっぷん)',
           '何分 (なんぷん)? Half past = 半 (はん): 1時半 (1:30)'
         ],
-        note: 'Mnemonic: 1, 3, 4, 6, 8, 10 take ぷん (pun).'
+        note: 'Mnemonic: 1, 3, 4, 6, 8, 10 は半濁音の「ぷん」になります。'
       },
       {
         label: 'Age (〜歳: さい)',
         cells: [
           '2歳(にさい), 3歳(さんさい), 4歳(よんさい), 5歳(ごさい), 6歳(ろくさい), 7歳(ななさい), 9歳(きゅうさい)',
-          '⚠️ 1歳 = いっさい, 8歳 = はっさい, 10歳 = じゅっさい (じっさい), 20歳 = はたち (special standalone reading!)',
+          '⚠️ 1歳 = いっさい, 8歳 = はっさい, 10歳 = じゅっさい (じっさい), 20歳 = はたち (二十歳)',
           '何歳 (なんさい)? Polite: おいくつですか。'
         ],
-        note: '20 years old is はたち (hatachi), no さい suffix attached!'
+        note: '20歳 は「はたち（二十歳）」と読み、後ろに「さい」は付きません。'
       },
       {
         label: 'Telephone & School Year',
@@ -328,20 +328,20 @@ genki1TimeAndAgeMatrix: {
       {
         label: 'い-Adjectives (True Adjectives)',
         cells: [
-          '高いです (takai desu)',
+          '高いです',
           '高くないです / 高くありません (Drop い → くない)',
           '高かったです (Drop い → かった)',
           '高くなかったです / 高くありませんでした (Drop い → くなかった)',
           'Direct attachment: 高い本 (An expensive book)'
         ],
-        note: '⚠️ THE IRREGULAR "GOOD": いい (ii) stems from よい! Negative: よくないです, Past: よかったです, Past Neg: よくなかったです. NEVER "いくない" ❌!'
+        note: '⚠️ THE IRREGULAR "GOOD": いい は「良い（よい）」から変化します。否定: よくないです, 過去: よかったです, 過去否定: よくなかったです。「いくない」は誤り ❌!'
       },
       {
         label: 'な-Adjectives (Adjectival Nouns)',
         cells: [
-          '静かです (shizuka desu)',
+          '静かです',
           '静かじゃないです / 静かではありません',
-          '静かでした (shizuka deshita)',
+          '静かでした',
           '静かじゃなかったです / 静かではありませんでした',
           'Requires な before noun: 静かな町 (A quiet town)'
         ],
@@ -494,7 +494,7 @@ genki1TimeAndAgeMatrix: {
       {
         label: 'Put in / Enter',
         cells: ['本をかばんに入れる (Put book in bag)', '部屋に入る (Enter room)', 'かばんに本が入っている (A book is inside the bag)'],
-        note: '入る is an U-verb exception (hairu).'
+        note: '「入る（はいる）」は一段動詞の形ですが、五段（う動詞）活用です。'
       },
       {
         label: 'Take out / Come out',

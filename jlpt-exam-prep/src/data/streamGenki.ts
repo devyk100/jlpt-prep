@@ -108,7 +108,7 @@ export const STREAM_GENKI_POINTS: GrammarPoint[] = [
     streamId: 'stream-time',
     streamName: 'Chronos & Instant Transitions',
     connection: 'う・つ・る→って | む・ぶ・ぬ→んで | く→いて (行く→行って!) | ぐ→いで | す→して | る(一段)→て',
-    nuance: 'CRITICAL EXCEPTION: 行く (iku) does NOT become いいて. It irregularly contracts to 行って (itte)!',
+    nuance: 'CRITICAL EXCEPTION: 行く は「いいて」にならず、「行って」と促音便になります。',
     keyTakeaway: 'MUG-UP: V-て + ください = Please do. Prohibited: V-て + はいけません = Must not.',
     table: MASTER_MUG_UP_TABLES.teFormMatrix,
     sentences: [

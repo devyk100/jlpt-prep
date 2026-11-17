@@ -253,3 +253,57 @@ test('mode separation: in-lesson tables, leakage-free chapter practice, and revi
   await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
   await expect(page.getByRole('button', { name: /Jump to Lesson in Textbook/ })).toBeVisible();
 });
+
+test('default Japanese-only examples, independent translation disclosure, and translation-leak-free practice', async ({ page }) => {
+  await page.goto('/');
+
+  // 1. Open Genki I Lesson 1 first lesson card
+  await page.locator('[role="button"]').filter({ hasText: 'X は Y です' }).first().click();
+
+  // Verify Japanese examples are visible while English translations are hidden by default
+  const showMeaningButtons = page.getByRole('button', { name: 'Show meaning' });
+  await expect(showMeaningButtons.first()).toBeVisible();
+  const count = await showMeaningButtons.count();
+  expect(count).toBeGreaterThanOrEqual(2);
+
+  // Translations should NOT be visible yet
+  await expect(page.getByText('Translation:').first()).not.toBeVisible();
+
+  // 2. Click "Show meaning" on the first sentence only
+  await showMeaningButtons.first().click();
+  await expect(page.getByText('Translation:').first()).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Hide meaning' }).first()).toBeVisible();
+
+  // The second sentence must still remain hidden
+  const remainingShowMeaning = page.getByRole('button', { name: 'Show meaning' });
+  await expect(remainingShowMeaning.first()).toBeVisible();
+
+  // 3. Switch to Practice Mode
+  await page.getByRole('button', { name: /Practice \(練習\)/ }).click();
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // Verify prompt translation is hidden by default before answering
+  await expect(page.getByText('I am Sora Kim. I am Korean.')).not.toBeVisible();
+  const hintBtn = page.getByRole('button', { name: /Show Translation Hint/ });
+  await expect(hintBtn).toBeVisible();
+
+  // Click translation hint to test opt-in assisted attempt
+  await hintBtn.click();
+  await expect(page.getByText('I am Sora Kim. I am Korean.')).toBeVisible();
+  await expect(page.getByRole('button', { name: /Hide Translation Hint/ })).toBeVisible();
+
+  // Select the correct option and verify feedback + assisted marker
+  const optButton = page.locator('.grid button').filter({ hasText: 'は' }).first();
+  await optButton.click();
+  await expect(page.getByText('Assisted')).toBeVisible();
+  await expect(page.getByText('Sentence Meaning:')).toBeVisible();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+
+  // 4. Verify chapter switcher dropdown allows seamless chapter switching
+  await page.getByLabel('Select chapter practice').selectOption({ label: 'Genki I · Lesson 2 (12 Qs)' });
+  await expect(page.getByText('Question 1')).toBeVisible();
+  const optKore = page.locator('.grid button').filter({ hasText: 'これ' }).first();
+  await expect(optKore).toBeVisible();
+  await optKore.click();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+});

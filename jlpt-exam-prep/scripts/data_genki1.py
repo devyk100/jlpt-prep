@@ -395,7 +395,7 @@ def get_genki1_points():
             "streamId": "stream-time",
             "streamName": "Chronos & Instant Transitions",
             "connection": "う・つ・る→って | む・ぶ・ぬ→んで | く→いて (行く→行って!) | ぐ→いで | す→して | 一段(る)→て",
-            "nuance": "CRITICAL EXCEPTION: 行く (iku) does NOT conjugate into いいて. It irregularly contracts to 行って (itte)!",
+            "nuance": "CRITICAL EXCEPTION: 行く は「いいて」にならず、「行って」と促音便になります。",
             "keyTakeaway": "MUG-UP: V-て + ください = Please do. Prohibited: V-て + はいけません = Must not.",
             "sentences": [
                 make_sentence(

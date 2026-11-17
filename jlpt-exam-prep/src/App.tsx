@@ -218,6 +218,29 @@ export function App() {
     return matched.length > 0 ? matched : chapterExercises;
   }, [practiceTarget]);
 
+  // Aggregate available practice chapters
+  const availablePracticeChapters = useMemo(() => {
+    const map = new Map<string, { bookId: string; bookTitle: string; chapter: string; count: number }>();
+    chapterExercises.forEach(ex => {
+      const key = `${ex.bookId}::${ex.chapter}`;
+      const existing = map.get(key);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        const bookTitle =
+          ex.bookId === 'genki-1'
+            ? 'Genki I'
+            : ex.bookId === 'genki-2'
+            ? 'Genki II'
+            : ex.bookId === 'skm-n3'
+            ? 'Shin Kanzen Master N3'
+            : 'Shin Kanzen Master N2';
+        map.set(key, { bookId: ex.bookId, bookTitle, chapter: ex.chapter, count: 1 });
+      }
+    });
+    return Array.from(map.values());
+  }, []);
+
   return (
     <ReadingContext.Provider value={{ mode: furiganaMode, level: currentPoint.level }}>
       <div className="min-h-screen bg-[#f6f5ef] text-[#24332c] flex flex-col font-sans">
@@ -278,6 +301,18 @@ export function App() {
               exercises={currentChapterExercises}
               bookTitle={practiceTarget.bookTitle}
               chapterTitle={practiceTarget.chapter}
+              availableChapters={availablePracticeChapters}
+              onSelectChapter={(bookId, chapter) => {
+                const bookTitle =
+                  bookId === 'genki-1'
+                    ? 'Genki I'
+                    : bookId === 'genki-2'
+                    ? 'Genki II'
+                    : bookId === 'skm-n3'
+                    ? 'Shin Kanzen Master N3'
+                    : 'Shin Kanzen Master N2';
+                setPracticeTarget({ bookId, bookTitle, chapter });
+              }}
               onNavigateToLesson={handleNavigateToLesson}
               onExitPractice={() => setStudyMode('learn')}
             />
