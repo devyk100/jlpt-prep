@@ -3,7 +3,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import {
   ALL_GRAMMAR_POINTS,
-  STREAMS,
   GRAMMAR_BY_ID
 } from './data/grammarData';
 import { Topbar, type StudyMode } from './components/Topbar';
@@ -123,9 +122,27 @@ export function App() {
     return ALL_GRAMMAR_POINTS[0].id;
   });
 
+  // Active route derived dynamically from URL
+  const currentRoute = useMemo(() => {
+    return parseRoute(location.pathname, location.hash);
+  }, [location.pathname, location.hash]);
+
+  // Derived effective mode, target, and point ID (always 100% synchronous with URL)
+  const effectiveStudyMode: StudyMode = currentRoute.isExplicitRoute && currentRoute.mode
+    ? currentRoute.mode
+    : studyMode;
+
+  const effectivePracticeTarget = currentRoute.isExplicitRoute && currentRoute.practiceTarget
+    ? currentRoute.practiceTarget
+    : practiceTarget;
+
+  const effectivePointId = currentRoute.isExplicitRoute && currentRoute.mode === 'learn' && currentRoute.pointId && GRAMMAR_BY_ID[currentRoute.pointId]
+    ? currentRoute.pointId
+    : currentPointId;
+
   const currentPoint = useMemo(() => {
-    return GRAMMAR_BY_ID[currentPointId] || ALL_GRAMMAR_POINTS[0];
-  }, [currentPointId]);
+    return GRAMMAR_BY_ID[effectivePointId] || ALL_GRAMMAR_POINTS[0];
+  }, [effectivePointId]);
 
   // Studied Points state
   const [studiedPoints, setStudiedPoints] = useState<Record<string, boolean>>(() => {
@@ -313,10 +330,10 @@ export function App() {
   // Filter practice exercises for target
   const currentChapterExercises = useMemo(() => {
     const matched = chapterExercises.filter(
-      ex => ex.bookId === practiceTarget.bookId && ex.chapter.toLowerCase().includes(practiceTarget.chapter.toLowerCase())
+      ex => ex.bookId === effectivePracticeTarget.bookId && ex.chapter.toLowerCase().includes(effectivePracticeTarget.chapter.toLowerCase())
     );
     return matched.length > 0 ? matched : chapterExercises;
-  }, [practiceTarget]);
+  }, [effectivePracticeTarget]);
 
   // Aggregate available practice chapters
   const availablePracticeChapters = useMemo(() => {
@@ -346,7 +363,7 @@ export function App() {
       <div className="min-h-screen bg-[#f6f5ef] text-[#24332c] flex flex-col font-sans">
         {/* Clean Topbar Header */}
         <Topbar
-          activeMode={studyMode}
+          activeMode={effectiveStudyMode}
           onModeChange={handleModeChange}
           selectedFilter={selectedFilter}
           onFilterChange={setSelectedFilter}
@@ -366,7 +383,7 @@ export function App() {
           {/* Left Pane: Index, Filters & Search */}
           <SidebarPane
             points={ALL_GRAMMAR_POINTS}
-            currentPointId={currentPointId}
+            currentPointId={effectivePointId}
             onSelectPoint={handleSelectPoint}
             studiedPoints={studiedPoints}
             onToggleCompleted={handleToggleCompleted}
@@ -379,7 +396,7 @@ export function App() {
           />
 
           {/* Right Pane: Active Mode View */}
-          {studyMode === 'learn' && (
+          {effectiveStudyMode === 'learn' && (
             <DeskPane
               key={currentPoint.id}
               point={currentPoint}
@@ -396,11 +413,11 @@ export function App() {
             />
           )}
 
-          {studyMode === 'practice' && (
+          {effectiveStudyMode === 'practice' && (
             <ChapterPracticeView
               exercises={currentChapterExercises}
-              bookTitle={practiceTarget.bookTitle}
-              chapterTitle={practiceTarget.chapter}
+              bookTitle={effectivePracticeTarget.bookTitle}
+              chapterTitle={effectivePracticeTarget.chapter}
               availableChapters={availablePracticeChapters}
               onSelectChapter={(bookId, chapter) => {
                 const bookTitle =
@@ -417,12 +434,12 @@ export function App() {
               onNavigateToLesson={handleNavigateToLesson}
               onExitPractice={() => {
                 setStudyMode('learn');
-                navigate(`/learn/${currentPointId}`);
+                navigate(`/learn/${effectivePointId}`);
               }}
             />
           )}
 
-          {studyMode === 'revision' && (
+          {effectiveStudyMode === 'revision' && (
             <RevisionDeskView
               onNavigateToLesson={handleNavigateToLesson}
               onExitRevision={() => {

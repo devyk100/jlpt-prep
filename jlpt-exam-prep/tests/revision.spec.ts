@@ -28,7 +28,7 @@ test('all content links, sentences and shuffled answers remain intact', () => {
 test('catalog, keyboard search and complete sentence display', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
-  await expect(page.getByText('374 points', { exact: true })).toBeVisible();
+  await expect(page.getByText('315 points', { exact: true })).toBeVisible();
   await page.getByTitle('View Canonical Books Coverage').click();
   const catalog = page.getByRole('dialog');
   await expect(catalog).toBeVisible();
@@ -91,7 +91,7 @@ test('book-default readings and heading meanings work at N3 and N2', async ({ pa
   await expect(page.getByRole('tooltip')).toContainText('nothing beats; best to');
   await expect(page.getByRole('tooltip')).toContainText('にかぎる');
   await page.keyboard.press('Escape');
-  await page.evaluate(() => localStorage.setItem('bunpou_current_point_id', 'gp-ni-kagiri'));
+  await page.evaluate(() => localStorage.setItem('bunpou_current_point_id', 'added-n2-5-77'));
   await page.reload();
   await expect(page.locator('h1 rt')).toHaveCount(0);
   await page.locator('h1').getByRole('button').filter({ hasText: 'に限り' }).hover();
