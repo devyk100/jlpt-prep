@@ -10,17 +10,18 @@ Updated: 2026-11-17. Working project: C:\JLPT\jlpt-exam-prep.
 
 The user explicitly reiterated **Genki I too**. Audit all 12 Genki I lessons with the same depth required for Genki II, SKM N3, SKM N2 and supplementary comparisons. Do not treat introductory grammar as obvious or exempt it from source verification. Include topic omission, noun predicates, particles, conjugation, tense/aspect, attachment, contextual interpretations, and the distinct uses of each pattern. Check examples, translations, quizzes and hover readings as well as explanations.
 
-Current live inventory: **370 cards, 1,178 examples, 218 quizzes**.
+Current live inventory: **370 cards, 1,202 examples, 218 quizzes**.
 - Genki I: 51 cards / 161 examples (avg 3.2 per card)
 - Genki II: 52 cards / 165 examples (avg 3.2 per card)
 - N3 textbook: 80 cards / 268 examples (avg 3.4 per card)
-- N2 textbook: 117 cards / 379 examples (avg 3.2 per card; main chapters 1–26, Form reviews A–G, Part 2, and Part 3 all live; Form review C enriched with 7 use-examples, Part 3 Ch. 10 enriched with 5 use-examples)
-- Supplementary: 70 cards / 205 examples (avg 2.9 per card; all 39 previous singletons enriched; nominalization and punctuality repaired on ni-kurabete)
+- N2 textbook: 117 cards / 403 examples (avg 3.4 per card; Form review C enriched to 10 examples, Part 3 Ch. 10 enriched to 24 examples covering all 9 discourse categories)
+- Supplementary: 70 cards / 205 examples (avg 2.9 per card)
 - **Zero single-sentence cards remaining across all 370 cards.**
-- **Zero unknown kanji terms in `audit/reading-unresolved.json`** across 4,792 spans.
-- `audit/card-review.json` reconciled: 18 independently page-verified cards with specific evidence notes; 352 partial (authored/enriched with syllabus mapping and multi-use examples, awaiting independent visual page audits).
+- **Zero unknown kanji terms in `audit/reading-unresolved.json`** across 4,867 spans.
+- `audit/card-review.json` ledger: 16 verified cards; 354 partial (all enriched with syllabus mapping and multi-use examples, awaiting independent visual page audits).
+- `audit/source-coverage-matrix.json` initiated: book-first mapping tracking substantive topics outward.
 
-Supervision pass 2026-11-17 repairs applied: contextual tokenization logic distinguishing minute counters (じゅっぷん/さんじゅっぷん) from sufficiency (じゅうぶん/じゅうぶんに), homograph filtering for particles (くらい/ぐらい), unambiguous N2 quiz options for skm2-c9-ni-oujite, authentic examples for classical forms (added-n2-c-118) and text connectors (added-n2-p3-10-150). All 6 Playwright tests passed (20.9s), including contextual annotation regressions. Production build passed (1.12s, 0 errors). Full textbook-by-textbook source verification remains an active ongoing process.
+Supervision round 2 repairs completed: connector section `added-n2-p3-10-150` reopened and expanded across all 9 discourse categories from SKM N2 printed pp. 186-187 (24 examples); classical-form review `added-n2-c-118` reopened, naturalized weather conjecture, and enriched with `つつある` and `ではあるまいか`; contextual hover meanings corrected for aspectual compound verbs (`食べ切る`, `走り切る`, `出し切る`, `読み通す`), conditional `ものなら`, and domain vs physical `上`. All 7 Playwright tests passed (21.9s). Production build passed (1.36s, 0 errors). Full textbook-by-textbook source verification remains an active ongoing process.
 
 ## User requirements (preserve these)
 

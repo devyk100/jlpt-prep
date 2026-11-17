@@ -19940,14 +19940,14 @@
   },
   {
     "id": "added-n2-c-118",
-    "title": "古い形：ず・ざる・まい・つつ・せよ・べし",
-    "meaning": "Recognize classical forms surviving in modern grammar.",
+    "title": "古い形：ず・ざる・べし・まい・つつ・せよ（古典文法の残存形式）",
+    "meaning": "Systematic review of classical grammatical forms surviving in modern Japanese: negative ず/ざる, obligation べし (べき), negative intention/conjecture まい/ではあるまいか, simultaneous/progressive/concessive つつ/つつある/つつも, and conditional/imperative せよ (にせよ).",
     "level": "N2",
     "streamId": "book-n2",
     "streamName": "Shin Kanzen Master N2 revision",
-    "connection": "Negative stem + ず / ざる; V + まい; stem + つつ(も); N/Plain + にせよ; V-dict + べき",
-    "nuance": "ず/ざる (negative), まい (negative intention/conjecture), つつ (simultaneous/concessive), にせよ (concession from imperative せよ), べき (duty from べし).",
-    "keyTakeaway": "Negative stem + ず / ざる; V + まい; stem + つつ(も); N/Plain + にせよ; V-dict + べき",
+    "connection": "V-未然形 + ず/ざる; V-dict + べき/べからず; V-dict + まい / ではあるまいか; V-stem + つつ/つつある/つつも; N/Plain + にせよ",
+    "nuance": "SKM N2 p. 126 Form Review C systematically contrasts classical forms across modern grammar: (1) ず/ざる: archaic negative marker surviving in ずじまいだ (Ch. 20), ずにはいられない (Ch. 25), ざるを得ない (Ch. 25), にもかかわらず (Ch. 14), を問わず (Ch. 11), and simple negative connector ずに. (2) べし: classical modal surviving as べきだ / べきではない (Ch. 23) expressing natural obligation or moral duty. (3) まい: classical negative auxiliary expressing negative determination ('will not') and negative conjecture ('probably will not'), as well as rhetorical conjecture ではあるまいか. (4) つつ: classical continuative auxiliary expressing simultaneous action equivalent to ながら, progressive change with つつある ('in the process of changing'), and concessive contrast with つつも ('although/while'). (5) せよ: classical imperative of する surviving in concessive conditions such as にせよ / にせよ〜にせよ ('even granting / regardless of whether').",
+    "keyTakeaway": "V-未然形 + ず/ざる; V-dict + べき/べからず; V-dict + まい / ではあるまいか; V-stem + つつ/つつある/つつも; N/Plain + にせよ",
     "sentences": [
       {
         "id": "added-n2-c-118-example",
@@ -19956,60 +19956,76 @@
         "tokens": []
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-215",
-        "japanese": "これだけの証拠を突きつけられては、事実を認めざるを得ない。",
-        "english": "Confronted with this much evidence, I have no choice but to admit the truth.",
+        "id": "added-n2-c-118::n2-use-examples-330",
+        "japanese": "これだけの動かぬ証拠を突きつけられては、自らの過ちを認めざるを得ない。",
+        "english": "Confronted with this much irrefutable evidence, I have no choice but to admit my own mistake.",
         "tokens": [],
         "useLabel": "Archaic negative in fixed idiom (ざる)",
-        "nuanceNote": "ざる survives in the modern construction ざるを得ない."
+        "nuanceNote": "ざる survives in modern Japanese within the fixed modal construction ざるを得ない ('cannot avoid doing / compelled to do')."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-216",
-        "japanese": "二度とあのような愚かな過ちは繰り返すまいと心に誓った。",
-        "english": "I vowed in my heart never to repeat such a foolish mistake.",
+        "id": "added-n2-c-118::n2-use-examples-331",
+        "japanese": "二度とあのような浅はかで愚かな過ちは繰り返すまいと、心に固く誓った。",
+        "english": "I firmly vowed in my heart never again to repeat such a shallow and foolish mistake.",
         "tokens": [],
         "useLabel": "Negative determination (まい)",
-        "nuanceNote": "V-辞書形 + まい expresses strong negative intention ('will not')."
+        "nuanceNote": "V-辞書形 + まい expresses the speaker's firm negative intention or determination ('will definitely not do')."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-217",
-        "japanese": "この空模様では、今夜の雨は降るまい。",
-        "english": "Given this weather, it probably will not rain tonight.",
+        "id": "added-n2-c-118::n2-use-examples-332",
+        "japanese": "西の空の雲行きから判断すると、今夜は雨が降るまい。",
+        "english": "Judging from the clouds in the western sky, it probably will not rain tonight.",
         "tokens": [],
         "useLabel": "Negative conjecture (まい)",
-        "nuanceNote": "V-辞書形 + まい expresses negative conjecture ('probably will not')."
+        "nuanceNote": "V-辞書形 + まい expresses the speaker's negative conjecture or strong deduction ('probably will not happen')."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-218",
-        "japanese": "将来の進路について悩みつつも、日々の勉強を続けている。",
-        "english": "While agonizing over my future course, I continue my daily studies.",
+        "id": "added-n2-c-118::n2-use-examples-333",
+        "japanese": "現状のまま問題を先送りにすれば、事態はさらに深刻化するのではあるまいか。",
+        "english": "If we simply postpone the problem as things currently stand, won't the situation become even more critical?",
         "tokens": [],
-        "useLabel": "Concessive contrast (つつも)",
-        "nuanceNote": "V-stem + つつも expresses concession ('although / while')."
+        "useLabel": "Negative rhetorical conjecture with ではあるまいか",
+        "nuanceNote": "ではあるまいか functions as a formal rhetorical question expressing tentative opinion or cautious conjecture."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-219",
-        "japanese": "資料に目を通しつつ、会議の開始を待った。",
-        "english": "While glancing through the documents, I waited for the meeting to start.",
+        "id": "added-n2-c-118::n2-use-examples-334",
+        "japanese": "最新の配布資料に素早く目を通しつつ、会議の開始を待った。",
+        "english": "While quickly looking through the newly distributed handouts, I waited for the meeting to begin.",
         "tokens": [],
         "useLabel": "Formal simultaneous action (つつ)",
-        "nuanceNote": "V-stem + つつ expresses formal simultaneous action equivalent to ながら."
+        "nuanceNote": "V-stem + つつ expresses formal simultaneous action in written and professional contexts equivalent to ながら."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-220",
-        "japanese": "理由の如何にせよ、無断欠席は認められない。",
-        "english": "Whatever the reason may be, unexcused absence cannot be permitted.",
+        "id": "added-n2-c-118::n2-use-examples-335",
+        "japanese": "先端医療技術の長年の研究により、難病の治癒率は年々着実に向上しつつある。",
+        "english": "Through years of research in advanced medical technology, the cure rate for intractable diseases is steadily improving year by year.",
         "tokens": [],
-        "useLabel": "Concession with せよ (にせよ)",
-        "nuanceNote": "にせよ derives from the imperative せよ and means 'even granting / regardless of'."
+        "useLabel": "Progressive developing change with つつある",
+        "nuanceNote": "V-stem + つつある expresses an ongoing, developing change or transition currently in progress."
       },
       {
-        "id": "added-n2-c-118::n2-use-examples-221",
-        "japanese": "できる限りの準備は今するべきだ。",
-        "english": "We ought to make whatever preparations we can right now.",
+        "id": "added-n2-c-118::n2-use-examples-336",
+        "japanese": "将来の進路について深く悩みつつも、毎日の勉強と研究を地道に続けている。",
+        "english": "While agonizing deeply over my future path, I steadily continue my daily studies and research.",
         "tokens": [],
-        "useLabel": "Formal duty with べき (べし)",
-        "nuanceNote": "べき derives from classical べし and expresses moral duty or logical necessity."
+        "useLabel": "Concessive contrast (つつも)",
+        "nuanceNote": "V-stem + つつも sets up an ongoing concessive tension ('although / even while recognizing...')."
+      },
+      {
+        "id": "added-n2-c-118::n2-use-examples-337",
+        "japanese": "どのような個人的な理由があるにせよ、事前の連絡なき無断欠席は決して認められない。",
+        "english": "Whatever personal reasons one might have, unannounced absence without prior notice is strictly unacceptable.",
+        "tokens": [],
+        "useLabel": "Concessive condition with せよ (にせよ)",
+        "nuanceNote": "にせよ derives from classical imperative せよ and establishes a concessive condition ('even granting / regardless of')."
+      },
+      {
+        "id": "added-n2-c-118::n2-use-examples-338",
+        "japanese": "市民の安全を守るため、行政として今できる限りの防災対策を講じるべきだ。",
+        "english": "In order to protect citizen safety, the municipal government ought to implement every possible disaster prevention measure right now.",
+        "tokens": [],
+        "useLabel": "Formal obligation and duty with べき (べし)",
+        "nuanceNote": "べき derives from classical べし and expresses moral duty, natural obligation, or logical necessity."
       }
     ],
     "quiz": [],
@@ -20039,7 +20055,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-d-119::n2-use-examples-222",
+        "id": "added-n2-d-119::n2-use-examples-215",
         "japanese": "この本は読んだことは読んだが、内容があまり理解できなかった。",
         "english": "I did indeed read this book, but I could not understand much of the content.",
         "tokens": [],
@@ -20047,7 +20063,7 @@
         "nuanceNote": "V-たことはV-たが concedes the action occurred before stating a reservation."
       },
       {
-        "id": "added-n2-d-119::n2-use-examples-223",
+        "id": "added-n2-d-119::n2-use-examples-216",
         "japanese": "嬉しいことに、第一志望の大学から合格通知が届いた。",
         "english": "Delightfully, an acceptance letter arrived from my top-choice university.",
         "tokens": [],
@@ -20082,7 +20098,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-d-120::n2-use-examples-224",
+        "id": "added-n2-d-120::n2-use-examples-217",
         "japanese": "連絡がないということは、今回の交渉は不成立に終わったということだ。",
         "english": "The fact that there is no contact means that this negotiation ended without an agreement.",
         "tokens": [],
@@ -20090,7 +20106,7 @@
         "nuanceNote": "AということはBということだ draws a logical interpretation of what a situation signifies."
       },
       {
-        "id": "added-n2-d-120::n2-use-examples-225",
+        "id": "added-n2-d-120::n2-use-examples-218",
         "japanese": "天気予報によると、午後から沿岸部で強い雨が降るということです。",
         "english": "According to the weather forecast, heavy rain will reportedly fall in coastal areas from this afternoon.",
         "tokens": [],
@@ -20125,7 +20141,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-e-121::n2-use-examples-226",
+        "id": "added-n2-e-121::n2-use-examples-219",
         "japanese": "夜通し起きて作業をしていたのか。道理で眠そうな顔をしているわけだ。",
         "english": "You were up working all night? No wonder you look so sleepy.",
         "tokens": [],
@@ -20133,7 +20149,7 @@
         "nuanceNote": "わけだ concludes that an observed state is entirely natural given the discovered explanation."
       },
       {
-        "id": "added-n2-e-121::n2-use-examples-227",
+        "id": "added-n2-e-121::n2-use-examples-220",
         "japanese": "富士山がよく見えるところから、この坂は「富士見坂」と名付けられた。",
         "english": "Because Mount Fuji is clearly visible from here, this slope was named Fujimizaka.",
         "tokens": [],
@@ -20168,7 +20184,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-f-122::n2-use-examples-228",
+        "id": "added-n2-f-122::n2-use-examples-221",
         "japanese": "彼は忙しいだの疲れただのと文句ばかり言って、少しも手伝おうとしない。",
         "english": "He keeps complaining that he is busy or tired, and makes no effort to help.",
         "tokens": [],
@@ -20176,7 +20192,7 @@
         "nuanceNote": "AだのBだの lists examples with an informal, often critical tone."
       },
       {
-        "id": "added-n2-f-122::n2-use-examples-229",
+        "id": "added-n2-f-122::n2-use-examples-222",
         "japanese": "当施設の利用は登録会員のみに限定されており、一般の入場はできません。",
         "english": "Use of this facility is strictly limited to registered members only; general admission is not permitted.",
         "tokens": [],
@@ -20211,7 +20227,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-g-123::n2-use-examples-230",
+        "id": "added-n2-g-123::n2-use-examples-223",
         "japanese": "疲れてベッドに横になったとたんに、あっという間に眠りに落ちた。",
         "english": "The moment I lay down on the bed from exhaustion, I fell fast asleep in an instant.",
         "tokens": [],
@@ -20219,7 +20235,7 @@
         "nuanceNote": "たとたん typically pairs with an immediate, non-volitional event in clause two."
       },
       {
-        "id": "added-n2-g-123::n2-use-examples-231",
+        "id": "added-n2-g-123::n2-use-examples-224",
         "japanese": "一人で遠い国に暮らしていると、家族の声が無性に聞きたくてたまらない。",
         "english": "Living alone in a distant country, I am dying to hear my family's voices.",
         "tokens": [],
@@ -20254,7 +20270,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p2-1-128::n2-use-examples-232",
+        "id": "added-n2-p2-1-128::n2-use-examples-225",
         "japanese": "必要な書類を揃えないことには、申請を受け付けることはできません。",
         "english": "Unless you gather all the required documents, we cannot accept your application.",
         "tokens": [],
@@ -20262,7 +20278,7 @@
         "nuanceNote": "〜ないことには pairs with a negative result clause 〜ない."
       },
       {
-        "id": "added-n2-p2-1-128::n2-use-examples-233",
+        "id": "added-n2-p2-1-128::n2-use-examples-226",
         "japanese": "今夜から明日の明け方にかけて、激しい雷雨になる見込みです。",
         "english": "From tonight through tomorrow dawn, severe thunderstorms are expected.",
         "tokens": [],
@@ -20297,7 +20313,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p2-2-129::n2-use-examples-234",
+        "id": "added-n2-p2-2-129::n2-use-examples-227",
         "japanese": "国民の信頼に応える政治を行うことが、今最も求められている。",
         "english": "Conducting politics that responds to the trust of the citizens is what is most demanded now.",
         "tokens": [],
@@ -20305,7 +20321,7 @@
         "nuanceNote": "〜に応える directly modifies the abstract noun 政治 within the subject clause."
       },
       {
-        "id": "added-n2-p2-2-129::n2-use-examples-235",
+        "id": "added-n2-p2-2-129::n2-use-examples-228",
         "japanese": "環境問題に関する国際的な関心は、年々高まりを見せている。",
         "english": "International interest concerning environmental issues is showing an increase year by year.",
         "tokens": [],
@@ -20340,7 +20356,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p2-3-130::n2-use-examples-236",
+        "id": "added-n2-p2-3-130::n2-use-examples-229",
         "japanese": "この提案に賛成できないわけではないが、予算の配分には再考の余地がある。",
         "english": "It is not that I cannot agree to this proposal, but there is room to reconsider the budget allocation.",
         "tokens": [],
@@ -20348,7 +20364,7 @@
         "nuanceNote": "わけではない restricts negation so that the proposition is not categorically denied."
       },
       {
-        "id": "added-n2-p2-3-130::n2-use-examples-237",
+        "id": "added-n2-p2-3-130::n2-use-examples-230",
         "japanese": "彼ほどの能力があれば、この難問を解決できないこともないだろう。",
         "english": "With abilities like his, it is not impossible that he could solve this difficult problem.",
         "tokens": [],
@@ -20383,7 +20399,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-1-141::n2-use-examples-238",
+        "id": "added-n2-p3-1-141::n2-use-examples-231",
         "japanese": "たとえ困難な道であっても、最後まで全力を尽くすつもりです。",
         "english": "Even if it is a difficult road, I intend to give it my all until the very end.",
         "tokens": [],
@@ -20391,7 +20407,7 @@
         "nuanceNote": "Opening たとえ correlates with closing volitional/commitment expression."
       },
       {
-        "id": "added-n2-p3-1-141::n2-use-examples-239",
+        "id": "added-n2-p3-1-141::n2-use-examples-232",
         "japanese": "もし彼が関与していたとしたら、事態は極めて深刻だと言わざるを得ない。",
         "english": "If he were indeed involved, we would have no choice but to say the situation is extremely serious.",
         "tokens": [],
@@ -20426,7 +20442,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-2-142::n2-use-examples-240",
+        "id": "added-n2-p3-2-142::n2-use-examples-233",
         "japanese": "食事をする前に手を洗い、食事が終わった後で薬を飲んだ。",
         "english": "I washed my hands before eating, and took my medicine after the meal finished.",
         "tokens": [],
@@ -20434,7 +20450,7 @@
         "nuanceNote": "Tense before 前 is non-past (する); tense after 終わった reflects completed sequence."
       },
       {
-        "id": "added-n2-p3-2-142::n2-use-examples-241",
+        "id": "added-n2-p3-2-142::n2-use-examples-234",
         "japanese": "昨日見た映画は、昔読んだ小説を映画化したものだった。",
         "english": "The movie I watched yesterday was an adaptation of a novel I had read long ago.",
         "tokens": [],
@@ -20469,7 +20485,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-3-143::n2-use-examples-242",
+        "id": "added-n2-p3-3-143::n2-use-examples-235",
         "japanese": "春になると、公園の桜が一斉に咲き乱れる。",
         "english": "When spring arrives, cherry blossoms in the park burst into bloom all at once.",
         "tokens": [],
@@ -20477,7 +20493,7 @@
         "nuanceNote": "Conditional と marks invariant seasonal consequence without speaker volition in the clause."
       },
       {
-        "id": "added-n2-p3-3-143::n2-use-examples-243",
+        "id": "added-n2-p3-3-143::n2-use-examples-236",
         "japanese": "分からないことがあれば、遠慮せずにいつでも質問してください。",
         "english": "If there is anything you do not understand, please ask anytime without hesitation.",
         "tokens": [],
@@ -20512,7 +20528,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-4-144::n2-use-examples-244",
+        "id": "added-n2-p3-4-144::n2-use-examples-237",
         "japanese": "強い風でドアが閉まり、室内の書類が散らかった。",
         "english": "The door shut in the strong wind, and documents in the room got scattered.",
         "tokens": [],
@@ -20520,7 +20536,7 @@
         "nuanceNote": "Intransitive 閉まる focuses on the spontaneous event rather than an intentional actor."
       },
       {
-        "id": "added-n2-p3-4-144::n2-use-examples-245",
+        "id": "added-n2-p3-4-144::n2-use-examples-238",
         "japanese": "冷気が入らないように、窓をしっかり閉めておいた。",
         "english": "So that cold air would not enter, I shut the window firmly in advance.",
         "tokens": [],
@@ -20555,7 +20571,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-5-145::n2-use-examples-246",
+        "id": "added-n2-p3-5-145::n2-use-examples-239",
         "japanese": "これまで多くの困難を乗り越えてきた。",
         "english": "We have overcome many hardships up to this point.",
         "tokens": [],
@@ -20563,7 +20579,7 @@
         "nuanceNote": "〜てくる traces progressive development from the past approaching the current moment."
       },
       {
-        "id": "added-n2-p3-5-145::n2-use-examples-247",
+        "id": "added-n2-p3-5-145::n2-use-examples-240",
         "japanese": "この技術は今後さらに発展していくだろう。",
         "english": "This technology will likely continue to develop further into the future.",
         "tokens": [],
@@ -20598,7 +20614,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-6-146::n2-use-examples-248",
+        "id": "added-n2-p3-6-146::n2-use-examples-241",
         "japanese": "満員電車で隣の人に足を踏まれて痛かった。",
         "english": "I had my foot stepped on by the person next to me on the crowded train, and it hurt.",
         "tokens": [],
@@ -20606,7 +20622,7 @@
         "nuanceNote": "Indirect adversity passive marks the affected person as subject and actor with に."
       },
       {
-        "id": "added-n2-p3-6-146::n2-use-examples-249",
+        "id": "added-n2-p3-6-146::n2-use-examples-242",
         "japanese": "親は子供に好きな習い事を自由にやらせてくれた。",
         "english": "The parents generously let their child freely pursue whatever extracurricular lessons they wanted.",
         "tokens": [],
@@ -20653,7 +20669,7 @@
         "nuanceNote": "Formal business correspondence expressing profound appreciation."
       },
       {
-        "id": "skm2-c26-te-itadaku::n2-use-examples-250",
+        "id": "skm2-c26-te-itadaku::n2-use-examples-243",
         "japanese": "お忙しいところ恐縮ですが、企画書をご確認いただけますでしょうか。",
         "english": "I apologize for troubling you when busy, but could you kindly review the proposal?",
         "tokens": [],
@@ -20661,7 +20677,7 @@
         "nuanceNote": "Verb-て + いただく politely solicits a superior's or client's favorable action."
       },
       {
-        "id": "skm2-c26-te-itadaku::n2-use-examples-251",
+        "id": "skm2-c26-te-itadaku::n2-use-examples-244",
         "japanese": "社長自ら私たちの研究室まで足を運んでくださった。",
         "english": "The company president graciously took the trouble to visit our laboratory in person.",
         "tokens": [],
@@ -20733,7 +20749,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-7-147::n2-use-examples-252",
+        "id": "added-n2-p3-7-147::n2-use-examples-245",
         "japanese": "友人が困っていたので、私のノートを貸してあげた。",
         "english": "Because my friend was having trouble, I lent them my notebook.",
         "tokens": [],
@@ -20741,7 +20757,7 @@
         "nuanceNote": "〜てあげる indicates doing a favor outwards for a peer."
       },
       {
-        "id": "added-n2-p3-7-147::n2-use-examples-253",
+        "id": "added-n2-p3-7-147::n2-use-examples-246",
         "japanese": "先輩が仕事の進め方を丁寧に教えてくれた。",
         "english": "My senior colleague kindly taught me how to proceed with the work.",
         "tokens": [],
@@ -20776,7 +20792,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-8-148::n2-use-examples-254",
+        "id": "added-n2-p3-8-148::n2-use-examples-247",
         "japanese": "若者の読書離れが進んでいる。この問題には早急な対策が必要だ。",
         "english": "Young people reading fewer books is progressing. Urgent countermeasures are required for this problem.",
         "tokens": [],
@@ -20784,7 +20800,7 @@
         "nuanceNote": "Demonstrative この summarizes the previously introduced socioeconomic phenomenon."
       },
       {
-        "id": "added-n2-p3-8-148::n2-use-examples-255",
+        "id": "added-n2-p3-8-148::n2-use-examples-248",
         "japanese": "あのときの苦しい経験があったからこそ、今の成功がある。",
         "english": "It is precisely because of that painful experience back then that we have today's success.",
         "tokens": [],
@@ -20819,7 +20835,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-9-149::n2-use-examples-256",
+        "id": "added-n2-p3-9-149::n2-use-examples-249",
         "japanese": "兄は外で遊ぶのが好きだが、弟は家で読書をするのが好きだ。",
         "english": "My older brother likes playing outside, but my younger brother likes reading at home.",
         "tokens": [],
@@ -20827,7 +20843,7 @@
         "nuanceNote": "は marks contrast between parallel topics."
       },
       {
-        "id": "added-n2-p3-9-149::n2-use-examples-257",
+        "id": "added-n2-p3-9-149::n2-use-examples-250",
         "japanese": "外で激しい雨が降り始めたので、窓を閉めた。",
         "english": "Because heavy rain began falling outside, I shut the window.",
         "tokens": [],
@@ -20846,60 +20862,204 @@
   },
   {
     "id": "added-n2-p3-10-150",
-    "title": "文章：接続表現",
-    "meaning": "Track addition, contrast, consequence, and reformulation across sentences.",
+    "title": "文章：接続表現（談話の展開と論理の整理）",
+    "meaning": "System of discourse connectors governing addition (しかも・そのうえ・さらに), contrast (それに対して・一方), alternatives (あるいは・それとも), logical development & result (そのため・したがって・そこで・すると・このように・こうして), rationale (なぜなら・というのは), adversative persistence (だが・ところが・それなのに・それでも), reformulation & analogy (つまり・要するに・いわば・すなわち), qualification & exception (ただし・ただ・もっとも・なお), and topic transition (さて・ところで).",
     "level": "N2",
     "streamId": "book-n2",
     "streamName": "Shin Kanzen Master N2 revision",
-    "connection": "しかも / ただし / それでも / したがって / すなわち",
-    "nuance": "しかも adds parallel points; ただし adds conditions; それでも persists despite facts; したがって gives consequences; すなわち restates/clarifies.",
-    "keyTakeaway": "しかも / ただし / それでも / したがって / すなわち",
+    "connection": "Sentence 1。 + Connector + 、Sentence 2。 (Discourse linking expressions across sentence boundaries)",
+    "nuance": "SKM N2 pp. 186-187 functional distinctions: Addition: しかも adds same evaluation; そのうえ/さらに adds higher degree. Contrast: それに対して/一方 contrasts two subjects. Alternatives: あるいは gives declarative alternatives; それとも introduces question choices. Consequence: そのため states factual results; したがって draws formal conclusions; そこで introduces intentional reactions; すると introduces triggered events/discoveries; このように/こうして summarizes unfolding outcomes. Rationale: なぜなら/というのは introduces reasons. Adversative: だが is formal contrast; ところが introduces unexpected contrary outcomes; それなのに expresses complaint/regret; それでも indicates action persists despite facts. Reformulation: つまり rephrases; 要するに summarizes; いわば makes figurative analogies; すなわち states exact identities. Qualification: ただし sets strict conditions/exceptions; ただ/もっとも preemptively qualifies assumptions; なお adds supplementary notices. Discourse transition: さて transitions forward to the main agenda; ところで diverts to an unrelated topic.",
+    "keyTakeaway": "Sentence 1。 + Connector + 、Sentence 2。 (Discourse linking expressions across sentence boundaries)",
     "sentences": [
       {
         "id": "added-n2-p3-10-150-example",
-        "japanese": "料金は安いです。ただし、予約が必要です。",
-        "english": "The price is low. However, a reservation is required.",
+        "japanese": "美術館の休館日は毎週月曜日です。ただし、祝日と重なる場合は開館いたします。",
+        "english": "The museum's regular closing day is every Monday. However, when it coincides with a public holiday, it remains open.",
         "tokens": []
       },
       {
-        "id": "added-n2-p3-10-150::n2-use-examples-258",
-        "japanese": "全品半額セールを実施します。ただし、一部の限定品は対象外です。",
-        "english": "We are conducting a half-price sale on all items. However, select limited-edition goods are excluded.",
-        "tokens": [],
-        "useLabel": "Adversative qualification with ただし",
-        "nuanceNote": "ただし adds a limiting condition or proviso to the preceding general statement."
-      },
-      {
-        "id": "added-n2-p3-10-150::n2-use-examples-259",
-        "japanese": "原材料費が高騰している。したがって、製品価格を改定せざるを得ない。",
-        "english": "Raw material costs are soaring. Consequently, we are compelled to revise product prices.",
-        "tokens": [],
-        "useLabel": "Consequential development with したがって",
-        "nuanceNote": "したがって introduces a formal logical consequence in business writing."
-      },
-      {
-        "id": "added-n2-p3-10-150::n2-use-examples-260",
-        "japanese": "このアパートは駅に近くて便利だ。しかも、家賃が周辺の相場より安い。",
-        "english": "This apartment is close to the station and convenient. Moreover, the rent is cheaper than the surrounding market rate.",
+        "id": "added-n2-p3-10-150::n2-use-examples-307",
+        "japanese": "このアパートは駅から徒歩3分でとても便利だ。しかも、家賃が相場よりずっと安い。",
+        "english": "This apartment is just a 3-minute walk from the station and very convenient. Moreover, the rent is much lower than the market rate.",
         "tokens": [],
         "useLabel": "Cumulative addition with しかも",
         "nuanceNote": "しかも adds another supportive point of the same evaluation or greater intensity."
       },
       {
-        "id": "added-n2-p3-10-150::n2-use-examples-261",
-        "japanese": "宝くじが当たる確率は極めて低い。それでも、人々は夢を求めて買い続ける。",
-        "english": "The probability of winning the lottery is extremely low. Even so, people keep buying tickets pursuing the dream.",
+        "id": "added-n2-p3-10-150::n2-use-examples-308",
+        "japanese": "田中さんの家で美味しい夕食をごちそうになった。そのうえ、珍しいお土産までいただいた。",
+        "english": "I was treated to a delicious dinner at Tanaka-san's house. On top of that, I even received rare souvenirs.",
         "tokens": [],
-        "useLabel": "Adversative persistence with それでも",
-        "nuanceNote": "それでも indicates that the subsequent fact or action persists despite the preceding reality."
+        "useLabel": "Higher-degree addition with そのうえ / さらに",
+        "nuanceNote": "そのうえ / さらに adds a point of an even higher degree or unexpected generosity."
       },
       {
-        "id": "added-n2-p3-10-150::n2-use-examples-262",
-        "japanese": "母の兄、すなわち私のおじが来週遊びに来ます。",
-        "english": "My mother's elder brother, that is to say my uncle, is coming to visit next week.",
+        "id": "added-n2-p3-10-150::n2-use-examples-309",
+        "japanese": "駅の南口は商業施設が多くていつもにぎやかだ。それに対して、北口は住宅街でとても静かだ。",
+        "english": "The south exit of the station has many commercial facilities and is always bustling. In contrast, the north exit is a residential area and very quiet.",
         "tokens": [],
-        "useLabel": "Clarification and reformulation with すなわち",
-        "nuanceNote": "すなわち restates or clarifies the preceding term in other words."
+        "useLabel": "Direct contrast with それに対して / 一方",
+        "nuanceNote": "それに対して / 一方 sets up a direct contrast between two distinct subjects or aspects."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-310",
+        "japanese": "発熱の原因は季節性の風邪かもしれない。あるいは、インフルエンザの可能性もある。",
+        "english": "The cause of the fever might be a seasonal cold. Alternatively, there is also the possibility of influenza.",
+        "tokens": [],
+        "useLabel": "Alternative declarative possibility with あるいは",
+        "nuanceNote": "あるいは presents another possibility or alternative option in declarative statements."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-311",
+        "japanese": "今の会社でこのまま仕事を続けるべきか。それとも、大学院へ進学するべきか。",
+        "english": "Should I continue working at my current company as I am? Or should I go on to graduate school?",
+        "tokens": [],
+        "useLabel": "Alternative choice in questions with それとも",
+        "nuanceNote": "それとも presents an alternative option specifically in question sentences."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-312",
+        "japanese": "この高原都市は標高1,000メートルの高地にある。そのため、真夏でも比較的涼しい。",
+        "english": "This plateau city is located at an altitude of 1,000 meters. For that reason, it is relatively cool even in midsummer.",
+        "tokens": [],
+        "useLabel": "Factual cause and effect with そのため",
+        "nuanceNote": "そのため states the objective, factual result resulting from the preceding cause."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-313",
+        "japanese": "構内は全域にわたり終日禁煙となっております。したがって、喫煙所をご利用ください。",
+        "english": "The entire premises are strictly non-smoking all day long. Consequently, please use the designated smoking areas.",
+        "tokens": [],
+        "useLabel": "Formal logical conclusion with したがって",
+        "nuanceNote": "したがって introduces a formal, authoritative logical consequence or conclusion."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-314",
+        "japanese": "講義の中でどうしても理解できない点があった。そこで、授業後に先生に質問してみた。",
+        "english": "There was a point in the lecture that I simply could not understand. Therefore, I went and asked the professor after class.",
+        "tokens": [],
+        "useLabel": "Intentional reaction/action with そこで",
+        "nuanceNote": "そこで introduces an intentional action deliberately taken by the agent in response to the preceding situation."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-315",
+        "japanese": "太郎が小箱のふたを静かに開けた。すると、中から白い煙がもくもくと立ち上ってきた。",
+        "english": "Taro quietly opened the lid of the small box. Thereupon, white smoke came billowing out from inside.",
+        "tokens": [],
+        "useLabel": "Triggered occurrence and discovery with すると",
+        "nuanceNote": "すると introduces an automatic, triggered occurrence or surprise discovery resulting immediately from the action."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-316",
+        "japanese": "大学で素晴らしい友人に恵まれ、研究も軌道に乗った。こうして、私の充実した留学生活が始まった。",
+        "english": "Blessed with wonderful friends at university, my research also got on track. In this manner, my fulfilling study-abroad life began.",
+        "tokens": [],
+        "useLabel": "Summary of unfolding result with こうして / このように",
+        "nuanceNote": "こうして / このように synthesizes and summarizes how a situation unfolded over time into an overall conclusion."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-317",
+        "japanese": "無理をして派手な結婚式を挙げる必要はないと思う。なぜなら、多額の費用がかかるからだ。",
+        "english": "I do not think it is necessary to go out of one's way to hold a lavish wedding. This is because it incurs a huge expense.",
+        "tokens": [],
+        "useLabel": "Stating rationale with なぜなら / というのは",
+        "nuanceNote": "なぜなら / というのは introduces the backward explanatory reason or rationale for a preceding opinion."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-318",
+        "japanese": "このクラシック映画は半世紀以上前に制作された。だが、今も世界中で高い人気を誇っている。",
+        "english": "This classic movie was produced over half a century ago. However, it still enjoys tremendous popularity worldwide.",
+        "tokens": [],
+        "useLabel": "General formal contrast with だが",
+        "nuanceNote": "だが introduces a formal contrast running contrary to the expected development."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-319",
+        "japanese": "何度も念入りに計算を確認したはずだった。ところが、集計の数字に大きな食い違いがあった。",
+        "english": "We were supposed to have checked the calculation thoroughly many times. However, contrary to expectations, there was a major discrepancy in the aggregate figures.",
+        "tokens": [],
+        "useLabel": "Unexpected contrary outcome with ところが",
+        "nuanceNote": "ところが introduces an unexpected, surprising, or contrary outcome beyond the speaker's control."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-320",
+        "japanese": "毎日欠かさず厳しい特訓を重ねてきた。それなのに、本番の試合で呆気なく初戦敗退してしまった。",
+        "english": "I had maintained rigorous special training every single day without fail. Even so, to my great disappointment, I lost easily in the very first round of the official match.",
+        "tokens": [],
+        "useLabel": "Dissatisfaction or regret with それなのに",
+        "nuanceNote": "それなのに expresses dissatisfaction, regret, or complaint that an adverse outcome occurred despite great effort."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-321",
+        "japanese": "宝くじが一等に当たる確率は天文学的に低い。それでも、多くの人々は夢を求めて買い続ける。",
+        "english": "The probability of winning first prize in the lottery is astronomically low. Even so, many people continue buying tickets pursuing the dream.",
+        "tokens": [],
+        "useLabel": "Persistence despite facts with それでも",
+        "nuanceNote": "それでも indicates that an action, conviction, or attitude persists unchanged even in the face of the preceding reality."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-322",
+        "japanese": "来週から大学は夏季休業に入る。つまり、毎朝満員電車に乗って登校しなくてもいいのだ。",
+        "english": "Starting next week, the university enters summer recess. That is to say, I do not have to ride packed trains to commute to school every morning.",
+        "tokens": [],
+        "useLabel": "Restatement and clarification with つまり / 要するに",
+        "nuanceNote": "つまり rephrases the situation in other words; 要するに distills it down to its core takeaway."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-323",
+        "japanese": "この国民的アニメを知らない日本人はほとんどいないだろう。いわば、現代の日本文化を象徴する作品だ。",
+        "english": "There is probably hardly any Japanese person who does not know this nationwide anime. So to speak, it is a work that symbolizes modern Japanese culture.",
+        "tokens": [],
+        "useLabel": "Figurative analogy with いわば",
+        "nuanceNote": "いわば introduces a figurative comparison or metaphorical characterization ('so to speak / as it were')."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-324",
+        "japanese": "図書館の定期休館日は毎週月曜日です。ただし、祝日と重なる場合は翌日の火曜日に休館します。",
+        "english": "The library's regular closing day is every Monday. However, when it coincides with a national holiday, it closes on the following Tuesday instead.",
+        "tokens": [],
+        "useLabel": "Limiting proviso and exception with ただし",
+        "nuanceNote": "ただし introduces a strict limiting condition, exception, or proviso to a preceding general rule."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-325",
+        "japanese": "私はテニスをするのが大好きだ。もっとも、最近は仕事が忙しくて全くコートに立てていない。",
+        "english": "I love playing tennis. Mind you, lately I have been so busy with work that I have not been able to step onto a court at all.",
+        "tokens": [],
+        "useLabel": "Preemptive qualification with もっとも / ただ",
+        "nuanceNote": "もっとも / ただ preemptively corrects or tempers an assumption that the listener might jump to from the previous assertion."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-326",
+        "japanese": "本日の全体説明会は午後3時をもって終了いたします。なお、希望者には個別相談会も実施いたします。",
+        "english": "Today's general briefing will conclude at 3:00 PM. Furthermore, individual consultations will also be provided for those interested.",
+        "tokens": [],
+        "useLabel": "Supplementary administrative notice with なお",
+        "nuanceNote": "なお introduces supplementary, practical, or administrative information without modifying the main statement."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-327",
+        "japanese": "長らくご無沙汰しておりますが、いかがお過ごしでしょうか。さて、本日は来月の学術大会の件でご連絡いたしました。",
+        "english": "It has been a long time since we last spoke, and I hope you are doing well. Now then, I am writing to you today regarding next month's academic conference.",
+        "tokens": [],
+        "useLabel": "Deliberate topic transition with さて",
+        "nuanceNote": "さて transitions the discourse forward purposefully into the main agenda or next topic."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-328",
+        "japanese": "もうすぐ新年を迎えますね。お正月の準備は整いましたか。ところで、12月31日を大晦日と呼ぶのはなぜでしょうか。",
+        "english": "The New Year is approaching soon. Have you finished your New Year preparations? By the way, why is December 31st called 'Omisoka'?",
+        "tokens": [],
+        "useLabel": "Digressive topic change with ところで",
+        "nuanceNote": "ところで diverts the conversation purposefully into a completely different subject ('by the way')."
+      },
+      {
+        "id": "added-n2-p3-10-150::n2-use-examples-329",
+        "japanese": "母の実の兄、すなわち私にとっての伯父が、定年退職を機に故郷へ戻ってくることになった。",
+        "english": "My mother's biological elder brother, that is to say my uncle, has decided to return to his hometown upon his retirement.",
+        "tokens": [],
+        "useLabel": "Precise identity and reformulation with すなわち",
+        "nuanceNote": "すなわち states an exact identity, strict definition, or precise reformulation of the preceding term."
       }
     ],
     "quiz": [],
@@ -20929,7 +21089,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-11-151::n2-use-examples-263",
+        "id": "added-n2-p3-11-151::n2-use-examples-251",
         "japanese": "彼は一言も返事をしなかった。つまり、納得していないということだ。",
         "english": "He did not utter a single reply. In other words, he does not agree.",
         "tokens": [],
@@ -20937,7 +21097,7 @@
         "nuanceNote": "つまり restates the essential meaning of an observation in clearer terms."
       },
       {
-        "id": "added-n2-p3-11-151::n2-use-examples-264",
+        "id": "added-n2-p3-11-151::n2-use-examples-252",
         "japanese": "田中さんは資料を手に取り、しばらく黙って（資料を）眺めていた。",
         "english": "Tanaka picked up the document and gazed at it silently for a while.",
         "tokens": [],
@@ -20972,7 +21132,7 @@
         "tokens": []
       },
       {
-        "id": "added-n2-p3-12-152::n2-use-examples-265",
+        "id": "added-n2-p3-12-152::n2-use-examples-253",
         "japanese": "本研究の目的は、日本語の文法構造を解明することにある。",
         "english": "The objective of this research consists in elucidating Japanese grammatical structures.",
         "tokens": [],
@@ -20980,7 +21140,7 @@
         "nuanceNote": "Expository academic writing consistently maintains だ/である forms."
       },
       {
-        "id": "added-n2-p3-12-152::n2-use-examples-266",
+        "id": "added-n2-p3-12-152::n2-use-examples-254",
         "japanese": "ご不明な点がございましたら、いつでも担当者までご連絡ください。",
         "english": "Should you have any unclear points, please contact the person in charge at any time.",
         "tokens": [],
@@ -21475,7 +21635,7 @@
         "nuanceNote": "Urgent study pressure eliminating leisure."
       },
       {
-        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-267",
+        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-255",
         "japanese": "もうすぐ試験が始まるから、いつまでものんびりしてはいられない。",
         "english": "The exam will begin soon, so I cannot afford to be idling around forever.",
         "tokens": [],
@@ -21483,7 +21643,7 @@
         "nuanceNote": "Time pressure prevents continuing in a relaxed state."
       },
       {
-        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-268",
+        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-256",
         "japanese": "社会人になったのだから、親に甘えてばかりはいられない。",
         "english": "Now that I am a working adult, I can't keep depending on my parents.",
         "tokens": [],
@@ -21565,7 +21725,7 @@
         "nuanceNote": "Crisp, efficient chairperson opening a executive meeting."
       },
       {
-        "id": "skm2-c10-nuki-de::n2-use-examples-269",
+        "id": "skm2-c10-nuki-de::n2-use-examples-257",
         "japanese": "朝は時間がなかったので、朝食抜きで会社へ向かった。",
         "english": "Because I had no time in the morning, I headed to the office without breakfast.",
         "tokens": [],
@@ -21573,7 +21733,7 @@
         "nuanceNote": "Noun + 抜きで indicates doing an action while omitting a regular accompanying item."
       },
       {
-        "id": "skm2-c10-nuki-de::n2-use-examples-270",
+        "id": "skm2-c10-nuki-de::n2-use-examples-258",
         "japanese": "彼の協力抜きには、この大規模なイベントの成功はあり得なかった。",
         "english": "Without his cooperation, the success of this large-scale event could never have occurred.",
         "tokens": [],
@@ -21655,7 +21815,7 @@
         "nuanceNote": "Balanced workplace organizational analysis."
       },
       {
-        "id": "skm2-c14-ippou-de::n2-use-examples-271",
+        "id": "skm2-c14-ippou-de::n2-use-examples-259",
         "japanese": "都市部で地価が上昇する一方で、過疎地では空き家が増え続けている。",
         "english": "While land prices rise in urban areas, vacant houses continue to multiply in depopulated regions.",
         "tokens": [],
@@ -21663,7 +21823,7 @@
         "nuanceNote": "Clause + 一方で juxtaposes two simultaneous trends."
       },
       {
-        "id": "skm2-c14-ippou-de::n2-use-examples-272",
+        "id": "skm2-c14-ippou-de::n2-use-examples-260",
         "japanese": "彼は仕事に対して非常に厳しい一方で、部下の私生活には深い思いやりを見せる。",
         "english": "While he is extremely strict about work, he shows deep consideration for his subordinates' personal lives.",
         "tokens": [],
@@ -21745,7 +21905,7 @@
         "nuanceNote": "Decisive personal health turnaround following a medical scare."
       },
       {
-        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-273",
+        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-261",
         "japanese": "海外赴任を契機として、本格的に英会話の勉強を始めた。",
         "english": "Taking his overseas assignment as a catalyst, he began studying English conversation in earnest.",
         "tokens": [],
@@ -21753,7 +21913,7 @@
         "nuanceNote": "〜を契機として marks a decisive life event sparking systematic personal change."
       },
       {
-        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-274",
+        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-262",
         "japanese": "市民革命を契機に、国の政治体制は大きく近代化へと舵を切った。",
         "english": "Taking the civic revolution as a turning point, the nation's political system steered heavily toward modernization.",
         "tokens": [],
@@ -21835,7 +21995,7 @@
         "nuanceNote": "Rallying cry during an organizational crisis."
       },
       {
-        "id": "skm2-c18-kara-koso::n2-use-examples-275",
+        "id": "skm2-c18-kara-koso::n2-use-examples-263",
         "japanese": "あなたの将来を心から案じているからこそ、苦言を呈しているのです。",
         "english": "It is precisely because I care about your future from the bottom of my heart that I offer harsh advice.",
         "tokens": [],
@@ -21843,7 +22003,7 @@
         "nuanceNote": "からこそ singles out the genuine core reason, rejecting other motivations."
       },
       {
-        "id": "skm2-c18-kara-koso::n2-use-examples-276",
+        "id": "skm2-c18-kara-koso::n2-use-examples-264",
         "japanese": "苦しい練習を耐え抜いたからこそ、優勝した瞬間の感動はひとしおだった。",
         "english": "It was precisely because we endured grueling practice that the emotion of victory was so intense.",
         "tokens": [],
@@ -21925,7 +22085,7 @@
         "nuanceNote": "Blunt colloquial dismissal of an unrealistic match outcome."
       },
       {
-        "id": "skm2-p2-kko-nai::n2-use-examples-277",
+        "id": "skm2-p2-kko-nai::n2-use-examples-265",
         "japanese": "あんなに頑固な部長が、私たちの要求を簡単に受け入れっこないよ。",
         "english": "There is no way in hell such a stubborn manager would easily accept our demands.",
         "tokens": [],
@@ -21933,7 +22093,7 @@
         "nuanceNote": "Colloquial categorical rejection of an improbable premise."
       },
       {
-        "id": "skm2-p2-kko-nai::n2-use-examples-278",
+        "id": "skm2-p2-kko-nai::n2-use-examples-266",
         "japanese": "たった二日間でこの分厚い報告書を全部翻訳できっこない。",
         "english": "There is no way anyone could translate this entire thick report in just two days.",
         "tokens": [],
@@ -23880,7 +24040,7 @@
         ]
       },
       {
-        "id": "gp-kato-omou-to::n2-use-examples-279",
+        "id": "gp-kato-omou-to::n2-use-examples-267",
         "japanese": "青空が広がっていたかと思うと、急に大粒の雨が降り出してきた。",
         "english": "No sooner had blue skies spread than large raindrops suddenly began pouring down.",
         "tokens": [],
@@ -23888,7 +24048,7 @@
         "nuanceNote": "Instantaneous unexpected shift in natural phenomena."
       },
       {
-        "id": "gp-kato-omou-to::n2-use-examples-280",
+        "id": "gp-kato-omou-to::n2-use-examples-268",
         "japanese": "泣いていた赤ちゃんが、お母さんの顔を見たかと思うと、にこっと笑った。",
         "english": "The crying baby, no sooner had it seen its mother's face, broke into a bright smile.",
         "tokens": [],
@@ -24034,7 +24194,7 @@
         ]
       },
       {
-        "id": "gp-kanai-ka::n2-use-examples-281",
+        "id": "gp-kanai-ka::n2-use-examples-269",
         "japanese": "授業終了のチャイムが鳴るか鳴らないかのうちに、生徒たちは教室を飛び出した。",
         "english": "Barely had the class-end chime sounded when the students bolted out of the classroom.",
         "tokens": [],
@@ -24042,7 +24202,7 @@
         "nuanceNote": "V-るかV-ないかのうちに captures overlapping immediacy before an action even fully ends."
       },
       {
-        "id": "gp-kanai-ka::n2-use-examples-282",
+        "id": "gp-kanai-ka::n2-use-examples-270",
         "japanese": "夜が明けるか明けないかのうちに、登山隊は山頂を目指して出発した。",
         "english": "Before dawn had even fully broken, the mountaineering expedition set out for the summit.",
         "tokens": [],
@@ -24176,7 +24336,7 @@
         ]
       },
       {
-        "id": "gp-shidai::n2-use-examples-283",
+        "id": "gp-shidai::n2-use-examples-271",
         "japanese": "日程が確定し次第、改めてメールにてご連絡申し上げます。",
         "english": "As soon as the schedule is confirmed, I will contact you again by email.",
         "tokens": [],
@@ -24184,7 +24344,7 @@
         "nuanceNote": "Verb-stem + 次第 promises resolute subsequent action immediately upon prerequisite completion."
       },
       {
-        "id": "gp-shidai::n2-use-examples-284",
+        "id": "gp-shidai::n2-use-examples-272",
         "japanese": "準備が整い次第、直ちに作業を再開してください。",
         "english": "As soon as preparations are in order, please resume operations immediately.",
         "tokens": [],
@@ -25236,7 +25396,7 @@
         ]
       },
       {
-        "id": "gp-amari::n2-use-examples-285",
+        "id": "gp-amari::n2-use-examples-273",
         "japanese": "最愛のペットを失った悲しみのあまり、彼女は数日間寝込んでしまった。",
         "english": "From the sheer excess of sorrow over losing her beloved pet, she stayed bedridden for several days.",
         "tokens": [],
@@ -25244,7 +25404,7 @@
         "nuanceNote": "Noun + のあまり describes severe physical or mental reaction from overwhelming grief."
       },
       {
-        "id": "gp-amari::n2-use-examples-286",
+        "id": "gp-amari::n2-use-examples-274",
         "japanese": "先を急いだあまり、曲がるべき交差点を通り過ぎてしまった。",
         "english": "From hurrying too much, I drove right past the intersection where I should have turned.",
         "tokens": [],
@@ -25376,7 +25536,7 @@
         ]
       },
       {
-        "id": "gp-ageku::n2-use-examples-287",
+        "id": "gp-ageku::n2-use-examples-275",
         "japanese": "何時間も激しく口論したあげく、二人は絶交してしまった。",
         "english": "After arguing fiercely for hours on end, the two ended up completely breaking off their friendship.",
         "tokens": [],
@@ -25384,7 +25544,7 @@
         "nuanceNote": "V-た + あげく(に) emphasizes that prolonged agonizing friction culminated in a regrettable outcome."
       },
       {
-        "id": "gp-ageku::n2-use-examples-288",
+        "id": "gp-ageku::n2-use-examples-276",
         "japanese": "あれこれ迷ったあげくに、結局どの物件も契約できずに終わった。",
         "english": "After agonizing endlessly back and forth, I ended up unable to sign a lease for any property.",
         "tokens": [],
@@ -26024,7 +26184,7 @@
         ]
       },
       {
-        "id": "gp-mononara::n2-use-examples-289",
+        "id": "gp-mononara::n2-use-examples-277",
         "japanese": "やり直せるものなら、人生をもう一度最初からやり直したい。",
         "english": "If it were possible to start over, I would want to redo life once more from the very beginning.",
         "tokens": [],
@@ -26032,7 +26192,7 @@
         "nuanceNote": "Potential + ものなら assumes an impossible condition to express profound longing."
       },
       {
-        "id": "gp-mononara::n2-use-examples-290",
+        "id": "gp-mononara::n2-use-examples-278",
         "japanese": "そんな失礼な口を利こうものなら、ただでは済まないぞ。",
         "english": "If you should dare speak so rudely, you won't get away with it!",
         "tokens": [],
@@ -26159,7 +26319,7 @@
         ]
       },
       {
-        "id": "gp-naikotoniwa::n2-use-examples-291",
+        "id": "gp-naikotoniwa::n2-use-examples-279",
         "japanese": "双方の合意が得られないことには、契約を締結することはできません。",
         "english": "Unless mutual agreement is obtained from both sides, we cannot conclude the contract.",
         "tokens": [],
@@ -26167,7 +26327,7 @@
         "nuanceNote": "〜ないことには sets an indispensable condition for contract execution."
       },
       {
-        "id": "gp-naikotoniwa::n2-use-examples-292",
+        "id": "gp-naikotoniwa::n2-use-examples-280",
         "japanese": "現地の被害状況を直接確認しないことには、支援の規模を判断できない。",
         "english": "Unless we inspect the local damage directly, we cannot judge the scale of required relief.",
         "tokens": [],
@@ -26796,7 +26956,7 @@
         ]
       },
       {
-        "id": "gp-ni-kagiri::n2-use-examples-293",
+        "id": "gp-ni-kagiri::n2-use-examples-281",
         "japanese": "本日ご来場のお客様に限り、特製記念品を差し上げます。",
         "english": "Strictly limited to guests attending today, we present a special commemorative gift.",
         "tokens": [],
@@ -26804,7 +26964,7 @@
         "nuanceNote": "Noun + に限り formally announces an exclusive privilege."
       },
       {
-        "id": "gp-ni-kagiri::n2-use-examples-294",
+        "id": "gp-ni-kagiri::n2-use-examples-282",
         "japanese": "初回注文の方に限り、配送料を無料とさせていただきます。",
         "english": "Limited exclusively to first-time orders, we offer free shipping.",
         "tokens": [],
@@ -26922,7 +27082,7 @@
         ]
       },
       {
-        "id": "gp-ni-kagitte::n2-use-examples-295",
+        "id": "gp-ni-kagitte::n2-use-examples-283",
         "japanese": "傘を持っていない日に限って、突然大雨が降ってくる。",
         "english": "Of all days, on the very day I don't have an umbrella, sudden heavy rain pours down.",
         "tokens": [],
@@ -26930,7 +27090,7 @@
         "nuanceNote": "〜に限って laments an ironic, unlucky coincidence."
       },
       {
-        "id": "gp-ni-kagitte::n2-use-examples-296",
+        "id": "gp-ni-kagitte::n2-use-examples-284",
         "japanese": "普段は時間に正確な山田さんに限って、無断で遅刻するはずがない。",
         "english": "Yamada-san of all people, who is normally so punctual, would surely never be late without notice.",
         "tokens": [],
@@ -27056,7 +27216,7 @@
         ]
       },
       {
-        "id": "gp-bakarika::n2-use-examples-297",
+        "id": "gp-bakarika::n2-use-examples-285",
         "japanese": "彼は英語ばかりか、フランス語やロシア語まで流暢に話す。",
         "english": "Not only English, he even speaks French and Russian with fluency.",
         "tokens": [],
@@ -27064,7 +27224,7 @@
         "nuanceNote": "Noun + ばかりか escalates beyond a baseline expectation to an even more impressive degree."
       },
       {
-        "id": "gp-bakarika::n2-use-examples-298",
+        "id": "gp-bakarika::n2-use-examples-286",
         "japanese": "雨が激しくなったばかりか、強い風まで吹き荒れてきた。",
         "english": "Not only did the rain intensify, but fierce winds came howling in as well.",
         "tokens": [],
@@ -27582,7 +27742,7 @@
         ]
       },
       {
-        "id": "gp-monono::n2-use-examples-299",
+        "id": "gp-monono::n2-use-examples-287",
         "japanese": "新しいパソコンを購入したものの、機能が多すぎて使いこなせない。",
         "english": "Although I bought a new computer, there are too many features and I cannot master them.",
         "tokens": [],
@@ -27590,7 +27750,7 @@
         "nuanceNote": "Conceding an action occurred while contrasting it with an unsatisfactory outcome."
       },
       {
-        "id": "gp-monono::n2-use-examples-300",
+        "id": "gp-monono::n2-use-examples-288",
         "japanese": "暦の上では立春とはいうものの、まだまだ厳しい寒さが続いている。",
         "english": "Although on the calendar it is the onset of spring, severe cold is still continuing.",
         "tokens": [],
@@ -27708,7 +27868,7 @@
         ]
       },
       {
-        "id": "gp-dokoroka::n2-use-examples-301",
+        "id": "gp-dokoroka::n2-use-examples-289",
         "japanese": "病状は回復するどころか、ますます悪化の一途をたどっている。",
         "english": "Far from recovering, the patient's condition is worsening further by the day.",
         "tokens": [],
@@ -27716,7 +27876,7 @@
         "nuanceNote": "どころか emphatically negates a favorable expectation in favor of a far worse reality."
       },
       {
-        "id": "gp-dokoroka::n2-use-examples-302",
+        "id": "gp-dokoroka::n2-use-examples-290",
         "japanese": "忙しくて海外旅行どころか、近くの温泉に一泊することさえできない。",
         "english": "I am so busy that far from an overseas trip, I cannot even stay a single night at a nearby hot spring.",
         "tokens": [],
@@ -28236,7 +28396,7 @@
         ]
       },
       {
-        "id": "gp-ni-hokaranaranai::n2-use-examples-303",
+        "id": "gp-ni-hokaranaranai::n2-use-examples-291",
         "japanese": "今回のプロジェクトの成功は、チーム全員の献身的な努力の賜物にほかならない。",
         "english": "The success of this project is nothing other than the fruit of dedicated effort by the entire team.",
         "tokens": [],
@@ -28244,7 +28404,7 @@
         "nuanceNote": "Formal emphatic assertion identifying the single true cause."
       },
       {
-        "id": "gp-ni-hokaranaranai::n2-use-examples-304",
+        "id": "gp-ni-hokaranaranai::n2-use-examples-292",
         "japanese": "私が厳しく指導するのは、君の成長を心から願っているからにほかならない。",
         "english": "My instructing you strictly is none other than because I truly desire your growth.",
         "tokens": [],
@@ -28364,7 +28524,7 @@
         ]
       },
       {
-        "id": "gp-kkonai-kanenai::n2-use-examples-305",
+        "id": "gp-kkonai-kanenai::n2-use-examples-293",
         "japanese": "素人の私がプロの囲碁棋士に勝ちっこない。",
         "english": "There is no way a complete amateur like me could defeat a professional Go player.",
         "tokens": [],
@@ -28372,7 +28532,7 @@
         "nuanceNote": "Verb-stem + っこない emphatically denies any possibility."
       },
       {
-        "id": "gp-kkonai-kanenai::n2-use-examples-306",
+        "id": "gp-kkonai-kanenai::n2-use-examples-294",
         "japanese": "あんな乱暴な運転を続けていたら、大事故を起こしかねない。",
         "english": "If he continues driving so recklessly, he is liable to cause a major accident.",
         "tokens": [],
@@ -29154,7 +29314,7 @@
         ]
       },
       {
-        "id": "gp-zaruwokenai::n2-use-examples-307",
+        "id": "gp-zaruwokenai::n2-use-examples-295",
         "japanese": "不採算事業の継続は困難であり、事業の縮小を決断せざるを得ない。",
         "english": "Continuing unprofitable business operations is difficult, so management is compelled to decide on downsizing.",
         "tokens": [],
@@ -29162,7 +29322,7 @@
         "nuanceNote": "せざるを得ない expresses reluctant administrative compulsion against one's wishes."
       },
       {
-        "id": "gp-zaruwokenai::n2-use-examples-308",
+        "id": "gp-zaruwokenai::n2-use-examples-296",
         "japanese": "これだけ決定的な証拠を見せられては、自分の非を認めざるを得ない。",
         "english": "Presented with such decisive evidence, I am compelled to admit my fault.",
         "tokens": [],
@@ -29398,7 +29558,7 @@
         ]
       },
       {
-        "id": "gp-ni-tsurete::n2-use-examples-309",
+        "id": "gp-ni-tsurete::n2-use-examples-297",
         "japanese": "標高が高くなるにつれて、気温が次第に下がってくる。",
         "english": "As altitude increases, the temperature gradually drops.",
         "tokens": [],
@@ -29406,7 +29566,7 @@
         "nuanceNote": "〜につれて describes natural proportional correlation between two progressing variables."
       },
       {
-        "id": "gp-ni-tsurete::n2-use-examples-310",
+        "id": "gp-ni-tsurete::n2-use-examples-298",
         "japanese": "時代の変化につれて、人々の価値観や生活様式も多様化してきた。",
         "english": "As the times change, people's values and lifestyles have also diversified.",
         "tokens": [],
@@ -29525,7 +29685,7 @@
         ]
       },
       {
-        "id": "gp-ni-oujite::n2-use-examples-311",
+        "id": "gp-ni-oujite::n2-use-examples-299",
         "japanese": "生徒一人ひとりの理解度に応じて、教える内容や進度を調整する。",
         "english": "According to each student's level of comprehension, we adjust the teaching content and pacing.",
         "tokens": [],
@@ -29533,7 +29693,7 @@
         "nuanceNote": "〜に応じて modulates instruction in tailored proportion to recipient capacity."
       },
       {
-        "id": "gp-ni-oujite::n2-use-examples-312",
+        "id": "gp-ni-oujite::n2-use-examples-300",
         "japanese": "ご予算に応じて、最適な旅行プランをいくつかご提案いたします。",
         "english": "In accordance with your budget, we will propose several optimal travel plans.",
         "tokens": [],
@@ -29651,7 +29811,7 @@
         ]
       },
       {
-        "id": "gp-to-ittara::n2-use-examples-313",
+        "id": "gp-to-ittara::n2-use-examples-301",
         "japanese": "冬の朝の寒さといったら、布団から出るのが嫌になるほどだ。",
         "english": "The cold of a winter morning is so intense that you dread coming out of the futon!",
         "tokens": [],
@@ -29659,7 +29819,7 @@
         "nuanceNote": "〜といったら highlights an astonishing or extreme degree of feeling."
       },
       {
-        "id": "gp-to-ittara::n2-use-examples-314",
+        "id": "gp-to-ittara::n2-use-examples-302",
         "japanese": "山頂から見渡した夜景の美しさといったら、言葉を失うほどだった。",
         "english": "The breathtaking beauty of the night view from the summit was such that it left me speechless!",
         "tokens": [],
@@ -29784,7 +29944,7 @@
         ]
       },
       {
-        "id": "gp-wo-towazu::n2-use-examples-315",
+        "id": "gp-wo-towazu::n2-use-examples-303",
         "japanese": "このボランティア活動は、年齢や国籍を問わずどなたでも参加できます。",
         "english": "This volunteer activity is open to anyone regardless of age or nationality.",
         "tokens": [],
@@ -29792,7 +29952,7 @@
         "nuanceNote": "Noun + を問わず indicates universal openness without condition or exclusion."
       },
       {
-        "id": "gp-wo-towazu::n2-use-examples-316",
+        "id": "gp-wo-towazu::n2-use-examples-304",
         "japanese": "当ホテルのフィットネスジムは、昼夜を問わず24時間いつでもご利用いただけます。",
         "english": "Our hotel fitness gym can be used 24 hours a day, regardless of whether it is day or night.",
         "tokens": [],
@@ -29918,7 +30078,7 @@
         ]
       },
       {
-        "id": "gp-ha-tomokaku::n2-use-examples-317",
+        "id": "gp-ha-tomokaku::n2-use-examples-305",
         "japanese": "外見はともかくとして、このアパートは立地と家賃が非常に魅力的だ。",
         "english": "Setting aside its exterior appearance for now, this apartment's location and rent are very attractive.",
         "tokens": [],
@@ -29926,7 +30086,7 @@
         "nuanceNote": "〜はともかく(として) puts aside a secondary flaw to focus on the decisive priority."
       },
       {
-        "id": "gp-ha-tomokaku::n2-use-examples-318",
+        "id": "gp-ha-tomokaku::n2-use-examples-306",
         "japanese": "勝敗はともかく、選手たちが全力を出し切ることが何よりも大切だ。",
         "english": "Leaving winning or losing aside, what matters above all is that the players give their absolute all.",
         "tokens": [],

@@ -101,7 +101,7 @@
   ],
   "読みかけ": [
     "よみかけ",
-    "partly read; unfinished reading"
+    "half-read; unfinished reading"
   ],
   "弾ける": [
     "ひける",
@@ -202,14 +202,6 @@
   "反面": [
     "はんめん",
     "on the other hand; opposite aspect"
-  ],
-  "上で": [
-    "うえで",
-    "after doing; in doing"
-  ],
-  "上に": [
-    "うえに",
-    "in addition to"
   ],
   "以上": [
     "いじょう",
@@ -514,5 +506,213 @@
   "到着時間": [
     "とうちゃくじかん",
     "arrival time"
+  ],
+  "ものなら": [
+    "ものなら",
+    "if (hypothetically possible, but unlikely); if one could"
+  ],
+  "もんなら": [
+    "もんなら",
+    "if (colloquial: if one could)"
+  ],
+  "食べ切る": [
+    "たべきる",
+    "to finish eating completely; eat all up"
+  ],
+  "食べ切り": [
+    "たべきり",
+    "finish eating completely"
+  ],
+  "食べ切りました": [
+    "たべきりました",
+    "finished eating completely (polite past)"
+  ],
+  "食べ切った": [
+    "たべきった",
+    "finished eating completely (past)"
+  ],
+  "食べきれない": [
+    "たべきれない",
+    "cannot finish eating; too much to eat all"
+  ],
+  "走り切る": [
+    "はしりきる",
+    "to run all the way to the end"
+  ],
+  "走り切りました": [
+    "はしりきりました",
+    "ran all the way to the end (polite past)"
+  ],
+  "出し切る": [
+    "だしきる",
+    "to put out to the utmost; expend all energy/effort"
+  ],
+  "使い切る": [
+    "つかいきる",
+    "to use up completely; exhaust"
+  ],
+  "使い切った": [
+    "つかいきった",
+    "used up completely (past)"
+  ],
+  "言い切る": [
+    "いいきる",
+    "to state definitively; declare firmly"
+  ],
+  "読み通す": [
+    "よみとおす",
+    "to read completely through to the end"
+  ],
+  "読み通しました": [
+    "よみとおしました",
+    "read completely through to the end (polite past)"
+  ],
+  "言い通す": [
+    "いいとおす",
+    "to persist in stating; maintain to the end"
+  ],
+  "言い通しました": [
+    "いいとおしました",
+    "persisted in stating to the end (polite past)"
+  ],
+  "耐え抜く": [
+    "たえぬく",
+    "to endure to the very end; persevere through"
+  ],
+  "耐え抜いた": [
+    "たえぬいた",
+    "endured to the very end; persevered through"
+  ],
+  "飲みかけ": [
+    "のみかけ",
+    "partly drunk; unfinished drink"
+  ],
+  "作りかけ": [
+    "つくりかけ",
+    "half-made; unfinished creation"
+  ],
+  "暦の上では": [
+    "こよみのうえでは",
+    "according to the calendar; on the calendar"
+  ],
+  "法律の上では": [
+    "ほうりつのうえでは",
+    "under the law; from a legal standpoint"
+  ],
+  "理論の上では": [
+    "りろんのうえでは",
+    "in theory; theoretically"
+  ],
+  "計算の上では": [
+    "けいさんのうえでは",
+    "on paper; in calculation"
+  ],
+  "書類の上では": [
+    "しょるいのうえでは",
+    "on paper; according to official documents"
+  ],
+  "た上で": [
+    "たうえで",
+    "after doing; upon doing"
+  ],
+  "た上での": [
+    "たうえでの",
+    "after doing; upon doing (attributive)"
+  ],
+  "た上では": [
+    "たうえでは",
+    "after doing; upon doing"
+  ],
+  "そのうえ": [
+    "そのうえ",
+    "in addition; on top of that"
+  ],
+  "さらに": [
+    "さらに",
+    "furthermore; moreover"
+  ],
+  "そればかりか": [
+    "そればかりか",
+    "not only that, but also"
+  ],
+  "そればかりでなく": [
+    "そればかりでなく",
+    "not only that, but also"
+  ],
+  "それに対して": [
+    "それにして",
+    "in contrast to that; on the other hand"
+  ],
+  "あるいは": [
+    "あるいは",
+    "or; alternatively"
+  ],
+  "それとも": [
+    "それとも",
+    "or; or else (in questions)"
+  ],
+  "そのため": [
+    "そのため",
+    "for that reason; consequently"
+  ],
+  "そこで": [
+    "そこで",
+    "thereupon; therefore (acted deliberately)"
+  ],
+  "すると": [
+    "すると",
+    "thereupon; and then (triggered discovery)"
+  ],
+  "このように": [
+    "このように",
+    "in this way; thus"
+  ],
+  "こうして": [
+    "こうして",
+    "in this manner; thus"
+  ],
+  "なぜなら": [
+    "なぜなら",
+    "this is because"
+  ],
+  "というのは": [
+    "というのは",
+    "this is because; the reason is"
+  ],
+  "ところが": [
+    "ところが",
+    "however; contrary to expectations"
+  ],
+  "それなのに": [
+    "それなのに",
+    "even so; despite that (regret/complaint)"
+  ],
+  "なお": [
+    "なお",
+    "furthermore; note that (supplementary notice)"
+  ],
+  "さて": [
+    "さて",
+    "now then; well (moving discourse forward)"
+  ],
+  "ところで": [
+    "ところで",
+    "by the way; incidentally"
+  ],
+  "ではあるまいか": [
+    "ではあるまいか",
+    "might it not be that; won't it be"
+  ],
+  "つつある": [
+    "つつある",
+    "in the process of; currently developing"
+  ],
+  "太郎": [
+    "たろう",
+    "Taro (given name)"
+  ],
+  "配布資料": [
+    "はいふしりょう",
+    "distributed handouts / materials"
   ]
 }

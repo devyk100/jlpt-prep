@@ -147,3 +147,75 @@ test('contextual annotations distinguish minute expressions from sufficiency and
   expect(q.translation).toBe('Basic salary is determined in accordance with experience and ability.');
   expect(q.options).toEqual(['に応じて', 'にわたって', 'に際して', 'にあたって']);
 });
+
+test('supervision round 2 regressions: aspectual compounds, conditional mono nara, domain ue, and enriched N2 coverage', () => {
+  const annMap = annotations as Record<string, Array<{ word: string; reading: string; meaning: string }>>;
+
+  // 1. 食べ切りました must have completion meaning (not lexical "cut")
+  const tabeTokens = annMap['一人で全部食べ切りました'];
+  expect(tabeTokens).toBeDefined();
+  const tabeKiri = tabeTokens.find(t => t.word.includes('切') || t.word === '食べ切りました');
+  expect(tabeKiri).toBeDefined();
+  expect(tabeKiri?.meaning).toContain('complete');
+  expect(tabeKiri?.meaning).not.toBe('to cut');
+
+  // 2. 過去に戻れるものなら must annotate ものなら as conditional if (not copula "is")
+  const monoNaraTokens = annMap['過去に戻れるものなら'];
+  expect(monoNaraTokens).toBeDefined();
+  const monoNara = monoNaraTokens.find(t => t.word === 'ものなら');
+  expect(monoNara).toBeDefined();
+  expect(monoNara?.meaning).toContain('if');
+  expect(monoNara?.meaning).not.toContain('copula');
+
+  // 3. 暦の上では must annotate as on/according to the calendar (not "after doing")
+  const koyomiTokens = annMap['暦の上では立春とはいうものの'];
+  expect(koyomiTokens).toBeDefined();
+  const koyomiUe = koyomiTokens.find(t => t.word.includes('上'));
+  expect(koyomiUe).toBeDefined();
+  expect(koyomiUe?.meaning).toContain('calendar');
+  expect(koyomiUe?.meaning).not.toContain('after doing');
+
+  // 4. 机の上に: 上 must mean top/above (not "in addition to")
+  const deskTokens = annMap['机の上に飲みかけのお茶があります'];
+  expect(deskTokens).toBeDefined();
+  const ueTok = deskTokens.find(t => t.word === '上');
+  expect(ueTok).toBeDefined();
+  expect(ueTok?.meaning).toContain('top');
+  expect(ueTok?.meaning).not.toContain('in addition to');
+
+  // 5. 読み通しました must express reading completely through (not "overlook")
+  const yomiTokens = annMap['読みかけの本を最後まで読み通しました'];
+  expect(yomiTokens).toBeDefined();
+  const yomiTooshi = yomiTokens.find(t => t.word.includes('通'));
+  expect(yomiTooshi).toBeDefined();
+  expect(yomiTooshi?.meaning).toContain('through');
+  expect(yomiTooshi?.meaning).not.toContain('overlook');
+
+  // 6. N2 Connector section added-n2-p3-10-150 has at least 20 examples covering all 9 functional groups
+  const connPoint = points.find(p => p.id === 'added-n2-p3-10-150');
+  expect(connPoint).toBeDefined();
+  expect(connPoint!.sentences.length).toBeGreaterThanOrEqual(20);
+  const connLabels = connPoint!.sentences.map(s => s.useLabel || '');
+  expect(connLabels.some(l => l.includes('Addition') || l.includes('しかも'))).toBe(true);
+  expect(connLabels.some(l => l.includes('Contrast') || l.includes('それに対して'))).toBe(true);
+  expect(connLabels.some(l => l.includes('Alternative') || l.includes('あるいは'))).toBe(true);
+  expect(connLabels.some(l => l.includes('choice') || l.includes('それとも'))).toBe(true);
+  expect(connLabels.some(l => l.includes('cause') || l.includes('そのため'))).toBe(true);
+  expect(connLabels.some(l => l.includes('conclusion') || l.includes('したがって'))).toBe(true);
+  expect(connLabels.some(l => l.includes('reaction') || l.includes('そこで'))).toBe(true);
+  expect(connLabels.some(l => l.includes('Triggered') || l.includes('すると'))).toBe(true);
+  expect(connLabels.some(l => l.includes('transition') || l.includes('さて'))).toBe(true);
+  expect(connLabels.some(l => l.includes('Digressive') || l.includes('ところで'))).toBe(true);
+
+  // 7. N2 Classical form review added-n2-c-118 has at least 9 examples covering all classical families
+  const c118Point = points.find(p => p.id === 'added-n2-c-118');
+  expect(c118Point).toBeDefined();
+  expect(c118Point!.sentences.length).toBeGreaterThanOrEqual(9);
+  const c118Labels = c118Point!.sentences.map(s => s.useLabel || '');
+  expect(c118Labels.some(l => l.includes('ざる'))).toBe(true);
+  expect(c118Labels.some(l => l.includes('まい'))).toBe(true);
+  expect(c118Labels.some(l => l.includes('ではあるまいか'))).toBe(true);
+  expect(c118Labels.some(l => l.includes('つつある'))).toBe(true);
+  expect(c118Labels.some(l => l.includes('せよ'))).toBe(true);
+  expect(c118Labels.some(l => l.includes('べき'))).toBe(true);
+});

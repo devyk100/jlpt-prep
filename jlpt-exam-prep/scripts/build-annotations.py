@@ -81,8 +81,36 @@ def segment(text):
   for m in t.tokenize(chunk,tokenizer.Tokenizer.SplitMode.C):
    surface=m.surface();reading=hira(m.reading_form());base=m.dictionary_form();norm=m.normalized_form()
    auxiliary={'だ':'copula/linking form: is','です':'polite copula/ending','ます':'polite verb ending','た':'past/completed form','ない':'negative: not','ぬ':'negative: not (formal/older form)','ず':'negative: without doing','たい':'want to do','れる':'passive/potential auxiliary','られる':'passive/potential/honorific auxiliary','せる':'causative: make/let','させる':'causative: make/let','う':'volitional/conjecture ending','よう':'volitional ending','まい':'negative intention/conjecture','べし':'should; ought to','そうだ':'appearance/hearsay auxiliary','らしい':'apparently; characteristic of'}
-   if m.part_of_speech()[0]=='助動詞' and base in auxiliary:
-    out.append({'word':surface,'reading':reading,'meaning':auxiliary[base]});continue
+   if m.part_of_speech()[0]=='助動詞':
+    if surface=='なら':
+     out.append({'word':'なら','reading':'なら','meaning':'if; in the case of (conditional)'});continue
+    elif surface in ('だろ','だろう'):
+     out.append({'word':surface,'reading':'だろう','meaning':'probably; conjecture copula'});continue
+    elif surface in ('でし','でしょう'):
+     out.append({'word':surface,'reading':'でしょう','meaning':'probably; polite conjecture copula'});continue
+    elif base in auxiliary:
+     out.append({'word':surface,'reading':reading,'meaning':auxiliary[base]});continue
+   if m.part_of_speech()[1]=='非自立可能':
+    if base=='切る':
+     out.append({'word':surface,'reading':reading,'meaning':'finish completely; do to the very end; exhaustively'});continue
+    elif base=='きれる':
+     out.append({'word':surface,'reading':reading,'meaning':'can finish completely'});continue
+    elif base=='通す':
+     out.append({'word':surface,'reading':reading,'meaning':'persist in doing to the end; do all the way through'});continue
+    elif base=='抜く':
+     out.append({'word':surface,'reading':reading,'meaning':'persevere through to the end; endure completely'});continue
+    elif base=='直す':
+     out.append({'word':surface,'reading':reading,'meaning':'do again; redo; start over'});continue
+   if surface=='上':
+    prev_words=[x['word'] for x in out[-2:]]
+    if 'の' in prev_words:
+     domain_match=any(w in text for w in ['暦','法律','書類','計算','理論','制度','統計','立場','歴史'])
+     if domain_match:
+      out.append({'word':'上','reading':'うえ','meaning':'according to; from the standpoint of; in terms of'});continue
+     else:
+      out.append({'word':'上','reading':'うえ','meaning':'top; above; surface'});continue
+    elif 'た' in prev_words:
+     out.append({'word':'上','reading':'うえ','meaning':'upon; after doing'});continue
    if surface in overrides:
     reading,gloss=overrides[surface];out.append({'word':surface,'reading':reading,'meaning':gloss});continue
    candidates=words.get(surface,[]) or words.get(base,[]) or words.get(norm,[])
