@@ -290,7 +290,7 @@ genki1TimeAndAgeMatrix: {
       {
         label: 'Group 2: Ru-Verbs (一段動詞)',
         cells: [
-          'Ends in る preceded by an /i/ or /e/ sound (e.g. 食べる tabe-ru, 見る mi-ru, 起きる oki-ru)',
+          'Ends in る preceded by an /i/ or /e/ sound (e.g. 食べる, 見る, 起きる: 直前が「い段」または「え段」)',
           'Simply DROP る to obtain the stem (食べ-, 見-, 起き-)',
           '食べます / 食べません, 見ます / 見ません',
           'Regular behavior: stems are stable across all conjugations.'
@@ -303,7 +303,7 @@ genki1TimeAndAgeMatrix: {
           'Ends in any basic -u syllable: う, つ, る, む, ぶ, ぬ, く, ぐ, す',
           'Shift the final -u sound to the corresponding -i sound (u→i, tsu→chi, ru→ri, ku→ki, mu→mi, su→shi)',
           '行く → 行きます / 行きません, 飲む → 飲みます, 話す → 話します, 待つ → 待ちます',
-          '⚠️ LOOKS LIKE RU BUT IS AN U-VERB: 帰る (kaeru → かえります), 入る (hairu → はいります), 知る (shiru → しります), 走る (hashiru → はしります)!'
+          '⚠️ LOOKS LIKE RU BUT IS AN U-VERB: 帰る（かえります）, 入る（はいります）, 知る（しります）, 走る（はしります）!'
         ],
         note: 'Golden Rule: If a verb ends in -aru, -oru, -uru, it is ALWAYS an U-verb. If it ends in -iru or -eru, check if it is one of the classic Godan exceptions like 帰る.'
       },
@@ -315,7 +315,7 @@ genki1TimeAndAgeMatrix: {
           'します / しません, 来ます (きます) / 来ません (きません)',
           'Compound suru-verbs follow this pattern: 勉強する → 勉強します, 案内する → 案内します'
         ],
-        note: 'Notice the kanji 來/来 changes pronunciation from ku-ru to ki-masu.'
+        note: '来（く）る は活用によって「来（き）ます」と読みが変化します。'
       }
     ]
   },

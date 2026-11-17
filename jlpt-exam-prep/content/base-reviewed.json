@@ -12394,7 +12394,7 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "う・つ・る→って | む・ぶ・ぬ→んで | く→いて (行く→行って!) | ぐ→いで | す→して | る(一段)→て",
-    "nuance": "CRITICAL EXCEPTION: 行く (iku) does NOT become いいて. It irregularly contracts to 行って (itte)!",
+    "nuance": "CRITICAL EXCEPTION: 行く は「いいて」にならず、「行って」と促音便になります。",
     "keyTakeaway": "MUG-UP: V-て + ください = Please do. Prohibited: V-て + はいけません = Must not.",
     "table": {
       "title": "The Te-Form (て形) Conjugation Matrix",
@@ -12410,62 +12410,62 @@
         {
           "label": "Group 1: う・つ・る",
           "cells": [
-            "買う (kau), 待つ (matsu), 取る (toru)",
+            "買う, 待つ, 取る",
             "買って, 待って, 取って",
             "買った, 待った, 取った",
-            "う・つ・る → って / った (Small つ + て)"
+            "う・つ・る → って / った (促音便: 小さい「っ」+ て)"
           ],
-          "note": "Classic rhythm: \"u, tsu, ru becomes tte\""
+          "note": "Classic rhythm: \"u, tsu, ru\" becomes \"tte\""
         },
         {
           "label": "Group 1: む・ぶ・ぬ",
           "cells": [
-            "飲む (nomu), 遊ぶ (asobu), 死ぬ (shinu)",
+            "飲む, 遊ぶ, 死ぬ",
             "飲んで, 遊んで, 死んで",
             "飲んだ, 遊んだ, 死んだ",
-            "む・ぶ・ぬ → んで / んだ (Voiced ん + で)"
+            "む・ぶ・ぬ → んで / んだ (撥音便: 濁音の「で」)"
           ],
           "note": "Voiced consonants always take で, not て."
         },
         {
           "label": "Group 1: く / ぐ",
           "cells": [
-            "書く (kaku), 泳ぐ (oyogu)",
+            "書く, 泳ぐ",
             "書いて, 泳いで",
             "書いた, 泳いだ",
-            "く → いて, ぐ → いで (Drop consonant, add い)"
+            "く → いて, ぐ → いで (イ音便: い + て/で)"
           ],
-          "note": "CRITICAL EXCEPTION: 行く (iku) does NOT become いいて! It becomes 行って (itte) / 行った (itta)!"
+          "note": "CRITICAL EXCEPTION: 行く は「いいて」にならず、「行って・行った」と促音便になります。"
         },
         {
           "label": "Group 1: す",
           "cells": [
-            "話す (hanasu), 出す (dasu)",
+            "話す, 出す",
             "話して, 出して",
             "話した, 出した",
-            "す → して / した (Regular change)"
+            "す → して / した"
           ],
           "note": "Behaves cleanly like polite shimasu."
         },
         {
-          "label": "Group 2: る (Ichidan)",
+          "label": "Group 2: る (一段動詞)",
           "cells": [
-            "食べる (taberu), 見る (miru), 起きる (okiru)",
+            "食べる, 見る, 起きる",
             "食べて, 見て, 起きて",
             "食べた, 見た, 起きた",
-            "Simply drop る and attach て / た"
+            "る を取って「て・た」を付ける"
           ],
-          "note": "Vowel before る is usually e or i (tabe-, mi-)."
+          "note": "Vowel before る is usually e or i (たべ・み)."
         },
         {
-          "label": "Group 3: Irregular (変格)",
+          "label": "Group 3: Irregular (変格動詞)",
           "cells": [
-            "する (suru), 来る (kuru)",
-            "して, 来て (きて)",
-            "した, 来た (きた)",
-            "Completely irregular, mug up pronunciation of 来 (ki-te, ki-ta)!"
+            "する, 来る",
+            "して, 来て",
+            "した, 来た",
+            "不規則活用: 来る は「来て（きて）・来た（きた）」と読みが変化します。"
           ],
-          "note": "Notice 来る (kuru) changes reading to \"ki\" in て/た form!"
+          "note": "Notice 来る changes reading to 「き」 in て/た form: 来て（きて）, 来た（きた）."
         }
       ]
     },

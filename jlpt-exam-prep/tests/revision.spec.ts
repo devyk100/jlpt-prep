@@ -307,3 +307,31 @@ test('default Japanese-only examples, independent translation disclosure, and tr
   await optKore.click();
   await expect(page.getByText('Sentence Rationale')).toBeVisible();
 });
+
+test('no parenthesized romaji pronunciations in master tables or cards', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: /Revision \(暗記表\)/ }).click();
+  await expect(page.getByText('The Te-Form (て形) Conjugation Matrix')).toBeVisible();
+
+  // Check page content for forbidden romaji pronunciations
+  const pageContent = await page.content();
+  expect(pageContent).not.toMatch(/\(matsu\)/i);
+  expect(pageContent).not.toMatch(/\(kau\)/i);
+  expect(pageContent).not.toMatch(/\(nomu\)/i);
+  expect(pageContent).not.toMatch(/\(taberu\)/i);
+  expect(pageContent).not.toMatch(/\(kuru\)/i);
+  expect(pageContent).not.toMatch(/\(iku\)/i);
+  expect(pageContent).not.toMatch(/\(shinu\)/i);
+  expect(pageContent).not.toMatch(/\(asobu\)/i);
+  expect(pageContent).not.toMatch(/\(kaku\)/i);
+  expect(pageContent).not.toMatch(/\(oyogu\)/i);
+  expect(pageContent).not.toMatch(/\(hanasu\)/i);
+  expect(pageContent).not.toMatch(/\(dasu\)/i);
+  expect(pageContent).not.toMatch(/\(takai desu\)/i);
+  expect(pageContent).not.toMatch(/\(shizuka desu\)/i);
+  expect(pageContent).not.toMatch(/\(hatachi\)/i);
+  expect(pageContent).not.toMatch(/\(pun\)/i);
+
+  // Verify clean Japanese rendering
+  await expect(page.locator('table').first()).toContainText('買う, 待つ, 取る');
+});
