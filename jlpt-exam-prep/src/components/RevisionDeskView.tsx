@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MASTER_MUG_UP_TABLES } from '../data/mugUpTables';
 import { MugUpTableView } from './MugUpTableView';
 import type { MugUpTable, JLPTLevel } from '../types';
-import { Table, BookOpen, ArrowRight } from 'lucide-react';
+import { Table, BookOpen, ArrowRight, ListFilter } from 'lucide-react';
 
 interface TableMeta {
   key: string;
@@ -126,19 +126,14 @@ interface Props {
 }
 
 export const RevisionDeskView: React.FC<Props> = ({
-  onNavigateToLesson,
-  onExitRevision
+  onNavigateToLesson
 }) => {
-  const [selectedKey, setSelectedKey] = useState<string>(REVISION_TABLES_CATALOG[0].key);
   const [levelFilter, setLevelFilter] = useState<'all' | 'N5' | 'N4' | 'N3' | 'N2'>('all');
 
   const filteredTables = REVISION_TABLES_CATALOG.filter(item => {
     if (levelFilter === 'all') return true;
     return item.level === levelFilter;
   });
-
-  const currentMeta =
-    REVISION_TABLES_CATALOG.find(t => t.key === selectedKey) || filteredTables[0] || REVISION_TABLES_CATALOG[0];
 
   return (
     <div className="flex-1 min-w-0 bg-[#ffffff] md:h-[calc(100vh-64px)] overflow-y-auto">
@@ -153,7 +148,7 @@ export const RevisionDeskView: React.FC<Props> = ({
               </h1>
             </div>
             <p className="text-xs text-[#788278]">
-              High-yield conjugation matrices and cross-chapter synthesis sheets.
+              {filteredTables.length} master tables & synthesis reference sheets · Scroll through all matrices continuously.
             </p>
           </div>
 
@@ -163,64 +158,76 @@ export const RevisionDeskView: React.FC<Props> = ({
               <button
                 key={lvl}
                 onClick={() => setLevelFilter(lvl)}
-                className={`px-2.5 py-1 rounded text-xs transition-colors ${
+                className={`px-2.5 py-1 rounded text-xs transition-colors cursor-pointer ${
                   levelFilter === lvl
                     ? 'bg-white text-[#283b35] font-semibold shadow-xs'
                     : 'text-[#617066] hover:text-[#283b35]'
                 }`}
               >
-                {lvl === 'all' ? 'All' : lvl}
+                {lvl === 'all' ? `All (${REVISION_TABLES_CATALOG.length})` : lvl}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Horizontal Table Switcher */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
-          {filteredTables.map(item => {
-            const isSelected = item.key === currentMeta.key;
-            return (
-              <button
-                key={item.key}
-                onClick={() => setSelectedKey(item.key)}
-                className={`px-3 py-1.5 rounded-md text-xs whitespace-nowrap shrink-0 border transition-all ${
-                  isSelected
-                    ? 'bg-[#467b6b] text-white border-[#467b6b] font-semibold shadow-xs'
-                    : 'bg-[#faf9f5] border-[#dfded3] text-[#617066] hover:bg-[#edece1] hover:text-[#283b35]'
-                }`}
-              >
-                <span className="opacity-75 mr-1">[{item.level}]</span>
-                <span>{item.table.title.split(':')[0]}</span>
-              </button>
-            );
-          })}
+        {/* Quick Jump Bar (Wrapping pills, non-overflowing) */}
+        <div className="flex items-center gap-1.5 flex-wrap p-3 rounded-lg bg-[#faf9f5] border border-[#dfded3] text-xs text-[#617066]">
+          <span className="font-semibold text-[#283b35] mr-1 flex items-center gap-1 shrink-0">
+            <ListFilter className="w-3.5 h-3.5 text-[#467b6b]" />
+            Jump to table:
+          </span>
+          {filteredTables.map(item => (
+            <button
+              key={item.key}
+              onClick={() => {
+                const el = document.getElementById(item.key);
+                el?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="px-2 py-1 rounded bg-white hover:bg-[#edece1] border border-[#dfded3] text-[#425248] text-[11px] transition-colors cursor-pointer"
+            >
+              <span className="opacity-60 text-[10px] mr-1 font-mono">[{item.level}]</span>
+              <span>{item.table.title.split(':')[0]}</span>
+            </button>
+          ))}
         </div>
 
-        {/* Selected Table Container */}
-        {currentMeta && (
-          <div className="space-y-4">
-            {/* Table Action Bar */}
-            <div className="flex items-center justify-between p-3 rounded-lg bg-[#faf9f5] border border-[#dfded3]">
-              <div className="flex items-center gap-2 text-xs text-[#617066]">
-                <BookOpen className="w-3.5 h-3.5 text-[#467b6b]" />
-                <span>Primary Lesson: <strong>{currentMeta.lessonLabel}</strong></span>
+        {/* Continuous All-in-One Scroll of All Tables */}
+        <div className="space-y-8 pb-12">
+          {filteredTables.map((item, index) => (
+            <div
+              key={item.key}
+              id={item.key}
+              className="space-y-3 pt-2 scroll-mt-4"
+            >
+              {/* Table Action Bar */}
+              <div className="flex items-center justify-between p-3 rounded-lg bg-[#faf9f5] border border-[#dfded3]">
+                <div className="flex items-center gap-2.5 text-xs text-[#617066]">
+                  <span className="px-2 py-0.5 rounded bg-[#467b6b]/10 text-[#2c5347] font-semibold text-[11px]">
+                    {item.level}
+                  </span>
+                  <span className="font-bold text-[#1e2d26]">
+                    #{index + 1}
+                  </span>
+                  <BookOpen className="w-3.5 h-3.5 text-[#467b6b]" />
+                  <span>Primary Lesson: <strong>{item.lessonLabel}</strong></span>
+                </div>
+
+                <button
+                  onClick={() => onNavigateToLesson(item.lessonId)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-white border border-[#467b6b] text-[#2c5347] text-xs font-semibold hover:bg-[#eaf4ef] transition-colors cursor-pointer"
+                >
+                  <span>Jump to Lesson in Textbook</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
               </div>
 
-              <button
-                onClick={() => onNavigateToLesson(currentMeta.lessonId)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-white border border-[#467b6b] text-[#2c5347] text-xs font-semibold hover:bg-[#eaf4ef] transition-colors"
-              >
-                <span>Jump to Lesson in Textbook</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              {/* Render High-Yield Table */}
+              <div className="rounded-lg border border-[#dfded3] bg-white p-4 shadow-2xs">
+                <MugUpTableView table={item.table} />
+              </div>
             </div>
-
-            {/* Render High-Yield Table */}
-            <div className="rounded-lg border border-[#dfded3] bg-white p-4">
-              <MugUpTableView table={currentMeta.table} />
-            </div>
-          </div>
-        )}
+          ))}
+        </div>
       </div>
     </div>
   );

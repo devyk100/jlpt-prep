@@ -251,7 +251,7 @@ test('mode separation: in-lesson tables, leakage-free chapter practice, and revi
   // 4. Switch to Revision Mode via Topbar
   await page.getByRole('button', { name: /Revision \(暗記表\)/ }).click();
   await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
-  await expect(page.getByRole('button', { name: /Jump to Lesson in Textbook/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Jump to Lesson in Textbook/ }).first()).toBeVisible();
 });
 
 test('default Japanese-only examples, independent translation disclosure, and translation-leak-free practice', async ({ page }) => {
@@ -337,7 +337,7 @@ test('no parenthesized romaji pronunciations in master tables or cards', async (
   expect(pageContent).not.toMatch(/\(pun\)/i);
 
   // Verify ruby annotation renders kanji with furigana without romaji
-  const table = page.locator('table').first();
+  const table = page.locator('#teFormMatrix table').first();
   await expect(table).toBeVisible();
   const textWithoutRuby = await table.evaluate(el => {
     const clone = el.cloneNode(true) as HTMLElement;
