@@ -72,6 +72,30 @@
         "tokens": [],
         "useLabel": "Nouns do not mark number automatically",
         "nuanceNote": "学生 itself does not change into a plural form; 二人とも supplies the number information."
+      },
+      {
+        "id": "g1-l1-wa-desu::merged-genki1-wa-desu::s-g1-1-1",
+        "japanese": "私はカリフォルニア大学の留学生です。",
+        "english": "I am an international student at the University of California.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "Standard polite self-introduction formula."
+      },
+      {
+        "id": "g1-l1-wa-desu::merged-genki1-wa-desu::supp-use-examples-11",
+        "japanese": "スミスさんは学生ですか。はい、（私は）学生です。",
+        "english": "Are you a student, Smith-san? Yes, I am.",
+        "tokens": [],
+        "useLabel": "Contextual topic omission",
+        "nuanceNote": "Once the topic is established by conversational context, Japanese naturally omits the pronoun."
+      },
+      {
+        "id": "g1-l1-wa-desu::merged-genki1-wa-desu::supp-use-examples-12",
+        "japanese": "昼ご飯は食べましたが、朝ご飯は食べませんでした。",
+        "english": "I ate lunch, but as for breakfast, I didn't eat.",
+        "tokens": [],
+        "useLabel": "Contrastive topic marking",
+        "nuanceNote": "は marks contrast between two parallel contextual topics."
       }
     ],
     "quiz": [
@@ -445,7 +469,55 @@
       "Time",
       "Numbers"
     ],
-    "sourceReference": "Section starts on printed p. 36 (PDF p. 44). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 36 (PDF p. 44). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki I: Time (時・分) & Age (歳) Reading Matrix",
+      "subtitle": "The foundational number transformations and phonetic traps in Lesson 1.",
+      "columns": [
+        "Category / Unit",
+        "Standard Pattern",
+        "Irregular / Phonetic Trap Items",
+        "Question Form & Mnemonic"
+      ],
+      "rows": [
+        {
+          "label": "Hours (〜時: じ)",
+          "cells": [
+            "1時(いちじ), 2時(にじ), 3時(さんじ), 5時(ごじ), 6時(ろくじ), 8時(はちじ), 10時(じゅうじ), 11時(じゅういちじ), 12時(じゅうにじ)",
+            "⚠️ 4時 = よじ (NOT よんじ/しじ), 7時 = しちじ (sometimes ななじ), 9時 = くじ (NOT きゅうじ)",
+            "何時 (なんじ)? Example: 今、何時ですか。(What time is it now?)"
+          ],
+          "note": "Trap alert: 4:00, 7:00, 9:00 have unique readings that JLPT tests frequently."
+        },
+        {
+          "label": "Minutes (〜分: ふん/ぷん)",
+          "cells": [
+            "Unvoiced ふん: 2分(にふん), 5分(ごふん), 7分(ななふん), 9分(きゅうふん)",
+            "Geminate / Voiced ぷん: 1分(いっぷん), 3分(さんぷん), 4分(よんぷん), 6分(ろっぷん), 8分(はっぷん/はちふん), 10分(じゅっぷん/じっぷん)",
+            "何分 (なんぷん)? Half past = 半 (はん): 1時半 (1:30)"
+          ],
+          "note": "Mnemonic: 1, 3, 4, 6, 8, 10 take ぷん (pun)."
+        },
+        {
+          "label": "Age (〜歳: さい)",
+          "cells": [
+            "2歳(にさい), 3歳(さんさい), 4歳(よんさい), 5歳(ごさい), 6歳(ろくさい), 7歳(ななさい), 9歳(きゅうさい)",
+            "⚠️ 1歳 = いっさい, 8歳 = はっさい, 10歳 = じゅっさい (じっさい), 20歳 = はたち (special standalone reading!)",
+            "何歳 (なんさい)? Polite: おいくつですか。"
+          ],
+          "note": "20 years old is はたち (hatachi), no さい suffix attached!"
+        },
+        {
+          "label": "Telephone & School Year",
+          "cells": [
+            "学年: 1年生(いちねんせい), 2年生(にねんせい), 3年生(さんねんせい), 4年生(よねんせい ⚠️)",
+            "Telephone hyphens are read as の: 090-1234-5678 (ぜろきゅうぜろ の いちにさんよん の...)",
+            "何年生 (なんねんせい)? / 電話番号は何番 (なんばん)?"
+          ],
+          "note": "4th year student is よねんせい (NOT よんねんせい)."
+        }
+      ]
+    }
   },
   {
     "id": "g1-l2-kore-sore-are-dore",
@@ -1237,6 +1309,38 @@
         "tokens": [],
         "useLabel": "Verb group affects the stem",
         "nuanceNote": "読む is an u-verb, 見る a ru-verb, and する irregular; their polite stems are formed differently."
+      },
+      {
+        "id": "added-g1-3-2::merged-genki1-verb-groups::s-g1-3-1",
+        "japanese": "毎晩図書館で日本語を勉強します。",
+        "english": "I study Japanese in the library every night.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "勉強する is an irregular compound verb (勉強します)."
+      },
+      {
+        "id": "added-g1-3-2::merged-genki1-verb-groups::supp-use-examples-13",
+        "japanese": "食べる→食べます、見る→見ます、起きる→起きます。",
+        "english": "Eat -> eat (polite); see -> see (polite); wake up -> wake up (polite).",
+        "tokens": [],
+        "useLabel": "Ru-verb (Ichidan) drop-ru conjugation",
+        "nuanceNote": "Ru-verbs drop final る and attach ます without vowel alternation."
+      },
+      {
+        "id": "added-g1-3-2::merged-genki1-verb-groups::supp-use-examples-14",
+        "japanese": "書く→書きます、話す→話します、待つ→待ちます。",
+        "english": "Write -> write (polite); speak -> speak (polite); wait -> wait (polite).",
+        "tokens": [],
+        "useLabel": "U-verb (Godan) vowel shift conjugation",
+        "nuanceNote": "U-verbs shift the final u-vowel to the corresponding i-vowel before ます."
+      },
+      {
+        "id": "added-g1-3-2::merged-genki1-verb-groups::supp-use-examples-15",
+        "japanese": "する→します、くる（来る）→きます（来ます）。",
+        "english": "Do -> do (polite); come -> come (polite).",
+        "tokens": [],
+        "useLabel": "Irregular verbs",
+        "nuanceNote": "Irregular verbs する and くる conjugate with stem changes."
       }
     ],
     "quiz": [],
@@ -1246,7 +1350,50 @@
     ],
     "book": "Genki I",
     "chapter": "Lesson 3",
-    "sourceReference": "Section starts on printed p. 82 (PDF p. 90). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 82 (PDF p. 90). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki I: The Three Verb Groups & Polite Conjugation Matrix",
+      "subtitle": "Ru-verbs (一段), U-verbs (五段), and Irregular verbs (変格) in Lesson 3.",
+      "columns": [
+        "Verb Group",
+        "Dictionary Ending Rule",
+        "Stem Formation Formula",
+        "Present Polite Affirmative & Negative",
+        "Crucial Trap Verbs (The \"Fake Ru\" Verbs)"
+      ],
+      "rows": [
+        {
+          "label": "Group 2: Ru-Verbs (一段動詞)",
+          "cells": [
+            "Ends in る preceded by an /i/ or /e/ sound (e.g. 食べる tabe-ru, 見る mi-ru, 起きる oki-ru)",
+            "Simply DROP る to obtain the stem (食べ-, 見-, 起き-)",
+            "食べます / 食べません, 見ます / 見ません",
+            "Regular behavior: stems are stable across all conjugations."
+          ],
+          "note": "Drop る, add ます/ません."
+        },
+        {
+          "label": "Group 1: U-Verbs (五段動詞)",
+          "cells": [
+            "Ends in any basic -u syllable: う, つ, る, む, ぶ, ぬ, く, ぐ, す",
+            "Shift the final -u sound to the corresponding -i sound (u→i, tsu→chi, ru→ri, ku→ki, mu→mi, su→shi)",
+            "行く → 行きます / 行きません, 飲む → 飲みます, 話す → 話します, 待つ → 待ちます",
+            "⚠️ LOOKS LIKE RU BUT IS AN U-VERB: 帰る (kaeru → かえります), 入る (hairu → はいります), 知る (shiru → しります), 走る (hashiru → はしります)!"
+          ],
+          "note": "Golden Rule: If a verb ends in -aru, -oru, -uru, it is ALWAYS an U-verb. If it ends in -iru or -eru, check if it is one of the classic Godan exceptions like 帰る."
+        },
+        {
+          "label": "Group 3: Irregular Verbs (不規則動詞)",
+          "cells": [
+            "Only TWO verbs in the entire Japanese language: する (to do) and 来る (くる, to come)",
+            "Stems undergo complete vowel mutation: する → し-, くる → き-",
+            "します / しません, 来ます (きます) / 来ません (きません)",
+            "Compound suru-verbs follow this pattern: 勉強する → 勉強します, 案内する → 案内します"
+          ],
+          "note": "Notice the kanji 來/来 changes pronunciation from ku-ru to ki-masu."
+        }
+      ]
+    }
   },
   {
     "id": "added-g1-3-3",
@@ -2183,6 +2330,30 @@
         "tokens": [],
         "useLabel": "Different verb groups",
         "nuanceNote": "読む→読んで, 聞く→聞いて. The te-form ending depends on the verb group and final sound."
+      },
+      {
+        "id": "added-g1-6-8::merged-genki1-te-form::s-g1-6-1",
+        "japanese": "すみませんが、窓を開けてください。",
+        "english": "Excuse me, but please open the window.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "開ける is Ru-verb: stem 開け + て + ください."
+      },
+      {
+        "id": "added-g1-6-8::merged-genki1-te-form::supp-use-examples-16",
+        "japanese": "朝起きて、顔を洗って、朝ご飯を食べました。",
+        "english": "I woke up in the morning, washed my face, and ate breakfast.",
+        "tokens": [],
+        "useLabel": "Sequence of actions",
+        "nuanceNote": "The te-form links successive actions in chronological order."
+      },
+      {
+        "id": "added-g1-6-8::merged-genki1-te-form::supp-use-examples-17",
+        "japanese": "大事な話ですから、静かに聞いてください。",
+        "english": "Because this is an important matter, please listen quietly.",
+        "tokens": [],
+        "useLabel": "Polite request with ください",
+        "nuanceNote": "V-て + ください forms a standard polite request."
       }
     ],
     "quiz": [],
@@ -2192,7 +2363,80 @@
     ],
     "book": "Genki I",
     "chapter": "Lesson 6",
-    "sourceReference": "Section starts on printed p. 146 (PDF p. 154). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 146 (PDF p. 154). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The Te-Form (て形) Conjugation Matrix",
+      "subtitle": "The foundational gateway for ~ている, ~てから, ~てもいい, ~てはいけない, and ~てしまう.",
+      "columns": [
+        "Verb Group / Ending",
+        "Dictionary (辞書形)",
+        "Te-Form (て形)",
+        "Past (た形)",
+        "Mnemonic / Mug-Up Rule"
+      ],
+      "rows": [
+        {
+          "label": "Group 1: う・つ・る",
+          "cells": [
+            "買う (kau), 待つ (matsu), 取る (toru)",
+            "買って, 待って, 取って",
+            "買った, 待った, 取った",
+            "う・つ・る → って / った (Small つ + て)"
+          ],
+          "note": "Classic rhythm: \"u, tsu, ru becomes tte\""
+        },
+        {
+          "label": "Group 1: む・ぶ・ぬ",
+          "cells": [
+            "飲む (nomu), 遊ぶ (asobu), 死ぬ (shinu)",
+            "飲んで, 遊んで, 死んで",
+            "飲んだ, 遊んだ, 死んだ",
+            "む・ぶ・ぬ → んで / んだ (Voiced ん + で)"
+          ],
+          "note": "Voiced consonants always take で, not て."
+        },
+        {
+          "label": "Group 1: く / ぐ",
+          "cells": [
+            "書く (kaku), 泳ぐ (oyogu)",
+            "書いて, 泳いで",
+            "書いた, 泳いだ",
+            "く → いて, ぐ → いで (Drop consonant, add い)"
+          ],
+          "note": "CRITICAL EXCEPTION: 行く (iku) does NOT become いいて! It becomes 行って (itte) / 行った (itta)!"
+        },
+        {
+          "label": "Group 1: す",
+          "cells": [
+            "話す (hanasu), 出す (dasu)",
+            "話して, 出して",
+            "話した, 出した",
+            "す → して / した (Regular change)"
+          ],
+          "note": "Behaves cleanly like polite shimasu."
+        },
+        {
+          "label": "Group 2: る (Ichidan)",
+          "cells": [
+            "食べる (taberu), 見る (miru), 起きる (okiru)",
+            "食べて, 見て, 起きて",
+            "食べた, 見た, 起きた",
+            "Simply drop る and attach て / た"
+          ],
+          "note": "Vowel before る is usually e or i (tabe-, mi-)."
+        },
+        {
+          "label": "Group 3: Irregular (変格)",
+          "cells": [
+            "する (suru), 来る (kuru)",
+            "して, 来て (きて)",
+            "した, 来た (きた)",
+            "Completely irregular, mug up pronunciation of 来 (ki-te, ki-ta)!"
+          ],
+          "note": "Notice 来る (kuru) changes reading to \"ki\" in て/た form!"
+        }
+      ]
+    }
   },
   {
     "id": "g1-l7-describing-people",
@@ -2538,6 +2782,30 @@
         "tokens": [],
         "useLabel": "Repeated activity",
         "nuanceNote": "ている can also describe a recurring activity, depending on the time expression and context."
+      },
+      {
+        "id": "added-g1-7-9::merged-genki1-te-iru::s-g1-7-1",
+        "japanese": "姉は東京のIT企業に勤めています。",
+        "english": "My older sister is employed at an IT company in Tokyo.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "勤めている indicates ongoing occupational employment state."
+      },
+      {
+        "id": "added-g1-7-9::merged-genki1-te-iru::supp-use-examples-18",
+        "japanese": "今、部屋で日本語の文法を勉強しています。",
+        "english": "Right now, I am studying Japanese grammar in my room.",
+        "tokens": [],
+        "useLabel": "Action in continuous progress",
+        "nuanceNote": "Activity verbs in 〜ている express an action currently in active progress."
+      },
+      {
+        "id": "added-g1-7-9::merged-genki1-te-iru::supp-use-examples-19",
+        "japanese": "田中さんは窓の近くの席に座っています。",
+        "english": "Tanaka-san is seated in the chair near the window.",
+        "tokens": [],
+        "useLabel": "Resulting continuous state",
+        "nuanceNote": "Instantaneous change verbs (座る、結婚する、知る) in 〜ている express a lasting resultant state."
       }
     ],
     "quiz": [],
@@ -2875,7 +3143,50 @@
     ],
     "book": "Genki I",
     "chapter": "Lesson 8",
-    "sourceReference": "Section starts on printed p. 186 (PDF p. 194). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 186 (PDF p. 194). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki I: Plain / Short Forms (普通形) Master Matrix (Lessons 8 & 9)",
+      "subtitle": "The essential informal register for ~と思う, ~と言っていた, and casual conversation.",
+      "columns": [
+        "Predicate Type",
+        "Present Affirmative",
+        "Present Negative",
+        "Past Affirmative",
+        "Past Negative"
+      ],
+      "rows": [
+        {
+          "label": "Verbs (動詞)",
+          "cells": [
+            "辞書形 (Dictionary): 食べる / 行く",
+            "ない形 (Nai-form): 食べない / 行かない (Note: ある → ない)",
+            "た形 (Ta-form): 食べた / 行った",
+            "なかった形: 食べなかった / 行かなかった"
+          ],
+          "note": "Conjugates like the Te-form (て → た, で → だ)."
+        },
+        {
+          "label": "い-Adjectives",
+          "cells": [
+            "Drop です: かわいい / 高い",
+            "Drop です: かわいくない / 高くない",
+            "Drop です: かわいかった / 高かった",
+            "Drop です: かわいくなかった / 高くなかった"
+          ],
+          "note": "Plain form of い-adjectives simply drops です!"
+        },
+        {
+          "label": "な-Adjectives & Nouns",
+          "cells": [
+            "だ (Attach だ): 静かだ / 学生だ",
+            "じゃない: 静かじゃない / 学生じゃない",
+            "だった: 静かだった / 学生だった",
+            "じゃなかった: 静かじゃなかった / 学生じゃなかった"
+          ],
+          "note": "CRITICAL TRAP: In affirmative present, です becomes だ! (e.g. 日本人だと思う)."
+        }
+      ]
+    }
   },
   {
     "id": "g1-l9-mou-mada",
@@ -4009,6 +4320,30 @@
         "tokens": [],
         "useLabel": "Negative advice",
         "nuanceNote": "Negative advice uses Vない; it is advice, not the formal prohibition てはいけない."
+      },
+      {
+        "id": "added-g1-12-19::merged-genki1-ndesu::s-g1-12-1",
+        "japanese": "どうして遅刻したのですか。「目覚まし時計が鳴らなかったんです。」",
+        "english": "Why were you late? \"The thing is, my alarm clock didn't ring.\"",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "Explanatory んです provides the empathetic reason for the mishap."
+      },
+      {
+        "id": "added-g1-12-19::merged-genki1-ndesu::supp-use-examples-20",
+        "japanese": "どうして遅刻したのですか。電車が止まったんです。",
+        "english": "Why were you late? It's because the train stopped.",
+        "tokens": [],
+        "useLabel": "Providing background explanation",
+        "nuanceNote": "〜んです provides an underlying causal explanation for an observed situation."
+      },
+      {
+        "id": "added-g1-12-19::merged-genki1-ndesu::supp-use-examples-21",
+        "japanese": "頭が痛いんです。少し休んでもいいですか。",
+        "english": "The thing is, I have a headache. May I rest a little?",
+        "tokens": [],
+        "useLabel": "Inviting clarification or detail",
+        "nuanceNote": "〜んです frames personal circumstances before requesting permission."
       }
     ],
     "quiz": [],
@@ -4110,7 +4445,50 @@
       "Potential",
       "Ability"
     ],
-    "sourceReference": "Section starts on printed p. 22 (PDF p. 30). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 22 (PDF p. 30). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki II: Potential Verbs (可能形) Matrix (Lesson 13)",
+      "subtitle": "Expressing ability and situational possibility (\"can do\").",
+      "columns": [
+        "Verb Group",
+        "Dictionary Form",
+        "Potential Form (可能形)",
+        "Particle Transformation Rule",
+        "Crucial Trap Alerts"
+      ],
+      "rows": [
+        {
+          "label": "Group 2: Ru-Verbs",
+          "cells": [
+            "食べる, 見る, 起きる",
+            "食べられる, 見られる, 起きられる (Drop る, attach られる)",
+            "Direct object particle を shifts to が: 漢字が読める, 日本語が話せる",
+            "Colloquial \"ra-nuki\" (ら抜き): 食べれる, 見れる (frequent in spoken Japanese, but avoid on formal JLPT!)"
+          ],
+          "note": "Identical form to passive; context disambiguates."
+        },
+        {
+          "label": "Group 1: U-Verbs",
+          "cells": [
+            "行く, 飲む, 話す, 待つ, 泳ぐ",
+            "行ける, 飲める, 話せる, 待てる, 泳げる (Shift final -u sound to -e sound and add る)",
+            "All potential verbs conjugate as Group 2 (Ichidan) verbs once transformed: 話せる → 話せます / 話せない",
+            "Do NOT add られる to U-verbs! 行く becomes 行ける, NOT 行かられる ❌!"
+          ],
+          "note": "Clean shift: -u → -eru."
+        },
+        {
+          "label": "Group 3: Irregular",
+          "cells": [
+            "する (to do), 来る (くる, to come)",
+            "する → できる, 来る → こられる (来られる)",
+            "Particle shift: 運転ができる (Can drive), 日本語ができる (Can speak Japanese)",
+            "Note the reading of 来 changes to \"ko\": こられる (NOT ちられる ❌)."
+          ],
+          "note": "する completely transforms into the independent potential verb できる."
+        }
+      ]
+    }
   },
   {
     "id": "g2-l13-shi-reasons",
@@ -4428,6 +4806,30 @@
         "tokens": [],
         "useLabel": "Irregular adjective forms",
         "nuanceNote": "いい→よさそう and ない→なさそう are special forms; do not use いそう for good."
+      },
+      {
+        "id": "added-g2-13-20::merged-genki2-kanoukei::s-g2-13-1",
+        "japanese": "漢字が難しくて、新聞をすらすら読むことができません（読めません）。",
+        "english": "The kanji are difficult, so I cannot read the newspaper smoothly.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "読む (U-verb) becomes 読める in potential form (読めません)."
+      },
+      {
+        "id": "added-g2-13-20::merged-genki2-kanoukei::supp-use-examples-22",
+        "japanese": "以前は泳げませんでしたが、今は一キロ泳げます。",
+        "english": "Previously I could not swim, but now I can swim one kilometer.",
+        "tokens": [],
+        "useLabel": "Potential verb with が particle flip",
+        "nuanceNote": "Potential verbs commonly take が instead of を for the object of ability."
+      },
+      {
+        "id": "added-g2-13-20::merged-genki2-kanoukei::supp-use-examples-23",
+        "japanese": "この図書館では、誰でも無料で本を借りることができます。",
+        "english": "In this library, anyone can borrow books for free.",
+        "tokens": [],
+        "useLabel": "Circumstantial possibility",
+        "nuanceNote": "〜ことができる expresses circumstantial permission or institutional feasibility."
       }
     ],
     "quiz": [],
@@ -4437,7 +4839,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 13",
-    "sourceReference": "Section starts on printed p. 22 (PDF p. 30). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 22 (PDF p. 30). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki II: Potential Verbs (可能形) Matrix (Lesson 13)",
+      "subtitle": "Expressing ability and situational possibility (\"can do\").",
+      "columns": [
+        "Verb Group",
+        "Dictionary Form",
+        "Potential Form (可能形)",
+        "Particle Transformation Rule",
+        "Crucial Trap Alerts"
+      ],
+      "rows": [
+        {
+          "label": "Group 2: Ru-Verbs",
+          "cells": [
+            "食べる, 見る, 起きる",
+            "食べられる, 見られる, 起きられる (Drop る, attach られる)",
+            "Direct object particle を shifts to が: 漢字が読める, 日本語が話せる",
+            "Colloquial \"ra-nuki\" (ら抜き): 食べれる, 見れる (frequent in spoken Japanese, but avoid on formal JLPT!)"
+          ],
+          "note": "Identical form to passive; context disambiguates."
+        },
+        {
+          "label": "Group 1: U-Verbs",
+          "cells": [
+            "行く, 飲む, 話す, 待つ, 泳ぐ",
+            "行ける, 飲める, 話せる, 待てる, 泳げる (Shift final -u sound to -e sound and add る)",
+            "All potential verbs conjugate as Group 2 (Ichidan) verbs once transformed: 話せる → 話せます / 話せない",
+            "Do NOT add られる to U-verbs! 行く becomes 行ける, NOT 行かられる ❌!"
+          ],
+          "note": "Clean shift: -u → -eru."
+        },
+        {
+          "label": "Group 3: Irregular",
+          "cells": [
+            "する (to do), 来る (くる, to come)",
+            "する → できる, 来る → こられる (来られる)",
+            "Particle shift: 運転ができる (Can drive), 日本語ができる (Can speak Japanese)",
+            "Note the reading of 来 changes to \"ko\": こられる (NOT ちられる ❌)."
+          ],
+          "note": "する completely transforms into the independent potential verb できる."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-13-21",
@@ -4814,7 +5259,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 14",
-    "sourceReference": "Section starts on printed p. 46 (PDF p. 54). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 46 (PDF p. 54). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Giving & Receiving Triad (授受動詞): あげる vs くれる vs もらう",
+      "subtitle": "Tracks social perspective, insider/outsider psychology, and debt of gratitude.",
+      "columns": [
+        "Verb Pattern",
+        "Grammatical Subject",
+        "Direction of Action / Favor",
+        "Polite / Humble Counterpart",
+        "JLPT Trap & Mental Model"
+      ],
+      "rows": [
+        {
+          "label": "X は Y に あげる / 〜てあげる",
+          "cells": [
+            "X (Giver / \"I\" or insider)",
+            "From Speaker/Insider OUTWARD to Receiver",
+            "差し上げる (さしあげる - Humble toward higher status)",
+            "CAUTION: Doing a favor directly to a superior with 〜てあげます can sound condescending. Avoid!"
+          ],
+          "note": "Subject = Giver. Particle に = Receiver."
+        },
+        {
+          "label": "X が 私に くれる / 〜てくれる",
+          "cells": [
+            "X (Giver / Outside party)",
+            "From Outside party INWARD to Speaker / My In-Group",
+            "くださる (Honorific - Superior gave to me)",
+            "The giver is the subject. The recipient is understood from the speaker or empathy viewpoint, typically the speaker or their in-group."
+          ],
+          "note": "先生が私に本をくださった (Teacher gave me a book)."
+        },
+        {
+          "label": "私 は X に/から もらう / 〜てもらう",
+          "cells": [
+            "私 (Receiver / Beneficiary as Subject)",
+            "The subject receives from the giver; the subject need not be the speaker.",
+            "いただく (Humble - I humbly received from superior)",
+            "The receiver is the subject (often presented as a は-topic). The giver takes に; から is possible for receiving objects, but not freely interchangeable with に in てもらう."
+          ],
+          "note": "田中さんに手伝ってもらった (I got Tanaka-san to help me)."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-14-23",
@@ -5174,6 +5662,30 @@
         "tokens": [],
         "useLabel": "Keep a state for later",
         "nuanceNote": "ておく can maintain a useful state rather than perform a new action immediately."
+      },
+      {
+        "id": "added-g2-15-24::merged-genki2-te-oku::s-g2-15-1",
+        "japanese": "パーティーの前に、部屋を綺麗に掃除しておきます。",
+        "english": "Before the party, I will clean up the room nicely in advance.",
+        "tokens": [],
+        "useLabel": "Canonical textbook application",
+        "nuanceNote": "Preparatory action executed specifically for the upcoming party."
+      },
+      {
+        "id": "added-g2-15-24::merged-genki2-te-oku::supp-use-examples-24",
+        "japanese": "明日友達が遊びに来るので、部屋を掃除しておきました。",
+        "english": "Because my friends are coming over tomorrow, I cleaned my room in advance.",
+        "tokens": [],
+        "useLabel": "Advance preparation for future use",
+        "nuanceNote": "V-ておく denotes an action performed in preparation for a future event."
+      },
+      {
+        "id": "added-g2-15-24::merged-genki2-te-oku::supp-use-examples-25",
+        "japanese": "窓を開けておいてください。部屋の空気を入れ替えたいので。",
+        "english": "Please leave the window open, as I want to air out the room.",
+        "tokens": [],
+        "useLabel": "Leaving a state as it is",
+        "nuanceNote": "V-ておく can express leaving a resultant state intact for a purpose."
       }
     ],
     "quiz": [],
@@ -5183,7 +5695,46 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 15",
-    "sourceReference": "Section starts on printed p. 70 (PDF p. 78). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 70 (PDF p. 78). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki II: Volitional Form (意向形 / 意志形) Matrix (Lesson 15)",
+      "subtitle": "Casual \"Let's do\" (~ましょう) and ongoing personal intentions (~と思っています).",
+      "columns": [
+        "Verb Group",
+        "Dictionary Form",
+        "Volitional Form (意向形)",
+        "Key Syntactic Constructions"
+      ],
+      "rows": [
+        {
+          "label": "Group 2: Ru-Verbs",
+          "cells": [
+            "食べる, 見る, 起きる",
+            "食べよう, 見よう, 起きよう (Drop る, attach よう)",
+            "1. Casual invitation: 一緒に行こう (Let's go together!)"
+          ],
+          "note": "Casual equivalent of 〜ましょう."
+        },
+        {
+          "label": "Group 1: U-Verbs",
+          "cells": [
+            "行く, 飲む, 話す, 買う, 待つ",
+            "行こう, 飲もう, 話そう, 買おう, 待とう (Shift final -u to -o sound and elongate with う)",
+            "2. On-the-spot decision: 〜ようと思う (I think I will...)"
+          ],
+          "note": "Elongated vowel sound: ikou, nomou, hanasou."
+        },
+        {
+          "label": "Group 3: Irregular",
+          "cells": [
+            "する, 来る (くる)",
+            "しよう, 来よう (こよう)",
+            "3. Ongoing firm resolve: 〜ようと思っている (I have been intending to...)"
+          ],
+          "note": "Pronounced ko-you."
+        }
+      ]
+    }
   },
   {
     "id": "g2-l16-to-ii-hoping",
@@ -5418,7 +5969,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 16",
-    "sourceReference": "Section starts on printed p. 92 (PDF p. 100). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 92 (PDF p. 100). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Giving & Receiving Triad (授受動詞): あげる vs くれる vs もらう",
+      "subtitle": "Tracks social perspective, insider/outsider psychology, and debt of gratitude.",
+      "columns": [
+        "Verb Pattern",
+        "Grammatical Subject",
+        "Direction of Action / Favor",
+        "Polite / Humble Counterpart",
+        "JLPT Trap & Mental Model"
+      ],
+      "rows": [
+        {
+          "label": "X は Y に あげる / 〜てあげる",
+          "cells": [
+            "X (Giver / \"I\" or insider)",
+            "From Speaker/Insider OUTWARD to Receiver",
+            "差し上げる (さしあげる - Humble toward higher status)",
+            "CAUTION: Doing a favor directly to a superior with 〜てあげます can sound condescending. Avoid!"
+          ],
+          "note": "Subject = Giver. Particle に = Receiver."
+        },
+        {
+          "label": "X が 私に くれる / 〜てくれる",
+          "cells": [
+            "X (Giver / Outside party)",
+            "From Outside party INWARD to Speaker / My In-Group",
+            "くださる (Honorific - Superior gave to me)",
+            "The giver is the subject. The recipient is understood from the speaker or empathy viewpoint, typically the speaker or their in-group."
+          ],
+          "note": "先生が私に本をくださった (Teacher gave me a book)."
+        },
+        {
+          "label": "私 は X に/から もらう / 〜てもらう",
+          "cells": [
+            "私 (Receiver / Beneficiary as Subject)",
+            "The subject receives from the giver; the subject need not be the speaker.",
+            "いただく (Humble - I humbly received from superior)",
+            "The receiver is the subject (often presented as a は-topic). The giver takes に; から is possible for receiving objects, but not freely interchangeable with に in てもらう."
+          ],
+          "note": "田中さんに手伝ってもらった (I got Tanaka-san to help me)."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-16-26",
@@ -5680,7 +6274,60 @@
       "Conditionals",
       "Sequence"
     ],
-    "sourceReference": "Section starts on printed p. 114 (PDF p. 122). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 114 (PDF p. 122). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The 4 Great Conditionals Decoded: と vs ば vs たら vs なら",
+      "subtitle": "The #1 JLPT trap point across N4, N3, and N2. Never confuse them again.",
+      "columns": [
+        "Conditional Form",
+        "Core Psychological Nuance",
+        "Volition / Command in Result Clause?",
+        "Past Tense (た) in Result Clause?",
+        "Golden Test Trap Alert"
+      ],
+      "rows": [
+        {
+          "label": "〜と (Natural / Mechanic)",
+          "cells": [
+            "Natural law, physics, mechanical trigger: \"Once X happens, Y automatically follows.\"",
+            "Normally excludes requests and intentions in the result of a hypothetical condition.",
+            "YES ✅ (Discovered a new surprise: 窓を開けると、雪が降っていた)",
+            "For a request triggered by a future event, use a suitable たら construction. Distinguish conditional と from quotation と."
+          ],
+          "note": "Example: ボタンを押すと、切符が出る (Press button -> ticket dispenses)."
+        },
+        {
+          "label": "〜ば (Provisional Hypothetical)",
+          "cells": [
+            "Logical requirement: \"Provided that X is met, Y is true.\"",
+            "RESTRICTED ⚠️ (Only if verb is non-action / state like ある, or subjects differ)",
+            "Not the usual form for a one-off past discovery; habitual past results are possible.",
+            "TRAP: \"薬を飲めば、熱が下がった\" is WRONG. Use 飲んだら."
+          ],
+          "note": "Classic saying: 安ければ買う (If it is cheap, I will buy it)."
+        },
+        {
+          "label": "〜たら (Chronological Trigger)",
+          "cells": [
+            "\"Once X is completed, THEN Y happens.\" The most versatile conditional.",
+            "YES ✅ (Freely allows requests, intentions, invitations: 〜てください, 〜ましょう)",
+            "YES ✅ (Indicates sequential discovery in the past: 家に帰ったら、手紙があった)",
+            "SAFE HARBOR: When in doubt on volitional clauses or conversational requests, たら is king."
+          ],
+          "note": "Connection: Past short form (た) + ら."
+        },
+        {
+          "label": "〜なら (Contextual Topic / Advice)",
+          "cells": [
+            "\"If that is the case you are talking about...\" Topic conditional based on listener input.",
+            "YES ✅ (Excellent for advice, recommendations: 〜がいいですよ)",
+            "Not a chronological after-marker; it can refer to a past premise.",
+            "TRAP: Time inversion! In \"日本へ行くなら、カメラを買ったほうがいい\", you buy the camera BEFORE going!"
+          ],
+          "note": "Noun / Plain form + なら (no だ)."
+        }
+      ]
+    }
   },
   {
     "id": "g2-l17-nakute-mo-ii",
@@ -5823,7 +6470,60 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 17",
-    "sourceReference": "Section starts on printed p. 114 (PDF p. 122). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 114 (PDF p. 122). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The 4 Great Conditionals Decoded: と vs ば vs たら vs なら",
+      "subtitle": "The #1 JLPT trap point across N4, N3, and N2. Never confuse them again.",
+      "columns": [
+        "Conditional Form",
+        "Core Psychological Nuance",
+        "Volition / Command in Result Clause?",
+        "Past Tense (た) in Result Clause?",
+        "Golden Test Trap Alert"
+      ],
+      "rows": [
+        {
+          "label": "〜と (Natural / Mechanic)",
+          "cells": [
+            "Natural law, physics, mechanical trigger: \"Once X happens, Y automatically follows.\"",
+            "Normally excludes requests and intentions in the result of a hypothetical condition.",
+            "YES ✅ (Discovered a new surprise: 窓を開けると、雪が降っていた)",
+            "For a request triggered by a future event, use a suitable たら construction. Distinguish conditional と from quotation と."
+          ],
+          "note": "Example: ボタンを押すと、切符が出る (Press button -> ticket dispenses)."
+        },
+        {
+          "label": "〜ば (Provisional Hypothetical)",
+          "cells": [
+            "Logical requirement: \"Provided that X is met, Y is true.\"",
+            "RESTRICTED ⚠️ (Only if verb is non-action / state like ある, or subjects differ)",
+            "Not the usual form for a one-off past discovery; habitual past results are possible.",
+            "TRAP: \"薬を飲めば、熱が下がった\" is WRONG. Use 飲んだら."
+          ],
+          "note": "Classic saying: 安ければ買う (If it is cheap, I will buy it)."
+        },
+        {
+          "label": "〜たら (Chronological Trigger)",
+          "cells": [
+            "\"Once X is completed, THEN Y happens.\" The most versatile conditional.",
+            "YES ✅ (Freely allows requests, intentions, invitations: 〜てください, 〜ましょう)",
+            "YES ✅ (Indicates sequential discovery in the past: 家に帰ったら、手紙があった)",
+            "SAFE HARBOR: When in doubt on volitional clauses or conversational requests, たら is king."
+          ],
+          "note": "Connection: Past short form (た) + ら."
+        },
+        {
+          "label": "〜なら (Contextual Topic / Advice)",
+          "cells": [
+            "\"If that is the case you are talking about...\" Topic conditional based on listener input.",
+            "YES ✅ (Excellent for advice, recommendations: 〜がいいですよ)",
+            "Not a chronological after-marker; it can refer to a past premise.",
+            "TRAP: Time inversion! In \"日本へ行くなら、カメラを買ったほうがいい\", you buy the camera BEFORE going!"
+          ],
+          "note": "Noun / Plain form + なら (no だ)."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-17-29",
@@ -6200,7 +6900,100 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 18",
-    "sourceReference": "Section starts on printed p. 136 (PDF p. 144). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 136 (PDF p. 144). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Genki II: Transitive vs Intransitive (他動詞 vs 自動詞) Pairs (Lesson 18)",
+      "subtitle": "Human deliberate action with を vs Spontaneous state change with が + 〜ている.",
+      "columns": [
+        "Verb Meaning",
+        "他動詞 (Transitive: Subject + を + V)",
+        "自動詞 (Intransitive: Subject + が + V)",
+        "Resulting State: 自動詞 + 〜ている"
+      ],
+      "rows": [
+        {
+          "label": "Open (To open)",
+          "cells": [
+            "窓を開ける (Open the window)",
+            "窓が開く (The window opens)",
+            "窓が開いている (The window is open)"
+          ],
+          "note": "Transitive takes を; Intransitive takes が."
+        },
+        {
+          "label": "Close (To close)",
+          "cells": [
+            "ドアを閉める (Close the door)",
+            "ドアが閉まる (The door closes)",
+            "ドアが閉まっている (The door is closed)"
+          ],
+          "note": "Intransitive -aru ending indicates state change."
+        },
+        {
+          "label": "Turn on / Light up",
+          "cells": [
+            "電気をつける (Turn on light)",
+            "電気がつく (Light turns on)",
+            "電気がついている (Light is on)"
+          ],
+          "note": "State: It is currently illuminated."
+        },
+        {
+          "label": "Turn off / Extinguish",
+          "cells": [
+            "電気を消す (Turn off light)",
+            "電気が消える (Light goes out)",
+            "電気が消えている (Light is off)"
+          ],
+          "note": "消す (transitive, -su) vs 消える (intransitive, -eru)."
+        },
+        {
+          "label": "Drop / Fall",
+          "cells": [
+            "財布を落とす (Drop wallet)",
+            "財布が落ちる (Wallet drops/falls)",
+            "財布が落ちている (A wallet is lying dropped)"
+          ],
+          "note": "落とす is human action; 落ちる is spontaneous event."
+        },
+        {
+          "label": "Put in / Enter",
+          "cells": [
+            "本をかばんに入れる (Put book in bag)",
+            "部屋に入る (Enter room)",
+            "かばんに本が入っている (A book is inside the bag)"
+          ],
+          "note": "入る is an U-verb exception (hairu)."
+        },
+        {
+          "label": "Take out / Come out",
+          "cells": [
+            "ペンを出す (Take out pen)",
+            "月が出る (Moon comes out)",
+            "手紙が出ている (Letter has been sent out)"
+          ],
+          "note": "出す (transitive) vs 出る (intransitive)."
+        },
+        {
+          "label": "Break / Break down",
+          "cells": [
+            "時計を壊す (Break a clock)",
+            "時計が壊れる (Clock breaks)",
+            "時計が壊れている (Clock is broken)"
+          ],
+          "note": "壊れている describes existing condition of brokenness."
+        },
+        {
+          "label": "Soil / Get dirty",
+          "cells": [
+            "服を汚す (Soil one's clothes)",
+            "服が汚れる (Clothes get dirty)",
+            "服が汚れている (Clothes are stained/dirty)"
+          ],
+          "note": "Intransitive state marker."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-18-31",
@@ -6335,7 +7128,73 @@
       "Keigo",
       "Honorific"
     ],
-    "sourceReference": "Section starts on printed p. 160 (PDF p. 168). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 160 (PDF p. 168). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Keigo (敬語) Survival Matrix: Sonkeigo vs Kenjougo",
+      "subtitle": "Elevating the listener/superior (尊敬語) vs humbling yourself/in-group (謙譲語).",
+      "columns": [
+        "Normal Verb",
+        "尊敬語 (Honorific - Other person's action)",
+        "謙譲語 (Humble - My own action)",
+        "Formula Pattern"
+      ],
+      "rows": [
+        {
+          "label": "行く / 来る / いる",
+          "cells": [
+            "いらっしゃる / おいでになる",
+            "参る (まいる) / おる (いる)",
+            "Other: お+V-stem+になる | Me: お+V-stem+する"
+          ],
+          "note": "社長はいらっしゃいますか (Is the company president in?)"
+        },
+        {
+          "label": "言う (To say)",
+          "cells": [
+            "おっしゃる",
+            "申す (もうす) / 申し上げる",
+            "Other says: おっしゃる | I say: 申します"
+          ],
+          "note": "田中と申します (My name is Tanaka - humble)."
+        },
+        {
+          "label": "食べる / 飲む",
+          "cells": [
+            "召し上がる (めしあがる)",
+            "いただく",
+            "Other eats: 召し上がる | I eat: いただきます"
+          ],
+          "note": "どうぞ召し上がってください (Please enjoy the food)."
+        },
+        {
+          "label": "見る (To look/see)",
+          "cells": [
+            "ご覧になる (ごらんになる)",
+            "拝見する (はいけんする)",
+            "Other looks: ご覧になる | I inspect: 拝見する"
+          ],
+          "note": "資料を拝見しました (I reviewed the documents)."
+        },
+        {
+          "label": "知っている (To know)",
+          "cells": [
+            "ご存知だ (ごぞんじだ)",
+            "存じている (ぞんじている) / 存じ上げている",
+            "Other knows: ご存知 | I know: 存じております"
+          ],
+          "note": "Never say \"私はご存知です\" ❌! That is honoring yourself!"
+        },
+        {
+          "label": "する (To do)",
+          "cells": [
+            "なさる",
+            "致す (いたす)",
+            "Other does: なさる | I do: いたします"
+          ],
+          "note": "よろしくお願いいたします (Humble request)."
+        }
+      ]
+    }
   },
   {
     "id": "g2-l19-o-kudasai",
@@ -6470,7 +7329,73 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 19",
-    "sourceReference": "Section starts on printed p. 160 (PDF p. 168). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 160 (PDF p. 168). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Keigo (敬語) Survival Matrix: Sonkeigo vs Kenjougo",
+      "subtitle": "Elevating the listener/superior (尊敬語) vs humbling yourself/in-group (謙譲語).",
+      "columns": [
+        "Normal Verb",
+        "尊敬語 (Honorific - Other person's action)",
+        "謙譲語 (Humble - My own action)",
+        "Formula Pattern"
+      ],
+      "rows": [
+        {
+          "label": "行く / 来る / いる",
+          "cells": [
+            "いらっしゃる / おいでになる",
+            "参る (まいる) / おる (いる)",
+            "Other: お+V-stem+になる | Me: お+V-stem+する"
+          ],
+          "note": "社長はいらっしゃいますか (Is the company president in?)"
+        },
+        {
+          "label": "言う (To say)",
+          "cells": [
+            "おっしゃる",
+            "申す (もうす) / 申し上げる",
+            "Other says: おっしゃる | I say: 申します"
+          ],
+          "note": "田中と申します (My name is Tanaka - humble)."
+        },
+        {
+          "label": "食べる / 飲む",
+          "cells": [
+            "召し上がる (めしあがる)",
+            "いただく",
+            "Other eats: 召し上がる | I eat: いただきます"
+          ],
+          "note": "どうぞ召し上がってください (Please enjoy the food)."
+        },
+        {
+          "label": "見る (To look/see)",
+          "cells": [
+            "ご覧になる (ごらんになる)",
+            "拝見する (はいけんする)",
+            "Other looks: ご覧になる | I inspect: 拝見する"
+          ],
+          "note": "資料を拝見しました (I reviewed the documents)."
+        },
+        {
+          "label": "知っている (To know)",
+          "cells": [
+            "ご存知だ (ごぞんじだ)",
+            "存じている (ぞんじている) / 存じ上げている",
+            "Other knows: ご存知 | I know: 存じております"
+          ],
+          "note": "Never say \"私はご存知です\" ❌! That is honoring yourself!"
+        },
+        {
+          "label": "する (To do)",
+          "cells": [
+            "なさる",
+            "致す (いたす)",
+            "Other does: なさる | I do: いたします"
+          ],
+          "note": "よろしくお願いいたします (Humble request)."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-19-33",
@@ -6564,7 +7489,73 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 20",
-    "sourceReference": "Section starts on printed p. 180 (PDF p. 188). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 180 (PDF p. 188). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Keigo (敬語) Survival Matrix: Sonkeigo vs Kenjougo",
+      "subtitle": "Elevating the listener/superior (尊敬語) vs humbling yourself/in-group (謙譲語).",
+      "columns": [
+        "Normal Verb",
+        "尊敬語 (Honorific - Other person's action)",
+        "謙譲語 (Humble - My own action)",
+        "Formula Pattern"
+      ],
+      "rows": [
+        {
+          "label": "行く / 来る / いる",
+          "cells": [
+            "いらっしゃる / おいでになる",
+            "参る (まいる) / おる (いる)",
+            "Other: お+V-stem+になる | Me: お+V-stem+する"
+          ],
+          "note": "社長はいらっしゃいますか (Is the company president in?)"
+        },
+        {
+          "label": "言う (To say)",
+          "cells": [
+            "おっしゃる",
+            "申す (もうす) / 申し上げる",
+            "Other says: おっしゃる | I say: 申します"
+          ],
+          "note": "田中と申します (My name is Tanaka - humble)."
+        },
+        {
+          "label": "食べる / 飲む",
+          "cells": [
+            "召し上がる (めしあがる)",
+            "いただく",
+            "Other eats: 召し上がる | I eat: いただきます"
+          ],
+          "note": "どうぞ召し上がってください (Please enjoy the food)."
+        },
+        {
+          "label": "見る (To look/see)",
+          "cells": [
+            "ご覧になる (ごらんになる)",
+            "拝見する (はいけんする)",
+            "Other looks: ご覧になる | I inspect: 拝見する"
+          ],
+          "note": "資料を拝見しました (I reviewed the documents)."
+        },
+        {
+          "label": "知っている (To know)",
+          "cells": [
+            "ご存知だ (ごぞんじだ)",
+            "存じている (ぞんじている) / 存じ上げている",
+            "Other knows: ご存知 | I know: 存じております"
+          ],
+          "note": "Never say \"私はご存知です\" ❌! That is honoring yourself!"
+        },
+        {
+          "label": "する (To do)",
+          "cells": [
+            "なさる",
+            "致す (いたす)",
+            "Other does: なさる | I do: いたします"
+          ],
+          "note": "よろしくお願いいたします (Humble request)."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-20-35",
@@ -6936,7 +7927,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 21",
-    "sourceReference": "Section starts on printed p. 206 (PDF p. 214). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 206 (PDF p. 214). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The Voice Transformation Matrix: Active → Passive → Causative → Causative-Passive",
+      "subtitle": "From direct acts to being victimized (迷惑受身) to being coerced (使役受身).",
+      "columns": [
+        "Voice Type",
+        "Grammatical Meaning",
+        "Group 1 (五段) Formula",
+        "Group 2 (一段) Formula",
+        "Irregular (する・くる)"
+      ],
+      "rows": [
+        {
+          "label": "受身 (Passive)",
+          "cells": [
+            "Action received. Includes Suffering Passive (迷惑受身) where speaker is inconvenienced.",
+            "あ-stem + れる (書く → 書かれる, 踏む → 踏まれる)",
+            "Stem + られる (食べる → 食べられる, 褒める → 褒められる)",
+            "する → される / くる → こられる"
+          ],
+          "note": "Suffering Passive: 雨に降られた (I was rained on / inconvenienced by rain)."
+        },
+        {
+          "label": "使役 (Causative)",
+          "cells": [
+            "Make / Let someone do something. Expresses authority, permission, or triggering emotion.",
+            "あ-stem + せる (行く → 行かせる, 読む → 読ませる)",
+            "Stem + させる (食べる → 食べさせる)",
+            "する → させる / くる → こさせる"
+          ],
+          "note": "Polite request: 帰らせてください (Please let me go home)."
+        },
+        {
+          "label": "使役受身 (Causative-Passive)",
+          "cells": [
+            "Forced to do against one's personal desire (\"I was made to...\"). Highly frequent in JLPT!",
+            "あ-stem + される (Contracted: 待たされる, 飲まされる, 書かされる) or せられる",
+            "Stem + させられる (食べさせられる)",
+            "する → させられる / くる → こさせられる"
+          ],
+          "note": "Exception: Verbs ending in す (話す) cannot contract to される! Must be 話させられる."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-21-39",
@@ -7214,7 +8248,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 22",
-    "sourceReference": "Section starts on printed p. 228 (PDF p. 236). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 228 (PDF p. 236). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The Voice Transformation Matrix: Active → Passive → Causative → Causative-Passive",
+      "subtitle": "From direct acts to being victimized (迷惑受身) to being coerced (使役受身).",
+      "columns": [
+        "Voice Type",
+        "Grammatical Meaning",
+        "Group 1 (五段) Formula",
+        "Group 2 (一段) Formula",
+        "Irregular (する・くる)"
+      ],
+      "rows": [
+        {
+          "label": "受身 (Passive)",
+          "cells": [
+            "Action received. Includes Suffering Passive (迷惑受身) where speaker is inconvenienced.",
+            "あ-stem + れる (書く → 書かれる, 踏む → 踏まれる)",
+            "Stem + られる (食べる → 食べられる, 褒める → 褒められる)",
+            "する → される / くる → こられる"
+          ],
+          "note": "Suffering Passive: 雨に降られた (I was rained on / inconvenienced by rain)."
+        },
+        {
+          "label": "使役 (Causative)",
+          "cells": [
+            "Make / Let someone do something. Expresses authority, permission, or triggering emotion.",
+            "あ-stem + せる (行く → 行かせる, 読む → 読ませる)",
+            "Stem + させる (食べる → 食べさせる)",
+            "する → させる / くる → こさせる"
+          ],
+          "note": "Polite request: 帰らせてください (Please let me go home)."
+        },
+        {
+          "label": "使役受身 (Causative-Passive)",
+          "cells": [
+            "Forced to do against one's personal desire (\"I was made to...\"). Highly frequent in JLPT!",
+            "あ-stem + される (Contracted: 待たされる, 飲まされる, 書かされる) or せられる",
+            "Stem + させられる (食べさせられる)",
+            "する → させられる / くる → こさせられる"
+          ],
+          "note": "Exception: Verbs ending in す (話す) cannot contract to される! Must be 話させられる."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-22-41",
@@ -7535,7 +8612,50 @@
     ],
     "book": "Genki II",
     "chapter": "Lesson 23",
-    "sourceReference": "Section starts on printed p. 250 (PDF p. 258). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 250 (PDF p. 258). Original revision notes; not a transcription.",
+    "table": {
+      "title": "The Voice Transformation Matrix: Active → Passive → Causative → Causative-Passive",
+      "subtitle": "From direct acts to being victimized (迷惑受身) to being coerced (使役受身).",
+      "columns": [
+        "Voice Type",
+        "Grammatical Meaning",
+        "Group 1 (五段) Formula",
+        "Group 2 (一段) Formula",
+        "Irregular (する・くる)"
+      ],
+      "rows": [
+        {
+          "label": "受身 (Passive)",
+          "cells": [
+            "Action received. Includes Suffering Passive (迷惑受身) where speaker is inconvenienced.",
+            "あ-stem + れる (書く → 書かれる, 踏む → 踏まれる)",
+            "Stem + られる (食べる → 食べられる, 褒める → 褒められる)",
+            "する → される / くる → こられる"
+          ],
+          "note": "Suffering Passive: 雨に降られた (I was rained on / inconvenienced by rain)."
+        },
+        {
+          "label": "使役 (Causative)",
+          "cells": [
+            "Make / Let someone do something. Expresses authority, permission, or triggering emotion.",
+            "あ-stem + せる (行く → 行かせる, 読む → 読ませる)",
+            "Stem + させる (食べる → 食べさせる)",
+            "する → させる / くる → こさせる"
+          ],
+          "note": "Polite request: 帰らせてください (Please let me go home)."
+        },
+        {
+          "label": "使役受身 (Causative-Passive)",
+          "cells": [
+            "Forced to do against one's personal desire (\"I was made to...\"). Highly frequent in JLPT!",
+            "あ-stem + される (Contracted: 待たされる, 飲まされる, 書かされる) or せられる",
+            "Stem + させられる (食べさせられる)",
+            "する → させられる / くる → こさせられる"
+          ],
+          "note": "Exception: Verbs ending in す (話す) cannot contract to される! Must be 話させられる."
+        }
+      ]
+    }
   },
   {
     "id": "added-g2-23-44",
@@ -8113,7 +9233,80 @@
       "Aspect",
       "Temporal Phase"
     ],
-    "sourceReference": "Section starts on printed p. 16 (PDF p. 39). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 16 (PDF p. 39). Original revision notes; not a transcription.",
+    "table": {
+      "title": "Time & Instant Sequence Spectrum (時・継起のグラデーション)",
+      "subtitle": "How Japanese grammar sharpens from general timing to split-second interruption.",
+      "columns": [
+        "Grammar Point",
+        "JLPT Level",
+        "Time Window / Immediacy",
+        "Speaker Control / Volition",
+        "Defining Nuance & Trap"
+      ],
+      "rows": [
+        {
+          "label": "〜最中に (さいちゅうに)",
+          "cells": [
+            "N3",
+            "Right in the middle of active ongoing action",
+            "Emphasizes being in the middle of an activity",
+            "Often followed by an interruption, but neither surprise nor a negative outcome is required."
+          ],
+          "note": "Conjugation: V-ている + 最中に / N の最中に"
+        },
+        {
+          "label": "〜うちに",
+          "cells": [
+            "N3",
+            "Within limited window before condition changes",
+            "Natural change or spontaneous urge ⚠️",
+            "Do it while hot / Before you forget (冷めないうちに / 忘れないうちに)."
+          ],
+          "note": "Conjugation: V dictionary/ない/ている, い-adjective, な-adjectiveな or Nの + うちに"
+        },
+        {
+          "label": "〜たとたん（に）",
+          "cells": [
+            "N3",
+            "The exact split-second after X finishes",
+            "Immediate surprise, NO speaker volition ❌",
+            "Clause B is a sudden surprise event (立ち上がったとたん、めまいがした)."
+          ],
+          "note": "Conjugation: V-た + とたん（に）"
+        },
+        {
+          "label": "〜かと思うと / 〜かと思ったら",
+          "cells": [
+            "N2",
+            "Right when you thought X had occurred",
+            "Sharp unexpected contrast / sudden change ❌",
+            "Cannot describe speaker's deliberate action (空が暗くなったかと思うと、雨が降ってきた)."
+          ],
+          "note": "Conjugation: V-た + かと思うと"
+        },
+        {
+          "label": "〜か〜ないかのうちに",
+          "cells": [
+            "N2",
+            "Literally on the border of completion",
+            "Simultaneous / instantaneous sequence",
+            "Almost no time gap: ベルが鳴り終わるか終わらないかのうちに."
+          ],
+          "note": "Conjugation: V-辞書形 / V-た + か + V-ない + かのうちに"
+        },
+        {
+          "label": "〜次第 (しだい)",
+          "cells": [
+            "N2",
+            "Immediate trigger for planned next step",
+            "HIGH speaker volition & business resolve ✅",
+            "Used for future events: 決まり次第、ご連絡いたします."
+          ],
+          "note": "Conjugation: V-stem + 次第 (NO past tense in main clause!)"
+        }
+      ]
+    }
   },
   {
     "id": "skm3-u2-toori-ni-accordance",
@@ -9261,6 +10454,98 @@
       "SKM Unit 4",
       "Contrast",
       "Juxtaposition"
+    ],
+    "sourceReference": "Section starts on printed p. 24 (PDF p. 47). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm3-u4-ni-kurabete",
+    "title": "〜に比べて (Compared With / Relative To)",
+    "meaning": "Establishes a baseline entity X against which another entity Y is measured and evaluated.",
+    "level": "N3",
+    "book": "Shin Kanzen Master N3",
+    "chapter": "Part 1 · Chapter 4",
+    "streamId": "stream-contrasts",
+    "streamName": "Paradox, Concession & Contrast",
+    "connection": "Noun + に比べて / に比べ",
+    "nuance": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
+    "keyTakeaway": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
+    "sentences": [
+      {
+        "id": "skm3-u4-ni-kurabete::s-skm3-4-4",
+        "japanese": "今年の夏は、例年に比べて格段に猛暑日が続いている。",
+        "english": "Compared to ordinary years, extremely hot days are continuing at a markedly higher frequency this summer.",
+        "literal": "This-year summer, average-years-to compared remarkably heatwave-days continuing.",
+        "tokens": [
+          {
+            "word": "例年に比べて",
+            "meaning": "compared to average years",
+            "reading": "れいねんにくらべて",
+            "romaji": "reinen ni kurabete",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Climatic comparison against historical baseline."
+      },
+      {
+        "id": "skm3-u4-ni-kurabete::supp-use-examples-1",
+        "japanese": "去年に比べて、今年の冬はずっと雪が多い。",
+        "english": "Compared to last year, this winter has far more snow.",
+        "tokens": [],
+        "useLabel": "Comparison with baseline year",
+        "nuanceNote": "Noun + に比べて evaluates the current situation against a prior baseline standard."
+      },
+      {
+        "id": "skm3-u4-ni-kurabete::supp-use-examples-2",
+        "japanese": "電車を利用するのは、車を運転するのに比べて、到着時間の予測が立てやすい。",
+        "english": "Taking the train makes arrival times much more predictable compared to driving a car.",
+        "tokens": [],
+        "useLabel": "Comparison of options",
+        "nuanceNote": "Verb-plain + のに比べて cleanly contrasts two nominalized action clauses."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm3-4-4",
+        "question": "去年と（　　）、今年は涼しいです。",
+        "translation": "Compared with last year, this year is cool.",
+        "options": [
+          "比べて",
+          "比べる",
+          "比べたの",
+          "比べます"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + に比べて (Comparative benchmark)",
+        "ruleHint": "Noun + に比べて / に比べ",
+        "explanations": [
+          {
+            "text": "比べて",
+            "isCorrect": true,
+            "reason": "と比べて links the comparison to the main clause."
+          },
+          {
+            "text": "比べる",
+            "isCorrect": false,
+            "reason": "比べる needs a different following structure."
+          },
+          {
+            "text": "比べたの",
+            "isCorrect": false,
+            "reason": "比べたの cannot connect directly to this clause."
+          },
+          {
+            "text": "比べます",
+            "isCorrect": false,
+            "reason": "比べます does not connect the clauses as written."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N3",
+      "SKM Unit 4",
+      "Comparison",
+      "Benchmark"
     ],
     "sourceReference": "Section starts on printed p. 24 (PDF p. 47). Original revision notes; not a transcription."
   },
@@ -10594,6 +11879,98 @@
     "sourceReference": "Section starts on printed p. 38 (PDF p. 61). Original revision notes; not a transcription."
   },
   {
+    "id": "skm3-u9-garu",
+    "title": "〜がる / 〜がっている (Third-Person Manifestation of Desires & Sensations)",
+    "meaning": "Describes observable behaviors indicating that someone other than the speaker feels an emotion, sensation, or desire.",
+    "level": "N3",
+    "book": "Shin Kanzen Master N3",
+    "chapter": "Part 1 · Chapter 9",
+    "streamId": "stream-social",
+    "streamName": "Social Coordinates, Deference & Humility",
+    "connection": "い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている",
+    "nuance": "がる describes observable indications of a feeling or desire, often about someone else. Reports, quotations and narrative contexts also allow other ways to describe a third person; it is not a blanket ban on third-person adjective predicates.",
+    "keyTakeaway": "がる describes observable indications of a feeling or desire, often about someone else. Reports, quotations and narrative contexts also allow other ways to describe a third person; it is not a blanket ban on third-person adjective predicates.",
+    "sentences": [
+      {
+        "id": "skm3-u9-garu::s-skm3-9-1",
+        "japanese": "弟は注射をひどく怖がって、病院の前で泣き出してしまった。",
+        "english": "My little brother showed tremendous fear of the injection and burst into tears in front of the hospital.",
+        "literal": "Little-brother injection terribly feared-showing, hospital front burst-out-crying.",
+        "tokens": [
+          {
+            "word": "怖がって",
+            "meaning": "showing fear / acting terrified",
+            "reading": "こわがって",
+            "romaji": "kowagatte",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Describing observable childish reaction to medical procedure."
+      },
+      {
+        "id": "skm3-u9-garu::supp-use-examples-3",
+        "japanese": "うちの猫は外に出たがって、ドアの前で鳴いている。",
+        "english": "Our cat wants to go outside and is meowing in front of the door.",
+        "tokens": [],
+        "useLabel": "Third-person observable desire",
+        "nuanceNote": "〜たがる describes an observable third-person desire through physical behavior."
+      },
+      {
+        "id": "skm3-u9-garu::supp-use-examples-4",
+        "japanese": "彼は注射をひどく痛がっていた。",
+        "english": "He was showing severe pain from the injection.",
+        "tokens": [],
+        "useLabel": "Third-person negative sensation",
+        "nuanceNote": "〜がる attaches to an adjective stem to report observed discomfort rather than claiming direct telepathy."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm3-9-1",
+        "question": "子供が外へ行きた（　　）います。",
+        "translation": "The child is showing that they want to go outside.",
+        "options": [
+          "がって",
+          "がる",
+          "がり",
+          "がった"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "V-たい → たがらなくなる (3rd person desire trend)",
+        "ruleHint": "い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている",
+        "explanations": [
+          {
+            "text": "がって",
+            "isCorrect": true,
+            "reason": "たがっている reports observable desire in progress."
+          },
+          {
+            "text": "がる",
+            "isCorrect": false,
+            "reason": "たがる does not attach directly to います."
+          },
+          {
+            "text": "がり",
+            "isCorrect": false,
+            "reason": "たがり does not attach directly to います."
+          },
+          {
+            "text": "がった",
+            "isCorrect": false,
+            "reason": "たがった does not attach directly to います."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N3",
+      "SKM Unit 9",
+      "Psychological",
+      "Third-Person"
+    ],
+    "sourceReference": "Section starts on printed p. 44 (PDF p. 67). Original revision notes; not a transcription."
+  },
+  {
     "id": "added-n3-9-53",
     "title": "〜てもらいたい・〜てほしい",
     "meaning": "Want another person to do something.",
@@ -10827,6 +12204,98 @@
       "SKM Unit 9",
       "Duty",
       "Ethics"
+    ],
+    "sourceReference": "Section starts on printed p. 46 (PDF p. 69). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm3-u10-ni-yoru-to",
+    "title": "〜によると / 〜によれば (According To Source of Information)",
+    "meaning": "According to a source of information.",
+    "level": "N3",
+    "book": "Shin Kanzen Master N3",
+    "chapter": "Part 1 · Chapter 10",
+    "streamId": "stream-topics",
+    "streamName": "Topic Framing, Criteria & Disregard",
+    "connection": "Source noun + によると / によれば",
+    "nuance": "Names the source rather than claiming direct personal observation. It commonly accompanies そうだ, らしい, ということだ and similar reporting endings, but these are not mandatory in every report. Distinguish によって for means, cause, agency or variation.",
+    "keyTakeaway": "Identify the information source; reported-style endings are common, not obligatory.",
+    "sentences": [
+      {
+        "id": "skm3-u10-ni-yoru-to::s-skm3-10-1",
+        "japanese": "天気予報によると、明日の夕方から関東地方全域で大雪になるそうだ。",
+        "english": "According to the weather forecast, heavy snow will reportedly blanket the entire Kanto region starting tomorrow evening.",
+        "literal": "Weather forecast according-to, tomorrow evening-from Kanto entire heavy-snow become reportedly.",
+        "tokens": [
+          {
+            "word": "天気予報によると",
+            "meaning": "according to the weather forecast",
+            "reading": "てんきよほうによると",
+            "romaji": "tenki yohou ni yoru to",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Formal citation of meteorological bulletin."
+      },
+      {
+        "id": "skm3-u10-ni-yoru-to::supp-use-examples-5",
+        "japanese": "最近の世論調査によると、内閣支持率はやや下落したそうだ。",
+        "english": "According to a recent public opinion survey, cabinet approval ratings reportedly dropped slightly.",
+        "tokens": [],
+        "useLabel": "Citing statistical survey",
+        "nuanceNote": "Noun + によると pairs with hearsay ending 〜そうだ to formally cite statistical data."
+      },
+      {
+        "id": "skm3-u10-ni-yoru-to::supp-use-examples-6",
+        "japanese": "田中さんの話によれば、部長は来月転勤するらしい。",
+        "english": "According to what Tanaka said, the department manager will apparently transfer next month.",
+        "tokens": [],
+        "useLabel": "Citing rumor or eyewitness account",
+        "nuanceNote": "Noun + によれば pairs with evidential conjecture 〜らしい."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm3-10-1",
+        "question": "今朝の新聞（　　）よると、ガソリン価格が来月から再び値上がりするそうだ。",
+        "translation": "According to this morning's newspaper, gasoline prices will reportedly hike again starting next month.",
+        "options": [
+          "に",
+          "で",
+          "を",
+          "へ"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + によると (Citing sources)",
+        "ruleHint": "Source noun + によると / によれば",
+        "explanations": [
+          {
+            "text": "に",
+            "isCorrect": true,
+            "reason": "Correct! Noun + によると is the fixed citation pattern."
+          },
+          {
+            "text": "で",
+            "isCorrect": false,
+            "reason": "Incorrect. でよると does not exist."
+          },
+          {
+            "text": "を",
+            "isCorrect": false,
+            "reason": "Incorrect. をよると is ungrammatical."
+          },
+          {
+            "text": "へ",
+            "isCorrect": false,
+            "reason": "Incorrect. へよると is invalid."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N3",
+      "SKM Unit 10",
+      "Hearsay",
+      "Source Citation"
     ],
     "sourceReference": "Section starts on printed p. 46 (PDF p. 69). Original revision notes; not a transcription."
   },
@@ -11652,6 +13121,98 @@
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review B",
     "sourceReference": "Section starts on printed p. 62 (PDF p. 85). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm3-fc-tokoro-datta",
+    "title": "〜ところだった (Was on the Very Verge Of / Narrowly Escaped)",
+    "meaning": "Indicates that an undesirable disaster or drastic event almost occurred, but was averted in the nick of time: 'I almost / was on the verge of...'.",
+    "level": "N3",
+    "book": "Shin Kanzen Master N3",
+    "chapter": "Part 1 · Form review C",
+    "streamId": "stream-time",
+    "streamName": "Chronos & Instant Transitions",
+    "connection": "V-辞書形 + ところだった (often paired with もう少しで, 危うく)",
+    "nuance": "NARROW ESCAPE: Almost always paired with adverbs like もう少しで (by a hair's breadth) or 危うく (narrowly): 'もう少しで終電に乗り遅れるところだった' (I almost missed the last train).",
+    "keyTakeaway": "MUG-UP: もう少しで + V-る + ところだった = 'Narrow escape! Almost happened but thank goodness it didn't!'.",
+    "sentences": [
+      {
+        "id": "skm3-fc-tokoro-datta::s-skm3-c-1",
+        "japanese": "足元が滑って、危うく階段から転がり落ちるところだった。",
+        "english": "My footing slipped, and I came within a hair's breadth of tumbling down the stairs.",
+        "literal": "Footing slipped, narrowly stairs-from tumble-down verge-was.",
+        "tokens": [
+          {
+            "word": "転がり落ちるところだった",
+            "meaning": "was on the verge of tumbling down",
+            "reading": "ころがりおちるところだった",
+            "romaji": "korogariochiru tokoro datta",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Heart-stopping near-miss on a steep staircase."
+      },
+      {
+        "id": "skm3-fc-tokoro-datta::supp-use-examples-7",
+        "japanese": "もう少しで終電に乗り遅れるところだった。",
+        "english": "I came within a hair's breadth of missing the last train.",
+        "tokens": [],
+        "useLabel": "Narrow escape from missing train",
+        "nuanceNote": "もう少しで + V-る + ところだった describes an undesirable event narrowly averted at the last second."
+      },
+      {
+        "id": "skm3-fc-tokoro-datta::supp-use-examples-8",
+        "japanese": "危うく赤信号を見落とすところだったが、手前で急ブレーキを踏んだ。",
+        "english": "I almost overlooked the red light, but slammed on the brakes just before the intersection.",
+        "tokens": [],
+        "useLabel": "Narrow escape from accident",
+        "nuanceNote": "危うく + V-る + ところだった expresses relief at averting a collision."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm3-c-1",
+        "question": "友達が声をかけてくれなかったら、大事な約束を（　　）ところだった。",
+        "translation": "If my friend hadn't called out to remind me, I would have completely forgotten my important appointment.",
+        "options": [
+          "忘れる",
+          "忘れた",
+          "忘れて",
+          "忘れない"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "V-る + ところだった (Averted outcome)",
+        "ruleHint": "V-辞書形 + ところだった (often paired with もう少しで, 危うく)",
+        "explanations": [
+          {
+            "text": "忘れる",
+            "isCorrect": true,
+            "reason": "Correct! 辞書形 忘れる + ところだった expresses an action that was narrowly averted."
+          },
+          {
+            "text": "忘れた",
+            "isCorrect": false,
+            "reason": "忘れたところだった would mean had just forgotten; it does not express the averted event required by this context."
+          },
+          {
+            "text": "忘れて",
+            "isCorrect": false,
+            "reason": "Incorrect. 忘れてところだった is ungrammatical."
+          },
+          {
+            "text": "忘れない",
+            "isCorrect": false,
+            "reason": "Incorrect. 忘れないところだった conveys the opposite meaning."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N3",
+      "SKM Form C",
+      "Tokoro",
+      "Narrow Escape"
+    ],
+    "sourceReference": "Section starts on printed p. 66 (PDF p. 89). Original revision notes; not a transcription."
   },
   {
     "id": "added-n3-c-61",
@@ -12567,6 +14128,98 @@
       "SKM Unit 10",
       "Conjecture",
       "Archetype"
+    ],
+    "sourceReference": "Section starts on printed p. 96 (PDF p. 119). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm3-fj-kimi",
+    "title": "〜気味 (Slight Negative Tinge / Feeling Somewhat...)",
+    "meaning": "Indicates a subtle, mild onset of an undesirable physical, mental, or situational condition: 'a touch of / feeling slightly...'.",
+    "level": "N3",
+    "book": "Shin Kanzen Master N3",
+    "chapter": "Part 1 · Form review J",
+    "streamId": "stream-trends",
+    "streamName": "Momentum, Shifts & Inevitable Drift",
+    "connection": "V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)",
+    "nuance": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
+    "keyTakeaway": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
+    "sentences": [
+      {
+        "id": "skm3-fj-kimi::s-skm3-j-3",
+        "japanese": "最近残業続きで疲れ気味なので、今週末は家でゆっくり休みたい。",
+        "english": "Because I've been feeling somewhat worn out from consecutive overtime lately, I want to rest peacefully at home this weekend.",
+        "literal": "Recently overtime-continuation-due-to fatigue-touch-being, this-weekend home peacefully want-to-rest.",
+        "tokens": [
+          {
+            "word": "疲れ気味",
+            "meaning": "touch of fatigue",
+            "reading": "つかれぎみ",
+            "romaji": "tsukaregimi",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Mild exhaustion prompting weekend recuperation."
+      },
+      {
+        "id": "skm3-fj-kimi::supp-use-examples-9",
+        "japanese": "朝から喉が痛くて、少し風邪気味です。",
+        "english": "My throat has been hurting since morning, and I have a slight touch of a cold.",
+        "tokens": [],
+        "useLabel": "Slight touch of cold",
+        "nuanceNote": "Noun + 気味 describes nascent physical symptoms before a full-blown illness."
+      },
+      {
+        "id": "skm3-fj-kimi::supp-use-examples-10",
+        "japanese": "悪天候のため、電車の運行が全体的に遅れ気味になっている。",
+        "english": "Due to adverse weather, train operations are slightly lagging behind schedule overall.",
+        "tokens": [],
+        "useLabel": "Nascent operational delay",
+        "nuanceNote": "Verb stem + 気味 indicates a slight unfavorable operational deviation."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm3-j-3",
+        "question": "朝から喉が痛くて少し（　　）気味なので、早めに薬を飲んで寝ます。",
+        "translation": "My throat has been hurting since morning and I have a touch of a cold, so I will take medicine early and go to sleep.",
+        "options": [
+          "風邪",
+          "病気",
+          "熱",
+          "痛い"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + 気味 (Nascent symptom)",
+        "ruleHint": "V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)",
+        "explanations": [
+          {
+            "text": "風邪",
+            "isCorrect": true,
+            "reason": "Correct! 風邪気味 (かぜぎみ) is the classic idiom for having a mild touch of a cold."
+          },
+          {
+            "text": "病気",
+            "isCorrect": false,
+            "reason": "Incorrect. 病気気味 is not standard Japanese."
+          },
+          {
+            "text": "熱",
+            "isCorrect": false,
+            "reason": "Incorrect. 熱気味 is unnatural (one says 微熱がある)."
+          },
+          {
+            "text": "痛い",
+            "isCorrect": false,
+            "reason": "Incorrect. 痛い気味 is ungrammatical (adjectives do not attach directly to 気味)."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N3",
+      "SKM Form J",
+      "Suffix",
+      "Mild Symptom"
     ],
     "sourceReference": "Section starts on printed p. 96 (PDF p. 119). Original revision notes; not a transcription."
   },
@@ -16195,6 +17848,98 @@
     "sourceReference": "Section starts on printed p. 42 (PDF p. 52). Original revision notes; not a transcription."
   },
   {
+    "id": "skm2-c10-nuki-de",
+    "title": "〜抜きで / 〜抜きにして（は） (Dispensing With / Without the Element Of)",
+    "meaning": "Doing an action while omitting, dispensing with, or setting aside a standard accompanying element (formal greetings, alcohol, sugar, or a person's presence).",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 1 · Chapter 10",
+    "streamId": "stream-topics",
+    "streamName": "Topic Framing, Criteria & Disregard",
+    "connection": "Noun + 抜きで / 抜きにして / 抜きには | Noun + 抜きの + Noun",
+    "nuance": "CONSCIOUS EXCLUSION: 'お世辞抜きで' (Without flattery / brutally honest), '冗談は抜きにして' (Jokes aside / seriously).",
+    "keyTakeaway": "MUG-UP: Noun + 抜きで = 'Without X / Dispensing with X!'. (お世辞抜きで = Flattery aside).",
+    "sentences": [
+      {
+        "id": "skm2-c10-nuki-de::s-skm2-10-1",
+        "japanese": "前置きは抜きにして、早速本日のメインアジェンダに入りましょう。",
+        "english": "Dispensing with preliminary pleasantries, let us dive straight into today's main agenda.",
+        "literal": "Preamble dispensing-with, promptly today main-agenda enter let-us.",
+        "tokens": [
+          {
+            "word": "前置きは抜きにして",
+            "meaning": "dispensing with pleasantries",
+            "reading": "まえおきはぬきにして",
+            "romaji": "maeoki wa nuki ni shite",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Crisp, efficient chairperson opening a executive meeting."
+      },
+      {
+        "id": "skm2-c10-nuki-de::n2-use-examples-257",
+        "japanese": "朝は時間がなかったので、朝食抜きで会社へ向かった。",
+        "english": "Because I had no time in the morning, I headed to the office without breakfast.",
+        "tokens": [],
+        "useLabel": "Without standard ingredient or feature",
+        "nuanceNote": "Noun + 抜きで indicates doing an action while omitting a regular accompanying item."
+      },
+      {
+        "id": "skm2-c10-nuki-de::n2-use-examples-258",
+        "japanese": "彼の協力抜きには、この大規模なイベントの成功はあり得なかった。",
+        "english": "Without his cooperation, the success of this large-scale event could never have occurred.",
+        "tokens": [],
+        "useLabel": "Excluding someone's presence",
+        "nuanceNote": "〜抜きには…ない asserts that an outcome would be impossible without the named element."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-10-1",
+        "question": "お世辞（　　）で、あなたの書いた論文は非常に独創的で素晴らしいです。",
+        "translation": "Without a single shred of flattery, the thesis you have written is extraordinarily original and splendid.",
+        "options": [
+          "抜き",
+          "切れ",
+          "限り",
+          "きり"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + 抜きで (Dispensing with pleasantries)",
+        "ruleHint": "Noun + 抜きで / 抜きにして / 抜きには | Noun + 抜きの + Noun",
+        "explanations": [
+          {
+            "text": "抜き",
+            "isCorrect": true,
+            "reason": "Correct! お世辞抜きで is the idiomatic phrase for 'without flattery / speaking genuinely'."
+          },
+          {
+            "text": "切れ",
+            "isCorrect": false,
+            "reason": "Incorrect. お世辞切れで is ungrammatical."
+          },
+          {
+            "text": "限り",
+            "isCorrect": false,
+            "reason": "Incorrect. お世辞限りで is invalid."
+          },
+          {
+            "text": "きり",
+            "isCorrect": false,
+            "reason": "Incorrect. お世辞きりで does not exist in this sense."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Ch 10",
+      "Omission",
+      "Directness"
+    ],
+    "sourceReference": "Section starts on printed p. 46 (PDF p. 56). Original revision notes; not a transcription."
+  },
+  {
     "id": "added-n2-10-85",
     "title": "〜やら〜やら・〜というか〜というか",
     "meaning": "List mixed examples or search for an apt description.",
@@ -16843,6 +18588,98 @@
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Chapter 13",
     "sourceReference": "Section starts on printed p. 60 (PDF p. 70). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm2-c14-ippou-de",
+    "title": "〜一方で (While on One Hand X, on the Other Hand Y)",
+    "meaning": "Presents two contrasting, parallel, or complementary facets of a single subject or broader situation.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 1 · Chapter 14",
+    "streamId": "stream-contrasts",
+    "streamName": "Paradox, Concession & Contrast",
+    "connection": "普通形 (な-adj + な/である, Noun + である) + 一方（で）",
+    "nuance": "DUAL PERSPECTIVE: Does not mean one trend replaces another; rather, both coexist simultaneously: '便利になった一方で、プライバシーの懸念も増えた' (While it has become convenient, privacy concerns have also multiplied).",
+    "keyTakeaway": "MUG-UP: 普通形 + 一方で = 'Two sides of the same coin! While X is true, Y coexists!'.",
+    "sentences": [
+      {
+        "id": "skm2-c14-ippou-de::s-skm2-14-1",
+        "japanese": "リモートワークは通勤のストレスを減らした一方で、社員間のコミュニケーション不足を生んだ。",
+        "english": "While remote work reduced the stress of commuting, it simultaneously gave rise to a shortage of communication among staff.",
+        "literal": "Remote-work commuting stress reduced while, staff-among communication shortage birthed.",
+        "tokens": [
+          {
+            "word": "減らした一方で",
+            "meaning": "while on one hand reducing",
+            "reading": "へらしたいっぽうで",
+            "romaji": "herashita ippou de",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Balanced workplace organizational analysis."
+      },
+      {
+        "id": "skm2-c14-ippou-de::n2-use-examples-259",
+        "japanese": "都市部で地価が上昇する一方で、過疎地では空き家が増え続けている。",
+        "english": "While land prices rise in urban areas, vacant houses continue to multiply in depopulated regions.",
+        "tokens": [],
+        "useLabel": "Coexisting contrasting developments",
+        "nuanceNote": "Clause + 一方で juxtaposes two simultaneous trends."
+      },
+      {
+        "id": "skm2-c14-ippou-de::n2-use-examples-260",
+        "japanese": "彼は仕事に対して非常に厳しい一方で、部下の私生活には深い思いやりを見せる。",
+        "english": "While he is extremely strict about work, he shows deep consideration for his subordinates' personal lives.",
+        "tokens": [],
+        "useLabel": "Dual personal characteristics",
+        "nuanceNote": "Coexisting facets of a single person's personality."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-14-1",
+        "question": "観光客が急増して街が潤っている（　　）で、ゴミや騒音の問題が深刻化している。",
+        "translation": "While the town is prospering from a boom in tourists, problems with litter and noise pollution are worsening.",
+        "options": [
+          "一方",
+          "ばかり",
+          "反面",
+          "あまり"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "普通形 + 一方で (Dual contrasting facets)",
+        "ruleHint": "普通形 (な-adj + な/である, Noun + である) + 一方（で）",
+        "explanations": [
+          {
+            "text": "一方",
+            "isCorrect": true,
+            "reason": "Correct! 潤っている一方で balances economic prosperity against municipal disruptions."
+          },
+          {
+            "text": "ばかり",
+            "isCorrect": false,
+            "reason": "Incorrect. 潤っているばかりで means 'only prospering' without contrasting dual clauses."
+          },
+          {
+            "text": "反面",
+            "isCorrect": false,
+            "reason": "Incorrect. 潤っている反面で is grammatically awkward (反面 does not take で)."
+          },
+          {
+            "text": "あまり",
+            "isCorrect": false,
+            "reason": "Incorrect. 潤っているあまりで is ungrammatical."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Ch 14",
+      "Contrast",
+      "Dual Facets"
+    ],
+    "sourceReference": "Section starts on printed p. 64 (PDF p. 74). Original revision notes; not a transcription."
   },
   {
     "id": "skm2-c19-monono",
@@ -17595,6 +19432,98 @@
     "sourceReference": "Section starts on printed p. 74 (PDF p. 84). Original revision notes; not a transcription."
   },
   {
+    "id": "skm2-c17-wo-keiki-ni",
+    "title": "〜を契機に / 〜を契機として (Using Catalyst X as a Springboard for Change)",
+    "meaning": "Indicates that an unexpected crisis, event, or occurrence served as the historic turning point or springboard that sparked broad reform or personal change.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 1 · Chapter 17",
+    "streamId": "stream-causality",
+    "streamName": "Origins, Inevitable Cause & Scapegoats",
+    "connection": "Noun + を契機に / を契機として / を契機にして",
+    "nuance": "POSITIVE TRANSFORMATION FROM EVENT: Unlike きっかけ (which can be trivial), 契機 (けいき) carries gravitas: an event that ignited systemic reform, career pivots, or historical revolutions.",
+    "keyTakeaway": "MUG-UP: Noun + を契機に = 'Taking event X as the historical turning point / catalyst for major change!'.",
+    "sentences": [
+      {
+        "id": "skm2-c17-wo-keiki-ni::s-skm2-17-1",
+        "japanese": "大病を患ったことを契機に、彼はそれまでの不健康な生活習慣を徹底的に改めた。",
+        "english": "Taking his bout with serious illness as a life-changing catalyst, he thoroughly overhauled his previously unhealthy lifestyle habits.",
+        "literal": "Serious-illness suffered that catalyst-as, he previous unhealthy lifestyle thoroughly reformed.",
+        "tokens": [
+          {
+            "word": "ことを契機に",
+            "meaning": "taking that as a catalyst",
+            "reading": "ことをけいきに",
+            "romaji": "koto o keiki ni",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Decisive personal health turnaround following a medical scare."
+      },
+      {
+        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-261",
+        "japanese": "海外赴任を契機として、本格的に英会話の勉強を始めた。",
+        "english": "Taking his overseas assignment as a catalyst, he began studying English conversation in earnest.",
+        "tokens": [],
+        "useLabel": "Catalyst for personal reform",
+        "nuanceNote": "〜を契機として marks a decisive life event sparking systematic personal change."
+      },
+      {
+        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-262",
+        "japanese": "市民革命を契機に、国の政治体制は大きく近代化へと舵を切った。",
+        "english": "Taking the civic revolution as a turning point, the nation's political system steered heavily toward modernization.",
+        "tokens": [],
+        "useLabel": "Historical turning point",
+        "nuanceNote": "Historical turning point sparking societal transformation."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-17-1",
+        "question": "オリンピック開催を（　　）に、都内のバリアフリー化が一気に加速した。",
+        "translation": "Taking the hosting of the Olympic Games as a catalyst, barrier-free accessibility across the capital accelerated rapidly.",
+        "options": [
+          "契機",
+          "原因",
+          "目的",
+          "次第"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + を契機に (Catalyst for transformation)",
+        "ruleHint": "Noun + を契機に / を契機として / を契機にして",
+        "explanations": [
+          {
+            "text": "契機",
+            "isCorrect": true,
+            "reason": "Correct! 開催を契機に highlights the Olympic Games as the prime catalyst for citywide architectural accessibility improvements."
+          },
+          {
+            "text": "原因",
+            "isCorrect": false,
+            "reason": "Incorrect. 開催を原因に is unnatural syntax."
+          },
+          {
+            "text": "目的",
+            "isCorrect": false,
+            "reason": "Incorrect. 開催を目的に means 'for the purpose of hosting'."
+          },
+          {
+            "text": "次第",
+            "isCorrect": false,
+            "reason": "Incorrect. 開催を次第に is ungrammatical."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Ch 17",
+      "Catalyst",
+      "Transformation"
+    ],
+    "sourceReference": "Section starts on printed p. 78 (PDF p. 88). Original revision notes; not a transcription."
+  },
+  {
     "id": "skm2-c18-dakeni",
     "title": "〜だけに (Precisely Because of Fact X, All the More Y)",
     "meaning": "Indicates that precisely because of a special circumstance, high expectation, or exceptional effort X, the resulting feeling or outcome in Y is all the more magnified.",
@@ -17787,6 +19716,98 @@
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Chapter 17",
     "sourceReference": "Section starts on printed p. 78 (PDF p. 88). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm2-c18-kara-koso",
+    "title": "〜からこそ (Precisely Because / For the Very Reason That)",
+    "meaning": "Strongly emphasizes the genuine, indispensable reason for an action: 'It is precisely for this reason, and no other, that...'.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 1 · Chapter 18",
+    "streamId": "stream-causality",
+    "streamName": "Origins, Inevitable Cause & Scapegoats",
+    "connection": "普通形 + からこそ",
+    "nuance": "DEFINITIVE JUSTIFICATION: Expresses heartfelt sincerity or tough love: 'あなたの将来を心配しているからこそ、厳しく言うのだ' (It is precisely because I care about your future that I speak harshly).",
+    "keyTakeaway": "MUG-UP: 理由 + からこそ = 'Precisely because of this and this alone!'. Reject all other explanations.",
+    "sentences": [
+      {
+        "id": "skm2-c18-kara-koso::s-skm2-18-2",
+        "japanese": "困難な状況にある今だからこそ、チーム全員が団結して支え合う必要がある。",
+        "english": "It is precisely because we find ourselves in difficult circumstances right now that the entire team must unite and support one another.",
+        "literal": "Difficult circumstances-in are now precisely-because, team all unite support-each-other need exists.",
+        "tokens": [
+          {
+            "word": "今だからこそ",
+            "meaning": "precisely because it is now",
+            "reading": "いまだからこそ",
+            "romaji": "ima da kara koso",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Rallying cry during an organizational crisis."
+      },
+      {
+        "id": "skm2-c18-kara-koso::n2-use-examples-263",
+        "japanese": "あなたの将来を心から案じているからこそ、苦言を呈しているのです。",
+        "english": "It is precisely because I care about your future from the bottom of my heart that I offer harsh advice.",
+        "tokens": [],
+        "useLabel": "Tough love and honest advice",
+        "nuanceNote": "からこそ singles out the genuine core reason, rejecting other motivations."
+      },
+      {
+        "id": "skm2-c18-kara-koso::n2-use-examples-264",
+        "japanese": "苦しい練習を耐え抜いたからこそ、優勝した瞬間の感動はひとしおだった。",
+        "english": "It was precisely because we endured grueling practice that the emotion of victory was so intense.",
+        "tokens": [],
+        "useLabel": "Overcoming hardship",
+        "nuanceNote": "Singular justification explaining the magnitude of reward."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-18-2",
+        "question": "お互いを深く信頼している（　　）こそ、本音で議論を戦わせることができる。",
+        "translation": "It is precisely because we trust each other deeply that we can debate fiercely with raw candor.",
+        "options": [
+          "から",
+          "ので",
+          "ため",
+          "なら"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "理由 + からこそ (Emphatic singular justification)",
+        "ruleHint": "普通形 + からこそ",
+        "explanations": [
+          {
+            "text": "から",
+            "isCorrect": true,
+            "reason": "Correct! からこそ emphasizes the foundational bond of trust as the sole enabling reason for honest debate."
+          },
+          {
+            "text": "ので",
+            "isCorrect": false,
+            "reason": "Incorrect. のでこそ is ungrammatical."
+          },
+          {
+            "text": "ため",
+            "isCorrect": false,
+            "reason": "Incorrect. ためこそ does not exist."
+          },
+          {
+            "text": "なら",
+            "isCorrect": false,
+            "reason": "Incorrect. ならこそ is archaic."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Ch 18",
+      "Causality",
+      "Emphatic Justification"
+    ],
+    "sourceReference": "Section starts on printed p. 82 (PDF p. 92). Original revision notes; not a transcription."
   },
   {
     "id": "skm2-c22-kaneru",
@@ -19416,6 +21437,98 @@
     "sourceReference": "Section starts on printed p. 108 (PDF p. 118). Original revision notes; not a transcription."
   },
   {
+    "id": "skm2-c25-te-wa-irarenai",
+    "title": "〜てはいられない / 〜てられない (Cannot Afford to Keep Doing / Compelled to Act)",
+    "meaning": "Expresses that due to time pressure, changing circumstances, age, or emotional urgency, the speaker cannot remain in an ongoing state or continue an action: \"Cannot afford to keep doing / Can't just sit around doing X\".",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 1 · Chapter 25",
+    "streamId": "stream-modality",
+    "streamName": "Epistemic Certainty, Conviction & Duty",
+    "connection": "V-て + はいられない (Spoken: 〜てられない)",
+    "nuance": "Indicates that one cannot afford to remain idle, passive, or continuing a casual behavior because circumstances require a shift or action. It can describe a pressing crisis (避難しなければ), but also ordinary life milestones (もう30歳だから親に甘えてばかりはいられない) or imminent deadlines (試験前だから遊んではいられない).",
+    "keyTakeaway": "V-て + はいられない = Cannot afford to continue the current state or posture; circumstances compel a change or action.",
+    "sentences": [
+      {
+        "id": "skm2-c25-te-wa-irarenai::s-skm2-25-1",
+        "japanese": "試験まであと一週間しかないのだから、遊んではいられない。",
+        "english": "Since there is only one week left until the exam, I cannot afford to be playing around.",
+        "literal": "Exam-until only 1-week have-not since, playing-around afford-cannot.",
+        "tokens": [
+          {
+            "word": "遊んではいられない",
+            "meaning": "cannot afford to play around",
+            "reading": "あそんではいられない",
+            "romaji": "asonde wa irarenai",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Urgent study pressure eliminating leisure."
+      },
+      {
+        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-255",
+        "japanese": "もうすぐ試験が始まるから、いつまでものんびりしてはいられない。",
+        "english": "The exam will begin soon, so I cannot afford to be idling around forever.",
+        "tokens": [],
+        "useLabel": "Situational urgency",
+        "nuanceNote": "Time pressure prevents continuing in a relaxed state."
+      },
+      {
+        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-256",
+        "japanese": "社会人になったのだから、親に甘えてばかりはいられない。",
+        "english": "Now that I am a working adult, I can't keep depending on my parents.",
+        "tokens": [],
+        "useLabel": "Maturity and self-reliance",
+        "nuanceNote": "Growing up means one cannot continue childhood dependence."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-25-1",
+        "question": "こんな重大な危機に直面して、ただ黙って（　　）はいられない。",
+        "translation": "Facing such a critical crisis, I cannot afford to just keep silent and do nothing.",
+        "options": [
+          "見て",
+          "見",
+          "見る",
+          "見た"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "V-て + はいられない urgent compulsion",
+        "ruleHint": "V-て + はいられない (Spoken: 〜てられない)",
+        "explanations": [
+          {
+            "text": "見て",
+            "isCorrect": true,
+            "reason": "Correct! 黙って見ている (silently watching) becomes 黙って見てはいられない ('cannot just look on')."
+          },
+          {
+            "text": "見",
+            "isCorrect": false,
+            "reason": "Incorrect. 見はいられない is ungrammatical without て."
+          },
+          {
+            "text": "見る",
+            "isCorrect": false,
+            "reason": "Incorrect. 見るはいられない is invalid."
+          },
+          {
+            "text": "見た",
+            "isCorrect": false,
+            "reason": "Incorrect. 見た is past form."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Ch 25",
+      "Urgency",
+      "Call to Action"
+    ],
+    "sourceReference": "Section starts on printed p. 112 (PDF p. 122). Original revision notes; not a transcription."
+  },
+  {
     "id": "skm2-c25-zu-niwa-irarenai",
     "title": "〜ずにいられない / 〜ないではいられない (Cannot Help But Do / Irresistible Urge)",
     "meaning": "An internal psychological urge or emotional impulse is so intensely overwhelming that the speaker is irresistibly compelled to do X: 'Cannot help but do / Cannot suppress doing'.",
@@ -20035,7 +22148,64 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review C",
-    "sourceReference": "Section starts on printed p. 126 (PDF p. 136). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 126 (PDF p. 136). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: Classical Remnants & Archaic Literary Forms (p. 126)",
+      "subtitle": "Classical grammar surviving in formal written Japanese and idioms.",
+      "columns": [
+        "Classical Family",
+        "Literary Form & Conjugation",
+        "Modern Equivalent",
+        "Core Meaning & Contextual Usage"
+      ],
+      "rows": [
+        {
+          "label": "Classical Negation: ず / ざる",
+          "cells": [
+            "V-未然形 + ず (せず) / ざる + N",
+            "〜ないで / 〜ない (修飾: 〜ないN)",
+            "ず: adverbial negative (\"without doing\"). ざる: noun-attributive negative (\"that does not...\"). Examples: 絶えず (constantly), 意図せざる結果 (unintended consequence), 知らざる一面 (unknown side)."
+          ],
+          "note": "Special: する becomes せず (adverbial) / せざる (attributive)."
+        },
+        {
+          "label": "Classical Obligation: べし / べく",
+          "cells": [
+            "V-辞書形 + べし / べき / べく",
+            "〜なければならない / 〜する目的で",
+            "べし: natural solemn duty or inevitable consequence. べき: moral obligation (\"ought to\"). べく: formal in-order-to purpose marker (成功すべく努力する)."
+          ],
+          "note": "Common phrase: あるべからざる (that should never exist)."
+        },
+        {
+          "label": "Classical Negative Conjecture: まい",
+          "cells": [
+            "V-辞書形 (一段: 辞書/未然) + まい",
+            "〜ないだろう / 絶対〜しない",
+            "1. Negative conjecture: \"surely will not\" (今夜は雨が降るまい). 2. Strong negative resolve: \"will never do again\" (二度と行くまい). 3. Rhetorical: ではあるまいか (is it not perhaps...?)."
+          ],
+          "note": "Group 2 / Irregular: するまい/すまい, くるまい/こまい."
+        },
+        {
+          "label": "Classical Simultaneous & Progress: つつ",
+          "cells": [
+            "V-stem + つつ / つつある",
+            "〜ながら / 〜ている (進行中)",
+            "1. つつ: concurrent contrastive action (\"while knowing full well...\": 悪いと知りつつ). 2. つつある: ongoing progressive change (\"is steadily in the process of...\": 事態は悪化しつつある)."
+          ],
+          "note": "つつある only pairs with verbs of continuous change (発展, 増加, 回復)."
+        },
+        {
+          "label": "Classical Imperative: よ / せよ",
+          "cells": [
+            "V-未然/連用 + せよ / れよ",
+            "〜しなさい / 〜しろ",
+            "Written imperative used in exam instructions, technical documents, and public slogans. Examples: 次の問に答えよ (Answer the following question), 行動せよ (Take action)."
+          ],
+          "note": "する becomes せよ; 来る becomes 来い (こい) / 来たれ."
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-d-119",
@@ -20251,6 +22421,98 @@
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review G",
     "sourceReference": "Section starts on printed p. 136 (PDF p. 146). Original revision notes; not a transcription."
+  },
+  {
+    "id": "skm2-p2-kko-nai",
+    "title": "〜っこない (No Way in Hell / Absolutely Out of the Question)",
+    "meaning": "Emphatically denies any possibility of an action happening: 'There is absolutely no way / Impossible for someone to...'.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 2 · Chapter 1",
+    "streamId": "stream-modality",
+    "streamName": "Epistemic Certainty, Conviction & Duty",
+    "connection": "V-stem (masu-stem) + っこない",
+    "nuance": "CONVERSATIONAL CATEGORICAL REJECTION: Used in passionate speech to dismiss an absurd premise: 'こんな分厚い本、一日で読めっこないよ' (There is no way in hell anyone could read such a thick book in one day!).",
+    "keyTakeaway": "MUG-UP: Verb-stem + っこない = 'ZERO CHANCE! Categorically impossible!'.",
+    "sentences": [
+      {
+        "id": "skm2-p2-kko-nai::s-skm2-p2-1",
+        "japanese": "プロの選手相手に、初心者の私たちが勝ちっこないよ。",
+        "english": "There's no way in hell we beginners could ever defeat professional athletes!",
+        "literal": "Pro athletes opponent-as, beginner us win-no-way.",
+        "tokens": [
+          {
+            "word": "勝ちっこない",
+            "meaning": "no way we could win",
+            "reading": "かちっこない",
+            "romaji": "kachikkonai",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Blunt colloquial dismissal of an unrealistic match outcome."
+      },
+      {
+        "id": "skm2-p2-kko-nai::n2-use-examples-265",
+        "japanese": "あんなに頑固な部長が、私たちの要求を簡単に受け入れっこないよ。",
+        "english": "There is no way in hell such a stubborn manager would easily accept our demands.",
+        "tokens": [],
+        "useLabel": "Adamant denial of possibility",
+        "nuanceNote": "Colloquial categorical rejection of an improbable premise."
+      },
+      {
+        "id": "skm2-p2-kko-nai::n2-use-examples-266",
+        "japanese": "たった二日間でこの分厚い報告書を全部翻訳できっこない。",
+        "english": "There is no way anyone could translate this entire thick report in just two days.",
+        "tokens": [],
+        "useLabel": "Challenging unrealistic workload",
+        "nuanceNote": "Verb-stem + っこない emphasizes absolute practical impossibility."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-p2-1",
+        "question": "地図も持たずに初めての山に入ったら、道に迷い（　　）よ。",
+        "translation": "If you enter an unfamiliar mountain without even a map, you are bound to get lost!",
+        "options": [
+          "っこない",
+          "かねない",
+          "きりない",
+          "がちない"
+        ],
+        "correctIndex": 1,
+        "grammarFocus": "Trap Check: っこない (Zero chance) vs かねない (Danger of happening)",
+        "ruleHint": "V-stem (masu-stem) + っこない",
+        "explanations": [
+          {
+            "text": "っこない",
+            "isCorrect": false,
+            "reason": "Incorrect. 迷いっこない would mean 'there is no way you could get lost', which is false."
+          },
+          {
+            "text": "かねない",
+            "isCorrect": true,
+            "reason": "Correct! 迷いかねない warns of the very real danger: 'you are liable to get lost'. Note: For っこない, a sentence would be: 道が分かりっこない (No way you could know the path!)."
+          },
+          {
+            "text": "きりない",
+            "isCorrect": false,
+            "reason": "Incorrect. きりない does not attach to verb stems."
+          },
+          {
+            "text": "がちない",
+            "isCorrect": false,
+            "reason": "Incorrect. がちない is invalid."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Part 2",
+      "Colloquial Impossibility",
+      "Form A"
+    ],
+    "sourceReference": "Section starts on printed p. 140 (PDF p. 150). Original revision notes; not a transcription."
   },
   {
     "id": "added-n2-p2-1-128",
@@ -21069,7 +23331,100 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 3 · Chapter 10",
-    "sourceReference": "Section starts on printed p. 186 (PDF p. 196). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 186 (PDF p. 196). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: The 9 Discourse Connector Categories (pp. 186–187)",
+      "subtitle": "Sentence-initial discourse markers systematically distinguished by rhetorical function.",
+      "columns": [
+        "Discourse Function",
+        "Key Connectors",
+        "Defining Nuance & Usage Distinction",
+        "Illustrative Example Context"
+      ],
+      "rows": [
+        {
+          "label": "1. Adding Points (累加・付加)",
+          "cells": [
+            "しかも, そのうえ, さらに, そればかりか, そればかりでなく",
+            "しかも: adds surprising/escalating extra detail. そのうえ: \"on top of that\". さらに: step-by-step progressive increment. そればかりか: \"not merely that, but even...\"",
+            "この料理は美味しく、しかも値段が手頃だ。"
+          ],
+          "note": "Escalation beyond prior statement."
+        },
+        {
+          "label": "2. Contrast & Comparison (対比)",
+          "cells": [
+            "それに対して, 一方(で)",
+            "それに対して: sharp directional contrast between two distinct entities. 一方: balancing two parallel facts or sides of the same entity.",
+            "兄は社交的だ。それに対して、弟は物静かな性格だ。"
+          ],
+          "note": "A vs B juxtaposition."
+        },
+        {
+          "label": "3. Alternatives & Choices (選択)",
+          "cells": [
+            "あるいは, それとも",
+            "あるいは: formal/written alternative (\"or alternatively\"). それとも: conversational question alternative (\"A? Or is it B?\").",
+            "郵送、あるいはメールで提出してください。"
+          ],
+          "note": "それとも is restricted to interrogative choices."
+        },
+        {
+          "label": "4. Consequence & Action (結末・行動)",
+          "cells": [
+            "そのため, したがって, そこで, すると, このように, こうして",
+            "そのため: objective causal result. したがって: logical conclusion (\"therefore\"). そこで: motivated deliberate action taken in response. すると: instantaneous discovery/mechanical result.",
+            "雨が降り出した。そこで、近くの喫茶店に入った。"
+          ],
+          "note": "Trap: そこで requires speaker's deliberate volition; すると excludes personal intention!"
+        },
+        {
+          "label": "5. Rationale & Background (理由・説明)",
+          "cells": [
+            "なぜなら(ば), というのは",
+            "なぜなら(ば): formal retrospective reason (\"the reason why is...\"). というのは: explanatory elaboration of context.",
+            "昨夜は欠席しました。というのは、急な発熱があったからです。"
+          ],
+          "note": "Often concludes with 〜からだ / 〜ためだ."
+        },
+        {
+          "label": "6. Adversative & Persistence (逆接・譲歩)",
+          "cells": [
+            "だが, ところが, それなのに, それでも",
+            "だが: standard formal but. ところが: unexpected, surprising twist. それなのに: indignant frustration against expectation. それでも: persistence despite counterweight.",
+            "必死に頼み込んだ。それでも、彼は承諾しなかった。"
+          ],
+          "note": "ところが cannot introduce speaker's volitional request."
+        },
+        {
+          "label": "7. Restatement & Analogy (換言・要約)",
+          "cells": [
+            "つまり, 要するに, すなわち, いわば",
+            "つまり: summarizing meaning (\"in short\"). 要するに: distilling to core essence. すなわち: formal exact equivalence (\"namely\"). いわば: figurative metaphor (\"so to speak\").",
+            "彼は私の恩人、いわば人生の師匠だ。"
+          ],
+          "note": "いわば requires a metaphorical comparison."
+        },
+        {
+          "label": "8. Qualification & Provisos (補足・条件)",
+          "cells": [
+            "ただし, もっとも, なお",
+            "ただし: strict conditions, provisos, or exceptions to the preceding rule. もっとも: natural partial concession or reservation. なお: neutral supplementary admin detail.",
+            "入場は無料です。ただし、事前登録が必要です。"
+          ],
+          "note": "ただし is standard for legal and contract terms."
+        },
+        {
+          "label": "9. Topic Shift & Transition (転換)",
+          "cells": [
+            "さて, ところで",
+            "さて: closes previous topic and smoothly advances forward to main business (\"now then\"). ところで: abrupt complete change of subject (\"by the way\").",
+            "雑談はここまでにして、さて、本題に入りましょう。"
+          ],
+          "note": "Do not confuse discourse ところで with temporal 〜たところで!"
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-p3-11-151",
@@ -21158,998 +23513,8 @@
     "sourceReference": "Section starts on printed p. 194 (PDF p. 204). Original revision notes; not a transcription."
   },
   {
-    "id": "skm3-u4-ni-kurabete",
-    "title": "〜に比べて (Compared With / Relative To)",
-    "meaning": "Establishes a baseline entity X against which another entity Y is measured and evaluated.",
-    "level": "N3",
-    "streamId": "stream-contrasts",
-    "streamName": "Paradox, Concession & Contrast",
-    "connection": "Noun + に比べて / に比べ",
-    "nuance": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
-    "keyTakeaway": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
-    "sentences": [
-      {
-        "id": "skm3-u4-ni-kurabete::s-skm3-4-4",
-        "japanese": "今年の夏は、例年に比べて格段に猛暑日が続いている。",
-        "english": "Compared to ordinary years, extremely hot days are continuing at a markedly higher frequency this summer.",
-        "literal": "This-year summer, average-years-to compared remarkably heatwave-days continuing.",
-        "tokens": [
-          {
-            "word": "例年に比べて",
-            "meaning": "compared to average years",
-            "reading": "れいねんにくらべて",
-            "romaji": "reinen ni kurabete",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Climatic comparison against historical baseline."
-      },
-      {
-        "id": "skm3-u4-ni-kurabete::supp-use-examples-1",
-        "japanese": "去年に比べて、今年の冬はずっと雪が多い。",
-        "english": "Compared to last year, this winter has far more snow.",
-        "tokens": [],
-        "useLabel": "Comparison with baseline year",
-        "nuanceNote": "Noun + に比べて evaluates the current situation against a prior baseline standard."
-      },
-      {
-        "id": "skm3-u4-ni-kurabete::supp-use-examples-2",
-        "japanese": "電車を利用するのは、車を運転するのに比べて、到着時間の予測が立てやすい。",
-        "english": "Taking the train makes arrival times much more predictable compared to driving a car.",
-        "tokens": [],
-        "useLabel": "Comparison of options",
-        "nuanceNote": "Verb-plain + のに比べて cleanly contrasts two nominalized action clauses."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm3-4-4",
-        "question": "去年と（　　）、今年は涼しいです。",
-        "translation": "Compared with last year, this year is cool.",
-        "options": [
-          "比べて",
-          "比べる",
-          "比べたの",
-          "比べます"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "Noun + に比べて (Comparative benchmark)",
-        "ruleHint": "Noun + に比べて / に比べ",
-        "explanations": [
-          {
-            "text": "比べて",
-            "isCorrect": true,
-            "reason": "と比べて links the comparison to the main clause."
-          },
-          {
-            "text": "比べる",
-            "isCorrect": false,
-            "reason": "比べる needs a different following structure."
-          },
-          {
-            "text": "比べたの",
-            "isCorrect": false,
-            "reason": "比べたの cannot connect directly to this clause."
-          },
-          {
-            "text": "比べます",
-            "isCorrect": false,
-            "reason": "比べます does not connect the clauses as written."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N3",
-      "SKM Unit 4",
-      "Comparison",
-      "Benchmark"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm3-u9-garu",
-    "title": "〜がる / 〜がっている (Third-Person Manifestation of Desires & Sensations)",
-    "meaning": "Describes observable behaviors indicating that someone other than the speaker feels an emotion, sensation, or desire.",
-    "level": "N3",
-    "streamId": "stream-social",
-    "streamName": "Social Coordinates, Deference & Humility",
-    "connection": "い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている",
-    "nuance": "がる describes observable indications of a feeling or desire, often about someone else. Reports, quotations and narrative contexts also allow other ways to describe a third person; it is not a blanket ban on third-person adjective predicates.",
-    "keyTakeaway": "がる describes observable indications of a feeling or desire, often about someone else. Reports, quotations and narrative contexts also allow other ways to describe a third person; it is not a blanket ban on third-person adjective predicates.",
-    "sentences": [
-      {
-        "id": "skm3-u9-garu::s-skm3-9-1",
-        "japanese": "弟は注射をひどく怖がって、病院の前で泣き出してしまった。",
-        "english": "My little brother showed tremendous fear of the injection and burst into tears in front of the hospital.",
-        "literal": "Little-brother injection terribly feared-showing, hospital front burst-out-crying.",
-        "tokens": [
-          {
-            "word": "怖がって",
-            "meaning": "showing fear / acting terrified",
-            "reading": "こわがって",
-            "romaji": "kowagatte",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Describing observable childish reaction to medical procedure."
-      },
-      {
-        "id": "skm3-u9-garu::supp-use-examples-3",
-        "japanese": "うちの猫は外に出たがって、ドアの前で鳴いている。",
-        "english": "Our cat wants to go outside and is meowing in front of the door.",
-        "tokens": [],
-        "useLabel": "Third-person observable desire",
-        "nuanceNote": "〜たがる describes an observable third-person desire through physical behavior."
-      },
-      {
-        "id": "skm3-u9-garu::supp-use-examples-4",
-        "japanese": "彼は注射をひどく痛がっていた。",
-        "english": "He was showing severe pain from the injection.",
-        "tokens": [],
-        "useLabel": "Third-person negative sensation",
-        "nuanceNote": "〜がる attaches to an adjective stem to report observed discomfort rather than claiming direct telepathy."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm3-9-1",
-        "question": "子供が外へ行きた（　　）います。",
-        "translation": "The child is showing that they want to go outside.",
-        "options": [
-          "がって",
-          "がる",
-          "がり",
-          "がった"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "V-たい → たがらなくなる (3rd person desire trend)",
-        "ruleHint": "い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている",
-        "explanations": [
-          {
-            "text": "がって",
-            "isCorrect": true,
-            "reason": "たがっている reports observable desire in progress."
-          },
-          {
-            "text": "がる",
-            "isCorrect": false,
-            "reason": "たがる does not attach directly to います."
-          },
-          {
-            "text": "がり",
-            "isCorrect": false,
-            "reason": "たがり does not attach directly to います."
-          },
-          {
-            "text": "がった",
-            "isCorrect": false,
-            "reason": "たがった does not attach directly to います."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N3",
-      "SKM Unit 9",
-      "Psychological",
-      "Third-Person"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm3-u10-ni-yoru-to",
-    "title": "〜によると / 〜によれば (According To Source of Information)",
-    "meaning": "According to a source of information.",
-    "level": "N3",
-    "streamId": "stream-topics",
-    "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Source noun + によると / によれば",
-    "nuance": "Names the source rather than claiming direct personal observation. It commonly accompanies そうだ, らしい, ということだ and similar reporting endings, but these are not mandatory in every report. Distinguish によって for means, cause, agency or variation.",
-    "keyTakeaway": "Identify the information source; reported-style endings are common, not obligatory.",
-    "sentences": [
-      {
-        "id": "skm3-u10-ni-yoru-to::s-skm3-10-1",
-        "japanese": "天気予報によると、明日の夕方から関東地方全域で大雪になるそうだ。",
-        "english": "According to the weather forecast, heavy snow will reportedly blanket the entire Kanto region starting tomorrow evening.",
-        "literal": "Weather forecast according-to, tomorrow evening-from Kanto entire heavy-snow become reportedly.",
-        "tokens": [
-          {
-            "word": "天気予報によると",
-            "meaning": "according to the weather forecast",
-            "reading": "てんきよほうによると",
-            "romaji": "tenki yohou ni yoru to",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Formal citation of meteorological bulletin."
-      },
-      {
-        "id": "skm3-u10-ni-yoru-to::supp-use-examples-5",
-        "japanese": "最近の世論調査によると、内閣支持率はやや下落したそうだ。",
-        "english": "According to a recent public opinion survey, cabinet approval ratings reportedly dropped slightly.",
-        "tokens": [],
-        "useLabel": "Citing statistical survey",
-        "nuanceNote": "Noun + によると pairs with hearsay ending 〜そうだ to formally cite statistical data."
-      },
-      {
-        "id": "skm3-u10-ni-yoru-to::supp-use-examples-6",
-        "japanese": "田中さんの話によれば、部長は来月転勤するらしい。",
-        "english": "According to what Tanaka said, the department manager will apparently transfer next month.",
-        "tokens": [],
-        "useLabel": "Citing rumor or eyewitness account",
-        "nuanceNote": "Noun + によれば pairs with evidential conjecture 〜らしい."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm3-10-1",
-        "question": "今朝の新聞（　　）よると、ガソリン価格が来月から再び値上がりするそうだ。",
-        "translation": "According to this morning's newspaper, gasoline prices will reportedly hike again starting next month.",
-        "options": [
-          "に",
-          "で",
-          "を",
-          "へ"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "Noun + によると (Citing sources)",
-        "ruleHint": "Source noun + によると / によれば",
-        "explanations": [
-          {
-            "text": "に",
-            "isCorrect": true,
-            "reason": "Correct! Noun + によると is the fixed citation pattern."
-          },
-          {
-            "text": "で",
-            "isCorrect": false,
-            "reason": "Incorrect. でよると does not exist."
-          },
-          {
-            "text": "を",
-            "isCorrect": false,
-            "reason": "Incorrect. をよると is ungrammatical."
-          },
-          {
-            "text": "へ",
-            "isCorrect": false,
-            "reason": "Incorrect. へよると is invalid."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N3",
-      "SKM Unit 10",
-      "Hearsay",
-      "Source Citation"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm3-fc-tokoro-datta",
-    "title": "〜ところだった (Was on the Very Verge Of / Narrowly Escaped)",
-    "meaning": "Indicates that an undesirable disaster or drastic event almost occurred, but was averted in the nick of time: 'I almost / was on the verge of...'.",
-    "level": "N3",
-    "streamId": "stream-time",
-    "streamName": "Chronos & Instant Transitions",
-    "connection": "V-辞書形 + ところだった (often paired with もう少しで, 危うく)",
-    "nuance": "NARROW ESCAPE: Almost always paired with adverbs like もう少しで (by a hair's breadth) or 危うく (narrowly): 'もう少しで終電に乗り遅れるところだった' (I almost missed the last train).",
-    "keyTakeaway": "MUG-UP: もう少しで + V-る + ところだった = 'Narrow escape! Almost happened but thank goodness it didn't!'.",
-    "sentences": [
-      {
-        "id": "skm3-fc-tokoro-datta::s-skm3-c-1",
-        "japanese": "足元が滑って、危うく階段から転がり落ちるところだった。",
-        "english": "My footing slipped, and I came within a hair's breadth of tumbling down the stairs.",
-        "literal": "Footing slipped, narrowly stairs-from tumble-down verge-was.",
-        "tokens": [
-          {
-            "word": "転がり落ちるところだった",
-            "meaning": "was on the verge of tumbling down",
-            "reading": "ころがりおちるところだった",
-            "romaji": "korogariochiru tokoro datta",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Heart-stopping near-miss on a steep staircase."
-      },
-      {
-        "id": "skm3-fc-tokoro-datta::supp-use-examples-7",
-        "japanese": "もう少しで終電に乗り遅れるところだった。",
-        "english": "I came within a hair's breadth of missing the last train.",
-        "tokens": [],
-        "useLabel": "Narrow escape from missing train",
-        "nuanceNote": "もう少しで + V-る + ところだった describes an undesirable event narrowly averted at the last second."
-      },
-      {
-        "id": "skm3-fc-tokoro-datta::supp-use-examples-8",
-        "japanese": "危うく赤信号を見落とすところだったが、手前で急ブレーキを踏んだ。",
-        "english": "I almost overlooked the red light, but slammed on the brakes just before the intersection.",
-        "tokens": [],
-        "useLabel": "Narrow escape from accident",
-        "nuanceNote": "危うく + V-る + ところだった expresses relief at averting a collision."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm3-c-1",
-        "question": "友達が声をかけてくれなかったら、大事な約束を（　　）ところだった。",
-        "translation": "If my friend hadn't called out to remind me, I would have completely forgotten my important appointment.",
-        "options": [
-          "忘れる",
-          "忘れた",
-          "忘れて",
-          "忘れない"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "V-る + ところだった (Averted outcome)",
-        "ruleHint": "V-辞書形 + ところだった (often paired with もう少しで, 危うく)",
-        "explanations": [
-          {
-            "text": "忘れる",
-            "isCorrect": true,
-            "reason": "Correct! 辞書形 忘れる + ところだった expresses an action that was narrowly averted."
-          },
-          {
-            "text": "忘れた",
-            "isCorrect": false,
-            "reason": "忘れたところだった would mean had just forgotten; it does not express the averted event required by this context."
-          },
-          {
-            "text": "忘れて",
-            "isCorrect": false,
-            "reason": "Incorrect. 忘れてところだった is ungrammatical."
-          },
-          {
-            "text": "忘れない",
-            "isCorrect": false,
-            "reason": "Incorrect. 忘れないところだった conveys the opposite meaning."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N3",
-      "SKM Form C",
-      "Tokoro",
-      "Narrow Escape"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm3-fj-kimi",
-    "title": "〜気味 (Slight Negative Tinge / Feeling Somewhat...)",
-    "meaning": "Indicates a subtle, mild onset of an undesirable physical, mental, or situational condition: 'a touch of / feeling slightly...'.",
-    "level": "N3",
-    "streamId": "stream-trends",
-    "streamName": "Momentum, Shifts & Inevitable Drift",
-    "connection": "V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)",
-    "nuance": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
-    "keyTakeaway": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
-    "sentences": [
-      {
-        "id": "skm3-fj-kimi::s-skm3-j-3",
-        "japanese": "最近残業続きで疲れ気味なので、今週末は家でゆっくり休みたい。",
-        "english": "Because I've been feeling somewhat worn out from consecutive overtime lately, I want to rest peacefully at home this weekend.",
-        "literal": "Recently overtime-continuation-due-to fatigue-touch-being, this-weekend home peacefully want-to-rest.",
-        "tokens": [
-          {
-            "word": "疲れ気味",
-            "meaning": "touch of fatigue",
-            "reading": "つかれぎみ",
-            "romaji": "tsukaregimi",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Mild exhaustion prompting weekend recuperation."
-      },
-      {
-        "id": "skm3-fj-kimi::supp-use-examples-9",
-        "japanese": "朝から喉が痛くて、少し風邪気味です。",
-        "english": "My throat has been hurting since morning, and I have a slight touch of a cold.",
-        "tokens": [],
-        "useLabel": "Slight touch of cold",
-        "nuanceNote": "Noun + 気味 describes nascent physical symptoms before a full-blown illness."
-      },
-      {
-        "id": "skm3-fj-kimi::supp-use-examples-10",
-        "japanese": "悪天候のため、電車の運行が全体的に遅れ気味になっている。",
-        "english": "Due to adverse weather, train operations are slightly lagging behind schedule overall.",
-        "tokens": [],
-        "useLabel": "Nascent operational delay",
-        "nuanceNote": "Verb stem + 気味 indicates a slight unfavorable operational deviation."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm3-j-3",
-        "question": "朝から喉が痛くて少し（　　）気味なので、早めに薬を飲んで寝ます。",
-        "translation": "My throat has been hurting since morning and I have a touch of a cold, so I will take medicine early and go to sleep.",
-        "options": [
-          "風邪",
-          "病気",
-          "熱",
-          "痛い"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "Noun + 気味 (Nascent symptom)",
-        "ruleHint": "V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)",
-        "explanations": [
-          {
-            "text": "風邪",
-            "isCorrect": true,
-            "reason": "Correct! 風邪気味 (かぜぎみ) is the classic idiom for having a mild touch of a cold."
-          },
-          {
-            "text": "病気",
-            "isCorrect": false,
-            "reason": "Incorrect. 病気気味 is not standard Japanese."
-          },
-          {
-            "text": "熱",
-            "isCorrect": false,
-            "reason": "Incorrect. 熱気味 is unnatural (one says 微熱がある)."
-          },
-          {
-            "text": "痛い",
-            "isCorrect": false,
-            "reason": "Incorrect. 痛い気味 is ungrammatical (adjectives do not attach directly to 気味)."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N3",
-      "SKM Form J",
-      "Suffix",
-      "Mild Symptom"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-c25-te-wa-irarenai",
-    "title": "〜てはいられない / 〜てられない (Cannot Afford to Keep Doing / Compelled to Act)",
-    "meaning": "Expresses that due to time pressure, changing circumstances, age, or emotional urgency, the speaker cannot remain in an ongoing state or continue an action: \"Cannot afford to keep doing / Can't just sit around doing X\".",
-    "level": "N2",
-    "streamId": "stream-modality",
-    "streamName": "Epistemic Certainty, Conviction & Duty",
-    "connection": "V-て + はいられない (Spoken: 〜てられない)",
-    "nuance": "Indicates that one cannot afford to remain idle, passive, or continuing a casual behavior because circumstances require a shift or action. It can describe a pressing crisis (避難しなければ), but also ordinary life milestones (もう30歳だから親に甘えてばかりはいられない) or imminent deadlines (試験前だから遊んではいられない).",
-    "keyTakeaway": "V-て + はいられない = Cannot afford to continue the current state or posture; circumstances compel a change or action.",
-    "sentences": [
-      {
-        "id": "skm2-c25-te-wa-irarenai::s-skm2-25-1",
-        "japanese": "試験まであと一週間しかないのだから、遊んではいられない。",
-        "english": "Since there is only one week left until the exam, I cannot afford to be playing around.",
-        "literal": "Exam-until only 1-week have-not since, playing-around afford-cannot.",
-        "tokens": [
-          {
-            "word": "遊んではいられない",
-            "meaning": "cannot afford to play around",
-            "reading": "あそんではいられない",
-            "romaji": "asonde wa irarenai",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Urgent study pressure eliminating leisure."
-      },
-      {
-        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-255",
-        "japanese": "もうすぐ試験が始まるから、いつまでものんびりしてはいられない。",
-        "english": "The exam will begin soon, so I cannot afford to be idling around forever.",
-        "tokens": [],
-        "useLabel": "Situational urgency",
-        "nuanceNote": "Time pressure prevents continuing in a relaxed state."
-      },
-      {
-        "id": "skm2-c25-te-wa-irarenai::n2-use-examples-256",
-        "japanese": "社会人になったのだから、親に甘えてばかりはいられない。",
-        "english": "Now that I am a working adult, I can't keep depending on my parents.",
-        "tokens": [],
-        "useLabel": "Maturity and self-reliance",
-        "nuanceNote": "Growing up means one cannot continue childhood dependence."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-25-1",
-        "question": "こんな重大な危機に直面して、ただ黙って（　　）はいられない。",
-        "translation": "Facing such a critical crisis, I cannot afford to just keep silent and do nothing.",
-        "options": [
-          "見て",
-          "見",
-          "見る",
-          "見た"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "V-て + はいられない urgent compulsion",
-        "ruleHint": "V-て + はいられない (Spoken: 〜てられない)",
-        "explanations": [
-          {
-            "text": "見て",
-            "isCorrect": true,
-            "reason": "Correct! 黙って見ている (silently watching) becomes 黙って見てはいられない ('cannot just look on')."
-          },
-          {
-            "text": "見",
-            "isCorrect": false,
-            "reason": "Incorrect. 見はいられない is ungrammatical without て."
-          },
-          {
-            "text": "見る",
-            "isCorrect": false,
-            "reason": "Incorrect. 見るはいられない is invalid."
-          },
-          {
-            "text": "見た",
-            "isCorrect": false,
-            "reason": "Incorrect. 見た is past form."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Ch 25",
-      "Urgency",
-      "Call to Action"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-c10-nuki-de",
-    "title": "〜抜きで / 〜抜きにして（は） (Dispensing With / Without the Element Of)",
-    "meaning": "Doing an action while omitting, dispensing with, or setting aside a standard accompanying element (formal greetings, alcohol, sugar, or a person's presence).",
-    "level": "N2",
-    "streamId": "stream-topics",
-    "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun + 抜きで / 抜きにして / 抜きには | Noun + 抜きの + Noun",
-    "nuance": "CONSCIOUS EXCLUSION: 'お世辞抜きで' (Without flattery / brutally honest), '冗談は抜きにして' (Jokes aside / seriously).",
-    "keyTakeaway": "MUG-UP: Noun + 抜きで = 'Without X / Dispensing with X!'. (お世辞抜きで = Flattery aside).",
-    "sentences": [
-      {
-        "id": "skm2-c10-nuki-de::s-skm2-10-1",
-        "japanese": "前置きは抜きにして、早速本日のメインアジェンダに入りましょう。",
-        "english": "Dispensing with preliminary pleasantries, let us dive straight into today's main agenda.",
-        "literal": "Preamble dispensing-with, promptly today main-agenda enter let-us.",
-        "tokens": [
-          {
-            "word": "前置きは抜きにして",
-            "meaning": "dispensing with pleasantries",
-            "reading": "まえおきはぬきにして",
-            "romaji": "maeoki wa nuki ni shite",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Crisp, efficient chairperson opening a executive meeting."
-      },
-      {
-        "id": "skm2-c10-nuki-de::n2-use-examples-257",
-        "japanese": "朝は時間がなかったので、朝食抜きで会社へ向かった。",
-        "english": "Because I had no time in the morning, I headed to the office without breakfast.",
-        "tokens": [],
-        "useLabel": "Without standard ingredient or feature",
-        "nuanceNote": "Noun + 抜きで indicates doing an action while omitting a regular accompanying item."
-      },
-      {
-        "id": "skm2-c10-nuki-de::n2-use-examples-258",
-        "japanese": "彼の協力抜きには、この大規模なイベントの成功はあり得なかった。",
-        "english": "Without his cooperation, the success of this large-scale event could never have occurred.",
-        "tokens": [],
-        "useLabel": "Excluding someone's presence",
-        "nuanceNote": "〜抜きには…ない asserts that an outcome would be impossible without the named element."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-10-1",
-        "question": "お世辞（　　）で、あなたの書いた論文は非常に独創的で素晴らしいです。",
-        "translation": "Without a single shred of flattery, the thesis you have written is extraordinarily original and splendid.",
-        "options": [
-          "抜き",
-          "切れ",
-          "限り",
-          "きり"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "Noun + 抜きで (Dispensing with pleasantries)",
-        "ruleHint": "Noun + 抜きで / 抜きにして / 抜きには | Noun + 抜きの + Noun",
-        "explanations": [
-          {
-            "text": "抜き",
-            "isCorrect": true,
-            "reason": "Correct! お世辞抜きで is the idiomatic phrase for 'without flattery / speaking genuinely'."
-          },
-          {
-            "text": "切れ",
-            "isCorrect": false,
-            "reason": "Incorrect. お世辞切れで is ungrammatical."
-          },
-          {
-            "text": "限り",
-            "isCorrect": false,
-            "reason": "Incorrect. お世辞限りで is invalid."
-          },
-          {
-            "text": "きり",
-            "isCorrect": false,
-            "reason": "Incorrect. お世辞きりで does not exist in this sense."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Ch 10",
-      "Omission",
-      "Directness"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-c14-ippou-de",
-    "title": "〜一方で (While on One Hand X, on the Other Hand Y)",
-    "meaning": "Presents two contrasting, parallel, or complementary facets of a single subject or broader situation.",
-    "level": "N2",
-    "streamId": "stream-contrasts",
-    "streamName": "Paradox, Concession & Contrast",
-    "connection": "普通形 (な-adj + な/である, Noun + である) + 一方（で）",
-    "nuance": "DUAL PERSPECTIVE: Does not mean one trend replaces another; rather, both coexist simultaneously: '便利になった一方で、プライバシーの懸念も増えた' (While it has become convenient, privacy concerns have also multiplied).",
-    "keyTakeaway": "MUG-UP: 普通形 + 一方で = 'Two sides of the same coin! While X is true, Y coexists!'.",
-    "sentences": [
-      {
-        "id": "skm2-c14-ippou-de::s-skm2-14-1",
-        "japanese": "リモートワークは通勤のストレスを減らした一方で、社員間のコミュニケーション不足を生んだ。",
-        "english": "While remote work reduced the stress of commuting, it simultaneously gave rise to a shortage of communication among staff.",
-        "literal": "Remote-work commuting stress reduced while, staff-among communication shortage birthed.",
-        "tokens": [
-          {
-            "word": "減らした一方で",
-            "meaning": "while on one hand reducing",
-            "reading": "へらしたいっぽうで",
-            "romaji": "herashita ippou de",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Balanced workplace organizational analysis."
-      },
-      {
-        "id": "skm2-c14-ippou-de::n2-use-examples-259",
-        "japanese": "都市部で地価が上昇する一方で、過疎地では空き家が増え続けている。",
-        "english": "While land prices rise in urban areas, vacant houses continue to multiply in depopulated regions.",
-        "tokens": [],
-        "useLabel": "Coexisting contrasting developments",
-        "nuanceNote": "Clause + 一方で juxtaposes two simultaneous trends."
-      },
-      {
-        "id": "skm2-c14-ippou-de::n2-use-examples-260",
-        "japanese": "彼は仕事に対して非常に厳しい一方で、部下の私生活には深い思いやりを見せる。",
-        "english": "While he is extremely strict about work, he shows deep consideration for his subordinates' personal lives.",
-        "tokens": [],
-        "useLabel": "Dual personal characteristics",
-        "nuanceNote": "Coexisting facets of a single person's personality."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-14-1",
-        "question": "観光客が急増して街が潤っている（　　）で、ゴミや騒音の問題が深刻化している。",
-        "translation": "While the town is prospering from a boom in tourists, problems with litter and noise pollution are worsening.",
-        "options": [
-          "一方",
-          "ばかり",
-          "反面",
-          "あまり"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "普通形 + 一方で (Dual contrasting facets)",
-        "ruleHint": "普通形 (な-adj + な/である, Noun + である) + 一方（で）",
-        "explanations": [
-          {
-            "text": "一方",
-            "isCorrect": true,
-            "reason": "Correct! 潤っている一方で balances economic prosperity against municipal disruptions."
-          },
-          {
-            "text": "ばかり",
-            "isCorrect": false,
-            "reason": "Incorrect. 潤っているばかりで means 'only prospering' without contrasting dual clauses."
-          },
-          {
-            "text": "反面",
-            "isCorrect": false,
-            "reason": "Incorrect. 潤っている反面で is grammatically awkward (反面 does not take で)."
-          },
-          {
-            "text": "あまり",
-            "isCorrect": false,
-            "reason": "Incorrect. 潤っているあまりで is ungrammatical."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Ch 14",
-      "Contrast",
-      "Dual Facets"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-c17-wo-keiki-ni",
-    "title": "〜を契機に / 〜を契機として (Using Catalyst X as a Springboard for Change)",
-    "meaning": "Indicates that an unexpected crisis, event, or occurrence served as the historic turning point or springboard that sparked broad reform or personal change.",
-    "level": "N2",
-    "streamId": "stream-causality",
-    "streamName": "Origins, Inevitable Cause & Scapegoats",
-    "connection": "Noun + を契機に / を契機として / を契機にして",
-    "nuance": "POSITIVE TRANSFORMATION FROM EVENT: Unlike きっかけ (which can be trivial), 契機 (けいき) carries gravitas: an event that ignited systemic reform, career pivots, or historical revolutions.",
-    "keyTakeaway": "MUG-UP: Noun + を契機に = 'Taking event X as the historical turning point / catalyst for major change!'.",
-    "sentences": [
-      {
-        "id": "skm2-c17-wo-keiki-ni::s-skm2-17-1",
-        "japanese": "大病を患ったことを契機に、彼はそれまでの不健康な生活習慣を徹底的に改めた。",
-        "english": "Taking his bout with serious illness as a life-changing catalyst, he thoroughly overhauled his previously unhealthy lifestyle habits.",
-        "literal": "Serious-illness suffered that catalyst-as, he previous unhealthy lifestyle thoroughly reformed.",
-        "tokens": [
-          {
-            "word": "ことを契機に",
-            "meaning": "taking that as a catalyst",
-            "reading": "ことをけいきに",
-            "romaji": "koto o keiki ni",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Decisive personal health turnaround following a medical scare."
-      },
-      {
-        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-261",
-        "japanese": "海外赴任を契機として、本格的に英会話の勉強を始めた。",
-        "english": "Taking his overseas assignment as a catalyst, he began studying English conversation in earnest.",
-        "tokens": [],
-        "useLabel": "Catalyst for personal reform",
-        "nuanceNote": "〜を契機として marks a decisive life event sparking systematic personal change."
-      },
-      {
-        "id": "skm2-c17-wo-keiki-ni::n2-use-examples-262",
-        "japanese": "市民革命を契機に、国の政治体制は大きく近代化へと舵を切った。",
-        "english": "Taking the civic revolution as a turning point, the nation's political system steered heavily toward modernization.",
-        "tokens": [],
-        "useLabel": "Historical turning point",
-        "nuanceNote": "Historical turning point sparking societal transformation."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-17-1",
-        "question": "オリンピック開催を（　　）に、都内のバリアフリー化が一気に加速した。",
-        "translation": "Taking the hosting of the Olympic Games as a catalyst, barrier-free accessibility across the capital accelerated rapidly.",
-        "options": [
-          "契機",
-          "原因",
-          "目的",
-          "次第"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "Noun + を契機に (Catalyst for transformation)",
-        "ruleHint": "Noun + を契機に / を契機として / を契機にして",
-        "explanations": [
-          {
-            "text": "契機",
-            "isCorrect": true,
-            "reason": "Correct! 開催を契機に highlights the Olympic Games as the prime catalyst for citywide architectural accessibility improvements."
-          },
-          {
-            "text": "原因",
-            "isCorrect": false,
-            "reason": "Incorrect. 開催を原因に is unnatural syntax."
-          },
-          {
-            "text": "目的",
-            "isCorrect": false,
-            "reason": "Incorrect. 開催を目的に means 'for the purpose of hosting'."
-          },
-          {
-            "text": "次第",
-            "isCorrect": false,
-            "reason": "Incorrect. 開催を次第に is ungrammatical."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Ch 17",
-      "Catalyst",
-      "Transformation"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-c18-kara-koso",
-    "title": "〜からこそ (Precisely Because / For the Very Reason That)",
-    "meaning": "Strongly emphasizes the genuine, indispensable reason for an action: 'It is precisely for this reason, and no other, that...'.",
-    "level": "N2",
-    "streamId": "stream-causality",
-    "streamName": "Origins, Inevitable Cause & Scapegoats",
-    "connection": "普通形 + からこそ",
-    "nuance": "DEFINITIVE JUSTIFICATION: Expresses heartfelt sincerity or tough love: 'あなたの将来を心配しているからこそ、厳しく言うのだ' (It is precisely because I care about your future that I speak harshly).",
-    "keyTakeaway": "MUG-UP: 理由 + からこそ = 'Precisely because of this and this alone!'. Reject all other explanations.",
-    "sentences": [
-      {
-        "id": "skm2-c18-kara-koso::s-skm2-18-2",
-        "japanese": "困難な状況にある今だからこそ、チーム全員が団結して支え合う必要がある。",
-        "english": "It is precisely because we find ourselves in difficult circumstances right now that the entire team must unite and support one another.",
-        "literal": "Difficult circumstances-in are now precisely-because, team all unite support-each-other need exists.",
-        "tokens": [
-          {
-            "word": "今だからこそ",
-            "meaning": "precisely because it is now",
-            "reading": "いまだからこそ",
-            "romaji": "ima da kara koso",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Rallying cry during an organizational crisis."
-      },
-      {
-        "id": "skm2-c18-kara-koso::n2-use-examples-263",
-        "japanese": "あなたの将来を心から案じているからこそ、苦言を呈しているのです。",
-        "english": "It is precisely because I care about your future from the bottom of my heart that I offer harsh advice.",
-        "tokens": [],
-        "useLabel": "Tough love and honest advice",
-        "nuanceNote": "からこそ singles out the genuine core reason, rejecting other motivations."
-      },
-      {
-        "id": "skm2-c18-kara-koso::n2-use-examples-264",
-        "japanese": "苦しい練習を耐え抜いたからこそ、優勝した瞬間の感動はひとしおだった。",
-        "english": "It was precisely because we endured grueling practice that the emotion of victory was so intense.",
-        "tokens": [],
-        "useLabel": "Overcoming hardship",
-        "nuanceNote": "Singular justification explaining the magnitude of reward."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-18-2",
-        "question": "お互いを深く信頼している（　　）こそ、本音で議論を戦わせることができる。",
-        "translation": "It is precisely because we trust each other deeply that we can debate fiercely with raw candor.",
-        "options": [
-          "から",
-          "ので",
-          "ため",
-          "なら"
-        ],
-        "correctIndex": 0,
-        "grammarFocus": "理由 + からこそ (Emphatic singular justification)",
-        "ruleHint": "普通形 + からこそ",
-        "explanations": [
-          {
-            "text": "から",
-            "isCorrect": true,
-            "reason": "Correct! からこそ emphasizes the foundational bond of trust as the sole enabling reason for honest debate."
-          },
-          {
-            "text": "ので",
-            "isCorrect": false,
-            "reason": "Incorrect. のでこそ is ungrammatical."
-          },
-          {
-            "text": "ため",
-            "isCorrect": false,
-            "reason": "Incorrect. ためこそ does not exist."
-          },
-          {
-            "text": "なら",
-            "isCorrect": false,
-            "reason": "Incorrect. ならこそ is archaic."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Ch 18",
-      "Causality",
-      "Emphatic Justification"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
-    "id": "skm2-p2-kko-nai",
-    "title": "〜っこない (No Way in Hell / Absolutely Out of the Question)",
-    "meaning": "Emphatically denies any possibility of an action happening: 'There is absolutely no way / Impossible for someone to...'.",
-    "level": "N2",
-    "streamId": "stream-modality",
-    "streamName": "Epistemic Certainty, Conviction & Duty",
-    "connection": "V-stem (masu-stem) + っこない",
-    "nuance": "CONVERSATIONAL CATEGORICAL REJECTION: Used in passionate speech to dismiss an absurd premise: 'こんな分厚い本、一日で読めっこないよ' (There is no way in hell anyone could read such a thick book in one day!).",
-    "keyTakeaway": "MUG-UP: Verb-stem + っこない = 'ZERO CHANCE! Categorically impossible!'.",
-    "sentences": [
-      {
-        "id": "skm2-p2-kko-nai::s-skm2-p2-1",
-        "japanese": "プロの選手相手に、初心者の私たちが勝ちっこないよ。",
-        "english": "There's no way in hell we beginners could ever defeat professional athletes!",
-        "literal": "Pro athletes opponent-as, beginner us win-no-way.",
-        "tokens": [
-          {
-            "word": "勝ちっこない",
-            "meaning": "no way we could win",
-            "reading": "かちっこない",
-            "romaji": "kachikkonai",
-            "pos": "Grammar"
-          }
-        ],
-        "nuanceNote": "Blunt colloquial dismissal of an unrealistic match outcome."
-      },
-      {
-        "id": "skm2-p2-kko-nai::n2-use-examples-265",
-        "japanese": "あんなに頑固な部長が、私たちの要求を簡単に受け入れっこないよ。",
-        "english": "There is no way in hell such a stubborn manager would easily accept our demands.",
-        "tokens": [],
-        "useLabel": "Adamant denial of possibility",
-        "nuanceNote": "Colloquial categorical rejection of an improbable premise."
-      },
-      {
-        "id": "skm2-p2-kko-nai::n2-use-examples-266",
-        "japanese": "たった二日間でこの分厚い報告書を全部翻訳できっこない。",
-        "english": "There is no way anyone could translate this entire thick report in just two days.",
-        "tokens": [],
-        "useLabel": "Challenging unrealistic workload",
-        "nuanceNote": "Verb-stem + っこない emphasizes absolute practical impossibility."
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q-skm2-p2-1",
-        "question": "地図も持たずに初めての山に入ったら、道に迷い（　　）よ。",
-        "translation": "If you enter an unfamiliar mountain without even a map, you are bound to get lost!",
-        "options": [
-          "っこない",
-          "かねない",
-          "きりない",
-          "がちない"
-        ],
-        "correctIndex": 1,
-        "grammarFocus": "Trap Check: っこない (Zero chance) vs かねない (Danger of happening)",
-        "ruleHint": "V-stem (masu-stem) + っこない",
-        "explanations": [
-          {
-            "text": "っこない",
-            "isCorrect": false,
-            "reason": "Incorrect. 迷いっこない would mean 'there is no way you could get lost', which is false."
-          },
-          {
-            "text": "かねない",
-            "isCorrect": true,
-            "reason": "Correct! 迷いかねない warns of the very real danger: 'you are liable to get lost'. Note: For っこない, a sentence would be: 道が分かりっこない (No way you could know the path!)."
-          },
-          {
-            "text": "きりない",
-            "isCorrect": false,
-            "reason": "Incorrect. きりない does not attach to verb stems."
-          },
-          {
-            "text": "がちない",
-            "isCorrect": false,
-            "reason": "Incorrect. がちない is invalid."
-          }
-        ]
-      }
-    ],
-    "tags": [
-      "N2",
-      "SKM Part 2",
-      "Colloquial Impossibility",
-      "Form A"
-    ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
-  },
-  {
     "id": "genki1-wa-desu",
-    "title": "X は Y です (X is Y / Topic & Copula)",
+    "title": "X は Y です (Synthesis Reference Sheet)",
     "meaning": "Identify or describe a topic: as for X, it is Y.",
     "level": "N5",
     "streamId": "stream-topics",
@@ -22256,11 +23621,12 @@
       "Copula",
       "Topic"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study X は Y です (X is Y / Topic & Copula) in Genki I Lesson 1."
   },
   {
     "id": "genki1-verb-groups",
-    "title": "動詞の３分類 (The Three Verb Groups: Ru, U, & Irregular)",
+    "title": "動詞の３分類 (Synthesis Reference Sheet)",
     "meaning": "Japanese verbs are strictly classified into Ru-verbs (一段), U-verbs (五段), and Irregular verbs (する, くる).",
     "level": "N5",
     "streamId": "stream-trends",
@@ -22389,11 +23755,12 @@
       "Verbs",
       "Conjugation"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study 動詞の活用・語順・助詞 in Genki I Lesson 3."
   },
   {
     "id": "genki1-te-form",
-    "title": "て形 (The Te-Form & Polite Requests 〜てください)",
+    "title": "て形 (Synthesis Reference Sheet)",
     "meaning": "The fundamental connective form of Japanese verbs, used for requests (〜てください), permission (〜てもいい), prohibition (〜てはいけない), and sequence.",
     "level": "N5",
     "streamId": "stream-time",
@@ -22566,11 +23933,12 @@
       "Te-Form",
       "Prohibition"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study て形・順序・禁止 in Genki I Lesson 6."
   },
   {
     "id": "genki1-te-iru",
-    "title": "〜ている (Actions in Progress vs Resulting Continuous States)",
+    "title": "〜ている (Synthesis Reference Sheet)",
     "meaning": "1) Ongoing action occurring right now (eating, studying). 2) Continuous state resulting from a past change (married, living, knowing).",
     "level": "N5",
     "streamId": "stream-time",
@@ -22676,11 +24044,12 @@
       "Genki L7",
       "Continuous State"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study 〜ている：動作・結果 in Genki I Lesson 7."
   },
   {
     "id": "genki1-ndesu",
-    "title": "〜んです / 〜のだ (The Explanatory Mode)",
+    "title": "〜んです / 〜のだ (Synthesis Reference Sheet)",
     "meaning": "Provides background explanation, clarifies reasons, asks for clarification, or invites empathy: \"The thing is... / You see...\"",
     "level": "N5",
     "streamId": "stream-causality",
@@ -22787,11 +24156,12 @@
       "Explanatory",
       "Reason"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study 〜ほうがいい in Genki I Lesson 12."
   },
   {
     "id": "genki2-kanoukei",
-    "title": "可能形 (Potential Verbs: Ability & Possibility)",
+    "title": "可能形 (Synthesis Reference Sheet)",
     "meaning": "Expresses that one can do something or that something is possible. Ru-verbs: drop る + られる | U-verbs: u-sound changes to e-sound + る.",
     "level": "N4",
     "streamId": "stream-modality",
@@ -22891,11 +24261,12 @@
       "Potential",
       "Ability"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study 〜そうです：様子 in Genki II Lesson 13."
   },
   {
     "id": "genki2-te-oku",
-    "title": "〜ておく / 〜とく (Doing in Advance / Preparatory Action)",
+    "title": "〜ておく / 〜とく (Synthesis Reference Sheet)",
     "meaning": "Performing an action in advance to prepare for future convenience or leaving a state as is for later.",
     "level": "N4",
     "streamId": "stream-time",
@@ -22995,7 +24366,8 @@
       "Advance Action",
       "Preparation"
     ],
-    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage."
+    "sourceReference": "Supplementary comparison note; not counted as verified textbook section coverage.",
+    "comparisonNote": "For the primary step-by-step textbook lesson, study 〜ておく in Genki II Lesson 15."
   },
   {
     "id": "genki2-yasui-nikui",
@@ -23134,8 +24506,8 @@
           "cells": [
             "N3",
             "Right in the middle of active ongoing action",
-            "Interrupted by unexpected outside event ❌",
-            "Main clause is ALWAYS an unexpected hindrance (電話が鳴った, 停電した)."
+            "Emphasizes being in the middle of an activity",
+            "Often followed by an interruption, but neither surprise nor a negative outcome is required."
           ],
           "note": "Conjugation: V-ている + 最中に / N の最中に"
         },
@@ -23147,7 +24519,7 @@
             "Natural change or spontaneous urge ⚠️",
             "Do it while hot / Before you forget (冷めないうちに / 忘れないうちに)."
           ],
-          "note": "Conjugation: V-dictionary / V-ない / Nの + うちに"
+          "note": "Conjugation: V dictionary/ない/ている, い-adjective, な-adjectiveな or Nの + うちに"
         },
         {
           "label": "〜たとたん（に）",
@@ -25624,9 +26996,9 @@
           "label": "〜と (Natural / Mechanic)",
           "cells": [
             "Natural law, physics, mechanical trigger: \"Once X happens, Y automatically follows.\"",
-            "STRICT NO ❌ (Never use ください, ましょう, つもりだ)",
+            "Normally excludes requests and intentions in the result of a hypothetical condition.",
             "YES ✅ (Discovered a new surprise: 窓を開けると、雪が降っていた)",
-            "TRAP: If sentence ends in \"〜てください\", 〜と is IMMEDIATELY WRONG! Use 〜たら instead."
+            "For a request triggered by a future event, use a suitable たら construction. Distinguish conditional と from quotation と."
           ],
           "note": "Example: ボタンを押すと、切符が出る (Press button -> ticket dispenses)."
         },
@@ -25635,7 +27007,7 @@
           "cells": [
             "Logical requirement: \"Provided that X is met, Y is true.\"",
             "RESTRICTED ⚠️ (Only if verb is non-action / state like ある, or subjects differ)",
-            "NO ❌ (Cannot express past surprise or single actual event)",
+            "Not the usual form for a one-off past discovery; habitual past results are possible.",
             "TRAP: \"薬を飲めば、熱が下がった\" is WRONG. Use 飲んだら."
           ],
           "note": "Classic saying: 安ければ買う (If it is cheap, I will buy it)."
@@ -25655,7 +27027,7 @@
           "cells": [
             "\"If that is the case you are talking about...\" Topic conditional based on listener input.",
             "YES ✅ (Excellent for advice, recommendations: 〜がいいですよ)",
-            "NO ❌ (Cannot be used for past factual sequences)",
+            "Not a chronological after-marker; it can refer to a past premise.",
             "TRAP: Time inversion! In \"日本へ行くなら、カメラを買ったほうがいい\", you buy the camera BEFORE going!"
           ],
           "note": "Noun / Plain form + なら (no だ)."
@@ -28625,7 +29997,7 @@
             "X (Giver / Outside party)",
             "From Outside party INWARD to Speaker / My In-Group",
             "くださる (Honorific - Superior gave to me)",
-            "TRAP: The subject is ALWAYS the person who gives, and the recipient is ALWAYS \"私\" (or my family/in-group)!"
+            "The giver is the subject. The recipient is understood from the speaker or empathy viewpoint, typically the speaker or their in-group."
           ],
           "note": "先生が私に本をくださった (Teacher gave me a book)."
         },
@@ -28633,9 +30005,9 @@
           "label": "私 は X に/から もらう / 〜てもらう",
           "cells": [
             "私 (Receiver / Beneficiary as Subject)",
-            "Speaker RECEIVES from Giver",
+            "The subject receives from the giver; the subject need not be the speaker.",
             "いただく (Humble - I humbly received from superior)",
-            "TRAP: The subject is the RECEIVER! Marked by は. The source/giver is marked by に or から."
+            "The receiver is the subject (often presented as a は-topic). The giver takes に; から is possible for receiving objects, but not freely interchangeable with に in てもらう."
           ],
           "note": "田中さんに手伝ってもらった (I got Tanaka-san to help me)."
         }

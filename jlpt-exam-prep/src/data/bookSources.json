@@ -274,6 +274,7 @@
           "skm3-u4-hanmen-flipside",
           "skm3-u4-kawari-ni-exchange",
           "skm3-u4-ni-taishite",
+          "skm3-u4-ni-kurabete",
           "added-n3-4-46"
         ]
       },
@@ -317,6 +318,7 @@
       {
         "name": "Part 1 · Chapter 9 · p. 44",
         "grammarIds": [
+          "skm3-u9-garu",
           "added-n3-9-53",
           "added-n3-9-54",
           "added-n3-9-55"
@@ -326,6 +328,7 @@
         "name": "Part 1 · Chapter 10 · p. 46",
         "grammarIds": [
           "skm3-u9-beki-da",
+          "skm3-u10-ni-yoru-to",
           "added-n3-10-56",
           "added-n3-10-57"
         ]
@@ -362,6 +365,7 @@
       {
         "name": "Part 1 · Form review C · p. 66",
         "grammarIds": [
+          "skm3-fc-tokoro-datta",
           "added-n3-c-61"
         ]
       },
@@ -410,6 +414,7 @@
           "skm3-fj-ppoi-personality",
           "skm3-fj-darake-flaws",
           "skm3-u10-rashii",
+          "skm3-fj-kimi",
           "skm3-fj-gachi",
           "added-n3-j-68",
           "added-n3-j-115"
@@ -594,6 +599,7 @@
       {
         "name": "Part 1 · Chapter 10 · p. 46",
         "grammarIds": [
+          "skm2-c10-nuki-de",
           "added-n2-10-85",
           "added-n2-10-86"
         ]
@@ -624,6 +630,7 @@
       {
         "name": "Part 1 · Chapter 14 · p. 64",
         "grammarIds": [
+          "skm2-c14-ippou-de",
           "skm2-c19-monono",
           "added-n2-14-91",
           "added-n2-14-92"
@@ -650,6 +657,7 @@
       {
         "name": "Part 1 · Chapter 17 · p. 78",
         "grammarIds": [
+          "skm2-c17-wo-keiki-ni",
           "skm2-c18-dakeni",
           "added-n2-17-97",
           "added-n2-17-98"
@@ -658,6 +666,7 @@
       {
         "name": "Part 1 · Chapter 18 · p. 82",
         "grammarIds": [
+          "skm2-c18-kara-koso",
           "skm2-c22-kaneru",
           "added-n2-18-99",
           "added-n2-18-100"
@@ -717,6 +726,7 @@
       {
         "name": "Part 1 · Chapter 25 · p. 112",
         "grammarIds": [
+          "skm2-c25-te-wa-irarenai",
           "skm2-c25-zu-niwa-irarenai",
           "skm2-c24-zaru-wo-enai",
           "skm2-c25-te-tamaranai",
@@ -776,6 +786,7 @@
       {
         "name": "Part 2 · Chapter 1 · p. 140",
         "grammarIds": [
+          "skm2-p2-kko-nai",
           "added-n2-p2-1-128"
         ]
       },

@@ -4,10 +4,16 @@ import {
   BookmarkCheck,
   Table,
   Library,
-  Compass
+  Compass,
+  BookOpen,
+  CheckCircle2
 } from 'lucide-react';
 
+export type StudyMode = 'learn' | 'practice' | 'revision';
+
 interface Props {
+  activeMode: StudyMode;
+  onModeChange: (mode: StudyMode) => void;
   selectedFilter: 'all' | 'N5' | 'N4' | 'N3' | 'N2';
   onFilterChange: (f: 'all' | 'N5' | 'N4' | 'N3' | 'N2') => void;
   seamlessFlowMode: boolean;
@@ -22,6 +28,8 @@ interface Props {
 }
 
 export const Topbar: React.FC<Props> = ({
+  activeMode,
+  onModeChange,
   selectedFilter,
   onFilterChange,
   seamlessFlowMode,
@@ -46,13 +54,55 @@ export const Topbar: React.FC<Props> = ({
             Bunpou Atlas
           </span>
           <small className="block text-[9px] tracking-wider text-[#788278] font-medium uppercase">
-            N5 · N4 · N3 · N2 Grammar Revision
+            N5 · N4 · N3 · N2 Digital Textbook
           </small>
         </div>
       </div>
 
-      {/* Center Level Filter Quick Jump */}
-      <nav className="hidden md:flex items-center gap-1 bg-[#edebe0] p-1 rounded-md">
+      {/* Primary Activity Mode Switcher: Learn | Practice | Revision */}
+      <nav aria-label="Activity Modes" className="flex items-center rounded-md border border-[#cfcebe] bg-[#fffef9] p-0.5 text-xs">
+        <button
+          onClick={() => onModeChange('learn')}
+          className={`flex items-center gap-1.5 px-3 py-1 rounded transition-all ${
+            activeMode === 'learn'
+              ? 'bg-[#467b6b] text-white font-semibold shadow-xs'
+              : 'text-[#617066] hover:text-[#283b35]'
+          }`}
+          title="Digital textbook lesson study"
+        >
+          <BookOpen className="w-3.5 h-3.5" />
+          <span>Learn (学習)</span>
+        </button>
+
+        <button
+          onClick={() => onModeChange('practice')}
+          className={`flex items-center gap-1.5 px-3 py-1 rounded transition-all ${
+            activeMode === 'practice'
+              ? 'bg-[#467b6b] text-white font-semibold shadow-xs'
+              : 'text-[#617066] hover:text-[#283b35]'
+          }`}
+          title="Chapter-level exercises without answer leakage"
+        >
+          <CheckCircle2 className="w-3.5 h-3.5" />
+          <span>Practice (練習)</span>
+        </button>
+
+        <button
+          onClick={() => onModeChange('revision')}
+          className={`flex items-center gap-1.5 px-3 py-1 rounded transition-all ${
+            activeMode === 'revision'
+              ? 'bg-[#467b6b] text-white font-semibold shadow-xs'
+              : 'text-[#617066] hover:text-[#283b35]'
+          }`}
+          title="Master tables & summary sheets"
+        >
+          <Table className="w-3.5 h-3.5" />
+          <span>Revision (暗記表)</span>
+        </button>
+      </nav>
+
+      {/* Level Filter Quick Jump (in Learn mode) */}
+      <nav className="hidden xl:flex items-center gap-1 bg-[#edebe0] p-1 rounded-md">
         {(['all', 'N5', 'N4', 'N3', 'N2'] as const).map(lvl => {
           const isSelected = selectedFilter === lvl;
           const label = lvl === 'all' ? 'Continuous Flow' : lvl;
@@ -124,7 +174,14 @@ export const Topbar: React.FC<Props> = ({
 
         {/* Furigana Mode Switcher */}
         <div className="flex items-center rounded border border-[#cfcebe] bg-[#fffef9] p-0.5 text-xs">
-          <button onClick={() => onChangeFuriganaMode('book')} title="Textbook readings: Genki/N3 above; N2 on hover" aria-pressed={furiganaMode === 'book'} className={`px-2 py-0.5 rounded ${furiganaMode === 'book' ? 'bg-[#467b6b] text-white' : ''}`}>Book</button>
+          <button
+            onClick={() => onChangeFuriganaMode('book')}
+            title="Textbook readings: Genki/N3 above; N2 on hover"
+            aria-pressed={furiganaMode === 'book'}
+            className={`px-2 py-0.5 rounded ${furiganaMode === 'book' ? 'bg-[#467b6b] text-white' : ''}`}
+          >
+            Book
+          </button>
           <button
             onClick={() => onChangeFuriganaMode('all')}
             className={`px-2 py-0.5 rounded transition-all ${
@@ -180,3 +237,4 @@ export const Topbar: React.FC<Props> = ({
   );
 };
 
+export default Topbar;

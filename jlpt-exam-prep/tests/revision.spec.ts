@@ -219,3 +219,37 @@ test('supervision round 2 regressions: aspectual compounds, conditional mono nar
   expect(c118Labels.some(l => l.includes('せよ'))).toBe(true);
   expect(c118Labels.some(l => l.includes('べき'))).toBe(true);
 });
+
+test('mode separation: in-lesson tables, leakage-free chapter practice, and revision desk', async ({ page }) => {
+  await page.goto('/');
+
+  // 1. Select Genki I Lesson 1 Time & Age card from the sidebar
+  await page.locator('[role="button"]').filter({ hasText: '時間' }).first().click();
+  await expect(page.getByRole('heading', { name: 'High-Yield Lesson Table' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 4 }).filter({ hasText: 'Reading Matrix' })).toBeVisible();
+
+  // 2. Search and select Genki I Lesson 6 Te-form card using sidebar search
+  await page.getByPlaceholder('Search grammar, reading, meaning...').fill('Connect actions');
+  await page.locator('[role="button"]').filter({ hasText: 'Connect actions' }).first().click();
+  await expect(page.getByRole('heading', { name: 'High-Yield Lesson Table' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 4 }).filter({ hasText: 'Conjugation Matrix' })).toBeVisible();
+
+  // 3. Switch to Practice Mode via Topbar
+  await page.getByRole('button', { name: /Practice \(練習\)/ }).click();
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // Ensure target grammar name is NOT exposed in the question prompt before answering
+  await expect(page.locator('h1').filter({ hasText: 'X は Y です' })).toHaveCount(0);
+
+  // Answer question 1 and verify deep feedback
+  const optButton = page.locator('.grid button').filter({ hasText: 'は' }).first();
+  await optButton.click();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+  await expect(page.getByText('Option Breakdown')).toBeVisible();
+  await expect(page.getByRole('button', { name: /Review Lesson:/ })).toBeVisible();
+
+  // 4. Switch to Revision Mode via Topbar
+  await page.getByRole('button', { name: /Revision \(暗記表\)/ }).click();
+  await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
+  await expect(page.getByRole('button', { name: /Jump to Lesson in Textbook/ })).toBeVisible();
+});

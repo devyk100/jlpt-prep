@@ -1,0 +1,506 @@
+[
+  {
+    "id": "g1-l1-ex-1",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "私（　　）キム・ソラです。韓国人です。",
+    "translation": "I am Sora Kim. I am Korean.",
+    "options": ["は", "が", "の", "も"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-wa-desu",
+    "grammarPointTitle": "X は Y です (Topic and Noun Predicate)",
+    "explanation": {
+      "overall": "The particle は (pronounced wa) sets up the topic of discourse ('As for me...'). The second sentence naturally omits 私は because the topic is already established.",
+      "options": [
+        {
+          "text": "は",
+          "isCorrect": true,
+          "reason": "Correct. は marks '私' as the topic of self-introduction.",
+          "trapCategory": "context"
+        },
+        {
+          "text": "が",
+          "isCorrect": false,
+          "reason": "Incorrect. が is the subject marker focusing on specific selection or exhaustive listing ('I and no one else'). Standard self-introduction uses the topic marker は.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "の",
+          "isCorrect": false,
+          "reason": "Incorrect. の modifies following nouns ('my'). '私のキム・ソラです' would mean 'It is my Sora Kim', which is ungrammatical.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "も",
+          "isCorrect": false,
+          "reason": "Incorrect. も means 'also/too'. It requires an earlier statement about another person being Sora Kim or a student.",
+          "trapCategory": "context"
+        }
+      ]
+    },
+    "hint": "Identify the standard particle used to establish the topic in a self-introduction."
+  },
+  {
+    "id": "g1-l1-ex-2",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "A:「専攻は何ですか。」 B:「（　　）日本語です。」",
+    "translation": "A: 'What is your major?' B: '(My major) is Japanese.'",
+    "options": ["（省略 / Topic Omitted）", "私は", "誰が", "何が"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-wa-desu",
+    "grammarPointTitle": "X は Y です (Topic and Noun Predicate)",
+    "explanation": {
+      "overall": "In natural Japanese, understood topics like 専攻は or 私は are omitted when clear from the immediate question. Japanese speakers do not redundantly repeat topics.",
+      "options": [
+        {
+          "text": "（省略 / Topic Omitted）",
+          "isCorrect": true,
+          "reason": "Correct. Genki I Lesson 1 emphasizes that Japanese speakers naturally omit the topic when already obvious from context.",
+          "trapCategory": "context"
+        },
+        {
+          "text": "私は",
+          "isCorrect": false,
+          "reason": "Incorrect. '私は日本語です' literally asserts 'As for me, I am the Japanese language', which is awkward unless in very casual restaurant order shorthand.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "誰が",
+          "isCorrect": false,
+          "reason": "Incorrect. 誰が means 'who', which cannot function as an answer to a question about one's major.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "何が",
+          "isCorrect": false,
+          "reason": "Incorrect. What is being stated is the answer '日本語です', not an interrogative subject.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Consider Japanese conversational efficiency when the topic is already established by speaker A."
+  },
+  {
+    "id": "g1-l1-ex-3",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "スミスさんは留学生（　　）。",
+    "translation": "Is Mr. Smith an international student?",
+    "options": ["ですか", "ですね", "ですよ", "でした"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-question-ka",
+    "grammarPointTitle": "質問の「か」 (Question Sentence Marker 〜ですか)",
+    "explanation": {
+      "overall": "Attaching the particle か to the polite copula です creates an interrogative question sentence without changing word order.",
+      "options": [
+        {
+          "text": "ですか",
+          "isCorrect": true,
+          "reason": "Correct. ですか turns the noun predicate statement into an interrogative question.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "ですね",
+          "isCorrect": false,
+          "reason": "Incorrect. ね seeks confirmation/agreement ('isn't he?'), rather than asking an open question.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "ですよ",
+          "isCorrect": false,
+          "reason": "Incorrect. よ provides new information to the listener ('he is, you know!').",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "でした",
+          "isCorrect": false,
+          "reason": "Incorrect. でした is past affirmative ('was an international student'), not an interrogative question.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Which sentence-final particle transforms a statement into a question in Japanese?"
+  },
+  {
+    "id": "g1-l1-ex-4",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "A:「メアリーさんは先生ですか。」 B:「いいえ、（　　）。学生です。」",
+    "translation": "A: 'Is Mary a teacher?' B: 'No, she is not. She is a student.'",
+    "options": ["先生じゃありません", "先生です", "学生じゃありません", "先生でした"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-question-ka",
+    "grammarPointTitle": "質問の「か」 (Question Sentence Marker 〜ですか)",
+    "explanation": {
+      "overall": "A negative answer starting with 'いいえ' requires the negative copula 'じゃありません' (or 'ではありません').",
+      "options": [
+        {
+          "text": "先生じゃありません",
+          "isCorrect": true,
+          "reason": "Correct. 'いいえ、先生じゃありません' properly denies the predicate '先生'.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "先生です",
+          "isCorrect": false,
+          "reason": "Incorrect. Contradicts the negative response 'いいえ'.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "学生じゃありません",
+          "isCorrect": false,
+          "reason": "Incorrect. Contradicts the following sentence '学生です' (She is a student).",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "先生でした",
+          "isCorrect": false,
+          "reason": "Incorrect. でした is past affirmative, not a present denial.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Look for the polite present negative form of the noun predicate."
+  },
+  {
+    "id": "g1-l1-ex-5",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "東京は今、午前（　　）時です。",
+    "translation": "It is 4:00 AM in Tokyo right now.",
+    "options": ["よ", "よん", "し", "よっ"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-time-and-age",
+    "grammarPointTitle": "時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳)",
+    "explanation": {
+      "overall": "4 o'clock in Japanese has the mandatory irregular phonetic reading 'よじ' (yoji). Both 'よんじ' and 'しじ' are incorrect in modern standard Japanese.",
+      "options": [
+        {
+          "text": "よ",
+          "isCorrect": true,
+          "reason": "Correct. 4時 is pronounced 'よじ'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "よん",
+          "isCorrect": false,
+          "reason": "Incorrect. While 4 is 'よん', 4 o'clock is NEVER 'よんじ'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "し",
+          "isCorrect": false,
+          "reason": "Incorrect. While 4 is 'し' in Sino-Japanese counting, 4 o'clock is not read 'しじ'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "よっ",
+          "isCorrect": false,
+          "reason": "Incorrect. 'よっ' is used for native counters like 4 days (よっか) or 4 items (よっつ).",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Remember the critical Genki I phonetic trap for 4 o'clock."
+  },
+  {
+    "id": "g1-l1-ex-6",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "夜の（　　）時に図書館が閉まります。",
+    "translation": "The library closes at 9:00 PM.",
+    "options": ["く", "きゅう", "ここの", "きゅっ"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-time-and-age",
+    "grammarPointTitle": "時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳)",
+    "explanation": {
+      "overall": "9 o'clock in Japanese is strictly read as 'くじ' (kuji). 'きゅうじ' is a common learner error.",
+      "options": [
+        {
+          "text": "く",
+          "isCorrect": true,
+          "reason": "Correct. 9時 is pronounced 'くじ'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "きゅう",
+          "isCorrect": false,
+          "reason": "Incorrect. 9 is read 'きゅう' in standalone numbers, but 9:00 is always 'くじ'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "ここの",
+          "isCorrect": false,
+          "reason": "Incorrect. 'ここの' is the native root used for 9 days (ここのか) or 9 items (ここのつ).",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "きゅっ",
+          "isCorrect": false,
+          "reason": "Incorrect. Invalid reading before 時.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Check the irregular hour pronunciation for 9:00 in the mug-up table."
+  },
+  {
+    "id": "g1-l1-ex-7",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "会議は午後二時（　　）から始まります。",
+    "translation": "The meeting begins at 2:30 PM.",
+    "options": ["半", "半分", "三十分間", "分"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-time-and-age",
+    "grammarPointTitle": "時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳)",
+    "explanation": {
+      "overall": "Half past the hour is indicated by appending '半' (はん) directly after the hour: 二時半 (2:30).",
+      "options": [
+        {
+          "text": "半",
+          "isCorrect": true,
+          "reason": "Correct. 〜時半 denotes 'half past ~'.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "半分",
+          "isCorrect": false,
+          "reason": "Incorrect. 半分 (はんぶん) means 'half portion/share', not half past the clock hour.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "三十分間",
+          "isCorrect": false,
+          "reason": "Incorrect. 三十分間 measures a duration of 30 minutes, not a point in clock time.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "分",
+          "isCorrect": false,
+          "reason": "Incorrect. Lacks the numeral to specify the minute.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Which single kanji attached to 〜時 indicates 'half past'?"
+  },
+  {
+    "id": "g1-l1-ex-8",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "電車はあと十（　　）で到着します。",
+    "translation": "The train will arrive in 10 minutes.",
+    "options": ["ぷん", "ふん", "ぶ", "ぶん"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-time-and-age",
+    "grammarPointTitle": "時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳)",
+    "explanation": {
+      "overall": "10 minutes is read with the geminate p-sound: じゅっぷん (or じっぷん). 1, 3, 4, 6, 8, 10 minutes take ぷん.",
+      "options": [
+        {
+          "text": "ぷん",
+          "isCorrect": true,
+          "reason": "Correct. 十 takes ぷん: じゅっぷん (juppun).",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "ふん",
+          "isCorrect": false,
+          "reason": "Incorrect. 10 minutes does not take unvoiced ふん.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "ぶ",
+          "isCorrect": false,
+          "reason": "Incorrect. ぶ is not a minute counter suffix.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "ぶん",
+          "isCorrect": false,
+          "reason": "Incorrect. ぶん means portion or share, not minute reading.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Check whether 10 minutes takes ふん or ぷん."
+  },
+  {
+    "id": "g1-l1-ex-9",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "たけしさんは今年（　　）です。",
+    "translation": "Takeshi is 20 years old this year.",
+    "options": ["はたち", "にじゅっさい", "にじっさい", "にじゅうさい"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-time-and-age",
+    "grammarPointTitle": "時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳)",
+    "explanation": {
+      "overall": "In Japanese cultural and linguistic tradition, 20 years of age is read as 'はたち' (hatachi) as an independent noun without さい.",
+      "options": [
+        {
+          "text": "はたち",
+          "isCorrect": true,
+          "reason": "Correct. 20 years old is read はたち.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "にじゅっさい",
+          "isCorrect": false,
+          "reason": "Incorrect. While increasingly heard colloquially, textbooks and formal JLPT test はたち as the standard reading.",
+          "trapCategory": "register"
+        },
+        {
+          "text": "にじっさい",
+          "isCorrect": false,
+          "reason": "Incorrect. Standard primary reading taught in Genki I Lesson 1 is はたち.",
+          "trapCategory": "register"
+        },
+        {
+          "text": "にじゅうさい",
+          "isCorrect": false,
+          "reason": "Incorrect. 歳 does not take an ungeminated じゅう sound.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Recall the special traditional reading for age 20 in Japan."
+  },
+  {
+    "id": "g1-l1-ex-10",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "スミスさんはさくら大学（　　）学生です。",
+    "translation": "Mr. Smith is a student of Sakura University.",
+    "options": ["の", "は", "に", "で"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-noun-no-noun",
+    "grammarPointTitle": "Noun1 の Noun2 (Noun Modification, Possession & Affiliation)",
+    "explanation": {
+      "overall": "The particle の connects two nouns where Noun 1 (さくら大学) modifies, specifies the affiliation, or describes Noun 2 (学生).",
+      "options": [
+        {
+          "text": "の",
+          "isCorrect": true,
+          "reason": "Correct. さくら大学の学生 = student of Sakura University.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "は",
+          "isCorrect": false,
+          "reason": "Incorrect. 'さくら大学は学生' would make Sakura University itself the student.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "に",
+          "isCorrect": false,
+          "reason": "Incorrect. に is a destination/location particle and cannot link two nouns directly.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "で",
+          "isCorrect": false,
+          "reason": "Incorrect. で marks location of action, not nominal modification.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "Which particle connects two nouns to indicate school affiliation?"
+  },
+  {
+    "id": "g1-l1-ex-11",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "これはメアリーさん（　　）電話番号です。",
+    "translation": "This is Mary's telephone number.",
+    "options": ["の", "は", "と", "も"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-noun-no-noun",
+    "grammarPointTitle": "Noun1 の Noun2 (Noun Modification, Possession & Affiliation)",
+    "explanation": {
+      "overall": "The particle の denotes possession ('Mary's telephone number').",
+      "options": [
+        {
+          "text": "の",
+          "isCorrect": true,
+          "reason": "Correct. メアリーさんの電話番号 = Mary's telephone number.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "は",
+          "isCorrect": false,
+          "reason": "Incorrect. 'メアリーさんは電話番号' would mean 'Mary is a telephone number'.",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "と",
+          "isCorrect": false,
+          "reason": "Incorrect. と means 'and/with' (Mary and the telephone number).",
+          "trapCategory": "meaning"
+        },
+        {
+          "text": "も",
+          "isCorrect": false,
+          "reason": "Incorrect. 'Mary also is a telephone number'.",
+          "trapCategory": "meaning"
+        }
+      ]
+    },
+    "hint": "Which particle functions like English 's for possession?"
+  },
+  {
+    "id": "g1-l1-ex-12",
+    "bookId": "genki-1",
+    "chapter": "Lesson 1",
+    "type": "multiple-choice",
+    "question": "山下先生は日本語（　　）先生です。",
+    "translation": "Professor Yamashita is a teacher of the Japanese language.",
+    "options": ["の", "に", "を", "が"],
+    "correctIndex": 0,
+    "grammarPointId": "g1-l1-noun-no-noun",
+    "grammarPointTitle": "Noun1 の Noun2 (Noun Modification, Possession & Affiliation)",
+    "explanation": {
+      "overall": "When indicating the field of teaching or subject matter, Japanese uses Noun 1 の Noun 2: 日本語の先生 (Japanese language teacher), 歴史の先生 (history teacher).",
+      "options": [
+        {
+          "text": "の",
+          "isCorrect": true,
+          "reason": "Correct. 日本語の先生 indicates field / category of teacher.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "に",
+          "isCorrect": false,
+          "reason": "Incorrect. に cannot link two nouns into a noun phrase.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "を",
+          "isCorrect": false,
+          "reason": "Incorrect. を marks direct objects of action verbs, not noun-noun links.",
+          "trapCategory": "formation"
+        },
+        {
+          "text": "が",
+          "isCorrect": false,
+          "reason": "Incorrect. が is a subject marker, not a noun modifier.",
+          "trapCategory": "formation"
+        }
+      ]
+    },
+    "hint": "How do you express 'teacher of [subject]' in Japanese?"
+  }
+]

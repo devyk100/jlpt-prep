@@ -1,5 +1,5 @@
 import { AnnotatedText } from './AnnotatedText';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { GrammarPoint } from '../types';
 import { SentenceCard } from './SentenceCard';
 import { QuizCard } from './QuizCard';
@@ -30,6 +30,7 @@ interface Props {
   onAnswerSaved: (questionId: string, isCorrect: boolean, chosenIndex: number) => void;
   flaggedMistakes: string[];
   onToggleFlag: (questionId: string) => void;
+  onStartChapterPractice?: (book: string, chapter: string) => void;
 }
 
 export const DeskPane: React.FC<Props> = ({
@@ -42,8 +43,16 @@ export const DeskPane: React.FC<Props> = ({
   seamlessFlowMode,
   onAnswerSaved,
   flaggedMistakes,
-  onToggleFlag
+  onToggleFlag,
+  onStartChapterPractice
 }) => {
+  const [batchShowMeaning, setBatchShowMeaning] = useState<boolean | undefined>(undefined);
+
+  // When opening any new grammar point, always reset so examples default to Japanese-only
+  useEffect(() => {
+    setBatchShowMeaning(undefined);
+  }, [point.id]);
+
   // Find previous and next points
   const currentIndex = allPoints.findIndex(p => p.id === point.id);
   const prevPoint = currentIndex > 0 ? allPoints[currentIndex - 1] : null;
@@ -134,7 +143,12 @@ export const DeskPane: React.FC<Props> = ({
             <p><AnnotatedText text={point.nuance} /></p>
           </div>
 
-          {point.comparisonNote && <div className="rounded border border-[#cfcebe] p-3 text-sm leading-relaxed"><strong>Compare: </strong><AnnotatedText text={point.comparisonNote} /></div>}
+          {point.comparisonNote && (
+            <div className="rounded border border-[#cfcebe] p-3 text-sm leading-relaxed bg-[#fbfbf7]">
+              <strong>Note: </strong><AnnotatedText text={point.comparisonNote} />
+            </div>
+          )}
+
           {/* Mug-Up Golden Rule Callout */}
           {point.keyTakeaway && (
             <div className="p-3.5 rounded border border-[#d8d0ba] bg-[#fbf8f0] text-[#5c4a28] flex items-start gap-2.5 text-xs sm:text-sm">
@@ -147,23 +161,36 @@ export const DeskPane: React.FC<Props> = ({
           )}
         </section>
 
-        {/* High-Yield Mug-Up Table (if present) */}
+        {/* High-Yield Mug-Up Table (Integrated directly inside textbook lesson) */}
         {point.table && (
-          <section>
+          <section className="space-y-2">
+            <h2 className="text-xs font-bold text-[#788278] uppercase tracking-wider flex items-center gap-1.5">
+              <span>High-Yield Lesson Table</span>
+            </h2>
             <MugUpTableView table={point.table} />
           </section>
         )}
 
-        {/* Annotated Example Sentences */}
+        {/* Annotated Example Sentences (Defaults to Japanese-Only) */}
         <section className="space-y-3">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-xs font-bold text-[#788278] uppercase tracking-wider flex items-center gap-1.5">
               <BookOpen className="w-3.5 h-3.5 text-[#467b6b]" />
               <span>Example Sentences ({point.sentences.length})</span>
             </h2>
-            <span className="text-[11px] text-[#8a9485]">
-              Hover words for readings & definitions
-            </span>
+
+            <div className="flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setBatchShowMeaning(prev => (prev ? false : true))}
+                className="text-[11px] font-semibold text-[#467b6b] hover:text-[#2d5247] px-2.5 py-1 rounded border border-[#cfcebe] bg-[#fffef9] hover:bg-[#edece1] transition-colors"
+              >
+                {batchShowMeaning ? 'Hide all meanings' : 'Show all meanings'}
+              </button>
+              <span className="text-[11px] text-[#8a9485] hidden sm:inline">
+                Tap individual words for reading & gloss
+              </span>
+            </div>
           </div>
 
           <div className="space-y-3">
@@ -172,18 +199,24 @@ export const DeskPane: React.FC<Props> = ({
                 key={sentence.id}
                 sentence={sentence}
                 furiganaMode={furiganaMode}
+                forceShowMeaning={batchShowMeaning}
               />
             ))}
           </div>
         </section>
 
-        {/* Retention Check Quiz */}
+        {/* Retention Check Quiz (Guided Lesson Check) */}
         {point.quiz && point.quiz.length > 0 && (
           <section className="space-y-3 pt-4 border-t border-[#dfded3]">
-            <h2 className="text-xs font-bold text-[#788278] uppercase tracking-wider flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5 text-[#467b6b]" />
-              <span>Retention Check Quiz</span>
-            </h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-xs font-bold text-[#788278] uppercase tracking-wider flex items-center gap-1.5">
+                <CheckCircle className="w-3.5 h-3.5 text-[#467b6b]" />
+                <span>Guided Lesson Check (Guided Practice)</span>
+              </h2>
+              <span className="text-[11px] text-[#8a9485]">
+                Immediate lesson confirmation
+              </span>
+            </div>
 
             <div className="space-y-4">
               {point.quiz.map(q => (
@@ -197,6 +230,30 @@ export const DeskPane: React.FC<Props> = ({
               ))}
             </div>
           </section>
+        )}
+
+        {/* Chapter Practice Callout */}
+        {point.book && point.chapter && onStartChapterPractice && (
+          <div className="p-4 rounded-lg border border-[#cfcebe] bg-[#faf9f5] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div className="text-xs font-bold text-[#1e2d26] flex items-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4 text-[#467b6b]" />
+                <span>Ready to test yourself without clues?</span>
+              </div>
+              <div className="text-[11.5px] text-[#617066] mt-0.5">
+                Take the comprehensive practice set for <strong>{point.book} · {point.chapter}</strong> with target rules hidden.
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => onStartChapterPractice(point.book!, point.chapter!)}
+              className="px-4 py-2 rounded text-xs font-semibold bg-[#467b6b] text-white hover:bg-[#386255] transition-colors shrink-0 flex items-center justify-center gap-1.5 shadow-xs"
+            >
+              <span>Take Chapter Practice</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
         )}
 
         {/* Explicit Milestone Completion Card */}
@@ -296,3 +353,4 @@ export const DeskPane: React.FC<Props> = ({
   );
 };
 
+export default DeskPane;

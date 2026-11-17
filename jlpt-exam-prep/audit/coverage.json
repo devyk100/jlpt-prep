@@ -35,7 +35,7 @@
     }
   },
   "n3": {
-    "cards": 80,
+    "cards": 85,
     "sections": 36,
     "sectionStarts": {
       "1": 16,
@@ -77,7 +77,7 @@
     }
   },
   "n2": {
-    "cards": 117,
+    "cards": 123,
     "sections": 48,
     "sectionStarts": {
       "1": 8,
