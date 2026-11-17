@@ -332,6 +332,15 @@ test('no parenthesized romaji pronunciations in master tables or cards', async (
   expect(pageContent).not.toMatch(/\(hatachi\)/i);
   expect(pageContent).not.toMatch(/\(pun\)/i);
 
-  // Verify clean Japanese rendering
-  await expect(page.locator('table').first()).toContainText('買う, 待つ, 取る');
+  // Verify ruby annotation renders kanji with furigana without romaji
+  const teTable = page.locator('div').filter({ has: page.getByRole('heading', { name: /The Te-Form/ }) }).locator('table').first();
+  await expect(teTable).toBeVisible();
+  const textWithoutRuby = await teTable.evaluate(el => {
+    const clone = el.cloneNode(true) as HTMLElement;
+    clone.querySelectorAll('rt').forEach(n => n.remove());
+    return clone.textContent || '';
+  });
+  expect(textWithoutRuby).toContain('買う, 待つ, 取る');
+  expect(textWithoutRuby).not.toContain('(kau)');
+  expect(textWithoutRuby).not.toContain('(matsu)');
 });
