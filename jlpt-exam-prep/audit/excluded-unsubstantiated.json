@@ -1,0 +1,302 @@
+[
+  {
+    "id": "skm2-p2-majiki",
+    "title": "〜まじき (Utterly Impermissible / Unpardonable for One in Such a Role)",
+    "meaning": "Stiff archaic/literary moral prohibition: Indicates that an act is strictly unforgivable and utterly unbecoming of someone in a specific esteemed professional or social position.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 2 特殊な形式 D: 〜まじき (Part 2 Form D)",
+    "streamId": "stream-modality",
+    "streamName": "Epistemic Certainty, Conviction & Duty",
+    "connection": "V-辞書形 + まじき + Noun (する irregular: すまじき or するまじき)",
+    "nuance": "STRICT ETHICAL PROHIBITION: 'あるまじき行為' (Conduct that should never exist), '許すまじき暴言' (Unpardonable verbal abuse), '教育者にあるまじき態度' (Attitude unbecoming of an educator). Modifies an abstract noun.",
+    "keyTakeaway": "MUG-UP: V-る + まじき + Noun = 'Impermissible behavior for that role!'. Example: 医師としてあるまじき行為.",
+    "sentences": [
+      {
+        "id": "skm2-p2-majiki::s-skm2-p2-3",
+        "japanese": "患者の秘密を外部に漏らすなど、医師としてあるまじき背信行為だ。",
+        "english": "Leaking a patient's confidential records to outsiders is a treacherous betrayal utterly impermissible for a physician.",
+        "literal": "Patient secret outside-to leak like, doctor-as exist-impermissible betrayal is.",
+        "tokens": [
+          {
+            "word": "あるまじき背信行為",
+            "meaning": "impermissible act of betrayal",
+            "reading": "あるまじきはいしんこうい",
+            "romaji": "arumajiki haishinkoui",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Stern denunciation of medical malpractice and ethical breach."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-p2-3",
+        "question": "公金を私的に流用するなど、政治家としてある（　　）不正行為である。",
+        "translation": "Embezzling public funds for private use is an illicit act utterly unbecoming and impermissible for a politician.",
+        "options": [
+          "まじき",
+          "べき",
+          "はずの",
+          "限りの"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "V-る + まじき + Noun (Severe ethical violation)",
+        "ruleHint": "V-辞書形 + まじき + Noun (する irregular: すまじき or するまじき)",
+        "explanations": [
+          {
+            "text": "まじき",
+            "isCorrect": true,
+            "reason": "Correct! あるまじき captures the moral prohibition against corruption in public office."
+          },
+          {
+            "text": "べき",
+            "isCorrect": false,
+            "reason": "Incorrect. あるべき不正行為 is contradictory ('illicit act that ought to exist'!)."
+          },
+          {
+            "text": "はずの",
+            "isCorrect": false,
+            "reason": "Incorrect. あるはずの不正行為 implies expected corruption."
+          },
+          {
+            "text": "限りの",
+            "isCorrect": false,
+            "reason": "Incorrect. ある限りの means 'as much as exists'."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Part 2",
+      "Archaic Moral Ban",
+      "Form D"
+    ]
+  },
+  {
+    "id": "skm2-p2-bekarazu",
+    "title": "〜べからず / 〜べからざる (Must Not / Strictly Prohibited on Signs & Decrees)",
+    "meaning": "Classical, authoritative prohibition indicating that an action is strictly forbidden: 'Must not / Trespassing prohibited / Do not -'.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 2 特殊な形式 E: 〜べからず (Part 2 Form E)",
+    "streamId": "stream-modality",
+    "streamName": "Epistemic Certainty, Conviction & Duty",
+    "connection": "V-辞書形 + べからず (sentence end) | V-辞書形 + べからざる + Noun (する irregular: すべからず or するべからず)",
+    "nuance": "OFFICIAL PUBLIC SIGNS & MOTTOES: '立ち入るべからず' (Do Not Enter / Trespassers Prohibited), '初心忘るべからず' (One Must Never Forget One's Initial Humility).",
+    "keyTakeaway": "MUG-UP: V-る + べからず = Classical public prohibition: 'MUST NOT / STRICTLY FORBIDDEN!'.",
+    "sentences": [
+      {
+        "id": "skm2-p2-bekarazu::s-skm2-p2-4",
+        "japanese": "危険につき、関係者以外この工事現場に立ち入るべからず。",
+        "english": "Due to extreme danger: unauthorized personnel must not enter this construction site under any circumstances.",
+        "literal": "Danger due-to, related-personnel besides this construction-site enter must-not.",
+        "tokens": [
+          {
+            "word": "立ち入るべからず",
+            "meaning": "must not enter",
+            "reading": "たちいるべからず",
+            "romaji": "tachiiru bekarazu",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Authoritative warning notice posted at a hazardous construction perimeter."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-p2-4",
+        "question": "壁に「ここにゴミを捨てる（　　）」という看板が立てられている。",
+        "translation": "A public signboard reading 'Do not dump garbage here' has been erected on the wall.",
+        "options": [
+          "べからず",
+          "まい",
+          "ざるを得ない",
+          "かねない"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "V-る + べからず (Authoritative public prohibition)",
+        "ruleHint": "V-辞書形 + べからず (sentence end) | V-辞書形 + べからざる + Noun (する irregular: すべからず or するべからず)",
+        "explanations": [
+          {
+            "text": "べからず",
+            "isCorrect": true,
+            "reason": "Correct! 捨てるべからず is the classical authoritative sign prohibition against illegal dumping."
+          },
+          {
+            "text": "まい",
+            "isCorrect": false,
+            "reason": "Incorrect. 捨てるまい is speaker's personal intention ('I will not dump')."
+          },
+          {
+            "text": "ざるを得ない",
+            "isCorrect": false,
+            "reason": "Incorrect. 捨てるざるを得ない is ungrammatical."
+          },
+          {
+            "text": "かねない",
+            "isCorrect": false,
+            "reason": "Incorrect. 捨てるかねない is grammatically invalid."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Part 2",
+      "Public Prohibition",
+      "Form E"
+    ]
+  },
+  {
+    "id": "skm2-p2-kai-ga-aru",
+    "title": "〜甲斐があって / 〜甲斐もなく (Worth the Effort vs All in Vain)",
+    "meaning": "Evaluates the return on dedicated effort: 甲斐があって indicates that painstaking labor yielded a gratifying reward; 甲斐もなく indicates that despite immense effort, it all proved completely in vain.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 2 特殊な形式 F: 〜甲斐 (Part 2 Form F)",
+    "streamId": "stream-causality",
+    "streamName": "Origins, Inevitable Cause & Scapegoats",
+    "connection": "V-た形 / Noun + の + 甲斐があって (かいがあって) | V-た形 / Noun + の + 甲斐もなく",
+    "nuance": "FRUITION VS FUTILITY: '苦労した甲斐があった' (It was worth all the hardship; joyful relief). '懸命な治療の甲斐もなく' (Despite all desperate medical treatments, all in vain; heartbreaking grief).",
+    "keyTakeaway": "MUG-UP: 甲斐があって = 'Hard effort was fully rewarded!'. 甲斐もなく = 'Heartbreakingly all in vain!'.",
+    "sentences": [
+      {
+        "id": "skm2-p2-kai-ga-aru::s-skm2-p2-5",
+        "japanese": "毎日猛練習を重ねた甲斐があって、ついに全国大会で優勝を勝ち取ることができた。",
+        "english": "It was thoroughly worth having practiced relentlessly every single day, as we finally succeeded in seizing victory at the national tournament.",
+        "literal": "Every-day fierce-practice repeated worth-existing, finally national-tournament victory seize could.",
+        "tokens": [
+          {
+            "word": "練習を重ねた甲斐があって",
+            "meaning": "worth having practiced relentlessly",
+            "reading": "れんしゅうをかさねたかいがあって",
+            "romaji": "renshuu o kasaneta kai ga atte",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "Jubilant athletic triumph crowning grueling preparation."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-p2-5",
+        "question": "医師団による懸命な救命活動の甲斐も（　　）、患者は息を引き取った。",
+        "translation": "Despite the desperate life-saving efforts by the medical team, tragically all was in vain, and the patient passed away.",
+        "options": [
+          "なく",
+          "あって",
+          "あり",
+          "なしに"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + の甲斐もなく (Heartbreaking futility)",
+        "ruleHint": "V-た形 / Noun + の + 甲斐があって (かいがあって) | V-た形 / Noun + の + 甲斐もなく",
+        "explanations": [
+          {
+            "text": "なく",
+            "isCorrect": true,
+            "reason": "Correct! 甲斐もなく (all in vain) is required because the tragic death is a heartbreaking failure despite best efforts."
+          },
+          {
+            "text": "あって",
+            "isCorrect": false,
+            "reason": "Incorrect. 甲斐もあって indicates success (contrasting with the patient's passing)."
+          },
+          {
+            "text": "あり",
+            "isCorrect": false,
+            "reason": "Incorrect. 甲斐もあり is ungrammatical with tragic results."
+          },
+          {
+            "text": "なしに",
+            "isCorrect": false,
+            "reason": "Incorrect. 甲斐もなしに is unidiomatic."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Part 2",
+      "Effort & Fruition",
+      "Form F"
+    ]
+  },
+  {
+    "id": "skm2-p2-wo-oite",
+    "title": "〜をおいて（ほかにない） (None Other Than / Unequivocally Unrivaled)",
+    "meaning": "Asserts with deep admiration that person or entity X is the single unrivaled, supreme candidate: 'There is nobody other than X / Uniquely qualified'.",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "Part 2 特殊な形式 G: 〜をおいて (Part 2 Form G)",
+    "streamId": "stream-limits",
+    "streamName": "Boundaries, Extremes & Scope",
+    "connection": "Noun + をおいて + [ほかにはいない / ほかにない]",
+    "nuance": "UNRIVALED SUPREMACY: 'この大役を務められるのは、彼をおいて他にいない' (To handle this monumental role, there is nobody other than him). Always culminates in negative ほかにない / ほかにはいない.",
+    "keyTakeaway": "MUG-UP: Noun + をおいて... ほかにない = 'NONE OTHER THAN X! Unrivaled choice!'.",
+    "sentences": [
+      {
+        "id": "skm2-p2-wo-oite::s-skm2-p2-6",
+        "japanese": "この困難な国際紛争を調停できる人物は、百戦錬磨の彼をおいてほかにいない。",
+        "english": "The person capable of mediating this grueling international conflict is none other than him with his battle-tested diplomatic experience.",
+        "literal": "This difficult international-conflict mediate can person, battle-tested him setting-aside besides none.",
+        "tokens": [
+          {
+            "word": "彼をおいてほかにいない",
+            "meaning": "none other than him",
+            "reading": "かれをおいてほかにいない",
+            "romaji": "kare o oite hoka ni inai",
+            "pos": "Grammar"
+          }
+        ],
+        "nuanceNote": "High tribute to diplomatic crisis leadership."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q-skm2-p2-6",
+        "question": "次期リーダーとしてチームをまとめられるのは、人望の厚い鈴木さん（　　）おいて他にいない。",
+        "translation": "As the next leader capable of uniting the team, there is none other than the deeply trusted Suzuki-san.",
+        "options": [
+          "を",
+          "に",
+          "で",
+          "へ"
+        ],
+        "correctIndex": 0,
+        "grammarFocus": "Noun + をおいて他にいない (Unrivaled supreme candidate)",
+        "ruleHint": "Noun + をおいて + [ほかにはいない / ほかにない]",
+        "explanations": [
+          {
+            "text": "を",
+            "isCorrect": true,
+            "reason": "Correct! 鈴木さんをおいて他にいない expresses that Suzuki-san is uniquely qualified."
+          },
+          {
+            "text": "に",
+            "isCorrect": false,
+            "reason": "Incorrect. 鈴木さんにおして is invalid."
+          },
+          {
+            "text": "で",
+            "isCorrect": false,
+            "reason": "Incorrect. 鈴木さんでおいて does not exist."
+          },
+          {
+            "text": "へ",
+            "isCorrect": false,
+            "reason": "Incorrect. 鈴木さんへおいて is ungrammatical."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "N2",
+      "SKM Part 2",
+      "Unrivaled Supremacy",
+      "Form G"
+    ]
+  }
+]

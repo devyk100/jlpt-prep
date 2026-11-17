@@ -1,0 +1,55 @@
+{
+  "ALL_GRAMMAR_POINTS": {
+    "points": 59,
+    "quizzes": 59,
+    "answerPositions": {
+      "0": 59
+    },
+    "sentences": 64,
+    "tokenMismatches": 7,
+    "duplicateQuizIds": 0
+  },
+  "BOOK_GENKI1_POINTS": {
+    "points": 32,
+    "quizzes": 32,
+    "answerPositions": {
+      "0": 31,
+      "1": 1
+    },
+    "sentences": 32,
+    "tokenMismatches": 32,
+    "duplicateQuizIds": 0
+  },
+  "BOOK_GENKI2_POINTS": {
+    "points": 26,
+    "quizzes": 26,
+    "answerPositions": {
+      "0": 25,
+      "1": 1
+    },
+    "sentences": 26,
+    "tokenMismatches": 26,
+    "duplicateQuizIds": 0
+  },
+  "BOOK_SKM_N3_POINTS": {
+    "points": 47,
+    "quizzes": 47,
+    "answerPositions": {
+      "0": 47
+    },
+    "sentences": 48,
+    "tokenMismatches": 48,
+    "duplicateQuizIds": 0
+  },
+  "BOOK_SKM_N2_POINTS": {
+    "points": 58,
+    "quizzes": 58,
+    "answerPositions": {
+      "0": 56,
+      "1": 2
+    },
+    "sentences": 58,
+    "tokenMismatches": 58,
+    "duplicateQuizIds": 0
+  }
+}

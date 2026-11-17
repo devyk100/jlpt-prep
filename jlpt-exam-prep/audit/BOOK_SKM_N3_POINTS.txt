@@ -1,0 +1,141 @@
+skm3-u1-uchini-while | 〜うちに (While State Lasts / Before Opportunity Slips) | V-辞書形 / V-ている / V-ない + うちに | い-adj + うちに | な-adj + な + うちに | Noun + の + うちに
+TIME SENSITIVITY: If you don't act now, it will become impossible later: スープが熱いうちに (before it gets cold), 日本にいるうちに (before leaving Japan).
+雨が（　　）うちに、急いで洗濯物を取り込みましょう。 | 降らない / 降った / 降る / 降らなくて | 0
+skm3-u1-uchini-change | 〜うちに (Unnoticed Natural Evolution: While Doing X, Y Emerged) | V-ている / V-辞書形 + うちに
+NO CONSCIOUS INTENT: Clause B is NOT a planned decision; it is a spontaneous change that crept up silently (e.g. while reading I fell asleep; as we talked we grew fond of each other).
+何度も練習を重ねて（　　）うちに、自然と上手に話せるようになった。 | いる / ある / おく / みる | 0
+skm3-u1-aida-vs-aidani | 〜間 vs 〜間に (Continuous Duration vs Momentary Action) | V-ている / Noun + の + 間 (Throughout) vs 間に (Single point)
+DURATION VS POINT: '夏休みの間、毎日泳いだ' (Swam every day the whole vacation). '夏休みの間に、免許を取った' (Acquired license at a moment during vacation).
+お風呂に入っている（　　）、宅急便の配達員がベルを鳴らした。 | 間に / 間 / うちに / 最中に | 0
+skm3-u1-te-kara-denaito | 〜てからでないと / 〜てからでなければ (Not Until / Only After Prerequisite Is Done) | V-て + からでないと / からでなければ + Negative / Impossible Predicate
+MANDATORY NEGATIVE CONCEQUENCE: Clause B ALWAYS expresses inability, refusal, or impossibility (できません, 決められません, 分かりません).
+詳しい契約内容を（　　）からでないと、サインすることはできません。 | 読んで / 読む / 読んだ / 読まない | 0
+skm3-u1-tokoro-da-phases | 〜ところだ (Temporal Phase: Imminent, In the Midst, or Just Finished) | V-辞書形 + ところだ (Inception) | V-ている + ところだ (Midst) | V-た + ところだ (Conclusion)
+PHASE CLUES: '今から出かけるところだ' (I'm putting on my shoes). '今調べているところだ' (Browsing right now). '今帰ったところだ' (Just stepped through the door).
+ちょうど今、昼ご飯を食べ（　　）ところだから、お腹がいっぱいです。 | 終わった / 終わる / 終わっている / 終われ | 0
+skm3-u2-toori-ni-accordance | 〜とおりに / 〜どおりに (Just As / In Exact Accordance With) | V-辞書形 / V-た + とおりに | Noun + の + とおりに | Noun + どおりに (Voiced sound without の!)
+VOICING RULE (連濁): Noun + の + とおりに OR Noun + どおりに (voiced without の): 予定どおり (as scheduled), 期待どおり (as hoped).
+事態は我々の当初の計画（　　）に進展しており、何の問題もありません。 | どおり / とおり / ばかり / ほど | 0
+skm3-u2-ni-yotte-variation | 〜によって / 〜によっては (Depending on / According to Differences) | Noun + によって (異なる, 違う, さまざまだ) | Noun + によっては (Certain specific outcomes)
+によって VS によっては: によって introduces general variety (国によって習慣が違う = Customs differ by country). によっては singles out an extreme or specific contingency (日によっては氷点下になる = On some days it drops below freezing).
+この薬は通常安全ですが、体質（　　）は軽いアレルギー反応が出ることがあります。 | によっては / によって / について / にとって | 0
+skm3-u2-tabini-repetition | 〜たびに (Every Single Time / Invariable Recurrence) | V-辞書形 + たびに | Noun + の + たびに
+EMOTIONAL RECURRENCE: Used when the speaker notices a recurring pattern or emotional reaction. Cannot be used for everyday routine sequences without feeling (e.g. 'every day when I wake up').
+父は出張の（　　）、家族にその土地の名産品を買ってきてくれる。 | たびに / うちに / ついでに / 最中に | 0
+skm3-u2-ba-hodo-proportion | (〜ば)〜ほど (Proportional Correlation: The More... The More...) | V-ば + V-辞書形 + ほど | い-adj ければ + い-adj + ほど | な-adj なら + な-adj な + ほど | Noun + であればあるほど
+ELLIPSIS ALLOWED: The first conditional part (〜ば) is often dropped in speech: 考えるほど分からなくなる (The more I think, the less I understand).
+荷物は（　　）ほど、旅行は身軽で快適になる。 | 少なければ少ない / 少ないなら少ない / 少なくて少ない / 少ないと少ない | 0
+skm3-u2-tsuide-ni-opportunity | 〜ついでに (While at It / Seizing Opportunity for a Side Task) | V-辞書形 / V-た + ついでに | Noun + の + ついでに
+PRIMARY VS INCIDENTAL: Task A is the planned main excursion. Task B is a minor incidental chore piggybacked on A.
+散歩の（　　）、ポストにこの手紙を投函してきてくれませんか。 | ついでに / たびに / うちに / 最中に | 0
+skm3-u3-kurai-hodo-extent | 〜くらいだ / 〜ほどだ (Expressing Extreme Degree: To the Extent That) | V-辞書形 / V-ない + くらいだ / ほどだ | Noun + くらい / ほど
+METAPHORICAL EXAGGERATION: 'お腹が痛くて、涙が出るほどだった' (My stomach hurt so badly that tears were practically coming out). ほど is slightly more formal/elevated than くらい.
+昨夜はあまりに仕事が忙しくて、猫の手も借りたい（　　）だった。 | くらい / ばかり / ところ / わけ | 0
+skm3-u3-kurai-wa-nai | 〜くらい…はない / 〜ほど…はない (Superlative: Nothing Is As... As X) | Noun + くらい / ほど + [Noun] はない (Negative predicate at the end!)
+SPEAKER'S HEARTFELT RATING: Expresses the speaker's emotional conviction that X stands supreme (e.g. 'Nothing feels better than a hot bath in winter').
+私にとって、家族と一緒に過ごす時間（　　）大切なものはありません。 | ほど / ばかり / きり / とおり | 0
+skm3-u4-hanmen-flipside | 〜反面 (On the Flip Side: Coexisting Contradictory Aspects) | Plain form + 反面 (な-adj takes な/である, Noun takes である)
+SAME ENTITY PARADOX: Unlike 対して which contrasts two separate people (兄 vs 弟), 反面 examines the two contradictory faces of ONE single subject.
+一人暮らしは自由で気楽な（　　）、病気の時は非常に心細い。 | 反面 / ついでに / とたんに / かぎりに | 0
+skm3-u4-kawari-ni-exchange | 〜かわりに (In Exchange For / Compensation / Instead Of) | V-辞書形 + かわりに | Noun + の + かわりに
+RECIPROCAL EXCHANGE: Clause A balances Clause B like a financial or social trade-off. Can also mean substitution: '休みの日に働いたかわりに、月曜日に休む' (Compensatory day off).
+この仕事は残業が多くて大変な（　　）に、給料は非常に高い。 | かわり / ついで / とおり / あまり | 0
+skm3-u5-tame-ni-causality | 〜ためだ / 〜ために (Objective Cause: Due to / Owing to) | Plain form + ため（に） (な-adj takes な, Noun takes の: 大雪のために)
+OBJECTIVE & NO PERSONAL INTENT IN B: Clause B cannot be a human command, request, or intention (e.g. '雨のため、傘を持って行きなさい' ❌ is ungrammatical; must use から). ため is for factual reporting.
+道路工事の（　　）、この先は全面通行止めになっております。 | ため / せい / わけ / こと | 0
+skm3-u5-koto-kara-origin | 〜ことから (Origin of Name, Judgment, or Fact: Arising from the Fact That) | Plain form + ことから (な-adj takes な/である, Noun takes である)
+NAME ORIGIN & EVIDENTIAL CLUE: Ubiquitous when explaining why places or plants are named: '形が星に似ていることから、星草と呼ばれている' (Called star grass because its shape resembles a star).
+富士山が美しく見える（　　）から、この坂は富士見坂と名付けられた。 | こと / もの / わけ / ところ | 0
+skm3-u6-no-dakara-reality | 〜のだから / 〜んだから (Since It Is an Acknowledged Reality) | Plain form + のだから / んだから (な-adj / Noun takes な: 好きなのだから, 子供なのだから)
+SHARED COMMON GROUND: You don't use のだから to announce new surprising information; you appeal to a shared premise to give advice, reproof, or encouragement.
+自分で決めたこと（　　）だから、最後まで諦めずにやり通しなさい。 | なん / だん / のん / いん | 0
+skm3-u6-tewa-dewa-negative-consequence | 〜ては / 〜では (If Such a Condition Persists, Disaster Will Follow) | V-て + は | い-adj くて + は | な-adj / Noun + では
+NEGATIVE FOREBODING: Clause B ALWAYS describes a bad consequence, trouble, or failure: 'こんなにミスが多くては困る' (If you make this many errors, we're in trouble).
+締め切りが明日（　　）、今夜は徹夜するしかありません。 | では / ては / なら / たら | 0
+skm3-u8-to-wa-kagiranai-not-necessarily | 〜とは限らない (Partial Truth: Not Necessarily the Case) | Plain form + とは限らない (Frequently pairs with adverbs: 必ずしも, いつも, だれもが)
+DEBUNKING ASSUMPTIONS: '高いものが必ずしも良いとは限らない' (Expensive things are not necessarily good). Softens rigid dogmas.
+値段が高い服が、必ずしも長持ちする（　　）とは限らない。 | の / こと / もの / わけ | 0
+skm3-u8-nai-koto-wa-nai-litotes | 〜ないことはない / 〜ないこともない (Double Negative Litotes: It's Not That I Can't) | V-ない + ことはない | い-adj くない + ことはない | な-adj / Noun でない + ことはない
+RELUCTANT HESITATION: You don't want to boast 'I can do it easily'. You say '走れば間に合わないことはない' (If I run, it's not that I couldn't make it).
+どうしてもとおっしゃるなら、手伝わ（　　）こともありませんが。 | ない / ず / ぬ / なくて | 0
+skm3-u11-you-to-suru-inception | 〜(よ)うとする (On the Very Verge Of / In the Act of Attempting) | V-意向形 + とする (Past: とした / としていた) | Negative: としない (Refuses to do)
+VERGE OF INTERRUPTION: '家を出ようとした時、電話が鳴った' (Just as I was about to walk out the door, phone rang). Negative 〜ようとしない indicates stubborn refusal ('He refuses to apologize').
+うちの犬は、お風呂に（　　）とすると、必死で逃げ出そうとする。 | 入れよう / 入れる / 入れ / 入れた | 0
+skm3-u11-koto-ni-natte-iru | 〜ことになっている (Customary Rule, Schedule, or Standing Regulation) | V-辞書形 / V-ない + ことになっている
+EXTERNAL REGULATION: This is NOT a personal whim. It represents external school rules, legal bylaws, or schedules: '教室では日本語で話すことになっている' (It is the standing classroom rule).
+この寮では、夜十一時以降は静かに（　　）ことになっている。 | する / して / した / し | 0
+skm3-fj-ppoi-personality | 〜っぽい (Prone to Negative Behavior / Resembling Quality: -ish / -y) | V-stem + っぽい | Noun + っぽい | い-adj (drop い) + っぽい (Conjugates as an い-adjective: っぽくない)
+CRITICAL DIFFERENCE FROM RASHII: らしい indicates genuine authentic nature (男らしい = Manly, worthy of a man). っぽい indicates superficial resemblance or flaw (男っぽい = Tomboyish; 子供っぽい = Childish/Immature).
+いい歳をした大人が、そんな（　　）っぽい嘘をつくのは恥ずかしいですよ。 | 子供 / 大人 / 先生 / 若者 | 0
+skm3-fj-darake-flaws | 〜だらけ (Covered in Mess, Flaws, or Filth: Riddled With / Full Of) | Noun + だらけ (泥だらけ, 間違いだらけ, ゴミだらけ, 借金だらけ)
+STRICTLY NEGATIVE / DISGUST: You CANNOT use だらけ for desirable things (you cannot say '宝石だらけ' ❌ or 'お金だらけ' ❌ unless complaining of clutter). It is for filth, mess, or errors.
+雨の中サッカーをして、ユニフォームが（　　）だらけになってしまった。 | 泥 / 雨 / 水 / 土 | 0
+skm3-u3-kurai-nara | 〜くらいなら / 〜ぐらいなら (Rather Than Suffer X, I Would Prefer Y) | V-辞書形 + くらいなら / ぐらいなら
+UNACCEPTABLE ALTERNATIVE: X is considered so awful that the speaker prefers Y. Example: '満員電車に乗るくらいなら、1時間歩くほうがましだ' (Rather than ride a packed train, I'd rather walk an hour).
+あんな失礼な人に謝る（　　）なら、仕事を辞めたほうがいい。 | くらい / ほど / ばかり / だけに | 0
+skm3-u3-ni-kagiru | 〜に限る (Nothing Beats X / X Is Unequivocally the Best) | Noun + に限る | V-辞書形 / V-ない形 + に限る
+SUBJECTIVE SUPREME CHOICE: This is the speaker's personal recommendation, not an objective law: '暑い日は冷たいビールに限る' (On a hot day, nothing beats a cold beer).
+夏の暑い午後には、冷えたスイカを食べる（　　）。 | に限る / にすぎない / に違いない / にかかわる | 0
+skm3-u4-ni-taishite | 〜に対して (In Contrast To / While X Is..., Y Is...) | Noun + に対して | 普通形 (な-adj + な/である, Noun + である) + のに対して
+POLAR OPPOSITES: Compares two separate entities A and B: '兄が社交的なのに対して、弟は内向的だ' (Whereas the older brother is sociable, the younger brother is introverted).
+昨日は大雨だった（　　）に対して、今日は雲一つない快晴だ。 | の / こと / もの / わけ | 0
+skm3-u4-ni-kurabete | 〜に比べて (Compared With / Relative To) | Noun + に比べて / に比べ
+QUANTITATIVE OR QUALITATIVE BENCHMARK: Unlike に対して (which contrasts polar opposites), に比べて measures differences in scale, price, difficulty, or degree.
+以前の古いアパート（　　）比べて、今の部屋はずっと静かで快適だ。 | に / を / で / と | 0
+skm3-u5-okage-sei | 〜おかげで vs 〜せいで (Grace of / Due to Fault of) | 普通形 (な-adj + な, Noun + の) + おかげで / せいで
+VALUE POLARITY: おかげで = Gratitude ('Thanks to your guidance, I passed!'). せいで = Blame ('Because of the accident, I was late!'). (Ironical usage also exists: お前のせいで/お前のおかげで).
+台風の（　　）で、楽しみにしていた旅行が急遽キャンセルになった。 | せい / おかげ / ため / こと | 0
+skm3-u6-sae-ba | 〜さえ〜ば (If Only / Provided That Sole Prerequisite Is Met) | Noun + さえ + V-ば / い-adj-ければ / な-adj-なら / Noun + なら | V-stem + さえすれば
+MINIMAL SUFFICIENT CONDITION: 'If only this single factor exists, nothing else matters': 体さえ健康なら、どんな困難も乗り越えられる (As long as one has health, any obstacle can be surmounted).
+薬を飲み（　　）すれば、すぐに熱は下がりますよ。 | さえ / こそ / すら / ばかり | 0
+skm3-u6-tatoe-temo | たとえ〜ても (Even If / Even Granting That Hypothetical X Occurs) | たとえ + V-ても / い-adj-くても / な-adj-でも / Noun + でも
+UNSHAKEABLE RESOLVE: Even if the most extreme situation materializes, clause Y is unbending: たとえ両親に反対されても、夢を諦めない (Even if my parents oppose, I won't give up).
+（　　）失敗しても、最後まで全力を尽くしたなら悔いはない。 | たとえ / まるで / 決して / まさか | 0
+skm3-u7-you-ni-purpose | 〜ように (So That / In Order That - Non-Volitional Objective) | V-辞書形 (Potential / Intransitive non-volitional) / V-ない + ように
+VOLITIONAL CONTRAST: ように takes non-volitional verbs (見える、聞こえる、忘れない, potential verbs). In contrast, ために takes conscious volitional actions by the same subject.
+風邪を引か（　　）ように、暖かくして出かけなさい。 | ない / ず / ぬ / なくて | 0
+skm3-u7-you-ni-suru | 〜ようにする (Make an Effort To / Endeavor Habitually) | V-辞書形 / V-ない + ようにする / ようにしている
+CONSCIOUS HABITUAL EFFORT: ようにしている expresses an established personal policy: '毎朝ストレッチをするようにしている' (I make it a point to stretch every morning).
+約束の時間には絶対に遅れない（　　）してください。 | ように / ために / こと / もの | 0
+skm3-u8-wake-ga-nai | 〜わけがない (There Is Absolutely No Way That... / Utter Impossibility) | 普通形 (な-adj + な/である, Noun + の/である) + わけがない / わけはない
+OBJECTIVE LOGICAL REJECTION: Based on known evidence or common sense, scenario X is mathematically or logically absurd: '彼が犯人のわけがない。その時私と一緒にいたのだから' (There's no way he is the culprit; he was with me).
+いつも真面目な山田さんが、会社の秘密を漏らす（　　）がありません。 | わけ / はず / もの / こと | 0
+skm3-u8-wake-dewa-nai | 〜わけではない (It Doesn't Mean That... / Partial Negation) | 普通形 (な-adj + な/である, Noun + の/な/である) + わけではない / わけじゃない
+AVOIDING ABSOLUTES: Used to prevent misunderstanding: '嫌いなわけではないが、今は食べたくない' (It's not that I dislike it, but I just don't feel like eating right now).
+彼の提案に反対したけれど、彼のことが嫌いな（　　）ではない。 | わけ / はず / つもり / せい | 0
+skm3-u8-wake-niwa-ikanai | 〜わけにはいかない (Cannot Afford To / Morally or Socially Bound Not To) | V-辞書形 + わけにはいかない (cannot do) | V-ない形 + わけにはいかない (must do / cannot afford not to)
+INTERNAL CONSCIENCE & SOCIAL CODE: Unlike physical inability (できない), わけにはいかない denotes moral, professional, or situational inhibition: '明日試験だから、ゲームをするわけにはいかない' (Since there's an exam tomorrow, I cannot afford to play games).
+友人に秘密にしてくれと頼まれたから、誰にも話す（　　）にはいかない。 | わけ / はず / こと / もの | 0
+skm3-u9-garu | 〜がる / 〜がっている (Third-Person Manifestation of Desires & Sensations) | い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている
+THIRD-PERSON BARRIER: In Japanese, you cannot directly peer into another's heart to say '田中さんは痛い' ❌. You must describe observable signs: '痛がっている' (showing signs of pain).
+最近の若者は、海外旅行に行き（　　）なくなったと言われている。 | たがら / たい / たがり / たく | 0
+skm3-u9-beki-da | 〜べきだ / 〜べきではない (Should / Ought To - Moral Duty) | V-辞書形 + べきだ / べきではない (する irregular: すべきだ or するべきだ)
+ETHICAL / MORAL OUGHT: Expresses what common sense or civic duty dictates. Not used for strict institutional rules (which use なければならない). Avoid using it directly to superiors.
+自分のミスで他人に迷惑をかけたときは、すぐに謝罪（　　）だ。 | すべき / した / するの / すれば | 0
+skm3-u10-ni-yoru-to | 〜によると / 〜によれば (According To Source of Information) | Noun + によると / によれば + [sentence ending in 〜そうだ / 〜ということだ / 〜らしい]
+MANDATORY HEARSAY PAIRING: The sentence must conclude with an expression of reported speech or conjecture (〜そうだ、〜ということだ、〜らしい). You cannot end with speaker's direct fact or command.
+今朝の新聞（　　）よると、ガソリン価格が来月から再び値上がりするそうだ。 | に / で / を / へ | 0
+skm3-u10-rashii | 〜らしい (Evidential Hearsay vs Typical Archetype) | Sense 1 (Conjecture): 普通形 (Noun / な-adj bare) + らしい | Sense 2 (Typicality): Noun + らしい
+ARCHETYPE NUANCE: 男らしい (manly), 男子学生らしい (behaving like a true student), 春らしい (truly spring-like). Unlike っぽい (which implies shallow resemblance), らしい embodies genuine true essence.
+負けて悔しいのは分かるが、プロの選手（　　）最後まで堂々と振る舞うべきだ。 | らしく / そうに / みたいで / がちに | 0
+skm3-u11-koto-ni-shite-iru | 〜ことにしている (Habitual Personal Rule / Self-Imposed Policy) | V-辞書形 / V-ない形 + ことにしている
+PERSONAL RESOLUTION vs EXTERNAL RULE: ことにしている is the speaker's own active personal policy. In contrast, ことになっている denotes external rules, schedules, or societal laws.
+環境を守るため、買い物にはマイバッグを持参する（　　）にしている。 | こと / もの / わけ / ところ | 0
+skm3-u11-tsumori-da | 〜つもり (Believing / Acting as If / Contrary to Reality) | V-た形 / Noun + の / い-adj / な-adj + な + つもり (Noun modifier)
+CONVICTION VS REALITY: Can convey a subjective illusion: '自分では若いつもりだが、階段で息が切れる' (I feel young in my own mind, but I get out of breath on stairs). Or reproaching someone: '冗談のつもりだった' (I intended it as a joke).
+自分では上手に説明した（　　）だったが、誰にも理解してもらえなかった。 | つもり / はず / わけ / ところ | 0
+skm3-u12-keigo-respect | お〜になる / ご〜になる (Honorific Respect - Elevating Others' Actions) | お + V-stem + になる (wago) | ご + Noun (suru-verb) + になる / なさる (kango)
+ELEVATING THE OUTGROUP / SUPERIOR: Used only for the actions of others, NEVER for yourself or your in-group family/company members: '社長はもうお帰りになりました' (The president has already departed).
+先生、こちらの新しい資料をもうご（　　）になりましたか。 | 覧 / 見 / 拝見 / 見せ | 0
+skm3-u12-keigo-humble | お〜する / ご〜する (Humble Deference - Lowering One's Own Actions) | お + V-stem + する / いたす | ご + Noun (suru-verb) + する / いたす
+LOWERING THE IN-GROUP: Action must direct toward an esteemed person: '重そうなお荷物をお持ちしましょうか' (Shall I hold your heavy luggage?). You CANNOT use it for independent solo actions like '一人でお昼ご飯をお食べする' ❌.
+駅でお待ちしておりますので、到着されましたら（　　）ください。 | ご連絡 / お連絡 / ご報告され / お伝え | 0
+skm3-fc-tokoro-datta | 〜ところだった (Was on the Very Verge Of / Narrowly Escaped) | V-辞書形 + ところだった (often paired with もう少しで, 危うく)
+NARROW ESCAPE: Almost always paired with adverbs like もう少しで (by a hair's breadth) or 危うく (narrowly): 'もう少しで終電に乗り遅れるところだった' (I almost missed the last train).
+友達が声をかけてくれなかったら、大事な約束を（　　）ところだった。 | 忘れる / 忘れた / 忘れて / 忘れない | 0
+skm3-fj-kimi | 〜気味 (Slight Negative Tinge / Feeling Somewhat...) | V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)
+SLIGHT ONSET: Describes a nascent phase, not fully-blown illness or disaster: 風邪気味 (a slight touch of a cold), 緊張気味 (a bit nervous).
+朝から喉が痛くて少し（　　）気味なので、早めに薬を飲んで寝ます。 | 風邪 / 病気 / 熱 / 痛い | 0
+skm3-fj-gachi | 〜がち (Prone To / Habitual Unfortunate Tendency) | V-stem + がち | Noun + がち (留守がち, 曇りがち, 遠慮がち, 忘れがち)
+UNFAVORABLE FREQUENCY: Describes a recurring frequency of an undesirable pattern (unlike 気味, which denotes a mild physical symptom). Example: '一人暮らしの人は野菜不足になりがちだ' (People living alone tend to become deficient in vegetables).
+冬になると寒さのせいで家に閉じこもり（　　）になり、運動不足が心配だ。 | がち / 気味 / っぽい / だらけ | 0

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+data/book-audit/*.png
+data/book-audit/*.jpg
+data/book-audit/*-text.json
+data/book-audit/*-ocr.txt
+data/book-audit/tessdata/
+data/exam-prep-audit/*.png
+data/exam-prep-audit/*.jpg
+data/exam-prep-audit/build/

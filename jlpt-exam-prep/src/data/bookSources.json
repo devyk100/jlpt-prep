@@ -1,0 +1,869 @@
+[
+  {
+    "id": "genki-1",
+    "name": "Genki I",
+    "level": "N5",
+    "description": "Original revision notes mapped to the supplied textbook contents. Page numbers mark section starts; combined cards may cover several forms. Supplementary comparison notes are outside this catalog.",
+    "sections": [
+      {
+        "name": "Lesson 1 · p. 36",
+        "grammarIds": [
+          "g1-l1-wa-desu",
+          "g1-l1-question-ka",
+          "g1-l1-noun-no-noun",
+          "g1-l1-time-and-age"
+        ]
+      },
+      {
+        "name": "Lesson 2 · p. 56",
+        "grammarIds": [
+          "g1-l2-kore-sore-are-dore",
+          "g1-l2-kono-sono-ano-dono",
+          "g1-l2-koko-soko-asoko-doko",
+          "g1-l2-mo-particle",
+          "g1-l2-janai-desu",
+          "added-g1-2-1"
+        ]
+      },
+      {
+        "name": "Lesson 3 · p. 82",
+        "grammarIds": [
+          "g1-l3-masu-form",
+          "g1-l3-masenka-invitation",
+          "added-g1-3-2",
+          "added-g1-3-3"
+        ]
+      },
+      {
+        "name": "Lesson 4 · p. 102",
+        "grammarIds": [
+          "g1-l4-past-forms-deshita",
+          "g1-l4-location-words",
+          "added-g1-4-4",
+          "added-g1-4-5"
+        ]
+      },
+      {
+        "name": "Lesson 5 · p. 128",
+        "grammarIds": [
+          "g1-l5-suki-kirai",
+          "g1-l5-mashou-ka",
+          "added-g1-5-6",
+          "added-g1-5-7"
+        ]
+      },
+      {
+        "name": "Lesson 6 · p. 146",
+        "grammarIds": [
+          "g1-l6-te-kudasai",
+          "g1-l6-te-mo-ii",
+          "g1-l6-kara-reason",
+          "added-g1-6-8"
+        ]
+      },
+      {
+        "name": "Lesson 7 · p. 166",
+        "grammarIds": [
+          "g1-l7-describing-people",
+          "g1-l7-adj-te-forms",
+          "g1-l7-purpose-ni-iku",
+          "added-g1-7-9",
+          "added-g1-7-10"
+        ]
+      },
+      {
+        "name": "Lesson 8 · p. 186",
+        "grammarIds": [
+          "g1-l8-nai-de-kudasai",
+          "g1-l8-nominalizer-no",
+          "added-g1-8-11",
+          "added-g1-8-12"
+        ]
+      },
+      {
+        "name": "Lesson 9 · p. 210",
+        "grammarIds": [
+          "g1-l9-mou-mada",
+          "added-g1-9-13"
+        ]
+      },
+      {
+        "name": "Lesson 10 · p. 230",
+        "grammarIds": [
+          "g1-l10-tsumori",
+          "g1-l10-adj-naru",
+          "added-g1-10-14",
+          "added-g1-10-15",
+          "added-g1-10-16"
+        ]
+      },
+      {
+        "name": "Lesson 11 · p. 254",
+        "grammarIds": [
+          "g1-l11-tai-desire",
+          "g1-l11-koto-ga-aru",
+          "added-g1-11-17"
+        ]
+      },
+      {
+        "name": "Lesson 12 · p. 272",
+        "grammarIds": [
+          "g1-l11-sugiru",
+          "g1-l12-node-objective-reason",
+          "g1-l12-nakereba-ikemasen",
+          "g1-l12-deshou-darou",
+          "added-g1-12-18",
+          "added-g1-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "genki-2",
+    "name": "Genki II",
+    "level": "N4",
+    "description": "Original revision notes mapped to the supplied textbook contents. Page numbers mark section starts; combined cards may cover several forms. Supplementary comparison notes are outside this catalog.",
+    "sections": [
+      {
+        "name": "Lesson 13 · p. 22",
+        "grammarIds": [
+          "g2-l13-potential",
+          "g2-l13-shi-reasons",
+          "g2-l13-te-miru",
+          "g2-l13-nara-conditional",
+          "added-g2-13-20",
+          "added-g2-13-21"
+        ]
+      },
+      {
+        "name": "Lesson 14 · p. 46",
+        "grammarIds": [
+          "g2-l14-hoshii",
+          "g2-l14-kamoshirenai",
+          "g2-l14-tara-dou-desu-ka",
+          "added-g2-14-22",
+          "added-g2-14-23"
+        ]
+      },
+      {
+        "name": "Lesson 15 · p. 70",
+        "grammarIds": [
+          "g2-l15-volitional-form",
+          "g2-l15-volitional-to-omotte-iru",
+          "g2-l15-relative-clauses",
+          "added-g2-15-24"
+        ]
+      },
+      {
+        "name": "Lesson 16 · p. 92",
+        "grammarIds": [
+          "g2-l16-to-ii-hoping",
+          "g2-l16-toki-tense",
+          "added-g2-16-25",
+          "added-g2-16-26",
+          "added-g2-16-27"
+        ]
+      },
+      {
+        "name": "Lesson 17 · p. 114",
+        "grammarIds": [
+          "g2-l17-hearsay-sou-desu",
+          "g2-l17-tara-conditional",
+          "g2-l17-nakute-mo-ii",
+          "added-g2-17-28",
+          "added-g2-17-29"
+        ]
+      },
+      {
+        "name": "Lesson 18 · p. 136",
+        "grammarIds": [
+          "g2-l18-transitive-intransitive",
+          "g2-l18-to-natural-consequence",
+          "g2-l18-ba-yokatta",
+          "added-g2-18-30",
+          "added-g2-18-31"
+        ]
+      },
+      {
+        "name": "Lesson 19 · p. 160",
+        "grammarIds": [
+          "g2-l19-sonkeigo-verbs",
+          "g2-l19-o-kudasai",
+          "added-g2-19-32",
+          "added-g2-19-33"
+        ]
+      },
+      {
+        "name": "Lesson 20 · p. 180",
+        "grammarIds": [
+          "added-g2-20-34",
+          "added-g2-20-35",
+          "added-g2-20-36",
+          "added-g2-20-37"
+        ]
+      },
+      {
+        "name": "Lesson 21 · p. 206",
+        "grammarIds": [
+          "g2-l21-te-aru",
+          "g2-l21-aida-vs-aidani",
+          "added-g2-21-38",
+          "added-g2-21-39"
+        ]
+      },
+      {
+        "name": "Lesson 22 · p. 228",
+        "grammarIds": [
+          "g2-l22-ba-conditional",
+          "g2-l22-noni-frustration",
+          "added-g2-22-40",
+          "added-g2-22-41",
+          "added-g2-22-42"
+        ]
+      },
+      {
+        "name": "Lesson 23 · p. 250",
+        "grammarIds": [
+          "g2-l23-temo-even-if",
+          "g2-l23-koto-ni-suru-naru",
+          "added-g2-23-43",
+          "added-g2-23-44",
+          "added-g2-23-45"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skm-n3",
+    "name": "Shin Kanzen Master N3",
+    "level": "N3",
+    "description": "Original revision notes mapped to the supplied textbook contents. Page numbers mark section starts; combined cards may cover several forms. Supplementary comparison notes are outside this catalog.",
+    "sections": [
+      {
+        "name": "Part 1 · Chapter 1 · p. 16",
+        "grammarIds": [
+          "skm3-u1-uchini-while",
+          "skm3-u1-uchini-change",
+          "skm3-u1-aida-vs-aidani",
+          "skm3-u1-te-kara-denaito",
+          "skm3-u1-tokoro-da-phases"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 2 · p. 18",
+        "grammarIds": [
+          "skm3-u2-toori-ni-accordance",
+          "skm3-u2-ni-yotte-variation",
+          "skm3-u2-tabini-repetition",
+          "skm3-u2-ba-hodo-proportion",
+          "skm3-u2-tsuide-ni-opportunity"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 3 · p. 22",
+        "grammarIds": [
+          "skm3-u3-kurai-hodo-extent",
+          "skm3-u3-kurai-wa-nai",
+          "skm3-u3-kurai-nara",
+          "skm3-u3-ni-kagiru"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 4 · p. 24",
+        "grammarIds": [
+          "skm3-u4-hanmen-flipside",
+          "skm3-u4-kawari-ni-exchange",
+          "skm3-u4-ni-taishite",
+          "added-n3-4-46"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 5 · p. 30",
+        "grammarIds": [
+          "skm3-u5-tame-ni-causality",
+          "skm3-u5-koto-kara-origin",
+          "skm3-u6-no-dakara-reality",
+          "skm3-u5-okage-sei",
+          "added-n3-5-47"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 6 · p. 32",
+        "grammarIds": [
+          "skm3-u6-tewa-dewa-negative-consequence",
+          "skm3-u6-sae-ba",
+          "skm3-u6-tatoe-temo",
+          "added-n3-6-48"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 7 · p. 36",
+        "grammarIds": [
+          "added-n3-7-49",
+          "added-n3-7-50",
+          "added-n3-7-51"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 8 · p. 38",
+        "grammarIds": [
+          "skm3-u8-to-wa-kagiranai-not-necessarily",
+          "skm3-u8-nai-koto-wa-nai-litotes",
+          "skm3-u8-wake-ga-nai",
+          "skm3-u8-wake-dewa-nai",
+          "added-n3-8-52"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 9 · p. 44",
+        "grammarIds": [
+          "added-n3-9-53",
+          "added-n3-9-54",
+          "added-n3-9-55"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 10 · p. 46",
+        "grammarIds": [
+          "skm3-u9-beki-da",
+          "added-n3-10-56",
+          "added-n3-10-57"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 11 · p. 50",
+        "grammarIds": [
+          "skm3-u11-you-to-suru-inception",
+          "skm3-u7-you-ni-suru",
+          "skm3-u11-koto-ni-shite-iru",
+          "skm3-u11-tsumori-da"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 12 · p. 52",
+        "grammarIds": [
+          "skm3-u12-keigo-respect",
+          "skm3-u12-keigo-humble",
+          "added-n3-12-58"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review A · p. 58",
+        "grammarIds": [
+          "added-n3-a-59"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review B · p. 62",
+        "grammarIds": [
+          "added-n3-b-60"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review C · p. 66",
+        "grammarIds": [
+          "added-n3-c-61"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review D · p. 70",
+        "grammarIds": [
+          "skm3-u7-you-ni-purpose",
+          "added-n3-d-62"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review E · p. 74",
+        "grammarIds": [
+          "skm3-u8-wake-niwa-ikanai",
+          "added-n3-e-63"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review F · p. 80",
+        "grammarIds": [
+          "added-n3-f-64"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review G · p. 84",
+        "grammarIds": [
+          "skm3-u11-koto-ni-natte-iru",
+          "added-n3-g-65"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review H · p. 88",
+        "grammarIds": [
+          "added-n3-h-66"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review I · p. 92",
+        "grammarIds": [
+          "added-n3-i-67"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review J · p. 96",
+        "grammarIds": [
+          "skm3-fj-ppoi-personality",
+          "skm3-fj-darake-flaws",
+          "skm3-u10-rashii",
+          "skm3-fj-gachi",
+          "added-n3-j-68",
+          "added-n3-j-115"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 1 · p. 104",
+        "grammarIds": [
+          "added-n3-p2-1-124"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 2 · p. 106",
+        "grammarIds": [
+          "added-n3-p2-2-125"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 3 · p. 108",
+        "grammarIds": [
+          "added-n3-p2-3-126"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 4 · p. 110",
+        "grammarIds": [
+          "added-n3-p2-4-127"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 1 · p. 116",
+        "grammarIds": [
+          "added-n3-p3-1-131"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 2 · p. 118",
+        "grammarIds": [
+          "added-n3-p3-2-132"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 3 · p. 122",
+        "grammarIds": [
+          "added-n3-p3-3-133"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 4 · p. 124",
+        "grammarIds": [
+          "added-n3-p3-4-134"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 5 · p. 128",
+        "grammarIds": [
+          "added-n3-p3-5-135"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 6 · p. 130",
+        "grammarIds": [
+          "added-n3-p3-6-136"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 7 · p. 134",
+        "grammarIds": [
+          "added-n3-p3-7-137"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 8 · p. 136",
+        "grammarIds": [
+          "added-n3-p3-8-138"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 9 · p. 140",
+        "grammarIds": [
+          "added-n3-p3-9-139"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 10 · p. 142",
+        "grammarIds": [
+          "added-n3-p3-10-140"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skm-n2",
+    "name": "Shin Kanzen Master N2",
+    "level": "N2",
+    "description": "Original revision notes mapped to the supplied textbook contents. Page numbers mark section starts; combined cards may cover several forms. Supplementary comparison notes are outside this catalog.",
+    "sections": [
+      {
+        "name": "Part 1 · Chapter 1 · p. 8",
+        "grammarIds": [
+          "skm2-c1-ni-saishite",
+          "skm2-c1-ka-to-omou-to",
+          "skm2-c1-kanai-ka-no-uchini",
+          "skm2-c1-tatan-ni",
+          "added-n2-1-69"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 2 · p. 12",
+        "grammarIds": [
+          "skm2-c2-saichuu-da",
+          "skm2-c2-ippou-da-bakari-da",
+          "skm2-c2-tsutsu-aru",
+          "added-n2-2-70",
+          "added-n2-2-71"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 3 · p. 16",
+        "grammarIds": [
+          "skm2-c3-te-hajimete",
+          "skm2-c3-ue-de",
+          "added-n2-3-72",
+          "added-n2-3-73",
+          "added-n2-3-74"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 4 · p. 20",
+        "grammarIds": [
+          "skm2-c4-wo-hajime",
+          "skm2-c4-kara-shite",
+          "skm2-c4-ni-watatte",
+          "added-n2-4-75",
+          "added-n2-4-76"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 5 · p. 24",
+        "grammarIds": [
+          "skm2-c4-kagiri-dewa",
+          "added-n2-5-77",
+          "added-n2-5-78"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 6 · p. 30",
+        "grammarIds": [
+          "skm2-c5-nomi-narazu",
+          "skm2-c5-bakari-ka",
+          "added-n2-6-79"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 7 · p. 34",
+        "grammarIds": [
+          "skm2-c7-wo-megutte",
+          "skm2-c7-ni-kotaete",
+          "skm2-c13-ni-kakete-wa",
+          "skm2-c6-ni-kansuru",
+          "added-n2-7-80"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 8 · p. 38",
+        "grammarIds": [
+          "skm2-c8-ni-motozuite",
+          "skm2-c8-ni-sotte",
+          "added-n2-8-81",
+          "added-n2-8-82"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 9 · p. 42",
+        "grammarIds": [
+          "skm2-c9-ni-tsurete",
+          "skm2-c9-ni-oujite",
+          "added-n2-9-83",
+          "added-n2-9-84"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 10 · p. 46",
+        "grammarIds": [
+          "added-n2-10-85",
+          "added-n2-10-86"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 11 · p. 52",
+        "grammarIds": [
+          "skm2-c11-ni-kakawarazu",
+          "skm2-c11-ha-tomo-kaku",
+          "skm2-c11-ha-sateoki",
+          "added-n2-11-87"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 12 · p. 56",
+        "grammarIds": [
+          "skm2-c12-dokoroka",
+          "added-n2-12-88"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 13 · p. 60",
+        "grammarIds": [
+          "added-n2-13-89",
+          "added-n2-13-90"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 14 · p. 64",
+        "grammarIds": [
+          "skm2-c19-monono",
+          "added-n2-14-91",
+          "added-n2-14-92"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 15 · p. 68",
+        "grammarIds": [
+          "skm2-c15-mono-nara",
+          "skm2-c15-nai-koto-niwa",
+          "skm2-c15-wo-nuki-ni-shite-wa",
+          "added-n2-15-93",
+          "added-n2-15-94"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 16 · p. 74",
+        "grammarIds": [
+          "skm2-c16-amari-excess",
+          "added-n2-16-95",
+          "added-n2-16-96"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 17 · p. 78",
+        "grammarIds": [
+          "skm2-c18-dakeni",
+          "added-n2-17-97",
+          "added-n2-17-98"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 18 · p. 82",
+        "grammarIds": [
+          "skm2-c22-kaneru",
+          "added-n2-18-99",
+          "added-n2-18-100"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 19 · p. 86",
+        "grammarIds": [
+          "added-n2-19-101",
+          "added-n2-19-102",
+          "added-n2-19-103"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 20 · p. 90",
+        "grammarIds": [
+          "skm2-c20-sue-ni-deliberation",
+          "skm2-c20-ageku-ni",
+          "added-n2-20-104"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 21 · p. 96",
+        "grammarIds": [
+          "added-n2-21-105",
+          "added-n2-21-106"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 22 · p. 100",
+        "grammarIds": [
+          "skm2-c21-ni-kimatte-iru",
+          "skm2-c22-osore-ga-aru",
+          "skm2-c21-ni-chigai-nai",
+          "skm2-c22-kane-nai",
+          "added-n2-22-107"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 23 · p. 104",
+        "grammarIds": [
+          "skm2-c23-mono-da-essence",
+          "skm2-c23-ni-koshita-koto-wa-nai",
+          "added-n2-23-108",
+          "added-n2-23-109"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 24 · p. 108",
+        "grammarIds": [
+          "skm2-c24-koto-da",
+          "skm2-p2-mai",
+          "added-n2-24-110",
+          "added-n2-24-111"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 25 · p. 112",
+        "grammarIds": [
+          "skm2-c25-zu-niwa-irarenai",
+          "skm2-c24-zaru-wo-enai",
+          "skm2-c25-te-tamaranai",
+          "added-n2-25-112"
+        ]
+      },
+      {
+        "name": "Part 1 · Chapter 26 · p. 116",
+        "grammarIds": [
+          "added-n2-26-113",
+          "added-n2-26-114"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review A · p. 122",
+        "grammarIds": [
+          "added-n2-a-116"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review B · p. 124",
+        "grammarIds": [
+          "added-n2-b-117"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review C · p. 126",
+        "grammarIds": [
+          "added-n2-c-118"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review D · p. 128",
+        "grammarIds": [
+          "added-n2-d-119",
+          "added-n2-d-120"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review E · p. 132",
+        "grammarIds": [
+          "added-n2-e-121"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review F · p. 134",
+        "grammarIds": [
+          "added-n2-f-122"
+        ]
+      },
+      {
+        "name": "Part 1 · Form review G · p. 136",
+        "grammarIds": [
+          "added-n2-g-123"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 1 · p. 140",
+        "grammarIds": [
+          "added-n2-p2-1-128"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 2 · p. 142",
+        "grammarIds": [
+          "added-n2-p2-2-129"
+        ]
+      },
+      {
+        "name": "Part 2 · Chapter 3 · p. 146",
+        "grammarIds": [
+          "added-n2-p2-3-130"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 1 · p. 150",
+        "grammarIds": [
+          "added-n2-p3-1-141"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 2 · p. 154",
+        "grammarIds": [
+          "added-n2-p3-2-142"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 3 · p. 158",
+        "grammarIds": [
+          "added-n2-p3-3-143"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 4 · p. 162",
+        "grammarIds": [
+          "added-n2-p3-4-144"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 5 · p. 166",
+        "grammarIds": [
+          "added-n2-p3-5-145"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 6 · p. 170",
+        "grammarIds": [
+          "added-n2-p3-6-146"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 7 · p. 174",
+        "grammarIds": [
+          "skm2-c26-te-itadaku",
+          "added-n2-p3-7-147"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 8 · p. 178",
+        "grammarIds": [
+          "added-n2-p3-8-148"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 9 · p. 182",
+        "grammarIds": [
+          "added-n2-p3-9-149"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 10 · p. 186",
+        "grammarIds": [
+          "added-n2-p3-10-150"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 11 · p. 190",
+        "grammarIds": [
+          "added-n2-p3-11-151"
+        ]
+      },
+      {
+        "name": "Part 3 · Chapter 12 · p. 194",
+        "grammarIds": [
+          "added-n2-p3-12-152"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,295 @@
+genki1-wa-desu | X は Y です (X is Y / Topic & Copula)
+Connection: Noun1 + は + Noun2 / Adjective + です
+Nuance: The topic particle は (pronounced "wa") presents the background framework or subject of interest ("speaking of X..."). です acts as the polite non-past copula.
+田中さん（　　）日本人です。 | ['は', 'を', 'に', 'へ'] | correct: 0
+[{'text': 'は', 'isCorrect': True, 'reason': 'Correct! は marks Tanaka-san as the topic being identified as Japanese.'}, {'text': 'を', 'isCorrect': False, 'reason': 'Incorrect. を marks direct objects of action verbs, not copula topics.'}, {'text': 'に', 'isCorrect': False, 'reason': 'Incorrect. に indicates direction, time, or location of existence.'}, {'text': 'へ', 'isCorrect': False, 'reason': 'Incorrect. へ indicates direction of movement.'}]
+genki1-verb-groups | 動詞の３分類 (The Three Verb Groups: Ru, U, & Irregular)
+Connection: Ru-verbs: stem + ます | U-verbs: u-vowel changes to i-vowel + ます | Irregular: する→します, くる→きます
+Nuance: Not every verb ending in る is a Ru-verb! Verbs like 帰る (かえる - to return) and 知る (しる - to know) end in る but are 五段 U-verbs (帰ります, 知ります).
+明日友達と映画を（　　）ます。 | ['見', '見る', '見て', '見ら'] | correct: 0
+[{'text': '見', 'isCorrect': True, 'reason': 'Correct! 見る drops る to form 見ます.'}, {'text': '見る', 'isCorrect': False, 'reason': 'Incorrect. Cannot retain dictionary る before ます.'}, {'text': '見て', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot attach directly to ます.'}, {'text': '見ら', 'isCorrect': False, 'reason': 'Incorrect. 見ら is part of passive/potential, not polite stem.'}]
+genki1-te-form | て形 (The Te-Form & Polite Requests 〜てください)
+Connection: う・つ・る→って | む・ぶ・ぬ→んで | く→いて (行く→行って!) | ぐ→いで | す→して | る(一段)→て
+Nuance: CRITICAL EXCEPTION: 行く (iku) does NOT become いいて. It irregularly contracts to 行って (itte)!
+ここで写真を（　　）はいけません。撮影禁止です。 | ['撮って', '撮る', '撮り', '撮った'] | correct: 0
+[{'text': '撮って', 'isCorrect': True, 'reason': 'Correct! 撮る conjugates to 撮って + はいけません for strict prohibition.'}, {'text': '撮る', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot connect to はいけません.'}, {'text': '撮り', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem cannot connect to はいけません.'}, {'text': '撮った', 'isCorrect': False, 'reason': 'Incorrect. Past form cannot connect to はいけません.'}]
+genki1-te-iru | 〜ている (Actions in Progress vs Resulting Continuous States)
+Connection: V-て + いる / います
+Nuance: THE INSTANT VERB TRAP: For puncture verbs like 結婚する (to marry), 知る (to find out), and 住む (to take up residence), 〜ている indicates the RESULTING STATE! 結婚している means "is currently married", NOT "is walking down the aisle right now".
+田中さんの電話番号を（　　）か。「いいえ、知りません。」 | ['知っています', '知ります', '知覚します', '知ってある'] | correct: 0
+[{'text': '知っています', 'isCorrect': True, 'reason': 'Correct! State of possessing information requires 知っています.'}, {'text': '知ります', 'isCorrect': False, 'reason': 'Incorrect. 知ります means "I will find out in the future".'}, {'text': '知覚します', 'isCorrect': False, 'reason': 'Incorrect. Unnatural technical jargon.'}, {'text': '知ってある', 'isCorrect': False, 'reason': 'Incorrect. 〜てある is only for deliberate actions on objects.'}]
+genki1-ndesu | 〜んです / 〜のだ (The Explanatory Mode)
+Connection: Plain form + んです | な-adj / Noun + な + んです (Note the な!)
+Nuance: Emotional rapport marker: Without んです, "頭が痛いです" is a dry medical observation. With "頭が痛いんです", it communicates: "The reason I look distressed is that I have a headache; please understand my situation."
+明日は大事な試験で（　　）んです。今夜は遊びに行けません。 | ['忙しい', '忙しだ', '忙しく', '忙しな'] | correct: 0
+[{'text': '忙しい', 'isCorrect': True, 'reason': 'Correct! Plain form 忙しい connects directly to んです.'}, {'text': '忙しだ', 'isCorrect': False, 'reason': 'Incorrect. い-adjectives never take だ.'}, {'text': '忙しく', 'isCorrect': False, 'reason': 'Incorrect. Adverbial form cannot attach to んです.'}, {'text': '忙しな', 'isCorrect': False, 'reason': 'Incorrect. な is only for な-adjectives and nouns.'}]
+genki2-kanoukei | 可能形 (Potential Verbs: Ability & Possibility)
+Connection: Ru-verbs: 食べる→食べられる | U-verbs: 行く→行ける, 飲む→飲める, 話す→話せる | Irregular: する→できる, くる→こられる
+Nuance: PARTICLE SHIFT TRAP: When a transitive verb converts to potential form, the direct object particle を frequently shifts to が! 日本語を話す → 日本語が話せる (I can speak Japanese).
+刺身は新鮮ですが、どうしても生魚が（　　）。 | ['食べられません', '食べません', '食べさせません', '食べてもらえません'] | correct: 0
+[{'text': '食べられません', 'isCorrect': True, 'reason': 'Correct! 食べる potential negative is 食べられない / 食べられません.'}, {'text': '食べません', 'isCorrect': False, 'reason': 'Incorrect. 食べません is a simple will decision ("I will not eat"), not ability.'}, {'text': '食べさせません', 'isCorrect': False, 'reason': 'Incorrect. Causative ("I will not let someone eat").'}, {'text': '食べてもらえません', 'isCorrect': False, 'reason': 'Incorrect. Favors pattern ("Cannot get someone to eat").'}]
+genki2-te-oku | 〜ておく / 〜とく (Doing in Advance / Preparatory Action)
+Connection: V-て + おく (Casual spoken contraction: 〜ておく → 〜とく / 〜でおく → 〜どく)
+Nuance: Forward-looking mindset: "I'll buy tickets beforehand so we don't wait in line" (切符を買っておく). In casual speech, 買っておく becomes 買っとく, 飲んでおく becomes 飲んどく.
+明日から旅行なので、ホテルの予約を（　　）おきました。 | ['して', 'する', 'した', 'し'] | correct: 0
+[{'text': 'して', 'isCorrect': True, 'reason': 'Correct! する becomes して, forming しておきました ("reserved in advance").'}, {'text': 'する', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot connect to おく.'}, {'text': 'した', 'isCorrect': False, 'reason': 'Incorrect. Past form cannot connect to おく.'}, {'text': 'し', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem cannot connect to おく.'}]
+genki2-yasui-nikui | 〜やすい vs 〜にくい (Easy to Do vs Difficult to Do)
+Connection: V-stem (ます形 without ます) + やすい / にくい (Conjugate as い-adjectives: 〜やすくない, 〜やすかった)
+Nuance: Once attached to the verb stem, the compound behaves 100% like a normal い-adjective! Also used for tendencies: このグラスは割れやすい (this glass breaks easily).
+この本は字が大きくて、子供にもとても（　　）やすい。 | ['読み', '読む', '読ん', '読ま'] | correct: 0
+[{'text': '読み', 'isCorrect': True, 'reason': 'Correct! 読む stem is 読み, forming 読みやすい ("easy to read").'}, {'text': '読む', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot attach to やすい.'}, {'text': '読ん', 'isCorrect': False, 'reason': 'Incorrect. Te-stem cannot attach to やすい.'}, {'text': '読ま', 'isCorrect': False, 'reason': 'Incorrect. Negative stem cannot attach to やすい.'}]
+gp-toki | 〜時（とき） (When / At the time of)
+Connection: V-辞書形 + 時 (Before doing) / V-た + 時 (After doing) / い形 + 時 / な形 + な時 / N + の時
+Nuance: The tense of the verb preceding 時 specifies whether that action is completed BEFORE the main action or still in the FUTURE relative to it. Notice: 出かける時 (when going out = not out yet) vs 出かけた時 (when I had gone out = already outside).
+出張でアメリカへ（　　）時、空港の免税店でお土産を買った。 | ['行く', '行った', '行かない', '行けば'] | correct: 0
+[{'text': '行く', 'isCorrect': True, 'reason': 'Correct! The action of buying souvenirs happens before departure to America, so the non-past dictionary form 行く indicates an uncompleted trip.'}, {'text': '行った', 'isCorrect': False, 'reason': 'Incorrect. 行った時 would mean you had already completed your arrival in America when buying at the initial departure airport.'}, {'text': '行かない', 'isCorrect': False, 'reason': 'Incorrect. Negative form contradicts the context of taking the business trip.'}, {'text': '行けば', 'isCorrect': False, 'reason': 'Incorrect. 行けば is a provisional conditional and cannot directly connect to 時.'}]
+gp-nagara | 〜ながら (While doing... simultaneous action)
+Connection: V-stem (ます形 without ます) + ながら
+Nuance: Crucial requirement: Both actions MUST be performed by the exact same subject! You cannot say "Father drove while mother slept" with ながら. Furthermore, the main verb comes in the SECOND clause.
+彼はいつもコーヒーを（　　）ながら、仕事のメールをチェックしている。 | ['飲み', '飲む', '飲んで', '飲んだ'] | correct: 0
+[{'text': '飲み', 'isCorrect': True, 'reason': 'Correct! 飲む stem is 飲み (飲みます without ます), forming 飲みながら.'}, {'text': '飲む', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form 飲む cannot attach to ながら.'}, {'text': '飲んで', 'isCorrect': False, 'reason': 'Incorrect. Te-form 飲んで does not take ながら (that would be redundant/ungrammatical).'}, {'text': '飲んだ', 'isCorrect': False, 'reason': 'Incorrect. Past form 飲んだ cannot connect to ながら.'}]
+gp-uchini | 〜うちに (While... / Before condition changes)
+Connection: V-辞書形 / V-ている / V-ない + うちに | い形 + うちに | な形 + な + うちに | N + の + うちに
+Nuance: Unlike あいだ (neutral objective time span), うちに carries a subjective urgency: "If I don't do it now, the chance will vanish!" (e.g., while the soup is hot, before forgetting). With spontaneous changes, it marks an unnoticed gradual transition (e.g., while listening to lecture, I fell asleep).
+忘れない（　　）、先生が言った重要事項をメモしておいた。 | ['うちに', '最中に', '次第', 'つつ'] | correct: 0
+[{'text': 'うちに', 'isCorrect': True, 'reason': 'Correct! 忘れないうちに means "while I haven\'t forgotten = before I forget". Perfect fit.'}, {'text': '最中に', 'isCorrect': False, 'reason': 'Incorrect. 最中に means "right in the middle of doing an active process" and cannot connect to negative 忘れない.'}, {'text': '次第', 'isCorrect': False, 'reason': 'Incorrect. 次第 attaches to verb stems to mean "as soon as (future)", not negative states.'}, {'text': 'つつ', 'isCorrect': False, 'reason': 'Incorrect. つつ attaches to verb stems for formal simultaneous action ("while doing").'}]
+gp-saichuu | 〜最中に（さいちゅうに） (Right in the middle of... disrupted!)
+Connection: V-ている + 最中に / N + の最中に
+Nuance: Always implies an interruption or nuisance! The second clause MUST describe a sudden, unplanned event (e.g. earthquake struck, phone rang, power went out). You CANNOT use it for intentional planned steps.
+シャワーを（　　）最中に、突然停電になって真っ暗になった。 | ['浴びている', '浴びた', '浴びる', '浴びようとする'] | correct: 0
+[{'text': '浴びている', 'isCorrect': True, 'reason': 'Correct! V-ている form represents the ongoing state that gets disrupted by the sudden blackout.'}, {'text': '浴びた', 'isCorrect': False, 'reason': 'Incorrect. 浴びた is past completed form. You cannot be in the middle of an action that is already finished.'}, {'text': '浴びる', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form 浴びる cannot attach directly to 最中に.'}, {'text': '浴びようとする', 'isCorrect': False, 'reason': 'Incorrect. 浴びようとする means "about to take a shower", which doesn\'t match the ongoing action meaning of 最中.'}]
+gp-totan | 〜たとたん（に） (The moment that... sudden surprise)
+Connection: V-た + とたん（に）
+Nuance: Crucial JLPT rule: Clause B is ALWAYS a surprise or natural reflexive reaction! It CANNOT be a planned, intentional, or volitional command (e.g. you CANNOT say "窓を開けたとたん、掃除してください" ❌).
+薬を（　　）とたん、猛烈な眠気に襲われてベッドに倒れ込んだ。 | ['飲んだ', '飲む', '飲んでいる', '飲もうと'] | correct: 0
+[{'text': '飲んだ', 'isCorrect': True, 'reason': 'Correct! V-た + とたん forms 飲んだとたん ("the moment after I swallowed it").'}, {'text': '飲む', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form 飲む cannot attach to とたん.'}, {'text': '飲んでいる', 'isCorrect': False, 'reason': 'Incorrect. Continuous form 飲んでいる cannot attach to とたん (that would be 最中).'}, {'text': '飲もうと', 'isCorrect': False, 'reason': 'Incorrect. Volitional form 飲もう does not connect to とたん.'}]
+gp-kato-omou-to | 〜（か）と思うと / 〜かと思ったら (No sooner had... when suddenly!)
+Connection: V-た + （か）と思うと / 〜かと思ったら
+Nuance: Expresses the speaker's astonishment at a rapid transition or contradictory shift. Often describes weather, crying/laughing children, or rapid departures. Cannot describe the speaker's own planned deliberate action!
+空が急に暗くなった（　　）、雷とともに大粒の雨が降ってきた。 | ['かと思うと', '次第', 'ながら', '一方だ'] | correct: 0
+[{'text': 'かと思うと', 'isCorrect': True, 'reason': 'Correct! V-た + かと思うと captures the astonishingly fast transition from darkening sky to downpour.'}, {'text': '次第', 'isCorrect': False, 'reason': 'Incorrect. 次第 attaches to verb stems to mean "as soon as (business future)", not past weather observations.'}, {'text': 'ながら', 'isCorrect': False, 'reason': 'Incorrect. ながら requires verb stem and indicates simultaneous actions by the same agent.'}, {'text': '一方だ', 'isCorrect': False, 'reason': 'Incorrect. 一方だ means "keeps trending in one continuous direction", not an instantaneous occurrence.'}]
+gp-kanai-ka | 〜か〜ないかのうちに (On the very verge of... / Barely finished when)
+Connection: V-辞書形 / V-た + か + V-ない + かのうちに (The two verbs are the EXACT same verb!)
+Nuance: The ultimate Japanese expression for split-second succession. Uses the same verb twice: 終わるか終わらないかのうちに ("in the space between whether it ended or didn't end"). Highly literary and dramatic.
+布団に横たわるか（　　）かのうちに、深い眠りに落ちてしまった。 | ['横たわらない', '横たわった', '横たわり', '横たわる'] | correct: 0
+[{'text': '横たわらない', 'isCorrect': True, 'reason': 'Correct! The formula is V-辞書形 (横たわる) + か + V-ない (横たわらない) + かのうちに.'}, {'text': '横たわった', 'isCorrect': False, 'reason': 'Incorrect. The second slot requires the negative form, not past affirmative.'}, {'text': '横たわり', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem cannot be placed in the negative slot.'}, {'text': '横たわる', 'isCorrect': False, 'reason': 'Incorrect. You cannot duplicate the affirmative form without negative contrast.'}]
+gp-shidai | 〜次第（しだい） (As soon as... business resolve)
+Connection: V-stem (ます形 without ます) + 次第
+Nuance: Essential business Japanese! The main clause expresses the speaker's intentional future action, commitment, or request. CRITICAL JLPT TRAP: The main clause can NEVER be in the past tense (た)! If it's already in the past, use 〜たら or 〜とたん.
+パスポートの準備が（　　）次第、旅行会社に書類を提出してください。 | ['でき', 'できる', 'できた', 'できている'] | correct: 0
+[{'text': 'でき', 'isCorrect': True, 'reason': 'Correct! できる stem is でき (できます without ます), forming でき次第.'}, {'text': 'できる', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot attach directly to 次第 in this time pattern.'}, {'text': 'できた', 'isCorrect': False, 'reason': 'Incorrect. Past form できた cannot attach to 次第.'}, {'text': 'できている', 'isCorrect': False, 'reason': 'Incorrect. Progressive form does not attach to 次第.'}]
+gp-kara-node | 〜から vs 〜ので (Subjective Reason vs Objective Cause)
+Connection: 〜から: Plain/Polite form + から | 〜ので: Verb/い形 plain + ので / な形 + なので / N + なので
+Nuance: Notice: If you give a direct command or invitation (〜てください, 〜ましょう), you MUST use から (危ないから、触らないで). Using ので with strong commands can feel stiff or contradictory because ので sounds like an objective circumstance beyond speaker control.
+明日は大事な試験が（　　）から、今夜は早く寝ようと思う。 | ['ある', 'あって', 'あり', 'あろう'] | correct: 0
+[{'text': 'ある', 'isCorrect': True, 'reason': 'Correct! Plain non-past ある connects cleanly to から.'}, {'text': 'あって', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot connect directly to から.'}, {'text': 'あり', 'isCorrect': False, 'reason': 'Incorrect. Stem form あり is ungrammatical before から.'}, {'text': 'あろう', 'isCorrect': False, 'reason': 'Incorrect. Volitional form cannot be used as the factual condition here.'}]
+gp-te-shimau | 〜てしまう / 〜ちゃう (Irreversible Completion & Regret)
+Connection: V-て + しまう (Spoken contractions: 〜てしまう → 〜ちゃう / 〜でしまう → 〜じゃう)
+Nuance: Crucial dual nature: Sometimes it means proud complete accomplishment (本を全部読んでしまった = I read the whole book!), but overwhelmingly on JLPT tests it signifies unintentional mistake and regret (財布を落としてしまった = I lost my wallet, alas).
+急いでいたので、違う色の靴下を（　　）しまった。 | ['履いて', '履く', '履き', '履いた'] | correct: 0
+[{'text': '履いて', 'isCorrect': True, 'reason': 'Correct! 履く (to wear shoes/socks) becomes 履いて in te-form, forming 履いてしまった.'}, {'text': '履く', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot connect to しまう.'}, {'text': '履き', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem 履き does not connect to しまう.'}, {'text': '履いた', 'isCorrect': False, 'reason': 'Incorrect. Past form 履いた cannot precede しまう.'}]
+gp-okage-sei | 〜おかげで vs 〜せいで (Gratitude vs Blame)
+Connection: Plain form (V / い形) + おかげで / せいで | な形 + な + おかげで / せいで | N + の + おかげで / せいで
+Nuance: Irony note: Sometimes おかげで is used sarcastically ("Thanks to your terrible driving, we are lost"), but on the JLPT, treat おかげで as POSITIVE and せいで as NEGATIVE BLAME! You can also end a sentence with 〜せいだ / 〜おかげだ.
+隣の部屋の騒音の（　　）、昨夜は一睡もできなかった。 | ['せいで', 'おかげで', 'ために', 'ばかりに'] | correct: 0
+[{'text': 'せいで', 'isCorrect': True, 'reason': 'Correct! Not being able to sleep is a terrible outcome blamed entirely on the noise.'}, {'text': 'おかげで', 'isCorrect': False, 'reason': 'Incorrect. おかげで requires a positive/beneficial result.'}, {'text': 'ために', 'isCorrect': False, 'reason': 'Incorrect. While ために indicates cause, Noun connects as 騒音のために, and せいで conveys personal grievance far more naturally here.'}, {'text': 'ばかりに', 'isCorrect': False, 'reason': 'Incorrect. ばかりに connects directly to verbs or clauses (〜たばかりに) to mean "simply because of one slight mistake", not Noun のばかりに.'}]
+gp-bakarini | 〜ばかりに (Simply because of... a catastrophic outcome)
+Connection: V-た / い形 / な形-な / N-である + ばかりに
+Nuance: Expresses deep bite-your-tongue regret and frustration: "If only I hadn't done that one little thing, this catastrophe wouldn't have occurred!" The result clause is ALWAYS negative, tragic, or disadvantageous.
+道を一本（　　）ばかりに、飛行機の出発時刻に間に合わなかった。 | ['間違えた', '間違える', '間違えて', '間違えそう'] | correct: 0
+[{'text': '間違えた', 'isCorrect': True, 'reason': 'Correct! V-た (間違えた) + ばかりに highlights the single mistake that triggered missing the plane.'}, {'text': '間違える', 'isCorrect': False, 'reason': 'Incorrect. Non-past dictionary form is rare and does not fit a past missed flight.'}, {'text': '間違えて', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot attach directly to ばかりに.'}, {'text': '間違えそう', 'isCorrect': False, 'reason': 'Incorrect. 〜そう (looks like) does not connect to ばかりに.'}]
+gp-monodakara | 〜ものだから / 〜もので (Social Excuse / "It couldn't be helped")
+Connection: Plain form + ものだから / もので | な形 + な + ものだから | N + な + ものだから
+Nuance: Subtle psychology: It appeals to the listener's empathy! "The circumstances were such that any reasonable person would have done the same." In casual conversation, contracted to 〜もんだから or simply 〜もん (childish/informal excuse).
+あまりに（　　）ものだから、ついダイエット中なのにケーキを食べてしまった。 | ['美味しそうだった', '美味しい', '美味しそうだ', '美味しかった'] | correct: 0
+[{'text': '美味しそうだった', 'isCorrect': True, 'reason': 'Correct! "Because it looked so delicious" explains the uncontrollable urge to eat the cake.'}, {'text': '美味しい', 'isCorrect': False, 'reason': "Incorrect. You hadn't tasted it yet; it was the visual appeal (そう) that tempted you."}, {'text': '美味しそうだ', 'isCorrect': False, 'reason': 'Incorrect. Needs past tense or proper connective な before もの.'}, {'text': '美味しかった', 'isCorrect': False, 'reason': 'Incorrect. Focusing on past taste fails to explain the initial temptation.'}]
+gp-karaniwa | 〜からには / 〜以上（は） (Now that... I must naturally / Resolute commitment)
+Connection: Plain form (V / い形 / な形である / Nである) + からには / 以上（は）
+Nuance: Strong moral conviction and determination! The second clause almost ALWAYS ends in volition, necessity, or command: 〜つもりだ, 〜べきだ, 〜なければならない, or 〜てください. Never used for passive accidental results.
+一度引き受けた（　　）、どんなに困難でも責任を持ってやり遂げるべきだ。 | ['からには', 'あまり', 'あげく', '末に'] | correct: 0
+[{'text': 'からには', 'isCorrect': True, 'reason': 'Correct! "Now that you took on the job, you must finish it" is the signature meaning of からには.'}, {'text': 'あまり', 'isCorrect': False, 'reason': 'Incorrect. あまり means "due to excessive emotion/stress, an abnormal result occurred".'}, {'text': 'あげく', 'isCorrect': False, 'reason': 'Incorrect. あげく means "after a long struggle, ended up with a bad result".'}, {'text': '末に', 'isCorrect': False, 'reason': 'Incorrect. 末に means "after a long process, a decision was reached", without the moral command tone.'}]
+gp-amari | 〜あまり (Excessive emotion leading to abnormal outcome)
+Connection: V-辞書形 / V-た + あまり | N + の + あまり
+Nuance: The trigger MUST be an intense psychological state (喜び, 緊張, 怒り, 心配, 悲哀). The outcome is something the subject couldn't prevent—such as fainting, bursting into tears, or making a shocking blunder.
+母は私の合格通知を見て、嬉しさの（　　）大声を上げて泣き崩れた。 | ['あまり', 'おかげで', 'せいで', '次第'] | correct: 0
+[{'text': 'あまり', 'isCorrect': True, 'reason': 'Correct! 嬉しさのあまり expresses joy so intense that it caused her to cry uncontrollably.'}, {'text': 'おかげで', 'isCorrect': False, 'reason': 'Incorrect. おかげで explains logical gratitude, not an involuntary psychological reflex.'}, {'text': 'せいで', 'isCorrect': False, 'reason': 'Incorrect. せいで implies blame for a bad thing, but acceptance is a wonderful event.'}, {'text': '次第', 'isCorrect': False, 'reason': 'Incorrect. 次第 means "as soon as (business)" and cannot connect to an emotion noun in this way.'}]
+gp-ageku | 〜あげく / 〜あげくに (After prolonged ordeal... ended up with a bad result)
+Connection: V-た + あげく / N + の + あげく
+Nuance: CONTRAST WITH 〜末に (すえに): 〜末に can end in either a good or bad major decision (e.g. 苦労の末に成功した). But 〜あげく ALMOST ALWAYS ends in disappointment, exhaustion, or a terrible outcome (e.g. argued for 3 hours, ended up breaking up).
+夫婦で散々（　　）あげく、結局離婚することになってしまった。 | ['口論した', '口論する', '口論して', '口論しようと'] | correct: 0
+[{'text': '口論した', 'isCorrect': True, 'reason': 'Correct! V-た (口論した) + あげく accurately highlights the prolonged arguing that concluded in divorce.'}, {'text': '口論する', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot connect to あげく when describing a completed history.'}, {'text': '口論して', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot connect to あげく.'}, {'text': '口論しようと', 'isCorrect': False, 'reason': 'Incorrect. Volitional form does not fit.'}]
+gp-conditionals-four | The 4 Conditionals Decoded: と vs ば vs たら vs なら
+Connection: V-る + と | V-eば | V-た + ら | N / Plain + なら
+Nuance: Pay extreme attention to clause restrictions: 〜と and 〜ば CANNOT have volitional endings (〜てください, 〜ましょう, 〜つもりだ) when the subjects are deliberate actions! If you see "〜てください" at the end of the sentence, 〜たら or 〜なら is almost certainly required.
+駅に着い（　　）、すぐに私に電話をかけてください。 | ['たら', 'てと', 'れば', 'るなら'] | correct: 0
+[{'text': 'たら', 'isCorrect': True, 'reason': 'Correct! 〜たら (着いたら) is the only conditional form here that naturally permits a polite command (〜てください) in the following clause.'}, {'text': 'てと', 'isCorrect': False, 'reason': 'Incorrect. Ungrammatical connection.'}, {'text': 'れば', 'isCorrect': False, 'reason': 'Incorrect. 着けば cannot pair with a volitional request when the same person controls the arrival.'}, {'text': 'るなら', 'isCorrect': False, 'reason': 'Incorrect. 着くなら would mean "If you intend to arrive (before arriving)", but you want them to call AFTER arriving.'}]
+gp-sae-ba | 〜さえ〜ば (If only X... then everything is fine)
+Connection: N + さえ + V-ば / い形-ければ / な形-なら / N-なら | V-stem + さえすれば
+Nuance: Expresses minimalism and laser focus: all other concerns are trivial if this one condition is met. Highly frequent in JLPT reading passages (e.g., as long as you have health, as long as you love each other).
+お金（　　）あれば、幸せになれるというわけではない。 | ['さえ', 'こそ', 'ばかり', 'ほど'] | correct: 0
+[{'text': 'さえ', 'isCorrect': True, 'reason': 'Correct! お金さえあれば forms "if only one has money", perfectly completing the conditional.'}, {'text': 'こそ', 'isCorrect': False, 'reason': 'Incorrect. こそ is for strong emphasis ("precisely because X") and doesn\'t form this conditional idiom.'}, {'text': 'ばかり', 'isCorrect': False, 'reason': 'Incorrect. お金ばかりあれば is ungrammatical.'}, {'text': 'ほど', 'isCorrect': False, 'reason': 'Incorrect. ほど indicates degree or comparison ("to the extent of").'}]
+gp-toshitara | 〜としたら / 〜とすれば (Supposing that... / Pure hypothesis)
+Connection: Plain form (V / い形 / な形だ / Nだ) + としたら / とすれば
+Nuance: Introduces imaginative, counter-factual, or thought-experiment conditions ("If you won 100 million yen...", "If aliens existed..."). としたら tends to focus on the speaker's subjective feelings or actions; とすれば focuses on logical deduction.
+その話が本当だ（　　）、大変な大事件になりますね。 | ['とすれば', 'にしたがって', 'につれて', 'とともに'] | correct: 0
+[{'text': 'とすれば', 'isCorrect': True, 'reason': 'Correct! Noun + だとすれば sets up the hypothesis: "If that premise holds, then logically Y follows".'}, {'text': 'にしたがって', 'isCorrect': False, 'reason': 'Incorrect. にしたがって means "as X progresses, Y changes proportionately".'}, {'text': 'につれて', 'isCorrect': False, 'reason': 'Incorrect. につれて denotes parallel continuous change over time.'}, {'text': 'とともに', 'isCorrect': False, 'reason': 'Incorrect. とともに means "together with" or "simultaneously as".'}]
+gp-mononara | 〜ものなら (If by any miracle it were possible / Threatening warning)
+Connection: 1) V-可能形 (Potential) + ものなら | 2) V-意向形 / V-る + ものなら
+Nuance: With Potential verbs (やり直せるものなら, 帰れるものなら), it conveys heartbreaking longing for something virtually impossible in reality. With non-potential verbs (遅刻しようものなら), it carries a grave warning: "If you dare do X, you will face severe wrath!"
+あの厳格な部長の前でミスを（　　）ものなら、即座に大目玉を食らうだろう。 | ['しよう', 'する', 'した', 'して'] | correct: 0
+[{'text': 'しよう', 'isCorrect': True, 'reason': 'Correct! V-よう (しよう) + ものなら expresses the ominous threat: "If you so much as dare make a mistake..."'}, {'text': 'する', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form without potential does not create this warning construction.'}, {'text': 'した', 'isCorrect': False, 'reason': 'Incorrect. Past form した does not connect to ものなら.'}, {'text': 'して', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot connect to ものなら.'}]
+gp-naikotoniwa | 〜ないことには（〜ない） (Unless X happens... Y is impossible)
+Connection: V-ない + ことには | い形-くない + ことには | な形-でない + ことには | N-でない + ことには
+Nuance: The result clause ALWAYS contains a negative or impossible predicate: 〜ない, 〜できない, 〜わからない. It establishes X as a strict, non-negotiable prerequisite gatekeeper.
+双方の話を直接（　　）ことには、どちらに責任があるか判断できない。 | ['聞かない', '聞いた', '聞く', '聞いている'] | correct: 0
+[{'text': '聞かない', 'isCorrect': True, 'reason': 'Correct! V-ない (聞かない) + ことには forms "unless we listen... we cannot judge".'}, {'text': '聞いた', 'isCorrect': False, 'reason': 'Incorrect. Past form cannot connect to ことには.'}, {'text': '聞く', 'isCorrect': False, 'reason': 'Incorrect. Affirmative dictionary form cannot connect here.'}, {'text': '聞いている', 'isCorrect': False, 'reason': 'Incorrect. Progressive form cannot connect to ことには.'}]
+gp-dake-shika | 〜だけ vs 〜しか〜ない (Neutral Only vs Insufficiency Only)
+Connection: Noun / Quantifier + だけ (Affirmative or Negative) | Noun / Quantifier + しか + NEGATIVE VERB (〜ない)
+Nuance: Notice: しか MUST always end with a negative verb! "千円しかあります" is completely ungrammatical in Japanese ❌. It must be "千円しかありません" (I have only a mere 1,000 yen). With particles: だけに, だけを, but にしか, でしか (しか takes the outer position).
+昨夜は忙しくて、睡眠時間が三時間（　　）取れなかった。 | ['しか', 'だけ', 'ばかり', 'ほど'] | correct: 0
+[{'text': 'しか', 'isCorrect': True, 'reason': 'Correct! しか + 取れなかった forms "could only get a mere 3 hours", stressing scarcity.'}, {'text': 'だけ', 'isCorrect': False, 'reason': 'Incorrect. If using だけ, it would be 三時間だけ取れた (neutral affirmative). With 取れなかった, it sounds awkward.'}, {'text': 'ばかり', 'isCorrect': False, 'reason': 'Incorrect. 三時間ばかり取れなかった is ungrammatical.'}, {'text': 'ほど', 'isCorrect': False, 'reason': 'Incorrect. ほど doesn\'t carry the restrictive "only a mere" emphasis of しか.'}]
+gp-wo-hajime | 〜をはじめ（として） (Starting with... primary representative)
+Connection: N + をはじめ / をはじめとして / をはじめとする + N
+Nuance: Formal and informative. Used when presenting an impressive lineup, delegation, or category where X is the flagship example (e.g. "Starting with the Prime Minister, many dignitaries attended").
+校長先生（　　）、教職員の皆様には心より感謝申し上げます。 | ['をはじめ', 'を通じて', 'にわたって', 'に限って'] | correct: 0
+[{'text': 'をはじめ', 'isCorrect': True, 'reason': 'Correct! 校長先生をはじめ highlights the principal as the flagship leader of the entire teaching staff.'}, {'text': 'を通じて', 'isCorrect': False, 'reason': 'Incorrect. を通じて means "throughout a whole period" or "via a medium".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって denotes continuous span across time or geographical space.'}, {'text': 'に限って', 'isCorrect': False, 'reason': 'Incorrect. に限って means "of all unfortunate days" or "specifically only X".'}]
+gp-ni-watatte | 〜にわたって / 〜にわたり (Spanning across time or space)
+Connection: N (Time duration / Geographical expanse / Number of times) + にわたって / にわたり / にわたる + N
+Nuance: Signifies breadth, grand scale, and extensive duration (e.g., across 10 years, across the whole country, across 5 rounds of negotiations). It elevates the sense of scale compared to simple 間.
+台風の影響で、関東全域（　　）停電が発生した。 | ['にわたって', 'をはじめ', 'にとって', 'をめぐって'] | correct: 0
+[{'text': 'にわたって', 'isCorrect': True, 'reason': 'Correct! 関東全域にわたって captures the vast geographic expanse over which blackouts occurred.'}, {'text': 'をはじめ', 'isCorrect': False, 'reason': 'Incorrect. をはじめ requires a single representative member, not an entire region.'}, {'text': 'にとって', 'isCorrect': False, 'reason': 'Incorrect. にとって means "from the perspective of".'}, {'text': 'をめぐって', 'isCorrect': False, 'reason': 'Incorrect. をめぐって means "controversy surrounding a disputed issue".'}]
+gp-wo-tsuujite | 〜を通じて / 〜を通して (Throughout period / Via medium)
+Connection: N + を通じて / を通して (つうじて / とおして)
+Nuance: Dual meaning: 1) Time: 四季を通じて (throughout the 4 seasons / all year round). 2) Medium: 友人を通じて知り合った (we got to know each other through a mutual friend). Note: Direct physical tools like pen/scissors take で, not を通じて.
+ボランティア活動（　　）、多くの素晴らしい仲間と出会うことができた。 | ['を通じて', 'にわたって', 'にかけて', 'に際して'] | correct: 0
+[{'text': 'を通じて', 'isCorrect': True, 'reason': 'Correct! ボランティア活動を通じて means "by way of / through the experience of volunteer work".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって measures numerical duration/expanse, not a qualitative medium.'}, {'text': 'にかけて', 'isCorrect': False, 'reason': 'Incorrect. にかけて requires starting and ending bounds (AからBにかけて).'}, {'text': 'に際して', 'isCorrect': False, 'reason': 'Incorrect. に際して means "on the ceremonial occasion of".'}]
+gp-ni-kagiri | 〜に限り（にかぎり） (Strictly limited to... exclusive privilege)
+Connection: N + に限り / に限る
+Nuance: Formal announcements, ticketing rules, promotions, and regulations: "Only on weekends", "Only for first-time visitors". It firmly draws an unbendable line excluding all others.
+このクーポン券は、平日のランチタイム（　　）ご利用いただけます。 | ['に限り', 'に限って', 'をはじめ', 'をめぐって'] | correct: 0
+[{'text': 'に限り', 'isCorrect': True, 'reason': 'Correct! に限り marks the strict exclusive terms of the coupon validity.'}, {'text': 'に限って', 'isCorrect': False, 'reason': 'Incorrect. に限って expresses subjective misfortune ("of all days!") or selective trust, not official rules.'}, {'text': 'をはじめ', 'isCorrect': False, 'reason': 'Incorrect. をはじめ means "starting with representative example".'}, {'text': 'をめぐって', 'isCorrect': False, 'reason': 'Incorrect. をめぐって indicates dispute/debate surrounding an issue.'}]
+gp-ni-kagitte | 〜に限って（にかぎって） (Of all unlucky days! / Selective trust)
+Connection: N + に限って
+Nuance: CONTRAST WITH 〜に限り: に限り is dry, official and neutral (rules, discounts). In contrast, に限って is intensely emotional! 傘を持っていない日に限って、雨が降る ("Of all days, it rains specifically on the day I forgot my umbrella!").
+急いでいる時（　　）、前の車がやたらと遅くてイライラする。 | ['に限って', 'に限り', 'に反して', 'を通じて'] | correct: 0
+[{'text': 'に限って', 'isCorrect': True, 'reason': 'Correct! 急いでいる時に限って perfectly captures the ironic, irritating bad timing.'}, {'text': 'に限り', 'isCorrect': False, 'reason': 'Incorrect. に限り is for objective rule eligibility (discounts, admission), not subjective frustration.'}, {'text': 'に反して', 'isCorrect': False, 'reason': 'Incorrect. に反して means "contrary to expectations/wishes".'}, {'text': 'を通じて', 'isCorrect': False, 'reason': 'Incorrect. を通じて means "throughout or via".'}]
+gp-bakarika | 〜ばかりか / 〜のみならず (Not only X... but even Y!)
+Connection: Plain form (V / い形 / な形-な / N-である) + ばかりか | のみならず
+Nuance: Escalation marker: Clause B adds something beyond the baseline expectation (often with も or さえ). Nuance distinction: 〜ばかりか often emphasizes surprise or grievance, while 〜のみならず is formal/written Japanese suitable for essays and academic speeches.
+今回の不祥事は会社の信用を失墜させた（　　）、巨額の損害賠償問題にまで発展した。 | ['ばかりか', 'わりに', '反面', 'あげく'] | correct: 0
+[{'text': 'ばかりか', 'isCorrect': True, 'reason': 'Correct! V-た (失墜させた) + ばかりか sets up the escalation: "not only X, but even went so far as Y".'}, {'text': 'わりに', 'isCorrect': False, 'reason': 'Incorrect. わりに means "considering the ratio/standard" and doesn\'t express additive escalation.'}, {'text': '反面', 'isCorrect': False, 'reason': 'Incorrect. 反面 presents a balancing opposite facet (e.g. convenient, but dangerous).'}, {'text': 'あげく', 'isCorrect': False, 'reason': 'Incorrect. Ungrammatical here; doesn\'t form the "not only X, but even Y" pair with にまで.'}]
+gp-noni-temo | 〜のに vs 〜ても (Frustration / Expectation Clash vs Pure Concession)
+Connection: 〜のに: Plain form + のに / な形 + なのに / N + なのに | 〜ても: V-て + も / い形-くても / な形/N + でも
+Nuance: Crucial contrast: 〜のに ALWAYS describes a concrete factual past or current reality that clashes with expectations ("I studied hard, yet I failed"). You CANNOT use commands, requests, or intentions with のに (e.g. "雨なのに、傘を持っていきなさい" ❌ is wrong; use 雨でも).
+熱がまだ三十八度も（　　）のに、彼は無理をして出社しようとした。 | ['ある', 'あって', 'あった', 'あり'] | correct: 0
+[{'text': 'ある', 'isCorrect': True, 'reason': 'Correct! 熱がある (having a fever right now) + のに accurately contrasts the current fever with his reckless effort.'}, {'text': 'あって', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot connect to のに.'}, {'text': 'あった', 'isCorrect': False, 'reason': 'Incorrect. まだ (still) emphasizes the ongoing condition, so non-past あるのに is natural.'}, {'text': 'あり', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem cannot connect to のに.'}]
+gp-warini-nishiteha | 〜わりに（は） vs 〜にしては (Ratio Assessment vs Strict Criteria Defier)
+Connection: 〜わりに: Plain form (V / い形 / な形-な / N-の) + わりに | 〜にしては: Plain form (V / い形 / な形 / N) + にしては (NO の/な!)
+Nuance: Notice connection: 70歳なのに元気だ → 70歳のわりに(は)元気だ (Ratio) vs 70歳にしては元気だ (Criteria). In にしては, you CANNOT put な or の with nouns (70歳にしては, NOT 70歳のにしては ❌). わりに can be used with generic concept words like 値段, 年齢, 努力.
+彼は日本に住んでまだ半年（　　）、日常会話がとてもスムーズだ。 | ['にしては', 'のわりに', 'わりに', 'ながら'] | correct: 0
+[{'text': 'にしては', 'isCorrect': True, 'reason': 'Correct! 半年にしては attaches directly to the specific milestone: "For someone with only half a year, he is remarkably smooth".'}, {'text': 'のわりに', 'isCorrect': False, 'reason': 'Incorrect. If using わりに with a noun, it would be 半年のわりに, but the prompt has no の before the blank.'}, {'text': 'わりに', 'isCorrect': False, 'reason': 'Incorrect. Nouns cannot connect directly to わりに without の (needs 半年のわりに).'}, {'text': 'ながら', 'isCorrect': False, 'reason': 'Incorrect. ながら requires verb stem or formal concession patterns, not bare time spans.'}]
+gp-hanmen-ippou | 〜反面（はんめん） vs 〜一方（いっぽう）（で） (Opposite Face vs Dual Perspectives)
+Connection: Plain form (V / い形) + 反面 / 一方（で） | な形 + な/である + 反面 / 一方（で） | N + である + 反面 / 一方（で）
+Nuance: 反面 literally means "the opposite surface of a coin": convenient on the surface, but fraught with hidden peril on the other. 一方で can contrast two different trends occurring in parallel (e.g. "Urban populations are rising, while rural populations are shrinking").
+リモートワークは通勤の負担がない（　　）、オンとオフの切り替えが難しくなりがちだ。 | ['反面', 'あげく', 'ばかりに', '次第'] | correct: 0
+[{'text': '反面', 'isCorrect': True, 'reason': 'Correct! 反面 cleanly balances the positive facet (no commute) against the negative flip side.'}, {'text': 'あげく', 'isCorrect': False, 'reason': 'Incorrect. あげく requires past tense (た) denoting the bitter end of an ordeal.'}, {'text': 'ばかりに', 'isCorrect': False, 'reason': 'Incorrect. ばかりに means "simply because of one mistake, disaster struck".'}, {'text': '次第', 'isCorrect': False, 'reason': 'Incorrect. 次第 indicates immediate future execution, not contrast.'}]
+gp-monono | 〜ものの / 〜とはいうものの (Although it is a fact that... still)
+Connection: Plain form (V / い形 / な形-である / N-である) + ものの | な形 + なものの
+Nuance: Formal written concession: "It is true that X, but in reality Y." Unlike casual けれど, ものの carries a mature, reflective tone often used in formal writing, reviews, and business retrospectives.
+春とは（　　）ものの、朝晩はまだまだ厳しい寒さが続いている。 | ['いう', 'いって', 'いえば', 'いったら'] | correct: 0
+[{'text': 'いう', 'isCorrect': True, 'reason': 'Correct! 「〜とはいうものの」 is the established idiomatic concession pattern meaning "although it is termed X".'}, {'text': 'いって', 'isCorrect': False, 'reason': 'Incorrect. とはいって cannot take ものの in this way.'}, {'text': 'いえば', 'isCorrect': False, 'reason': 'Incorrect. といえば means "speaking of which", not concession.'}, {'text': 'いったら', 'isCorrect': False, 'reason': 'Incorrect. といったら expresses extreme degree (e.g. その美しさといったら).'}]
+gp-dokoroka | 〜どころか / 〜どころではない (Far from X... actually extreme Y!)
+Connection: Plain form / N + どころか | V-辞書形 / N + どころではない
+Nuance: Massive psychological contrast! "Did you pass? Pass?! Far from passing, I got the lowest score in the class!" (合格どころか、最下位だった). With どころではない, it stresses absolute impossibility due to overwhelm: "Vacation? With this deadline, I can't even think of vacation!"
+来週のプレゼンの準備で徹夜続きで、週末に遊びに行く（　　）。 | ['どころではない', 'どころか', '反面', 'ものの'] | correct: 0
+[{'text': 'どころではない', 'isCorrect': True, 'reason': 'Correct! 「〜どころではない」 conveys: "I am in no condition or position to even consider having fun!".'}, {'text': 'どころか', 'isCorrect': False, 'reason': 'Incorrect. どころか requires a contrasting extreme follow-up clause (e.g. 遊びに行くどころか寝る時間もない).'}, {'text': '反面', 'isCorrect': False, 'reason': 'Incorrect. 反面 presents a dual balancing aspect, not overwhelming impossibility.'}, {'text': 'ものの', 'isCorrect': False, 'reason': 'Incorrect. Ungrammatical sentence ending here.'}]
+gp-hazuda-kamoshirenai | 〜はずだ vs 〜かもしれない (Logical Expectation vs Unverified Possibility)
+Connection: 〜はずだ: Plain form (V / い形) + はずだ / な形 + なはずだ / N + のはずだ | 〜かもしれない: Plain form (without だ) + かもしれない
+Nuance: Notice connection: With nouns, はず demands の (田中さんの職務のはずだ), whereas かもしれない attaches bare to nouns without だ (雨かもしれない, NOT 雨だかもしれない ❌). Furthermore, 〜はずがない means "there is no logical way that... (complete disbelief)".
+今日は日曜日だから、市役所は休み（　　）だ。 | ['のはず', 'はず', 'なはず', 'であるはず'] | correct: 0
+[{'text': 'のはず', 'isCorrect': True, 'reason': 'Correct! Noun + の + はず forms 休みのはずだ ("should be closed").'}, {'text': 'はず', 'isCorrect': False, 'reason': 'Incorrect. Nouns cannot connect directly to はず without の.'}, {'text': 'なはず', 'isCorrect': False, 'reason': 'Incorrect. な is for な-adjectives, but 休み is a noun.'}, {'text': 'であるはず', 'isCorrect': False, 'reason': 'Incorrect. While grammatically possible in hyper-formal writing, のはず is the natural standard Japanese pattern.'}]
+gp-wake-trio | The "Wake" Trio: わけだ vs わけがない vs わけではない
+Connection: Plain form (V / い形 / な形-な / N-の/な) + わけだ / わけがない / わけではない
+Nuance: The ultimate Japanese logic pillar! わけ signifies the internal reason/logic of the universe. わけだ = "The puzzle pieces fit, now I understand why it's cold!" わけがない = "Such a thing defies all reason and reality!" わけではない = "Don't jump to conclusions; it's not that I hate it, I'm just full."
+あんなに誠実な彼が、仲間のお金を盗む（　　）。絶対に誤解だ。 | ['わけがない', 'わけだ', 'わけではない', 'ものだ'] | correct: 0
+[{'text': 'わけがない', 'isCorrect': True, 'reason': 'Correct! 「〜わけがない」 asserts complete logical impossibility: "there is no way he would steal!".'}, {'text': 'わけだ', 'isCorrect': False, 'reason': 'Incorrect. わけだ would mean "that explains why he stole", directly contradicting his sincere reputation.'}, {'text': 'わけではない', 'isCorrect': False, 'reason': 'Incorrect. わけではない means "it doesn\'t necessarily mean...", which is too weak and contradicts "definitely a misunderstanding".'}, {'text': 'ものだ', 'isCorrect': False, 'reason': 'Incorrect. ものだ expresses general truths, nostalgias, or social norms.'}]
+gp-ni-chigainai | 〜に違いない（にちがいない） (Must be / Strong subjective certainty)
+Connection: Plain form (V / い形 / な形 / N) + に違いない (NO だ with な-adj or Nouns!)
+Nuance: CONTRAST WITH はずだ: はずだ is based on external objective calculations or promises (train timetable, contracts). に違いない is the speaker's intense subjective conviction ("Looking at his pale face, he MUST be sick!"). In casual speech, contracted to 〜に違いない / 〜に決まっている.
+朝から何も口にしていないのだから、彼は今とても（　　）に違いない。 | ['お腹が空いている', 'お腹が空くだろう', 'お腹が空いたこと', 'お腹が空かない'] | correct: 0
+[{'text': 'お腹が空いている', 'isCorrect': True, 'reason': 'Correct! V-ている form (お腹が空いている) + に違いない conveys "he must be hungry right now".'}, {'text': 'お腹が空くだろう', 'isCorrect': False, 'reason': 'Incorrect. だろう cannot be nested inside に違いない.'}, {'text': 'お腹が空いたこと', 'isCorrect': False, 'reason': 'Incorrect. Adding こと is redundant and ungrammatical here.'}, {'text': 'お腹が空かない', 'isCorrect': False, 'reason': 'Incorrect. Negative form contradicts having eaten nothing all day.'}]
+gp-ni-hokaranaranai | 〜にほかならない (Is nothing other than... / Absolutely none other than)
+Connection: N + にほかならない | から + にほかならない (Because of none other than...)
+Nuance: Formal, assertive, and philosophical. Frequently appears in conclusion paragraphs of JLPT N2/N1 essays and editorial speeches: "This victory is due to nothing other than our team's unflagging efforts" (チームの努力の賜物にほかならない).
+親が子供に対して厳しく叱るのは、将来を真剣に心配している（　　）にほかならない。 | ['から', 'ので', 'ため', 'あげく'] | correct: 0
+[{'text': 'から', 'isCorrect': True, 'reason': 'Correct! 「〜からにほかならない」 is the standard formula declaring "it is precisely because of X and nothing else".'}, {'text': 'ので', 'isCorrect': False, 'reason': 'Incorrect. ので cannot pair directly with にほかならない.'}, {'text': 'ため', 'isCorrect': False, 'reason': 'Incorrect. Would require ためである or ためにほかならない without duplicate phrasing.'}, {'text': 'あげく', 'isCorrect': False, 'reason': 'Incorrect. あげく denotes the bitter end of an ordeal.'}]
+gp-kkonai-kanenai | 〜っこない vs 〜かねない vs 〜かねる (Impossibility vs Danger vs Polite Hesitation)
+Connection: All attach to V-stem (ます形 without ます)! V-stem + っこない / かねない / かねる
+Nuance: THE TRIPLE JLPT N2 TRAP: Notice that 〜かねない ends in ない (negative appearance), but means POSITIVE DANGER ("it might very well happen!"). 〜かねる ends affirmative, but means CANNOT ("I am unable to accept"). 〜っこない is forceful conversational rejection ("I could never run a marathon!").
+申し訳ございませんが、個人情報に関わるお問い合わせにはお答えいたし（　　）。 | ['かねます', 'かねないです', 'っこないです', 'すぎます'] | correct: 0
+[{'text': 'かねます', 'isCorrect': True, 'reason': 'Correct! 「いたしかねます」 is the quintessential business Japanese phrase politely refusing an impossible request.'}, {'text': 'かねないです', 'isCorrect': False, 'reason': 'Incorrect. かねない means "there is a dangerous risk that we will answer", which is completely backwards.'}, {'text': 'っこないです', 'isCorrect': False, 'reason': 'Incorrect. っこない is casual/colloquial and highly rude in formal customer service.'}, {'text': 'すぎます', 'isCorrect': False, 'reason': 'Incorrect. すぎます means "doing excessively".'}]
+gp-giving-receiving | Giving & Receiving Triad: あげる vs くれる vs もらう (+ て-forms)
+Connection: V-て + あげる / くれる / もらう (Humble: 差し上げる, いただく | Honorific: くださる)
+Nuance: THE DEFINITIVE JLPT TRAP: The grammatical subject changes completely! In [X が 私に 〜てくれた], X is the subject. In [私 は X に 〜てもらった], "私" is the subject! Notice how using 〜てあげる directly to a teacher or boss sounds arrogant; use 〜て差し上げます or avoid entirely.
+日本語の文法が分からなかったので、田中先生に（　　）。 | ['説明していただいた', '説明してくださった', '説明してあげた', '説明してやった'] | correct: 0
+[{'text': '説明していただいた', 'isCorrect': True, 'reason': 'Correct! 「先生に説明していただいた」 (I humbly received an explanation from teacher) correctly matches the particle に marking the teacher.'}, {'text': '説明してくださった', 'isCorrect': False, 'reason': 'Incorrect. If using くださった, the teacher must be the subject marked by が: 田中先生が説明してくださった.'}, {'text': '説明してあげた', 'isCorrect': False, 'reason': 'Incorrect. あげた means YOU explained it to the teacher, which is arrogant and contextually upside down.'}, {'text': '説明してやった', 'isCorrect': False, 'reason': 'Incorrect. やった is condescending, used only for pets or watering plants.'}]
+gp-voice-ladder | The Voice Transformation Ladder: Passive (受身) → Causative (使役) → Causative-Passive (使役受身)
+Connection: 受身: あ-stem + れる / られる | 使役: あ-stem + せる / させる | 使役受身: あ-stem + される (Contracted) / させられる
+Nuance: THE SUFFERING PASSIVE (迷惑受身): Japanese uses passive voice when someone suffers from an uncontrollable external event: 電車の中で足を踏まれた (someone stepped on my foot), 泥棒に財布を盗まれた (my wallet was stolen by a thief). In CAUSATIVE-PASSIVE (使役受身), you are forced to endure something: ３時間も立たされた (I was made to stand for 3 whole hours!).
+子供の頃、母親に毎日２時間もピアノを（　　）、本当に嫌だった。 | ['練習させられて', '練習させて', '練習していただいて', '練習されて'] | correct: 0
+[{'text': '練習させられて', 'isCorrect': True, 'reason': "Correct! 練習させられる (Causative-Passive) captures being forced to practice against one's desire."}, {'text': '練習させて', 'isCorrect': False, 'reason': 'Incorrect. 練習させて is active causative ("I made my mother practice"), which is absurd.'}, {'text': '練習していただいて', 'isCorrect': False, 'reason': 'Incorrect. いただいて implies profound gratitude, directly contradicting "I truly hated it (嫌だった)".'}, {'text': '練習されて', 'isCorrect': False, 'reason': "Incorrect. Simple passive doesn't convey the sense of being compelled to perform the action."}]
+gp-keigo-core | Keigo (敬語) Survival: Sonkeigo (尊敬語) vs Kenjougo (謙譲語)
+Connection: 尊敬: いらっしゃる, おっしゃる, 召し上がる, ご覧になる | 謙譲: 参る, 申す, いただく, 拝見する, 致す
+Nuance: THE IN-GROUP / OUT-GROUP TEST TRAP: When talking to a client about your own boss, your boss is in your IN-GROUP! Therefore, you must use KENJOUGO (humble) for your own boss: "部長の田中は席を外しております" (NOT いらっしゃいません ❌). Never honor yourself or your own company when speaking to outsiders.
+（電話で）「恐れ入りますが、鈴木社長は（　　）でしょうか。」 | ['いらっしゃいます', '参られます', 'おられます', '申されます'] | correct: 0
+[{'text': 'いらっしゃいます', 'isCorrect': True, 'reason': 'Correct! 「いらっしゃいます」 is the honorific (尊敬語) form of います / 来ます, appropriately elevating the president.'}, {'text': '参られます', 'isCorrect': False, 'reason': 'Incorrect. 参る is humble (謙譲語) and cannot be used for the other party.'}, {'text': 'おられます', 'isCorrect': False, 'reason': 'Incorrect. おる is humble and inappropriate for asking about a client/partner president.'}, {'text': '申されます', 'isCorrect': False, 'reason': 'Incorrect. 申す means "to say (humble)", not "to be present".'}]
+gp-tamaranai-naranai | 〜てたまらない vs 〜てならない (Unbearable Physical Urge vs Spontaneous Deep Emotion)
+Connection: V-て / い形-くて / な形-で + たまらない / ならない / しょうがない
+Nuance: CONTRAST: 〜てたまらない is visceral and immediate: 喉が渇いてたまらない (I am dying of thirst!), 痛くてたまらない (It hurts unbearably!). 〜てならない is psychological and reflective: 彼の将来が心配でならない (I cannot help feeling profound anxiety about his future).
+一人暮らしの祖母の健康状態が（　　）ならない。 | ['心配で', '心配して', '心配な', '心配に'] | correct: 0
+[{'text': '心配で', 'isCorrect': True, 'reason': 'Correct! な-adjective (心配) takes で to connect to ならない, forming 心配でならない ("cannot help worrying").'}, {'text': '心配して', 'isCorrect': False, 'reason': 'Incorrect. While 心配する is a verb, 心配でならない is the standard idiomatic expression for deep spontaneous worry.'}, {'text': '心配な', 'isCorrect': False, 'reason': 'Incorrect. な cannot connect to ならない.'}, {'text': '心配に', 'isCorrect': False, 'reason': 'Incorrect. に cannot connect to ならない.'}]
+gp-zaruwokenai | 〜ざるを得ない（ざるをえない） (Have no choice but to do / Compelled by circumstance)
+Connection: V-ない stem (without ない) + ざるを得ない | EXCEPTION: する → せざるを得ない
+Nuance: Heavy reluctance: "Against all personal desire, cold objective reality gives me zero alternative." CRITICAL IRREGULARITY: The verb する does NOT become しざるを得ない! It becomes せざるを得ない (sezaru o enai). Always tested on JLPT N2!
+台風が接近しているため、残念ながら明日の野外イベントは中止（　　）。 | ['せざるを得ない', 'しざるを得ない', 'するざるを得ない', 'されざるを得ない'] | correct: 0
+[{'text': 'せざるを得ない', 'isCorrect': True, 'reason': 'Correct! The irregular verb する strictly conjugates to せざるを得ない.'}, {'text': 'しざるを得ない', 'isCorrect': False, 'reason': 'Incorrect. しざるを得ない is the classic distractor trap on JLPT N2! Always remember する becomes せ.'}, {'text': 'するざるを得ない', 'isCorrect': False, 'reason': 'Incorrect. Dictionary form cannot attach to ざるを得ない.'}, {'text': 'されざるを得ない', 'isCorrect': False, 'reason': 'Incorrect. Ungrammatical mixture.'}]
+gp-ippouda | 〜一方だ / 〜ばかりだ (Steadily trending in one direction)
+Connection: V-辞書形 (Change verbs: 増える, 減る, 悪化する, 上がる) + 一方だ / ばかりだ
+Nuance: Verbs used with this pattern MUST express continuous change (変化動詞). You cannot say "食べる一方だ" ❌ unless you say "体重が増える一方だ" (weight keeps increasing).
+不況の影響で、会社の業績は悪化する（　　）で、社員の不安が募っている。 | ['一方', 'ばかりか', '反面', '次第'] | correct: 0
+[{'text': '一方', 'isCorrect': True, 'reason': 'Correct! 「悪化する一方」 indicates that business performance is deteriorating steadily in one continuous direction.'}, {'text': 'ばかりか', 'isCorrect': False, 'reason': 'Incorrect. ばかりか means "not only X, but also Y" and requires an additive clause.'}, {'text': '反面', 'isCorrect': False, 'reason': 'Incorrect. 反面 presents a dual balancing facet, not an ongoing trend.'}, {'text': '次第', 'isCorrect': False, 'reason': 'Incorrect. 次第 requires verb stem to mean "as soon as (business)".'}]
+gp-ni-tsurete | 〜につれて / 〜にしたがって (As X progresses, Y proportionately changes)
+Connection: V-辞書形 / N (Change noun) + につれて / にしたがって
+Nuance: CONTRAST: 〜につれて describes natural, automatic proportional changes (e.g. as temperature rises, ice melts; as you grow older, physical stamina declines). 〜にしたがって can ALSO mean following formal orders/rules (法律にしたがって = according to law).
+台風が（　　）につれて、風雨がますます強まってきた。 | ['近づく', '近づいた', '近づき', '近づいて'] | correct: 0
+[{'text': '近づく', 'isCorrect': True, 'reason': 'Correct! V-辞書形 (近づく) + につれて captures the parallel surge of storm intensity as the typhoon approaches.'}, {'text': '近づいた', 'isCorrect': False, 'reason': 'Incorrect. Past form cannot connect to につれて.'}, {'text': '近づき', 'isCorrect': False, 'reason': 'Incorrect. Masu-stem does not connect to につれて.'}, {'text': '近づいて', 'isCorrect': False, 'reason': 'Incorrect. Te-form cannot connect to につれて.'}]
+gp-ni-oujite | 〜に応じて（におうじて） (In proportion to / Adapted to)
+Connection: N + に応じて / に応じた + N
+Nuance: Customization marker: "Tailored to your budget", "According to skill level", "In response to customer requests". Unlike につれて (passive natural change), に応じて is intentional calibration and bespoke adaptation.
+お客様のご予算（　　）、最適なリフォームプランをご提案いたします。 | ['に応じて', 'をはじめ', 'にわたって', 'に際して'] | correct: 0
+[{'text': 'に応じて', 'isCorrect': True, 'reason': 'Correct! ご予算に応じて means "tailored flexibly to match your budget".'}, {'text': 'をはじめ', 'isCorrect': False, 'reason': 'Incorrect. をはじめ means "starting with representative example".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって measures time/geographic expanse.'}, {'text': 'に際して', 'isCorrect': False, 'reason': 'Incorrect. に際して means "on the ceremonial occasion of".'}]
+gp-to-ittara | 〜といったら / 〜といえば (When talking about... astounding degree!)
+Connection: N + といったら / といえば
+Nuance: Astonishment marker! With といったら, it brings up an extreme quality and emphasizes how staggering, breathtaking, or awful it was: 富士山の山頂から見た日の出の美しさといったら、言葉にできないほどだった ("As for the beauty of that sunrise, it was beyond words!").
+初めて満点のテストを見た時の母の喜び（　　）、家中を飛び跳ねていた。 | ['といったら', 'を通じて', 'にわたって', 'にあたって'] | correct: 0
+[{'text': 'といったら', 'isCorrect': True, 'reason': 'Correct! 「母の喜びといったら」 brings up her joy and stresses its astounding, animated intensity.'}, {'text': 'を通じて', 'isCorrect': False, 'reason': 'Incorrect. を通じて means "throughout or via".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって measures numerical duration/expanse.'}, {'text': 'にあたって', 'isCorrect': False, 'reason': 'Incorrect. にあたって means "on the threshold of a momentous event".'}]
+gp-wo-towazu | 〜を問わず（をとわず） (Regardless of... / Open to all)
+Connection: N (Contrasting pair or broad category: 年齢, 性別, 国籍, 昼夜, 経験) + を問わず
+Nuance: Official, welcoming, or inclusive announcements: "Recruiting participants regardless of age or gender" (年齢や性別を問わず募集). It explicitly removes discriminatory or selective barriers.
+救急救命センターのスタッフは、昼夜を（　　）患者の治療に全力を尽くしている。 | ['問わず', '限って', 'めぐって', '沿って'] | correct: 0
+[{'text': '問わず', 'isCorrect': True, 'reason': 'Correct! 「昼夜を問わず」 is the established idiom meaning "day and night alike / around the clock".'}, {'text': '限って', 'isCorrect': False, 'reason': 'Incorrect. に限って means "specifically only / of all days".'}, {'text': 'めぐって', 'isCorrect': False, 'reason': 'Incorrect. をめぐって means "dispute surrounding an issue".'}, {'text': '沿って', 'isCorrect': False, 'reason': 'Incorrect. に沿って means "in accordance with a guideline".'}]
+gp-ha-tomokaku | 〜はともかく（として） (Setting aside X for now... what really matters is Y)
+Connection: N + はともかく / はともかくとして
+Nuance: Priority filter: "Look, whether the design is pretty or not is beside the point for now; what matters is whether it actually works!" (デザインはともかく、使いやすさが一番だ). Pragmatic and prioritizing.
+結果（　　）、全力を出し切って戦った選手たちの健闘を称えたい。 | ['はともかく', 'をはじめ', 'にわたって', 'のもとに'] | correct: 0
+[{'text': 'はともかく', 'isCorrect': True, 'reason': 'Correct! 「結果はともかく」 sets aside the final score to applaud their unwavering dedication.'}, {'text': 'をはじめ', 'isCorrect': False, 'reason': 'Incorrect. をはじめ means "starting with representative example".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって measures time/spatial expanse.'}, {'text': 'のもとに', 'isCorrect': False, 'reason': 'Incorrect. のもとに means "under the supervision/guidance of".'}]
+gp-motoni-motozuite | 〜をもとに vs 〜に基づいて (Creative Material vs Statutory / Fact Basis)
+Connection: N + をもとに / をもとにして | N + に基づいて / に基づく + N
+Nuance: CONTRAST: If a novelist writes a book inspired by a true event, use をもとに (実話をもとにした小説). If a judge passes a verdict based on the constitution, use に基づいて (法律に基づいて判決を下す). に基づいて demands strict fidelity to rules and hard facts.
+最新の調査データ（　　）、今後のマーケティング戦略を慎重に策定した。 | ['に基づいて', 'をはじめ', 'をめぐって', 'に際して'] | correct: 0
+[{'text': 'に基づいて', 'isCorrect': True, 'reason': 'Correct! 「最新の調査データに基づいて」 represents a rigorous, empirical foundation for decision-making.'}, {'text': 'をはじめ', 'isCorrect': False, 'reason': 'Incorrect. をはじめ introduces a representative example.'}, {'text': 'をめぐって', 'isCorrect': False, 'reason': 'Incorrect. をめぐって indicates dispute/conflict surrounding an issue.'}, {'text': 'に際して', 'isCorrect': False, 'reason': 'Incorrect. に際して means "on the ceremonial occasion of".'}]
+gp-ni-taishite | 〜に対して vs 〜にとって (Target / Contrast vs Personal Perspective)
+Connection: N + に対して / に対する + N | N + にとって / にとっての + N
+Nuance: THE CLASSIC JLPT N3/N2 CONFUSION: Notice the direction! にとって evaluates psychological value or impact on the person ("To a child, play is education"). に対して directs an action or emotion outward toward an external target ("Be polite towards customers: お客様に対して丁寧にしなさい").
+外国語を習得することは、私（　　）世界への視野を広げる最高の冒険だ。 | ['にとって', 'に対して', 'を通じて', 'にわたって'] | correct: 0
+[{'text': 'にとって', 'isCorrect': True, 'reason': 'Correct! 「私にとって」 expresses "from my perspective / in my eyes, it is the greatest adventure".'}, {'text': 'に対して', 'isCorrect': False, 'reason': 'Incorrect. に対して means "directed toward someone" or "in stark contrast to", which does not evaluate personal meaning.'}, {'text': 'を通じて', 'isCorrect': False, 'reason': 'Incorrect. を通じて means "through or via a medium".'}, {'text': 'にわたって', 'isCorrect': False, 'reason': 'Incorrect. にわたって measures time or spatial expanse.'}]

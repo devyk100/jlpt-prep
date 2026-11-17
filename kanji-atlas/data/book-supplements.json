@@ -1,0 +1,1488 @@
+[
+  {
+    "character": "仮",
+    "strokes": 6,
+    "freq": 1039,
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "かり",
+      "かり-"
+    ],
+    "meanings": [
+      "sham",
+      "temporary",
+      "interim",
+      "assumed (name)",
+      "informal"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "価",
+    "strokes": 8,
+    "freq": 250,
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "あたい"
+    ],
+    "meanings": [
+      "value",
+      "price"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "保",
+    "strokes": 9,
+    "freq": 146,
+    "onyomi": [
+      "ホ",
+      "ホウ"
+    ],
+    "kunyomi": [
+      "たも.つ"
+    ],
+    "meanings": [
+      "protect",
+      "guarantee",
+      "keep",
+      "preserve",
+      "sustain",
+      "support"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "修",
+    "strokes": 10,
+    "freq": 603,
+    "onyomi": [
+      "シュウ",
+      "シュ"
+    ],
+    "kunyomi": [
+      "おさ.める",
+      "おさ.まる"
+    ],
+    "meanings": [
+      "discipline",
+      "conduct oneself well",
+      "study",
+      "master"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "健",
+    "strokes": 11,
+    "freq": 572,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "すこ.やか"
+    ],
+    "meanings": [
+      "healthy",
+      "health",
+      "strength",
+      "persistence"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "博",
+    "strokes": 12,
+    "freq": 794,
+    "onyomi": [
+      "ハク",
+      "バク"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "Dr.",
+      "command",
+      "esteem",
+      "win acclaim",
+      "Ph.D.",
+      "exposition",
+      "fair"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "及",
+    "strokes": 3,
+    "freq": 544,
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "およ.ぶ",
+      "およ.び",
+      "および",
+      "およ.ぼす"
+    ],
+    "meanings": [
+      "reach out",
+      "exert",
+      "exercise",
+      "cause"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "司",
+    "strokes": 5,
+    "freq": 759,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "つかさど.る"
+    ],
+    "meanings": [
+      "director",
+      "official",
+      "govt office",
+      "rule",
+      "administer"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "善",
+    "strokes": 12,
+    "freq": 765,
+    "onyomi": [
+      "ゼン"
+    ],
+    "kunyomi": [
+      "よ.い",
+      "い.い",
+      "よ.く",
+      "よし.とする"
+    ],
+    "meanings": [
+      "virtuous",
+      "good",
+      "goodness"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "器",
+    "strokes": 15,
+    "freq": 525,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "うつわ"
+    ],
+    "meanings": [
+      "utensil",
+      "vessel",
+      "receptacle",
+      "implement",
+      "instrument",
+      "ability",
+      "container",
+      "tool",
+      "set"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "基",
+    "strokes": 11,
+    "freq": 241,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "もと",
+      "もとい"
+    ],
+    "meanings": [
+      "fundamentals",
+      "radical (chem)",
+      "counter for machines",
+      "foundation"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "壁",
+    "strokes": 16,
+    "freq": 1037,
+    "onyomi": [
+      "ヘキ"
+    ],
+    "kunyomi": [
+      "かべ"
+    ],
+    "meanings": [
+      "wall",
+      "lining (stomach)",
+      "fence"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "壊",
+    "strokes": 16,
+    "freq": 727,
+    "onyomi": [
+      "カイ",
+      "エ"
+    ],
+    "kunyomi": [
+      "こわ.す",
+      "こわ.れる",
+      "やぶ.る"
+    ],
+    "meanings": [
+      "demolition",
+      "break",
+      "destroy"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "士",
+    "strokes": 3,
+    "freq": 526,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "さむらい"
+    ],
+    "meanings": [
+      "gentleman",
+      "scholar",
+      "samurai",
+      "samurai radical (no. 33)"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "嫌",
+    "strokes": 13,
+    "freq": 1207,
+    "onyomi": [
+      "ケン",
+      "ゲン"
+    ],
+    "kunyomi": [
+      "きら.う",
+      "きら.い",
+      "いや"
+    ],
+    "meanings": [
+      "dislike",
+      "detest",
+      "hate"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "宙",
+    "strokes": 8,
+    "freq": 1005,
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "mid-air",
+      "air",
+      "space",
+      "sky",
+      "memorization",
+      "interval of time"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "就",
+    "strokes": 12,
+    "freq": 624,
+    "onyomi": [
+      "シュウ",
+      "ジュ"
+    ],
+    "kunyomi": [
+      "つ.く",
+      "つ.ける"
+    ],
+    "meanings": [
+      "concerning",
+      "settle",
+      "take position",
+      "depart",
+      "study",
+      "per"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "展",
+    "strokes": 10,
+    "freq": 352,
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "unfold",
+      "expand"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "属",
+    "strokes": 12,
+    "freq": 912,
+    "onyomi": [
+      "ゾク",
+      "ショク"
+    ],
+    "kunyomi": [
+      "さかん",
+      "つく",
+      "やから"
+    ],
+    "meanings": [
+      "belong",
+      "genus",
+      "subordinate official",
+      "affiliated"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "帳",
+    "strokes": 11,
+    "freq": 1459,
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "とばり"
+    ],
+    "meanings": [
+      "notebook",
+      "account book",
+      "album",
+      "curtain",
+      "veil",
+      "net",
+      "tent"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "康",
+    "strokes": 11,
+    "freq": 760,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "ease",
+      "peace"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "張",
+    "strokes": 11,
+    "freq": 403,
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "は.る",
+      "-は.り",
+      "-ば.り"
+    ],
+    "meanings": [
+      "counter for bows & stringed instruments",
+      "stretch",
+      "spread",
+      "put up (tent)"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "志",
+    "strokes": 7,
+    "freq": 823,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "シリング",
+      "こころざ.す",
+      "こころざし"
+    ],
+    "meanings": [
+      "intention",
+      "plan",
+      "resolve",
+      "aspire",
+      "motive",
+      "hopes",
+      "shilling"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "応",
+    "strokes": 7,
+    "freq": 266,
+    "onyomi": [
+      "オウ",
+      "ヨウ",
+      "-ノウ"
+    ],
+    "kunyomi": [
+      "あた.る",
+      "まさに",
+      "こた.える"
+    ],
+    "meanings": [
+      "apply",
+      "answer",
+      "yes",
+      "OK",
+      "reply",
+      "accept"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "恵",
+    "strokes": 10,
+    "freq": 925,
+    "onyomi": [
+      "ケイ",
+      "エ"
+    ],
+    "kunyomi": [
+      "めぐ.む",
+      "めぐ.み"
+    ],
+    "meanings": [
+      "favor",
+      "blessing",
+      "grace",
+      "kindness"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "態",
+    "strokes": 14,
+    "freq": 353,
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "わざ.と"
+    ],
+    "meanings": [
+      "attitude",
+      "condition",
+      "figure",
+      "appearance",
+      "voice (of verbs)"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "批",
+    "strokes": 7,
+    "freq": 568,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "criticism",
+      "strike"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "拡",
+    "strokes": 8,
+    "freq": 611,
+    "onyomi": [
+      "カク",
+      "コウ"
+    ],
+    "kunyomi": [
+      "ひろ.がる",
+      "ひろ.げる",
+      "ひろ.める"
+    ],
+    "meanings": [
+      "broaden",
+      "extend",
+      "expand",
+      "enlarge"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "授",
+    "strokes": 11,
+    "freq": 535,
+    "onyomi": [
+      "ジュ"
+    ],
+    "kunyomi": [
+      "さず.ける",
+      "さず.かる"
+    ],
+    "meanings": [
+      "impart",
+      "instruct",
+      "grant",
+      "confer"
+    ],
+    "level": "N4",
+    "levelBasis": "Added from Genki II / SKM N3 prerequisite coverage; N4 is an approximate study placement."
+  },
+  {
+    "character": "提",
+    "strokes": 12,
+    "freq": 254,
+    "onyomi": [
+      "テイ",
+      "チョウ",
+      "ダイ"
+    ],
+    "kunyomi": [
+      "さ.げる"
+    ],
+    "meanings": [
+      "propose",
+      "take along",
+      "carry in hand"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "操",
+    "strokes": 16,
+    "freq": 1016,
+    "onyomi": [
+      "ソウ",
+      "サン"
+    ],
+    "kunyomi": [
+      "みさお",
+      "あやつ.る"
+    ],
+    "meanings": [
+      "maneuver",
+      "manipulate",
+      "operate",
+      "steer",
+      "chastity",
+      "virginity",
+      "fidelity"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "故",
+    "strokes": 9,
+    "freq": 612,
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "ゆえ",
+      "ふる.い",
+      "もと"
+    ],
+    "meanings": [
+      "happenstance",
+      "especially",
+      "intentionally",
+      "reason",
+      "cause",
+      "circumstances",
+      "the late",
+      "therefore",
+      "consequently"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "救",
+    "strokes": 11,
+    "freq": 799,
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "すく.う"
+    ],
+    "meanings": [
+      "salvation",
+      "save",
+      "help",
+      "rescue",
+      "reclaim"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "整",
+    "strokes": 16,
+    "freq": 478,
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [
+      "ととの.える",
+      "ととの.う"
+    ],
+    "meanings": [
+      "organize",
+      "arranging",
+      "tune",
+      "tone",
+      "meter",
+      "key (music)"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "暑",
+    "strokes": 12,
+    "freq": 1442,
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "あつ.い"
+    ],
+    "meanings": [
+      "sultry",
+      "hot",
+      "summer heat"
+    ],
+    "level": "N4",
+    "levelBasis": "Added from Genki II / SKM N3 prerequisite coverage; N4 is an approximate study placement."
+  },
+  {
+    "character": "暖",
+    "strokes": 13,
+    "freq": 1371,
+    "onyomi": [
+      "ダン",
+      "ノン"
+    ],
+    "kunyomi": [
+      "あたた.か",
+      "あたた.かい",
+      "あたた.まる",
+      "あたた.める"
+    ],
+    "meanings": [
+      "warmth"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "条",
+    "strokes": 7,
+    "freq": 363,
+    "onyomi": [
+      "ジョウ",
+      "チョウ",
+      "デキ"
+    ],
+    "kunyomi": [
+      "えだ",
+      "すじ"
+    ],
+    "meanings": [
+      "article",
+      "clause",
+      "counter for articles, clauses, paragraphs, etc.",
+      "twig",
+      "item",
+      "stripe",
+      "streak"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "株",
+    "strokes": 10,
+    "freq": 432,
+    "onyomi": [
+      "シュ"
+    ],
+    "kunyomi": [
+      "かぶ"
+    ],
+    "meanings": [
+      "stocks",
+      "stump",
+      "shares",
+      "stock",
+      "counter for small plants"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "案",
+    "strokes": 10,
+    "freq": 206,
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [
+      "つくえ"
+    ],
+    "meanings": [
+      "plan",
+      "suggestion",
+      "draft",
+      "ponder",
+      "fear",
+      "proposition",
+      "idea",
+      "expectation",
+      "worry",
+      "table",
+      "bench"
+    ],
+    "level": "N4",
+    "levelBasis": "Added from Genki II / SKM N3 prerequisite coverage; N4 is an approximate study placement."
+  },
+  {
+    "character": "検",
+    "strokes": 12,
+    "freq": 290,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "しら.べる"
+    ],
+    "meanings": [
+      "examination",
+      "investigate"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "標",
+    "strokes": 15,
+    "freq": 686,
+    "onyomi": [
+      "ヒョウ"
+    ],
+    "kunyomi": [
+      "しるべ",
+      "しるし"
+    ],
+    "meanings": [
+      "signpost",
+      "seal",
+      "mark",
+      "stamp",
+      "imprint",
+      "symbol",
+      "emblem",
+      "trademark",
+      "evidence",
+      "souvenir",
+      "target"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "氏",
+    "strokes": 4,
+    "freq": 84,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "うじ",
+      "-うじ"
+    ],
+    "meanings": [
+      "family name",
+      "surname",
+      "clan"
+    ],
+    "level": "N4",
+    "levelBasis": "Added from Genki II / SKM N3 prerequisite coverage; N4 is an approximate study placement."
+  },
+  {
+    "character": "泣",
+    "strokes": 8,
+    "freq": 1380,
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "な.く"
+    ],
+    "meanings": [
+      "cry",
+      "weep",
+      "moan"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "洪",
+    "strokes": 9,
+    "freq": 1778,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "deluge",
+      "flood",
+      "vast"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "派",
+    "strokes": 9,
+    "freq": 164,
+    "onyomi": [
+      "ハ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "faction",
+      "group",
+      "party",
+      "clique",
+      "sect",
+      "school"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "災",
+    "strokes": 7,
+    "freq": 976,
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "わざわ.い"
+    ],
+    "meanings": [
+      "disaster",
+      "calamity",
+      "woe",
+      "curse",
+      "evil"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "炎",
+    "strokes": 8,
+    "freq": 1242,
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "ほのお"
+    ],
+    "meanings": [
+      "inflammation",
+      "flame",
+      "blaze"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "独",
+    "strokes": 9,
+    "freq": 365,
+    "onyomi": [
+      "ドク",
+      "トク"
+    ],
+    "kunyomi": [
+      "ひと.り"
+    ],
+    "meanings": [
+      "single",
+      "alone",
+      "spontaneously",
+      "Germany"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "狭",
+    "strokes": 9,
+    "freq": 1346,
+    "onyomi": [
+      "キョウ",
+      "コウ"
+    ],
+    "kunyomi": [
+      "せま.い",
+      "せば.める",
+      "せば.まる",
+      "さ"
+    ],
+    "meanings": [
+      "cramped",
+      "narrow",
+      "contract",
+      "tight"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "率",
+    "strokes": 11,
+    "freq": 383,
+    "onyomi": [
+      "ソツ",
+      "リツ",
+      "シュツ"
+    ],
+    "kunyomi": [
+      "ひき.いる"
+    ],
+    "meanings": [
+      "ratio",
+      "rate",
+      "proportion",
+      "%",
+      "factor",
+      "lead",
+      "spearhead",
+      "command"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "環",
+    "strokes": 17,
+    "freq": 409,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "わ"
+    ],
+    "meanings": [
+      "ring",
+      "circle",
+      "loop"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "異",
+    "strokes": 11,
+    "freq": 631,
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "こと",
+      "こと.なる",
+      "け"
+    ],
+    "meanings": [
+      "uncommon",
+      "different",
+      "queerness",
+      "strangeness",
+      "wonderful",
+      "curious",
+      "unusual"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "症",
+    "strokes": 10,
+    "freq": 1111,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "symptoms",
+      "illness"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "看",
+    "strokes": 9,
+    "freq": 1060,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "み.る"
+    ],
+    "meanings": [
+      "watch over",
+      "see"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "第",
+    "strokes": 11,
+    "freq": 160,
+    "onyomi": [
+      "ダイ",
+      "テイ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "No.",
+      "residence"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "節",
+    "strokes": 13,
+    "freq": 934,
+    "onyomi": [
+      "セツ",
+      "セチ"
+    ],
+    "kunyomi": [
+      "ふし",
+      "-ぶし",
+      "のっと"
+    ],
+    "meanings": [
+      "node",
+      "season",
+      "period",
+      "occasion",
+      "verse",
+      "clause",
+      "stanza",
+      "honor",
+      "joint",
+      "knuckle",
+      "knob",
+      "knot",
+      "tune",
+      "melody"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "系",
+    "strokes": 7,
+    "freq": 567,
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "lineage",
+      "system"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "級",
+    "strokes": 9,
+    "freq": 785,
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "class",
+      "rank",
+      "grade"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "結",
+    "strokes": 12,
+    "freq": 162,
+    "onyomi": [
+      "ケツ",
+      "ケチ"
+    ],
+    "kunyomi": [
+      "むす.ぶ",
+      "ゆ.う",
+      "ゆ.わえる"
+    ],
+    "meanings": [
+      "tie",
+      "bind",
+      "contract",
+      "join",
+      "organize",
+      "do up hair",
+      "fasten"
+    ],
+    "level": "N4",
+    "levelBasis": "Added from Genki II / SKM N3 prerequisite coverage; N4 is an approximate study placement."
+  },
+  {
+    "character": "統",
+    "strokes": 12,
+    "freq": 125,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "す.べる"
+    ],
+    "meanings": [
+      "overall",
+      "relationship",
+      "ruling",
+      "governing"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "羊",
+    "strokes": 6,
+    "freq": 1852,
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "ひつじ"
+    ],
+    "meanings": [
+      "sheep"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "義",
+    "strokes": 13,
+    "freq": 415,
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "righteousness",
+      "justice",
+      "morality",
+      "honor",
+      "loyalty",
+      "meaning"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "製",
+    "strokes": 14,
+    "freq": 488,
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "made in...",
+      "manufacture"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "訳",
+    "strokes": 11,
+    "freq": 1050,
+    "onyomi": [
+      "ヤク"
+    ],
+    "kunyomi": [
+      "わけ"
+    ],
+    "meanings": [
+      "translate",
+      "reason",
+      "circumstance",
+      "case"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "証",
+    "strokes": 12,
+    "freq": 306,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "あかし"
+    ],
+    "meanings": [
+      "evidence",
+      "proof",
+      "certificate"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "評",
+    "strokes": 12,
+    "freq": 454,
+    "onyomi": [
+      "ヒョウ"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "evaluate",
+      "criticism",
+      "comment"
+    ],
+    "level": "N3",
+    "levelBasis": "Added from SKM N3 lesson coverage; community lists may assign a different level."
+  },
+  {
+    "character": "護",
+    "strokes": 20,
+    "freq": 351,
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "まも.る"
+    ],
+    "meanings": [
+      "safeguard",
+      "protect"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "賃",
+    "strokes": 13,
+    "freq": 961,
+    "onyomi": [
+      "チン"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "fare",
+      "fee",
+      "hire",
+      "rent",
+      "wages",
+      "charge"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "較",
+    "strokes": 13,
+    "freq": 1172,
+    "onyomi": [
+      "カク",
+      "コウ"
+    ],
+    "kunyomi": [
+      "くら.べる"
+    ],
+    "meanings": [
+      "contrast",
+      "compare"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "隠",
+    "strokes": 14,
+    "freq": 1089,
+    "onyomi": [
+      "イン",
+      "オン"
+    ],
+    "kunyomi": [
+      "かく.す",
+      "かく.し",
+      "かく.れる",
+      "よ.る"
+    ],
+    "meanings": [
+      "conceal",
+      "hide",
+      "cover"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "離",
+    "strokes": 19,
+    "freq": 555,
+    "onyomi": [
+      "リ"
+    ],
+    "kunyomi": [
+      "はな.れる",
+      "はな.す"
+    ],
+    "meanings": [
+      "detach",
+      "separation",
+      "disjoin",
+      "digress"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "養",
+    "strokes": 15,
+    "freq": 888,
+    "onyomi": [
+      "ヨウ",
+      "リョウ"
+    ],
+    "kunyomi": [
+      "やしな.う"
+    ],
+    "meanings": [
+      "foster",
+      "bring up",
+      "rear",
+      "develop",
+      "nurture"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "驚",
+    "strokes": 22,
+    "freq": 1141,
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "おどろ.く",
+      "おどろ.かす"
+    ],
+    "meanings": [
+      "wonder",
+      "be surprised",
+      "frightened",
+      "amazed"
+    ],
+    "level": "N2",
+    "levelBasis": "Added from the SKM N2 study list; community lists may assign a different level."
+  },
+  {
+    "character": "々",
+    "level": "N5",
+    "strokes": 3,
+    "freq": null,
+    "onyomi": [],
+    "kunyomi": [],
+    "meanings": [
+      "kanji repetition mark (not a kanji)",
+      "repeats the preceding kanji; pronunciation depends on the word"
+    ],
+    "levelBasis": "Genki I lesson 12; placed with foundational revision. This is a symbol, not an independent kanji."
+  }
+]

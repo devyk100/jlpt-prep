@@ -1,0 +1,96 @@
+g1-l1-wa-desu | X は Y です (X is Y / Topic & Copula) | Noun1 + は + Noun2 / Adjective + です
+The topic particle は (pronounced 'wa') presents the background context ('as for X...'). です serves as polite non-past copula.
+スミスさん（　　）イギリス人です。 | は / を / に / へ | 0
+g1-l1-question-ka | 質問の「か」 (Question Sentence Marker 〜ですか) | Sentence + か (Rising intonation)
+NO QUESTION MARK NEEDED: In traditional Japanese, particle か serves as the question mark itself. Question word goes right where the answer belongs.
+今何時（　　）。「午後二時です。」 | ですか / でした / でして / ですね | 0
+g1-l1-noun-no-noun | Noun1 の Noun2 (Noun Modification, Possession & Affiliation) | Noun1 (Modifier/Owner) + の + Noun2 (Main item)
+MODIFIER FIRST: Japanese strictly places the modifier before の: 日本の大学 (Japanese university), 私の友達 (my friend).
+これは私の母（　　）写真です。 | の / に / を / と | 0
+g1-l1-time-and-age | 時間と年齢 (Telling Time with 〜時・〜分 and Age with 〜歳) | Number + 時 (Hour) | Number + 分 (Minutes) | Number + 歳 (Age)
+IRREGULARITY ALERT: 4 o'clock is よじ (NOT よんじ ❌)! 7 o'clock is しちじ (NOT ななじ). 9 o'clock is くじ (NOT きゅうじ). Age 1 is いっさい; age 20 is はたち (二十歳)!
+会議は午後（　　）から始まります。 | 四時（よじ） / 四時（よんじ） / 四時（しじ） / 四時（ななじ） | 0
+g1-l2-kore-sore-are-dore | これ・それ・あれ・どれ (Thing Demonstrative Pronouns) | これ / それ / あれ / どれ + は / が / を (Standalone Pronouns)
+STANDALONE RULE: これ/それ/あれ/どれ stand alone as independent nouns. They CANNOT directly modify a noun (you cannot say 'これ本' ❌; that requires 'この本').
+（　　）は誰の傘ですか。「それですか。私のです。」 | それ / ここ / その / そこ | 0
+g1-l2-kono-sono-ano-dono | この・その・あの・どの + Noun (Pre-Noun Demonstrative Modifiers) | この / その / あの / どの + Noun
+MUST HAVE A NOUN: Unlike これ which is an independent noun, この CANNOT stand by itself. Saying 'このは私の' ❌ is ungrammatical; must be 'この時計は私の'.
+すみません、（　　）辞書を見せてください。 | その / それ / そんな / そこに | 0
+g1-l2-koko-soko-asoko-doko | ここ・そこ・あそこ・どこ (Place Demonstrative Pronouns) | ここ / そこ / あそこ / どこ + は / に / で
+PHONETIC IRREGULARITY: Notice the pattern: こ, そ, but あそこ (NOT あこ ❌)! Interrogative is どこ.
+お手洗いは（　　）ですか。「あちらのエレベーターの隣です。」 | どこ / どれ / だれ / どう | 0
+g1-l2-mo-particle | 助詞「も」 (Inclusive Particle 'Also / Too') | Noun + も (Directly replaces は, が, or を!)
+PARTICLE ABSORPTION: Particle も directly absorbs and replaces topic particle は and object particle を. You NEVER say 'はも' ❌ or 'をも' ❌!
+私もその本（　　）読みました。とても面白かったです。 | を / も / に / で | 1
+g1-l2-janai-desu | じゃないです / じゃありません (Negative Copula: Is Not) | Noun / な-adj + じゃないです (Conversational) / じゃありません (Formal)
+REGISTER DIFFERENCE: じゃないです is standard polite spoken Japanese. じゃありません is slightly more formal. ではありません is conservative written/speech style.
+私は一年生（　　）。三年生です。 | じゃありません / ありません / ないでした / でした | 0
+g1-l3-masu-form | 〜ます / 〜ません (Polite Non-Past Affirmative & Negative) | Verb stem (ます-stem) + ます / ません
+NON-PAST INCLUDES FUTURE: Japanese has only two grammatical tenses: past and non-past. 食べます means 'I eat (habitually)' OR 'I will eat (future)'.
+明日は日曜日ですから、仕事へ（　　）。 | 行きません / 行きます / 行きました / 行かないでした | 0
+g1-l3-masenka-invitation | 〜ませんか (Polite Invitation: Won't You? / Would You Like To?) | V-stem (ます-stem) + ませんか
+RESPECTFUL INVITATION: Asking negatively gives the listener psychological space to decline without awkwardness. Saying '映画に行きますか' is an informational check; '映画に行きませんか' is a warm date invitation.
+少し疲れましたね。喫茶店でお茶を（　　）ませんか。 | 飲み / 飲む / 飲んで / 飲ま | 0
+g1-l4-past-forms-deshita | 〜ました・〜ませんでした・〜でした (Polite Past Tense of Verbs & Copula) | Verb stem + ました / ませんでした | Noun / な-adj + でした / じゃありませんでした
+COPULA PAST NEGATIVE: In polite conversation, you can say either じゃありませんでした or じゃないでした / じゃなかったです.
+昨夜は十二時まで日本語を（　　）。とても眠かったです。 | 勉強しました / 勉強します / 勉強でした / 勉強しでした | 0
+g1-l4-location-words | 位置の名詞 (Spatial Postpositions: 上・下・前・後ろ・中・隣・近く・間) | Reference Noun + の + [上 / 下 / 前 / 後ろ / 中 / 隣 / 近く / 間] + に
+TONARI VS CHIKAKU: 隣 (となり) is strictly adjacent of the same category (next to). 近く (ちかく) is in the general vicinity. 間 (あいだ) requires two bounds (A と B の間).
+私の部屋の鍵は、カバンの（　　）にあります。 | 中 / 上 / 前 / 間 | 0
+g1-l5-suki-kirai | 好き（な） / 嫌い（な） (Expressing Likes and Dislikes with が) | [Person] は [Item] が 好きです / 嫌いです (Adjectival predicates)
+PARTICLE TRAP: In English 'like' is a transitive verb (I like X). In Japanese, 好き is a な-adjective (X is pleasing to me), so the item takes particle が (NOT を ❌)!
+ロバートさんは日本の歴史（　　）とても好きです。 | が / を / に / で | 0
+g1-l5-mashou-ka | 〜ましょう / 〜ましょうか (Volitional Suggestion: Let's / Shall We?) | V-stem (ます-stem) + ましょう / ましょうか
+TWO USES OF 〜ましょうか: 1) Suggesting mutual action ('Shall we take a break?'). 2) Offering personal assistance ('Shall I carry your bag?').
+雨が止みましたね。公園を少し（　　）ましょう。 | 散歩し / 散歩する / 散歩して / 散歩した | 0
+g1-l6-te-kudasai | 〜てください (Polite Request: Please Do) | V-て + ください
+REGISTER WARNING: Because ください carries an underlying mild command tone ('do this for me'), saying it to high superiors (professors, boss, clients) can sound overly direct. Use 〜ていただけませんか instead.
+ここにあなたのお名前と電話番号を（　　）ください。 | 書いて / 書く / 書き / 書いた | 0
+g1-l6-te-mo-ii | 〜てもいいですか (Asking for & Granting Permission: May I?) | V-て + もいいですか / もいいです
+LITERAL MEANING: 〜ても (even if I do) + いい (it is good). 'Even if I open the window, is it fine?'
+このペンを少しの間、（　　）てもいいですか。 | 借り / 借る / 借りて / 借りた | 0
+g1-l6-kara-reason | 〜から (Stating Reasons / Because - Clause Linker) | Sentence 1 (Reason) + から、 Sentence 2 (Conclusion)
+SUBJECTIVE CONVICTION: から represents the speaker's personal logic and subjective view. It can be paired directly with commands, requests, and volitions (雨が降っているから、傘を持って行きなさい).
+明日は朝早く起きます（　　）、今夜はテレビを見ません。 | から / まで / より / ほど | 0
+g1-l7-describing-people | 身体の描写 (Describing People's Physical Attributes: 目が大きいです) | [Person] は + [Body Part] が + [Adjective] です
+AVOID NOUN OF NOUN FOR BODY PARTS: In English we say 'Mary's hair is long'. In Japanese, 'メアリーさんの髪は長いです' sounds stiff; native syntax frames the person as topic: 'メアリーさんは髪が長いです'.
+田中さんはとても背（　　）高いです。 | が / は / を / に | 0
+g1-l7-adj-te-forms | 形容詞・名詞の「て形」 (Connecting Adjectives & Nouns: 〜くて / 〜で) | い-adj (drop い) + くて | な-adj stem + で | Noun + で
+THE II/YOI TE-FORM: いい (good) drops its irregular root and conjugates as よくて (NOT いくて ❌)! な-adjectives take で, exactly like nouns.
+あのカフェはコーヒーが（　　）、値段も安いです。 | おいしくて / おいしいで / おいしくで / おいしいくて | 0
+g1-l7-purpose-ni-iku | V-stem + に行く / に来る (Purpose of Movement: Going to Do) | V-stem (ます-stem) + に + 行く / 来る / 帰る | Activity Noun + に + 行く
+VERB STEM BEFORE に: Drop ます and append に directly: 食べます → 食べに行く, 買いに行きます. If using an activity noun (買い物, 散歩), attach に directly: 買い物に行く.
+週末は図書館へ本を（　　）に行きます。 | 返し / 返す / 返して / 返した | 0
+g1-l8-nai-de-kudasai | 〜ないでください (Negative Request: Please Do Not) | V-ない + でください
+NEGATIVE POLITE REQUEST: Formed from the plain negative ない-form + でください. Very common on signs, exams, and courteous instructions (忘れないでください).
+まだテスト中ですから、教室から（　　）ないでください。 | 出 / 出る / 出て / 出な | 0
+g1-l8-nominalizer-no | 動詞の「の」名詞化 (Nominalizing Verbs with の: のが好き / 上手 / 下手) | V-辞書形 + のが [好き / 嫌い / 上手 / 下手 / 得意 / 苦手] です
+NOMINALIZATION REQUIREMENT: In Japanese you cannot attach が directly to a verb ('食べるが好き' ❌). You must nominalize it with の ('食べるのが好き').
+母は料理を（　　）のがとても上手です。 | 作る / 作って / 作り / 作った | 0
+g1-l9-mou-mada | もう〜ました vs まだ〜ていません (Already Done vs Have Not Yet Done) | もう + V-ました | まだ + V-ていません (NOT まだ〜ませんでした ❌!)
+CRITICAL NEGATIVE TRAP: To say 'I haven't eaten yet', you CANNOT say 'まだ食べませんでした' ❌! Past negative implies you never intended to eat. You must say 'まだ食べていません' (still in state of not having eaten).
+昼ご飯はもう食べましたか。「いいえ、まだ（　　）。」 | 食べていません / 食べませんでした / 食べません / 食べないでした | 0
+g1-l10-tsumori | 〜つもりだ / つもりです (Stated Personal Intention: Plan To) | V-辞書形 + つもりです (Affirmative plan) | V-ない + つもりです / つもりはありません (Negative plan)
+FIRST/SECOND PERSON ONLY: In polite conversation, つもり states your own plans. Attributing つもり directly to superiors can sound rude because it presumes to know their internal mental intent.
+今年の夏休みは、どこへも旅行に（　　）つもりです。家で勉強します。 | 行かない / 行く / 行かないで / 行った | 0
+g1-l10-adj-naru | 形容詞 + なる (Expressing Change of State: To Become) | い-adj (drop い) + くなる | な-adj stem + になる | Noun + になる
+ADVERBIAL INFLECTION: い-adjectives change final い to く before なる (暖かくなる). な-adjectives and nouns take に before なる (静かになる, 先生になる).
+薬を飲んだら、痛みがだいぶ（　　）なりました。 | よく / いいに / よくに / いいく | 0
+g1-l11-tai-desire | 〜たい / 〜たくない (Expressing Desire to Do: Want to Do) | V-stem (ます-stem) + たい (Conjugates 100% as an い-adjective: 〜たくない, 〜たかった)
+PARTICLE FLEXIBILITY: The direct object of the verb can be marked with EITHER を or が! 水を飲みたい is acceptable, but 水が飲みたい highlights the desired object more prominently.
+今日はとても疲れたので、何も（　　）たくないです。 | し / する / して / した | 0
+g1-l11-koto-ga-aru | 〜ことがある (Past Experiential Aspect: Have Ever Done) | V-た + ことがある / あります (Negative: ありません / ない)
+LIFETIME HISTORICAL ASPECT: Strictly connects to past た-form! Cannot be used for immediate recent routine events (e.g., 'I ate toast this morning' ❌). It refers to lifetime resume experiences.
+歌舞伎を（　　）ことがありますか。「いいえ、一度もありません。」 | 見た / 見る / 見て / 見 | 0
+g1-l11-sugiru | 〜すぎる (Excessiveness: Too Much / Overdoing) | V-stem + すぎる | い-adj (drop い) + すぎる | な-adj stem + すぎる (Conjugates as Ru-verb)
+UNFAVORABLE THRESHOLD: Sugiru carries an overwhelmingly negative implication (e.g., this is too spicy to eat, I drank too much and got sick).
+この問題は難し（　　）て、私には全く分かりません。 | すぎ / そう / やすく / がち | 0
+g1-l12-node-objective-reason | 〜ので (Objective Reason / Natural Causality: Since / Because) | Plain form + ので | な-adj / Noun + な + ので (Notice the required な!)
+POLITE & NATURAL: Unlike から which sounds subjective and assertive, ので presents the reason as an objective circumstance beyond the speaker's personal whim. Far more polite in business requests.
+明日は（　　）なので、一日中家でのんびり過ごします。 | 休み / 休みの / 休みだ / 休みに | 0
+g1-l12-nakereba-ikemasen | 〜なければいけません / なきゃいけません (Obligation: Must Do / Have to Do) | V-ない (drop い) + ければいけません / ければなりません
+DOUBLE NEGATIVE LOGIC: Literally 'If I do not do X, it cannot go on'. Spoken casual forms contract heavily: なければ → なきゃ, 食べなきゃ.
+熱が高いですから、今日は病院へ（　　）ければいけませんよ。 | 行かな / 行く / 行って / 行き | 0
+g1-l12-deshou-darou | 〜でしょう / 〜だろう (Conjecture & Probability: Probably) | Plain form + でしょう (Polite) / だろう (Plain) [Noun & な-adj attach directly without だ!]
+NO だ BEFORE DESHOU: For nouns and な-adjectives, drop だ completely: 暇でしょう (NOT 暇だでしょう ❌), 雨でしょう (NOT 雨だでしょう ❌).
+田中さんは毎日一生懸命勉強していますから、きっと試験に（　　）でしょう。 | 合格する / 合格して / 合格し / 合格したの | 0

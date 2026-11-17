@@ -1,0 +1,78 @@
+g2-l13-potential | 可能形 (Potential Verbs: Ability & Possibility) | Ru-verbs: 食べる→食べられる | U-verbs: 書く→書ける, 飲む→飲める | Irregular: する→できる, くる→こられる
+PARTICLE FLIP: The direct object particle を frequently shifts to が (日本語を話す → 日本語が話せる).
+刺身は新鮮ですが、どうしても生魚が（　　）。 | 食べられません / 食べません / 食べさせません / 食べてもらえません | 0
+g2-l13-shi-reasons | 〜し、〜し (Listing Multiple Parallel Reasons) | Plain form + し (Noun/な-adj non-past affirmative takes だ: 綺麗だし, 休みだし)
+CUMULATIVE FACTORS: Unlike から which gives one direct explanation, 〜し accumulates multiple contributing factors.
+このアパートは家賃も安いし、駅からも（　　）し、とても便利です。 | 近い / 近くだ / 近くに / 近いで | 0
+g2-l13-te-miru | 〜てみる (Trying Out an Action: Doing Something to See What Happens) | V-て + みる (Conjugates as a Ru-verb: 〜てみます, 〜てみたい)
+TESTING THE WATERS: Literally uses the verb 見る (to see): 'do and see'. 履いてみる (try shoes on), 食べてみる (taste it), 行ってみる (go and check).
+この服、サイズが合うかどうか一度（　　）みてもいいですか。 | 着て / 着る / 着 / 着た | 0
+g2-l13-nara-conditional | なら (Contextual Limitation Conditional: If It's X / As For X) | Noun + なら (Attaches directly without だ!) | Plain form + なら
+CONTRASTIVE CONTEXT: Often carries an implicit contrast: 'ひらがななら読めます' (If it's hiragana I can read it—implying kanji is impossible).
+「明日京都に行くんですが。」「京都（　　）、金閣寺がおすすめですよ。」 | なら / たら / ば / と | 0
+g2-l14-hoshii | ほしい (Expressing Desire for an Object: Want Something) | [Item] が ほしいです (Conjugates 100% as an い-adjective: ほしくない, ほしかった)
+HOSHII VS TAI: たい is for ACTIONS ('I want to BUY a car' = 車を買いたい). ほしい is for NOUN OBJECTS ('I want a car' = 車がほしい). Target takes が!
+今は何も（　　）くないです。ただゆっくり休みたいです。 | ほし / ほしい / ほしく / ほしな | 0
+g2-l14-kamoshirenai | 〜かもしれない / 〜かもしんない (Epistemic Possibility: Might / May) | Plain form + かもしれません | Noun / な-adj attach directly without だ!
+NO だ BEFORE KAMOSHれない: Just like でしょう, nouns and な-adjectives drop だ: 雨かもしれない (NOT 雨だかもしれない ❌), 暇かもしれない.
+山田さんはまだ来ませんね。道に（　　）のかもしれません。 | 迷った / 迷う / 迷って / 迷い | 0
+g2-l14-tara-dou-desu-ka | 〜たらどうですか (Casual Advice / Suggestion: Why Don't You?) | V-た + らどうですか
+CRITICAL SOCIAL CAUTION: This phrase can sound patronizing or critical if said to superiors ('Why don't you do your job?'). Use only with peers, friends, or juniors.
+分からない単語があるなら、辞書で（　　）たらどうですか。 | 調べ / 調べる / 調べて / 調べた | 0
+g2-l15-volitional-form | 意向形 (The Volitional Form: Casual Let's Do / Self-Resolve) | Ru-verbs: drop る + よう (食べよう) | U-verbs: change final -u to -ou (行こう, 飲もう) | する→しよう, くる→こよう
+CASUAL COMPANION: In peer conversation, '行こう!' replaces '行きましょう!'. In internal monologue, 'よし、頑張ろう!' expresses resolve.
+疲れたから、あそこのカフェで少し（　　）よう。 | 休も / 休もう / 休み / 休ま | 1
+g2-l15-volitional-to-omotte-iru | 意向形 + と思っている (Firm Ongoing Determination: Intending To) | V-意向形 + と思っています (Ongoing firm intent) / と思います (Decision made on the spot)
+SPONTANEOUS VS PONDERED: と思う = decided right now on the spot. と思っている = has been decided for some time and remains an ongoing intention.
+夏休みに富士山に（　　）と思っています。 | 登ろう / 登る / 登り / 登った | 0
+g2-l15-relative-clauses | 連体修飾節 (Relative Clauses / Qualifying Nouns with Sentences) | Plain sentence + Noun (Subordinate subject marked with が, NEVER は!)
+NO RELATIVE PRONOUN: Japanese uses NO 'who', 'which', or 'that'. The modifying sentence simply directly precedes the head noun. Crucially, the subject inside the relative clause takes が!
+あそこに立って（　　）人は、私の高校の英語の先生です。 | いる / います / いたの / いまして | 0
+g2-l16-to-ii-hoping | 〜といい (Hoping for Favorable Outcomes: I Hope That...) | Plain non-past verb + といいですね / といいんですが
+FOR OTHER VS FOR SELF: When wishing good fortune for the other person, say '〜といいですね' (I hope it goes well for you!). When wishing for yourself, soften with '〜といいんですが' (I hope I pass...).
+来週の採用試験に無事合格できる（　　）いいんですが。 | と / ば / たら / なら | 0
+g2-l16-toki-tense | 〜時（とき）の時制 (Tense Nuances in 'When' Clauses: V-る時 vs V-た時) | V-辞書形 + 時 (Prior/During) | V-た + 時 (After completion)
+CRITICAL TENSE PUZZLE: '日本に行く時カメラを買った' = Bought camera BEFORE arriving in Japan. '日本に行った時カメラを買った' = Bought camera AFTER arriving in Japan!
+日本へ（　　）時、空港の免税店でお土産を買いました。 | 行く / 行った / 行っている / 行かない | 0
+g2-l17-hearsay-sou-desu | 〜そうです (Hearsay / Quoting Reports: I Heard That / Reportedly) | Plain form + そうです (Noun / な-adj non-past takes だ: 暇だそうです, 雨だそうです)
+CRUCIAL DIFFERENCE FROM CONJECTURE: Appearance: drop い (おいしそう = looks tasty). Hearsay: KEEP い and keep だ (おいしいそうです = I heard it's tasty; 暇だそうです = I heard he's free).
+田中さんの話では、新しい先生はとても（　　）そうです。 | 親切だ / 親切 / 親切な / 親切に | 0
+g2-l17-tara-conditional | 〜たら (Specific & Temporal Conditional: If / When / Once Done) | V-た + ら | い-adj かった + ら | な-adj / Noun だった + ら
+MOST VERSATILE CONDITIONAL: Unlike と (which forbids commands) or ば (which restricts volitions), 〜たら allows commands, invitations, requests, and future decisions in clause B!
+東京駅に（　　）ら、私に電話をかけてください。 | 着いた / 着く / 着き / 着いて | 0
+g2-l17-nakute-mo-ii | 〜なくてもいいです (Lack of Obligation: You Do Not Have To) | V-ない (drop い) + くてもいいです
+LITERAL MEANING: Even if you do not do X, it is fine. Releases the listener from social or official obligation.
+パスポートのコピーは提出し（　　）くてもいいです。 | なか / ない / なくて / なかった | 0
+g2-l18-transitive-intransitive | 自動詞 vs 他動詞 (Intransitive vs Transitive Verb Pairs) | Entity が 自動詞 (開く, 閉まる, つく, 消える) | Agent が Object を 他動詞 (開ける, 閉める, つける, 消す)
+AGENCY TRAP: ドアが開いた = The door opened (spontaneously/naturally). ドアを開けた = Someone intentionally opened the door. Crucial for advanced JLPT parsing!
+部屋が暗いですね。電気を（　　）ましょう。 | つけ / つき / 消し / 消え | 0
+g2-l18-to-natural-consequence | 〜と (Natural Consequence & Inevitable Conditional: When / If) | V-辞書形 / V-ない + と
+STRICT PROHIBITION ON WILL: Clause B CANNOT be a human request, command, suggestion, or permission (e.g., '春になると花見に行きましょう' ❌ is ungrammatical; must use たら). B must be an automatic physical/natural fact.
+あの交差点を右に（　　）と、左手に大きな郵便局が見えます。 | 曲がる / 曲がった / 曲がって / 曲がり | 0
+g2-l18-ba-yokatta | 〜ばよかった (Retrospective Regret: I Should Have Done) | V-ば + よかった (Affirmative regret: should have) | V-なければ + よかった (Negative regret: shouldn't have)
+MISSED OPPORTUNITY: Communicates a sigh of self-reproach. '傘を持ってくればよかった' implies it is pouring now and I am drenched.
+こんなに雨が降るなら、傘を持って（　　）ばよかった。 | くれ / くる / こ / きた | 0
+g2-l19-sonkeigo-verbs | 尊敬語 (Honorific Speech: Special Verbs & Regular Formulas) | Special verbs: いらっしゃる (行く/来る/いる), おっしゃる (言う), なさる (する), 召し上がる (食べる/飲む), ご覧になる (見る), ご存じだ (知っている) | Regular formula: お + V-stem + になる
+NEVER USE ON SELF: 尊敬語 elevates the OTHER person. Using it for your own actions is a catastrophic error in Japanese etiquette.
+社長はもうお昼ご飯を（　　）ましたか。 | 召し上がり / いただき / 参り / 拝見し | 0
+g2-l19-o-kudasai | お + V-stem + ください (Polite Honorific Request: Please Graciously Do) | お + V-stem + ください (Group 3 する verbs: ご + Noun + ください: ご注意ください)
+CUSTOMER SERVICE REGISTER: Ubiquitous in stores, public transit, and professional offices: お座りください (Please be seated), お入りください (Please come in), ご覧ください (Please take a look).
+どうぞこちらのお席にお（　　）ください。 | 掛け / 掛ける / 掛けて / 掛けた | 0
+g2-l21-te-aru | 〜てある (Transitive Verb Resultant State: Deliberately Prepared) | Transitive Verb-て + ある (Object is marked with が: 窓が開けてある)
+DELIBERATE HUMAN PURPOSE: Contrast with 〜ている! '窓が開いている' = The window is open (mere state). '窓が開けてある' = Someone purposely opened the window for ventilation and left it open!
+パーティーのために、壁に綺麗な花が（　　）あります。 | 飾って / 飾る / 飾り / 飾られ | 0
+g2-l21-aida-vs-aidani | 〜間に vs 〜間 (During a Moment vs Throughout the Entire Duration) | V-ている / Noun + の + 間に (Momentary point) vs 間 (Continuous entirety)
+CRITICAL PARTICLE DISCRIMINATOR: '留守の[間]、犬が寝ていた' = The dog slept the ENTIRE time I was gone. '留守の[間に]、泥棒が入った' = A thief broke in AT A MOMENT during my absence.
+日本に留学している（　　）、一度富士山に登ってみたいです。 | 間に / 間 / うちに / 最中に | 0
+g2-l22-ba-conditional | 〜ば (The Hypothetical Conditional: If) | Verbs: change final -u to -e + ば (書く→書けば, 食べる→食べれば) | い-adj: drop い + ければ | な-adj / Noun: なら (ば)
+THE VOLITIONAL PROHIBITION TRAP: If clause A is an action verb (not state), clause B CANNOT be a human request, volition, or command! You cannot say '車を買えば、海に行きましょう' ❌ (Must use たら).
+毎日練習を（　　）ば、誰でもピアノが上手に弾けるようになりますよ。 | すれ / する / した / して | 0
+g2-l22-noni-frustration | 〜のに (Frustrated Concession: Even Though / In Spite Of) | Plain form + のに (Noun / な-adj non-past affirmative takes な: 好きなのに, 暇なのに)
+EMOTIONAL INDIGNATION: Unlike が or けれども which are neutral contrasts, のに carries emotional coloring: frustration, indignation, bewilderment, or grievance.
+薬を飲んだ（　　）、頭痛が一向によくなりません。 | のに / ので / から / なら | 0
+g2-l23-temo-even-if | 〜ても / 〜でも (Concessive Conditional: Even If / Even Though) | V-て + も | い-adj くて + も | な-adj / Noun + でも
+OPPOSITE OF TARA: たら means 'if it happens, I will do Y'. ても means 'even if it happens, I STILL will do Y regardless' (雨が降っても行く = Even if it rains, I'm going).
+いくら（　　）も、答えがどうしても思い出せない。 | 考えて / 考える / 考えた / 考え | 0
+g2-l23-koto-ni-suru-naru | 〜ことにする vs 〜ことになる (Personal Decision vs Outside Emergence) | V-辞書形 / V-ない + ことにする / ことになる
+DECISION VS SOCIAL CONSENSUS: '会社を辞めることにした' = I personally chose to quit. '会社を辞めることになった' = Due to layoffs, restructuring, or external consensus, I am leaving (polite Japanese deflection).
+来月から大阪の支店へ転勤する（　　）になりました。 | こと / もの / わけ / はず | 0
