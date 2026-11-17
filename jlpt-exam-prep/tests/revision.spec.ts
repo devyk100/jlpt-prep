@@ -311,7 +311,11 @@ test('default Japanese-only examples, independent translation disclosure, and tr
 test('no parenthesized romaji pronunciations in master tables or cards', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: /Revision \(暗記表\)/ }).click();
-  await expect(page.getByText('The Te-Form (て形) Conjugation Matrix')).toBeVisible();
+  await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
+
+  // Click Te-Form switcher button to view Te-Form table
+  await page.getByRole('button', { name: /The Te-Form/ }).click();
+  await expect(page.getByRole('heading', { level: 4, name: /The Te-Form/ })).toBeVisible();
 
   // Check page content for forbidden romaji pronunciations
   const pageContent = await page.content();
@@ -333,9 +337,9 @@ test('no parenthesized romaji pronunciations in master tables or cards', async (
   expect(pageContent).not.toMatch(/\(pun\)/i);
 
   // Verify ruby annotation renders kanji with furigana without romaji
-  const teTable = page.locator('div').filter({ has: page.getByRole('heading', { name: /The Te-Form/ }) }).locator('table').first();
-  await expect(teTable).toBeVisible();
-  const textWithoutRuby = await teTable.evaluate(el => {
+  const table = page.locator('table').first();
+  await expect(table).toBeVisible();
+  const textWithoutRuby = await table.evaluate(el => {
     const clone = el.cloneNode(true) as HTMLElement;
     clone.querySelectorAll('rt').forEach(n => n.remove());
     return clone.textContent || '';
