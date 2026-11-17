@@ -105,7 +105,7 @@
   ],
   "弾ける": [
     "ひける",
-    "can play (a musical instrument)"
+    "can play (a stringed/keyboard instrument)"
   ],
   "計り知れない": [
     "はかりしれない",
@@ -714,5 +714,57 @@
   "配布資料": [
     "はいふしりょう",
     "distributed handouts / materials"
+  ],
+  "出せる": [
+    "だせる",
+    "can put out; can produce"
+  ],
+  "立て直せる": [
+    "たてなおせる",
+    "can turn around (business); can rebuild"
+  ],
+  "先週末": [
+    "せんしゅうまつ",
+    "last weekend"
+  ],
+  "危険区域": [
+    "きけんくいき",
+    "danger zone; hazardous area"
+  ],
+  "弾けます": [
+    "ひけます",
+    "can play (polite)"
+  ],
+  "新社屋": [
+    "しんしゃおく",
+    "new company building / headquarters"
+  ],
+  "最終面接": [
+    "さいしゅうめんせつ",
+    "final job interview"
+  ],
+  "欠かせない": [
+    "かかせない",
+    "indispensable; essential"
+  ],
+  "何本": [
+    "なんぼん",
+    "how many (long cylindrical objects)"
+  ],
+  "促": [
+    "そく",
+    "phonological gemination / double consonant (促音)"
+  ],
+  "イ音便": [
+    "いおんびん",
+    "i-euphony (historical sound shift in verb conjugation)"
+  ],
+  "待てる": [
+    "まてる",
+    "can wait (potential form of 待つ)"
+  ],
+  "枚": [
+    "まい",
+    "counter for flat objects (sheets, stamps, tickets)"
   ]
 }

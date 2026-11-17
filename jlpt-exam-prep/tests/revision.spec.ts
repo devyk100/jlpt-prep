@@ -28,7 +28,7 @@ test('all content links, sentences and shuffled answers remain intact', () => {
 test('catalog, keyboard search and complete sentence display', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
-  await expect(page.getByText('370 points', { exact: true })).toBeVisible();
+  await expect(page.getByText('374 points', { exact: true })).toBeVisible();
   await page.getByTitle('View Canonical Books Coverage').click();
   const catalog = page.getByRole('dialog');
   await expect(catalog).toBeVisible();

@@ -45,7 +45,7 @@ export const SidebarPane: React.FC<Props> = ({
           pt.meaning.toLowerCase().includes(q) ||
           pt.connection.toLowerCase().includes(q) ||
           (pt.book && pt.book.toLowerCase().includes(q)) ||
-          pt.tags.some(t => t.toLowerCase().includes(q))
+          (pt.tags ? pt.tags.some(t => t.toLowerCase().includes(q)) : false)
         );
       }
       return true;

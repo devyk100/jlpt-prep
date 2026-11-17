@@ -51,7 +51,7 @@ export const SearchModal: React.FC<Props> = ({
           p.connection.toLowerCase().includes(q) ||
           p.level.toLowerCase().includes(q) ||
           (p.book && p.book.toLowerCase().includes(q)) ||
-          p.tags.some(t => t.toLowerCase().includes(q))
+          (p.tags ? p.tags.some(t => t.toLowerCase().includes(q)) : false)
         );
       });
 

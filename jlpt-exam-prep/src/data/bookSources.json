@@ -787,13 +787,17 @@
         "name": "Part 2 · Chapter 1 · p. 140",
         "grammarIds": [
           "skm2-p2-kko-nai",
-          "added-n2-p2-1-128"
+          "added-n2-p2-1-128",
+          "skm2-p2-kai-ga-aru",
+          "skm2-p2-wo-oite"
         ]
       },
       {
         "name": "Part 2 · Chapter 2 · p. 142",
         "grammarIds": [
-          "added-n2-p2-2-129"
+          "added-n2-p2-2-129",
+          "skm2-p2-majiki",
+          "skm2-p2-bekarazu"
         ]
       },
       {
