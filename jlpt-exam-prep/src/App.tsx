@@ -1,5 +1,6 @@
 import { ReadingContext } from './readingContext';
 import React, { useState, useEffect, useMemo } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import {
   ALL_GRAMMAR_POINTS,
   STREAMS,
@@ -29,9 +30,64 @@ const STORAGE_KEYS = {
   STUDY_MODE: 'bunpou_study_mode'
 };
 
+function parseRoute(pathname: string, hash: string): {
+  mode?: StudyMode;
+  pointId?: string;
+  practiceTarget?: { bookId: string; bookTitle: string; chapter: string };
+  isExplicitRoute: boolean;
+} {
+  const path = (hash.startsWith('#/') ? hash.slice(1) : pathname).replace(/\/+$/, '') || '/';
+
+  if (path === '/revision') {
+    return { mode: 'revision', isExplicitRoute: true };
+  }
+
+  if (path.startsWith('/practice')) {
+    const parts = path.split('/').filter(Boolean); // ['practice', bookId, chapter]
+    if (parts.length >= 3) {
+      const bookId = parts[1];
+      const chapter = decodeURIComponent(parts.slice(2).join('/'));
+      const bookTitle =
+        bookId === 'genki-1'
+          ? 'Genki I'
+          : bookId === 'genki-2'
+          ? 'Genki II'
+          : bookId === 'skm-n3'
+          ? 'Shin Kanzen Master N3'
+          : 'Shin Kanzen Master N2';
+      return {
+        mode: 'practice',
+        practiceTarget: { bookId, bookTitle, chapter },
+        isExplicitRoute: true
+      };
+    }
+    return { mode: 'practice', isExplicitRoute: true };
+  }
+
+  if (path.startsWith('/learn/')) {
+    const pointId = path.slice('/learn/'.length);
+    if (pointId && GRAMMAR_BY_ID[pointId]) {
+      return { mode: 'learn', pointId, isExplicitRoute: true };
+    }
+  }
+
+  return { isExplicitRoute: false };
+}
+
 export function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Initial Route Check
+  const initialRoute = useMemo(() => {
+    return parseRoute(location.pathname, location.hash);
+  }, []);
+
   // Activity Mode: Learn | Practice | Revision
   const [studyMode, setStudyMode] = useState<StudyMode>(() => {
+    if (initialRoute.isExplicitRoute && initialRoute.mode) {
+      return initialRoute.mode;
+    }
     return (localStorage.getItem(STORAGE_KEYS.STUDY_MODE) as StudyMode) || 'learn';
   });
 
@@ -39,10 +95,15 @@ export function App() {
     bookId: string;
     bookTitle: string;
     chapter: string;
-  }>({
-    bookId: 'genki-1',
-    bookTitle: 'Genki I',
-    chapter: 'Lesson 1'
+  }>(() => {
+    if (initialRoute.practiceTarget) {
+      return initialRoute.practiceTarget;
+    }
+    return {
+      bookId: 'genki-1',
+      bookTitle: 'Genki I',
+      chapter: 'Lesson 1'
+    };
   });
 
   // Navigation & Filter state
@@ -54,6 +115,9 @@ export function App() {
 
   // Selected Point ID
   const [currentPointId, setCurrentPointId] = useState<string>(() => {
+    if (initialRoute.pointId && GRAMMAR_BY_ID[initialRoute.pointId]) {
+      return initialRoute.pointId;
+    }
     const saved = localStorage.getItem(STORAGE_KEYS.CURRENT_POINT);
     if (saved && GRAMMAR_BY_ID[saved]) return saved;
     return ALL_GRAMMAR_POINTS[0].id;
@@ -99,6 +163,31 @@ export function App() {
   const [isMistakesOpen, setIsMistakesOpen] = useState(false);
   const [isBooksOpen, setIsBooksOpen] = useState(false);
 
+  // Sync state when location changes (browser Back / Forward navigation)
+  useEffect(() => {
+    const route = parseRoute(location.pathname, location.hash);
+    if (route.isExplicitRoute) {
+      if (route.mode && route.mode !== studyMode) {
+        setStudyMode(route.mode);
+      }
+      if (route.mode === 'learn' && route.pointId && route.pointId !== currentPointId && GRAMMAR_BY_ID[route.pointId]) {
+        setCurrentPointId(route.pointId);
+      }
+      if (route.mode === 'practice' && route.practiceTarget) {
+        setPracticeTarget(route.practiceTarget);
+      }
+    } else {
+      // Reverted back to root '/'
+      if (studyMode !== 'learn') {
+        setStudyMode('learn');
+      }
+      const saved = localStorage.getItem(STORAGE_KEYS.CURRENT_POINT);
+      if (saved && GRAMMAR_BY_ID[saved] && saved !== currentPointId) {
+        setCurrentPointId(saved);
+      }
+    }
+  }, [location.pathname, location.hash]);
+
   useEffect(() => {
     const shortcut = (event: KeyboardEvent) => {
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
@@ -138,8 +227,9 @@ export function App() {
   // Handle selecting point
   const handleSelectPoint = (pointId: string) => {
     setCurrentPointId(pointId);
-    if (studyMode !== 'learn') {
-      setStudyMode('learn');
+    setStudyMode('learn');
+    if (location.pathname !== `/learn/${pointId}`) {
+      navigate(`/learn/${pointId}`);
     }
   };
 
@@ -155,12 +245,24 @@ export function App() {
 
     setPracticeTarget({ bookId, bookTitle: book, chapter });
     setStudyMode('practice');
+    navigate(`/practice/${bookId}/${encodeURIComponent(chapter)}`);
   };
 
   // Navigate to Lesson from practice or revision
   const handleNavigateToLesson = (lessonId: string) => {
     handleSelectPoint(lessonId);
-    setStudyMode('learn');
+  };
+
+  // Handle Mode Change from Topbar
+  const handleModeChange = (newMode: StudyMode) => {
+    setStudyMode(newMode);
+    if (newMode === 'learn') {
+      navigate(`/learn/${currentPointId}`);
+    } else if (newMode === 'practice') {
+      navigate(`/practice/${practiceTarget.bookId}/${encodeURIComponent(practiceTarget.chapter)}`);
+    } else if (newMode === 'revision') {
+      navigate('/revision');
+    }
   };
 
   // Explicit completion toggling (ONLY when user explicitly marks it)
@@ -247,7 +349,7 @@ export function App() {
         {/* Clean Topbar Header */}
         <Topbar
           activeMode={studyMode}
-          onModeChange={setStudyMode}
+          onModeChange={handleModeChange}
           selectedFilter={selectedFilter}
           onFilterChange={setSelectedFilter}
           seamlessFlowMode={seamlessFlowMode}
@@ -312,16 +414,23 @@ export function App() {
                     ? 'Shin Kanzen Master N3'
                     : 'Shin Kanzen Master N2';
                 setPracticeTarget({ bookId, bookTitle, chapter });
+                navigate(`/practice/${bookId}/${encodeURIComponent(chapter)}`);
               }}
               onNavigateToLesson={handleNavigateToLesson}
-              onExitPractice={() => setStudyMode('learn')}
+              onExitPractice={() => {
+                setStudyMode('learn');
+                navigate(`/learn/${currentPointId}`);
+              }}
             />
           )}
 
           {studyMode === 'revision' && (
             <RevisionDeskView
               onNavigateToLesson={handleNavigateToLesson}
-              onExitRevision={() => setStudyMode('learn')}
+              onExitRevision={() => {
+                setStudyMode('learn');
+                navigate(`/learn/${currentPointId}`);
+              }}
             />
           )}
         </div>

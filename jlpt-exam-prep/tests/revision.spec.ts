@@ -348,3 +348,40 @@ test('no parenthesized romaji pronunciations in master tables or cards', async (
   expect(textWithoutRuby).not.toContain('(kau)');
   expect(textWithoutRuby).not.toContain('(matsu)');
 });
+
+test('browser back and forward routing works without exiting the app', async ({ page }) => {
+  await page.goto('/');
+
+  // 1. Select another grammar point
+  await page.locator('[role="button"]').filter({ hasText: '時間' }).first().click();
+  await expect(page).toHaveURL(/\/learn\/g1-l1-time-and-age/);
+
+  // 2. Switch to Practice mode
+  await page.getByRole('button', { name: /Practice \(練習\)/ }).click();
+  await expect(page).toHaveURL(/\/practice\//);
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // 3. Switch to Revision mode
+  await page.getByRole('button', { name: /Revision \(暗記表\)/ }).click();
+  await expect(page).toHaveURL(/\/revision/);
+  await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
+
+  // 4. Press browser Back button -> should return to Practice mode
+  await page.goBack();
+  await expect(page).toHaveURL(/\/practice\//);
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // 5. Press browser Back button again -> should return to the Time & Age lesson
+  await page.goBack();
+  await expect(page).toHaveURL(/\/learn\/g1-l1-time-and-age/);
+  await expect(page.getByRole('heading', { level: 1 }).filter({ hasText: '時間' })).toBeVisible();
+
+  // 6. Press browser Forward button -> should advance back to Practice mode
+  await page.goForward();
+  await expect(page).toHaveURL(/\/practice\//);
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // 7. Direct URL navigation to Revision mode
+  await page.goto('/revision');
+  await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
+});
