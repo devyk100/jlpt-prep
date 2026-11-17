@@ -1,3 +1,4 @@
+import { AnnotatedText } from './AnnotatedText';
 import React, { useMemo } from 'react';
 import type { GrammarPoint } from '../types';
 import { Search, CheckCircle, Check, Book } from 'lucide-react';
@@ -146,8 +147,8 @@ export const SidebarPane: React.FC<Props> = ({
                 <div className="min-w-0 flex-1">
                   {/* Title & Level Tag */}
                   <div className="flex items-baseline gap-2 mb-1">
-                    <span className="font-serif-ja text-[15px] font-semibold text-[#1e2d26] truncate">
-                      {pt.title.split(' (')[0]}
+                    <span className="font-serif-ja text-[15px] font-semibold text-[#1e2d26] leading-loose">
+                      <AnnotatedText text={pt.title.split(' (')[0]} level={pt.level} passive />
                     </span>
                     {!seamlessFlowMode && (
                       <span className={`text-[9px] px-1.5 py-0.2 rounded font-semibold uppercase ${

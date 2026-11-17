@@ -1,0 +1,114 @@
+g2-l13-potential|Ability and standard conjugation|私は日本語の新聞が読めます。弟はまだ読めません。|I can read Japanese newspapers. My younger brother cannot yet.|An u-verb changes 読む→読める; the potential verb then has polite affirmative/negative forms.
+g2-l13-potential|Ru-verb and contextual possibility|この店では、新鮮な魚が食べられます。|You can eat fresh fish at this restaurant.|食べる→食べられる is the standard ru-verb potential; this example describes an available opportunity, not just a personal skill.
+g2-l13-shi-reasons|Several reasons|この店は安いし、おいしいし、よく来ます。|I come here often because it is cheap and the food is good.|し accumulates contributing reasons; it need not claim that these are the only ones.
+g2-l13-shi-reasons|One explicit reason with others implied|明日は休みだし、少し夜更かししてもいいでしょう。|Tomorrow is a day off, among other things, so staying up a little should be fine.|A single stated し reason is possible; a noun predicate uses だし.
+g2-l13-te-miru|Trying to find out|この靴を履いてみてもいいですか。|May I try these shoes on?|てみる means carrying out the action to see what it is like or what happens.
+g2-l13-te-miru|Try an action, learn the result|先生に聞いてみましたが、先生も知りませんでした。|I tried asking the teacher, but the teacher did not know either.|The attempt at asking occurred; the desired information was not obtained.
+g2-l13-nara-conditional|Advice based on a premise|日本へ行くなら、少し日本語を勉強しておくといいです。|If you are going to Japan, it is a good idea to study some Japanese beforehand.|The recommended preparation comes before the trip; なら does not mean after going.
+g2-l13-nara-conditional|Narrow the topic|ひらがななら読めますが、漢字はまだ苦手です。|I can read hiragana, but I am still not good at kanji.|なら focuses the ability claim on hiragana. The contrast is supplied explicitly here.
+added-g2-13-20|Appearance from an adjective|このケーキはおいしそうです。|This cake looks delicious.|Appearance そう drops the final い of the adjective; compare hearsay おいしいそうです.
+added-g2-13-20|Imminent event|空が暗くなってきました。雨が降りそうです。|The sky has become dark. It looks as if it will rain.|Verb stem + そう predicts an event from signs, rather than reporting what someone said.
+added-g2-13-20|Irregular adjective forms|この方法はよさそうです。問題もなさそうです。|This method looks good. There do not seem to be any problems either.|いい→よさそう and ない→なさそう are special forms; do not use いそう for good.
+added-g2-13-21|Frequency within a period|一週間に三回、泳いでいます。|I swim three times a week.|The period takes に before the number of occurrences.
+added-g2-13-21|Interval between occurrences|二日に一回、花に水をやります。|I water the flowers once every two days.|二日に一回 gives a repeated interval, not two occurrences every day.
+g2-l14-hoshii|Desired object|新しい辞書がほしいです。|I want a new dictionary.|ほしい describes desire for a thing; the basic target is marked with が.
+g2-l14-hoshii|Object versus action|車がほしいですが、今は買いたくありません。|I want a car, but I do not want to buy one now.|ほしい expresses wanting the thing; たい expresses wanting to perform an action. The two need not coincide.
+g2-l14-kamoshirenai|Possibility without certainty|明日は雪が降るかもしれません。|It may snow tomorrow.|かもしれない leaves open a possibility; it does not encode a fixed numerical probability.
+g2-l14-kamoshirenai|Noun and past predicates|今日は休みかもしれません。昨日も休みだったかもしれません。|It may be closed today. It may have been closed yesterday too.|Non-past affirmative nouns omit だ before かもしれない; a past predicate retains だった.
+g2-l14-tara-dou-desu-ka|Suggest an action|分からないなら、先生に聞いてみたらどうですか。|If you do not understand, why not try asking your teacher?|Vたらどう suggests a possible solution; it does not assert that the action already happened.
+g2-l14-tara-dou-desu-ka|Tone and relationship|疲れているなら、今日は早く寝たらどう。|If you are tired, why not go to bed early today?|The same construction can sound caring or critical depending on tone and relationship.
+added-g2-14-22|Give outward|私は友達に本をあげました。|I gave a book to a friend.|The giver is the subject and the receiver takes に. あげる views the gift as moving away from the speaker's side.
+added-g2-14-22|Give toward the speaker|友達が私に本をくれました。|A friend gave me a book.|くれる presents the giver's action toward the speaker or their side.
+added-g2-14-22|Receive|私は友達に本をもらいました。|I received a book from a friend.|The receiver is the subject with もらう; this describes the same transfer from another viewpoint.
+added-g2-14-23|Unexpectedly large amount|昨日は十時間も寝ました。|I slept as many as ten hours yesterday.|Quantity + も signals that the speaker considers the amount notable or large.
+added-g2-14-23|Restricted amount|昨日は三時間しか寝ませんでした。|I slept only three hours yesterday.|Quantity + しか pairs with a negative predicate. It excludes a larger amount in the statement.
+g2-l15-volitional-form|Invite in plain style|一緒に帰ろう。|Let's go home together.|帰る is an u-verb: 帰ろう. The volitional can invite another person to join.
+g2-l15-volitional-form|Resolve to act|よし、もう一度やってみよう。|All right, I will try once more.|The volitional can express the speaker's resolve without inviting anyone else.
+g2-l15-volitional-to-omotte-iru|Intention|来年、日本へ留学しようと思っています。|I intend to study abroad in Japan next year.|The volitional 留学しよう makes this an intention, while と思っている presents it as an ongoing plan.
+g2-l15-volitional-to-omotte-iru|Decision expressed now|今日は歩いて帰ろうと思います。|I think I will walk home today.|と思います expresses an intention here; it does not prove that the decision was made at this exact second.
+g2-l15-relative-clauses|Modify the following noun|これは友達が作ったケーキです。|This is the cake my friend made.|The modifying clause goes before ケーキ; its subject takes が in this example.
+g2-l15-relative-clauses|Omitted role inside the modifier|昨日会った人は医者です。|The person I met yesterday is a doctor.|The person is understood as the one met inside 昨日会った; do not insert an English-style relative pronoun.
+added-g2-15-24|Prepare in advance|旅行の前に、ホテルを予約しておきます。|I will reserve a hotel before the trip.|ておく presents the action as preparation for a later purpose.
+added-g2-15-24|Keep a state for later|あとで使うので、電気はつけておいてください。|We will use it later, so please leave the light on.|ておく can maintain a useful state rather than perform a new action immediately.
+g2-l16-to-ii-hoping|Wish about someone else|試験に合格できるといいですね。|I hope you can pass the exam.|Potential + といい expresses a hoped-for possibility; ですね shares the wish with the listener.
+g2-l16-to-ii-hoping|Personal hope|来年また会えるといいんですが。|I hope we can meet again next year.|んですが softens the wish; it is not a rigid first-person-only ending.
+g2-l16-toki-tense|Before completion of a trip|日本へ行くとき、空港でお土産を買いました。|When I was going to Japan, I bought souvenirs at the airport.|Dictionary-form 行くとき commonly locates the purchase before reaching the destination.
+g2-l16-toki-tense|During the occasion after arrival|日本へ行ったとき、京都を訪ねました。|When I went to Japan, I visited Kyoto.|たとき presents the trip as realized; interpret the relation to the main action in context rather than translating every た as after everything finished.
+added-g2-16-25|Do a favor outward|私は友達に日本語を教えてあげました。|I taught my friend Japanese as a favor.|てあげる frames an action as benefiting someone else; directly announcing favors to a superior can sound presumptuous.
+added-g2-16-25|Receive a favor from the giver's viewpoint|友達が駅まで迎えに来てくれました。|My friend came to the station to pick me up.|The friend is the subject; くれる presents the action as benefiting the speaker.
+added-g2-16-25|Receive a favor from the receiver's viewpoint|私は友達に駅まで送ってもらいました。|I had a friend take me to the station.|The receiver is the subject, and に identifies the person performing the helpful action.
+added-g2-16-26|Deferential request|もう一度説明していただけませんか。|Could you explain that once more, please?|ていただけませんか is a deferential request for a favor; it does not ask about the speaker's physical ability.
+added-g2-16-26|Request with a preface|すみませんが、この漢字の読み方を教えていただけませんか。|Excuse me, could you tell me how to read this kanji?|The preface helps introduce the request. The verb still needs its te-form.
+added-g2-16-27|Apologize for an action|遅れてすみません。|I am sorry for being late.|Vて gives the action/state for which the speaker apologizes.
+added-g2-16-27|Apologize for not doing something|連絡しなくてすみませんでした。|I am sorry I did not contact you.|Vなくて gives the negative cause for the apology; it differs from Vないで used for doing something without another action.
+g2-l17-hearsay-sou-desu|Report versus appearance|この店はおいしいそうです。この料理もおいしそうです。|I hear this restaurant is good. This dish looks tasty too.|Hearsay keeps い; appearance drops it. The information source differs.
+g2-l17-hearsay-sou-desu|Noun/na-adjective predicate|新しい先生は親切だそうです。|I hear the new teacher is kind.|Hearsay keeps the plain affirmative だ before そうです.
+g2-l17-tara-conditional|Future condition with a request|駅に着いたら、電話してください。|Please call when you arrive at the station.|たら can introduce a request to be carried out after the condition is met.
+g2-l17-tara-conditional|Past discovery|家に帰ったら、誰もいませんでした。|When I got home, nobody was there.|たら can introduce an actual past discovery, not only a hypothetical condition.
+g2-l17-nakute-mo-ii|No obligation|明日は学校へ来なくてもいいです。|You do not have to come to school tomorrow.|Permission not to act is different from a prohibition against acting.
+g2-l17-nakute-mo-ii|Contrast with prohibition|書かなくてもいいです。でも、ここに書いてはいけません。|You do not have to write it. But you must not write here.|なくてもいい removes necessity; てはいけない forbids an action in the specified place.
+added-g2-17-28|Casual report|田中さんは明日来ないって。|Tanaka said they are not coming tomorrow.|って conveys reported content in casual speech.
+added-g2-17-28|Inference from signs|電気が消えています。誰もいないみたいです。|The lights are off. It looks as if nobody is there.|みたい expresses an inference in this context; it is not automatically a report from another person.
+added-g2-17-28|Resemblance|この雲は動物みたいです。|This cloud looks like an animal.|Nみたい describes resemblance; distinguish it from information-based inference.
+added-g2-17-29|Before|寝る前に、歯を磨きます。|I brush my teeth before going to bed.|Dictionary-form V前に gives a temporal relation even if the main sentence later uses past tense.
+added-g2-17-29|Only after the first action|宿題をしてから、遊びに行きます。|I will go out to play after doing my homework.|Vてから foregrounds completing the first action before the next.
+g2-l18-transitive-intransitive|Event versus agent's action|窓が開きました。私が窓を開けました。|The window opened. I opened the window.|開く is intransitive; 開ける takes the window as its object. Intransitive does not itself prove there was no human cause.
+g2-l18-transitive-intransitive|Resulting states|電気がついています。テレビは消えています。|The light is on. The television is off.|Intransitive ている describes resulting states rather than a continuing act of turning something on/off.
+g2-l18-to-natural-consequence|Regular consequence|このボタンを押すと、ドアが開きます。|If you press this button, the door opens.|Conditional と presents the mechanism's result rather than a request or decision.
+g2-l18-to-natural-consequence|Past discovery|窓を開けると、雪が降っていました。|When I opened the window, it was snowing.|Narrative と can introduce an actual discovery in the past; it is not limited to universal natural laws.
+g2-l18-ba-yokatta|Regret about not acting|もっと早く予約すればよかったです。|I should have booked earlier.|The speaker evaluates the unchosen action as the better choice.
+g2-l18-ba-yokatta|Regret about acting|あんなことを言わなければよかったです。|I should not have said such a thing.|The negative conditional expresses regret that the action did occur.
+added-g2-18-30|Completion|この本を今日中に読んでしまいます。|I will finish reading this book today.|てしまう can emphasize completing an action; it need not express regret.
+added-g2-18-30|Unwanted outcome|大切な写真を消してしまいました。|I accidentally deleted an important photo.|Context makes the completed action regrettable. The grammar alone does not guarantee an accident.
+added-g2-18-30|Conversational contraction|宿題はもうやっちゃった。|I have already finished the homework.|てしまう can contract to ちゃう; voiced でしまう can become じゃう, as in 飲んじゃった.
+added-g2-18-31|Simultaneous actions by one actor|音楽を聞きながら、料理をしています。|I am cooking while listening to music.|The same person performs both actions. The final predicate is the main activity.
+added-g2-18-31|Main activity can change|料理をしながら、友達と電話で話しました。|I talked to a friend on the phone while cooking.|Changing the final predicate changes which activity is presented as central; ながら itself does not specify a fixed priority for cooking or talking.
+g2-l19-sonkeigo-verbs|Special honorific action|先生は何を召し上がりますか。|What will you have to eat/drink, Professor?|召し上がる honors the actor's eating/drinking; do not use it to honor yourself.
+g2-l19-sonkeigo-verbs|Honorific polite stem|先生はもういらっしゃいましたか。|Has the teacher arrived yet?|いらっしゃる has the special polite stem いらっしゃい. The intended sense can be come/go/be depending on context.
+g2-l19-o-kudasai|Productive request pattern|少々お待ちください。|Please wait a moment.|お + verb stem + ください makes an honorific request; not every verb takes the pattern freely.
+g2-l19-o-kudasai|Special conventional form|こちらの写真をご覧ください。|Please look at this photograph.|ご覧ください is the conventional honorific form for looking; do not invent ご見ください.
+added-g2-19-32|Thank someone for a favor|手伝ってくれて、ありがとう。|Thank you for helping me.|くれる presents the action as a benefit toward the speaker's side. A more formal thanks uses くださってありがとうございます.
+added-g2-19-32|Relief/evaluation after an event|無事に着いてよかったです。|I am glad you arrived safely.|てよかった evaluates the event positively; it does not mean that the event was morally good in every sense.
+added-g2-19-33|Expectation based on information|田中さんは毎日練習しているので、上手なはずです。|Tanaka practices every day, so I expect they are good.|はず expresses an expectation supported by a premise, not direct observation or certainty beyond error.
+added-g2-19-33|Expectation contradicted|ここに置いたはずなのに、見つかりません。|I am sure I put it here, but I cannot find it.|はず can present a remembered/expected situation that clashes with what is observed.
+added-g2-20-34|Humble introduction|私は山田と申します。|My name is Yamada.|申す is a humble/polite counterpart of 言う used toward the listener.
+added-g2-20-34|Humble action toward someone|先生のお宅に伺いました。|I visited my teacher's home.|伺う is a humble verb for visiting/asking/listening in suitable contexts; the meaning depends on the action and its target.
+added-g2-20-34|Polite existence|資料はこちらにございます。|The materials are here.|ございます is polite ある, used for things; do not replace animate いる mechanically with it.
+added-g2-20-35|Without performing another action|朝ご飯を食べないで、学校へ行きました。|I went to school without eating breakfast.|ないで links an omitted accompanying action to the main action.
+added-g2-20-35|Without versus a negative cause|傘を持たないで出かけました。傘がなくて困りました。|I went out without an umbrella. I was in trouble because I did not have one.|ないで describes what was not done while leaving; なくて supplies a negative circumstance as a cause here.
+added-g2-20-36|Embedded information question|会議が何時に始まるか、知っていますか。|Do you know what time the meeting starts?|か closes the embedded question; the final か makes the whole sentence a question about knowing.
+added-g2-20-36|Embedded yes/no question|明日行けるかどうか、まだ分かりません。|I do not yet know whether I can go tomorrow.|かどうか embeds a yes/no uncertainty rather than an information question with who/when.
+added-g2-20-36|Name before a noun|さくらという店で昼ご飯を食べました。|I had lunch at a restaurant called Sakura.|という connects a name to the following category noun 店.
+added-g2-20-37|Ease or difficulty of an action|このペンは書きやすいですが、細い字は書きにくいです。|This pen is easy to write with, but fine lettering is hard to write.|V-stem + やすい/にくい forms an い-adjective describing ease/difficulty.
+added-g2-20-37|Tendency rather than effort|このコップは割れやすいです。|This glass breaks easily.|やすい can describe a tendency of an event to occur, not someone's conscious effort.
+g2-l21-te-aru|Prepared resulting state|机の上に資料が並べてあります。|The materials have been arranged on the desk.|てある indicates a resulting state from someone's deliberate arrangement.
+g2-l21-te-aru|Preparation already done|旅行のホテルは、もう予約してあります。|The hotel for the trip has already been booked.|The action is presented as preparation completed for a later purpose; the agent need not be named.
+g2-l21-aida-vs-aidani|Continuing activity|母が買い物をしている間、私は車で待っていました。|I waited in the car while my mother was shopping.|間 presents waiting as continuing through the relevant shopping period.
+g2-l21-aida-vs-aidani|Event within a period|母が買い物をしている間に、友達から電話が来ました。|A friend called while my mother was shopping.|間に places a call within that period; it does not describe a call lasting throughout the shopping.
+added-g2-21-38|Direct passive|私は先生に褒められました。|I was praised by my teacher.|The recipient of praise becomes the subject; に marks the person doing the praising.
+added-g2-21-38|Affected/suffering passive|弟にケーキを食べられて、がっかりしました。|My younger brother ate my cake, and I was disappointed.|The speaker is affected by someone else's action; the cake remains the object inside the passive construction.
+added-g2-21-38|Passive without a named agent|この橋は百年前に建てられました。|This bridge was built a hundred years ago.|A passive can focus on an object/event and leave the builder unnamed; it need not express suffering.
+added-g2-21-39|Deliberate adjective change|部屋をきれいにしました。音も小さくしました。|I made the room clean. I also turned the sound down.|な-adjectiveにする and い-adjectiveくする describe making something a certain way.
+added-g2-21-39|Want someone else's action|友達に、この本を読んでほしいです。|I want my friend to read this book.|The desired actor takes に; ほしい describes the speaker's wish, not the friend's own desire.
+g2-l22-ba-conditional|Conditional form|安ければ、買います。|If it is cheap, I will buy it.|An い-adjective changes い to ければ. A stative condition can accompany the speaker's intention.
+g2-l22-ba-conditional|Negative condition|急がなければ、間に合いません。|If we do not hurry, we will not make it in time.|The negative conditional comes from ない→なければ.
+g2-l22-noni-frustration|Unexpected bad result|早く出たのに、電車に間に合いませんでした。|Although I left early, I did not catch the train.|The result contradicts the expectation that leaving early would be enough.
+g2-l22-noni-frustration|Unexpected favorable result|この店は安いのに、とてもおいしいです。|This restaurant is inexpensive, yet the food is very good.|のに can mark a favorable surprise; frustration is not required.
+added-g2-22-40|Make someone act|先生は学生に作文を書かせました。|The teacher made the students write an essay.|The teacher is the causer; the students perform the writing.
+added-g2-22-40|Let someone act|母は私を旅行に行かせてくれました。|My mother let me go on a trip.|Causative + くれる presents permission as a benefit to the speaker, rather than coercion.
+added-g2-22-40|Ask permission for one's action|少し考えさせてください。|Please let me think for a while.|The speaker asks to be allowed to perform the action, not for the listener to think.
+added-g2-22-41|Firm instruction|早く寝なさい。|Go to bed soon.|V-stem + なさい is a directive, often from an adult to a child; it is not a general respectful request to a superior.
+added-g2-22-41|Written exercise instruction|正しい答えを選びなさい。|Choose the correct answer.|なさい commonly appears in exercise instructions; use the polite stem before it.
+added-g2-22-42|Modify a noun|これは花のような形をしています。|This has a flowerlike shape.|Nのような modifies the following noun 形.
+added-g2-22-42|Modify an action|鳥のように空を飛びたいです。|I want to fly through the sky like a bird.|Nのように modifies the action rather than a noun.
+g2-l23-temo-even-if|Hypothetical concession|雨が降っても、出かけます。|Even if it rains, I will go out.|The condition does not reverse the speaker's decision.
+g2-l23-temo-even-if|No matter how much|何度読んでも、この説明が分かりません。|No matter how many times I read it, I do not understand this explanation.|A question-word quantity with ても generalizes across repeated attempts.
+g2-l23-koto-ni-suru-naru|Personal decision|来年、大学院に進むことにしました。|I have decided to go to graduate school next year.|ことにする foregrounds a decision by the actor.
+g2-l23-koto-ni-suru-naru|Settled arrangement|来月から新しい部署で働くことになりました。|It has been arranged that I will work in a new department from next month.|ことになる presents the settled outcome without specifying exactly who decided it.
+added-g2-23-43|Made to do an action|学生のころ、毎朝走らされました。|When I was a student, I was made to run every morning.|走らされる is a contracted causative-passive for a suitable u-verb; the subject is the person made to act.
+added-g2-23-43|Ru-verb causative-passive|子供のころ、嫌いな野菜を食べさせられました。|As a child, I was made to eat vegetables I disliked.|Ru-verbs use stem + させられる; do not replace it with the ordinary passive 食べられる.
+added-g2-23-43|A contraction that is not allowed|みんなの前で長く話させられました。|I was made to speak for a long time in front of everyone.|For a verb ending in す, keep 話させられる; 話される would be an ordinary passive, not this causative-passive.
+added-g2-23-44|Affirmative personal rule|毎朝、新聞を読むことにしています。|I make it a rule to read the newspaper every morning.|ことにしている describes a maintained chosen practice, not just a plan for one future occasion.
+added-g2-23-44|Negative personal rule|寝る前はスマートフォンを見ないことにしています。|I make it a rule not to look at my phone before bed.|The negative clause specifies what the actor has decided to avoid.
+added-g2-23-45|Until versus by a deadline|五時まで待ちます。五時までに来てください。|I will wait until five. Please come by five.|まで gives the endpoint of continuing waiting; までに gives a deadline for arriving.
+added-g2-23-45|Way of doing|この漢字の読み方を教えてください。|Please tell me how to read this kanji.|V-stem + 方 forms a noun meaning the way to do something. The original object becomes a の modifier in この漢字の読み方.

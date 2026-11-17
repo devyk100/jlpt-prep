@@ -1,3 +1,4 @@
+import { AnnotatedText } from './AnnotatedText';
 import { useModal } from '../useModal';
 import React, { useState, useEffect, useRef } from 'react';
 import type { GrammarPoint } from '../types';
@@ -107,7 +108,7 @@ export const SearchModal: React.FC<Props> = ({
                 <div className="space-y-0.5 pr-3 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="font-serif-ja font-semibold text-sm text-[#1e2d26] group-hover:text-[#467b6b]">
-                      {pt.title.split(' (')[0]}
+                      <AnnotatedText text={pt.title.split(' (')[0]} level={pt.level} passive />
                     </span>
                     {!seamlessFlowMode && (
                       <span className="text-[9px] px-1.5 py-0.2 rounded font-semibold uppercase bg-[#edebe0] text-[#617066]">

@@ -1,0 +1,111 @@
+g1-l1-wa-desu|Introduce the topic|私は会社員です。|I am an office worker.|は marks what the statement is about; 会社員です identifies that topic politely.
+g1-l1-wa-desu|Omit an understood topic|学生ですか。はい、学生です。|Are you a student? Yes, I am.|Neither sentence needs 私 or あなた when the context supplies who is being discussed.
+g1-l1-wa-desu|Nouns do not mark number automatically|二人とも学生です。|Both people are students.|学生 itself does not change into a plural form; 二人とも supplies the number information.
+g1-l1-question-ka|Yes/no question|田中さんは先生ですか。いいえ、学生です。|Is Tanaka a teacher? No, Tanaka is a student.|か turns the polite statement into a question without changing the word order.
+g1-l1-question-ka|Question word in its normal position|専攻は何ですか。経済です。|What is your major? Economics.|何 replaces the unknown identifying noun. Its reading before です is なん.
+g1-l1-noun-no-noun|Possession|これは姉のかばんです。|This is my older sister's bag.|The possessor comes before の; the possessed item comes after it.
+g1-l1-noun-no-noun|Category or affiliation|日本語の先生は山田さんです。|The Japanese-language teacher is Yamada.|の can identify a field or category, not only ownership.
+g1-l1-noun-no-noun|Several links in a noun phrase|友達の大学の図書館は大きいです。|The library at my friend's university is large.|The head noun is 図書館; each preceding の phrase narrows what library is meant.
+g1-l1-time-and-age|Conventional hour readings|今、四時です。会議は九時からです。|It is four now. The meeting starts at nine.|四時 is よじ and 九時 is くじ; the counter combination has a conventional reading.
+g1-l1-time-and-age|Minute sound changes|電車は八時十分に出ます。|The train leaves at ten past eight.|十分 as ten minutes is じゅっぷん/じっぷん, not the adjective 十分じゅうぶん meaning sufficient.
+g1-l1-time-and-age|Special age reading|妹は二十歳です。|My younger sister is twenty.|Age 二十歳 is normally はたち; do not mechanically read the kanji one by one.
+g1-l2-kore-sore-are-dore|Near the speaker|これは私のスマートフォンです。|This is my smartphone.|これ stands alone and refers to an item near the speaker in the basic physical-distance use.
+g1-l2-kore-sore-are-dore|Far from both people|あれは何ですか。古い時計です。|What is that over there? It is an old clock.|あれ refers to something distant from both participants in this physical context.
+g1-l2-kore-sore-are-dore|Selecting an item|山田さんの傘はどれですか。これです。|Which umbrella is Yamada's? This one.|どれ asks for a choice among items; the answer can be another standalone demonstrative.
+g1-l2-kono-sono-ano-dono|Modifier requires its noun|この本は私のです。|This book is mine.|この modifies 本. In the predicate, 私の can stand for my book because the item is understood.
+g1-l2-kono-sono-ano-dono|Selecting a noun|どのかばんが好きですか。あの赤いかばんが好きです。|Which bag do you like? I like that red bag over there.|どの and あの each modify a following noun phrase; どれ/あれ stand alone instead.
+g1-l2-koko-soko-asoko-doko|Place of an action|ここで写真を撮ってもいいですか。|May I take photos here?|ここ is a place noun; で marks it as the location of the action.
+g1-l2-koko-soko-asoko-doko|Location of existence|郵便局はあそこにあります。|The post office is over there.|あそこに marks the place where the post office exists, rather than an action location.
+g1-l2-mo-particle|Add another person|兄は学生です。私も学生です。|My older brother is a student. I am a student too.|も replaces the topic は while adding the same description for another person.
+g1-l2-mo-particle|Keep another particle|京都へ行きました。奈良にも行きました。|I went to Kyoto. I also went to Nara.|も follows に, retaining the destination relation. Do not remove every particle mechanically.
+g1-l2-janai-desu|Negative identity|私は先生じゃありません。学生です。|I am not a teacher. I am a student.|A noun predicate uses じゃありません or じゃないです; ありません alone is not the negative of this noun identity sentence.
+g1-l2-janai-desu|Na-adjective versus i-adjective|この町は静かじゃないです。今日は寒くないです。|This town is not quiet. It is not cold today.|The な-adjective uses じゃない; the い-adjective uses くない. These are different conjugation patterns.
+added-g1-2-1|Ask whose|これはだれの傘ですか。田中さんのです。|Whose umbrella is this? It is Tanaka's.|だれの asks for the possessor; the repeated noun 傘 can be omitted after の in the answer.
+added-g1-2-1|Shared recognition versus informing|今日は暑いですね。この部屋は涼しいですよ。|It is hot today, isn't it? This room is cool, you know.|ね invites shared recognition; よ offers information. Their effect also depends on tone and context.
+g1-l3-masu-form|Habit|毎朝、六時に起きます。|I get up at six every morning.|Non-past ます describes a regular habit here.
+g1-l3-masu-form|Future and negative|明日は家で勉強します。図書館には行きません。|Tomorrow I will study at home. I will not go to the library.|The same non-past form can describe future plans; ません negates the verb politely.
+g1-l3-masenka-invitation|Invitation and acceptance|一緒に昼ご飯を食べませんか。いいですね。食べましょう。|Would you like to have lunch together? That sounds good. Let's eat.|ませんか invites; ましょう accepts/proposes proceeding.
+g1-l3-masenka-invitation|Softened refusal|今夜、映画を見ませんか。すみません、今夜はちょっと。|Would you like to watch a movie tonight? Sorry, tonight is a bit difficult.|A refusal can be softened by context and a trailing ちょっと; it does not need a blunt negative response.
+added-g1-3-2|Destination versus action location|学校に行きます。学校で日本語を勉強します。|I go to school. I study Japanese at school.|に marks the destination; で marks where the studying occurs.
+added-g1-3-2|Verb group affects the stem|本を読みます。テレビを見ます。宿題をします。|I read a book. I watch television. I do homework.|読む is an u-verb, 見る a ru-verb, and する irregular; their polite stems are formed differently.
+added-g1-3-3|Specific time versus relative time|七時に起きます。明日は八時に起きます。|I get up at seven. Tomorrow I will get up at eight.|Clock times take に; relative 明日 normally stands without it.
+added-g1-3-3|Frequency and negative|よく映画を見ますが、テレビはあまり見ません。|I often watch films, but I do not watch much television.|よく gives high frequency; あまり with a negative gives low frequency/degree.
+g1-l4-past-forms-deshita|Verb past affirmative and negative|昨日は勉強しました。でも、運動はしませんでした。|Yesterday I studied, but I did not exercise.|Verb stems take ました or ませんでした.
+g1-l4-past-forms-deshita|Noun predicate in the past|昨日は休みでした。今日は休みじゃありません。|Yesterday was a day off. Today is not.|でした is the noun-predicate past; it is not attached after an ordinary dictionary verb.
+g1-l4-location-words|Reference noun and spatial noun|机の上に本があります。|There is a book on the desk.|机の上 is the location noun phrase; に marks the location of existence.
+g1-l4-location-words|Two reference points|銀行は駅と学校の間にあります。|The bank is between the station and the school.|AとBの間 identifies the two reference points for between.
+added-g1-4-4|Animate versus inanimate existence|教室に学生がいます。机もあります。|There are students in the classroom. There are desks too.|Use いる for people/animals and ある for things in these basic existence statements.
+added-g1-4-4|Ask where an identified thing is|辞書はどこにありますか。かばんの中にあります。|Where is the dictionary? It is in the bag.|The identified dictionary is the topic; the question asks for its location.
+added-g1-4-4|Possession/relationship|兄弟がいますか。姉が一人います。|Do you have any siblings? I have one older sister.|いる can describe having a family member, not just physical presence at a location.
+added-g1-4-5|Clock time versus duration|三時に図書館へ行って、三時間勉強しました。|I went to the library at three and studied for three hours.|三時に is a clock time; 三時間 is a duration, without に in this construction.
+added-g1-4-5|Listing nouns versus a companion|パンと卵を買いました。友達と買い物に行きました。|I bought bread and eggs. I went shopping with a friend.|と lists noun items in the first sentence and marks a companion in the second.
+g1-l5-suki-kirai|Liked item and contrasted item|魚が好きです。でも、肉はあまり好きじゃありません。|I like fish, but I do not like meat very much.|が marks the liked item in the basic pattern; は can contrast another item.
+g1-l5-suki-kirai|Modify a noun|好きな食べ物は何ですか。|What food do you like?|好き behaves as a な-adjective before the following noun.
+g1-l5-mashou-ka|Joint action|そろそろ帰りましょう。|Let's go home soon.|ましょう proposes an action to undertake together.
+g1-l5-mashou-ka|Offer the speaker's help|荷物を持ちましょうか。|Shall I carry your luggage?|ましょうか can offer the speaker's action, not just ask what both people will do.
+added-g1-5-6|I-adjective past and negative|昨日は暑かったです。今日は暑くないです。|It was hot yesterday. It is not hot today.|An い-adjective changes its own ending; do not use 暑いでした.
+added-g1-5-6|Na-adjective before a noun|静かな部屋が好きです。この部屋は静かです。|I like quiet rooms. This room is quiet.|な links the adjective to a noun; it is not inserted before です.
+added-g1-5-7|General object counter|りんごを二つと、みかんを三つ買いました。|I bought two apples and three mandarins.|Quantities can follow を; つ-counter readings are lexical forms such as ふたつ and みっつ.
+added-g1-5-7|Person counter|教室に学生が三人います。先生は一人です。|There are three students in the classroom. There is one teacher.|一人 is ひとり and 三人 is さんにん; learn irregular readings with the counter.
+g1-l6-te-kudasai|Ordinary request|もう一度、説明してください。|Please explain once more.|The verb takes its te-form before ください. Directness depends on the relationship and situation.
+g1-l6-te-kudasai|U-verb sound change|ここに名前を書いてください。|Please write your name here.|書く changes to 書いて; attaching ください does not replace the te-form conjugation.
+g1-l6-te-mo-ii|Ask permission|窓を開けてもいいですか。|May I open the window?|てもいいですか asks whether the action is permitted.
+g1-l6-te-mo-ii|Grant permission versus prohibit|ここで食べてもいいです。でも、たばこを吸ってはいけません。|You may eat here, but you must not smoke.|てもいい grants permission; てはいけない prohibits an action. They are different constructions.
+g1-l6-kara-reason|Verb reason|明日は早く起きるから、もう寝ます。|I will go to bed now because I am getting up early tomorrow.|A plain verb predicate can precede から.
+g1-l6-kara-reason|Noun reason|今日は休みですから、会社へ行きません。|I am not going to work because today is a day off.|A polite noun predicate uses ですから; plain speech uses 休みだから.
+added-g1-6-8|Sequence of actions|朝ご飯を食べて、歯を磨いて、家を出ました。|I ate breakfast, brushed my teeth, and left home.|Te-forms connect actions; the final predicate supplies the past tense for the sequence.
+added-g1-6-8|Prohibition|図書館で大きな声で話してはいけません。|You must not speak loudly in the library.|てはいけない states a prohibition, rather than merely recommending against an action.
+added-g1-6-8|Different verb groups|本を読んで、音楽を聞いて、少し休みました。|I read a book, listened to music, and rested a little.|読む→読んで, 聞く→聞いて. The te-form ending depends on the verb group and final sound.
+g1-l7-describing-people|Person as topic|妹は髪が長いです。|My younger sister has long hair.|妹 is the topic; 髪 is the subject of the adjective predicate.
+g1-l7-describing-people|Possessed feature as topic|妹の髪は長いです。|My younger sister's hair is long.|This is also grammatical. It makes the hair, rather than the person, the explicit topic.
+g1-l7-adj-te-forms|Join two i-adjectives|この店は安くて、おいしいです。|This restaurant is cheap and serves tasty food.|The first い-adjective changes to くて.
+g1-l7-adj-te-forms|Na-adjective and noun connections|山田さんは親切で、日本語の先生です。|Yamada is kind and is a Japanese-language teacher.|で connects the な-adjective predicate to another description.
+g1-l7-purpose-ni-iku|Purpose with a verb stem|図書館へ本を借りに行きます。|I am going to the library to borrow a book.|借り is the polite stem before purpose に; the destination is separately marked with へ.
+g1-l7-purpose-ni-iku|Purpose with an activity noun|友達と買い物に行きました。|I went shopping with a friend.|An activity noun can attach directly to に; no unnecessary する is inserted.
+added-g1-7-9|Action in progress|今、母は電話で話しています。|My mother is talking on the phone now.|話している describes an ongoing activity.
+added-g1-7-9|Resulting state|姉は結婚しています。|My older sister is married.|結婚している normally describes the state resulting from marriage, not an ongoing wedding ceremony.
+added-g1-7-9|Repeated activity|毎週、近くのプールで泳いでいます。|I swim at a nearby pool every week.|ている can also describe a recurring activity, depending on the time expression and context.
+added-g1-7-10|One and two people|学生が二人来ました。先生は一人です。|Two students came. There is one teacher.|二人 is ふたり and 一人 is ひとり; these are special person-counter readings.
+added-g1-7-10|Larger number and question|何人来ますか。四人来ます。|How many people are coming? Four.|何人 is なんにん and 四人 is よにん. The count can follow the particle rather than requiring の.
+g1-l8-nai-de-kudasai|Negative request|ここで写真を撮らないでください。|Please do not take photographs here.|撮る is an u-verb, so the negative is 撮らない before でください.
+g1-l8-nai-de-kudasai|Irregular negative|心配しないでください。|Please do not worry.|する becomes しない; the phrase requests that the action not occur.
+g1-l8-nominalizer-no|An activity as the liked thing|本を読むのが好きです。|I like reading books.|の nominalizes the full clause 本を読む; を remains inside that clause.
+g1-l8-nominalizer-no|An activity as a skill|姉は料理を作るのが上手です。|My older sister is good at cooking.|The whole nominalized activity takes が before the skill adjective.
+added-g1-8-11|Plain predicate inside a thought|明日は雨が降ると思います。|I think it will rain tomorrow.|The clause before と uses an appropriate plain predicate, even though the final 思います is polite.
+added-g1-8-11|Noun predicate retains だ|この町は便利だと思います。|I think this town is convenient.|A non-past affirmative な-adjective retains だ before quotation と.
+added-g1-8-11|Report what someone said|田中さんは、明日は来ないと言っていました。|Tanaka said that they would not come tomorrow.|The negative plain clause is the content of 言う, not a negative of the reporting verb itself.
+added-g1-8-12|Subject in a question|誰が来ますか。山田さんが来ます。|Who is coming? Yamada is.|が identifies the unknown/requested person in this question-answer pair.
+added-g1-8-12|Something versus nothing|何か食べましたか。いいえ、何も食べていません。|Did you eat anything? No, I have not eaten anything.|何か gives an unspecified thing; 何も with a negative means nothing.
+g1-l9-mou-mada|Completed already|宿題はもう終わりましたか。はい、もう終わりました。|Have you finished your homework yet? Yes, I have already finished.|もう asks about or confirms completion by the current reference time.
+g1-l9-mou-mada|Not completed yet|宿題はまだ終わっていません。|I have not finished my homework yet.|まだ with a negative ている predicate presents the not-yet-completed state, rather than simply a past non-event.
+added-g1-9-13|Past plain form inside a thought|昨日の試験は難しかったと思います。|I think yesterday's exam was difficult.|The adjective's plain past is inside the quoted content; 思います remains polite and non-past.
+added-g1-9-13|Past clause modifying a noun|昨日買った本を読みました。|I read the book I bought yesterday.|昨日買った modifies 本 directly; do not insert an English-style relative pronoun or unnecessary の.
+g1-l10-tsumori|Intention|来年、日本へ留学するつもりです。|I intend to study abroad in Japan next year.|Dictionary verb + つもり states an intention, not a guarantee that the plan will happen.
+g1-l10-tsumori|Negative intention|今日は買わないつもりです。|I intend not to buy it today.|Vないつもり expresses an intention not to act. Compare 買うつもりはない, which denies having an intention to buy.
+g1-l10-adj-naru|I-adjective change|薬を飲んで、気分がよくなりました。|After taking medicine, I felt better.|いい uses the よい stem, giving よくなる.
+g1-l10-adj-naru|Noun and na-adjective change|姉は先生になりました。この町も便利になりました。|My older sister became a teacher. This town has also become convenient.|Nouns and な-adjectives take に before なる, unlike い-adjectives with く.
+added-g1-10-14|Compare two things|電車のほうがバスより速いです。|The train is faster than the bus.|ほう identifies the item being evaluated; より marks the comparison baseline.
+added-g1-10-14|Superlative within a group|この三つの中で、どれが一番安いですか。|Which of these three is the cheapest?|The group is explicitly limited by この三つの中で; 一番 need not mean the best in the whole world.
+added-g1-10-15|Replace an understood noun|赤いかばんは高いです。青いのを買います。|The red bag is expensive. I will buy the blue one.|の replaces the understood noun after an い-adjective.
+added-g1-10-15|Na-adjective linker|大きな部屋より、静かなのがいいです。|I would prefer a quiet room to a large one.|A な-adjective retains な before noun-replacing の.
+added-g1-10-16|Unspecified destination|休みにどこかへ行きたいです。|I want to go somewhere on my day off.|どこか expresses an unspecified place; へ marks destination.
+added-g1-10-16|No destination and means|昨日はどこにも行きませんでした。今日はバスで学校へ行きます。|I did not go anywhere yesterday. Today I will go to school by bus.|どこにも needs the negative here; バスで marks the means of transport.
+added-g1-10-16|Total price|この本を五百円で買いました。|I bought this book for five hundred yen.|で can mark the price/amount for the transaction, not just an action location or transport method.
+g1-l11-tai-desire|Desire and a question|日本へ行きたいです。どこへ行きたいですか。|I want to go to Japan. Where do you want to go?|A statement normally reports the speaker's desire; a question can ask the listener's desire.
+g1-l11-tai-desire|Negative and past forms|今日は何もしたくないです。子供のころは先生になりたかったです。|I do not want to do anything today. When I was a child, I wanted to become a teacher.|たい conjugates like an い-adjective: たくない and たかった.
+g1-l11-koto-ga-aru|Experience before now|京都へ行ったことがあります。|I have been to Kyoto before.|Vたことがある presents a past occurrence as an experience, rather than simply reporting a dated trip.
+g1-l11-koto-ga-aru|Never, contrasted with a past report|歌舞伎を見たことは一度もありません。昨日は映画を見ました。|I have never seen kabuki. Yesterday I watched a film.|Experiential 一度も…ない differs from a simple past report about yesterday.
+added-g1-11-17|Representative actions|週末は映画を見たり、買い物をしたりしました。|At the weekend I did things such as watching a film and shopping.|たり lists examples, not a strict sequence or necessarily a complete list; tense is on the final しました.
+added-g1-11-17|Representative nouns|机の上に本やノートがあります。|There are books, notebooks, and other things on the desk.|や lists representative nouns and leaves room for other items; と more directly lists the specified items together.
+g1-l11-sugiru|Excessive action|昨日は食べすぎました。|I ate too much yesterday.|Verb stem + すぎる; the resulting expression conjugates as a ru-verb.
+g1-l11-sugiru|Adjective attachment|この服は高すぎます。説明は簡単すぎました。|These clothes are too expensive. The explanation was too simple.|An い-adjective drops い; a な-adjective uses its stem without な.
+g1-l12-node-objective-reason|Polite request with a reason|少し寒いので、窓を閉めてもいいですか。|It is a little cold, so may I close the window?|ので can precede a polite request; a universal ban on requests after ので is false.
+g1-l12-node-objective-reason|Noun and past forms|今日は休みなので、家にいます。昨日は休みだったので、出かけました。|Today is a day off, so I am at home. Yesterday was a day off, so I went out.|Non-past affirmative nouns use なので; the past form retains だった before ので.
+g1-l12-nakereba-ikemasen|Obligation|明日までに宿題を出さなければいけません。|I must submit the homework by tomorrow.|出す becomes 出さない; replace final い with ければいけない.
+g1-l12-nakereba-ikemasen|Conversational contraction|もう帰らなきゃ。|I have to go home now.|なきゃ is a conversational contraction; the final いけない can be omitted when understood.
+g1-l12-deshou-darou|Conjecture|明日は寒いでしょう。|It will probably be cold tomorrow.|でしょう expresses a prediction, not a numerical probability guarantee.
+g1-l12-deshou-darou|Noun without だ|あの人は先生でしょう。|That person is probably a teacher.|A non-past affirmative noun attaches directly to でしょう, without だ.
+added-g1-12-18|Explain relevant background|今日は早く帰ります。用事があるんです。|I am going home early today. I have something to do.|んです presents the second statement as an explanation relevant to the first.
+added-g1-12-18|Ask for an explanation|どうして休んだんですか。熱があったんです。|Why were you absent? I had a fever.|The explanatory question asks for background; the past predicates retain their past forms before んです.
+added-g1-12-19|Positive advice|疲れているなら、少し休んだほうがいいです。|If you are tired, you should rest a little.|The affirmative advice uses Vた even though the recommended action is still in the future.
+added-g1-12-19|Negative advice|夜遅くにコーヒーを飲まないほうがいいです。|You should not drink coffee late at night.|Negative advice uses Vない; it is advice, not the formal prohibition てはいけない.

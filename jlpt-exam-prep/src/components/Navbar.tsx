@@ -15,8 +15,8 @@ interface Props {
   onSelectStream: (streamId: string) => void;
   seamlessFlowMode: boolean;
   onToggleSeamlessFlow: () => void;
-  furiganaMode: 'all' | 'hover' | 'off';
-  onChangeFuriganaMode: (mode: 'all' | 'hover' | 'off') => void;
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
+  onChangeFuriganaMode: (mode: 'book' | 'all' | 'hover' | 'off') => void;
   onOpenSearch: () => void;
   onOpenMistakeBank: () => void;
   onOpenTablesModal: () => void;

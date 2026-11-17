@@ -1,3 +1,4 @@
+import { AnnotatedText } from './AnnotatedText';
 import { useModal } from '../useModal';
 import React, { useState } from 'react';
 import { BOOK_SOURCES } from '../data/bookCatalog';
@@ -99,7 +100,7 @@ export const BookCatalogModal: React.FC<Props> = ({
                       >
                         <div className="truncate pr-2">
                           <span className="font-serif-ja text-xs font-semibold text-[#1e2d26] group-hover:text-[#467b6b] block truncate">
-                            {pt.title.split(' (')[0]}
+                            <AnnotatedText text={pt.title.split(' (')[0]} level={pt.level} passive />
                           </span>
                           <span className="text-[10.5px] text-[#788278] block truncate">
                             {pt.meaning}

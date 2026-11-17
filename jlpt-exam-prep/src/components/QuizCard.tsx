@@ -1,3 +1,4 @@
+import { AnnotatedText } from './AnnotatedText';
 import React, { useState, useMemo } from 'react';
 import { orderQuestion } from '../studyUtils';
 import type { QuizQuestion } from '../types';
@@ -46,7 +47,7 @@ export const QuizCard: React.FC<Props> = ({
           <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#edebe0] text-[#617066]">
             Check
           </span>
-          <span className="text-xs text-[#788278]">{question.grammarFocus}</span>
+          <span className="text-xs text-[#788278]"><AnnotatedText text={question.grammarFocus} /></span>
         </div>
 
         {onToggleFlag && (
@@ -64,12 +65,12 @@ export const QuizCard: React.FC<Props> = ({
 
       {/* Japanese Question Prompt */}
       <div className="font-serif-ja text-base sm:text-lg font-bold text-[#1e2d26] leading-relaxed mb-1">
-        {question.question}
+        <AnnotatedText text={question.question} />
       </div>
 
       {/* English Meaning Prompt */}
       <div className="text-xs text-[#788278] mb-4 italic">
-        "{question.translation}"
+        "<AnnotatedText text={question.translation} />"
       </div>
 
       {/* Options List */}
@@ -98,7 +99,7 @@ export const QuizCard: React.FC<Props> = ({
                 <span className="w-5 h-5 rounded bg-[#e8e7dc] flex items-center justify-center text-[10px] font-bold text-[#617066]">
                   {idx + 1}
                 </span>
-                <span className="font-medium">{opt}</span>
+                <span className="font-medium"><AnnotatedText text={opt} passive /></span>
               </div>
 
               {isRevealed && idx === question.correctIndex && (
@@ -139,7 +140,7 @@ export const QuizCard: React.FC<Props> = ({
               <Lightbulb className="w-3.5 h-3.5 text-[#8f7142] shrink-0 mt-0.5" />
               <div>
                 <span className="font-bold">Rule: </span>
-                <span>{question.ruleHint}</span>
+                <span><AnnotatedText text={question.ruleHint} /></span>
               </div>
             </div>
           )}
@@ -167,9 +168,9 @@ export const QuizCard: React.FC<Props> = ({
                     }`}
                   >
                     <span className="font-semibold mr-1">
-                      {idx + 1}. {exp.text} — {isThisCorrect ? 'Correct: ' : 'Wrong: '}
+                      {idx + 1}. <AnnotatedText text={exp.text} /> — {isThisCorrect ? 'Correct: ' : 'Wrong: '}
                     </span>
-                    <span>{exp.reason}</span>
+                    <span><AnnotatedText text={exp.reason} /></span>
                   </div>
                 );
               })}

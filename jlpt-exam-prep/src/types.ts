@@ -10,6 +10,7 @@ export interface WordToken {
 }
 
 export interface ExampleSentence {
+  useLabel?: string;
   id: string;
   tokens: WordToken[];
   japanese: string;
@@ -83,6 +84,6 @@ export interface UserProgress {
   studiedPoints: Record<string, boolean>; // pointId -> boolean
   quizResults: Record<string, { answered: boolean; correct: boolean; chosenIndex: number }>;
   flaggedMistakes: string[]; // questionIds
-  furiganaMode: 'all' | 'hover' | 'off';
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
   seamlessFlowMode: boolean; // if true, hides rigid level badges to keep flow state
 }

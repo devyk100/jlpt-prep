@@ -1,3 +1,5 @@
+import { AnnotatedText } from './AnnotatedText';
+import { useReadingMode } from '../readingContext';
 import React, { useState } from 'react';
 import { alignSentence } from '../studyUtils';
 import type { ExampleSentence } from '../types';
@@ -6,11 +8,12 @@ import { Volume2, ChevronDown, ChevronUp, AlertCircle, Info } from 'lucide-react
 
 interface Props {
   sentence: ExampleSentence;
-  furiganaMode: 'all' | 'hover' | 'off';
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
 }
 
 export const SentenceCard: React.FC<Props> = ({ sentence, furiganaMode }) => {
-  const [showNuance, setShowNuance] = useState(false);
+  const resolvedMode = useReadingMode();
+  const [showNuance, setShowNuance] = useState(Boolean(sentence.useLabel));
   const [isPlaying, setIsPlaying] = useState(false);
 
   const playAudio = () => {
@@ -29,16 +32,11 @@ export const SentenceCard: React.FC<Props> = ({ sentence, furiganaMode }) => {
 
   return (
     <div className="rounded-lg bg-[#fffef9] border border-[#dfded3] p-4 transition-colors">
+      {sentence.useLabel && <p className="text-xs font-semibold text-[#467b6b] mb-2">{sentence.useLabel}</p>}
       {/* Top Sentence Line with Audio & Japanese Tokens */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 leading-loose text-[#24332c]">
-          {alignSentence(sentence).map((part, idx) => part.token ? (
-            <WordHoverTooltip
-              key={`${sentence.id}-tok-${idx}`}
-              token={part.token}
-              furiganaMode={furiganaMode}
-            />
-          ) : <span key={`${sentence.id}-text-${idx}`}>{part.text}</span>)}
+          <AnnotatedText text={sentence.japanese} />
         </div>
 
         {/* Audio Speech Button */}
@@ -78,14 +76,14 @@ export const SentenceCard: React.FC<Props> = ({ sentence, furiganaMode }) => {
               {sentence.literal && (
                 <div className="text-[#617066]">
                   <span className="font-semibold text-[#283b35]">Literal: </span>
-                  <span className="italic">{sentence.literal}</span>
+                  <span className="italic"><AnnotatedText text={sentence.literal} /></span>
                 </div>
               )}
 
               {sentence.nuanceNote && (
                 <div>
                   <span className="font-semibold text-[#467b6b]">Nuance: </span>
-                  <span>{sentence.nuanceNote}</span>
+                  <span><AnnotatedText text={sentence.nuanceNote} /></span>
                 </div>
               )}
 
@@ -94,7 +92,7 @@ export const SentenceCard: React.FC<Props> = ({ sentence, furiganaMode }) => {
                   <AlertCircle className="w-3.5 h-3.5 shrink-0 mt-0.5 text-[#a85a4a]" />
                   <div>
                     <span className="font-semibold">JLPT Trap: </span>
-                    <span>{sentence.trapAlert}</span>
+                    <span><AnnotatedText text={sentence.trapAlert} /></span>
                   </div>
                 </div>
               )}

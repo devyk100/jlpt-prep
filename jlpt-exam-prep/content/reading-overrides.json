@@ -1,0 +1,518 @@
+{
+  "富士山": [
+    "ふじさん",
+    "Mount Fuji"
+  ],
+  "田中": [
+    "たなか",
+    "Tanaka (surname)"
+  ],
+  "山田": [
+    "やまだ",
+    "Yamada (surname)"
+  ],
+  "ボランティア活動": [
+    "ぼらんてぃあかつどう",
+    "volunteer work"
+  ],
+  "やり直せる": [
+    "やりなおせる",
+    "can redo; can start over"
+  ],
+  "嬉しさ": [
+    "うれしさ",
+    "happiness; delight"
+  ],
+  "日間": [
+    "にちかん",
+    "period of days (reading changes after some numbers)"
+  ],
+  "三日間": [
+    "みっかかん",
+    "for three days"
+  ],
+  "一日": [
+    "いちにち",
+    "one day; all day (ついたち for the first of a month)"
+  ],
+  "アメリカ人": [
+    "あめりかじん",
+    "American person"
+  ],
+  "イギリス人": [
+    "いぎりすじん",
+    "British person"
+  ],
+  "日本国内": [
+    "にほんこくない",
+    "within Japan"
+  ],
+  "富士見": [
+    "ふじみ",
+    "Fujimi (place/name)"
+  ],
+  "フランス語": [
+    "ふらんすご",
+    "French language"
+  ],
+  "スペイン語": [
+    "すぺいんご",
+    "Spanish language"
+  ],
+  "三千": [
+    "さんぜん",
+    "three thousand"
+  ],
+  "二千": [
+    "にせん",
+    "two thousand"
+  ],
+  "三十五": [
+    "さんじゅうご",
+    "thirty-five"
+  ],
+  "旅行会社": [
+    "りょこうがいしゃ",
+    "travel agency"
+  ],
+  "富士": [
+    "ふじ",
+    "Fuji (name)"
+  ],
+  "東京駅": [
+    "とうきょうえき",
+    "Tokyo Station"
+  ],
+  "修理費用": [
+    "しゅうりひよう",
+    "repair cost"
+  ],
+  "社員全員": [
+    "しゃいんぜんいん",
+    "all employees"
+  ],
+  "カリフォルニア大学": [
+    "かりふぉるにあだいがく",
+    "University of California"
+  ],
+  "契約内容": [
+    "けいやくないよう",
+    "terms/details of a contract"
+  ],
+  "読みかけ": [
+    "よみかけ",
+    "partly read; unfinished reading"
+  ],
+  "弾ける": [
+    "ひける",
+    "can play (a musical instrument)"
+  ],
+  "計り知れない": [
+    "はかりしれない",
+    "immeasurable; beyond estimation"
+  ],
+  "ご覧": [
+    "ごらん",
+    "looking/seeing (honorific)"
+  ],
+  "ご存知": [
+    "ごぞんじ",
+    "knowing (honorific)"
+  ],
+  "ご存じ": [
+    "ごぞんじ",
+    "knowing (honorific)"
+  ],
+  "使いこなせる": [
+    "つかいこなせる",
+    "can use skillfully"
+  ],
+  "使いこなせ": [
+    "つかいこなせ",
+    "can use skillfully (inflected stem)"
+  ],
+  "見積もれる": [
+    "みつもれる",
+    "can estimate"
+  ],
+  "見積もれ": [
+    "みつもれ",
+    "estimate (inflected stem)"
+  ],
+  "歌わさ": [
+    "うたわさ",
+    "make/let sing (causative stem)"
+  ],
+  "書かさ": [
+    "かかさ",
+    "make/let write (causative stem)"
+  ],
+  "作らさ": [
+    "つくらさ",
+    "make/let make (causative stem)"
+  ],
+  "消し": [
+    "けし",
+    "erase; turn off (stem)"
+  ],
+  "着": [
+    "き",
+    "wear (verb stem)"
+  ],
+  "授受": [
+    "じゅじゅ",
+    "giving and receiving"
+  ],
+  "時制": [
+    "じせい",
+    "tense"
+  ],
+  "に応じて": [
+    "におうじて",
+    "according to; in response to"
+  ],
+  "に伴って": [
+    "にともなって",
+    "along with; accompanying"
+  ],
+  "に沿って": [
+    "にそって",
+    "along; in accordance with"
+  ],
+  "に基づいて": [
+    "にもとづいて",
+    "based on"
+  ],
+  "を問わず": [
+    "をとわず",
+    "regardless of"
+  ],
+  "に際して": [
+    "にさいして",
+    "on the occasion of"
+  ],
+  "に先立って": [
+    "にさきだって",
+    "prior to; before"
+  ],
+  "限り": [
+    "かぎり",
+    "limit; as far/as long as (in grammar)"
+  ],
+  "反面": [
+    "はんめん",
+    "on the other hand; opposite aspect"
+  ],
+  "上で": [
+    "うえで",
+    "after doing; in doing"
+  ],
+  "上に": [
+    "うえに",
+    "in addition to"
+  ],
+  "以上": [
+    "いじょう",
+    "at least; now that (in grammar)"
+  ],
+  "次第": [
+    "しだい",
+    "as soon as (after verb stem); depending on"
+  ],
+  "得る": [
+    "える",
+    "obtain; can (suffix also read うる)"
+  ],
+  "最中": [
+    "さいちゅう",
+    "in the middle of"
+  ],
+  "最中に": [
+    "さいちゅうに",
+    "right in the middle of"
+  ],
+  "切る": [
+    "きる",
+    "cut; complete fully (verb suffix)"
+  ],
+  "通す": [
+    "とおす",
+    "let through; do throughout (verb suffix)"
+  ],
+  "一日中": [
+    "いちにちじゅう",
+    "all day long"
+  ],
+  "一晩中": [
+    "ひとばんじゅう",
+    "all night long"
+  ],
+  "さ": [
+    "さ",
+    "degree/state (noun-forming suffix); sentence emphasis"
+  ],
+  "し": [
+    "し",
+    "and; lists reasons (or stem of する)"
+  ],
+  "覧": [
+    "らん",
+    "looking/seeing (kanji component; ご覧 = ごらん)"
+  ],
+  "中": [
+    "ちゅう",
+    "during; in the middle"
+  ],
+  "こと": [
+    "こと",
+    "thing/fact; nominalizes an action"
+  ],
+  "もの": [
+    "もの",
+    "thing; explanatory/generalizing expression"
+  ],
+  "よう": [
+    "よう",
+    "manner; resemblance"
+  ],
+  "わけ": [
+    "わけ",
+    "reason; logical conclusion"
+  ],
+  "ため": [
+    "ため",
+    "purpose; cause"
+  ],
+  "ばかり": [
+    "ばかり",
+    "only; just; approximately"
+  ],
+  "ところ": [
+    "ところ",
+    "place; point/stage"
+  ],
+  "お": [
+    "お",
+    "polite prefix"
+  ],
+  "ご": [
+    "ご",
+    "polite prefix"
+  ],
+  "られ": [
+    "られ",
+    "passive/potential/honorific auxiliary stem"
+  ],
+  "れ": [
+    "れ",
+    "passive/potential auxiliary stem"
+  ],
+  "せ": [
+    "せ",
+    "causative auxiliary stem"
+  ],
+  "褒め": [
+    "ほめ",
+    "praise (stem)"
+  ],
+  "帰れる": [
+    "かえれる",
+    "can go home"
+  ],
+  "書ける": [
+    "かける",
+    "can write"
+  ],
+  "行ける": [
+    "いける",
+    "can go"
+  ],
+  "読める": [
+    "よめる",
+    "can read"
+  ],
+  "戻れる": [
+    "もどれる",
+    "can return"
+  ],
+  "一回": [
+    "いっかい",
+    "once; one time"
+  ],
+  "提出前": [
+    "ていしゅつまえ",
+    "before submission"
+  ],
+  "会える": [
+    "あえる",
+    "can meet (potential of 会う)"
+  ],
+  "泳げる": [
+    "およげる",
+    "can swim (potential of 泳ぐ)"
+  ],
+  "言い切れ": [
+    "いいきれ",
+    "declare with certainty; state definitively (stem)"
+  ],
+  "鈴木": [
+    "すずき",
+    "Suzuki (surname)"
+  ],
+  "食べれる": [
+    "たべれる",
+    "can eat (colloquial ra-nuki potential of 食べる)"
+  ],
+  "四人": [
+    "よにん",
+    "four people"
+  ],
+  "二十歳": [
+    "はたち",
+    "20 years old"
+  ],
+  "八時十分": [
+    "はちじじゅっぷん",
+    "8:10; ten past eight"
+  ],
+  "十分間": [
+    "じゅっぷんかん",
+    "for 10 minutes"
+  ],
+  "ロシア語": [
+    "ろしあご",
+    "Russian language"
+  ],
+  "無性": [
+    "むしょう",
+    "intense; irresistible (as in 無性に: irresistibly, intensely)"
+  ],
+  "情報セキュリティ": [
+    "じょうほうせきゅりてぃ",
+    "information security"
+  ],
+  "ご利用": [
+    "ごりよう",
+    "usage; utilization (polite)"
+  ],
+  "掴まさ": [
+    "つかまさ",
+    "be saddled with; be tricked into taking (stem of 掴ます)"
+  ],
+  "起き": [
+    "おき",
+    "wake up; get up; occur (verb stem of 起きる)"
+  ],
+  "一分": [
+    "いっぷん",
+    "1 minute"
+  ],
+  "二分": [
+    "にふん",
+    "2 minutes"
+  ],
+  "三分": [
+    "さんぷん",
+    "3 minutes"
+  ],
+  "四分": [
+    "よんぷん",
+    "4 minutes"
+  ],
+  "五分": [
+    "ごふん",
+    "5 minutes"
+  ],
+  "六分": [
+    "ろっぷん",
+    "6 minutes"
+  ],
+  "七分": [
+    "ななふん",
+    "7 minutes"
+  ],
+  "八分": [
+    "はっぷん",
+    "8 minutes"
+  ],
+  "九分": [
+    "きゅうふん",
+    "9 minutes"
+  ],
+  "二十分": [
+    "にじゅっぷん",
+    "20 minutes"
+  ],
+  "三十分": [
+    "さんじゅっぷん",
+    "30 minutes; half an hour"
+  ],
+  "三十分後": [
+    "さんじゅっぷんご",
+    "30 minutes later; after 30 minutes"
+  ],
+  "四十分": [
+    "よんじゅっぷん",
+    "40 minutes"
+  ],
+  "五十分": [
+    "ごじゅっぷん",
+    "50 minutes"
+  ],
+  "何分": [
+    "なんぷん",
+    "how many minutes"
+  ],
+  "十分に": [
+    "じゅうぶんに",
+    "sufficiently; thoroughly; enough"
+  ],
+  "十分な": [
+    "じゅうぶんな",
+    "sufficient; adequate; enough"
+  ],
+  "くらい": [
+    "くらい",
+    "approximately; about; to the extent that"
+  ],
+  "ぐらい": [
+    "ぐらい",
+    "approximately; about; to the extent that"
+  ],
+  "ほど": [
+    "ほど",
+    "to the extent that; degree; about"
+  ],
+  "しかも": [
+    "しかも",
+    "moreover; furthermore"
+  ],
+  "それでも": [
+    "それでも",
+    "even so; nevertheless"
+  ],
+  "ただし": [
+    "ただし",
+    "however; provided that"
+  ],
+  "したがって": [
+    "したがって",
+    "therefore; consequently"
+  ],
+  "すなわち": [
+    "すなわち",
+    "that is to say; in other words"
+  ],
+  "要するに": [
+    "ようするに",
+    "in short; to sum up"
+  ],
+  "いわば": [
+    "いわば",
+    "so to speak; as it were"
+  ],
+  "到着時間": [
+    "とうちゃくじかん",
+    "arrival time"
+  ]
+}

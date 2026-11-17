@@ -12,8 +12,8 @@ interface Props {
   onFilterChange: (f: 'all' | 'N5' | 'N4' | 'N3' | 'N2') => void;
   seamlessFlowMode: boolean;
   onToggleSeamlessFlow: () => void;
-  furiganaMode: 'all' | 'hover' | 'off';
-  onChangeFuriganaMode: (mode: 'all' | 'hover' | 'off') => void;
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
+  onChangeFuriganaMode: (mode: 'book' | 'all' | 'hover' | 'off') => void;
   onOpenSearch: () => void;
   onOpenMistakeBank: () => void;
   onOpenTablesModal: () => void;
@@ -124,6 +124,7 @@ export const Topbar: React.FC<Props> = ({
 
         {/* Furigana Mode Switcher */}
         <div className="flex items-center rounded border border-[#cfcebe] bg-[#fffef9] p-0.5 text-xs">
+          <button onClick={() => onChangeFuriganaMode('book')} title="Textbook readings: Genki/N3 above; N2 on hover" aria-pressed={furiganaMode === 'book'} className={`px-2 py-0.5 rounded ${furiganaMode === 'book' ? 'bg-[#467b6b] text-white' : ''}`}>Book</button>
           <button
             onClick={() => onChangeFuriganaMode('all')}
             className={`px-2 py-0.5 rounded transition-all ${

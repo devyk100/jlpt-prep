@@ -19,7 +19,7 @@ interface Props {
   point: GrammarPoint;
   allPoints: GrammarPoint[];
   onSelectPoint: (pointId: string) => void;
-  furiganaMode: 'all' | 'hover' | 'off';
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
   seamlessFlowMode: boolean;
   onAnswerSaved: (questionId: string, isCorrect: boolean, chosenIndex: number) => void;
   flaggedMistakes: string[];

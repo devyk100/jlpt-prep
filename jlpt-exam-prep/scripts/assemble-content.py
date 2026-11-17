@@ -34,6 +34,19 @@ books=[]
 for b in meta:
  missing=set(pages[b])-set(sections[b]);assert not missing,(b,missing)
  books.append(dict(id=meta[b][0],name=meta[b][1],level=meta[b][2],description='Original revision notes mapped to the supplied textbook contents. Page numbers mark section starts; combined cards may cover several forms. Supplementary comparison notes are outside this catalog.',sections=[dict(name=next(x['chapter'] for x in p if x['id']==sections[b][s][0])+f' · p. {pages[b][s]}',grammarIds=sections[b][s]) for s in pages[b]]))
+# Original use-specific examples; retain stable IDs and explain what each demonstrates.
+by_id = {point['id']: point for point in p}
+for examples_file in sorted((root/'content').glob('*-use-examples.tsv')):
+ for line_number, line in enumerate(examples_file.read_text(encoding='utf-8-sig').splitlines(), 1):
+  if not line.strip(): continue
+  fields = line.split('|')
+  assert len(fields) == 5, (examples_file.name, line_number, len(fields))
+  ident, label, japanese, english, explanation = fields
+  assert ident in by_id, (examples_file.name, line_number, ident)
+  point = by_id[ident]
+  if any(sentence['japanese'] == japanese for sentence in point['sentences']): continue
+  point['sentences'].append(dict(id=f'{ident}::{examples_file.stem}-{line_number}', japanese=japanese, english=english, tokens=[], useLabel=label, nuanceNote=explanation))
+
 # Legacy book quizzes reused IDs from comparison cards; namespace only collisions.
 seen_questions = set()
 for point in p:
@@ -46,3 +59,4 @@ p.sort(key=lambda x: order.get(x['id'], 10000))
 (root/'src/data/bookSources.json').write_text(json.dumps(books,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 (root/'audit/coverage.json').write_text(json.dumps({b:{'cards':sum(map(len,sections[b].values())),'sections':len(sections[b]),'sectionStarts':pages[b]} for b in meta},indent=2),encoding='utf8')
 print('Total cards:',len(p),'Added:',len(p)-218,'Textbook cards:',sum(sum(map(len,v.values())) for v in sections.values()))
+

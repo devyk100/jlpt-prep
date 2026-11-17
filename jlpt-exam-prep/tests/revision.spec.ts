@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import raw from '../src/data/studyPoints.json' with { type: 'json' };
 import sources from '../src/data/bookSources.json' with { type: 'json' };
+import annotations from '../src/data/annotations.json' with { type: 'json' };
 import { alignSentence, orderQuestion } from '../src/studyUtils';
 import type { GrammarPoint } from '../src/types';
 const points = raw as GrammarPoint[];
@@ -37,8 +38,9 @@ test('catalog, keyboard search and complete sentence display', async ({ page }) 
   }
   const book = sources[3], lastId = book.sections.at(-1)!.grammarIds.at(-1)!;
   const added = points.find(p => p.id === lastId)!;
-  await catalog.getByRole('button').filter({ hasText: added.title }).click();
-  await expect(page.getByText(added.sentences[0].japanese, { exact: true })).toBeVisible();
+  await catalog.getByRole('button').filter({ hasText: added.meaning }).click();
+  await expect(page.locator('[data-source-text]').filter({ hasText: added.sentences[0].english })).toHaveCount(0);
+  expect(await page.locator('div.flex-1.leading-loose').first().evaluate(el => { const clone = el.cloneNode(true) as HTMLElement; clone.querySelectorAll('rt').forEach(n => n.remove()); return clone.textContent; })).toBe(added.sentences[0].japanese);
   await page.keyboard.press('Control+k');
   await expect(page.getByRole('dialog', { name: 'Search grammar' })).toBeVisible();
   await page.keyboard.press('Escape');
@@ -51,7 +53,7 @@ test('partial annotations preserve sentence and accessible tooltip', async ({ pa
   await page.goto('/');
   const s = point.sentences[0];
   const sentenceLine = page.locator('div.flex-1.leading-loose').first();
-  await expect(sentenceLine).toHaveText(s.japanese);
+  expect(await sentenceLine.evaluate(el => { const clone = el.cloneNode(true) as HTMLElement; clone.querySelectorAll('rt').forEach(n => n.remove()); return clone.textContent; })).toBe(s.japanese);
   const trigger = sentenceLine.getByRole('button').first();
   await trigger.focus();
   await expect(page.getByRole('tooltip')).toBeVisible();
@@ -67,15 +69,81 @@ test('partial annotations preserve sentence and accessible tooltip', async ({ pa
 test('quiz grading and weak-point persistence match shuffled choices', async ({ page }) => {
   const point = points[0], question = orderQuestion(point.quiz[0]);
   await page.goto('/');
-  await page.getByRole('button', { name: `${question.correctIndex + 1} ${question.options[question.correctIndex]}`, exact: true }).click();
+  await page.locator('button').filter({ has: page.locator('[data-source-text]').filter({ hasText: question.options[question.correctIndex] }) }).filter({ hasText: String(question.correctIndex + 1) }).first().click();
   await expect(page.getByText('Correct! Well recognized.', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Retry', exact: true }).click();
   const wrong = (question.correctIndex + 1) % question.options.length;
-  await page.getByRole('button', { name: `${wrong + 1} ${question.options[wrong]}`, exact: true }).click();
+  await page.locator('button').filter({ has: page.locator('[data-source-text]').filter({ hasText: question.options[wrong] }) }).filter({ hasText: String(wrong + 1) }).first().click();
   await expect(page.getByText('Incorrect. Notice the rule below:', { exact: true })).toBeVisible();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('bunpou_flagged_mistakes') || '[]'))).toContain(question.id);
   await page.reload();
   await expect(page.getByTitle('Remove from Weak Points')).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+});
+test('book-default readings and heading meanings work at N3 and N2', async ({ page }) => {
+  await page.addInitScript(() => { if (!localStorage.getItem('bunpou_current_point_id')) localStorage.setItem('bunpou_current_point_id', 'skm3-u3-ni-kagiru'); });
+  await page.goto('/');
+  await expect(page.getByTitle('Textbook readings: Genki/N3 above; N2 on hover')).toHaveAttribute('aria-pressed', 'true');
+  const h1 = page.locator('h1');
+  await expect(h1.locator('rt').filter({ hasText: 'にかぎる' })).toBeVisible();
+  await h1.getByRole('button').filter({ hasText: 'に限る' }).hover();
+  await expect(page.getByRole('tooltip')).toContainText('nothing beats; best to');
+  await expect(page.getByRole('tooltip')).toContainText('にかぎる');
+  await page.keyboard.press('Escape');
+  await page.evaluate(() => localStorage.setItem('bunpou_current_point_id', 'gp-ni-kagiri'));
+  await page.reload();
+  await expect(page.locator('h1 rt')).toHaveCount(0);
+  await page.locator('h1').getByRole('button').filter({ hasText: 'に限り' }).hover();
+  await expect(page.getByRole('tooltip')).toContainText('にかぎり');
+  await page.keyboard.press('Escape');
+  await page.getByTitle('Always show Furigana').click();
+  await expect(page.locator('h1 rt').first()).toBeVisible();
+});
+
+test('contextual annotations distinguish minute expressions from sufficiency and particles from homographs', () => {
+  const annMap = annotations as Record<string, Array<{ word: string; reading: string; meaning: string }>>;
+
+  // 1. 三十分後 must be 30 minutes (さんじゅっぷんご), not sufficiency (じゅうぶん)
+  const sanjuppunTokens = annMap['三十分後には着くと思います'];
+  expect(sanjuppunTokens).toBeDefined();
+  expect(sanjuppunTokens[0].word).toBe('三十分後');
+  expect(sanjuppunTokens[0].reading).toBe('さんじゅっぷんご');
+  expect(sanjuppunTokens[0].meaning).toContain('30 minutes');
+
+  // 2. 十分 in 駅まで十分くらいかかります must be 10 minutes (じゅっぷん), and くらい must be approximation (not dark/gloomy)
+  const juppunTokens = annMap['駅まで十分くらいかかります'];
+  expect(juppunTokens).toBeDefined();
+  const juppunTok = juppunTokens.find(t => t.word === '十分');
+  expect(juppunTok).toBeDefined();
+  expect(juppunTok?.reading).toBe('じゅっぷん');
+  expect(juppunTok?.meaning).toContain('10 minutes');
+
+  const kuraiTok = juppunTokens.find(t => t.word === 'くらい');
+  expect(kuraiTok).toBeDefined();
+  expect(kuraiTok?.reading).toBe('くらい');
+  expect(kuraiTok?.meaning).toContain('approximately');
+  expect(kuraiTok?.meaning).not.toContain('dark');
+
+  // 3. 十分じゅっぷん must annotate 十分 as じゅっぷん
+  const readingDemo = annMap['十分じゅっぷん'];
+  expect(readingDemo).toBeDefined();
+  expect(readingDemo[0].word).toBe('十分');
+  expect(readingDemo[0].reading).toBe('じゅっぷん');
+
+  // 4. Adverbial 十分 in 十分説明したつもりでしたが must be じゅうぶん
+  const advTokens = annMap['十分説明したつもりでしたが'];
+  expect(advTokens).toBeDefined();
+  expect(advTokens[0].word).toBe('十分');
+  expect(advTokens[0].reading).toBe('じゅうぶん');
+  expect(advTokens[0].meaning).toContain('sufficient');
+
+  // 5. N2 quiz skm2-c9-ni-oujite must have unambiguous question and distractors
+  const oujitePoint = points.find(p => p.id === 'skm2-c9-ni-oujite');
+  expect(oujitePoint).toBeDefined();
+  const q = oujitePoint!.quiz[0];
+  expect(q.options[q.correctIndex]).toBe('に応じて');
+  expect(q.question).toContain('基本給が決定されます');
+  expect(q.translation).toBe('Basic salary is determined in accordance with experience and ability.');
+  expect(q.options).toEqual(['に応じて', 'にわたって', 'に際して', 'にあたって']);
 });

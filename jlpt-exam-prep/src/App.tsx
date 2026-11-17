@@ -1,3 +1,4 @@
+import { ReadingContext } from './readingContext';
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   ALL_GRAMMAR_POINTS,
@@ -17,7 +18,7 @@ const STORAGE_KEYS = {
   CURRENT_POINT: 'bunpou_current_point_id',
   STUDIED_POINTS: 'bunpou_studied_points',
   FLAGGED_MISTAKES: 'bunpou_flagged_mistakes',
-  FURIGANA_MODE: 'bunpou_furigana_mode',
+  FURIGANA_MODE: 'bunpou_reading_mode_v2',
   SEAMLESS_FLOW: 'bunpou_seamless_flow',
   FILTER: 'bunpou_selected_filter'
 };
@@ -62,8 +63,8 @@ export function App() {
   });
 
   // User Preferences
-  const [furiganaMode, setFuriganaMode] = useState<'all' | 'hover' | 'off'>(() => {
-    return (localStorage.getItem(STORAGE_KEYS.FURIGANA_MODE) as 'all' | 'hover' | 'off') || 'hover';
+  const [furiganaMode, setFuriganaMode] = useState<'book' | 'all' | 'hover' | 'off'>(() => {
+    return (localStorage.getItem(STORAGE_KEYS.FURIGANA_MODE) as 'book' | 'all' | 'hover' | 'off') || 'book';
   });
 
   const [seamlessFlowMode, setSeamlessFlowMode] = useState<boolean>(() => {
@@ -162,6 +163,7 @@ export function App() {
   }, []);
 
   return (
+    <ReadingContext.Provider value={{ mode: furiganaMode, level: currentPoint.level }}>
     <div className="min-h-screen bg-[#f6f5ef] text-[#24332c] flex flex-col font-sans">
       {/* Clean Topbar Header */}
       <Topbar
@@ -241,6 +243,7 @@ export function App() {
         onSelectPoint={handleSelectPoint}
       />
     </div>
+    </ReadingContext.Provider>
   );
 }
 

@@ -2,15 +2,15 @@
   {
     "id": "g1-l1-wa-desu",
     "title": "X は Y です (X is Y / Topic & Copula)",
-    "meaning": "X is Y. Establishes X as the contextual topic with は and equates it to predicate Y with です.",
+    "meaning": "Identify or describe a topic: as for X, it is Y.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 1: New Friends",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun1 + は + Noun2 / Adjective + です",
-    "nuance": "The topic particle は (pronounced 'wa') presents the background context ('as for X...'). です serves as polite non-past copula.",
-    "keyTakeaway": "MUG-UP: は marks the topic. Pronounced 'wa', written as は.",
+    "connection": "X は noun です; noun です is enough when the topic is understood.",
+    "nuance": "は is written は but pronounced わ when it marks the topic. It tells the listener what the statement is about; it is not simply a replacement for the English subject. If both speakers already know the topic, omit it: 学生です can mean I am a student, she is a student, or they are students, depending on context. Japanese nouns generally do not require a/an and do not automatically change for plural number. です makes the noun predicate polite and non-past; it does not change with person or number. Do not append です to an ordinary finite verb such as 行くです. Adjectives have their own patterns, introduced later: 静かです and 高いです, but not 静かだです or 高いだです. Use a name/title rather than repeatedly translating English you as あなた.",
+    "keyTakeaway": "State the topic only when needed; put the identifying noun before polite です.",
     "sentences": [
       {
         "id": "g1-l1-wa-desu::s-g1-1-1",
@@ -63,7 +63,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Topic particle は",
-        "ruleHint": "Noun1 + は + Noun2 / Adjective + です",
+        "ruleHint": "X は noun です; noun です is enough when the topic is understood.",
         "explanations": [
           {
             "text": "は",
@@ -98,15 +98,15 @@
   {
     "id": "g1-l1-question-ka",
     "title": "質問の「か」 (Question Sentence Marker 〜ですか)",
-    "meaning": "Turns any declarative sentence into a question simply by appending か at the end, without inverting word order.",
+    "meaning": "Make a polite question with sentence-final か.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 1: New Friends",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Sentence + か (Rising intonation)",
-    "nuance": "NO QUESTION MARK NEEDED: In traditional Japanese, particle か serves as the question mark itself. Question word goes right where the answer belongs.",
-    "keyTakeaway": "MUG-UP: Append か to the end of a sentence to make it a polite question. No word inversion!",
+    "connection": "Nですか; question word + ですか",
+    "nuance": "Add か to a polite statement without English-style inversion. For an information question, keep the unknown item in its usual position: 専攻は何ですか asks what the major is. Answer with the requested information; はい/いいえ alone fits a yes/no question, not what/when. Known topics may be omitted. 何 is なん immediately before です; other contexts have なに or fixed readings. Japanese polite questions commonly end in 。 rather than requiring ?.",
+    "keyTakeaway": "Statement + か asks a question; a question word asks for specific information.",
     "sentences": [
       {
         "id": "g1-l1-question-ka::s-g1-1-2",
@@ -152,7 +152,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Question particle か",
-        "ruleHint": "Sentence + か (Rising intonation)",
+        "ruleHint": "Nですか; question word + ですか",
         "explanations": [
           {
             "text": "ですか",
@@ -162,7 +162,7 @@
           {
             "text": "でした",
             "isCorrect": false,
-            "reason": "Incorrect. でした is past tense ('was it?')."
+            "reason": "でした is a past statement ending, not the present question ですか."
           },
           {
             "text": "でして",
@@ -276,7 +276,7 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "Number + 時 (Hour) | Number + 分 (Minutes) | Number + 歳 (Age)",
-    "nuance": "Learn standard time readings: 四時よじ、七時しちじ、九時くじ. 七時 can also be read ななじ to avoid ambiguity in some contexts. 二十歳 is はたち; counter sound changes need separate practice.",
+    "nuance": "Hours: 四時よじ、七時しちじ、九時くじ. Minutes include 一分いっぷん、三分さんぷん、四分よんぷん、六分ろっぷん、八分はっぷん、十分じゅっぷん／じっぷん. Ages include 一歳いっさい、八歳はっさい、十歳じゅっさい／じっさい and 二十歳はたち. 何時なんじ asks the time; 何歳なんさい or おいくつ asks age. 半 after the hour means half past. Learn the actual counter reading rather than deriving it mechanically from the independent number.",
     "keyTakeaway": "Learn standard time readings: 四時よじ、七時しちじ、九時くじ. 七時 can also be read ななじ to avoid ambiguity in some contexts. 二十歳 is はたち; counter sound changes need separate practice.",
     "sentences": [
       {
@@ -338,7 +338,7 @@
           {
             "text": "四時（しじ）",
             "isCorrect": false,
-            "reason": "Incorrect. しじ is avoided due to phonetic clash with death (死)."
+            "reason": "四時 has the conventional reading よじ. The general number reading し does not carry over to this counter combination; do not invent an etymological reason."
           },
           {
             "text": "四時（ななじ）",
@@ -395,37 +395,37 @@
     "quiz": [
       {
         "id": "q-g1-2-1",
-        "question": "（　　）は誰の傘ですか。「それですか。私のです。」",
-        "translation": "Whose umbrella is that near you? 'That one? It is mine.'",
+        "question": "指さした物について質問します。「（　　）は誰の傘ですか。」",
+        "translation": "Pointing at an object: Whose umbrella is this?",
         "options": [
-          "それ",
-          "ここ",
-          "その",
-          "そこ"
+          "これ",
+          "この",
+          "ここで",
+          "ここに"
         ],
         "correctIndex": 0,
         "grammarFocus": "Demonstrative pronoun それ",
         "ruleHint": "これ / それ / あれ / どれ + は / が / を (Standalone Pronouns)",
         "explanations": [
           {
-            "text": "それ",
+            "text": "これ",
             "isCorrect": true,
-            "reason": "Correct! それ refers to an object near the listener."
+            "reason": "これ stands alone and refers to the indicated object."
           },
           {
-            "text": "ここ",
+            "text": "この",
             "isCorrect": false,
-            "reason": "Incorrect. ここ means 'this place'."
+            "reason": "この requires a following noun; このは is not this construction."
           },
           {
-            "text": "その",
+            "text": "ここで",
             "isCorrect": false,
-            "reason": "Incorrect. その must directly precede a noun (その傘)."
+            "reason": "ここで marks an action location and cannot identify an umbrella here."
           },
           {
-            "text": "そこ",
+            "text": "ここに",
             "isCorrect": false,
-            "reason": "Incorrect. そこ means 'that place near you'."
+            "reason": "ここに marks a location of existence, not the indicated object."
           }
         ]
       }
@@ -477,13 +477,13 @@
     "quiz": [
       {
         "id": "q-g1-2-2",
-        "question": "すみません、（　　）辞書を見せてください。",
-        "translation": "Excuse me, please show me that dictionary near you.",
+        "question": "「その辞書」の意味になる形を選んでください。すみません、（　　）辞書を見せてください。",
+        "translation": "Choose the form meaning that dictionary: Please show me that dictionary.",
         "options": [
           "その",
           "それ",
           "そこ",
-          "そちらで"
+          "そのの"
         ],
         "correctIndex": 0,
         "grammarFocus": "Pre-noun determiner その",
@@ -497,17 +497,17 @@
           {
             "text": "それ",
             "isCorrect": false,
-            "reason": "それ stands alone rather than modifying a noun directly."
+            "reason": "それ is a standalone pronoun."
           },
           {
             "text": "そこ",
             "isCorrect": false,
-            "reason": "そこ is a place pronoun."
+            "reason": "そこ means a place and does not directly modify 辞書."
           },
           {
-            "text": "そちらで",
+            "text": "そのの",
             "isCorrect": false,
-            "reason": "そちらで would need a following action, not directly 辞書."
+            "reason": "その already modifies a noun; do not add の."
           }
         ]
       }
@@ -871,7 +871,7 @@
     "streamId": "stream-social",
     "streamName": "Social Hierarchy, Benefaction & Modesty",
     "connection": "V-stem (ます-stem) + ませんか",
-    "nuance": "RESPECTFUL INVITATION: Asking negatively gives the listener psychological space to decline without awkwardness. Saying '映画に行きますか' is an informational check; '映画に行きませんか' is a warm date invitation.",
+    "nuance": "ませんか is a standard polite invitation; it does not inherently imply a date. It can also be a literal negative question, so use context. ましょう suggests proceeding together or accepts an invitation. When declining politely, Japanese often gives a reason or trails off with ちょっと rather than using a blunt refusal.",
     "keyTakeaway": "MUG-UP: V-stem + ませんか = The golden Japanese polite invitation! (一緒に食べませんか = Won't you eat with me?).",
     "sentences": [
       {
@@ -1110,15 +1110,15 @@
   {
     "id": "g1-l5-suki-kirai",
     "title": "好き（な） / 嫌い（な） (Expressing Likes and Dislikes with が)",
-    "meaning": "Expresses fondness (好き) or aversion (嫌い): marked with particle が on the object of emotion, NOT を!",
+    "meaning": "Like or dislike something. In the basic construction, the liked item takes が; contrast can use は.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 5: A Trip to Okinawa",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
     "connection": "[Person] は [Item] が 好きです / 嫌いです (Adjectival predicates)",
-    "nuance": "PARTICLE TRAP: In English 'like' is a transitive verb (I like X). In Japanese, 好き is a な-adjective (X is pleasing to me), so the item takes particle が (NOT を ❌)!",
-    "keyTakeaway": "MUG-UP: [Noun] が 好きです / 嫌いです! Never use を with 好き/嫌い!",
+    "nuance": "好き and 嫌い are な-adjectives, unlike the English verbs like and dislike. The basic pattern is 私はNが好きです. For a contrast, Nは好きです is also possible. Before a noun use な: 好きな本. For an action, nominalize its clause: 本を読むのが好きです. Avoid treating が as a rule for every construction containing 好き.",
+    "keyTakeaway": "Basic pattern: Nが好き／嫌いです. When nominalizing an action, keep its object: 本を読むのが好きです.",
     "sentences": [
       {
         "id": "g1-l5-suki-kirai::s-g1-5-1",
@@ -1377,7 +1377,7 @@
         "options": [
           "借り",
           "借る",
-          "借りて",
+          "借りる",
           "借りた"
         ],
         "correctIndex": 0,
@@ -1395,9 +1395,9 @@
             "reason": "Incorrect. 借る is an archaic form."
           },
           {
-            "text": "借りて",
+            "text": "借りる",
             "isCorrect": false,
-            "reason": "Incorrect. 借りて already has て; adding another てもいい creates '借りてても'."
+            "reason": "The dictionary form does not attach directly to てもいい; use 借りてもいい."
           },
           {
             "text": "借りた",
@@ -1424,7 +1424,7 @@
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Sentence 1 (Reason) + から、 Sentence 2 (Conclusion)",
-    "nuance": "SUBJECTIVE CONVICTION: から represents the speaker's personal logic and subjective view. It can be paired directly with commands, requests, and volitions (雨が降っているから、傘を持って行きなさい).",
+    "nuance": "から follows a reason and introduces its consequence. Nouns and な-adjectives take だから in plain non-past affirmative statements, or ですから politely. Verbs and い-adjectives retain their appropriate plain or polite endings. It can introduce requests and intentions, and it can also give factual reasons; subjective is a tendency in the contrast with ので, not a requirement.",
     "keyTakeaway": "MUG-UP: [Reason] から、[Result]. Unlike English, the reason comes FIRST!",
     "sentences": [
       {
@@ -1662,7 +1662,7 @@
           {
             "text": "おいしいくて",
             "isCorrect": false,
-            "reason": "Incorrect. おいしいくて fails to drop the initial い."
+            "reason": "おいしいくて incorrectly retains the final い; the correct connective form is おいしくて."
           }
         ]
       }
@@ -1834,7 +1834,7 @@
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
     "connection": "V-辞書形 + のが [好き / 嫌い / 上手 / 下手 / 得意 / 苦手] です",
-    "nuance": "NOMINALIZATION REQUIREMENT: In Japanese you cannot attach が directly to a verb ('食べるが好き' ❌). You must nominalize it with の ('食べるのが好き').",
+    "nuance": "Use の to turn an action clause into a noun-like unit: 本を読むのが好きです. The object particle inside the clause remains を. A dictionary-form clause is usual when describing a general preference or skill. This is not a universal prohibition against が following a verb: conjunction が can follow a predicate to mean but in a different construction.",
     "keyTakeaway": "MUG-UP: [Verb-Dictionary] + のが + 好き / 上手 / 下手! The particle の acts as 'the act of'.",
     "sentences": [
       {
@@ -1915,7 +1915,7 @@
     "chapter": "Lesson 9: Kabuki",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "もう + V-ました | まだ + V-ていません (NOT まだ〜ませんでした ❌!)",
+    "connection": "もう + Vました; for not yet completed: まだ + Vていません",
     "nuance": "For a not-yet-completed event at the present reference point, use まだVていません. Past negation has other uses in a past narrative; it does not inherently mean the speaker never intended to act.",
     "keyTakeaway": "For a not-yet-completed event at the present reference point, use まだVていません. Past negation has other uses in a past narrative; it does not inherently mean the speaker never intended to act.",
     "sentences": [
@@ -1956,7 +1956,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "まだ + V-ていません (Not yet)",
-        "ruleHint": "もう + V-ました | まだ + V-ていません (NOT まだ〜ませんでした ❌!)",
+        "ruleHint": "もう + Vました; for not yet completed: まだ + Vていません",
         "explanations": [
           {
             "text": "食べていません",
@@ -1966,12 +1966,12 @@
           {
             "text": "食べませんでした",
             "isCorrect": false,
-            "reason": "Incorrect. 食べませんでした means you didn't eat at all in the past, rather than not yet."
+            "reason": "食べませんでした reports a past non-event; it does not express the intended current not-yet-completed state in this answer."
           },
           {
             "text": "食べません",
             "isCorrect": false,
-            "reason": "Incorrect. 食べません is present habitual refusal."
+            "reason": "食べません can express a habit or future decision not to eat; here the intended answer is have not eaten yet."
           },
           {
             "text": "食べないでした",
@@ -2148,14 +2148,14 @@
   {
     "id": "g1-l11-tai-desire",
     "title": "〜たい / 〜たくない (Expressing Desire to Do: Want to Do)",
-    "meaning": "Expresses first-person desire to perform an action: 'I want to do X'. Negative: 'I do not want to do X' (〜たくない).",
+    "meaning": "Want to do an action; たくない means not want to do it.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 11: After-Vacation Plans",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
-    "connection": "V-stem (ます-stem) + たい (Conjugates 100% as an い-adjective: 〜たくない, 〜たかった)",
-    "nuance": "PARTICLE FLEXIBILITY: The direct object of the verb can be marked with EITHER を or が! 水を飲みたい is acceptable, but 水が飲みたい highlights the desired object more prominently.",
+    "connection": "Vます-stem + たい / たくない / たかった",
+    "nuance": "Attach たい to the polite stem, then conjugate as an い-adjective: 食べたい、食べたくない、食べたかった. In an ordinary statement this commonly expresses the speaker's own desire, while a question can ask the listener's desire. Third-person desire usually needs evidence/reporting or another appropriate context, such as 食べたがっている or 食べたいと言っている. The object can take を or が in suitable constructions. Wanting something does not itself mean a plan or commitment.",
     "keyTakeaway": "MUG-UP: V-stem + たい = Want to do! Conjugates as an い-adj. Direct object particle を often becomes が.",
     "sentences": [
       {
@@ -2188,7 +2188,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Negative desire 〜たくない with verb stem",
-        "ruleHint": "V-stem (ます-stem) + たい (Conjugates 100% as an い-adjective: 〜たくない, 〜たかった)",
+        "ruleHint": "Vます-stem + たい / たくない / たかった",
         "explanations": [
           {
             "text": "し",
@@ -2223,15 +2223,15 @@
   {
     "id": "g1-l11-koto-ga-aru",
     "title": "〜ことがある (Past Experiential Aspect: Have Ever Done)",
-    "meaning": "Expresses that one has had the lifetime historical experience of doing an action: 'Have had the experience of / Have ever done X'.",
+    "meaning": "Have done something before; have had an experience.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 11: After-Vacation Plans",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-た + ことがある / あります (Negative: ありません / ない)",
-    "nuance": "LIFETIME HISTORICAL ASPECT: Strictly connects to past た-form! Cannot be used for immediate recent routine events (e.g., 'I ate toast this morning' ❌). It refers to lifetime resume experiences.",
-    "keyTakeaway": "MUG-UP: V-た + ことがある = I have had the lifetime experience of doing X!",
+    "nuance": "Vたことがある presents a previous occurrence as an experience relevant now; it is not restricted to a life-changing or once-in-a-lifetime event. For a simple report of what you did this morning, use a past sentence instead. The time span can be limited by context. V dictionary + ことがある is a different pattern meaning sometimes do. 一度も + negative emphasizes never.",
+    "keyTakeaway": "たことがある = have done before; dictionary form + ことがある = sometimes do.",
     "sentences": [
       {
         "id": "g1-l11-koto-ga-aru::s-g1-11-2",
@@ -2305,8 +2305,8 @@
     "streamId": "stream-limits",
     "streamName": "Boundaries, Extremes & Scope",
     "connection": "V-stem + すぎる | い-adj (drop い) + すぎる | な-adj stem + すぎる (Conjugates as Ru-verb)",
-    "nuance": "UNFAVORABLE THRESHOLD: Sugiru carries an overwhelmingly negative implication (e.g., this is too spicy to eat, I drank too much and got sick).",
-    "keyTakeaway": "MUG-UP: Drop final い, drop ます, drop な, and append すぎる! Conjugates as a Ru-verb (すぎます, すぎた).",
+    "nuance": "すぎる means exceeding a suitable degree or amount. It often describes an undesirable excess, but can also be enthusiastic hyperbole, as in おいしすぎる. Attach to the verb stem, the い-adjective stem, or the な-adjective stem. いい becomes よすぎる. The basic negative adjective ない becomes なさすぎる; negative verb combinations need care rather than applying one mechanical rule to every ない.",
+    "keyTakeaway": "Stem + すぎる; いい→よすぎる. The resulting expression conjugates as a ru-verb.",
     "sentences": [
       {
         "id": "g1-l11-sugiru::s-g1-11-3",
@@ -2372,16 +2372,16 @@
   },
   {
     "id": "g1-l12-node-objective-reason",
-    "title": "〜ので (Objective Reason / Natural Causality: Since / Because)",
-    "meaning": "Presents an objective, natural, or polite reason: 'Since / Because X, naturally Y'.",
+    "title": "〜ので (Reason / Background Circumstance)",
+    "meaning": "Because; since. Presents a reason or background circumstance.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 12: Feeling Sick",
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Plain form + ので | な-adj / Noun + な + ので (Notice the required な!)",
-    "nuance": "POLITE & NATURAL: Unlike から which sounds subjective and assertive, ので presents the reason as an objective circumstance beyond the speaker's personal whim. Far more polite in business requests.",
-    "keyTakeaway": "MUG-UP: Noun / な-adj + な + ので (雨なので, 暇なので). More polite and objective than から.",
+    "nuance": "ので often makes a reason sound explanatory and less assertive, including before a polite request. から can also be polite, and ので does not make a claim objectively true. Plain non-past nouns and な-adjectives use な: 雨なので、静かなので. Other endings retain their form: 雨だったので、静かではないので. Polite forms can also occur before ので in polite speech.",
+    "keyTakeaway": "N/な-adjective non-past affirmative: なので. Choose the register and reason in context.",
     "sentences": [
       {
         "id": "g1-l12-node-objective-reason::s-g1-12-1",
@@ -2553,13 +2553,13 @@
     "quiz": [
       {
         "id": "q-g1-12-3",
-        "question": "田中さんは毎日一生懸命勉強していますから、きっと試験に（　　）でしょう。",
-        "translation": "Since Tanaka-san studies hard every day, he will surely pass the exam.",
+        "question": "田中さんはよく勉強していますから、明日の試験に（　　）でしょう。",
+        "translation": "Tanaka studies hard, so they will probably pass tomorrow's exam.",
         "options": [
           "合格する",
           "合格して",
           "合格し",
-          "合格したの"
+          "合格するだ"
         ],
         "correctIndex": 0,
         "grammarFocus": "Conjecture 〜でしょう with plain verb",
@@ -2568,22 +2568,22 @@
           {
             "text": "合格する",
             "isCorrect": true,
-            "reason": "Correct! Plain dictionary form 合格する connects directly to でしょう."
+            "reason": "The dictionary form connects directly to でしょう."
           },
           {
             "text": "合格して",
             "isCorrect": false,
-            "reason": "Incorrect. 合格して is te-form."
+            "reason": "The te-form does not connect directly to でしょう here."
           },
           {
             "text": "合格し",
             "isCorrect": false,
-            "reason": "Incorrect. 合格し is masu-stem."
+            "reason": "The bare stem does not form the required predicate."
           },
           {
-            "text": "合格したの",
+            "text": "合格するだ",
             "isCorrect": false,
-            "reason": "Incorrect. 合格したの has unnecessary nominalizer の."
+            "reason": "Do not put だ after a finite verb before でしょう."
           }
         ]
       }
@@ -2605,8 +2605,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "Ru-verbs: 食べる→食べられる | U-verbs: 書く→書ける, 飲む→飲める | Irregular: する→できる, くる→こられる",
-    "nuance": "PARTICLE FLIP: The direct object particle を frequently shifts to が (日本語を話す → 日本語が話せる).",
-    "keyTakeaway": "MUG-UP: U-verbs: change final -u to -e + る (行く→行ける). Object を often becomes が!",
+    "nuance": "The potential expresses ability or possibility. The object often takes が, but を also occurs in suitable constructions; do not treat it as universally wrong. Ru-verbs use られる in the standard form; colloquial ら抜き forms such as 食べれる are common but should be distinguished from the standard forms taught here. Some potential and passive/honorific forms overlap, so context matters.",
+    "keyTakeaway": "The potential expresses ability or possibility. The object often takes が, but を also occurs in suitable constructions; do not treat it as universally wrong. Ru-verbs use られる in the standard form; colloquial ら抜き forms such as 食べれる are common but should be distinguished from the standard forms taught here. Some potential and passive/honorific forms overlap, so context matters.",
     "sentences": [
       {
         "id": "g2-l13-potential::s-g2-13-1",
@@ -2628,37 +2628,37 @@
     "quiz": [
       {
         "id": "q-g2-13-1",
-        "question": "刺身は新鮮ですが、どうしても生魚が（　　）。",
-        "translation": "The sashimi is fresh, but I just cannot eat raw fish.",
+        "question": "「食べることができません」という意味です。生魚が食べ（　　）。",
+        "translation": "I cannot eat raw fish.",
         "options": [
-          "食べられません",
-          "食べません",
-          "食べさせません",
-          "食べてもらえません"
+          "られません",
+          "させます",
+          "たいです",
+          "ました"
         ],
         "correctIndex": 0,
         "grammarFocus": "可能形 potential negative",
         "ruleHint": "Ru-verbs: 食べる→食べられる | U-verbs: 書く→書ける, 飲む→飲める | Irregular: する→できる, くる→こられる",
         "explanations": [
           {
-            "text": "食べられません",
+            "text": "られません",
             "isCorrect": true,
-            "reason": "Correct! 食べる potential negative is 食べられない / 食べられません."
+            "reason": "食べられません is the standard potential negative."
           },
           {
-            "text": "食べません",
+            "text": "させます",
             "isCorrect": false,
-            "reason": "Incorrect. 食べません is a simple will decision ('I will not eat')."
+            "reason": "食べさせます is causative: make/let eat."
           },
           {
-            "text": "食べさせません",
+            "text": "たいです",
             "isCorrect": false,
-            "reason": "Incorrect. 食べさせません is causative ('I will not let someone eat')."
+            "reason": "食べたいです expresses desire."
           },
           {
-            "text": "食べてもらえません",
+            "text": "ました",
             "isCorrect": false,
-            "reason": "Incorrect. 食べてもらえません means cannot get someone to eat."
+            "reason": "食べました is past affirmative."
           }
         ]
       }
@@ -2680,8 +2680,8 @@
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Plain form + し (Noun/な-adj non-past affirmative takes だ: 綺麗だし, 休みだし)",
-    "nuance": "CUMULATIVE FACTORS: Unlike から which gives one direct explanation, 〜し accumulates multiple contributing factors.",
-    "keyTakeaway": "MUG-UP: Connects to plain forms. Remember: Noun / な-adj non-past takes だ + し (親切だし).",
+    "nuance": "し lists contributing reasons or characteristics and often implies that other reasons exist. A single explicit し clause is possible. Both plain and polite predicates can precede it; plain affirmative nouns/な-adjectives need だ. It is not the only way to combine several reasons, and から is not limited to just one reason.",
+    "keyTakeaway": "し lists contributing reasons or characteristics and often implies that other reasons exist. A single explicit し clause is possible. Both plain and polite predicates can precede it; plain affirmative nouns/な-adjectives need だ. It is not the only way to combine several reasons, and から is not limited to just one reason.",
     "sentences": [
       {
         "id": "g2-l13-shi-reasons::s-g2-13-2",
@@ -2703,37 +2703,37 @@
     "quiz": [
       {
         "id": "q-g2-13-2",
-        "question": "このアパートは家賃も安いし、駅からも（　　）し、とても便利です。",
-        "translation": "This apartment has cheap rent and is close to the station, so it is very convenient.",
+        "question": "この部屋は（　　）し、駅にも近いです。",
+        "translation": "This room is quiet and is also near the station.",
         "options": [
-          "近い",
-          "近くだ",
-          "近くに",
-          "近いで"
+          "静かだ",
+          "静か",
+          "静かな",
+          "静かで"
         ],
         "correctIndex": 0,
         "grammarFocus": "い-adjective connection to 〜し",
         "ruleHint": "Plain form + し (Noun/な-adj non-past affirmative takes だ: 綺麗だし, 休みだし)",
         "explanations": [
           {
-            "text": "近い",
+            "text": "静かだ",
             "isCorrect": true,
-            "reason": "Correct! 近い is an い-adjective, connecting directly to し (近いし)."
+            "reason": "A plain affirmative na-adjective takes だ before し."
           },
           {
-            "text": "近くだ",
+            "text": "静か",
             "isCorrect": false,
-            "reason": "Incorrect. 近い is an い-adjective and never takes だ."
+            "reason": "The bare na-adjective stem does not attach directly to し."
           },
           {
-            "text": "近くに",
+            "text": "静かな",
             "isCorrect": false,
-            "reason": "Incorrect. 近くに is an adverbial form."
+            "reason": "な is the noun-modifying linker, not the ending before し."
           },
           {
-            "text": "近いで",
+            "text": "静かで",
             "isCorrect": false,
-            "reason": "Incorrect. 近いで is ungrammatical."
+            "reason": "で is connective but does not form the required predicate before し."
           }
         ]
       }
@@ -2830,8 +2830,8 @@
     "streamId": "stream-conditionals",
     "streamName": "Conditional Logic & Inevitability",
     "connection": "Noun + なら (Attaches directly without だ!) | Plain form + なら",
-    "nuance": "CONTRASTIVE CONTEXT: Often carries an implicit contrast: 'ひらがななら読めます' (If it's hiragana I can read it—implying kanji is impossible).",
-    "keyTakeaway": "MUG-UP: Noun + なら = 'If it's X you're talking about...'. Replaces topic は.",
+    "nuance": "なら takes a stated or assumed situation as a premise. It can narrow a topic (ひらがななら読める) or introduce advice based on the listener's plan. A narrowed topic suggests a contrast but does not logically prove that every other option is impossible. The action after なら may occur before the premise event, unlike a simple after-marker.",
+    "keyTakeaway": "なら takes a stated or assumed situation as a premise. It can narrow a topic (ひらがななら読める) or introduce advice based on the listener's plan. A narrowed topic suggests a contrast but does not logically prove that every other option is impossible. The action after なら may occur before the premise event, unlike a simple after-marker.",
     "sentences": [
       {
         "id": "g2-l13-nara-conditional::s-g2-13-4",
@@ -2906,7 +2906,7 @@
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "[Item] が ほしいです (Conjugates 100% as an い-adjective: ほしくない, ほしかった)",
     "nuance": "HOSHII VS TAI: たい is for ACTIONS ('I want to BUY a car' = 車を買いたい). ほしい is for NOUN OBJECTS ('I want a car' = 車がほしい). Target takes が!",
-    "keyTakeaway": "MUG-UP: [Noun] が ほしい! Never use を with ほしい. (Action desire = 〜たい).",
+    "keyTakeaway": "Basic desire for a thing: Nがほしい. Desire to perform an action: V-stem + たい.",
     "sentences": [
       {
         "id": "g2-l14-hoshii::s-g2-14-1",
@@ -3010,37 +3010,37 @@
     "quiz": [
       {
         "id": "q-g2-14-2",
-        "question": "山田さんはまだ来ませんね。道に（　　）のかもしれません。",
-        "translation": "Yamada-san hasn't arrived yet, has he? He might have gotten lost on the way.",
+        "question": "山田さんは道に迷っ（　　）かもしれません。",
+        "translation": "Yamada may have got lost.",
         "options": [
-          "迷った",
-          "迷う",
-          "迷って",
-          "迷い"
+          "た",
+          "て",
+          "たり",
+          "たのに"
         ],
         "correctIndex": 0,
         "grammarFocus": "Past conjecture with 〜かもしれない",
         "ruleHint": "Plain form + かもしれません | Noun / な-adj attach directly without だ!",
         "explanations": [
           {
-            "text": "迷った",
+            "text": "た",
             "isCorrect": true,
-            "reason": "Correct! Past plain form 迷った + のかもしれません ('might have gotten lost')."
+            "reason": "迷った is a past predicate before かもしれません."
           },
           {
-            "text": "迷う",
+            "text": "て",
             "isCorrect": false,
-            "reason": "Incorrect. 迷う is non-past ('will get lost')."
+            "reason": "The te-form does not directly connect to かもしれません."
           },
           {
-            "text": "迷って",
+            "text": "たり",
             "isCorrect": false,
-            "reason": "Incorrect. 迷って is te-form."
+            "reason": "たり needs a different continuation."
           },
           {
-            "text": "迷い",
+            "text": "たのに",
             "isCorrect": false,
-            "reason": "Incorrect. 迷い is masu-stem."
+            "reason": "のに is a conjunction and does not form this possibility predicate."
           }
         ]
       }
@@ -3115,7 +3115,7 @@
           {
             "text": "調べた",
             "isCorrect": false,
-            "reason": "Incorrect. 調べた already contains た, so adding たら produces '調べたらたら'."
+            "reason": "調べた plus the supplied たら would produce 調べたたら; the blank must contain 調べ."
           }
         ]
       }
@@ -3211,9 +3211,9 @@
     "chapter": "Lesson 15: A Trip to Nagano",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
-    "connection": "V-意向形 + と思っています (Ongoing firm intent) / と思います (Decision made on the spot)",
-    "nuance": "Volitional + と思う expresses an intention. と思っている presents it as an ongoing intention, often already held before speaking. Do not interpret every と思う as a decision made that exact moment.",
-    "keyTakeaway": "Volitional + と思う expresses an intention. と思っている presents it as an ongoing intention, often already held before speaking. Do not interpret every と思う as a decision made that exact moment.",
+    "connection": "V volitional + と思う / と思っている",
+    "nuance": "Volitional + と思う expresses intention. と思っている presents an ongoing intention, often held before speaking, but it need not be firm or guaranteed. A dictionary-form clause + と思う is also grammatical and reports a belief; it is a different construction from volitional intention.",
+    "keyTakeaway": "Volitional + と思う expresses intention. と思っている presents an ongoing intention, often held before speaking, but it need not be firm or guaranteed. A dictionary-form clause + と思う is also grammatical and reports a belief; it is a different construction from volitional intention.",
     "sentences": [
       {
         "id": "g2-l15-volitional-to-omotte-iru::s-g2-15-2",
@@ -3235,8 +3235,8 @@
     "quiz": [
       {
         "id": "q-g2-15-2",
-        "question": "夏休みに富士山に（　　）と思っています。",
-        "translation": "I am intending to climb Mt. Fuji during summer vacation.",
+        "question": "「登る」の意向形を使います。夏休みに富士山に（　　）と思っています。",
+        "translation": "Use the volitional form: I intend to climb Mount Fuji during summer vacation.",
         "options": [
           "登ろう",
           "登る",
@@ -3245,27 +3245,27 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "V-意向形 + と思っている",
-        "ruleHint": "V-意向形 + と思っています (Ongoing firm intent) / と思います (Decision made on the spot)",
+        "ruleHint": "V volitional + と思う / と思っている",
         "explanations": [
           {
             "text": "登ろう",
             "isCorrect": true,
-            "reason": "Correct! 登る volitional is 登ろう + と思っています."
+            "reason": "登ろう is the volitional and expresses intention with と思っている."
           },
           {
             "text": "登る",
             "isCorrect": false,
-            "reason": "Incorrect. 登る is dictionary form (takes つもり, not volitional と思う)."
+            "reason": "登ると思う can report a belief, but 登る is not the requested volitional form."
           },
           {
             "text": "登り",
             "isCorrect": false,
-            "reason": "Incorrect. 登り is masu-stem."
+            "reason": "登り is the polite stem, not volitional."
           },
           {
             "text": "登った",
             "isCorrect": false,
-            "reason": "Incorrect. 登った is past form."
+            "reason": "登った is the plain past, not volitional."
           }
         ]
       }
@@ -3369,8 +3369,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "Plain non-past verb + といいですね / といいんですが",
-    "nuance": "FOR OTHER VS FOR SELF: When wishing good fortune for the other person, say '〜といいですね' (I hope it goes well for you!). When wishing for yourself, soften with '〜といいんですが' (I hope I pass...).",
-    "keyTakeaway": "MUG-UP: V-plain + といいね (Wishing for others). V-plain + といいんですが (Wishing for self).",
+    "nuance": "といい expresses a hoped-for situation. といいですね often shares a wish about the listener; といいんですが softens a personal wish, but the endings are not rigid person markers. For an action under the speaker's control, a potential form can make the desired possibility clearer: 行けるといい. Distinguish wishing from advising with ばいい/たらいい in other contexts.",
+    "keyTakeaway": "といい expresses a hoped-for situation. といいですね often shares a wish about the listener; といいんですが softens a personal wish, but the endings are not rigid person markers. For an action under the speaker's control, a potential form can make the desired possibility clearer: 行けるといい. Distinguish wishing from advising with ばいい/たらいい in other contexts.",
     "sentences": [
       {
         "id": "g2-l16-to-ii-hoping::s-g2-16-1",
@@ -3444,8 +3444,8 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-辞書形 + 時 (Prior/During) | V-た + 時 (After completion)",
-    "nuance": "CRITICAL TENSE PUZZLE: '日本に行く時カメラを買った' = Bought camera BEFORE arriving in Japan. '日本に行った時カメラを買った' = Bought camera AFTER arriving in Japan!",
-    "keyTakeaway": "MUG-UP: V-る時 = Before you do it. V-た時 = After you have finished doing it!",
+    "nuance": "With a bounded action, dictionary-form とき commonly locates the main event before completion, while たとき commonly locates it after completion. Compare 日本へ行くとき買った and 日本へ行ったとき買った. This is a relative-time contrast, not a rule that every たとき refers to a finished event: 困ったとき means when in trouble, and 子供だったとき means when I was a child. Interpret tense together with the predicate's meaning and the surrounding situation.",
+    "keyTakeaway": "Use relative timing and the type of situation; とき is not mechanically before versus after.",
     "sentences": [
       {
         "id": "g2-l16-toki-tense::s-g2-16-2",
@@ -3901,8 +3901,8 @@
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "V-ば + よかった (Affirmative regret: should have) | V-なければ + よかった (Negative regret: shouldn't have)",
-    "nuance": "MISSED OPPORTUNITY: Communicates a sigh of self-reproach. '傘を持ってくればよかった' implies it is pouring now and I am drenched.",
-    "keyTakeaway": "MUG-UP: V-ば + よかった = 'Ah, I should have done it!'. Negative: V-なければよかった.",
+    "nuance": "ばよかった often expresses regret about a choice that was not made. It does not by itself imply a specific dramatic result: 傘を持ってくればよかった says bringing an umbrella would have been better, not necessarily that the speaker is already drenched. Negative なければよかった expresses regret about doing something.",
+    "keyTakeaway": "ばよかった often expresses regret about a choice that was not made. It does not by itself imply a specific dramatic result: 傘を持ってくればよかった says bringing an umbrella would have been better, not necessarily that the speaker is already drenched. Negative なければよかった expresses regret about doing something.",
     "sentences": [
       {
         "id": "g2-l18-ba-yokatta::s-g2-18-3",
@@ -3969,15 +3969,15 @@
   {
     "id": "g2-l19-sonkeigo-verbs",
     "title": "尊敬語 (Honorific Speech: Special Verbs & Regular Formulas)",
-    "meaning": "Elevates the actions, states, and possessions of the respected subject (professors, clients, superiors).",
+    "meaning": "Honorific verbs show respect toward the person whose action is described.",
     "level": "N4",
     "book": "Genki II",
     "chapter": "Lesson 19: Meeting the Boss",
     "streamId": "stream-social",
     "streamName": "Social Hierarchy, Benefaction & Modesty",
-    "connection": "Special verbs: いらっしゃる (行く/来る/いる), おっしゃる (言う), なさる (する), 召し上がる (食べる/飲む), ご覧になる (見る), ご存じだ (知っている) | Regular formula: お + V-stem + になる",
-    "nuance": "NEVER USE ON SELF: 尊敬語 elevates the OTHER person. Using it for your own actions is a catastrophic error in Japanese etiquette.",
-    "keyTakeaway": "MUG-UP: 尊敬語 (Sonkeigo) is STRICTLY for superiors' actions! Never use for yourself!",
+    "connection": "Honorific verb; お + suitable verb stem + になる; some verbs have special forms",
+    "nuance": "尊敬語 raises the person performing the action; use it for the person being respected, not to elevate your own ordinary actions. It is not restricted to bosses or older people: customers and other people outside your group can be honored. In business speech to an outsider, your own colleague or manager belongs to your group, so do not automatically honor that manager. Special verbs such as いらっしゃる and おっしゃる have special polite forms: いらっしゃいます and おっしゃいます.",
+    "keyTakeaway": "Choose the viewpoint and social relation first; honorific language respects the actor.",
     "sentences": [
       {
         "id": "g2-l19-sonkeigo-verbs::s-g2-19-1",
@@ -4009,7 +4009,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Special honorific verb 召し上がる",
-        "ruleHint": "Special verbs: いらっしゃる (行く/来る/いる), おっしゃる (言う), なさる (する), 召し上がる (食べる/飲む), ご覧になる (見る), ご存じだ (知っている) | Regular formula: お + V-stem + になる",
+        "ruleHint": "Honorific verb; お + suitable verb stem + になる; some verbs have special forms",
         "explanations": [
           {
             "text": "召し上がり",
@@ -4125,9 +4125,9 @@
     "chapter": "Lesson 21: Which Style of House?",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "Transitive Verb-て + ある (Object is marked with が: 窓が開けてある)",
-    "nuance": "てある commonly presents the resulting state of a deliberate action. With a state description, the affected thing often takes が; を also occurs when emphasizing preparation already done.",
-    "keyTakeaway": "てある commonly presents the resulting state of a deliberate action. With a state description, the affected thing often takes が; を also occurs when emphasizing preparation already done.",
+    "connection": "Transitive Vて + ある; affected item often が in a state description, or を in a preparation-focused construction",
+    "nuance": "てある presents a resulting state or preparation from a deliberate action. In a state description the affected item often takes が; を can occur when emphasizing preparation already done. Contrast an intransitive ている state, which does not itself specify that someone deliberately prepared it.",
+    "keyTakeaway": "てある presents a resulting state or preparation from a deliberate action. In a state description the affected item often takes が; を can occur when emphasizing preparation already done. Contrast an intransitive ている state, which does not itself specify that someone deliberately prepared it.",
     "sentences": [
       {
         "id": "g2-l21-te-aru::s-g2-21-1",
@@ -4159,7 +4159,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Transitive resultant state 〜てある",
-        "ruleHint": "Transitive Verb-て + ある (Object is marked with が: 窓が開けてある)",
+        "ruleHint": "Transitive Vて + ある; affected item often が in a state description, or を in a preparation-focused construction",
         "explanations": [
           {
             "text": "飾って",
@@ -4194,15 +4194,15 @@
   {
     "id": "g2-l21-aida-vs-aidani",
     "title": "〜間に vs 〜間 (During a Moment vs Throughout the Entire Duration)",
-    "meaning": "〜間に (A short, discrete action occurs AT SOME MOMENT during interval X). 〜間 (A continuous state persists THROUGHOUT THE ENTIRETY of interval X).",
+    "meaning": "間 presents a span during which something continues; 間に locates an event or change within that span.",
     "level": "N4",
     "book": "Genki II",
     "chapter": "Lesson 21: Which Style of House?",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-ている / Noun + の + 間に (Momentary point) vs 間 (Continuous entirety)",
-    "nuance": "CRITICAL PARTICLE DISCRIMINATOR: '留守の[間]、犬が寝ていた' = The dog slept the ENTIRE time I was gone. '留守の[間に]、泥棒が入った' = A thief broke in AT A MOMENT during my absence.",
-    "keyTakeaway": "MUG-UP: 〜間 = 100% of the time interval. 〜間に = A single moment during the window!",
+    "connection": "V dictionary/ている, い-adjective, な-adjectiveな, Nの + 間 / 間に",
+    "nuance": "With 間, the second situation holds or an activity continues through the relevant period. With 間に, an event, completion or change occurs within the period. It need not be a mathematical instant or only one occurrence: several errands can be completed during someone's absence. Compare 寝ている間、雨が降っていた (rain during the sleep period) and 寝ている間に、雨がやんだ (rain stopped during it). Choose from the intended time relation, not just the English word while.",
+    "keyTakeaway": "間: ongoing within the span. 間に: an event/change within the span.",
     "sentences": [
       {
         "id": "g2-l21-aida-vs-aidani::s-g2-21-2",
@@ -4234,7 +4234,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "〜間に (Momentary action within time frame)",
-        "ruleHint": "V-ている / Noun + の + 間に (Momentary point) vs 間 (Continuous entirety)",
+        "ruleHint": "V dictionary/ている, い-adjective, な-adjectiveな, Nの + 間 / 間に",
         "explanations": [
           {
             "text": "間",
@@ -4351,8 +4351,8 @@
     "streamId": "stream-contrasts",
     "streamName": "Contrasts, Concessions & Paradoxes",
     "connection": "Plain form + のに (Noun / な-adj non-past affirmative takes な: 好きなのに, 暇なのに)",
-    "nuance": "EMOTIONAL INDIGNATION: Unlike が or けれども which are neutral contrasts, のに carries emotional coloring: frustration, indignation, bewilderment, or grievance.",
-    "keyTakeaway": "MUG-UP: Connects like んです: Noun / な-adj + な + のに! Carries frustration / disappointment.",
+    "nuance": "のに connects a fact with a result contrary to an expectation. Surprise, disappointment or criticism is common, but the contrast can also be favorable. It is not a universal marker of anger. Nouns and な-adjectives use なのに in the non-past affirmative. Distinguish this conjunction from purpose/use N/Vのに, as in 読むのに便利だ.",
+    "keyTakeaway": "のに connects a fact with a result contrary to an expectation. Surprise, disappointment or criticism is common, but the contrast can also be favorable. It is not a universal marker of anger. Nouns and な-adjectives use なのに in the non-past affirmative. Distinguish this conjunction from purpose/use N/Vのに, as in 読むのに便利だ.",
     "sentences": [
       {
         "id": "g2-l22-noni-frustration::s-g2-22-2",
@@ -4426,8 +4426,8 @@
     "streamId": "stream-conditionals",
     "streamName": "Conditional Logic & Inevitability",
     "connection": "V-て + も | い-adj くて + も | な-adj / Noun + でも",
-    "nuance": "OPPOSITE OF TARA: たら means 'if it happens, I will do Y'. ても means 'even if it happens, I STILL will do Y regardless' (雨が降っても行く = Even if it rains, I'm going).",
-    "keyTakeaway": "MUG-UP: Formed by adding も to te-form! Verbs/い-adj = 〜ても. Nouns/な-adj = 〜でも.",
+    "nuance": "ても presents a concession: the conclusion still holds despite the condition. The condition can be hypothetical or an established fact. たら states a conditional or after-relation, so calling the two simple opposites hides their different uses. いくら…ても means no matter how much; だれが…ても means whoever.",
+    "keyTakeaway": "ても presents a concession: the conclusion still holds despite the condition. The condition can be hypothetical or an established fact. たら states a conditional or after-relation, so calling the two simple opposites hides their different uses. いくら…ても means no matter how much; だれが…ても means whoever.",
     "sentences": [
       {
         "id": "g2-l23-temo-even-if::s-g2-23-1",
@@ -4501,8 +4501,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-辞書形 / V-ない + ことにする / ことになる",
-    "nuance": "DECISION VS SOCIAL CONSENSUS: '会社を辞めることにした' = I personally chose to quit. '会社を辞めることになった' = Due to layoffs, restructuring, or external consensus, I am leaving (polite Japanese deflection).",
-    "keyTakeaway": "MUG-UP: ことにする = MY active decision. ことになる = OUTSIDE circumstance / official rule.",
+    "nuance": "ことにする emphasizes a decision by an actor. ことになる presents a settled outcome or arrangement without emphasizing who made the decision; it does not prove that the speaker had no choice or that layoffs occurred. ことにしている presents a maintained policy, and ことになっている an established arrangement.",
+    "keyTakeaway": "ことにする emphasizes a decision by an actor. ことになる presents a settled outcome or arrangement without emphasizing who made the decision; it does not prove that the speaker had no choice or that layoffs occurred. ことにしている presents a maintained policy, and ことになっている an established arrangement.",
     "sentences": [
       {
         "id": "g2-l23-koto-ni-suru-naru::s-g2-23-2",
@@ -4576,8 +4576,8 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-辞書形 / V-ている / V-ない + うちに | い-adj + うちに | な-adj + な + うちに | Noun + の + うちに",
-    "nuance": "TIME SENSITIVITY: If you don't act now, it will become impossible later: スープが熱いうちに (before it gets cold), 日本にいるうちに (before leaving Japan).",
-    "keyTakeaway": "MUG-UP: V-ない + うちに = 'Before it becomes...' (暗くならないうちに = Before it gets dark).",
+    "nuance": "Act while the current condition still holds, before it changes. What becomes unavailable may be the opportunity or the preferred condition, not the physical ability to act at all: cold soup can still be eaten. The final clause commonly expresses an intended action, invitation or request. Nの, な-adjectiveな and い-adjectives have different attachments.",
+    "keyTakeaway": "Act while the current condition still holds, before it changes. What becomes unavailable may be the opportunity or the preferred condition, not the physical ability to act at all: cold soup can still be eaten. The final clause commonly expresses an intended action, invitation or request. Nの, な-adjectiveな and い-adjectives have different attachments.",
     "sentences": [
       {
         "id": "skm3-u1-uchini-while::s-skm3-1-1",
@@ -4650,9 +4650,9 @@
     "chapter": "Unit 1: 時・進行 (Time & Progress)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-ている / V-辞書形 + うちに",
-    "nuance": "NO CONSCIOUS INTENT: Clause B is NOT a planned decision; it is a spontaneous change that crept up silently (e.g. while reading I fell asleep; as we talked we grew fond of each other).",
-    "keyTakeaway": "MUG-UP: V-ている + うちに = Inadvertently happened without realizing it!",
+    "connection": "V dictionary / Vている / Vない + うちに",
+    "nuance": "A change occurs while a process or condition continues, rather than being stated as the deliberate goal of the final clause. It may be gradual or unnoticed, but unnoticed is not compulsory in every example. Dictionary, ている and negative forms occur: 気づかないうちに. Contrast the opportunity use, where the final clause tells someone to act before a state changes.",
+    "keyTakeaway": "A change occurs while a process or condition continues, rather than being stated as the deliberate goal of the final clause. It may be gradual or unnoticed, but unnoticed is not compulsory in every example. Dictionary, ている and negative forms occur: 気づかないうちに. Contrast the opportunity use, where the final clause tells someone to act before a state changes.",
     "sentences": [
       {
         "id": "skm3-u1-uchini-change::s-skm3-1-2",
@@ -4674,37 +4674,37 @@
     "quiz": [
       {
         "id": "q-skm3-1-2",
-        "question": "何度も練習を重ねて（　　）うちに、自然と上手に話せるようになった。",
-        "translation": "While repeating practice over and over, I naturally became able to speak skillfully.",
+        "question": "何度も練習して（　　）うちに、自然に話せるようになりました。",
+        "translation": "While practicing repeatedly, I naturally became able to speak.",
         "options": [
           "いる",
-          "ある",
-          "おく",
-          "みる"
+          "います",
+          "いたの",
+          "いまして"
         ],
         "correctIndex": 0,
         "grammarFocus": "V-ている + うちに gradual evolution",
-        "ruleHint": "V-ている / V-辞書形 + うちに",
+        "ruleHint": "V dictionary / Vている / Vない + うちに",
         "explanations": [
           {
             "text": "いる",
             "isCorrect": true,
-            "reason": "Correct! 重ねているうちに marks the gradual, unforced emergence of fluency over continuous practice."
+            "reason": "Plain ている attaches to うちに and describes the continuing process."
           },
           {
-            "text": "ある",
+            "text": "います",
             "isCorrect": false,
-            "reason": "Incorrect. ある is for resultant state of inanimate objects."
+            "reason": "The polite ending います does not directly modify うち in this pattern."
           },
           {
-            "text": "おく",
+            "text": "いたの",
             "isCorrect": false,
-            "reason": "Incorrect. おく is advance preparation."
+            "reason": "いたの adds an unnecessary の."
           },
           {
-            "text": "みる",
+            "text": "いまして",
             "isCorrect": false,
-            "reason": "Incorrect. みる is trial action."
+            "reason": "いまして does not modify うち."
           }
         ]
       }
@@ -4719,15 +4719,15 @@
   {
     "id": "skm3-u1-aida-vs-aidani",
     "title": "〜間 vs 〜間に (Continuous Duration vs Momentary Action)",
-    "meaning": "〜間 (Action in B continues through 100% of duration A). 〜間に (Discrete action in B happens at some specific point during interval A).",
+    "meaning": "間 presents a span during which something continues; 間に locates an event or change within that span.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 1: 時・進行 (Time & Progress)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-ている / Noun + の + 間 (Throughout) vs 間に (Single point)",
-    "nuance": "DURATION VS POINT: '夏休みの間、毎日泳いだ' (Swam every day the whole vacation). '夏休みの間に、免許を取った' (Acquired license at a moment during vacation).",
-    "keyTakeaway": "MUG-UP: 間 = Whole time. 間に = At a moment within the interval.",
+    "connection": "V dictionary/ている, い-adjective, な-adjectiveな, Nの + 間 / 間に",
+    "nuance": "With 間, the second situation holds or an activity continues through the relevant period. With 間に, an event, completion or change occurs within the period. It need not be a mathematical instant or only one occurrence: several errands can be completed during someone's absence. Compare 寝ている間、雨が降っていた (rain during the sleep period) and 寝ている間に、雨がやんだ (rain stopped during it). Choose from the intended time relation, not just the English word while.",
+    "keyTakeaway": "間: ongoing within the span. 間に: an event/change within the span.",
     "sentences": [
       {
         "id": "skm3-u1-aida-vs-aidani::s-skm3-1-3",
@@ -4759,7 +4759,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "〜間に (Momentary event during interval)",
-        "ruleHint": "V-ている / Noun + の + 間 (Throughout) vs 間に (Single point)",
+        "ruleHint": "V dictionary/ている, い-adjective, な-adjectiveな, Nの + 間 / 間に",
         "explanations": [
           {
             "text": "間",
@@ -4794,15 +4794,15 @@
   {
     "id": "skm3-u1-te-kara-denaito",
     "title": "〜てからでないと / 〜てからでなければ (Not Until / Only After Prerequisite Is Done)",
-    "meaning": "Action Y is completely impossible until prerequisite action X has been thoroughly fulfilled: 'Unless you do X first, Y cannot be done'.",
+    "meaning": "Not until; cannot do Y before first doing X.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 1: 時・進行 (Time & Progress)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-て + からでないと / からでなければ + Negative / Impossible Predicate",
-    "nuance": "MANDATORY NEGATIVE CONCEQUENCE: Clause B ALWAYS expresses inability, refusal, or impossibility (できません, 決められません, 分かりません).",
-    "keyTakeaway": "MUG-UP: V-て + からでないと + [Negative] = Cannot do Y until X is completed first!",
+    "nuance": "The first action is a prerequisite. The following clause describes what cannot be done or an unfavorable state before it occurs. Negative meaning does not require the literal ending ない: 無理だ and いけない can also express the constraint. からでなければ is a more formal conditional variant.",
+    "keyTakeaway": "The first action is a prerequisite. The following clause describes what cannot be done or an unfavorable state before it occurs. Negative meaning does not require the literal ending ない: 無理だ and いけない can also express the constraint. からでなければ is a more formal conditional variant.",
     "sentences": [
       {
         "id": "skm3-u1-te-kara-denaito::s-skm3-1-4",
@@ -4875,9 +4875,9 @@
     "chapter": "Unit 1: 時・進行 (Time & Progress)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-辞書形 + ところだ (Inception) | V-ている + ところだ (Midst) | V-た + ところだ (Conclusion)",
-    "nuance": "PHASE CLUES: '今から出かけるところだ' (I'm putting on my shoes). '今調べているところだ' (Browsing right now). '今帰ったところだ' (Just stepped through the door).",
-    "keyTakeaway": "MUG-UP: V-るところ (About to) -> V-ているところ (Right now) -> V-たところ (Just finished right now!).",
+    "connection": "V dictionary / Vている / Vた + ところだ; within a sentence: ところを / ところで / ところへ, according to the following predicate",
+    "nuance": "Dictionary form marks just before starting, ている the ongoing stage, and た just after completion. Inside a sentence, the following predicate determines the particle: ところを見られる (be seen in the act), ところで電話が来る (a call at that stage), ところへ客が来る (guests arrive into that situation). Do not confuse temporal Vたところで with the separate concessive pattern meaning even if.",
+    "keyTakeaway": "Dictionary form marks just before starting, ている the ongoing stage, and た just after completion. Inside a sentence, the following predicate determines the particle: ところを見られる (be seen in the act), ところで電話が来る (a call at that stage), ところへ客が来る (guests arrive into that situation). Do not confuse temporal Vたところで with the separate concessive pattern meaning even if.",
     "sentences": [
       {
         "id": "skm3-u1-tokoro-da-phases::s-skm3-1-5",
@@ -4909,7 +4909,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "V-た + ところだ (Just finished)",
-        "ruleHint": "V-辞書形 + ところだ (Inception) | V-ている + ところだ (Midst) | V-た + ところだ (Conclusion)",
+        "ruleHint": "V dictionary / Vている / Vた + ところだ; within a sentence: ところを / ところで / ところへ, according to the following predicate",
         "explanations": [
           {
             "text": "終わった",
@@ -5101,15 +5101,15 @@
   {
     "id": "skm3-u2-tabini-repetition",
     "title": "〜たびに (Every Single Time / Invariable Recurrence)",
-    "meaning": "Whenever condition X occurs, emotional or behavioral response Y invariably accompanies it: 'Every single time without exception'.",
+    "meaning": "Each time X occurs, Y happens.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 2: 対象・関連 (Relation & Repetition)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-辞書形 + たびに | Noun + の + たびに",
-    "nuance": "たびに marks a result recurring whenever a trigger occurs. It is useful when drawing attention to recurrence; it does not require an emotional reaction.",
-    "keyTakeaway": "たびに marks a result recurring whenever a trigger occurs. It is useful when drawing attention to recurrence; it does not require an emotional reaction.",
+    "connection": "V dictionary / Nの + たびに",
+    "nuance": "Highlights a recurring connection between a trigger and a result. The result need not be emotional or surprising. Use this pattern for the recurring relation you wish to assert, rather than treating it as proof that no conceivable exception exists.",
+    "keyTakeaway": "たびに links repeated occasions with their recurring result.",
     "sentences": [
       {
         "id": "skm3-u2-tabini-repetition::s-skm3-2-3",
@@ -5131,37 +5131,37 @@
     "quiz": [
       {
         "id": "q-skm3-2-3",
-        "question": "父は出張の（　　）、家族にその土地の名産品を買ってきてくれる。",
-        "translation": "Every time my father goes on a business trip, he buys local specialty goods for the family.",
+        "question": "「出張するごとに」という意味です。父は出張の（　　）、お土産を買ってきます。",
+        "translation": "On every business trip, my father buys souvenirs.",
         "options": [
           "たびに",
-          "うちに",
-          "ついでに",
-          "最中に"
+          "たびの",
+          "たびで",
+          "たびを"
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + の + たびに",
-        "ruleHint": "V-辞書形 + たびに | Noun + の + たびに",
+        "ruleHint": "V dictionary / Nの + たびに",
         "explanations": [
           {
             "text": "たびに",
             "isCorrect": true,
-            "reason": "Correct! 出張のたびに expresses invariable recurrence on every business trip."
+            "reason": "Nのたびに means on each occasion."
           },
           {
-            "text": "うちに",
+            "text": "たびの",
             "isCorrect": false,
-            "reason": "Incorrect. うちに means while or before opportunity slips."
+            "reason": "たびの must modify a noun."
           },
           {
-            "text": "ついでに",
+            "text": "たびで",
             "isCorrect": false,
-            "reason": "Incorrect. ついでに means taking advantage of an errand to perform another side chore."
+            "reason": "たびで is not the recurrence linker here."
           },
           {
-            "text": "最中に",
+            "text": "たびを",
             "isCorrect": false,
-            "reason": "Incorrect. 最中に means right in the middle of a continuous event."
+            "reason": "たびを does not link this temporal clause."
           }
         ]
       }
@@ -5176,15 +5176,15 @@
   {
     "id": "skm3-u2-ba-hodo-proportion",
     "title": "(〜ば)〜ほど (Proportional Correlation: The More... The More...)",
-    "meaning": "As the scale or intensity of condition A increases, consequence B escalates in direct proportion: 'The more X, the more Y'.",
+    "meaning": "The more X, the more/less Y; one degree changes with another.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 2: 対象・関連 (Relation & Repetition)",
     "streamId": "stream-trends",
     "streamName": "Trends, Changes & Proportional Evolution",
     "connection": "V-ば + V-辞書形 + ほど | い-adj ければ + い-adj + ほど | な-adj なら + な-adj な + ほど | Noun + であればあるほど",
-    "nuance": "ELLIPSIS ALLOWED: The first conditional part (〜ば) is often dropped in speech: 考えるほど分からなくなる (The more I think, the less I understand).",
-    "keyTakeaway": "MUG-UP: [ば-form] + [Dictionary form] + ほど = The more X, the more Y.",
+    "nuance": "The construction describes a correlation: as one degree increases, another changes. It does not imply a mathematically exact proportional rate. The initial conditional can be omitted: 考えるほど分からなくなる. Repeat the same predicate when using the full pair and preserve the adjective linking form before ほど.",
+    "keyTakeaway": "The construction describes a correlation: as one degree increases, another changes. It does not imply a mathematically exact proportional rate. The initial conditional can be omitted: 考えるほど分からなくなる. Repeat the same predicate when using the full pair and preserve the adjective linking form before ほど.",
     "sentences": [
       {
         "id": "skm3-u2-ba-hodo-proportion::s-skm3-2-4",
@@ -5326,15 +5326,15 @@
   {
     "id": "skm3-u3-kurai-hodo-extent",
     "title": "〜くらいだ / 〜ほどだ (Expressing Extreme Degree: To the Extent That)",
-    "meaning": "Vividly illustrates high intensity or emotional degree by comparing it to an exaggerated metaphorical state: 'so [adj] that... / to the extent that...'.",
+    "meaning": "To the extent that; so … that; a comparison showing degree.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 3: 比較・限定 (Comparison & Boundaries)",
     "streamId": "stream-limits",
     "streamName": "Boundaries, Extremes & Scope",
     "connection": "V-辞書形 / V-ない + くらいだ / ほどだ | Noun + くらい / ほど",
-    "nuance": "METAPHORICAL EXAGGERATION: 'お腹が痛くて、涙が出るほどだった' (My stomach hurt so badly that tears were practically coming out). ほど is slightly more formal/elevated than くらい.",
-    "keyTakeaway": "MUG-UP: V-る + くらい / ほど = Metaphorical intensity ('so much that...').",
+    "nuance": "A comparison illustrates the degree of an event or quality. The comparison can be literal or exaggerated; it does not itself prove that the comparison event happened. かと思うほど/くらい emphasizes how it felt. Other uses of くらい and ほど include approximate quantities and comparisons, so identify the construction first.",
+    "keyTakeaway": "A comparison illustrates the degree of an event or quality. The comparison can be literal or exaggerated; it does not itself prove that the comparison event happened. かと思うほど/くらい emphasizes how it felt. Other uses of くらい and ほど include approximate quantities and comparisons, so identify the construction first.",
     "sentences": [
       {
         "id": "skm3-u3-kurai-hodo-extent::s-skm3-3-1",
@@ -5618,7 +5618,7 @@
           {
             "text": "あまり",
             "isCorrect": false,
-            "reason": "Incorrect. あまり means overcome by emotion."
+            "reason": "あまり can describe excessive degree leading to a result; it does not express the compensating trade-off intended here."
           }
         ]
       }
@@ -5738,13 +5738,13 @@
     "quiz": [
       {
         "id": "q-skm3-5-2",
-        "question": "富士山が美しく見える（　　）から、この坂は富士見坂と名付けられた。",
-        "translation": "From the fact that Mt. Fuji can be seen beautifully, this slope was named Fujimi-zaka.",
+        "question": "名前の由来を説明します。富士山が見える（　　）から、富士見坂と呼ばれています。",
+        "translation": "The slope is called Fujimizaka because Mount Fuji can be seen from it.",
         "options": [
           "こと",
-          "もの",
-          "わけ",
-          "ところ"
+          "ことの",
+          "ことに",
+          "ことを"
         ],
         "correctIndex": 0,
         "grammarFocus": "Clause + ことから (Origin of name)",
@@ -5753,22 +5753,22 @@
           {
             "text": "こと",
             "isCorrect": true,
-            "reason": "Correct! 〜ことから expresses the historical origin of naming a geographical landmark."
+            "reason": "A plain clause + ことから gives the basis for the name."
           },
           {
-            "text": "もの",
+            "text": "ことの",
             "isCorrect": false,
-            "reason": "Incorrect. ものから is ungrammatical here."
+            "reason": "ことのから does not form this pattern."
           },
           {
-            "text": "わけ",
+            "text": "ことに",
             "isCorrect": false,
-            "reason": "Incorrect. わけから does not exist."
+            "reason": "ことにから incorrectly stacks particles."
           },
           {
-            "text": "ところ",
+            "text": "ことを",
             "isCorrect": false,
-            "reason": "Incorrect. ところから indicates starting location or circumstantial clue, but ことから is the canonical origin pattern."
+            "reason": "ことをから does not form this pattern."
           }
         ]
       }
@@ -5783,15 +5783,15 @@
   {
     "id": "skm3-u6-no-dakara-reality",
     "title": "〜のだから / 〜んだから (Since It Is an Acknowledged Reality)",
-    "meaning": "Since situation X is an undisputed fact known to all parties, consequence Y naturally follows: 'Since it's a fact that X, of course Y!'.",
+    "meaning": "Since that is the situation; given that …",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 6: 条件・仮定 (Conditions & Hypotheses)",
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Plain form + のだから / んだから (な-adj / Noun takes な: 好きなのだから, 子供なのだから)",
-    "nuance": "SHARED COMMON GROUND: You don't use のだから to announce new surprising information; you appeal to a shared premise to give advice, reproof, or encouragement.",
-    "keyTakeaway": "MUG-UP: [Obvious Shared Fact] なのだから [Natural mandate or encouragement]!",
+    "nuance": "Treats the preceding situation as a relevant premise supporting a judgment, encouragement, request or criticism. The speaker may remind the listener of it; it need not be a fact already explicitly agreed by everyone. んだから is conversational and can sound insistent depending on tone.",
+    "keyTakeaway": "Treats the preceding situation as a relevant premise supporting a judgment, encouragement, request or criticism. The speaker may remind the listener of it; it need not be a fact already explicitly agreed by everyone. んだから is conversational and can sound insistent depending on tone.",
     "sentences": [
       {
         "id": "skm3-u6-no-dakara-reality::s-skm3-6-1",
@@ -5858,15 +5858,15 @@
   {
     "id": "skm3-u6-tewa-dewa-negative-consequence",
     "title": "〜ては / 〜では (If Such a Condition Persists, Disaster Will Follow)",
-    "meaning": "Considers condition X as a severe obstacle: 'If X happens / If you keep doing X, bad result Y is inevitable'.",
+    "meaning": "If that condition holds, an undesirable result follows or something cannot be done.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 6: 条件・仮定 (Conditions & Hypotheses)",
     "streamId": "stream-conditionals",
     "streamName": "Conditional Logic & Inevitability",
     "connection": "V-て + は | い-adj くて + は | な-adj / Noun + では",
-    "nuance": "NEGATIVE FOREBODING: Clause B ALWAYS describes a bad consequence, trouble, or failure: 'こんなにミスが多くては困る' (If you make this many errors, we're in trouble).",
-    "keyTakeaway": "MUG-UP: V-ては / では + [Disaster / Complaint] = 'If this keeps happening, we're doomed!'.",
+    "nuance": "In this conditional use, the speaker judges the condition unsuitable or presents an unfavorable consequence. The result can be ordinary inconvenience, not a disaster. Distinguish repeated-action VてはV in other constructions.",
+    "keyTakeaway": "In this conditional use, the speaker judges the condition unsuitable or presents an unfavorable consequence. The result can be ordinary inconvenience, not a disaster. Distinguish repeated-action VてはV in other constructions.",
     "sentences": [
       {
         "id": "skm3-u6-tewa-dewa-negative-consequence::s-skm3-6-2",
@@ -6038,12 +6038,12 @@
     "quiz": [
       {
         "id": "q-skm3-8-2",
-        "question": "どうしてもとおっしゃるなら、手伝わ（　　）こともありませんが。",
-        "translation": "If you insist that it must be done, it's not that I couldn't help you out...",
+        "question": "時間はかかりますが、一人ででき（　　）ことはありません。",
+        "translation": "It takes time, but it is not impossible to do it alone.",
         "options": [
           "ない",
-          "ず",
-          "ぬ",
+          "なく",
+          "なかったの",
           "なくて"
         ],
         "correctIndex": 0,
@@ -6053,22 +6053,22 @@
           {
             "text": "ない",
             "isCorrect": true,
-            "reason": "Correct! 手伝う negative is 手伝わない + こともありません (It's not that I can't help)."
+            "reason": "できないことはない concedes that it is possible."
           },
           {
-            "text": "ず",
+            "text": "なく",
             "isCorrect": false,
-            "reason": "Incorrect. 手伝わず cannot pair with こともない."
+            "reason": "なく does not directly modify こと here."
           },
           {
-            "text": "ぬ",
+            "text": "なかったの",
             "isCorrect": false,
-            "reason": "Incorrect. 手伝わぬ is archaic."
+            "reason": "なかったの adds an unnecessary の."
           },
           {
             "text": "なくて",
             "isCorrect": false,
-            "reason": "Incorrect. 手伝わなくて is te-form."
+            "reason": "なくて is connective and cannot directly modify こと."
           }
         ]
       }
@@ -6090,8 +6090,8 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-意向形 + とする (Past: とした / としていた) | Negative: としない (Refuses to do)",
-    "nuance": "VERGE OF INTERRUPTION: '家を出ようとした時、電話が鳴った' (Just as I was about to walk out the door, phone rang). Negative 〜ようとしない indicates stubborn refusal ('He refuses to apologize').",
-    "keyTakeaway": "MUG-UP: V-よう + とする = Just about to do X! Negative: V-ようとしない = Stubbornly refuses to do!",
+    "nuance": "Volitional + とする can mark an attempt or an imminent event. The attempt may fail, and an imminent event need not have a human agent. ようとしない describes lack of willingness or attempt; stubbornness is an interpretation from context, not a required meaning.",
+    "keyTakeaway": "Volitional + とする can mark an attempt or an imminent event. The attempt may fail, and an imminent event need not have a human agent. ようとしない describes lack of willingness or attempt; stubbornness is an interpretation from context, not a required meaning.",
     "sentences": [
       {
         "id": "skm3-u11-you-to-suru-inception::s-skm3-11-1",
@@ -6165,8 +6165,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-辞書形 / V-ない + ことになっている",
-    "nuance": "EXTERNAL REGULATION: This is NOT a personal whim. It represents external school rules, legal bylaws, or schedules: '教室では日本語で話すことになっている' (It is the standing classroom rule).",
-    "keyTakeaway": "MUG-UP: V-る / V-ない + ことになっている = It is an established societal/organizational rule!",
+    "nuance": "Reports an established rule, plan or arrangement. It can concern a private appointment as well as institutional rules. Compare ことにしている, which emphasizes the actor's chosen policy. ことになっている does not always mean that the speaker had no part in making the arrangement.",
+    "keyTakeaway": "Reports an established rule, plan or arrangement. It can concern a private appointment as well as institutional rules. Compare ことにしている, which emphasizes the actor's chosen policy. ことになっている does not always mean that the speaker had no part in making the arrangement.",
     "sentences": [
       {
         "id": "skm3-u11-koto-ni-natte-iru::s-skm3-11-2",
@@ -6233,7 +6233,7 @@
   {
     "id": "skm3-fj-ppoi-personality",
     "title": "〜っぽい (Prone to Negative Behavior / Resembling Quality: -ish / -y)",
-    "meaning": "1) Tendency toward a personality flaw (怒りっぽい = quick-tempered, 忘れっぽい = forgetful). 2) Displaying obvious childlike or cheap qualities (子供っぽい, 安っぽい).",
+    "meaning": "Having a perceived quality, resemblance or tendency; often informal and sometimes negative.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "形式整理 J: 意味を広げる形式 (Suffixes & Tendencies)",
@@ -6464,16 +6464,16 @@
   },
   {
     "id": "skm3-u3-ni-kagiru",
-    "title": "〜に限る (Nothing Beats X / X Is Unequivocally the Best)",
-    "meaning": "Expresses the speaker's firm personal conviction that X is the single best, unmatched choice or course of action.",
+    "title": "〜に限る (Nothing Beats / Best Choice)",
+    "meaning": "Nothing beats X; X is the best choice or best thing to do.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 3: 比較・限定 (Comparison & Boundaries)",
     "streamId": "stream-limits",
     "streamName": "Boundaries, Extremes & Scope",
-    "connection": "Noun + に限る | V-辞書形 / V-ない形 + に限る",
-    "nuance": "SUBJECTIVE SUPREME CHOICE: This is the speaker's personal recommendation, not an objective law: '暑い日は冷たいビールに限る' (On a hot day, nothing beats a cold beer).",
-    "keyTakeaway": "MUG-UP: Noun / V-る / V-ない + に限る = 'Nothing beats X!'. Peak personal advice.",
+    "connection": "N / V dictionary / Vない + に限る",
+    "nuance": "This pattern expresses the speaker's subjective recommendation, not an objectively proven ranking. A negative verb recommends avoiding an action: 無理をしないに限る means it is best not to overdo things. やっぱり often accompanies a confident preference. Do not confuse this with Nに限り (restricted to N), Nに限って (specifically/on this occasion, among other uses), or とは限らない (not necessarily). The dictionary verb 限る means to limit; the whole grammar pattern has the best-choice meaning here.",
+    "keyTakeaway": "に限る = the best choice; に限り = limited to. Read the whole pattern.",
     "sentences": [
       {
         "id": "skm3-u3-ni-kagiru::s-skm3-3-4",
@@ -6495,37 +6495,37 @@
     "quiz": [
       {
         "id": "q-skm3-3-4",
-        "question": "夏の暑い午後には、冷えたスイカを食べる（　　）。",
-        "translation": "On a sweltering summer afternoon, nothing beats eating chilled watermelon.",
+        "question": "「早く寝るのが一番よい」という意味です。疲れた日は、早く寝るに（　　）。",
+        "translation": "On a tiring day, the best thing is to go to bed early.",
         "options": [
-          "に限る",
-          "にすぎない",
-          "に違いない",
-          "にかかわる"
+          "限る",
+          "限って",
+          "限りな",
+          "限ら"
         ],
         "correctIndex": 0,
         "grammarFocus": "V-る + に限る (Supreme choice)",
-        "ruleHint": "Noun + に限る | V-辞書形 / V-ない形 + に限る",
+        "ruleHint": "N / V dictionary / Vない + に限る",
         "explanations": [
           {
-            "text": "に限る",
+            "text": "限る",
             "isCorrect": true,
-            "reason": "Correct! 食べるに限る asserts that chilled watermelon is the supreme summer remedy."
+            "reason": "に限る gives the subjective best choice."
           },
           {
-            "text": "にすぎない",
+            "text": "限って",
             "isCorrect": false,
-            "reason": "Incorrect. にすぎない means 'is merely / nothing more than'."
+            "reason": "限って is a connective form and does not complete this sentence."
           },
           {
-            "text": "に違いない",
+            "text": "限りな",
             "isCorrect": false,
-            "reason": "Incorrect. に違いない expresses certainty ('must surely be')."
+            "reason": "限りな is not this verb form."
           },
           {
-            "text": "にかかわる",
+            "text": "限ら",
             "isCorrect": false,
-            "reason": "Incorrect. にかかわる means 'involves / affects'."
+            "reason": "限ら is an unfinished stem."
           }
         ]
       }
@@ -6540,15 +6540,15 @@
   {
     "id": "skm3-u4-ni-taishite",
     "title": "〜に対して (In Contrast To / While X Is..., Y Is...)",
-    "meaning": "Juxtaposes two distinct subjects or situations, highlighting their starkly opposite characteristics.",
+    "meaning": "In contrast to / whereas; also toward a target in a different use.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 4: 対比・関係 (Contrast & Relation)",
     "streamId": "stream-contrasts",
     "streamName": "Paradox, Concession & Contrast",
     "connection": "Noun + に対して | 普通形 (な-adj + な/である, Noun + である) + のに対して",
-    "nuance": "POLAR OPPOSITES: Compares two separate entities A and B: '兄が社交的なのに対して、弟は内向的だ' (Whereas the older brother is sociable, the younger brother is introverted).",
-    "keyTakeaway": "MUG-UP: A のに対して B = 'Whereas A is..., B is the complete opposite!'.",
+    "nuance": "In the contrast use, two subjects or situations are compared; they need not be exact polar opposites. A full predicate uses のに対して. A different use, Nに対して, identifies the target of an action or attitude, such as 客に対して親切だ.",
+    "keyTakeaway": "In the contrast use, two subjects or situations are compared; they need not be exact polar opposites. A full predicate uses のに対して. A different use, Nに対して, identifies the target of an action or attitude, such as 客に対して親切だ.",
     "sentences": [
       {
         "id": "skm3-u4-ni-taishite::s-skm3-4-3",
@@ -6622,8 +6622,8 @@
     "streamId": "stream-contrasts",
     "streamName": "Paradox, Concession & Contrast",
     "connection": "Noun + に比べて / に比べ",
-    "nuance": "QUANTITATIVE OR QUALITATIVE BENCHMARK: Unlike に対して (which contrasts polar opposites), に比べて measures differences in scale, price, difficulty, or degree.",
-    "keyTakeaway": "MUG-UP: Noun + に比べて = 'Compared to X...'. Standard benchmark.",
+    "nuance": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
+    "keyTakeaway": "に比べて or と比べて establishes a comparison baseline for degree, scale or quality. に対して can contrast two situations without measuring a degree; it is not restricted to exact opposites.",
     "sentences": [
       {
         "id": "skm3-u4-ni-kurabete::s-skm3-4-4",
@@ -6781,15 +6781,15 @@
   {
     "id": "skm3-u6-sae-ba",
     "title": "〜さえ〜ば (If Only / Provided That Sole Prerequisite Is Met)",
-    "meaning": "Specifies that as long as one minimum condition is fulfilled, everything else will be satisfactory or problems will disappear.",
+    "meaning": "As long as; if only the highlighted condition is satisfied.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 6: 条件・仮定 (Conditions & Hypotheses)",
     "streamId": "stream-conditionals",
     "streamName": "Hypothetical Horizons & Logical Triggers",
     "connection": "Noun + さえ + V-ば / い-adj-ければ / な-adj-なら / Noun + なら | V-stem + さえすれば",
-    "nuance": "MINIMAL SUFFICIENT CONDITION: 'If only this single factor exists, nothing else matters': 体さえ健康なら、どんな困難も乗り越えられる (As long as one has health, any obstacle can be surmounted).",
-    "keyTakeaway": "MUG-UP: Noun + さえ + Verb-ば = 'If only X, then all is well!'. Focus on the single golden key.",
+    "nuance": "Highlights a condition the speaker treats as sufficient for the stated result. It does not assert that every other circumstance in the world is irrelevant. Nさえ attaches to the focused item; V-stemさえすれば focuses on performing an action.",
+    "keyTakeaway": "Highlights a condition the speaker treats as sufficient for the stated result. It does not assert that every other circumstance in the world is irrelevant. Nさえ attaches to the focused item; V-stemさえすれば focuses on performing an action.",
     "sentences": [
       {
         "id": "skm3-u6-sae-ba::s-skm3-6-3",
@@ -6856,15 +6856,15 @@
   {
     "id": "skm3-u6-tatoe-temo",
     "title": "たとえ〜ても (Even If / Even Granting That Hypothetical X Occurs)",
-    "meaning": "Emphasizes that even in an extreme hypothetical case X, the consequence or speaker's resolute stance in Y remains completely unchanged.",
+    "meaning": "Even if X is assumed, Y still holds.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 6: 条件・仮定 (Conditions & Hypotheses)",
     "streamId": "stream-conditionals",
     "streamName": "Hypothetical Horizons & Logical Triggers",
-    "connection": "たとえ + V-ても / い-adj-くても / な-adj-でも / Noun + でも",
-    "nuance": "UNSHAKEABLE RESOLVE: Even if the most extreme situation materializes, clause Y is unbending: たとえ両親に反対されても、夢を諦めない (Even if my parents oppose, I won't give up).",
-    "keyTakeaway": "MUG-UP: たとえ + ても = 'Even if X happens, my resolve Y will NEVER waver!'.",
+    "connection": "たとえ + Vても / adjectiveくても / Nでも / な-adjectiveでも",
+    "nuance": "たとえ explicitly introduces a hypothetical concession. The result may be a fact, judgment, intention or recommendation; it need not be the speaker's unshakable resolve. Distinguish a hypothetical case from a known fact, although ても itself can be used with either.",
+    "keyTakeaway": "The assumed condition does not overturn the conclusion.",
     "sentences": [
       {
         "id": "skm3-u6-tatoe-temo::s-skm3-6-4",
@@ -6896,7 +6896,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "たとえ〜ても (Hypothetical concession)",
-        "ruleHint": "たとえ + V-ても / い-adj-くても / な-adj-でも / Noun + でも",
+        "ruleHint": "たとえ + Vても / adjectiveくても / Nでも / な-adjectiveでも",
         "explanations": [
           {
             "text": "たとえ",
@@ -6961,12 +6961,12 @@
     "quiz": [
       {
         "id": "q-skm3-7-1",
-        "question": "風邪を引か（　　）ように、暖かくして出かけなさい。",
-        "translation": "Dress warmly when you go out so that you don't catch a cold.",
+        "question": "忘れ（　　）ように、メモしておきます。",
+        "translation": "I will make a note so that I do not forget.",
         "options": [
           "ない",
-          "ず",
-          "ぬ",
+          "なく",
+          "ないの",
           "なくて"
         ],
         "correctIndex": 0,
@@ -6976,22 +6976,22 @@
           {
             "text": "ない",
             "isCorrect": true,
-            "reason": "Correct! V-ない + ように is the standard pattern for preventative purpose ('so as not to...')."
+            "reason": "Vないように gives the negative outcome to avoid."
           },
           {
-            "text": "ず",
+            "text": "なく",
             "isCorrect": false,
-            "reason": "Incorrect. 引かずように is ungrammatical."
+            "reason": "なく cannot directly modify よう in this pattern."
           },
           {
-            "text": "ぬ",
+            "text": "ないの",
             "isCorrect": false,
-            "reason": "Incorrect. 引かぬように is archaic/literary."
+            "reason": "ないの adds an unnecessary の."
           },
           {
             "text": "なくて",
             "isCorrect": false,
-            "reason": "Incorrect. 引かなくてように is grammatically invalid."
+            "reason": "なくて is not the required modifier."
           }
         ]
       }
@@ -7088,8 +7088,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "普通形 (な-adj + な/である, Noun + の/である) + わけがない / わけはない",
-    "nuance": "OBJECTIVE LOGICAL REJECTION: Based on known evidence or common sense, scenario X is mathematically or logically absurd: '彼が犯人のわけがない。その時私と一緒にいたのだから' (There's no way he is the culprit; he was with me).",
-    "keyTakeaway": "MUG-UP: 普通形 + わけがない = 'Zero chance! There is no reason or basis for that to be true!'.",
+    "nuance": "Expresses the speaker's strong rejection of a possibility, often based on a stated reason. The form does not turn the speaker's belief into an objective or mathematical proof. Contrast わけではない, which denies an inference or a full/general claim without necessarily asserting the opposite.",
+    "keyTakeaway": "Expresses the speaker's strong rejection of a possibility, often based on a stated reason. The form does not turn the speaker's belief into an objective or mathematical proof. Contrast わけではない, which denies an inference or a full/general claim without necessarily asserting the opposite.",
     "sentences": [
       {
         "id": "skm3-u8-wake-ga-nai::s-skm3-8-3",
@@ -7163,8 +7163,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "普通形 (な-adj + な/である, Noun + の/な/である) + わけではない / わけじゃない",
-    "nuance": "AVOIDING ABSOLUTES: Used to prevent misunderstanding: '嫌いなわけではないが、今は食べたくない' (It's not that I dislike it, but I just don't feel like eating right now).",
-    "keyTakeaway": "MUG-UP: 普通形 + わけではない = 'Partial denial! Don't jump to conclusions, it's not 100% that way!'.",
+    "nuance": "Denies a proposed interpretation, reason or generalization. The scope matters: 全部分かったわけではない denies understanding everything, while 嫌いなわけではない denies dislike as the explanation. It is not invariably a weak partial denial; it can reject the whole particular inference.",
+    "keyTakeaway": "Denies a proposed interpretation, reason or generalization. The scope matters: 全部分かったわけではない denies understanding everything, while 嫌いなわけではない denies dislike as the explanation. It is not invariably a weak partial denial; it can reject the whole particular inference.",
     "sentences": [
       {
         "id": "skm3-u8-wake-dewa-nai::s-skm3-8-4",
@@ -7186,37 +7186,37 @@
     "quiz": [
       {
         "id": "q-skm3-8-4",
-        "question": "彼の提案に反対したけれど、彼のことが嫌いな（　　）ではない。",
-        "translation": "I opposed his proposal, but it's not that I dislike him as a person.",
+        "question": "嫌いだという意味ではありません。嫌いなわけ（　　）ありません。",
+        "translation": "It does not mean that I dislike it.",
         "options": [
-          "わけ",
-          "はず",
-          "つもり",
-          "せい"
+          "では",
+          "を",
+          "に",
+          "と"
         ],
         "correctIndex": 0,
         "grammarFocus": "な-adj + な + わけではない (Partial denial)",
         "ruleHint": "普通形 (な-adj + な/である, Noun + の/な/である) + わけではない / わけじゃない",
         "explanations": [
           {
-            "text": "わけ",
+            "text": "では",
             "isCorrect": true,
-            "reason": "Correct! 嫌いなわけではない conveys 'it's not that I dislike him' (partial disclaimer)."
+            "reason": "わけではない denies the stated interpretation."
           },
           {
-            "text": "はず",
+            "text": "を",
             "isCorrect": false,
-            "reason": "Incorrect. 嫌いなはずではない is unnatural."
+            "reason": "を does not form this negative predicate."
           },
           {
-            "text": "つもり",
+            "text": "に",
             "isCorrect": false,
-            "reason": "Incorrect. 嫌いなつもりではない is unidiomatic here."
+            "reason": "に does not form this construction."
           },
           {
-            "text": "せい",
+            "text": "と",
             "isCorrect": false,
-            "reason": "Incorrect. 嫌いなせいではない means 'it's not due to disliking'."
+            "reason": "と does not form this construction."
           }
         ]
       }
@@ -7336,37 +7336,37 @@
     "quiz": [
       {
         "id": "q-skm3-9-1",
-        "question": "最近の若者は、海外旅行に行き（　　）なくなったと言われている。",
-        "translation": "It is said that young people these days have become less inclined to want to travel abroad.",
+        "question": "子供が外へ行きた（　　）います。",
+        "translation": "The child is showing that they want to go outside.",
         "options": [
-          "たがら",
-          "たい",
-          "たがり",
-          "たく"
+          "がって",
+          "がる",
+          "がり",
+          "がった"
         ],
         "correctIndex": 0,
         "grammarFocus": "V-たい → たがらなくなる (3rd person desire trend)",
         "ruleHint": "い-adj (drop い) + がる / がっている | な-adj (drop な) + がる | V-たい (drop い) + たがる / たがっている",
         "explanations": [
           {
-            "text": "たがら",
+            "text": "がって",
             "isCorrect": true,
-            "reason": "Correct! 行きたがる becomes 行きたがらなくなった (observable third-person loss of desire)."
+            "reason": "たがっている reports observable desire in progress."
           },
           {
-            "text": "たい",
+            "text": "がる",
             "isCorrect": false,
-            "reason": "Incorrect. 行きたいなくなった is ungrammatical (must be 行きたくなくなった, but that applies to speaker)."
+            "reason": "たがる does not attach directly to います."
           },
           {
-            "text": "たがり",
+            "text": "がり",
             "isCorrect": false,
-            "reason": "Incorrect. 行きたがりなくなった is invalid."
+            "reason": "たがり does not attach directly to います."
           },
           {
-            "text": "たく",
+            "text": "がった",
             "isCorrect": false,
-            "reason": "Incorrect. 行きたくなくなった reflects 1st-person rather than 3rd-person trend."
+            "reason": "たがった does not attach directly to います."
           }
         ]
       }
@@ -7381,15 +7381,15 @@
   {
     "id": "skm3-u9-beki-da",
     "title": "〜べきだ / 〜べきではない (Should / Ought To - Moral Duty)",
-    "meaning": "States that doing (or not doing) X is an obvious moral duty, ethical obligation, or universal social norm.",
+    "meaning": "Should; ought to; what one judges appropriate.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 9: 感情・評価 (Emotion & Evaluation)",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-辞書形 + べきだ / べきではない (する irregular: すべきだ or するべきだ)",
-    "nuance": "べき states what is appropriate, expected or advisable. It can be strong and moralizing. するべき and すべき are both used; avoid confusing it with a prediction that something will happen.",
-    "keyTakeaway": "べき states what is appropriate, expected or advisable. It can be strong and moralizing. するべき and すべき are both used; avoid confusing it with a prediction that something will happen.",
+    "nuance": "Expresses what is appropriate, expected or advisable from the speaker's viewpoint. It can sound strong or moralizing, but is not restricted to universally agreed moral duties. Both するべき and すべき occur.",
+    "keyTakeaway": "Expresses what is appropriate, expected or advisable from the speaker's viewpoint. It can sound strong or moralizing, but is not restricted to universally agreed moral duties. Both するべき and すべき occur.",
     "sentences": [
       {
         "id": "skm3-u9-beki-da::s-skm3-9-2",
@@ -7411,37 +7411,37 @@
     "quiz": [
       {
         "id": "q-skm3-9-2",
-        "question": "自分のミスで他人に迷惑をかけたときは、すぐに謝罪（　　）だ。",
-        "translation": "When you inconvenience others through your own mistake, you ought to apologize immediately.",
+        "question": "ミスに気づいたら、すぐに訂正す（　　）です。",
+        "translation": "If you notice a mistake, you should correct it promptly.",
         "options": [
-          "すべき",
-          "した",
-          "するの",
-          "すれば"
+          "べき",
+          "べく",
+          "べきな",
+          "べかった"
         ],
         "correctIndex": 0,
         "grammarFocus": "する → すべきだ (Moral imperative)",
         "ruleHint": "V-辞書形 + べきだ / べきではない (する irregular: すべきだ or するべきだ)",
         "explanations": [
           {
-            "text": "すべき",
+            "text": "べき",
             "isCorrect": true,
-            "reason": "Correct! 謝罪すべきだ (or 謝罪するべきだ) expresses universal ethical duty."
+            "reason": "すべきです expresses what should be done."
           },
           {
-            "text": "した",
+            "text": "べく",
             "isCorrect": false,
-            "reason": "Incorrect. 謝罪しただ is ungrammatical."
+            "reason": "べく is a connective form, not the predicate before です here."
           },
           {
-            "text": "するの",
+            "text": "べきな",
             "isCorrect": false,
-            "reason": "Incorrect. 謝罪するのだ is explanatory, not moral prescription."
+            "reason": "べきな is not the predicate form."
           },
           {
-            "text": "すれば",
+            "text": "べかった",
             "isCorrect": false,
-            "reason": "Incorrect. 謝罪すればだ is invalid."
+            "reason": "べかった is not a conjugation of べき."
           }
         ]
       }
@@ -7456,15 +7456,15 @@
   {
     "id": "skm3-u10-ni-yoru-to",
     "title": "〜によると / 〜によれば (According To Source of Information)",
-    "meaning": "Identifies the external source, report, authority, or rumor from which subsequent information or conjecture was obtained.",
+    "meaning": "According to a source of information.",
     "level": "N3",
     "book": "Shin Kanzen Master N3",
     "chapter": "Unit 10: 伝聞・推量 (Hearsay & Conjecture)",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun + によると / によれば + [sentence ending in 〜そうだ / 〜ということだ / 〜らしい]",
-    "nuance": "MANDATORY HEARSAY PAIRING: The sentence must conclude with an expression of reported speech or conjecture (〜そうだ、〜ということだ、〜らしい). You cannot end with speaker's direct fact or command.",
-    "keyTakeaway": "MUG-UP: Noun + によると... 〜そうだ = 'According to source X, I hear that...'.",
+    "connection": "Source noun + によると / によれば",
+    "nuance": "Names the source rather than claiming direct personal observation. It commonly accompanies そうだ, らしい, ということだ and similar reporting endings, but these are not mandatory in every report. Distinguish によって for means, cause, agency or variation.",
+    "keyTakeaway": "Identify the information source; reported-style endings are common, not obligatory.",
     "sentences": [
       {
         "id": "skm3-u10-ni-yoru-to::s-skm3-10-1",
@@ -7496,7 +7496,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + によると (Citing sources)",
-        "ruleHint": "Noun + によると / によれば + [sentence ending in 〜そうだ / 〜ということだ / 〜らしい]",
+        "ruleHint": "Source noun + によると / によれば",
         "explanations": [
           {
             "text": "に",
@@ -7538,8 +7538,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "Sense 1 (Conjecture): 普通形 (Noun / な-adj bare) + らしい | Sense 2 (Typicality): Noun + らしい",
-    "nuance": "ARCHETYPE NUANCE: 男らしい (manly), 男子学生らしい (behaving like a true student), 春らしい (truly spring-like). Unlike っぽい (which implies shallow resemblance), らしい embodies genuine true essence.",
-    "keyTakeaway": "MUG-UP: Noun + らしい = 'Embodying the true quintessence of X!'. (春らしい日 = A truly spring-like day).",
+    "nuance": "らしい has an inference/report sense and a typical-quality sense. In 春らしい, it means characteristic of spring. っぽい describes a perceived resemblance or tendency, often informally; it is not inherently shallow or fake. Determine the sense of らしい from what precedes it and the context.",
+    "keyTakeaway": "Identify the sense: apparent/report-based inference, or a quality typical of a noun.",
     "sentences": [
       {
         "id": "skm3-u10-rashii::s-skm3-10-2",
@@ -7613,8 +7613,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-辞書形 / V-ない形 + ことにしている",
-    "nuance": "PERSONAL RESOLUTION vs EXTERNAL RULE: ことにしている is the speaker's own active personal policy. In contrast, ことになっている denotes external rules, schedules, or societal laws.",
-    "keyTakeaway": "MUG-UP: V-る / V-ない + ことにしている = 'My own personal rule/policy!'.",
+    "nuance": "Presents a maintained personal decision or practice. Compare ようにしている (effort to behave that way) and ことになっている (an established arrangement). The contrast is one of presentation; the latter does not necessarily prove an outside authority made the decision.",
+    "keyTakeaway": "Presents a maintained personal decision or practice. Compare ようにしている (effort to behave that way) and ことになっている (an established arrangement). The contrast is one of presentation; the latter does not necessarily prove an outside authority made the decision.",
     "sentences": [
       {
         "id": "skm3-u11-koto-ni-shite-iru::s-skm3-11-3",
@@ -7811,7 +7811,7 @@
           {
             "text": "拝見",
             "isCorrect": false,
-            "reason": "Incorrect. 拝見 is humble (謙譲語), which you can only say about your own viewing."
+            "reason": "拝見する is humble for an in-group person viewing something; it does not form the teacher-honorifying ご覧になる pattern."
           },
           {
             "text": "見せ",
@@ -7838,8 +7838,8 @@
     "streamId": "stream-social",
     "streamName": "Social Coordinates, Deference & Humility",
     "connection": "お + V-stem + する / いたす | ご + Noun (suru-verb) + する / いたす",
-    "nuance": "LOWERING THE IN-GROUP: Action must direct toward an esteemed person: '重そうなお荷物をお持ちしましょうか' (Shall I hold your heavy luggage?). You CANNOT use it for independent solo actions like '一人でお昼ご飯をお食べする' ❌.",
-    "keyTakeaway": "MUG-UP: お + Verb-stem + する = Humbles my own action towards YOU! Never use for solo actions.",
+    "nuance": "The お〜する / ご〜する pattern commonly lowers an in-group action directed toward someone respected. The respected person need not be the listener. Not every verb accepts the productive pattern, and some have special forms such as 拝見する. Distinguish humble/polite forms such as 参る, 申す and おる, which can show deference toward the listener without an honored action-recipient.",
+    "keyTakeaway": "The お〜する / ご〜する pattern commonly lowers an in-group action directed toward someone respected. The respected person need not be the listener. Not every verb accepts the productive pattern, and some have special forms such as 拝見する. Distinguish humble/polite forms such as 参る, 申す and おる, which can show deference toward the listener without an honored action-recipient.",
     "sentences": [
       {
         "id": "skm3-u12-keigo-humble::s-skm3-12-2",
@@ -7956,7 +7956,7 @@
           {
             "text": "忘れた",
             "isCorrect": false,
-            "reason": "Incorrect. 忘れたところだった is invalid."
+            "reason": "忘れたところだった would mean had just forgotten; it does not express the averted event required by this context."
           },
           {
             "text": "忘れて",
@@ -7988,8 +7988,8 @@
     "streamId": "stream-trends",
     "streamName": "Momentum, Shifts & Inevitable Drift",
     "connection": "V-stem + 気味 (ぎみ) | Noun + 気味 (風邪気味, 疲れ気味, 太り気味, 遅れ気味)",
-    "nuance": "SLIGHT ONSET: Describes a nascent phase, not fully-blown illness or disaster: 風邪気味 (a slight touch of a cold), 緊張気味 (a bit nervous).",
-    "keyTakeaway": "MUG-UP: Stem / Noun + 気味 (ぎみ) = 'A slight touch / mild symptom of negative state'.",
+    "nuance": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
+    "keyTakeaway": "気味 describes a slight tendency or degree of a condition, often unwelcome: 風邪気味, 疲れ気味, 緊張気味. It need not mean the beginning of an illness; it can describe an ongoing mild condition. Attachment is conventional rather than freely possible with every noun or stem.",
     "sentences": [
       {
         "id": "skm3-fj-kimi::s-skm3-j-3",
@@ -8063,8 +8063,8 @@
     "streamId": "stream-trends",
     "streamName": "Momentum, Shifts & Inevitable Drift",
     "connection": "V-stem + がち | Noun + がち (留守がち, 曇りがち, 遠慮がち, 忘れがち)",
-    "nuance": "UNFAVORABLE FREQUENCY: Describes a recurring frequency of an undesirable pattern (unlike 気味, which denotes a mild physical symptom). Example: '一人暮らしの人は野菜不足になりがちだ' (People living alone tend to become deficient in vegetables).",
-    "keyTakeaway": "MUG-UP: Verb-stem / Noun + がち = 'Prone to slipping into this bad habit/condition!'.",
+    "nuance": "がち describes a recurring tendency, often unwelcome. It attaches to selected nouns and verb stems and forms combinations such as 病気がちだ and 忘れがちなこと. 気味 describes a slight degree/state and is not restricted to physical symptoms. The two can overlap in some contexts; do not treat every similar-looking alternative as ungrammatical.",
+    "keyTakeaway": "がち describes a recurring tendency, often unwelcome. It attaches to selected nouns and verb stems and forms combinations such as 病気がちだ and 忘れがちなこと. 気味 describes a slight degree/state and is not restricted to physical symptoms. The two can overlap in some contexts; do not treat every similar-looking alternative as ungrammatical.",
     "sentences": [
       {
         "id": "skm3-fj-gachi::s-skm3-j-4",
@@ -8086,13 +8086,13 @@
     "quiz": [
       {
         "id": "q-skm3-j-4",
-        "question": "冬になると寒さのせいで家に閉じこもり（　　）になり、運動不足が心配だ。",
-        "translation": "In winter, due to the cold, I tend to stay cooped up indoors, and I worry about lack of exercise.",
+        "question": "最近、仕事が忙しくて、約束を忘れ（　　）です。",
+        "translation": "Recently I have been busy with work and tend to forget appointments.",
         "options": [
           "がち",
-          "気味",
-          "っぽい",
-          "だらけ"
+          "がちな",
+          "がちに",
+          "がちの"
         ],
         "correctIndex": 0,
         "grammarFocus": "V-stem + がち (Frequent behavioral tendency)",
@@ -8101,22 +8101,22 @@
           {
             "text": "がち",
             "isCorrect": true,
-            "reason": "Correct! 閉じこもりがち captures the recurrent seasonal tendency to stay cooped up inside."
+            "reason": "V-stem + がちです describes a tendency."
           },
           {
-            "text": "気味",
+            "text": "がちな",
             "isCorrect": false,
-            "reason": "Incorrect. 閉じこもり気味 is less natural for habitual behavior."
+            "reason": "がちな modifies a following noun."
           },
           {
-            "text": "っぽい",
+            "text": "がちに",
             "isCorrect": false,
-            "reason": "Incorrect. 閉じこもりっぽい is unidiomatic."
+            "reason": "がちに is adverbial, not the predicate before です."
           },
           {
-            "text": "だらけ",
+            "text": "がちの",
             "isCorrect": false,
-            "reason": "Incorrect. 閉じこもりだらけ is meaningless."
+            "reason": "がちの does not form this predicate."
           }
         ]
       }
@@ -8131,15 +8131,15 @@
   {
     "id": "skm2-c1-ni-saishite",
     "title": "〜に際して / 〜にあたって (Upon the Occasion Of / At the Inception Of)",
-    "meaning": "Formal expression used when initiating an important, solemn, or once-in-a-lifetime milestone: 'On the occasion of / Prior to commencing X'.",
+    "meaning": "Formal expression used when initiating an important event, official occasion, or milestone: \"On the occasion of / Prior to commencing X\".",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 1: とき (Time & Occasions)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-辞書形 + に際して / にあたって | Noun + に際して / にあたって",
-    "nuance": "FORWARD-LOOKING MILESTONES: Used for marriages, opening a company, starting a contract, or delivering opening ceremonial greetings. You cannot use it for mundane daily events like waking up.",
-    "keyTakeaway": "MUG-UP: V-る / Noun + に際して・にあたって = Formal ceremonial milestone! Forward-looking.",
+    "nuance": "Formal written and spoken expression used for significant occasions, official ceremonies, starting contracts, overseas travel, or inaugural greetings. It sets a formal, forward-looking tone. It is not used for everyday routine actions like waking up or eating lunch.",
+    "keyTakeaway": "V-る / Noun + に際して・にあたって = Formal expression for significant occasions or inaugural milestones.",
     "sentences": [
       {
         "id": "skm2-c1-ni-saishite::s-skm2-1-1",
@@ -8431,15 +8431,15 @@
   {
     "id": "skm2-c2-ippou-da-bakari-da",
     "title": "〜ばかりだ / 〜一方だ (Continual Single-Directional Trend: Keep On -ing)",
-    "meaning": "An accelerating trend continues moving relentlessly in one direction without stopping: 'Keeps on getting worse / Deteriorating further and further'.",
+    "meaning": "A change continues in one direction.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 2: している (Progress & Shifts)",
     "streamId": "stream-trends",
     "streamName": "Trends, Changes & Proportional Evolution",
-    "connection": "Change Verb (辞書形) + ばかりだ / 一方だ (悪化する, 増える, 減る, 上がる, 下がる)",
-    "nuance": "NEGATIVE BIAS IN ばかりだ: ばかりだ is used almost exclusively for WORSE trends (悪化するばかりだ = Only getting worse). 一方だ can be used for both positive and negative continuous shifts.",
-    "keyTakeaway": "MUG-UP: Change-Verb + 一方だ / ばかりだ = Relentlessly spiraling in one direction!",
+    "connection": "V dictionary + 一方だ / ばかりだ",
+    "nuance": "Use with a predicate that describes change, such as 増える, 減る or 悪くなる. It does not necessarily mean that the rate accelerates. 一方だ can describe favorable or unfavorable trends; ばかりだ often presents an unwelcome trend. Other constructions with 一方 or ばかり have other meanings, so do not apply this restriction to every occurrence of the word.",
+    "keyTakeaway": "Continuing in one direction does not mean accelerating.",
     "sentences": [
       {
         "id": "skm2-c2-ippou-da-bakari-da::s-skm2-2-2",
@@ -8471,7 +8471,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "V-る + ばかりだ continual deterioration",
-        "ruleHint": "Change Verb (辞書形) + ばかりだ / 一方だ (悪化する, 増える, 減る, 上がる, 下がる)",
+        "ruleHint": "V dictionary + 一方だ / ばかりだ",
         "explanations": [
           {
             "text": "ばかり",
@@ -8580,16 +8580,16 @@
   },
   {
     "id": "skm2-c4-kara-shite",
-    "title": "〜からして (Judging Even from Such a Basic Initial Clue: From the Very...)",
-    "meaning": "Judges or criticizes an entire whole by singling out one basic, glaring, or minor sample detail: 'Judging even from the very X, the whole thing is hopeless / obvious'.",
+    "title": "〜からして (Judging Even from One Clue: Starting from the Very...)",
+    "meaning": "Singles out one basic, representative clue or initial detail X to make an assessment about the whole: \"Judging even from the very X...\". Often used for critical assessments, but can also be used in positive appraisals.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 4: 範囲 (Scope & Breakthroughs)",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
     "connection": "Noun + からして",
-    "nuance": "NEGATIVE CRITICISM / HARSH APPRAISAL: Frequently highlights a preliminary flaw: 'タイトルからして怪しい' (Suspicious even from its very title). '挨拶の仕方からしてなっていない' (Unacceptable even from the very way he greets).",
-    "keyTakeaway": "MUG-UP: Noun + からして = 'Judging even from this one basic clue, the rest is bad!'.",
+    "nuance": "Highlights an initial or prominent feature X as sufficient evidence to evaluate the entire whole. While frequently used to point out initial shortcomings (タイトルからして怪しい), it is also used for strong positive impressions (さすが一流店だ、盛り付けの美しさからして違う).",
+    "keyTakeaway": "Noun + からして = \"Judging even from this one initial detail, the whole thing is...\" (used for both negative critiques and positive praise).",
     "sentences": [
       {
         "id": "skm2-c4-kara-shite::s-skm2-4-2",
@@ -8656,15 +8656,15 @@
   {
     "id": "skm2-c4-ni-watatte",
     "title": "〜にわたって / 〜にわたり (Spanning Across Extensive Time or Space)",
-    "meaning": "Indicates vast, uninterrupted scale across a large geographical expanse, temporal span, or multiple fields: 'Spanning across / Covering a period of X'.",
+    "meaning": "Indicates that a state, event, or activity extends over a wide geographical area, a long span of time, or multiple times/fields: \"Spanning across / Extending over X\".",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 4: 範囲 (Scope & Breakthroughs)",
     "streamId": "stream-limits",
     "streamName": "Boundaries, Extremes & Scope",
     "connection": "Noun (Time Span / Space Expanse / Number of Sessions) + にわたって / にわたり",
-    "nuance": "EXTENSIVE SCALE: Connects to words denoting broad range: 数十キロにわたって (spanning dozens of km), 三年間にわたって (spanning 3 full years), 全五回にわたり (spanning 5 sessions).",
-    "keyTakeaway": "MUG-UP: [Large Range / Big Number] + にわたって = Spanning over a vast scale!",
+    "nuance": "Connects to expressions of broad time, space, frequency, or field: 数十キロにわたって (stretching across dozens of km), 三年間にわたって (spanning three years), 全五回にわたり (held over 5 sessions). It emphasizes breadth and comprehensive scope, not that an activity is literally uninterrupted without sleep or pause.",
+    "keyTakeaway": "[Range / Time span / Area] + にわたって = Extending across or spanning a broad scale.",
     "sentences": [
       {
         "id": "skm2-c4-ni-watatte::s-skm2-4-3",
@@ -8761,37 +8761,37 @@
     "quiz": [
       {
         "id": "q-skm2-4-4",
-        "question": "警察の発表（　　）限りでは、今回の事件で怪我人は出ていないようだ。",
+        "question": "私が調べた（　　）では、今回の事件で怪我人は出ていないようだ。",
         "translation": "As far as the police announcement indicates, no injuries appear to have occurred in this incident.",
         "options": [
-          "の",
-          "に",
-          "を",
-          "と"
+          "限り",
+          "だけ",
+          "ほど",
+          "わけ"
         ],
         "correctIndex": 0,
-        "grammarFocus": "Noun + の + 限りでは information scope",
-        "ruleHint": "V-辞書形 / V-た + 限りでは | Noun + の + 限りでは (Pairs with informational verbs: 知る, 見る, 聞く, 調べた)",
+        "grammarFocus": "V-た / V-る + 限りでは (Scope of information)",
+        "ruleHint": "V-る / V-た / V-ている + 限りでは: Insofar as / As far as the scope of information reaches",
         "explanations": [
           {
-            "text": "の",
+            "text": "限り",
             "isCorrect": true,
-            "reason": "Correct! Noun 発表 connects via の to 限りでは (発表の限りでは)."
+            "reason": "Correct! 調べた限りでは (as far as my investigation reaches) sets the epistemic boundary of knowledge."
           },
           {
-            "text": "に",
+            "text": "だけ",
             "isCorrect": false,
-            "reason": "Incorrect. に限り means strictly limited to."
+            "reason": "Incorrect. 調べただけでは means \"merely by investigating (it is insufficient to...)\", which does not fit the affirmative evidential clause."
           },
           {
-            "text": "を",
+            "text": "ほど",
             "isCorrect": false,
-            "reason": "Incorrect. を is direct object marker."
+            "reason": "Incorrect. 調べたほどでは is ungrammatical."
           },
           {
-            "text": "と",
+            "text": "わけ",
             "isCorrect": false,
-            "reason": "Incorrect. と connects clauses."
+            "reason": "Incorrect. 調べたわけでは is typically followed by ない (わけではない) for partial denial."
           }
         ]
       }
@@ -9061,37 +9061,37 @@
     "quiz": [
       {
         "id": "q-skm2-9-2",
-        "question": "予算に応じ（　　）計画を作ります。",
-        "translation": "We will make a plan suited to the budget.",
+        "question": "経験や能力（　　）、基本給が決定されます。",
+        "translation": "Basic salary is determined in accordance with experience and ability.",
         "options": [
-          "た",
-          "る",
-          "てのを",
-          "ます"
+          "に応じて",
+          "にわたって",
+          "に際して",
+          "にあたって"
         ],
         "correctIndex": 0,
-        "grammarFocus": "Noun + に応じた + Noun customized scaling",
-        "ruleHint": "Noun + に応じて (Adverbial) | Noun + に応じた + Noun (Attributive)",
+        "grammarFocus": "〜に応じて (In accordance with; depending on)",
+        "ruleHint": "Noun + に応じて (In accordance with / depending on X)",
         "explanations": [
           {
-            "text": "た",
+            "text": "に応じて",
             "isCorrect": true,
-            "reason": "に応じた modifies 計画."
+            "reason": "Correct! 〜に応じて means 'in accordance with; depending on', naturally expressing that basic salary is determined based on individual experience and ability."
           },
           {
-            "text": "る",
+            "text": "にわたって",
             "isCorrect": false,
-            "reason": "に応じる is not the standard attributive form of this pattern."
+            "reason": "Incorrect. 〜にわたって expresses an extensive span of time, geographic area, or scope (e.g. 3日間にわたって), not determination based on a standard."
           },
           {
-            "text": "てのを",
+            "text": "に際して",
             "isCorrect": false,
-            "reason": "てのを breaks the noun connection."
+            "reason": "Incorrect. 〜に際して means 'on the occasion of' for special, formal ceremonial moments, not ongoing conditional determination."
           },
           {
-            "text": "ます",
+            "text": "にあたって",
             "isCorrect": false,
-            "reason": "ます does not directly modify 計画."
+            "reason": "Incorrect. 〜にあたって indicates preparatory or introductory actions before embarking on a major event or undertaking."
           }
         ]
       }
@@ -9331,15 +9331,15 @@
   {
     "id": "skm2-c13-ni-kakete-wa",
     "title": "〜にかけては (When It Comes to Skill / Domain: Unrivaled Superiority)",
-    "meaning": "Identifies a specific technical skill, athletic ability, or specialized domain where the subject has no equal: 'When it comes to X, no one surpasses them'.",
+    "meaning": "Be particularly good at something; as regards a particular skill or field.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 13: 話題は (Topics & Specialties)",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun + にかけては + Evaluative Superiority (だれにも負けない, 一番だ, 右に出る者はいない)",
-    "nuance": "UNRIVALED MASTERY: Clause B virtually always expresses supreme confidence, unmatched mastery, or unbeatable excellence within that narrow slice of talent.",
-    "keyTakeaway": "MUG-UP: [Skill / Domain] にかけては [Nobody can beat them!] Unmatched supremacy.",
+    "connection": "N + にかけては",
+    "nuance": "Usually introduces a positive assessment of ability in a particular field. It often emphasizes confidence or comparative strength, but does not by itself prove that someone is the best in the world. Contrast neutral について, which simply marks a topic, and にとって, which marks an evaluating viewpoint.",
+    "keyTakeaway": "Name a field, then evaluate strength in it.",
     "sentences": [
       {
         "id": "skm2-c13-ni-kakete-wa::s-skm2-13-1",
@@ -9371,7 +9371,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + にかけては specialized expertise",
-        "ruleHint": "Noun + にかけては + Evaluative Superiority (だれにも負けない, 一番だ, 右に出る者はいない)",
+        "ruleHint": "N + にかけては",
         "explanations": [
           {
             "text": "に",
@@ -9556,15 +9556,15 @@
   {
     "id": "skm2-c15-wo-nuki-ni-shite-wa",
     "title": "〜を抜きにしては（〜ない） (Without Element X, Y Could Never Exist)",
-    "meaning": "Praises the indispensable, vital role of X: without X's presence or contribution, success Y could never possibly have materialized.",
+    "meaning": "Without including or considering X, the stated result is not possible.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 15: もしそうなら (Hypothetical Horizons)",
     "streamId": "stream-conditionals",
     "streamName": "Conditional Logic & Inevitability",
-    "connection": "Noun + を抜きにしては / を抜きにして + Negative Predicate (あり得ない, 語れない, 成功しなかった)",
-    "nuance": "DEEP INDEBTEDNESS: Used in award acceptance speeches, memoirs, and tributes: 'スタッフの献身的な支えを抜きにしては、この映画の完成はあり得なかった' (Without the staff's support, this movie could never exist).",
-    "keyTakeaway": "MUG-UP: Noun + を抜きにしては + [あり得ない] = Without X, success would be 100% impossible!",
+    "connection": "Nを抜きにしては / N抜きでは + negative result",
+    "nuance": "Marks something as necessary for a result, discussion or judgment. It may express appreciation for support, but is not restricted to praise or acceptance speeches. Contrast を抜きにして without は, which can simply describe leaving something out, as in 冗談を抜きにして話す.",
+    "keyTakeaway": "The は construction commonly sets a necessary condition; omission alone need not express gratitude.",
     "sentences": [
       {
         "id": "skm2-c15-wo-nuki-ni-shite-wa::s-skm2-15-3",
@@ -9596,7 +9596,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + を抜きにしては irreplaceable contribution",
-        "ruleHint": "Noun + を抜きにしては / を抜きにして + Negative Predicate (あり得ない, 語れない, 成功しなかった)",
+        "ruleHint": "Nを抜きにしては / N抜きでは + negative result",
         "explanations": [
           {
             "text": "を",
@@ -9630,16 +9630,16 @@
   },
   {
     "id": "skm2-c16-amari-excess",
-    "title": "〜あまり / 〜あまりの〜に (So Overcome by Excessive Emotion That...)",
-    "meaning": "Because emotional feeling, excitement, or tension X reaches an overwhelming, uncontrollable peak, an abnormal or extreme consequence Y resulted.",
+    "title": "〜あまり / 〜あまりの〜に・で (So Great That / Due to Excessive Degree or Feeling)",
+    "meaning": "Because a feeling, state, or action reaches an excessive degree, an unexpected, abnormal, or unintended result Y occurs. Often used with strong emotions (嬉しさ、緊張、心配), but also with extreme actions or conditions (考えすぎたあまり、急いだあまり).",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 16: だから (Emotion & Reason)",
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Noun + のあまり | V-辞書形 / V-た + あまり | あまりの + Noun + に / で",
-    "nuance": "あまり expresses an excessive feeling, action or degree that leads to a result. Emotional causes are common, but it is not restricted to psychological states or catastrophic outcomes.",
-    "keyTakeaway": "あまり expresses an excessive feeling, action or degree that leads to a result. Emotional causes are common, but it is not restricted to psychological states or catastrophic outcomes.",
+    "nuance": "あまり expresses an excessive degree of feeling, condition or action that produces an unexpected or extreme result. Emotional causes (嬉しさのあまり, 悲しみのあまり) are very frequent, but the pattern also extends to extreme actions (急いだあまり、働きすぎたあまり). In the Noun form, it connects as Nのあまり or あまりのNに/で.",
+    "keyTakeaway": "Noun + のあまり / V-る・V-た + あまり / あまりの + Noun + に・で: Result produced by excessive degree or feeling.",
     "sentences": [
       {
         "id": "skm2-c16-amari-excess::s-skm2-16-1",
@@ -9661,7 +9661,7 @@
     "quiz": [
       {
         "id": "q-skm2-16-1",
-        "question": "大勢の観客の前でスピーチをする（　　）の緊張に、頭が真っ白になってしまった。",
+        "question": "大勢の観客の前でスピーチをすることになり、（　　）の緊張から頭が真っ白になってしまった。",
         "translation": "From the sheer excess of nervous tension speaking before a huge audience, my mind went completely blank.",
         "options": [
           "あまり",
@@ -9670,13 +9670,13 @@
           "わけ"
         ],
         "correctIndex": 0,
-        "grammarFocus": "あまりの + Noun + に emotional paralysis",
+        "grammarFocus": "あまりの + Noun + から/に (overcome by excessive state)",
         "ruleHint": "Noun + のあまり | V-辞書形 / V-た + あまり | あまりの + Noun + に / で",
         "explanations": [
           {
             "text": "あまり",
             "isCorrect": true,
-            "reason": "Correct! あまりの緊張に (from excessive tension) describes cognitive paralysis under stress."
+            "reason": "Correct! あまりの緊張から (from the sheer excess of nervous tension) naturally modifies the noun 緊張."
           },
           {
             "text": "ばかり",
@@ -9706,15 +9706,15 @@
   {
     "id": "skm2-c20-sue-ni-deliberation",
     "title": "〜末（に） / 〜末の (After Extensive Deliberation, Final Outcome Reached)",
-    "meaning": "After enduring a protracted period of extensive agonizing, deliberation, or struggle, a final decisive outcome or resolution was reached: 'At the end of all that X, finally Y'.",
+    "meaning": "After a process, finally reach a result.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 20: 結果 (Outcomes & Conclusions)",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
-    "connection": "V-た + 末（に） | Noun + の + 末（に）",
-    "nuance": "CONTRAST WITH AGEKU: あげく is virtually 100% negative/disastrous. 末に (すえに) can result in a positive, hard-won breakthrough OR a negative outcome (e.g. after long negotiations, agreement was reached: 激論の末に合意に達した).",
-    "keyTakeaway": "MUG-UP: V-た / Noun + の + 末に = 'At the conclusion of an extensive process!'. Can be positive or negative.",
+    "connection": "Vた / Nの + 末に; Vた末のN",
+    "nuance": "末に looks back over a process such as consideration, discussion or effort before its outcome. The result can be favorable or unfavorable. あげく also presents an eventual outcome but commonly highlights an unwanted or disappointing one; do not turn this tendency into a rule that every outcome must be disastrous.",
+    "keyTakeaway": "末に emphasizes the preceding process; its outcome need not be negative.",
     "sentences": [
       {
         "id": "skm2-c20-sue-ni-deliberation::s-skm2-20-1",
@@ -9746,7 +9746,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "V-た + 末に culmination of deliberation",
-        "ruleHint": "V-た + 末（に） | Noun + の + 末（に）",
+        "ruleHint": "Vた / Nの + 末に; Vた末のN",
         "explanations": [
           {
             "text": "た",
@@ -9855,16 +9855,16 @@
   },
   {
     "id": "skm2-c22-osore-ga-aru",
-    "title": "〜恐れがある (Grave Risk / Looming Danger of Adverse Outcome)",
-    "meaning": "Formal journalistic and administrative warning that a serious negative event or disaster might happen: 'There is a grave fear/danger that X may occur'.",
+    "title": "〜恐れがある (Risk / Possibility of an Undesirable Outcome)",
+    "meaning": "Formal expression indicating that there is a risk, danger, or concern that an undesirable situation or outcome X may occur. Commonly used in news reports, weather forecasts, and official announcements.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 22: だろうと思う (Speculation & Probability)",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-辞書形 / V-ない + 恐れがある | Noun + の + 恐れがある",
-    "nuance": "おそれがある expresses a risk or concern about an undesirable possibility, often in formal reporting. It need not describe a catastrophe.",
-    "keyTakeaway": "おそれがある expresses a risk or concern about an undesirable possibility, often in formal reporting. It need not describe a catastrophe.",
+    "nuance": "おそれがある expresses a risk or concern about an undesirable possibility, often in formal reporting. It can refer to severe events like natural disasters or legal violations, but also to general adverse risks (delays, side effects, decline in quality). It does not have to be an apocalyptic catastrophe.",
+    "keyTakeaway": "V-る / Noun + の + 恐れがある = Formal warning: there is a risk or concern that an undesirable outcome may occur.",
     "sentences": [
       {
         "id": "skm2-c22-osore-ga-aru::s-skm2-22-1",
@@ -9961,7 +9961,7 @@
     "quiz": [
       {
         "id": "q-skm2-23-1",
-        "question": "月日の経つのは本当に早い（　　）ですね。もう一年が終わってしまいます。",
+        "question": "学生時代は、夏休みになるとよくこの川で泳いだ（　　）だ。",
         "translation": "Time truly flies so fast, doesn't it? Another whole year is coming to an end already.",
         "options": [
           "もの",
@@ -9970,28 +9970,28 @@
           "はず"
         ],
         "correctIndex": 0,
-        "grammarFocus": "Adjective + ものだ philosophical reflection",
-        "ruleHint": "V-辞書形 + ものだ (General truth / Nature) | V-た + ものだ (Fond past habit)",
+        "grammarFocus": "V-た + ものだ (Nostalgic reminiscence)",
+        "ruleHint": "V-た + ものだ: Used to recall past habitual actions or states with fond nostalgia",
         "explanations": [
           {
             "text": "もの",
             "isCorrect": true,
-            "reason": "Correct! 早いものですね is the canonical philosophical exclamation on the swift passage of time."
+            "reason": "Correct! 泳いだものだ expresses nostalgic reminiscence about a regular habit in one's student days."
           },
           {
             "text": "こと",
             "isCorrect": false,
-            "reason": "Incorrect. 早いことですね is awkward."
+            "reason": "Incorrect. ことだ does not attach to V-た to express past nostalgia (ことだ is for advice or exclamation with adjectives)."
           },
           {
             "text": "わけ",
             "isCorrect": false,
-            "reason": "Incorrect. 早いわけですね means 'so that is why it is early'."
+            "reason": "Incorrect. 泳いだわけだ would mean \"so that is the reason why I swam\", which does not fit the nostalgic reflection."
           },
           {
             "text": "はず",
             "isCorrect": false,
-            "reason": "Incorrect. 早いはずですね means 'it ought to be early'."
+            "reason": "Incorrect. 泳いだはずだ indicates a deduction (\"I was supposed to have swum / I must have swum\"), not personal reminiscence."
           }
         ]
       }
@@ -10051,22 +10051,22 @@
           {
             "text": "越した",
             "isCorrect": true,
-            "reason": "Correct! 徹底するに越したことはない is the idiomatic expression for prudent prevention."
+            "reason": "Correct! 〜に越したことはない is the idiomatic construction meaning \"nothing is better than / best to do\"."
           },
           {
             "text": "限った",
             "isCorrect": false,
-            "reason": "Incorrect. 限ったことはない does not exist."
+            "reason": "Incorrect. 限る forms 〜に限る (\"is best\") or 〜とは限らない (\"not necessarily\"), but does not enter this pattern with ことはない."
           },
           {
             "text": "至った",
             "isCorrect": false,
-            "reason": "Incorrect. 至ったことはない is ungrammatical."
+            "reason": "Incorrect. 至る forms 〜に至る / 〜に至っては (\"reaching an extreme stage/situation\"), not advice about the safest course."
           },
           {
             "text": "及んだ",
             "isCorrect": false,
-            "reason": "Incorrect. 及んだことはない is invalid."
+            "reason": "Incorrect. 及ぶ forms 〜に及ばない (\"no need to do / does not reach\"), not a recommendation formula."
           }
         ]
       }
@@ -10080,16 +10080,16 @@
   },
   {
     "id": "skm2-c25-te-wa-irarenai",
-    "title": "〜てはいられない / 〜てられない (Cannot Afford to Keep Idling / Urgency)",
-    "meaning": "Due to high urgency, pressing emergency, or moral crisis, one cannot afford to remain idle or continue doing X: 'I can't just sit here doing X!'.",
+    "title": "〜てはいられない / 〜てられない (Cannot Afford to Keep Doing / Compelled to Act)",
+    "meaning": "Expresses that due to time pressure, changing circumstances, age, or emotional urgency, the speaker cannot remain in an ongoing state or continue an action: \"Cannot afford to keep doing / Can't just sit around doing X\".",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 25: 強く感じる (Overwhelming Sensations)",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-て + はいられない (Spoken: 〜てられない)",
-    "nuance": "CRITICAL EMERGENCY / CALL TO ACTION: You cannot stay inactive in the present posture: 'のんびりお茶を飲んではいられない、早く避難しよう!' (We can't just sit here sipping tea; let's evacuate!).",
-    "keyTakeaway": "MUG-UP: V-て + はいられない = 'I can't afford to just sit here doing X! Time to act!'.",
+    "nuance": "Indicates that one cannot afford to remain idle, passive, or continuing a casual behavior because circumstances require a shift or action. It can describe a pressing crisis (避難しなければ), but also ordinary life milestones (もう30歳だから親に甘えてばかりはいられない) or imminent deadlines (試験前だから遊んではいられない).",
+    "keyTakeaway": "V-て + はいられない = Cannot afford to continue the current state or posture; circumstances compel a change or action.",
     "sentences": [
       {
         "id": "skm2-c25-te-wa-irarenai::s-skm2-25-1",
@@ -10756,15 +10756,15 @@
   {
     "id": "skm2-c8-ni-motozuite",
     "title": "〜に基づいて / 〜をもとに (Founded Upon / Grounded on Reliable Data)",
-    "meaning": "Indicates the fundamental bedrock, empirical evidence, legal statue, or factual data upon which an action, plan, or creation is constructed.",
+    "meaning": "に基づいて: based on a foundation or grounds. をもとに: using something as a basis or material.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 8: 視点 (Perspective & Grounds)",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun + に基づいて / に基づき | Noun + に基づく + Noun",
-    "nuance": "LEGAL & SCIENTIFIC FOUNDATION: Used when policies, judgments, or novels are strictly derived from facts or laws: '事実に基づいて映画を作った' (Made a movie based on real facts).",
-    "keyTakeaway": "MUG-UP: Noun + に基づいて = 'Grounded strictly upon facts, laws, or data!'.",
+    "connection": "Nに基づいて / Nに基づくN; Nをもとに / NをもとにしたN",
+    "nuance": "に基づいて presents the basis for a decision, action or account, often evidence, rules, experience or principles. It is not limited to laws/science and does not guarantee literal compliance with every detail. をもとに can introduce source material used to develop something, such as an account or design. The meanings overlap; creative freedom versus strict compliance is a useful tendency, not an absolute boundary.",
+    "keyTakeaway": "基づく emphasizes grounds; をもとに emphasizes a source/basis. Context determines the contrast.",
     "sentences": [
       {
         "id": "skm2-c8-ni-motozuite::s-skm2-8-1",
@@ -10796,7 +10796,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + に基づいて (Factual foundation)",
-        "ruleHint": "Noun + に基づいて / に基づき | Noun + に基づく + Noun",
+        "ruleHint": "Nに基づいて / Nに基づくN; Nをもとに / NをもとにしたN",
         "explanations": [
           {
             "text": "に",
@@ -10831,15 +10831,15 @@
   {
     "id": "skm2-c8-ni-sotte",
     "title": "〜に沿って / 〜に沿った (In Line With Guidelines / Aligning Faithfully)",
-    "meaning": "Indicates taking action along a continuous physical trajectory, or conforming faithfully to a prescribed manual, policy, guideline, or expectation.",
+    "meaning": "Follow a route, plan, policy or guiding line.",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Chapter 8: 視点 (Perspective & Grounds)",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun + に沿って / に沿い | Noun + に沿った + Noun",
-    "nuance": "FAITHFUL ADHERENCE: Actions must conform seamlessly without deviating: 'マニュアルに沿って作業を進める' (Proceed strictly in accordance with the manual).",
-    "keyTakeaway": "MUG-UP: Noun + に沿って = 'In strict alignment with the path/manual/policy!'.",
+    "connection": "Nに沿って / Nに沿うN / Nに沿ったN",
+    "nuance": "Can be physical (川に沿って歩く) or abstract (方針に沿って進める). It presents something as following a guiding line, not necessarily as following every detail with no deviation. Distinguish に基づいて, which identifies a basis or grounds.",
+    "keyTakeaway": "沿う = follow along; the guiding line can be physical or abstract.",
     "sentences": [
       {
         "id": "skm2-c8-ni-sotte::s-skm2-8-2",
@@ -10871,7 +10871,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Noun + に沿った + Noun (Faithful alignment)",
-        "ruleHint": "Noun + に沿って / に沿い | Noun + に沿った + Noun",
+        "ruleHint": "Nに沿って / Nに沿うN / Nに沿ったN",
         "explanations": [
           {
             "text": "に",
@@ -12106,15 +12106,15 @@
   {
     "id": "skm2-p2-mai",
     "title": "〜まい / 〜まいか (Resolute Negative Will / Negative Conjecture)",
-    "meaning": "Two functions: (1) Resolute negative intention: 'I am firmly resolved NEVER to do X again'; (2) Negative speculation: 'Surely X will not happen / Is it not so?'.",
+    "meaning": "Negative intention (will not) or negative conjecture (probably will not).",
     "level": "N2",
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 2 特殊な形式 B: 〜まい (Part 2 Form B)",
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
-    "connection": "Group 1: V-辞書形 + まい (行くまい) | Group 2: V-stem + まい or 辞書形 + まい (食べまい / 食べるまい) | する: すまい / するまい / せまい | くる: こまい / くるまい",
-    "nuance": "STIFF LITERARY NEGATIVE RESOLVE: '二度とあのような過ちは繰り返すまいと誓った' (I vowed never to repeat such a blunder again).",
-    "keyTakeaway": "MUG-UP: V-る / V-stem + まい = 'I vow NEVER to do it again!' (Negative will) or 'Surely won't happen'.",
+    "connection": "V dictionary + まい; ru-verbs also stem + まい; するまい / すまい / しまい; 来るまい / 来まい",
+    "nuance": "This relatively formal form can state a decision not to do something or a belief that something will not occur. Determine the sense from the subject and context. A first-person agent often supports intention; it is not automatically a promise never to act again. ではあるまいか instead suggests a possibility: could it not be…?",
+    "keyTakeaway": "まい is negative intention or conjecture; ではあるまいか is a different rhetorical pattern.",
     "sentences": [
       {
         "id": "skm2-p2-mai::s-skm2-p2-2",
@@ -12146,7 +12146,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "V-stem + まい (Steadfast negative determination)",
-        "ruleHint": "Group 1: V-辞書形 + まい (行くまい) | Group 2: V-stem + まい or 辞書形 + まい (食べまい / 食べるまい) | する: すまい / するまい / せまい | くる: こまい / くるまい",
+        "ruleHint": "V dictionary + まい; ru-verbs also stem + まい; するまい / すまい / しまい; 来るまい / 来まい",
         "explanations": [
           {
             "text": "まい",
@@ -12181,15 +12181,15 @@
   {
     "id": "genki1-wa-desu",
     "title": "X は Y です (X is Y / Topic & Copula)",
-    "meaning": "X is Y. Establishes X as the conversational topic with は and equates it to predicate Y with です.",
+    "meaning": "Identify or describe a topic: as for X, it is Y.",
     "level": "N5",
     "book": "Genki I",
     "chapter": "Lesson 1: New Friends",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "Noun1 + は + Noun2 / Adjective + です",
-    "nuance": "The topic particle は (pronounced \"wa\") presents the background framework or subject of interest (\"speaking of X...\"). です acts as the polite non-past copula.",
-    "keyTakeaway": "MUG-UP: は marks the topic (\"as for X\"). Pronounced \"wa\", written as は.",
+    "connection": "X は noun です; noun です is enough when the topic is understood.",
+    "nuance": "は is written は but pronounced わ when it marks the topic. It tells the listener what the statement is about; it is not simply a replacement for the English subject. If both speakers already know the topic, omit it: 学生です can mean I am a student, she is a student, or they are students, depending on context. Japanese nouns generally do not require a/an and do not automatically change for plural number. です makes the noun predicate polite and non-past; it does not change with person or number. Do not append です to an ordinary finite verb such as 行くです. Adjectives have their own patterns, introduced later: 静かです and 高いです, but not 静かだです or 高いだです. Use a name/title rather than repeatedly translating English you as あなた.",
+    "keyTakeaway": "State the topic only when needed; put the identifying noun before polite です.",
     "sentences": [
       {
         "id": "genki1-wa-desu::s-g1-1-1",
@@ -12242,7 +12242,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "Topic marker は",
-        "ruleHint": "Noun1 + は + Noun2 / Adjective + です",
+        "ruleHint": "X は noun です; noun です is enough when the topic is understood.",
         "explanations": [
           {
             "text": "は",
@@ -12556,8 +12556,8 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-て + いる / います",
-    "nuance": "THE INSTANT VERB TRAP: For puncture verbs like 結婚する (to marry), 知る (to find out), and 住む (to take up residence), 〜ている indicates the RESULTING STATE! 結婚している means \"is currently married\", NOT \"is walking down the aisle right now\".",
-    "keyTakeaway": "MUG-UP: 知っている = I know. Negative exception: 知りません (NOT 知っていません ❌)!",
+    "nuance": "ている can describe an action in progress, a resulting state, or a repeated activity depending on the verb and context. 結婚している usually means is married; 住んでいる describes living somewhere. 知っている means know, and the ordinary negative answer is 知りません. This is the beginner default, not a prohibition against every contextual use of 知っていない. Do not assume that every verb with ている translates as English is doing.",
+    "keyTakeaway": "Choose the meaning from the verb and context: ongoing action, resulting state, or repetition.",
     "sentences": [
       {
         "id": "genki1-te-iru::s-g1-7-1",
@@ -12651,7 +12651,7 @@
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
     "connection": "Plain form + んです | な-adj / Noun + な + んです (Note the な!)",
-    "nuance": "Emotional rapport marker: Without んです, \"頭が痛いです\" is a dry medical observation. With \"頭が痛いんです\", it communicates: \"The reason I look distressed is that I have a headache; please understand my situation.\"",
+    "nuance": "んです connects the statement to relevant background, an observed situation or a request for explanation. A plain factual statement such as 頭が痛いです is normal; it is not inherently cold or medical. 頭が痛いんです presents the headache as explanatory in context. Overusing んです can sound as if every statement requires justification, and んですか can sound probing. Nouns and な-adjectives use なんです only in their non-past affirmative form; past and negative forms keep their endings.",
     "keyTakeaway": "MUG-UP: Noun / な-adj + [なんです] (NOT だんです ❌!).",
     "sentences": [
       {
@@ -13014,13 +13014,13 @@
   {
     "id": "gp-toki",
     "title": "〜時（とき） (When / At the time of)",
-    "meaning": "Indicates the time or relative timing of an action. Focuses on whether action A happens before or after action B.",
+    "meaning": "When; at the time a situation holds or an event occurs.",
     "level": "N5",
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-辞書形 + 時 (Before doing) / V-た + 時 (After doing) / い形 + 時 / な形 + な時 / N + の時",
-    "nuance": "The tense of the verb preceding 時 specifies whether that action is completed BEFORE the main action or still in the FUTURE relative to it. Notice: 出かける時 (when going out = not out yet) vs 出かけた時 (when I had gone out = already outside).",
-    "keyTakeaway": "MUG-UP: V-dictionary + 時 = Action has NOT happened yet. V-た + 時 = Action is ALREADY completed.",
+    "nuance": "With a bounded action, dictionary-form とき commonly locates the main event before completion, while たとき commonly locates it after completion. Compare 日本へ行くとき買った and 日本へ行ったとき買った. This is a relative-time contrast, not a rule that every たとき refers to a finished event: 困ったとき means when in trouble, and 子供だったとき means when I was a child. Interpret tense together with the predicate's meaning and the surrounding situation.",
+    "keyTakeaway": "Use relative timing and the type of situation; とき is not mechanically before versus after.",
     "table": {
       "title": "Time & Instant Sequence Spectrum (時・継起のグラデーション)",
       "subtitle": "How Japanese grammar sharpens from general timing to split-second interruption.",
@@ -13268,7 +13268,7 @@
     "streamId": "stream-time",
     "streamName": "Chronos & Instant Transitions",
     "connection": "V-stem (ます形 without ます) + ながら",
-    "nuance": "Crucial requirement: Both actions MUST be performed by the exact same subject! You cannot say \"Father drove while mother slept\" with ながら. Furthermore, the main verb comes in the SECOND clause.",
+    "nuance": "For simultaneous actions, the same person performs both, and the final predicate presents the main action: 音楽を聞きながら勉強する. Do not use this simultaneous-action pattern for separate actors. Concessive ながら, as in 知っていながら, is a different use meaning although.",
     "keyTakeaway": "MUG-UP: V-stem + ながら. Same subject only. The second clause is the MAIN action.",
     "sentences": [
       {
@@ -14200,8 +14200,8 @@
   },
   {
     "id": "gp-kara-node",
-    "title": "〜から vs 〜ので (Subjective Reason vs Objective Cause)",
-    "meaning": "Explaining why something happened. から is subjective, emotional, or gives commands; ので is polite, objective, and softens requests.",
+    "title": "〜から vs 〜ので (Reasons & Background)",
+    "meaning": "Both give reasons; ので often presents background more gently, while から readily supports the speaker's decision.",
     "level": "N5",
     "streamId": "stream-causality",
     "streamName": "Causal Chains & Regret",
@@ -15993,14 +15993,14 @@
   },
   {
     "id": "gp-dake-shika",
-    "title": "〜だけ vs 〜しか〜ない (Neutral Only vs Insufficiency Only)",
-    "meaning": "Limiting quantity or scope. だけ is neutral (\"just that amount\"). しか〜ない expresses strong subjective dissatisfaction or insufficiency (\"only that little bit!\").",
+    "title": "〜だけ vs 〜しか〜ない (Limitation & Exclusion)",
+    "meaning": "だけ limits the amount or scope; しか…ない excludes alternatives.",
     "level": "N5",
     "streamId": "stream-limits",
     "streamName": "Boundaries, Exclusivity & Scope",
-    "connection": "Noun / Quantifier + だけ (Affirmative or Negative) | Noun / Quantifier + しか + NEGATIVE VERB (〜ない)",
-    "nuance": "Notice: しか MUST always end with a negative verb! \"千円しかあります\" is completely ungrammatical in Japanese ❌. It must be \"千円しかありません\" (I have only a mere 1,000 yen). With particles: だけに, だけを, but にしか, でしか (しか takes the outer position).",
-    "keyTakeaway": "MUG-UP: [しか] ALWAYS demands [NEGATIVE VERB] (〜ない). Always conveys \"not enough\".",
+    "connection": "Nだけ; Nしか + negative predicate; にだけ / にしか, でだけ / でしか",
+    "nuance": "だけ can occur with either an affirmative or negative predicate. In the basic exclusion pattern, しか pairs with a negative predicate: 千円しかありません. It often implies that the amount is small, but dissatisfaction or insufficiency is not required: あなたにしかできない can praise someone's unique ability. しか normally replaces を/が, while particles such as に/で remain before it. Compare 読むだけ (only read) with 読むしかない (have no choice but to read).",
+    "keyTakeaway": "しか requires a negative predicate in this construction; it does not always express dissatisfaction.",
     "sentences": [
       {
         "id": "gp-dake-shika::s-dake-1",
@@ -16050,37 +16050,37 @@
     "quiz": [
       {
         "id": "q-dake-1",
-        "question": "昨夜は忙しくて、睡眠時間が三時間（　　）取れなかった。",
-        "translation": "Because I was so busy last night, I could only get a mere 3 hours of sleep.",
+        "question": "「千円だけ持っています」と同じ金額を表します。千円（　　）持っていません。",
+        "translation": "Express the same amount as I have only one thousand yen.",
         "options": [
           "しか",
-          "だけ",
-          "ばかり",
-          "ほど"
+          "だけを",
+          "だけが",
+          "だけに"
         ],
         "correctIndex": 0,
         "grammarFocus": "〜しか〜ない negative agreement",
-        "ruleHint": "Noun / Quantifier + だけ (Affirmative or Negative) | Noun / Quantifier + しか + NEGATIVE VERB (〜ない)",
+        "ruleHint": "Nだけ; Nしか + negative predicate; にだけ / にしか, でだけ / でしか",
         "explanations": [
           {
             "text": "しか",
             "isCorrect": true,
-            "reason": "Correct! しか + 取れなかった forms \"could only get a mere 3 hours\", stressing scarcity."
+            "reason": "しか with a negative predicate expresses only one thousand yen."
           },
           {
-            "text": "だけ",
+            "text": "だけを",
             "isCorrect": false,
-            "reason": "Incorrect. If using だけ, it would be 三時間だけ取れた (neutral affirmative). With 取れなかった, it sounds awkward."
+            "reason": "だけを with this negative would deny holding that particular amount rather than say it is all one has."
           },
           {
-            "text": "ばかり",
+            "text": "だけが",
             "isCorrect": false,
-            "reason": "Incorrect. 三時間ばかり取れなかった is ungrammatical."
+            "reason": "だけが cannot mark the possessed object of 持つ here."
           },
           {
-            "text": "ほど",
+            "text": "だけに",
             "isCorrect": false,
-            "reason": "Incorrect. ほど doesn't carry the restrictive \"only a mere\" emphasis of しか."
+            "reason": "だけに is not the object/exclusion construction needed here."
           }
         ]
       }
@@ -18632,13 +18632,13 @@
   {
     "id": "gp-ippouda",
     "title": "〜一方だ / 〜ばかりだ (Steadily trending in one direction)",
-    "meaning": "A change or tendency keeps accelerating continuously in one unbroken direction. 〜ばかりだ almost always indicates a worsening trend; 〜一方だ can be positive or negative.",
+    "meaning": "A change continues in one direction.",
     "level": "N3",
     "streamId": "stream-trends",
     "streamName": "Trends, Changes & Proportional Evolution",
-    "connection": "V-辞書形 (Change verbs: 増える, 減る, 悪化する, 上がる) + 一方だ / ばかりだ",
-    "nuance": "Verbs used with this pattern MUST express continuous change (変化動詞). You cannot say \"食べる一方だ\" ❌ unless you say \"体重が増える一方だ\" (weight keeps increasing).",
-    "keyTakeaway": "MUG-UP: V-辞書形 (変化動詞) + 一方だ (Continuous trend). ばかりだ = Continuous decline/worsening.",
+    "connection": "V dictionary + 一方だ / ばかりだ",
+    "nuance": "Use with a predicate that describes change, such as 増える, 減る or 悪くなる. It does not necessarily mean that the rate accelerates. 一方だ can describe favorable or unfavorable trends; ばかりだ often presents an unwelcome trend. Other constructions with 一方 or ばかり have other meanings, so do not apply this restriction to every occurrence of the word.",
+    "keyTakeaway": "Continuing in one direction does not mean accelerating.",
     "sentences": [
       {
         "id": "gp-ippouda::s-ippou-1",
@@ -18705,7 +18705,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "〜一方だ continuous worsening trend",
-        "ruleHint": "V-辞書形 (Change verbs: 増える, 減る, 悪化する, 上がる) + 一方だ / ばかりだ",
+        "ruleHint": "V dictionary + 一方だ / ばかりだ",
         "explanations": [
           {
             "text": "一方",
@@ -19303,13 +19303,13 @@
   {
     "id": "gp-motoni-motozuite",
     "title": "〜をもとに vs 〜に基づいて (Creative Material vs Statutory / Fact Basis)",
-    "meaning": "〜をもとに: Using raw materials, real stories, or data as creative inspiration to build something new. 〜に基づいて: Strictly adhering to formal laws, data, principles, or regulations as statutory foundation.",
+    "meaning": "に基づいて: based on a foundation or grounds. をもとに: using something as a basis or material.",
     "level": "N3",
     "streamId": "stream-topics",
     "streamName": "Topic Framing, Criteria & Disregard",
-    "connection": "N + をもとに / をもとにして | N + に基づいて / に基づく + N",
-    "nuance": "CONTRAST: If a novelist writes a book inspired by a true event, use をもとに (実話をもとにした小説). If a judge passes a verdict based on the constitution, use に基づいて (法律に基づいて判決を下す). に基づいて demands strict fidelity to rules and hard facts.",
-    "keyTakeaway": "MUG-UP: もとに = Creative base / raw material. 基づいて = Legal, factual, rigorous foundation.",
+    "connection": "Nに基づいて / Nに基づくN; Nをもとに / NをもとにしたN",
+    "nuance": "に基づいて presents the basis for a decision, action or account, often evidence, rules, experience or principles. It is not limited to laws/science and does not guarantee literal compliance with every detail. をもとに can introduce source material used to develop something, such as an account or design. The meanings overlap; creative freedom versus strict compliance is a useful tendency, not an absolute boundary.",
+    "keyTakeaway": "基づく emphasizes grounds; をもとに emphasizes a source/basis. Context determines the contrast.",
     "sentences": [
       {
         "id": "gp-motoni-motozuite::s-moto-1",
@@ -19376,7 +19376,7 @@
         ],
         "correctIndex": 0,
         "grammarFocus": "〜に基づいて rigorous factual data foundation",
-        "ruleHint": "N + をもとに / をもとにして | N + に基づいて / に基づく + N",
+        "ruleHint": "Nに基づいて / Nに基づくN; Nをもとに / NをもとにしたN",
         "explanations": [
           {
             "text": "に基づいて",

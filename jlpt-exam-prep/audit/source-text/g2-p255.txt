@@ -1,0 +1,46 @@
+第 23 課 4255
+
+The basic makeup of a causative-passive sentence is like this:
+
+Causative-passive sentence
+
+私 は 彼女 に を 洗わ され まし た 。
+(puppet) は (puppet master) に "ktion)
+
+7wgs が ce2 が 8 が が 842 が 0 ws 467 cg た
+
+・The puppetis forcedinto performing an action.Marked with は or が .
+
+・The puppet master wields power over and manipulates, the puppet.The
+particleis に 。
+
+・The action forced upon the puppet is described with a causative-passive verb.
+
+If you compare a causative-passive sentence with a causative sentence, you notice that the actors
+are switched between the two:
+
+Causative-passive:
+
+向 は
+
+を 手伝わ され まし た 。
+7 ws rce2 が カル が 647 が の 4e の が 6 罰 WW 訪
+5 Ao が eo
+
+D
+
+Causative:
+
+宿 を 手 伝 わせ まし た 。
+ルカ 642 gd6 6 46 の が が が カカ 5 0 が 2607 た
+
+Compare a causative-passive sentence with a plain (noncausative, nonpassive) sentence. These two
+types of' sentences have the same subject. You add the "puppet master” role to a plain sentence and
+make the verb longer, and you get a causative-passive sentence.
+
+Causative-passive: まな は お 騙さ ん に 勉強 させ られ ま し た 。
+gg was 097267e2 の Aero 訪 e7 0 sf の
+
+Plain: まな は 一 一 一 一 勉強 し まし た 。
+Ag44 * が 7 の e ナ
+

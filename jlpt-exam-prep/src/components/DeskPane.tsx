@@ -1,3 +1,4 @@
+import { AnnotatedText } from './AnnotatedText';
 import React, { useState } from 'react';
 import type { GrammarPoint } from '../types';
 import { SentenceCard } from './SentenceCard';
@@ -24,7 +25,7 @@ interface Props {
   onSelectPoint: (pointId: string) => void;
   isCompleted: boolean;
   onToggleCompleted: (pointId: string) => void;
-  furiganaMode: 'all' | 'hover' | 'off';
+  furiganaMode: 'book' | 'all' | 'hover' | 'off';
   seamlessFlowMode: boolean;
   onAnswerSaved: (questionId: string, isCorrect: boolean, chosenIndex: number) => void;
   flaggedMistakes: string[];
@@ -105,12 +106,12 @@ export const DeskPane: React.FC<Props> = ({
 
           {/* Large Japanese Pattern Heading */}
           <h1 className="font-serif-ja text-3xl sm:text-4xl font-bold text-[#1e2d26] tracking-tight mb-2">
-            {point.title}
+            <AnnotatedText text={point.title} />
           </h1>
 
           {/* English Meaning */}
           <p className="text-base sm:text-lg text-[#55645a] font-normal leading-relaxed">
-            {point.meaning}
+            <AnnotatedText text={point.meaning} />
           </p>
 
           {/* Connection Formula (接続) */}
@@ -119,7 +120,7 @@ export const DeskPane: React.FC<Props> = ({
               接続 (Connection Formula)
             </div>
             <div className="font-mono text-sm font-semibold text-[#2f4f4f]">
-              {point.connection}
+              <AnnotatedText text={point.connection} />
             </div>
           </div>
         </div>
@@ -130,16 +131,17 @@ export const DeskPane: React.FC<Props> = ({
             Grammar Nuance & Usage Notes
           </h2>
           <div className="text-sm text-[#2d3a33] leading-relaxed space-y-2">
-            <p>{point.nuance}</p>
+            <p><AnnotatedText text={point.nuance} /></p>
           </div>
 
+          {point.comparisonNote && <div className="rounded border border-[#cfcebe] p-3 text-sm leading-relaxed"><strong>Compare: </strong><AnnotatedText text={point.comparisonNote} /></div>}
           {/* Mug-Up Golden Rule Callout */}
           {point.keyTakeaway && (
             <div className="p-3.5 rounded border border-[#d8d0ba] bg-[#fbf8f0] text-[#5c4a28] flex items-start gap-2.5 text-xs sm:text-sm">
               <Lightbulb className="w-4 h-4 text-[#8f7142] shrink-0 mt-0.5" />
               <div>
                 <span className="font-bold mr-1.5">Mug-Up Rule:</span>
-                <span>{point.keyTakeaway}</span>
+                <span><AnnotatedText text={point.keyTakeaway} /></span>
               </div>
             </div>
           )}
