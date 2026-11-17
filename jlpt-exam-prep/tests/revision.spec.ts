@@ -385,3 +385,48 @@ test('browser back and forward routing works without exiting the app', async ({ 
   await page.goto('/revision');
   await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
 });
+
+test('comprehensive N3 and N2 synthesis master tables and level filters in revision desk', async ({ page }) => {
+  await page.goto('/revision');
+  await expect(page.getByText('Revision & Master "Mug-Up" Tables')).toBeVisible();
+
+  const filterBar = page.getByTestId('revision-level-filters');
+
+  // 1. Verify "All (28)" filter pill exists and shows all 28 tables
+  await expect(filterBar.getByRole('button', { name: 'All (28)' })).toBeVisible();
+  await expect(page.getByText('28 master tables & synthesis reference sheets')).toBeVisible();
+
+  // 2. Filter by N3: 9 tables
+  await filterBar.getByRole('button', { name: 'N3', exact: true }).click();
+  await expect(page.getByText('9 master tables & synthesis reference sheets')).toBeVisible();
+  // Check that N3 synthesis tables exist
+  await expect(page.getByText('Core Compound Particles Matrix')).toBeVisible();
+  await expect(page.getByText('Nominalizers Triad Matrix')).toBeVisible();
+  await expect(page.getByText('The 4 わけ Quadruplets Decoded')).toBeVisible();
+  await expect(page.getByText('The Decision & Custom Grid')).toBeVisible();
+  await expect(page.getByText('Adverb & Sentence-Ending Collocations')).toBeVisible();
+  await expect(page.getByText('Suffix Transformation Matrix')).toBeVisible();
+  await expect(page.getByText('Spatiotemporal Direction Matrix')).toBeVisible();
+
+  // 3. Filter by N2: 7 tables
+  await filterBar.getByRole('button', { name: 'N2', exact: true }).click();
+  await expect(page.getByText('7 master tables & synthesis reference sheets')).toBeVisible();
+  await expect(page.getByText('Inception & Turning Point Matrix')).toBeVisible();
+  await expect(page.getByText('Evidential Evaluation from Nouns Matrix')).toBeVisible();
+  await expect(page.getByText('Classical Remnants & Archaic Literary Forms')).toBeVisible();
+  await expect(page.getByText('The Advanced こと Constructions Matrix')).toBeVisible();
+  await expect(page.getByText('Double Negatives & Compelled Action Matrix')).toBeVisible();
+  await expect(page.getByText('Sentence-Ending Constraints & Epistemic Stance Matrix')).toBeVisible();
+  await expect(page.locator('#skmN2ConnectorsMatrix')).toBeVisible();
+
+  // 4. Test "Jump to Lesson in Textbook" navigation from a newly added table
+  await filterBar.getByRole('button', { name: 'N3', exact: true }).click();
+  const jumpBtn = page.locator('#skmN3CompoundParticlesMatrix').getByRole('button', { name: /Jump to Lesson in Textbook/ });
+  await jumpBtn.click();
+  await expect(page).toHaveURL(/\/learn\/added-n3-b-60/);
+  await expect(page.locator('h1')).toBeVisible();
+  // The table is also embedded in the textbook lesson view!
+  await expect(page.getByRole('heading', { name: 'High-Yield Lesson Table' })).toBeVisible();
+  await expect(page.locator('table').first()).toBeVisible();
+});
+

@@ -105,11 +105,102 @@ const REVISION_TABLES_CATALOG: TableMeta[] = [
     lessonLabel: 'SKM N3 · Chapter 1 (Time Sequence Spectrum)'
   },
   {
+    key: 'skmN3CompoundParticlesMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3CompoundParticlesMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-b-60',
+    lessonLabel: 'SKM N3 · Form Review B (Core Compound Particles: について・対して・にとって・として・において)'
+  },
+  {
+    key: 'skmN3NominalizersMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3NominalizersMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-c-61',
+    lessonLabel: 'SKM N3 · Form Review C (Nominalizers Triad: こと vs の vs もの)'
+  },
+  {
+    key: 'skmN3WakeQuadrupletsMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3WakeQuadrupletsMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-e-63',
+    lessonLabel: 'SKM N3 · Form Review E (The わけ Quadruplets: わけだ・わけがない・わけではない・わけにはいかない)'
+  },
+  {
+    key: 'skmN3BakariSpectrumMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3BakariSpectrumMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-f-64',
+    lessonLabel: 'SKM N3 · Form Review F (The ばかり Spectrum: Nばかり・てばかり・たばかり・ばかりだ・ばかりか)'
+  },
+  {
+    key: 'skmN3SuruNaruDecisionGrid',
+    table: MASTER_MUG_UP_TABLES.skmN3SuruNaruDecisionGrid,
+    level: 'N3',
+    lessonId: 'added-n3-g-65',
+    lessonLabel: 'SKM N3 · Form Review G (Agency vs Circumstance: ことにする・ことになる・ことにしている・ことになっている)'
+  },
+  {
+    key: 'skmN3AdverbCollocationsMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3AdverbCollocationsMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-i-67',
+    lessonLabel: 'SKM N3 · Form Review I (Adverbial Collocations 呼応表現: 決して・まったく・必ずしも・まるで・たとえ・どうしても・まさか)'
+  },
+  {
+    key: 'skmN3SuffixMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3SuffixMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-j-68',
+    lessonLabel: 'SKM N3 · Form Review J (Suffix Transformations: っぽい vs だらけ vs 気味 vs がち)'
+  },
+  {
+    key: 'skmN3TeKuruTeIkuMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN3TeKuruTeIkuMatrix,
+    level: 'N3',
+    lessonId: 'added-n3-p3-4-134',
+    lessonLabel: 'SKM N3 · Part 3 Chapter 4 (Spatiotemporal Trajectory: 〜てくる vs 〜ていく)'
+  },
+  {
+    key: 'skmN2InceptionOccasionMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN2InceptionOccasionMatrix,
+    level: 'N2',
+    lessonId: 'added-n2-a-116',
+    lessonLabel: 'SKM N2 · Form Review A (Inception & Ceremonial Occasion: に際して vs にあたって vs に先立って vs を契機に)'
+  },
+  {
+    key: 'skmN2EvidentialPerspectiveMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN2EvidentialPerspectiveMatrix,
+    level: 'N2',
+    lessonId: 'added-n2-b-117',
+    lessonLabel: 'SKM N2 · Form Review B (Judicial & Evidential Perspective: からすると vs から見ると vs からいえば vs からして)'
+  },
+  {
     key: 'skmN2ClassicalRemnantsMatrix',
     table: MASTER_MUG_UP_TABLES.skmN2ClassicalRemnantsMatrix,
     level: 'N2',
     lessonId: 'added-n2-c-118',
     lessonLabel: 'SKM N2 · Form Review C (Classical Remnants: ず・まい・べし)'
+  },
+  {
+    key: 'skmN2KotoMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN2KotoMatrix,
+    level: 'N2',
+    lessonId: 'added-n2-d-119',
+    lessonLabel: 'SKM N2 · Form Review D (Advanced こと Formations: ことなく・ことに(は)・ことは〜が・ということだ)'
+  },
+  {
+    key: 'skmN2DoubleNegativesMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN2DoubleNegativesMatrix,
+    level: 'N2',
+    lessonId: 'added-n2-p2-3-130',
+    lessonLabel: 'SKM N2 · Part 2 Chapter 3 (Double Negatives & Involuntary Compulsion: ないではいられない・ないわけにはいかない・なくはない・ないものでもない)'
+  },
+  {
+    key: 'skmN2SentenceFinalConstraintsMatrix',
+    table: MASTER_MUG_UP_TABLES.skmN2SentenceFinalConstraintsMatrix,
+    level: 'N2',
+    lessonId: 'added-n2-g-123',
+    lessonLabel: 'SKM N2 · Form Review G (Sentence-Final Epistemic Modalities: べきだ・まい・に相違ない・にすぎない・にほかならない・かねない/かねる)'
   },
   {
     key: 'skmN2ConnectorsMatrix',
@@ -153,7 +244,7 @@ export const RevisionDeskView: React.FC<Props> = ({
           </div>
 
           {/* Level Filter Tabs */}
-          <div className="flex items-center gap-1 bg-[#edebe0] p-1 rounded-md self-start sm:self-auto">
+          <div data-testid="revision-level-filters" className="flex items-center gap-1 bg-[#edebe0] p-1 rounded-md self-start sm:self-auto">
             {(['all', 'N5', 'N4', 'N3', 'N2'] as const).map(lvl => (
               <button
                 key={lvl}

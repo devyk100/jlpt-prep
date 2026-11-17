@@ -167,10 +167,10 @@ export function App() {
   useEffect(() => {
     const route = parseRoute(location.pathname, location.hash);
     if (route.isExplicitRoute) {
-      if (route.mode && route.mode !== studyMode) {
+      if (route.mode) {
         setStudyMode(route.mode);
       }
-      if (route.mode === 'learn' && route.pointId && route.pointId !== currentPointId && GRAMMAR_BY_ID[route.pointId]) {
+      if (route.mode === 'learn' && route.pointId && GRAMMAR_BY_ID[route.pointId]) {
         setCurrentPointId(route.pointId);
       }
       if (route.mode === 'practice' && route.practiceTarget) {
@@ -178,11 +178,9 @@ export function App() {
       }
     } else {
       // Reverted back to root '/'
-      if (studyMode !== 'learn') {
-        setStudyMode('learn');
-      }
+      setStudyMode('learn');
       const saved = localStorage.getItem(STORAGE_KEYS.CURRENT_POINT);
-      if (saved && GRAMMAR_BY_ID[saved] && saved !== currentPointId) {
+      if (saved && GRAMMAR_BY_ID[saved]) {
         setCurrentPointId(saved);
       }
     }

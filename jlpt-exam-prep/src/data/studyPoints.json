@@ -13120,7 +13120,69 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review B",
-    "sourceReference": "Section starts on printed p. 62 (PDF p. 85). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 62 (PDF p. 85). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: Core Compound Particles Matrix (p. 62)",
+      "subtitle": "について vs に対して vs にとって vs として vs において",
+      "columns": [
+        "Compound Particle",
+        "Grammatical Function & Nuance",
+        "Typical Predicates / Collocations",
+        "Key Restrictions & Comparison"
+      ],
+      "rows": [
+        {
+          "label": "〜について (Topic / Theme)",
+          "cells": [
+            "名詞 + について (修飾: 〜についてのN)",
+            "Regarding / about: introduces the central topic of thought, speech, or inquiry.",
+            "日本の文化について研究する / 将来の進路について話し合う",
+            "Followed by verbs of inquiry/expression: 調べる, 書く, 話す, 考える. Cannot replace に対して when pointing to an opposing party."
+          ],
+          "note": "Formal equivalent is 〜に関（かん）して."
+        },
+        {
+          "label": "〜に対して (Target / Contrast)",
+          "cells": [
+            "名詞 + に対して (修飾: 〜に対するN)",
+            "1. Toward / facing an external target. 2. In sharp contrast between two different subjects.",
+            "お客様に対して丁寧な言葉遣いをする / 兄が活発なのに対して、弟は物静かだ",
+            "Distinguish from 反面: 反面 contrasts two aspects of the SAME subject; に対して contrasts TWO DISTINCT subjects."
+          ],
+          "note": "When expressing an attitude toward people, に対して is mandatory."
+        },
+        {
+          "label": "〜にとって (Evaluative Standpoint)",
+          "cells": [
+            "名詞 + にとって (修飾: 〜にとってのN)",
+            "From the standpoint / in the eyes of: establishes the subjective evaluator.",
+            "私にとって家族が一番大切だ / 留学生にとって漢字の習得は高い壁だ",
+            "Predicate MUST express subjective evaluation (大切だ, 難しい, 深刻だ). NEVER expresses personal physical action (❌ 私にとって本を買う)."
+          ],
+          "note": "Evaluates value or difficulty from that party's stance."
+        },
+        {
+          "label": "〜として (Role / Capacity)",
+          "cells": [
+            "名詞 + として (修飾: 〜としてのN)",
+            "In the role, capacity, official status, or recognized qualification of.",
+            "留学生として日本に来ました / 彼は会社の代表として会議に出席した",
+            "Noun before として must represent an official title, category, function, or status."
+          ],
+          "note": "Indicates functioning within that recognized status."
+        },
+        {
+          "label": "〜において (Formal Domain / Setting)",
+          "cells": [
+            "名詞 + において (修飾: 〜におけるN)",
+            "In / at / within: specifies the formal setting, field, era, or domain.",
+            "現代社会において情報技術は不可欠だ / 開会式は第一ホールにおいて行われる",
+            "Formal written equivalent of で; heavily used in news, academic writing, and official announcements."
+          ],
+          "note": "Formal locus marker for occasions and fields."
+        }
+      ]
+    }
   },
   {
     "id": "skm3-fc-tokoro-datta",
@@ -13263,7 +13325,49 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review C",
-    "sourceReference": "Section starts on printed p. 66 (PDF p. 89). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 66 (PDF p. 89). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: Nominalizers Triad Matrix: こと vs の vs もの (p. 66)",
+      "subtitle": "Distinguishing abstract truth, sensory perception, and tangible/natural reality.",
+      "columns": [
+        "Nominalizer",
+        "Core Linguistic Nuance",
+        "Exclusive Grammatical Environments",
+        "Classic Golden Rules"
+      ],
+      "rows": [
+        {
+          "label": "こと (Abstract Truth / Definition)",
+          "cells": [
+            "動詞普通形 + こと / 名詞 + であること",
+            "Conceptualization, abstract facts, rules, and definition statements.",
+            "私の趣味は音楽を聴くことです / パソコンを使うことができる",
+            "Mandatory in fixed patterns: 〜ことができる, 〜ことにする / なる, 〜ことがある. Mandatory in definitional sentences (X は Y ことです)."
+          ],
+          "note": "Use こと when treating an action as an abstract concept."
+        },
+        {
+          "label": "の (Direct Sensory Perception)",
+          "cells": [
+            "動詞普通形 + の",
+            "Immediate concrete action happening right in front of the speaker's senses.",
+            "子供たちが走っているのを見た / 隣の部屋で誰かが歌っているのが聞こえる",
+            "Mandatory with sensory verbs (見る, 聞こえる, 感じる) and physical intervention verbs (手伝う, 待つ, 止める). Mandatory in cleft sentences (〜のは〜だ)."
+          ],
+          "note": "Sensory perception of unfolding events always takes の."
+        },
+        {
+          "label": "もの (Tangible Reality / Natural Essence)",
+          "cells": [
+            "普通形 + もの (な-adj な / 名詞な)",
+            "Concrete physical objects, universal human nature, or innate natural truth.",
+            "冷たいものが飲みたい / 人間は誰でも失敗するものだ",
+            "〜ものだ expresses universal general truth ('It is human nature to...'). 〜ものではない expresses strong moral warning ('You should never...')."
+          ],
+          "note": "もの refers to real substances or general inherent truths."
+        }
+      ]
+    }
   },
   {
     "id": "skm3-u7-you-ni-purpose",
@@ -13541,7 +13645,59 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review E",
-    "sourceReference": "Section starts on printed p. 74 (PDF p. 97). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 74 (PDF p. 97). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: The 4 わけ Quadruplets Decoded (p. 74)",
+      "subtitle": "Logical inevitability vs total impossibility vs partial denial vs moral barrier.",
+      "columns": [
+        "Pattern",
+        "Meaning & Psychological State",
+        "Formula & Negation Type",
+        "JLPT Test Trap Alert"
+      ],
+      "rows": [
+        {
+          "label": "〜わけだ (Logical Conclusion)",
+          "cells": [
+            "Naturally so / No wonder: a conclusion that follows as the obvious logical result.",
+            "普通形 (な-adj な, N である) + わけだ",
+            "今日は気温が38度もある。暑いわけだ。",
+            "Connects observed facts into an understandable explanation ('That explains why!')."
+          ],
+          "note": "Confirms why a situation is naturally understandable."
+        },
+        {
+          "label": "〜わけがない (Absolute Impossibility)",
+          "cells": [
+            "There is no way on earth that...: absolute objective impossibility based on evidence.",
+            "普通形 + わけがない (= はずがない)",
+            "彼がそんな酷い嘘をつくわけがない。",
+            "Emphatic certainty that something cannot possibly be true."
+          ],
+          "note": "Strong denial of possibility based on reason."
+        },
+        {
+          "label": "〜わけではない (Partial Negation)",
+          "cells": [
+            "It does not necessarily mean that... / I don't mean to say that...",
+            "普通形 + わけではない",
+            "日本料理が嫌いなわけではないが、納豆は苦手だ。",
+            "Softens a statement by denying total black-and-white interpretation."
+          ],
+          "note": "Partial negation; does not reject the entire premise."
+        },
+        {
+          "label": "〜わけにはいかない (Moral / Social Barrier)",
+          "cells": [
+            "Cannot bring oneself to do / Cannot afford to do because of duty, conscience, or society.",
+            "動詞辞書形 + わけにはいかない (二重否定: 動詞ない形 + わけにはいかない = Must do)",
+            "大事な会議があるから、熱があっても休むわけにはいかない。",
+            "Physical ability exists, but social/moral constraints prevent the action."
+          ],
+          "note": "Conscience or social duty forbids the action."
+        }
+      ]
+    }
   },
   {
     "id": "added-n3-f-64",
@@ -13608,7 +13764,69 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review F",
-    "sourceReference": "Section starts on printed p. 80 (PDF p. 103). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 80 (PDF p. 103). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: The 〜ばかり Functional Spectrum (p. 80)",
+      "subtitle": "From exclusive concentration to critical indulgence to recency to unidirectional change.",
+      "columns": [
+        "Structure",
+        "Core Function & Meaning",
+        "Emotional Tone",
+        "Distinct Contrast Item"
+      ],
+      "rows": [
+        {
+          "label": "N + ばかり (Exclusive Concentration)",
+          "cells": [
+            "Nothing but N / Only N: focused entirely on one item to the exclusion of others.",
+            "肉ばかり食べないで、野菜も食べなさい。",
+            "Critical observation of one-sidedness.",
+            "Contrast with だけ: だけ is neutral limitation; ばかり implies excessive saturation."
+          ],
+          "note": "Often carries a tone of mild criticism regarding imbalance."
+        },
+        {
+          "label": "V-て + ばかりいる (Habitual Indulgence)",
+          "cells": [
+            "Does nothing but V all the time: habitual repetition of unproductive activity.",
+            "弟は勉強もしないで、ゲームをしてばかりいる。",
+            "Annoyance or disapproval from the speaker.",
+            "Always expresses critical reproach regarding repeated behavior."
+          ],
+          "note": "Indicates continuous repetition with speaker criticism."
+        },
+        {
+          "label": "V-た + ばかりだ (Subjective Recency)",
+          "cells": [
+            "Just finished doing: feels subjectively immediate to the speaker.",
+            "先月日本に来たばかりなので、まだ地理がよく分かりません。",
+            "Subjective feeling of recency, even if weeks have passed.",
+            "Contrast with 〜たところだ: たところだ is literal immediate temporal phase (minutes ago)."
+          ],
+          "note": "Speaker treats the completed action as very fresh."
+        },
+        {
+          "label": "V-辞書形 + ばかりだ (Unidirectional Trend)",
+          "cells": [
+            "Continues steadily to worsen/progress, or everything is prepared and ready to V.",
+            "不況のせいで、会社の業績は悪化するばかりだ。",
+            "Passive acknowledgment of unfolding momentum.",
+            "Only pairs with verbs of continuous change (上がる, 下がる, 悪化する)."
+          ],
+          "note": "Describes an ongoing change moving steadily in one direction."
+        },
+        {
+          "label": "〜ばかりか / ばかりでなく (Escalating Addition)",
+          "cells": [
+            "Not only A, but on top of that B as well: escalating surprise or severity.",
+            "彼は漢字ばかりか、ひらがなさえ読めない。",
+            "Strong emphatic addition.",
+            "Clause B introduces something even more surprising or severe."
+          ],
+          "note": "Formal equivalent of 〜だけでなく."
+        }
+      ]
+    }
   },
   {
     "id": "skm3-u11-koto-ni-natte-iru",
@@ -13751,7 +13969,59 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review G",
-    "sourceReference": "Section starts on printed p. 84 (PDF p. 107). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 84 (PDF p. 107). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: The Decision & Custom Grid: する vs なる (p. 84)",
+      "subtitle": "Personal volition vs external outcome vs maintained habit vs institutional regulation.",
+      "columns": [
+        "Expression",
+        "Deciding Agent",
+        "Temporality & Aspect",
+        "Real-World Communication Context"
+      ],
+      "rows": [
+        {
+          "label": "〜ことにする (Personal Decision)",
+          "cells": [
+            "Personal volition / deliberate conscious choice made by the speaker.",
+            "One-off new resolution.",
+            "健康のために、今日からお酒をやめることにした。",
+            "Announcing a personal decision."
+          ],
+          "note": "Reflects the speaker's own will."
+        },
+        {
+          "label": "〜ことになる (External Outcome)",
+          "cells": [
+            "External circumstances, collective decision, or objective outcome without individual focus.",
+            "Settled outcome / development.",
+            "来月、大阪の本社へ転勤することになりました。",
+            "Polite reporting of business/life developments where personal agency is restrained."
+          ],
+          "note": "Presents an arrangement as a settled situation."
+        },
+        {
+          "label": "〜ことにしている (Maintained Habit)",
+          "cells": [
+            "Personal self-discipline / self-imposed standing policy.",
+            "Ongoing maintained routine.",
+            "どんなに忙しくても、毎日30分は本を読むことにしている。",
+            "Describing personal health, lifestyle, or study discipline."
+          ],
+          "note": "Speaker's own persistent rule."
+        },
+        {
+          "label": "〜ことになっている (Standing Regulation)",
+          "cells": [
+            "Standing law, institutional regulation, societal rule, or fixed schedule.",
+            "Established system / rule.",
+            "法律により、二十歳未満の飲酒は禁止されていることになっている。",
+            "Explaining societal laws, school rules, and official schedules."
+          ],
+          "note": "Societal or institutional standing rule."
+        }
+      ]
+    }
   },
   {
     "id": "added-n3-h-66",
@@ -13853,7 +14123,89 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review I",
-    "sourceReference": "Section starts on printed p. 92 (PDF p. 115). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 92 (PDF p. 115). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: Adverb & Sentence-Ending Collocations (呼応表現) (p. 92)",
+      "subtitle": "The golden pair triggers that determine the grammatical ending before reading the sentence.",
+      "columns": [
+        "Trigger Adverb",
+        "Required Ending Form",
+        "Semantic Category",
+        "JLPT Trap Example"
+      ],
+      "rows": [
+        {
+          "label": "決して (けっして)",
+          "cells": [
+            "〜ない / 否定形",
+            "Resolute total refusal: 'Never, under any circumstance'.",
+            "約束は決して破りません。",
+            "Trap: Pairs strictly with negative predicates."
+          ],
+          "note": "Strong determination never to do."
+        },
+        {
+          "label": "まったく",
+          "cells": [
+            "〜ない / 否定形",
+            "Complete absence: 'Not in the slightest / Not at all'.",
+            "彼の説明は難しくて、まったく分からなかった。",
+            "Can also mean 'truly/completely' in affirmative with surprise (まったく驚いた)."
+          ],
+          "note": "Emphasizes complete lack or total state."
+        },
+        {
+          "label": "必ずしも (かならずしも)",
+          "cells": [
+            "〜わけではない / 〜とは限らない",
+            "Partial exception: 'Not necessarily true in every case'.",
+            "有名大学を卒業した人が、必ずしも優秀だとは限らない。",
+            "Trap: Almost always resolves in 〜とは限らない or 〜わけではない."
+          ],
+          "note": "Denies absolute universality."
+        },
+        {
+          "label": "まるで",
+          "cells": [
+            "〜ようだ / 〜みたいだ",
+            "Vivid figurative simile: 'Just as if / Exactly like'.",
+            "あの雲はまるで白い城のようだ。",
+            "Trap: Signals a metaphorical comparison."
+          ],
+          "note": "Introduces a vivid simile."
+        },
+        {
+          "label": "たとえ",
+          "cells": [
+            "〜ても / 〜でも",
+            "Extreme hypothetical concession: 'Even if / No matter if'.",
+            "たとえ親に反対されても、自分の夢を諦めない。",
+            "Trap: Pairs with 〜ても to concede an extreme situation."
+          ],
+          "note": "Concessive hypothesis marker."
+        },
+        {
+          "label": "どうしても",
+          "cells": [
+            "〜たい / 〜てしまう / 否定形",
+            "Inescapable yearning or unavoidable impossibility: 'By all means / Simply cannot'.",
+            "どうしても日本で働きたい。 / どうしても鍵が見つからない。",
+            "Expresses powerful internal urge or insurmountable barrier."
+          ],
+          "note": "Pairs with strong volition or impossibility."
+        },
+        {
+          "label": "まさか",
+          "cells": [
+            "〜ないだろう / 〜とは思わなかった",
+            "Utter disbelief: 'It couldn't possibly be... / Never in my wildest dreams'.",
+            "まさか彼が試験に落ちるとは思わなかった。",
+            "Trap: Expresses shock that an unthinkable event occurred."
+          ],
+          "note": "Signals incredulity or surprise."
+        }
+      ]
+    }
   },
   {
     "id": "skm3-fj-ppoi-personality",
@@ -14372,7 +14724,59 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 1 · Form review J",
-    "sourceReference": "Section starts on printed p. 96 (PDF p. 119). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 96 (PDF p. 119). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: Suffix Transformation Matrix: っぽい vs だらけ vs 気味 vs がち (p. 96)",
+      "subtitle": "Resemblance vs surface saturation vs physical tinge vs unfortunate habit.",
+      "columns": [
+        "Suffix",
+        "Attachment Base",
+        "Nuance & Emotional Valence",
+        "Signature High-Yield Examples"
+      ],
+      "rows": [
+        {
+          "label": "〜っぽい (Resemblance / Cheapened Quality)",
+          "cells": [
+            "名詞 / 動詞ます語幹 / い形容詞語幹",
+            "Resembling a quality, often with a childish, negative, or cheapened tone: '-ish, -like'.",
+            "子供っぽい (childish), 怒りっぽい (quick-tempered), 安っぽい (cheap-looking), 白っぽい (whitish)",
+            "Cannot be used for dignified praise (use 〜らしい instead)."
+          ],
+          "note": "Negative or informal resemblance."
+        },
+        {
+          "label": "〜だらけ (Surface Saturation)",
+          "cells": [
+            "名詞 (always negative or messy entities)",
+            "Completely covered, riddled with, or full of undesirable things across an entire surface.",
+            "間違いだらけ (riddled with errors), 泥だらけ (covered in mud), 借金だらけ (deep in debt)",
+            "Exclusive to negative, dirty, or flawed conditions."
+          ],
+          "note": "Physical or metaphorical mess across the whole surface."
+        },
+        {
+          "label": "〜気味 (ぎみ) (Slight Negative Tinge)",
+          "cells": [
+            "名詞 / 動詞ます語幹",
+            "A slight, emerging physical, mental, or bodily symptom: 'A touch of..., feeling somewhat...'.",
+            "風邪気味 (a touch of a cold), 疲れ気味 (somewhat tired), 緊張気味 (a bit nervous)",
+            "Describes an incipient, mild physical or psychological feeling."
+          ],
+          "note": "Slight internal feeling or symptom."
+        },
+        {
+          "label": "〜がち (Unfortunate Tendency)",
+          "cells": [
+            "名詞 / 動詞ます語幹",
+            "Unfortunate recurrent tendency or habit: 'Prone to doing..., frequently happens'.",
+            "病気がち (frequently falling ill), 遠慮しがち (tending to hold back), 留守にしがち (often away)",
+            "Describes a persistent negative pattern over time."
+          ],
+          "note": "Frequent regrettable occurrence."
+        }
+      ]
+    }
   },
   {
     "id": "added-n3-j-115",
@@ -14767,7 +15171,49 @@
     ],
     "book": "Shin Kanzen Master N3",
     "chapter": "Part 3 · Chapter 4",
-    "sourceReference": "Section starts on printed p. 124 (PDF p. 147). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 124 (PDF p. 147). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N3: Spatiotemporal Direction Matrix: てくる vs ていく (p. 124)",
+      "subtitle": "Spatial vectors, temporal evolution, and psychological emergence.",
+      "columns": [
+        "Dimension",
+        "〜てくる (Approaching / Emerging)",
+        "〜ていく (Departing / Continuing)",
+        "Visual Mental Model"
+      ],
+      "rows": [
+        {
+          "label": "Physical Space (空間的移動)",
+          "cells": [
+            "Moving toward the speaker's current physical location.",
+            "Moving away from the speaker into distance.",
+            "黒い雲がこちらへ近づいてきた (Clouds approached us) vs 飛行機が遠くへ飛んでいった (Plane flew away).",
+            "Speaker is the spatial anchor point (原点)."
+          ],
+          "note": "Spatial vector toward vs away from speaker."
+        },
+        {
+          "label": "Time Dimension (時間的推移)",
+          "cells": [
+            "Development from the past up to the present moment.",
+            "Progression from the present moment onward into the future.",
+            "日本で三年勉強してきた (Have studied up to now) vs これからも努力を続けていく (Will continue onward into future).",
+            "Present moment is the pivot point."
+          ],
+          "note": "Historical accumulation up to now vs future trajectory."
+        },
+        {
+          "label": "Physiological / Emergence (生起・変化)",
+          "cells": [
+            "Spontaneous internal sensation emerging into conscious perception.",
+            "Fading away, disappearing, or settling into extinction.",
+            "寒くなってきた / お腹が空いてきた (Felt cold / hunger emerge) vs 音が消えていった (Sound faded away).",
+            "Perception emerging inward vs dissolving outward."
+          ],
+          "note": "Internal emergence vs outward dissolution."
+        }
+      ]
+    }
   },
   {
     "id": "added-n3-p3-5-135",
@@ -22006,7 +22452,59 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review A",
-    "sourceReference": "Section starts on printed p. 122 (PDF p. 132). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 122 (PDF p. 132). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: Inception & Turning Point Matrix (p. 122)",
+      "subtitle": "に際して vs にあたって vs に先立って vs を契機に / を機に",
+      "columns": [
+        "Grammar Pattern",
+        "Formality & Register",
+        "Core Meaning & Timing",
+        "Prerequisite Conditions"
+      ],
+      "rows": [
+        {
+          "label": "〜に際して (Momentous Occasion)",
+          "cells": [
+            "Formal written / public announcements.",
+            "On the occasion of / When embarking upon: used for special, momentous, non-routine events.",
+            "動詞辞書形 / 名詞 + に際して",
+            "新しいプロジェクトの開始に際して、チーム全員に注意事項が伝えられた。"
+          ],
+          "note": "Formal announcement for special occasions."
+        },
+        {
+          "label": "〜にあたって (Forward-Looking Juncture)",
+          "cells": [
+            "Formal speeches, ceremonies, welcoming addresses.",
+            "At this crucial juncture of starting / As we embark upon: forward-looking positive resolve.",
+            "動詞辞書形 / 名詞 + にあたって",
+            "新生活を始めるにあたって、目標を明確に定めた。"
+          ],
+          "note": "Clause B always contains positive resolve, preparation, or greetings."
+        },
+        {
+          "label": "〜に先立って (Preparatory Action)",
+          "cells": [
+            "Formal business, research, public events.",
+            "In advance of / Prior to embarking on: Action A is a prerequisite step carried out before B.",
+            "名詞 / 動詞辞書形 + に先立って (修飾: 〜に先立つN)",
+            "映画の一般公開に先立って、関係者向けの特別試写会が行われた。"
+          ],
+          "note": "Deliberate prerequisite step prior to main event."
+        },
+        {
+          "label": "〜を契機に / 〜を機に (Catalyst for Transformation)",
+          "cells": [
+            "Written narrative, expository analysis, historical reflection.",
+            "Triggered by / Taking X as the decisive catalyst for permanent transformation.",
+            "名詞 + を契機に / を機に",
+            "大病を患ったことを契機に、健康的な生活習慣を徹底するようになった。"
+          ],
+          "note": "X serves as a historic milestone initiating lasting change."
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-b-117",
@@ -22049,7 +22547,59 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review B",
-    "sourceReference": "Section starts on printed p. 124 (PDF p. 134). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 124 (PDF p. 134). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: Evidential Evaluation from Nouns Matrix (p. 124)",
+      "subtitle": "からすると vs から見ると vs からいえば vs からして",
+      "columns": [
+        "Pattern",
+        "Basis of Judgment",
+        "Speaker's Angle of Vision",
+        "Typical Evaluative Outcomes"
+      ],
+      "rows": [
+        {
+          "label": "〜からすると / からすれば",
+          "cells": [
+            "Inferred from outward signs, symptoms, or standing in someone else's shoes.",
+            "Judging by the evidence ('Judging by the footsteps, father is home') or from someone's feelings.",
+            "足音からすると、父が帰ってきたようだ。 / 親からすれば、子供は何歳になっても心配だ。",
+            "Forms deductions from sensory clues or empathetic perspective."
+          ],
+          "note": "Evaluation based on clues or someone's perspective."
+        },
+        {
+          "label": "〜から見ると / から見れば",
+          "cells": [
+            "Evaluating external appearance, architectural design, or external third-party viewpoint.",
+            "Viewed from the perspective of an external observer.",
+            "外国人旅行者から見ると、日本の治安の良さは驚嘆に値するだろう。",
+            "Used when evaluating how something appears to an observer."
+          ],
+          "note": "Third-party observation angle."
+        },
+        {
+          "label": "〜からいえば / からいって",
+          "cells": [
+            "Evaluating from one specific isolated dimension (quality, cost, skill, legal terms).",
+            "Speaking strictly in terms of dimension X...",
+            "味からいえば文句なしの名店だが、値段からいえば庶民的とは言えない。",
+            "Limits evaluation strictly to the specified criterion."
+          ],
+          "note": "Speaking strictly from one specific criterion."
+        },
+        {
+          "label": "〜からして",
+          "cells": [
+            "Singling out one prominent representative clue to prove the whole condition is true.",
+            "Judging even from this one single extreme detail, you can easily tell the rest...",
+            "あの店は看板からして怪しい。 / タイトルからして難解そうな論文だ。",
+            "Picks one extreme sample to deduce the nature of the whole entity."
+          ],
+          "note": "One prominent clue indicates the whole nature."
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-c-118",
@@ -22248,7 +22798,59 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review D",
-    "sourceReference": "Section starts on printed p. 128 (PDF p. 138). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 128 (PDF p. 138). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: The Advanced こと Constructions Matrix (p. 128)",
+      "subtitle": "ことなく vs ことに(は) vs ことは〜が vs ということだ",
+      "columns": [
+        "Construction",
+        "Linguistic Meaning & Function",
+        "Connection Formula",
+        "Register & Emotional Nuance"
+      ],
+      "rows": [
+        {
+          "label": "〜ことなく (Formal Continuous Negative)",
+          "cells": [
+            "Formal written negative: 'Without doing X even once / Without ceasing'.",
+            "動詞辞書形 + ことなく",
+            "彼は困難に直面しても、一度も弱音を吐くことなく前進を続けた。",
+            "High formal equivalent of 〜ないで; elevated literary and essay register."
+          ],
+          "note": "Formal without doing even once."
+        },
+        {
+          "label": "〜ことに(は) (Speaker's Emotional Preamble)",
+          "cells": [
+            "Speaker's emotional preamble: 'To my great emotion / What is remarkable is that...'.",
+            "感情形容詞 / 動詞た形 + ことに",
+            "嬉しいことに、全員が無事に試験に合格した。 / 残念なことに、旅行は雨で中止になった。",
+            "Fronts the speaker's emotional reaction before stating the factual event."
+          ],
+          "note": "Emotional preamble before reporting facts."
+        },
+        {
+          "label": "〜ことは〜が (Concessive Qualification)",
+          "cells": [
+            "Concessive qualification: 'It is true that X, but nevertheless Y'.",
+            "動詞辞書形 + ことは + 同動詞 + が / 形容詞 + ことは + 形容詞 + が",
+            "読めることは読めるが、専門用語が多すぎて意味は分からない。",
+            "Concedes truth of point A before introducing reservations in B."
+          ],
+          "note": "Concedes the first point before qualifying."
+        },
+        {
+          "label": "〜ということだ / 〜とのことだ (Authoritative Hearsay)",
+          "cells": [
+            "Official hearsay quotation ('Reportedly / According to statements'), or summarizing explanation.",
+            "普通形 + ということだ / とのことだ",
+            "気象庁の発表によると、台風は今夜上陸する見込みだとのことだ。",
+            "Frequently paired with information sources (〜によると, 〜の話では)."
+          ],
+          "note": "High formal hearsay reporting."
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-d-120",
@@ -22420,7 +23022,79 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 1 · Form review G",
-    "sourceReference": "Section starts on printed p. 136 (PDF p. 146). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 136 (PDF p. 146). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: Sentence-Ending Constraints & Epistemic Stance Matrix (p. 136)",
+      "subtitle": "Moral obligation vs strong negative resolve vs conviction vs speaker evaluation.",
+      "columns": [
+        "Ending Expression",
+        "Core Epistemic Function",
+        "Grammatical & Person Restrictions",
+        "Signature JLPT Example"
+      ],
+      "rows": [
+        {
+          "label": "〜べきだ / べきではない",
+          "cells": [
+            "General moral duty or common-sense obligation ('Ought to do / Should not do').",
+            "動詞辞書形 + べき (する → すべき / するべき)",
+            "人から親切にされたら、感謝の気持ちを伝えるべきだ。",
+            "Expresses universal social ethics, NOT arbitrary personal orders to a superior."
+          ],
+          "note": "Universal moral obligation."
+        },
+        {
+          "label": "〜まい (Negative Resolve / Conjecture)",
+          "cells": [
+            "1. Strong negative resolve ('Will never do again') 2. Negative conjecture ('Surely will not').",
+            "動詞辞書形 (一段: 辞書/未然) + まい (する → するまい/すまい)",
+            "二度とあのような愚かな過ちは繰り返すまいと誓った。",
+            "First-person for resolve; third-person takes 〜まいと思っている."
+          ],
+          "note": "Resolute refusal or negative conjecture."
+        },
+        {
+          "label": "〜に相違ない (にそういない)",
+          "cells": [
+            "High certainty conviction based on authoritative evidence ('There is no doubt that...').",
+            "普通形 (な-adj である, 名詞である) + に相違ない",
+            "確固たる証拠が見つかった以上、犯人は彼であることに相違ない。",
+            "Formal written equivalent of に違いない; based on logical deduction."
+          ],
+          "note": "Authoritative conviction based on evidence."
+        },
+        {
+          "label": "〜にすぎない",
+          "cells": [
+            "Limiting minimization ('Merely / Nothing more than / Just').",
+            "普通形 / 名詞 + にすぎない",
+            "私は会社の方針に従って業務を遂行したにすぎません。",
+            "Speaker deliberately downsizes the status, scale, or praise of X."
+          ],
+          "note": "Downsizes importance or scale."
+        },
+        {
+          "label": "〜にほかならない",
+          "cells": [
+            "Definitive sole reason or essence ('Nothing other than / Precisely because').",
+            "名詞 + にほかならない",
+            "彼が難関試験に合格できたのは、日々の地道な努力の結果にほかならない。",
+            "Eliminates all other alternative causes; identifies the absolute core truth."
+          ],
+          "note": "Asserts the singular core reason."
+        },
+        {
+          "label": "〜かねない vs 〜かねる",
+          "cells": [
+            "かねない: Negative danger ('Could happen / Risk of...'). かねる: Polite refusal ('Unable to do').",
+            "動詞ます語幹 + かねない / かねる",
+            "過度の過労は重大な病気を引き起こしかねない。 / そのご依頼には応じかねます。",
+            "かねない warns of dangerous consequences; かねる is formal customer-facing refusal."
+          ],
+          "note": "Danger warning vs polite refusal."
+        }
+      ]
+    }
   },
   {
     "id": "skm2-p2-kko-nai",
@@ -22641,7 +23315,59 @@
     ],
     "book": "Shin Kanzen Master N2",
     "chapter": "Part 2 · Chapter 3",
-    "sourceReference": "Section starts on printed p. 146 (PDF p. 156). Original revision notes; not a transcription."
+    "sourceReference": "Section starts on printed p. 146 (PDF p. 156). Original revision notes; not a transcription.",
+    "table": {
+      "title": "SKM N2: Double Negatives & Compelled Action Matrix (p. 146)",
+      "subtitle": "ないではいられない vs ずにはいられない vs なくはない vs ないわけにはいかない",
+      "columns": [
+        "Double Negative Formula",
+        "Psychological Drive / Motivation",
+        "Degree of Negation",
+        "Nuance Trap Alert"
+      ],
+      "rows": [
+        {
+          "label": "〜ないではいられない / 〜ずにはいられない",
+          "cells": [
+            "Irrepressible emotional urge: cannot help but feel / compelled to do by internal urge.",
+            "動詞ない形 + ではいられない / 動詞未然形 + ずにはいられない (する → せずにはいられない)",
+            "悲惨な事故のニュースを聞いて、涙を流さずにはいられなかった。",
+            "Driven by uncontrollable spontaneous emotion from inside."
+          ],
+          "note": "Internal irrepressible urge."
+        },
+        {
+          "label": "〜ないわけにはいかない",
+          "cells": [
+            "Mandatory social responsibility or ethical duty: cannot afford not to do.",
+            "動詞ない形 + わけにはいかない",
+            "恩師に頼まれた以上、この仕事を引き受けないわけにはいかない。",
+            "Driven by external duty, social conscience, or obligation."
+          ],
+          "note": "External moral/social obligation."
+        },
+        {
+          "label": "〜なくはない / 〜なくもない",
+          "cells": [
+            "Cautious double negative understatement: 'It is not entirely impossible that...'.",
+            "動詞ない形 + くはない / 形容詞く + はない",
+            "相手の言い分も理解できなくはないが、全面的に賛同はできない。",
+            "Understatement used to soften disagreement or show reluctant admission."
+          ],
+          "note": "Reluctant admission or softened understatement."
+        },
+        {
+          "label": "〜ないものでもない",
+          "cells": [
+            "Tentative willingness under hypothetical conditions: 'Not entirely out of the question'.",
+            "動詞ない形 + ものでもない",
+            "今すぐ条件を見直していただけるなら、交渉に応じないものでもない。",
+            "Modest theoretical possibility under suitable terms."
+          ],
+          "note": "Hesitant potential concession."
+        }
+      ]
+    }
   },
   {
     "id": "added-n2-p3-1-141",
