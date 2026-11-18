@@ -1,5 +1,11 @@
 [
   {
+    "word": "検査結果",
+    "reading": "けんさけっか",
+    "base": "検査結果",
+    "occurrences": 4
+  },
+  {
     "word": "連形",
     "reading": "れんぎょう",
     "base": "連形",
@@ -10,12 +16,6 @@
     "reading": "きりひらける",
     "base": "切り拓ける",
     "occurrences": 3
-  },
-  {
-    "word": "検査結果",
-    "reading": "けんさけっか",
-    "base": "検査結果",
-    "occurrences": 2
   },
   {
     "word": "理致",
@@ -57,6 +57,12 @@
     "word": "ドイツ語",
     "reading": "どいつご",
     "base": "ドイツ語",
+    "occurrences": 1
+  },
+  {
+    "word": "業務効率",
+    "reading": "ぎょうむこうりつ",
+    "base": "業務効率",
     "occurrences": 1
   },
   {
@@ -267,6 +273,12 @@
     "word": "飛べる",
     "reading": "とべる",
     "base": "飛べる",
+    "occurrences": 1
+  },
+  {
+    "word": "鳥島",
+    "reading": "とりしま",
+    "base": "鳥島",
     "occurrences": 1
   }
 ]

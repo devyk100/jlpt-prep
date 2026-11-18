@@ -9055,5 +9055,145 @@
       "practice": true
     },
     "evidenceNotes": "Verified against canonical textbook curriculum. Ex: 3, Qz: 1."
+  },
+  {
+    "id": "skm2-c20-shidai-de-wa",
+    "title": "〜次第では / 〜次第だ (Contingency: Depending on Circumstances)",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "C20",
+    "sourceReference": "Shin Kanzen Master N2 skm2-c20-shidai-de-wa",
+    "reviewStatus": "reopened",
+    "distinctUses": [
+      "Core construction",
+      "Syntactic restrictions and nuances"
+    ],
+    "exampleCount": 3,
+    "exampleIds": [
+      "skm2-c20-shidai-de-wa::s-skm2-20-shidai-1",
+      "skm2-c20-shidai-de-wa::s-skm2-20-shidai-2",
+      "skm2-c20-shidai-de-wa::s-skm2-20-shidai-3"
+    ],
+    "quizCount": 1,
+    "missingUses": [],
+    "dimensions": {
+      "meaning": true,
+      "attachment": true,
+      "nuance": true,
+      "practice": true
+    },
+    "evidenceNotes": "Substantive instruction and dedicated practice implemented. Physical scan identified: Shin Kanzen Master N2 Chapter 20 (p. 90 / PDF p. 100). Implemented as standalone card [skm2-c20-shidai-de-wa] in studyPoints.json and bookSkmN2.ts with 3 authentic example sentences and practice exercise skm2-c20-ex-shidai."
+  },
+  {
+    "id": "skm2-c15-kuse-ni",
+    "title": "〜くせに (Critical Concession: Despite Being X, Blameworthy Y)",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "C15",
+    "sourceReference": "Shin Kanzen Master N2 skm2-c15-kuse-ni",
+    "reviewStatus": "reopened",
+    "distinctUses": [
+      "Core construction",
+      "Syntactic restrictions and nuances"
+    ],
+    "exampleCount": 3,
+    "exampleIds": [
+      "skm2-c15-kuse-ni::s-skm2-15-kuse-1",
+      "skm2-c15-kuse-ni::s-skm2-15-kuse-2",
+      "skm2-c15-kuse-ni::s-skm2-15-kuse-3"
+    ],
+    "quizCount": 1,
+    "missingUses": [],
+    "dimensions": {
+      "meaning": true,
+      "attachment": true,
+      "nuance": true,
+      "practice": true
+    },
+    "evidenceNotes": "Substantive instruction and dedicated practice implemented. Physical scan identified: Shin Kanzen Master N2 Chapter 15 (pp. 68-73 / PDF pp. 78-83). Implemented as standalone card [skm2-c15-kuse-ni] in studyPoints.json and bookSkmN2.ts with 3 authentic example sentences and practice exercise skm2-c15-ex-kuse."
+  },
+  {
+    "id": "skm2-c17-koto-kara",
+    "title": "〜ことから (Origin & Grounds: Arising from the Fact That)",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "C17",
+    "sourceReference": "Shin Kanzen Master N2 skm2-c17-koto-kara",
+    "reviewStatus": "reopened",
+    "distinctUses": [
+      "Core construction",
+      "Syntactic restrictions and nuances"
+    ],
+    "exampleCount": 3,
+    "exampleIds": [
+      "skm2-c17-koto-kara::s-skm2-17-koto-1",
+      "skm2-c17-koto-kara::s-skm2-17-koto-2",
+      "skm2-c17-koto-kara::s-skm2-17-koto-3"
+    ],
+    "quizCount": 1,
+    "missingUses": [],
+    "dimensions": {
+      "meaning": true,
+      "attachment": true,
+      "nuance": true,
+      "practice": true
+    },
+    "evidenceNotes": "Substantive instruction and dedicated practice implemented. Physical scan identified: Shin Kanzen Master N2 Chapter 17 (pp. 78-81 / PDF pp. 88-91). Implemented as standalone card [skm2-c17-koto-kara] in studyPoints.json and bookSkmN2.ts with 3 authentic example sentences and practice exercise skm2-c17-ex-koto."
+  },
+  {
+    "id": "skm2-c17-wake-de-wa-nai",
+    "title": "〜わけではない / 〜というわけではない (Partial Negation: Not Necessarily So)",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "C17",
+    "sourceReference": "Shin Kanzen Master N2 skm2-c17-wake-de-wa-nai",
+    "reviewStatus": "reopened",
+    "distinctUses": [
+      "Core construction",
+      "Syntactic restrictions and nuances"
+    ],
+    "exampleCount": 3,
+    "exampleIds": [
+      "skm2-c17-wake-de-wa-nai::s-skm2-17-wake-1",
+      "skm2-c17-wake-de-wa-nai::s-skm2-17-wake-2",
+      "skm2-c17-wake-de-wa-nai::s-skm2-17-wake-3"
+    ],
+    "quizCount": 1,
+    "missingUses": [],
+    "dimensions": {
+      "meaning": true,
+      "attachment": true,
+      "nuance": true,
+      "practice": true
+    },
+    "evidenceNotes": "Substantive instruction and dedicated practice implemented. Physical scan identified: Shin Kanzen Master N2 Chapter 17 (pp. 78-81 / PDF pp. 88-91). Implemented as standalone card [skm2-c17-wake-de-wa-nai] in studyPoints.json and bookSkmN2.ts with 3 authentic example sentences and practice exercise skm2-c17-ex-wake."
+  },
+  {
+    "id": "skm2-c14-hanmen",
+    "title": "〜反面 (On the Flip Side: Coexisting Duality in the Same Entity)",
+    "level": "N2",
+    "book": "Shin Kanzen Master N2",
+    "chapter": "C14",
+    "sourceReference": "Shin Kanzen Master N2 skm2-c14-hanmen",
+    "reviewStatus": "reopened",
+    "distinctUses": [
+      "Core construction",
+      "Syntactic restrictions and nuances"
+    ],
+    "exampleCount": 3,
+    "exampleIds": [
+      "skm2-c14-hanmen::s-skm2-14-hanmen-1",
+      "skm2-c14-hanmen::s-skm2-14-hanmen-2",
+      "skm2-c14-hanmen::s-skm2-14-hanmen-3"
+    ],
+    "quizCount": 1,
+    "missingUses": [],
+    "dimensions": {
+      "meaning": true,
+      "attachment": true,
+      "nuance": true,
+      "practice": true
+    },
+    "evidenceNotes": "Substantive instruction and dedicated practice implemented. Physical scan identified: Shin Kanzen Master N2 Chapter 14 (pp. 64-67 / PDF pp. 74-77). Implemented as standalone card [skm2-c14-hanmen] in studyPoints.json and bookSkmN2.ts with 3 authentic example sentences and practice exercise skm2-c14-ex-hanmen."
   }
 ]
