@@ -24,6 +24,10 @@ export interface ChapterExerciseItem {
   correctIndex: number;
   grammarPointId: string;
   grammarPointTitle: string;
+  provenance?: 'source-derived' | 'adapted' | 'original';
+  sourceEvidence?: string;
+  reconstructedSentence?: string;
+  scrambleOrder?: number[];
   explanation: {
     overall: string;
     options: {
@@ -425,9 +429,32 @@ export const ChapterPracticeView: React.FC<Props> = ({
             <div className="p-6 rounded-lg border border-[#dfded3] bg-[#fffef9] shadow-xs space-y-5">
               {/* Question Number and Hint Toggle */}
               <div className="flex items-center justify-between text-xs text-[#788278]">
-                <span className="font-semibold uppercase tracking-wider text-[#467b6b]">
-                  Question {currentIndex + 1}
-                </span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-semibold uppercase tracking-wider text-[#467b6b]">
+                    Question {currentIndex + 1}
+                  </span>
+
+                  {currentExercise.type === 'star-mark' && (
+                    <span className="px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-[#fff2cc] text-[#855a00] border border-[#ffe599] rounded">
+                      ★ Star-Mark (文の組み立て)
+                    </span>
+                  )}
+
+                  {currentExercise.provenance && (
+                    <span
+                      className={`px-1.5 py-0.5 text-[10px] font-medium rounded border ${
+                        currentExercise.provenance === 'source-derived'
+                          ? 'bg-[#e8f4f8] text-[#1b4965] border-[#b8d8e8]'
+                          : currentExercise.provenance === 'adapted'
+                          ? 'bg-[#f3eef8] text-[#5e35b1] border-[#d1c4e9]'
+                          : 'bg-[#f5f5f5] text-[#555] border-[#ddd]'
+                      }`}
+                      title={currentExercise.sourceEvidence || undefined}
+                    >
+                      {currentExercise.provenance === 'source-derived' ? 'Textbook Drill' : currentExercise.provenance === 'adapted' ? 'Adapted Drill' : 'Diagnostic Drill'}
+                    </span>
+                  )}
+                </div>
 
                 {currentExercise.hint && !isCurrentRevealed && (
                   <button
@@ -439,6 +466,14 @@ export const ChapterPracticeView: React.FC<Props> = ({
                   </button>
                 )}
               </div>
+
+              {/* Star-Mark Rearrangement Notice */}
+              {currentExercise.type === 'star-mark' && (
+                <div className="text-xs text-[#6e5414] bg-[#fef9e7] px-3.5 py-2 rounded border border-[#fae5a7] flex items-center gap-1.5">
+                  <span className="font-bold">★ Instructions:</span>
+                  <span>Rearrange the 4 scrambled parts into correct grammatical sequence. Select the option that belongs in the ★ position.</span>
+                </div>
+              )}
 
               {/* Opt-in Hint Display (Irreversibly marks attempt as assisted) */}
               {showHint[currentExercise.id] && !isCurrentRevealed && (
@@ -573,6 +608,37 @@ export const ChapterPracticeView: React.FC<Props> = ({
                       <span>Review Lesson: {currentExercise.grammarPointTitle?.split(' (')[0] || 'Lesson'}</span>
                     </button>
                   </div>
+
+                  {/* Reconstructed Sentence for Star-Mark Exercises */}
+                  {currentExercise.type === 'star-mark' && currentExercise.reconstructedSentence && (
+                    <div className="p-3.5 rounded bg-[#f1f6f3] text-[#244234] border border-[#bcd3c4] space-y-2">
+                      <div className="font-bold text-[11px] uppercase tracking-wider flex items-center gap-1.5 text-[#3b6b55]">
+                        <span>★ Reconstructed Complete Sentence</span>
+                      </div>
+                      <p className="font-serif-ja text-base sm:text-lg font-bold text-[#1e2d26] leading-relaxed">
+                        <AnnotatedText text={currentExercise.reconstructedSentence} />
+                      </p>
+                      {Array.isArray(currentExercise.scrambleOrder) && (
+                        <div className="text-xs text-[#3b6b55] flex items-center gap-1.5 flex-wrap pt-1 border-t border-[#d5e5db]">
+                          <span className="font-semibold">Correct sequence:</span>
+                          {currentExercise.scrambleOrder.map((pos, idx) => (
+                            <span key={idx} className="flex items-center gap-1">
+                              <span
+                                className={`px-2 py-0.5 rounded font-bold text-xs ${
+                                  idx === 2
+                                    ? 'bg-[#ffe082] text-[#6d4c00] border border-[#ffca28]'
+                                    : 'bg-white text-[#2e4d3a] border border-[#cfded0]'
+                                }`}
+                              >
+                                Choice {pos} {idx === 2 ? '(★ Correct Answer)' : ''}
+                              </span>
+                              {idx < 3 && <span className="text-[#88a394]">→</span>}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
 
                   {/* Overall Sentence Rationale */}
                   <div className="p-3 rounded bg-[#fbf8f0] text-[#5c4a28] border border-[#d8d0ba]">
