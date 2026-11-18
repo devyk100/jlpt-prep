@@ -52,8 +52,12 @@ def walk(value):
   for k,v in value.items():
    if k not in ['tokens','id','tags','sourceReference','book','chapter','streamId','streamName']:walk(v)
 walk(points)
-# Include text in legacy table source; Japanese spans need no TS parsing.
-spans.update(pattern.findall((ROOT/'src/data/mugUpTables.ts').read_text(encoding='utf8')))
+if (ROOT/'src/data/chapterExercises.json').exists():
+ walk(json.loads((ROOT/'src/data/chapterExercises.json').read_text(encoding='utf8')))
+if (ROOT/'src/data/mugUpTables.json').exists():
+ walk(json.loads((ROOT/'src/data/mugUpTables.json').read_text(encoding='utf8')))
+if (ROOT/'src/data/mugUpTables.ts').exists():
+ spans.update(pattern.findall((ROOT/'src/data/mugUpTables.ts').read_text(encoding='utf8')))
 unknown=collections.Counter(); annotation={}; overridekeys=sorted((k for k in overrides if k not in {"られ"}),key=len,reverse=True)
 def segment(text):
  out=[];i=0

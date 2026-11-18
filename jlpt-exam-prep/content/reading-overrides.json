@@ -1,4 +1,12 @@
 {
+  "睡眠不足": [
+    "すいみんふそく",
+    "lack of sleep; sleep deprivation"
+  ],
+  "褒": [
+    "ほ",
+    "praise (stem of 褒める)"
+  ],
   "富士山": [
     "ふじさん",
     "Mount Fuji"
@@ -766,5 +774,773 @@
   "枚": [
     "まい",
     "counter for flat objects (sheets, stamps, tickets)"
-  ]
+  ],
+  "登れる": [
+    "のぼれる",
+    "can climb; be able to climb (potential form of 登る)"
+  ],
+  "買える": [
+    "かえる",
+    "can buy; be able to buy (potential form of 買う)"
+  ],
+  "インド人": [
+    "いんどじん",
+    "Indian (person)"
+  ],
+  "十人": [
+    "じゅうにん",
+    "10 people"
+  ],
+  "村上": [
+    "むらかみ",
+    "Murakami (Japanese surname)"
+  ],
+  "春樹": [
+    "はるき",
+    "Haruki (Japanese given name)"
+  ],
+  "烏龍": [
+    "うーろん",
+    "oolong"
+  ],
+  "烏龍茶": [
+    "うーろんちゃ",
+    "oolong tea"
+  ],
+  "一学期": [
+    "いちがっき",
+    "one semester; first term"
+  ],
+  "悟空": {
+    "reading": "ごくう",
+    "meaning": "Goku (mythological hero / character)"
+  },
+  "取らさ": {
+    "reading": "とらさ",
+    "meaning": "be made to take (causative-passive stem of 取る)"
+  },
+  "洗わさ": {
+    "reading": "あらわさ",
+    "meaning": "be made to wash (causative-passive stem of 洗う)"
+  },
+  "行かさ": {
+    "reading": "いかさ",
+    "meaning": "be made to go (causative-passive stem of 行く)"
+  },
+  "買わさ": {
+    "reading": "かわさ",
+    "meaning": "be made to buy (causative-passive stem of 買う)"
+  },
+  "転職先": {
+    "reading": "てんしょくさき",
+    "meaning": "next job / new workplace"
+  },
+  "試験会場": {
+    "reading": "しけんかいじょう",
+    "meaning": "examination venue / test site"
+  },
+  "強豪校": {
+    "reading": "きょうごうこう",
+    "meaning": "powerhouse school / powerhouse sports team"
+  },
+  "守秘義務": {
+    "reading": "しゅひぎむ",
+    "meaning": "confidentiality obligation / duty of secrecy"
+  },
+  "無駄遣い": {
+    "reading": "むだづかい",
+    "meaning": "wasteful spending / squandering"
+  },
+  "放っておいて": {
+    "reading": "ほっておいて",
+    "meaning": "leaving unattended / neglecting"
+  },
+  "放っておいては": {
+    "reading": "ほっておいては",
+    "meaning": "if left unattended"
+  },
+  "反実": {
+    "reading": "はんじつ",
+    "meaning": "counterfactual / contrary to fact"
+  },
+  "勝てる": {
+    "reading": "かてる",
+    "meaning": "can win / able to win"
+  },
+  "箱": {
+    "reading": "はこ",
+    "meaning": "box"
+  },
+  "古文書": {
+    "reading": "こもんじょ",
+    "meaning": "ancient document / historic archives"
+  },
+  "腸内環境": {
+    "reading": "ちょうないかんきょう",
+    "meaning": "intestinal environment / gut flora"
+  },
+  "発酵食品": {
+    "reading": "はっこうしょくひん",
+    "meaning": "fermented food products"
+  },
+  "深海": {
+    "reading": "しんかい",
+    "meaning": "deep sea / ocean depths"
+  },
+  "龍": {
+    "reading": "りゅう",
+    "meaning": "dragon"
+  },
+  "学術的": {
+    "reading": "がくじゅつてき",
+    "meaning": "academic / scholarly"
+  },
+  "中川": {
+    "reading": "なかがわ",
+    "meaning": "Nakagawa (surname)"
+  },
+  "佐藤": {
+    "reading": "さとう",
+    "meaning": "Sato (surname)"
+  },
+  "評価制度": {
+    "reading": "ひょうかせいど",
+    "meaning": "evaluation system / appraisal system"
+  },
+  "長期出張": {
+    "reading": "ちょうきしゅっちょう",
+    "meaning": "extended business trip"
+  },
+  "高橋": {
+    "reading": "たかはし",
+    "meaning": "Takahashi (surname)"
+  },
+  "横領": {
+    "reading": "おうりょう",
+    "meaning": "embezzlement / misappropriation"
+  },
+  "総料理長": {
+    "reading": "そうりょうりちょう",
+    "meaning": "executive chef / head chef"
+  },
+  "三ツ星": {
+    "reading": "みつぼし",
+    "meaning": "three-star"
+  },
+  "先約": {
+    "reading": "せんやく",
+    "meaning": "previous engagement / prior appointment"
+  },
+  "不合格": {
+    "reading": "ふごうかく",
+    "meaning": "failure (in an examination)"
+  },
+  "滑れる": {
+    "reading": "すべれる",
+    "meaning": "can slide / can ski"
+  },
+  "丁寧形": {
+    "reading": "ていねいけい",
+    "meaning": "polite form"
+  },
+  "逞しく": {
+    "reading": "たくましく",
+    "meaning": "robustly / strongly / vigorously"
+  },
+  "注射針": {
+    "reading": "ちゅうしゃばり",
+    "meaning": "injection needle / hypodermic needle"
+  },
+  "開拓": {
+    "reading": "かいたく",
+    "meaning": "pioneering / opening up new markets"
+  },
+  "閲覧": {
+    "reading": "えつらん",
+    "meaning": "inspection / perusal / viewing records"
+  },
+  "司会": {
+    "reading": "しかい",
+    "meaning": "master of ceremonies / moderation"
+  },
+  "顔色": {
+    "reading": "かおいろ",
+    "meaning": "facial complexion"
+  },
+  "身体的": {
+    "reading": "しんたいてき",
+    "meaning": "physical / bodily"
+  },
+  "来館者": {
+    "reading": "らいかんしゃ",
+    "meaning": "visitors / museum patrons"
+  },
+  "気象庁": {
+    "reading": "きしょうちょう",
+    "meaning": "Japan Meteorological Agency"
+  },
+  "未明": {
+    "reading": "みめい",
+    "meaning": "early dawn / before daybreak"
+  },
+  "看板": {
+    "reading": "かんばん",
+    "meaning": "signboard / billboard"
+  },
+  "目先": {
+    "reading": "めさき",
+    "meaning": "near future / immediate short-term"
+  },
+  "購入率": {
+    "reading": "こうにゅうりつ",
+    "meaning": "purchase rate"
+  },
+  "急上昇": {
+    "reading": "きゅうじょうしょう",
+    "meaning": "rapid surge / sharp rise"
+  },
+  "指示文書": {
+    "reading": "しじぶんしょ",
+    "meaning": "written instructions / directives"
+  },
+  "試合中": {
+    "reading": "しあいちゅう",
+    "meaning": "during the match / during the game"
+  },
+  "生活習慣病": {
+    "reading": "せいかつしゅうかんびょう",
+    "meaning": "lifestyle disease / adult-onset illness"
+  },
+  "音程": {
+    "reading": "おんてい",
+    "meaning": "musical pitch / interval"
+  },
+  "脱字": {
+    "reading": "だつじ",
+    "meaning": "omitted character / missing letter"
+  },
+  "誤字": {
+    "reading": "ごじ",
+    "meaning": "misprint / typographical error"
+  },
+  "徹夜": {
+    "reading": "てつや",
+    "meaning": "staying up all night / night-long work"
+  },
+  "ギックリ腰": {
+    "reading": "ぎっくりごし",
+    "meaning": "strained back / acute lower back pain"
+  },
+  "鳴り響いた": {
+    "reading": "なりひびいた",
+    "meaning": "echoed loudly / rang out"
+  },
+  "応接室": {
+    "reading": "おうせつしつ",
+    "meaning": "reception room / parlor"
+  },
+  "突き当たり": {
+    "reading": "つきあたり",
+    "meaning": "end of the corridor / dead end"
+  },
+  "社外": {
+    "reading": "しゃがい",
+    "meaning": "outside the company / external clients"
+  },
+  "美化語": {
+    "reading": "びかご",
+    "meaning": "beautified speech / refined language"
+  },
+  "飯し": {
+    "reading": "はんし",
+    "meaning": "eat a meal (colloquial)"
+  },
+  "暴風雨": {
+    "reading": "ぼうふうう",
+    "meaning": "rainstorm / windstorm"
+  },
+  "根元": {
+    "reading": "ねもと",
+    "meaning": "root / base of tree"
+  },
+  "未熟者": {
+    "reading": "みじゅくもの",
+    "meaning": "novice / greenhorn / inexperienced person"
+  },
+  "口ずさんで": {
+    "reading": "くちずさんで",
+    "meaning": "humming / singing to oneself"
+  },
+  "流し": {
+    "reading": "ながし",
+    "meaning": "sink (kitchen)"
+  },
+  "ヒット曲": {
+    "reading": "ひっときょく",
+    "meaning": "hit song / smash-hit tune"
+  },
+  "招聘": {
+    "reading": "しょうへい",
+    "meaning": "invitation / summoning a guest"
+  },
+  "文豪": {
+    "reading": "ぶんごう",
+    "meaning": "literary giant / master writer"
+  },
+  "雑煮": {
+    "reading": "ぞうに",
+    "meaning": "zoni / new year soup with mochi"
+  },
+  "内向的": {
+    "reading": "ないこうてき",
+    "meaning": "introverted / quiet"
+  },
+  "消費動向": {
+    "reading": "しょうひどうこう",
+    "meaning": "consumer spending trends"
+  },
+  "鉄道網": {
+    "reading": "てつどうもう",
+    "meaning": "railway network"
+  },
+  "麻痺": {
+    "reading": "まひ",
+    "meaning": "paralysis / gridlock"
+  },
+  "仕立て": {
+    "reading": "じたて",
+    "meaning": "prepared with / tailored / flavored with"
+  },
+  "夏目": {
+    "reading": "なつめ",
+    "meaning": "Natsume (surname)"
+  },
+  "漱石": {
+    "reading": "そうせき",
+    "meaning": "Soseki (given name of novelist)"
+  },
+  "坊っ": {
+    "reading": "ぼっ",
+    "meaning": "young master (Botchan)"
+  },
+  "赤の他人": {
+    "reading": "あかのたにん",
+    "meaning": "complete stranger / total outsider"
+  },
+  "口座番号": {
+    "reading": "こうざばんごう",
+    "meaning": "bank account number"
+  },
+  "一桁": {
+    "reading": "ひとけた",
+    "meaning": "single digit / one column"
+  },
+  "小刻み": {
+    "reading": "こざみ",
+    "meaning": "in small rapid increments / finely trembling"
+  },
+  "流れ星": {
+    "reading": "ながれぼし",
+    "meaning": "shooting star / meteor"
+  },
+  "電柱": {
+    "reading": "でんちゅう",
+    "meaning": "utility pole / telephone pole"
+  },
+  "有機野菜": {
+    "reading": "ゆうきやさい",
+    "meaning": "organic vegetables"
+  },
+  "有形物": {
+    "reading": "ゆうけいぶつ",
+    "meaning": "tangible entity / physical object"
+  },
+  "年前": {
+    "reading": "ねんまえ",
+    "meaning": "years ago"
+  },
+  "振込先": {
+    "reading": "ふりこみさき",
+    "meaning": "transfer destination / payee account"
+  },
+  "初詣": {
+    "reading": "はつもうで",
+    "meaning": "first shrine visit of the New Year"
+  },
+  "湧き水": {
+    "reading": "わきみず",
+    "meaning": "spring water / natural wellspring"
+  },
+  "澄み切って": {
+    "reading": "すみきって",
+    "meaning": "crystal clear / serene and pure"
+  },
+  "望遠鏡": {
+    "reading": "ぼうえんきょう",
+    "meaning": "telescope"
+  },
+  "改装工事": {
+    "reading": "かいそうこうじ",
+    "meaning": "renovation work / remodeling"
+  },
+  "日差し": {
+    "reading": "ひざし",
+    "meaning": "sunlight / rays of the sun"
+  },
+  "聞き取れる": {
+    "reading": "ききとれる",
+    "gloss": "to be able to catch/hear/understand (spoken words)"
+  },
+  "ご承知": {
+    "reading": "ごしょうち",
+    "gloss": "knowing, awareness (humble/polite)"
+  },
+  "義務違反": {
+    "reading": "ぎむいはん",
+    "gloss": "breach of obligation, violation of duty"
+  },
+  "心理的抵抗": {
+    "reading": "しんりてきていこう",
+    "gloss": "psychological resistance / reluctance"
+  },
+  "利用実績": {
+    "reading": "りようじっせき",
+    "gloss": "track record of use, usage history"
+  },
+  "能力的": {
+    "reading": "のうりょくてき",
+    "gloss": "capacity-related, capability-wise"
+  },
+  "向": {
+    "reading": "むき",
+    "gloss": "facing, direction, tendency"
+  },
+  "中立的": {
+    "reading": "ちゅうりつてき",
+    "gloss": "neutral"
+  },
+  "付け加わる": {
+    "reading": "つけくわわる",
+    "gloss": "to be added, to be joined"
+  },
+  "整い": {
+    "reading": "ととのい",
+    "gloss": "readiness, being put in order"
+  },
+  "思いがけ": {
+    "reading": "おもいがけ",
+    "gloss": "unexpected, unforeseen"
+  },
+  "兼ね備わっ": {
+    "reading": "かねそなわっ",
+    "gloss": "to possess both, to combine"
+  },
+  "防寒着": {
+    "reading": "ぼうかんぎ",
+    "gloss": "warm clothing, winter outerwear"
+  },
+  "メモ帳": {
+    "reading": "めもちょう",
+    "gloss": "memo pad, notepad"
+  },
+  "導け": {
+    "reading": "みちびけ",
+    "gloss": "to be able to guide/lead/derive"
+  },
+  "一概": {
+    "reading": "いちがい",
+    "gloss": "unconditionally, as a rule, sweepingly"
+  },
+  "貫け": {
+    "reading": "つらぬけ",
+    "gloss": "to be able to carry through, to pierce"
+  },
+  "行える": {
+    "reading": "おこなえる",
+    "gloss": "to be able to carry out / perform"
+  },
+  "節内": {
+    "reading": "せつない",
+    "gloss": "inside a clause, intra-clausal"
+  },
+  "攻略法": {
+    "reading": "こうりゃくほう",
+    "gloss": "strategy, solving methodology"
+  },
+  "新年度": {
+    "reading": "しんねんど",
+    "gloss": "new fiscal/academic year"
+  },
+  "節末": {
+    "reading": "せつまつ",
+    "gloss": "end of a clause, clause-final position"
+  },
+  "電子レンジ": {
+    "reading": "でんしれんじ",
+    "gloss": "microwave oven"
+  },
+  "戻せる": {
+    "reading": "もどせる",
+    "gloss": "can return, can restore"
+  },
+  "情緒的": {
+    "reading": "じょうちょてき",
+    "gloss": "emotional, sentimental"
+  },
+  "身近": {
+    "reading": "みぢか",
+    "gloss": "near oneself, close at hand, familiar"
+  },
+  "交通アクセス": {
+    "reading": "こうつうあくせす",
+    "gloss": "transportation access, transit links"
+  },
+  "次文": {
+    "reading": "じぶん",
+    "gloss": "subsequent sentence, following sentence"
+  },
+  "省エネ": {
+    "reading": "しょうえね",
+    "gloss": "energy conservation, energy-saving"
+  },
+  "論説文": {
+    "reading": "ろんせつぶん",
+    "gloss": "editorial, argumentative essay"
+  },
+  "重要課題": {
+    "reading": "じゅうようかだい",
+    "gloss": "crucial task, key challenge"
+  },
+  "降": {
+    "reading": "ふ",
+    "gloss": "fall (rain/snow), precipitation stem"
+  },
+  "パン屋": {
+    "reading": "ぱんや",
+    "gloss": "bakery, baker"
+  },
+  "事務手続き": {
+    "reading": "じむてつづき",
+    "gloss": "administrative formalities, clerical procedures"
+  },
+  "大行事": {
+    "reading": "だいぎょうじ",
+    "gloss": "grand event, major ceremony"
+  },
+  "沿い": {
+    "reading": "ぞい",
+    "gloss": "along (e.g. coast, river, border)"
+  },
+  "範囲指定": {
+    "reading": "はんいしてい",
+    "gloss": "scope designation, range definition"
+  },
+  "海外旅行保険": {
+    "reading": "かいがいりょこうほけん",
+    "gloss": "overseas travel insurance"
+  },
+  "ワゴン車": {
+    "reading": "わごんしゃ",
+    "gloss": "station wagon, van"
+  },
+  "真っ": {
+    "reading": "まっ",
+    "gloss": "pure, true, right (intensifying prefix)"
+  },
+  "駐車場料金": {
+    "reading": "ちゅうしゃじょうりょうきん",
+    "gloss": "parking fees, parking charge"
+  },
+  "老職": {
+    "reading": "ろうしょく",
+    "gloss": "elderly artisan, veteran craftsman"
+  },
+  "履き心地": {
+    "reading": "はきごこち",
+    "gloss": "comfort of shoes, fit of footwear"
+  },
+  "シニア層": {
+    "reading": "しにあそう",
+    "gloss": "senior demographic, seniors"
+  },
+  "住宅ローン": {
+    "reading": "じゅうたくろーん",
+    "gloss": "home mortgage, housing loan"
+  },
+  "プライバシー保護": {
+    "reading": "ぷらいばしーほご",
+    "gloss": "privacy protection"
+  },
+  "グローバル化": {
+    "reading": "ぐろーばるか",
+    "gloss": "globalization"
+  },
+  "緊急性": {
+    "reading": "きんきゅうせい",
+    "gloss": "urgency, pressing need"
+  },
+  "驚天": {
+    "reading": "きょうてん",
+    "gloss": "astounding the heavens (惊天)"
+  },
+  "動地": {
+    "reading": "どうち",
+    "gloss": "shaking the earth (动地)"
+  },
+  "大ヒット": {
+    "reading": "だいひっと",
+    "gloss": "huge hit, smash success"
+  },
+  "全社員": {
+    "reading": "ぜんしゃいん",
+    "gloss": "all company employees, entire workforce"
+  },
+  "マイナス面": {
+    "reading": "まいなすめん",
+    "gloss": "negative aspect, downside"
+  },
+  "心理的負荷": {
+    "reading": "しんりてきふか",
+    "gloss": "psychological burden, mental load"
+  },
+  "提出書類": {
+    "reading": "ていしゅつしょるい",
+    "gloss": "documents to submit, submitted papers"
+  },
+  "白鳥山": {
+    "reading": "しらとりやま",
+    "gloss": "Mount Shiratori (Swan Mountain)"
+  },
+  "作れる": {
+    "reading": "つくれる",
+    "gloss": "can make, can produce"
+  },
+  "複数犯": {
+    "reading": "ふくすうはん",
+    "gloss": "multiple perpetrators, crime by several culprits"
+  },
+  "励": {
+    "reading": "はげ",
+    "gloss": "encouragement stem (励ます/励まし)"
+  },
+  "状況下": {
+    "reading": "じょうきょうか",
+    "gloss": "under circumstances, under conditions"
+  },
+  "懲戒解雇": {
+    "reading": "ちょうかいかいこ",
+    "gloss": "disciplinary dismissal, punitive discharge"
+  },
+  "災害時": {
+    "reading": "さいがいじ",
+    "gloss": "time of disaster, emergency occurrence"
+  },
+  "サ変": {
+    "reading": "さへん",
+    "gloss": "sa-hen irregular verb conjugation"
+  },
+  "打ち": {
+    "reading": "うち",
+    "gloss": "prefix indicating striking or negation (打ち消し)"
+  },
+  "大雪警報": {
+    "reading": "おおゆきけいほう",
+    "gloss": "heavy snow warning"
+  },
+  "古典助動詞": {
+    "reading": "こてんじょどうし",
+    "gloss": "classical auxiliary verb"
+  },
+  "典助": {
+    "reading": "てんじょ",
+    "gloss": "classical auxiliary element"
+  },
+  "逆接的": {
+    "reading": "ぎゃくせつてき",
+    "gloss": "adversative, concessive"
+  },
+  "三代": {
+    "reading": "さんだい",
+    "gloss": "three major categories, three generations"
+  },
+  "春告げ": {
+    "reading": "はるつげ",
+    "gloss": "harbinger of spring"
+  },
+  "鶴翼": {
+    "reading": "かくよく",
+    "gloss": "crane wings (formation/shape)"
+  },
+  "固定的": {
+    "reading": "こていてき",
+    "gloss": "fixed, stereotyped"
+  },
+  "基本ルール": {
+    "reading": "きほんるーる",
+    "gloss": "basic rule, ground rule"
+  },
+  "道断": {
+    "reading": "どうだん",
+    "gloss": "unspeakable, outrageous (part of 言語道断)"
+  },
+  "言語道断": {
+    "reading": "ごんごどうだん",
+    "gloss": "outrageous, preposterous, scandalous"
+  },
+  "嵐山": {
+    "reading": "あらしやま",
+    "gloss": "Arashiyama (scenic area in Kyoto)"
+  },
+  "電子メール": {
+    "reading": "でんしめーる",
+    "gloss": "electronic mail, email"
+  },
+  "人事権": {
+    "reading": "じんじけん",
+    "gloss": "personnel authority, HR rights"
+  },
+  "行わさ": {
+    "reading": "おこなわさ",
+    "gloss": "forced to conduct stem (行わされる)"
+  },
+  "付き合わさ": {
+    "reading": "つきあわさ",
+    "gloss": "forced to keep company stem (付き合わされる)"
+  },
+  "ピンク色": {
+    "reading": "ぴんくいろ",
+    "gloss": "pink color"
+  },
+  "餃子": {
+    "reading": "ぎょうざ",
+    "gloss": "gyoza, pan-fried dumplings"
+  },
+  "数量詞": {
+    "reading": "すうりょうし",
+    "gloss": "numeral classifier, counter word"
+  },
+  "量詞": {
+    "reading": "りょうし",
+    "gloss": "classifier, counter word"
+  },
+  "先進的": {
+    "reading": "せんしんてき",
+    "gloss": "advanced, cutting-edge"
+  },
+  "業務日報": {
+    "reading": "ぎょうむにっぽう",
+    "gloss": "daily work report, business daily log"
+  },
+  "最先端技術": {
+    "reading": "さいせんたんぎじゅつ",
+    "gloss": "state-of-the-art technology, leading-edge tech"
+  },
+  "従来品": {
+    "reading": "じゅうらいひん",
+    "gloss": "conventional product, existing model"
+  },
+  "鳥海山": {
+    "reading": "ちょうかいさん",
+    "gloss": "Mount Chokai (volcano in Tohoku)"
+  }
 }

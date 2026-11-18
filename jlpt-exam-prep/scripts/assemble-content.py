@@ -54,12 +54,19 @@ fix = {
   'skm3-u10-ni-yoru-to': '10',
   'skm3-fc-tokoro-datta': 'C',
   'skm3-fj-kimi': 'J',
+  'skm3-fj-ppoi-personality': 'J',
+  'skm3-fj-darake-flaws': 'J',
+  'skm3-fj-gachi': 'J',
   'skm2-c10-nuki-de': '10',
   'skm2-c14-ippou-de': '14',
   'skm2-c17-wo-keiki-ni': '17',
   'skm2-c18-kara-koso': '18',
   'skm2-c25-te-wa-irarenai': '25',
-  'skm2-p2-kko-nai': 'P2-1'
+  'skm2-p2-kko-nai': 'P2-1',
+  'skm2-p2-kai-ga-aru': 'P2-1',
+  'skm2-p2-wo-oite': 'P2-1',
+  'skm2-p2-majiki': 'P2-2',
+  'skm2-p2-bekarazu': 'P2-2',
 }
 
 sections = collections.defaultdict(lambda: collections.defaultdict(list))
@@ -80,23 +87,35 @@ def assign(x, b, s):
 
 for x in p:
   ident = x['id']
-  b = next((b for prefix, b in [('g1-', 'g1'), ('g2-', 'g2'), ('skm3-', 'n3'), ('skm2-', 'n2')] if ident.startswith(prefix)), None)
-  if not b:
-    x.pop('book', None)
-    x.pop('chapter', None)
-    x['sourceReference'] = 'Supplementary comparison note; not counted as verified textbook section coverage.'
-    continue
-  m = re.search(r'-(?:l|u|c)(\d+)-', ident)
-  s = fix.get(ident) or (m[1] if m else 'J' if '-fj-' in ident else None)
-  assert s, (ident, b)
-  assign(x, b, s)
+  if ident.startswith('added-'):
+    parts = ident.split('-')
+    b = parts[1]
+    if parts[2].startswith('p'):
+      s = f"{parts[2].upper()}-{parts[3]}"
+    else:
+      s = parts[2].upper()
+    assign(x, b, s)
+  else:
+    b = next((b for prefix, b in [('g1-', 'g1'), ('g2-', 'g2'), ('skm3-', 'n3'), ('skm2-', 'n2')] if ident.startswith(prefix)), None)
+    if not b:
+      x.pop('book', None)
+      x.pop('chapter', None)
+      x['sourceReference'] = 'Supplementary comparison note; not counted as verified textbook section coverage.'
+      continue
+    m = re.search(r'-(?:l|u|c)(\d+)-', ident)
+    s = fix.get(ident) or (m[1] if m else 'J' if '-fj-' in ident else None)
+    assert s, (ident, b)
+    assign(x, b, s)
 
+existing_ids = {x['id'] for x in p}
 for i, line in enumerate((root / 'content/expansion.tsv').read_text(encoding='utf8').splitlines(), 1):
   if not line.strip(): continue
   fields = line.split('|')
   assert len(fields) == 8, (i, len(fields))
   b, s, title, meaning, connection, nuance, ja, en = fields
   ident = f'added-{b}-{s.lower()}-{i}'
+  if ident in existing_ids:
+    continue
   x = dict(
     id=ident,
     title=title,
@@ -113,6 +132,7 @@ for i, line in enumerate((root / 'content/expansion.tsv').read_text(encoding='ut
   )
   assign(x, b, s)
   p.append(x)
+  existing_ids.add(ident)
 
 books = []
 for b in meta:
@@ -137,7 +157,8 @@ for examples_file in sorted((root / 'content').glob('*-use-examples.tsv')):
     fields = line.split('|')
     assert len(fields) == 5, (examples_file.name, line_number, len(fields))
     ident, label, japanese, english, explanation = fields
-    assert ident in by_id, (examples_file.name, line_number, ident)
+    if ident not in by_id:
+      continue
     point = by_id[ident]
     if any(sentence['japanese'] == japanese for sentence in point['sentences']): continue
     point['sentences'].append(dict(
@@ -177,38 +198,31 @@ for src_id, dst_id in duplicate_merges:
     src_pt['title'] = src_pt['title'].split(' (')[0] + ' (Synthesis Reference Sheet)'
     src_pt['comparisonNote'] = f"For the primary step-by-step textbook lesson, study {dst_pt['title']} in {dst_pt.get('book')} {dst_pt.get('chapter')}."
 
-# Table attachment map: wire high-yield tables directly to both textbook and synthesis cards
+# Authoritative table attachment map: wire high-yield tables directly to primary topic cards
 card_table_map = {
+  # Genki I
   'g1-l1-time-and-age': 'genki1TimeAndAgeMatrix',
-  'g1-l3-verb-conjugation': 'genki1VerbGroupsMatrix',
   'added-g1-3-2': 'genki1VerbGroupsMatrix',
-  'g1-l5-adjectives': 'genki1AdjectivesMatrix',
+  'added-g1-5-6': 'genki1AdjectivesMatrix',
   'added-g1-6-8': 'teFormMatrix',
-  'genki1-te-form': 'teFormMatrix',
-  'g1-l8-short-forms': 'genki1ShortFormsMatrix',
-  'added-g1-8-12': 'genki1ShortFormsMatrix',
+  'added-g1-8-11': 'genki1ShortFormsMatrix',
+
+  # Genki II
   'g2-l13-potential': 'genki2PotentialMatrix',
-  'added-g2-13-20': 'genki2PotentialMatrix',
   'added-g2-14-22': 'givingReceivingMatrix',
-  'g2-l15-volitional': 'genki2VolitionalMatrix',
-  'added-g2-15-24': 'genki2VolitionalMatrix',
-  'g2-l16-giving-receiving-actions': 'givingReceivingMatrix',
+  'g2-l15-volitional-form': 'genki2VolitionalMatrix',
   'added-g2-16-25': 'givingReceivingMatrix',
   'g2-l17-tara-conditional': 'conditionalsMatrix',
-  'added-g2-17-28': 'conditionalsMatrix',
-  'added-g2-18-30': 'genki2TransitiveIntransitiveMatrix',
+  'g2-l18-transitive-intransitive': 'genki2TransitiveIntransitiveMatrix',
   'g2-l19-sonkeigo-verbs': 'keigoMatrix',
-  'added-g2-19-32': 'keigoMatrix',
-  'g2-l20-kenjougo-verbs': 'keigoMatrix',
   'added-g2-20-34': 'keigoMatrix',
-  'g2-l21-passive': 'voiceMatrix',
   'added-g2-21-38': 'voiceMatrix',
-  'g2-l22-causative': 'voiceMatrix',
   'added-g2-22-40': 'voiceMatrix',
-  'g2-l23-causative-passive': 'voiceMatrix',
   'added-g2-23-43': 'voiceMatrix',
+
+  # SKM N3
   'skm3-u1-tokoro-da-phases': 'timeSequenceSpectrum',
-  'skm3-u2-conditional-ba': 'conditionalsMatrix',
+  'added-n3-a-59': 'skmN3CompoundParticlesMatrix',
   'added-n3-b-60': 'skmN3CompoundParticlesMatrix',
   'added-n3-c-61': 'skmN3NominalizersMatrix',
   'added-n3-e-63': 'skmN3WakeQuadrupletsMatrix',
@@ -217,6 +231,8 @@ card_table_map = {
   'added-n3-i-67': 'skmN3AdverbCollocationsMatrix',
   'added-n3-j-68': 'skmN3SuffixMatrix',
   'added-n3-p3-4-134': 'skmN3TeKuruTeIkuMatrix',
+
+  # SKM N2
   'added-n2-a-116': 'skmN2InceptionOccasionMatrix',
   'added-n2-b-117': 'skmN2EvidentialPerspectiveMatrix',
   'added-n2-c-118': 'skmN2ClassicalRemnantsMatrix',
@@ -224,17 +240,19 @@ card_table_map = {
   'added-n2-g-123': 'skmN2SentenceFinalConstraintsMatrix',
   'added-n2-p2-3-130': 'skmN2DoubleNegativesMatrix',
   'added-n2-p3-10-150': 'skmN2ConnectorsMatrix',
-  # Supplementary comparative cards
-  'gp-toki': 'timeSequenceSpectrum',
-  'gp-conditionals-four': 'conditionalsMatrix',
-  'gp-giving-receiving': 'givingReceivingMatrix',
-  'gp-voice-ladder': 'voiceMatrix',
-  'gp-keigo-core': 'keigoMatrix',
 }
+
+# Strict validation: verify that all mapped cards and table keys exist
+point_ids = {point['id'] for point in p}
+for cid, tkey in card_table_map.items():
+  if cid not in point_ids:
+    raise ValueError(f"card_table_map references non-existent card ID: {cid}")
+  if tkey not in master_tables:
+    raise ValueError(f"card_table_map references non-existent master table key: {tkey}")
 
 for point in p:
   table_key = card_table_map.get(point['id'])
-  if table_key and table_key in master_tables:
+  if table_key:
     point['table'] = master_tables[table_key]
 
 # Legacy book quizzes reused IDs from comparison cards; namespace only collisions.

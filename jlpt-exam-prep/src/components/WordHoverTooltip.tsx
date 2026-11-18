@@ -36,8 +36,8 @@ export const WordHoverTooltip: React.FC<{ token: WordToken; furiganaMode: 'all' 
   return <>
     <span role={passive ? undefined : "button"} tabIndex={passive ? undefined : 0} ref={trigger} aria-describedby={open ? id : undefined}
       onMouseEnter={show} onMouseLeave={hide} onFocus={show} onBlur={hide}
-      onKeyDown={e => { if (!passive && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); pinned.current = true; show(); } }}
-      onClick={passive ? undefined : () => { pinned.current = true; show(); }} className="inline border-b border-dotted border-[#9daa99] rounded-sm px-0.5 hover:bg-[#e7edde] focus-visible:outline-2 focus-visible:outline-[#467b6b]">
+      onKeyDown={e => { if (!passive && (e.key === "Enter" || e.key === " ")) { e.stopPropagation(); e.preventDefault(); pinned.current = true; show(); } }}
+      onClick={passive ? undefined : (e) => { e.stopPropagation(); pinned.current = true; show(); }} className="inline border-b border-dotted border-[#9daa99] rounded-sm px-0.5 hover:bg-[#e7edde] focus-visible:outline-2 focus-visible:outline-[#467b6b]">
       <ruby>{token.word}{reading && /[一-龯々]/u.test(token.word) && furiganaMode === 'all' && <rt className="text-[0.45em] font-normal tracking-normal">{token.reading}</rt>}</ruby>
     </span>
     {open && createPortal(<div ref={popup} id={id} role="tooltip" onMouseEnter={show} onMouseLeave={hide}

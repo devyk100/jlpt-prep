@@ -430,3 +430,68 @@ test('comprehensive N3 and N2 synthesis master tables and level filters in revis
   await expect(page.locator('table').first()).toBeVisible();
 });
 
+test('practice mode section 4 engineering repairs: exact chapter matching, honest empty state, attempt persistence, irreversible assistance, and touch separation', async ({ page }) => {
+  // 1. Exact chapter matching: Genki I Lesson 1 has exactly 12 questions
+  await page.goto('/practice/genki-1/Lesson%201');
+  await expect(page.getByText('1 / 12')).toBeVisible();
+  await expect(page.getByText('Question 1')).toBeVisible();
+
+  // 2. Honest unavailable state for empty/unregistered chapter
+  await page.goto('/practice/genki-1/Lesson%20999');
+  await expect(page.getByText('Genki I · Lesson 999 Practice')).toBeVisible();
+  await expect(page.getByText('Practice exercises for this specific section are currently in development')).toBeVisible();
+  const returnBtn = page.getByRole('button', { name: 'Return to Textbook Study' });
+  await expect(returnBtn).toBeVisible();
+
+  // 3. Practice attempt persistence
+  await page.goto('/practice/genki-1/Lesson%201');
+  await expect(page.getByText('1 / 12')).toBeVisible();
+
+  // Select option 1 for Question 1
+  const firstOption = page.locator('.grid button').first();
+  await firstOption.click();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+
+  // Reload page and verify state persisted
+  await page.reload();
+  await expect(page.getByText('1 / 12')).toBeVisible();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+
+  // 4. Irreversible assistance tracking
+  // Advance to Question 2
+  await page.getByRole('button', { name: /Next Question/ }).click();
+  await expect(page.getByText('2 / 12')).toBeVisible();
+
+  // Click Show Hint or Show Translation Hint
+  const hintToggle = page.locator('button').filter({ hasText: /Show Hint|Show Translation Hint/ }).first();
+  await hintToggle.click();
+  await expect(page.getByText('Assisted').first()).toBeVisible();
+
+  // Answer question 2
+  await page.locator('.grid button').first().click();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+  // Feedback must display Assisted tag
+  await expect(page.getByText('Assisted').first()).toBeVisible();
+
+  // 5. Touch lookup vs selection separation
+  // Advance to Question 3
+  await page.getByRole('button', { name: /Next Question/ }).click();
+  await expect(page.getByText('3 / 12')).toBeVisible();
+
+  // Find a word token inside an option button or question sentence
+  const wordSpan = page.locator('.grid button').first().locator('ruby').first();
+  if (await wordSpan.count() > 0) {
+    await wordSpan.click();
+    // Tooltip must appear in portal
+    const tooltip = page.locator('[role="tooltip"]');
+    await expect(tooltip).toBeVisible();
+    // Question must still NOT be answered (Sentence Rationale not visible)
+    await expect(page.getByText('Sentence Rationale')).toHaveCount(0);
+  }
+
+  // Now click the option button itself to answer
+  await page.locator('.grid button').first().click();
+  await expect(page.getByText('Sentence Rationale')).toBeVisible();
+});
+
+

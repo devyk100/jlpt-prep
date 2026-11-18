@@ -1,7 +1,5 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnnotatedText } from './AnnotatedText';
-import { orderQuestion } from '../studyUtils';
-import type { QuizOptionExplanation } from '../types';
 import {
   ArrowLeft,
   ArrowRight,
@@ -48,6 +46,49 @@ interface Props {
   onExitPractice: () => void;
 }
 
+interface StoredPracticeAttempt {
+  version: 2;
+  attemptSeed: string;
+  currentIndex: number;
+  userAnswers: Record<string, number>;
+  revealed: Record<string, boolean>;
+  showHint: Record<string, boolean>;
+  showTranslationHint: Record<string, boolean>;
+  assistedAttempts: Record<string, boolean>;
+  isCompleted: boolean;
+}
+
+// Pseudo-random number generator for stable, non-alphabetical shuffling
+function seededRandom(seed: number) {
+  let s = seed % 2147483647;
+  if (s <= 0) s += 2147483646;
+  return () => {
+    s = (s * 16807) % 2147483647;
+    return (s - 1) / 2147483646;
+  };
+}
+
+function stringToSeed(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash) || 1;
+}
+
+function computeShuffleOrder(exId: string, count: number, attemptSeed: string): number[] {
+  const seed = stringToSeed(`${attemptSeed}::${exId}`);
+  const rand = seededRandom(seed);
+  const arr = Array.from({ length: count }, (_, i) => i);
+  // Fisher-Yates shuffle
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 export const ChapterPracticeView: React.FC<Props> = ({
   exercises,
   bookTitle,
@@ -57,16 +98,45 @@ export const ChapterPracticeView: React.FC<Props> = ({
   onNavigateToLesson,
   onExitPractice
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const storageKey = `jlpt_practice_v2_${bookTitle}_${chapterTitle}`;
+
+  // Attempt state initialized from localStorage if available
+  const [attemptSeed, setAttemptSeed] = useState<string>(() => Date.now().toString());
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<Record<string, number>>({});
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [showHint, setShowHint] = useState<Record<string, boolean>>({});
   const [showTranslationHint, setShowTranslationHint] = useState<Record<string, boolean>>({});
   const [assistedAttempts, setAssistedAttempts] = useState<Record<string, boolean>>({});
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [isCompleted, setIsCompleted] = useState<boolean>(false);
 
-  // Reset question index and state when chapter changes
+  // Restore or initialize attempt on chapter change
   useEffect(() => {
+    if (exercises.length === 0) return;
+
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        const parsed: StoredPracticeAttempt = JSON.parse(saved);
+        if (parsed.version === 2 && parsed.attemptSeed) {
+          setAttemptSeed(parsed.attemptSeed);
+          setCurrentIndex(Math.min(parsed.currentIndex || 0, exercises.length - 1));
+          setUserAnswers(parsed.userAnswers || {});
+          setRevealed(parsed.revealed || {});
+          setShowHint(parsed.showHint || {});
+          setShowTranslationHint(parsed.showTranslationHint || {});
+          setAssistedAttempts(parsed.assistedAttempts || {});
+          setIsCompleted(!!parsed.isCompleted);
+          return;
+        }
+      }
+    } catch {
+      // Ignore parse failure, initialize cleanly
+    }
+
+    // New attempt
+    const newSeed = Date.now().toString();
+    setAttemptSeed(newSeed);
     setCurrentIndex(0);
     setUserAnswers({});
     setRevealed({});
@@ -74,51 +144,81 @@ export const ChapterPracticeView: React.FC<Props> = ({
     setShowTranslationHint({});
     setAssistedAttempts({});
     setIsCompleted(false);
-  }, [bookTitle, chapterTitle]);
+  }, [storageKey, exercises.length]);
+
+  // Persist attempt to localStorage on every state update
+  const persistAttempt = (
+    updated: Partial<StoredPracticeAttempt>
+  ) => {
+    try {
+      const stateToSave: StoredPracticeAttempt = {
+        version: 2,
+        attemptSeed,
+        currentIndex,
+        userAnswers,
+        revealed,
+        showHint,
+        showTranslationHint,
+        assistedAttempts,
+        isCompleted,
+        ...updated
+      };
+      localStorage.setItem(storageKey, JSON.stringify(stateToSave));
+    } catch {
+      // Storage quota or error; state still remains live
+    }
+  };
 
   const currentExercise = exercises[currentIndex];
 
-  // Shuffle options consistently
+  // Deterministic Fisher-Yates shuffle for options using attemptSeed + exercise.id
   const shuffledOptions = useMemo(() => {
     if (!currentExercise) return { options: [], correctIndex: 0, map: [] };
-    // Deterministic seed based on id
-    const opts = currentExercise.options.map((opt, origIdx) => ({
-      text: opt,
-      origIdx,
-      isCorrect: origIdx === currentExercise.correctIndex
-    }));
-    // deterministic shuffle
-    const shuffled = [...opts].sort((a, b) => (a.text > b.text ? 1 : -1));
-    const newCorrect = shuffled.findIndex(o => o.isCorrect);
+
+    const order = computeShuffleOrder(currentExercise.id, currentExercise.options.length, attemptSeed);
+    const shuffledTexts = order.map(origIdx => currentExercise.options[origIdx]);
+    const newCorrectIndex = order.indexOf(currentExercise.correctIndex);
+
     return {
-      options: shuffled.map(o => o.text),
-      correctIndex: newCorrect,
-      map: shuffled.map(o => o.origIdx)
+      options: shuffledTexts,
+      correctIndex: newCorrectIndex,
+      map: order // map[shuffledIdx] = originalIndex
     };
-  }, [currentExercise]);
+  }, [currentExercise, attemptSeed]);
 
   const handleSelectOption = (shuffledIdx: number) => {
-    if (revealed[currentExercise.id]) return;
+    if (!currentExercise || revealed[currentExercise.id]) return;
 
-    setUserAnswers(prev => ({ ...prev, [currentExercise.id]: shuffledIdx }));
-    setRevealed(prev => ({ ...prev, [currentExercise.id]: true }));
+    const nextAnswers = { ...userAnswers, [currentExercise.id]: shuffledIdx };
+    const nextRevealed = { ...revealed, [currentExercise.id]: true };
+
+    setUserAnswers(nextAnswers);
+    setRevealed(nextRevealed);
+    persistAttempt({ userAnswers: nextAnswers, revealed: nextRevealed });
   };
 
   const handleNext = () => {
     if (currentIndex < exercises.length - 1) {
-      setCurrentIndex(prev => prev + 1);
+      const nextIdx = currentIndex + 1;
+      setCurrentIndex(nextIdx);
+      persistAttempt({ currentIndex: nextIdx });
     } else {
       setIsCompleted(true);
+      persistAttempt({ isCompleted: true });
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(prev => prev - 1);
+      const prevIdx = currentIndex - 1;
+      setCurrentIndex(prevIdx);
+      persistAttempt({ currentIndex: prevIdx });
     }
   };
 
   const handleRestart = () => {
+    const freshSeed = Date.now().toString();
+    setAttemptSeed(freshSeed);
     setUserAnswers({});
     setRevealed({});
     setShowHint({});
@@ -126,6 +226,32 @@ export const ChapterPracticeView: React.FC<Props> = ({
     setAssistedAttempts({});
     setCurrentIndex(0);
     setIsCompleted(false);
+
+    try {
+      localStorage.removeItem(storageKey);
+    } catch {
+      // Ignore
+    }
+  };
+
+  const handleToggleHint = () => {
+    if (!currentExercise) return;
+    const nextShowHint = { ...showHint, [currentExercise.id]: !showHint[currentExercise.id] };
+    const nextAssisted = { ...assistedAttempts, [currentExercise.id]: true };
+
+    setShowHint(nextShowHint);
+    setAssistedAttempts(nextAssisted);
+    persistAttempt({ showHint: nextShowHint, assistedAttempts: nextAssisted });
+  };
+
+  const handleToggleTranslationHint = () => {
+    if (!currentExercise) return;
+    const nextShowTrans = { ...showTranslationHint, [currentExercise.id]: !showTranslationHint[currentExercise.id] };
+    const nextAssisted = { ...assistedAttempts, [currentExercise.id]: true };
+
+    setShowTranslationHint(nextShowTrans);
+    setAssistedAttempts(nextAssisted);
+    persistAttempt({ showTranslationHint: nextShowTrans, assistedAttempts: nextAssisted });
   };
 
   // Score calculation
@@ -135,14 +261,9 @@ export const ChapterPracticeView: React.FC<Props> = ({
     exercises.forEach(ex => {
       const chosen = userAnswers[ex.id];
       if (chosen !== undefined) {
-        // Find which original index this chosen was
-        const opts = ex.options.map((opt, origIdx) => ({
-          text: opt,
-          origIdx,
-          isCorrect: origIdx === ex.correctIndex
-        }));
-        const shuffled = [...opts].sort((a, b) => (a.text > b.text ? 1 : -1));
-        if (shuffled[chosen]?.isCorrect) {
+        const order = computeShuffleOrder(ex.id, ex.options.length, attemptSeed);
+        const originalChosen = order[chosen];
+        if (originalChosen === ex.correctIndex) {
           correct += 1;
           if (!assistedAttempts[ex.id]) {
             unassisted += 1;
@@ -151,17 +272,48 @@ export const ChapterPracticeView: React.FC<Props> = ({
       }
     });
     return { score: correct, unassistedScore: unassisted };
-  }, [exercises, userAnswers, assistedAttempts]);
+  }, [exercises, userAnswers, assistedAttempts, attemptSeed]);
 
+  // Honest Unavailable State: If no exercises exist for this chapter, display clear notice
   if (!currentExercise) {
     return (
-      <div className="flex-1 bg-white p-8 flex flex-col items-center justify-center">
-        <p className="text-sm text-[#788278]">No practice exercises found for this section yet.</p>
+      <div className="flex-1 bg-white p-8 flex flex-col items-center justify-center max-w-2xl mx-auto text-center space-y-5">
+        <div className="w-12 h-12 rounded-full bg-[#f4f2e8] flex items-center justify-center text-[#8a7f60] mb-1">
+          <BookOpen className="w-6 h-6" />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-[#1e2d26]">
+            {bookTitle} · {chapterTitle} Practice
+          </h2>
+          <p className="text-sm text-[#788278] mt-2 leading-relaxed">
+            Practice exercises for this specific section are currently in development and awaiting textbook source verification.
+          </p>
+        </div>
+
+        {availableChapters && availableChapters.length > 0 && onSelectChapter && (
+          <div className="p-4 rounded-lg bg-[#faf9f5] border border-[#dfded3] w-full text-left space-y-2 mt-2">
+            <div className="text-xs font-bold text-[#467b6b] uppercase tracking-wider">
+              Available Practice Chapters in Database:
+            </div>
+            <div className="flex flex-wrap gap-2 pt-1 max-h-48 overflow-y-auto">
+              {availableChapters.map(ch => (
+                <button
+                  key={`${ch.bookTitle}::${ch.chapter}`}
+                  onClick={() => onSelectChapter(ch.bookId, ch.chapter)}
+                  className="px-2.5 py-1.5 rounded border border-[#cfcebe] bg-white text-xs font-medium text-[#283b35] hover:bg-[#edece1] transition-colors"
+                >
+                  {ch.bookTitle} · {ch.chapter} ({ch.count} Qs)
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         <button
           onClick={onExitPractice}
-          className="mt-4 px-4 py-2 bg-[#467b6b] text-white rounded text-xs font-semibold"
+          className="px-5 py-2.5 bg-[#467b6b] hover:bg-[#386255] text-white rounded text-xs font-semibold transition-colors"
         >
-          Return to Textbook
+          Return to Textbook Study
         </button>
       </div>
     );
@@ -234,8 +386,8 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 <span className="font-bold">{exercises.length}</span> (
                 {Math.round((score / exercises.length) * 100)}%)
                 {unassistedScore < score && (
-                  <span className="block text-xs text-[#8f7142] mt-1">
-                    ({unassistedScore} answered unassisted without translation hint)
+                  <span className="block text-xs text-[#8f7142] mt-1 font-semibold">
+                    ({unassistedScore} answered unassisted without hints)
                   </span>
                 )}
               </p>
@@ -244,7 +396,7 @@ export const ChapterPracticeView: React.FC<Props> = ({
             <div className="flex items-center justify-center gap-3 pt-2">
               <button
                 onClick={handleRestart}
-                className="flex items-center gap-1.5 px-4 py-2 rounded border border-[#cfcebe] bg-white text-xs font-semibold text-[#283b35] hover:bg-[#edece1]"
+                className="flex items-center gap-1.5 px-4 py-2 rounded border border-[#cfcebe] bg-white text-xs font-semibold text-[#283b35] hover:bg-[#edece1] transition-colors"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Retry Practice</span>
@@ -252,7 +404,7 @@ export const ChapterPracticeView: React.FC<Props> = ({
 
               <button
                 onClick={onExitPractice}
-                className="flex items-center gap-1.5 px-5 py-2 rounded bg-[#467b6b] text-white text-xs font-semibold hover:bg-[#386255]"
+                className="flex items-center gap-1.5 px-5 py-2 rounded bg-[#467b6b] text-white text-xs font-semibold hover:bg-[#386255] transition-colors"
               >
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>Return to Lessons</span>
@@ -279,13 +431,8 @@ export const ChapterPracticeView: React.FC<Props> = ({
 
                 {currentExercise.hint && !isCurrentRevealed && (
                   <button
-                    onClick={() =>
-                      setShowHint(prev => ({
-                        ...prev,
-                        [currentExercise.id]: !prev[currentExercise.id]
-                      }))
-                    }
-                    className="flex items-center gap-1 text-[11px] text-[#8f7142] hover:underline"
+                    onClick={handleToggleHint}
+                    className="flex items-center gap-1 text-[11px] text-[#8f7142] hover:underline cursor-pointer"
                   >
                     <Lightbulb className="w-3 h-3" />
                     <span>{showHint[currentExercise.id] ? 'Hide Hint' : 'Show Hint'}</span>
@@ -293,16 +440,21 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 )}
               </div>
 
-              {/* Opt-in Hint Display */}
+              {/* Opt-in Hint Display (Irreversibly marks attempt as assisted) */}
               {showHint[currentExercise.id] && !isCurrentRevealed && (
-                <div className="p-3 rounded bg-[#fbf8f0] border border-[#d8d0ba] text-xs text-[#5c4a28]">
-                  <strong>Hint:</strong> {currentExercise.hint}
+                <div className="p-3 rounded bg-[#fbf8f0] border border-[#d8d0ba] text-xs text-[#5c4a28] flex items-start gap-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8f7142] bg-[#fbf3d5] px-1.5 py-0.5 rounded border border-[#d8c38a] shrink-0">
+                    Assisted
+                  </span>
+                  <div>
+                    <strong>Hint:</strong> {currentExercise.hint}
+                  </div>
                 </div>
               )}
 
-              {/* Situational Context (does NOT give away the target grammar or answer) */}
+              {/* Situational Context (Ensures question is answerable without English translation) */}
               {currentExercise.context && (
-                <div className="text-xs text-[#526359] bg-[#f5f4ed] px-3 py-1.5 rounded border border-[#dfded3]">
+                <div className="text-xs text-[#526359] bg-[#f5f4ed] px-3.5 py-2 rounded border border-[#dfded3]">
                   <span className="font-semibold text-[#283b35]">Context: </span>
                   <span>{currentExercise.context}</span>
                 </div>
@@ -318,17 +470,8 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 <div>
                   <button
                     type="button"
-                    onClick={() => {
-                      setShowTranslationHint(prev => ({
-                        ...prev,
-                        [currentExercise.id]: !prev[currentExercise.id]
-                      }));
-                      setAssistedAttempts(prev => ({
-                        ...prev,
-                        [currentExercise.id]: true
-                      }));
-                    }}
-                    className="text-xs text-[#617066] hover:text-[#283b35] underline decoration-dotted flex items-center gap-1.5 transition-colors"
+                    onClick={handleToggleTranslationHint}
+                    className="text-xs text-[#617066] hover:text-[#283b35] underline decoration-dotted flex items-center gap-1.5 transition-colors cursor-pointer"
                   >
                     <Lightbulb className="w-3.5 h-3.5 text-[#8f7142]" />
                     <span>
@@ -355,8 +498,8 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 </div>
               )}
 
-              {/* Options Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+              {/* Options Grid (Accessible non-nested option rows; word taps inside look up vocab without submitting) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2" role="group" aria-label="Answer options">
                 {shuffledOptions.options.map((opt, sIdx) => {
                   let btnStyle = 'border-[#dfded3] bg-[#faf9f5] hover:bg-[#edece1] text-[#283b35]';
 
@@ -372,17 +515,19 @@ export const ChapterPracticeView: React.FC<Props> = ({
 
                   return (
                     <button
+                      type="button"
                       key={`${currentExercise.id}-sopt-${sIdx}`}
-                      onClick={() => handleSelectOption(sIdx)}
                       disabled={isCurrentRevealed}
-                      className={`flex items-center justify-between p-3 rounded border text-left text-sm transition-colors ${btnStyle}`}
+                      aria-pressed={selectedShuffledIndex === sIdx}
+                      onClick={() => handleSelectOption(sIdx)}
+                      className={`flex items-center justify-between p-3 rounded border text-left text-sm transition-colors cursor-pointer select-none focus-visible:outline-2 focus-visible:outline-[#467b6b] ${btnStyle}`}
                     >
                       <div className="flex items-center gap-2.5">
-                        <span className="w-5 h-5 rounded bg-[#e8e7dc] flex items-center justify-center text-[11px] font-bold text-[#617066]">
+                        <span className="w-5 h-5 rounded bg-[#e8e7dc] flex items-center justify-center text-[11px] font-bold text-[#617066] shrink-0">
                           {sIdx + 1}
                         </span>
                         <span className="font-medium">
-                          <AnnotatedText text={opt} passive />
+                          <AnnotatedText text={opt} />
                         </span>
                       </div>
 
@@ -422,10 +567,10 @@ export const ChapterPracticeView: React.FC<Props> = ({
                     {/* Direct Jump Link back to Lesson */}
                     <button
                       onClick={() => onNavigateToLesson(currentExercise.grammarPointId)}
-                      className="flex items-center gap-1.5 px-3 py-1 bg-white border border-[#467b6b] text-[#2c5347] rounded font-semibold hover:bg-[#eaf4ef] transition-colors"
+                      className="flex items-center gap-1.5 px-3 py-1 bg-white border border-[#467b6b] text-[#2c5347] rounded font-semibold hover:bg-[#eaf4ef] transition-colors cursor-pointer"
                     >
                       <BookOpen className="w-3 h-3 text-[#467b6b]" />
-                      <span>Review Lesson: {currentExercise.grammarPointTitle.split(' (')[0]}</span>
+                      <span>Review Lesson: {currentExercise.grammarPointTitle?.split(' (')[0] || 'Lesson'}</span>
                     </button>
                   </div>
 
@@ -436,35 +581,43 @@ export const ChapterPracticeView: React.FC<Props> = ({
                       <span>Sentence Rationale</span>
                     </div>
                     <p className="leading-relaxed">
-                      <AnnotatedText text={currentExercise.explanation.overall} />
+                      <AnnotatedText
+                        text={
+                          typeof currentExercise.explanation === 'string'
+                            ? currentExercise.explanation
+                            : currentExercise.explanation?.overall || ''
+                        }
+                      />
                     </p>
                   </div>
 
                   {/* 4-Way Option Breakdown */}
-                  <div className="space-y-1.5">
-                    <div className="text-[10px] font-bold text-[#788278] uppercase tracking-wider">
-                      Option Breakdown
-                    </div>
+                  {Array.isArray(currentExercise.explanation?.options) && (
+                    <div className="space-y-1.5">
+                      <div className="text-[10px] font-bold text-[#788278] uppercase tracking-wider">
+                        Option Breakdown
+                      </div>
 
-                    {currentExercise.explanation.options.map((exp, origIdx) => {
-                      const isCorrect = exp.isCorrect;
-                      return (
-                        <div
-                          key={`${currentExercise.id}-exp-${origIdx}`}
-                          className={`p-2 rounded border text-xs leading-relaxed ${
-                            isCorrect
-                              ? 'bg-[#eef4ec] border-[#cfded0] text-[#2e4d3a]'
-                              : 'bg-[#faf9f5] border-[#e8e7dc] text-[#617066]'
-                          }`}
-                        >
-                          <span className="font-semibold mr-1">
-                            <AnnotatedText text={exp.text} /> — {isCorrect ? 'Correct: ' : 'Wrong: '}
-                          </span>
-                          <span><AnnotatedText text={exp.reason} /></span>
-                        </div>
-                      );
-                    })}
-                  </div>
+                      {currentExercise.explanation.options.map((exp, origIdx) => {
+                        const isCorrect = exp.isCorrect;
+                        return (
+                          <div
+                            key={`${currentExercise.id}-exp-${origIdx}`}
+                            className={`p-2 rounded border text-xs leading-relaxed ${
+                              isCorrect
+                                ? 'bg-[#eef4ec] border-[#cfded0] text-[#2e4d3a]'
+                                : 'bg-[#faf9f5] border-[#e8e7dc] text-[#617066]'
+                            }`}
+                          >
+                            <span className="font-semibold mr-1">
+                              <AnnotatedText text={exp.text} /> — {isCorrect ? 'Correct: ' : 'Wrong: '}
+                            </span>
+                            <span><AnnotatedText text={exp.reason} /></span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -477,7 +630,7 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 className={`flex items-center gap-1 px-3 py-1.5 rounded text-xs border ${
                   currentIndex === 0
                     ? 'opacity-40 border-[#dfded3] text-[#8a9485] cursor-not-allowed'
-                    : 'border-[#cfcebe] bg-[#fffef9] hover:bg-[#edece1] text-[#283b35]'
+                    : 'border-[#cfcebe] bg-[#fffef9] hover:bg-[#edece1] text-[#283b35] cursor-pointer'
                 }`}
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
@@ -490,7 +643,7 @@ export const ChapterPracticeView: React.FC<Props> = ({
                 className={`flex items-center gap-1.5 px-4 py-2 rounded text-xs font-semibold transition-all ${
                   !isCurrentRevealed
                     ? 'bg-[#d8e3dc] text-[#8a9990] cursor-not-allowed'
-                    : 'bg-[#467b6b] text-white hover:bg-[#386255] shadow-xs'
+                    : 'bg-[#467b6b] text-white hover:bg-[#386255] shadow-xs cursor-pointer'
                 }`}
               >
                 <span>{currentIndex === exercises.length - 1 ? 'Finish Assessment' : 'Next Question'}</span>

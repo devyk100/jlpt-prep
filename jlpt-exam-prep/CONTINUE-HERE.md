@@ -1,5 +1,7 @@
 # Continuation instructions: grammar accuracy repair
 
+**MANDATORY FIRST READ: [EXECUTION-CONTRACT.md](EXECUTION-CONTRACT.md).** The user requested consolidated, restrictive execution instructions after repeated failures. That contract supersedes conflicting status/priority claims below and incorporates the two latest direct reviews, reproducible defects, required repairs and completion gates. This older checkpoint is historical context, not completion evidence.
+
 Checkpoint: 2026-11-17 (Post-Supervision Round 2 Repairs & Regression Tests). Read this file first, then ACCURACY-AND-READINGS-PLAN.md. This file supersedes older progress statements in that plan. The task is an ongoing, rigorous textbook audit. Do not confuse an implemented UI, larger example count, successful build, or extracted textbook text with verified instructional accuracy across all four books.
 
 ## Scope and boundaries

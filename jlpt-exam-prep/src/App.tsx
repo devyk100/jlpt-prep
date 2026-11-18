@@ -327,12 +327,13 @@ export function App() {
     return list;
   }, []);
 
-  // Filter practice exercises for target
+  // Filter practice exercises for target (exact bookId and exact chapter match; NO fallback to unrelated exercises)
   const currentChapterExercises = useMemo(() => {
-    const matched = chapterExercises.filter(
-      ex => ex.bookId === effectivePracticeTarget.bookId && ex.chapter.toLowerCase().includes(effectivePracticeTarget.chapter.toLowerCase())
+    const targetBook = effectivePracticeTarget.bookId;
+    const targetChapter = effectivePracticeTarget.chapter.trim().toLowerCase();
+    return chapterExercises.filter(
+      ex => ex.bookId === targetBook && ex.chapter.trim().toLowerCase() === targetChapter
     );
-    return matched.length > 0 ? matched : chapterExercises;
   }, [effectivePracticeTarget]);
 
   // Aggregate available practice chapters
