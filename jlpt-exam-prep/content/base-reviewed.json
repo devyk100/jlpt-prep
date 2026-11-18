@@ -5905,8 +5905,8 @@
     "streamId": "stream-modality",
     "streamName": "Epistemic Certainty, Conviction & Duty",
     "connection": "V-た形 + らどうですか | Casual: V-た形 + らどう？ / 〜たら？",
-    "nuance": "〜たらどうですか conveys advice or a recommendation: \"Why don't you...? / How about doing...?\". Formation: Attaches to the past tense affirmative short form of a verb: V-た + らどうですか (薬を飲んだらどうですか, もっと勉強したらどうですか). Casual variants: shortened to 〜たらどう？ or simply 〜たら？ in casual speech. CRITICAL PRAGMATIC WARNING: 〜たらどうですか can carry a critical or disapproving tone, implying mild reprimand that the person has not performed the sensible action already. Avoid using it unless your opinion or advice was requested. INVITATION BAN: NEVER use 〜たらどうですか to extend an invitation (e.g. telling a friend to come over: use うちに来ませんか, NEVER *うちに来たらどうですか).",
-    "keyTakeaway": "V-た + らどうですか (Why don't you...?; advice). Can carry critical tone (avoid unsolicited). BAN ON INVITATIONS: Never use for invitations (use 〜ませんか instead).",
+    "nuance": "〜たらどうですか conveys advice or a recommendation: \"Why don't you...? / How about doing...?\". Formation: Attaches to the past tense affirmative short form of a verb: V-た + らどうですか (薬を飲んだらどうですか, もっと勉強したらどうですか). Casual variants: shortened to 〜たらどう？ or simply 〜たら？ in casual speech. PRAGMATIC USE & INVITATION CONVENTION: 〜たらどうですか focuses on advising the other person what they should do. Consequently, standard Japanese etiquette avoids using it to invite someone to do an activity together with the speaker (for invitations to join the speaker, use 〜ませんか or 〜ましょうか instead of 〜たらどうですか). It can also carry a critical or pushy tone if unsolicited, so it is best used when advice is sought.",
+    "keyTakeaway": "V-た + らどうですか (Why don't you...?; advice). Can carry critical tone if unsolicited. Avoid for mutual invitations (use 〜ませんか / 〜ましょうか instead).",
     "sentences": [
       {
         "id": "g2-l14-tara-dou-desu-ka::s-g2-14-3",
@@ -32181,8 +32181,8 @@
     "chapter": "Chapter 15: 逆接・不満・仮定条件",
     "meaning": "Expresses strong subjective reproach, frustration, or contempt: 'Despite the fact that X / Even though X, they do Y (which is blameworthy or contradictory)'.",
     "connection": "Verb/i-adj Plain form + くせに | na-adj + なくせに | Noun + のくせに",
-    "nuance": "SPEAKER'S BLAME & SAME-SUBJECT RESTRICTION: Clauses A and B must share the same subject, and the subject cannot be the speaker itself (*私は知っているくせに... is ungrammatical). Always conveys negative emotional coloring: criticism, irritation, or contempt toward the subject who fails to act appropriately given their status or knowledge. Contrast with 〜のに (neutral frustration) and 〜にもかかわらず (formal objective concession).",
-    "keyTakeaway": "MUG-UP: Plain + くせに (Nの / naな)! Same subject, speaker looks down/blames. Never for yourself!",
+    "nuance": "SPEAKER'S BLAME & USAGE TENDENCY: Expresses critical concession loaded with reproach, dissatisfaction, or contempt toward the target's demeanor: 'despite being X, blameworthy Y'. In typical standard usage, the subject of both clauses is the same person who is being criticized. Because it conveys negative emotional evaluation and reproach, speakers generally avoid using it to describe themselves in straightforward declarative assertions (except in self-reproachful or rhetorical contexts). Contrast with 〜のに (general neutral or frustrated concession) and 〜にもかかわらず (formal objective concession).",
+    "keyTakeaway": "MUG-UP: Plain + くせに (Nの / naな). Conveys speaker's reproach or dissatisfaction. Typically same subject; generally avoided for oneself in plain assertion.",
     "sentences": [
       {
         "id": "skm2-c15-kuse-ni::s-skm2-15-kuse-1",
