@@ -15289,13 +15289,13 @@
     "chapter": "Part 1 · Chapter 2",
     "type": "multiple-choice",
     "context": "Contingency planning for an outdoor festival: Explaining that in some specific circumstances, the event may be canceled.",
-    "question": "当日の天気（　　）は、花火大会が中止になることもあります。",
+    "question": "当日の天気（　　）、花火大会が中止になることもあります。",
     "translation": "Depending on the weather on that day, the fireworks festival may be canceled in some cases.",
     "options": [
       "によっては",
-      "について",
-      "に対して",
-      "にとって"
+      "については",
+      "に対しては",
+      "にとっては"
     ],
     "correctIndex": 0,
     "grammarPointId": "skm3-u2-ni-yotte-variation",
@@ -15306,25 +15306,25 @@
         {
           "text": "によっては",
           "isCorrect": true,
-          "reason": "Correct. Noun + によっては singles out a possible consequence depending on variation.",
+          "reason": "Correct. Noun + によっては singles out a possible extreme outcome depending on conditions: 「当日の天気によっては、花火大会が中止になることもあります」 (Depending on the weather on that day, the fireworks festival may be canceled).",
           "trapCategory": "formation"
         },
         {
-          "text": "について",
+          "text": "については",
           "isCorrect": false,
-          "reason": "Incorrect. について means \"concerning / about\", not contingent variation.",
+          "reason": "Incorrect. 「当日の天気については」 means \"concerning / regarding the weather on that day\", which does not express conditional variation.",
           "trapCategory": "meaning"
         },
         {
-          "text": "に対して",
+          "text": "に対しては",
           "isCorrect": false,
-          "reason": "Incorrect. に対して expresses target or contrast (\"toward / in contrast to\").",
+          "reason": "Incorrect. 「当日の天気に対しては」 expresses opposition or targeting toward the weather, not contingent variation.",
           "trapCategory": "meaning"
         },
         {
-          "text": "にとって",
+          "text": "にとっては",
           "isCorrect": false,
-          "reason": "Incorrect. にとって means \"from the standpoint of\", not causal condition.",
+          "reason": "Incorrect. 「当日の天気にとっては」 means \"from the standpoint of the weather\", which is nonsensical in this context.",
           "trapCategory": "meaning"
         }
       ]
@@ -47356,9 +47356,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Career promotion and scholarship prospects expanding based on diligent effort.",
+    "context": "Customer service desk declining inquiries regarding personal privacy.",
     "question": "お客様の個人的なプライバシーに関わるご質問には、当窓口ではお答えいたし（　）。",
-    "translation": "Depending on your efforts and attitude from here on, career paths toward promotions and study abroad will open up.",
+    "translation": "At this inquiry desk, we are unable to answer questions involving our customers' personal privacy.",
     "options": [
       "かねます",
       "かねません",
@@ -47406,9 +47406,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Severe typhoon hazards threatening metropolitan transit paralysis.",
+    "context": "Warning of tragic death from overwork if harsh prolonged overtime continues unchecked.",
     "question": "長時間の過酷な残業を放置し続ければ、従業員が過労死という最悪の事態に至り（　）。",
-    "translation": "Under the influence of the severe typhoon, public transportation across the metropolitan area risks grinding to a complete halt.",
+    "translation": "If harsh prolonged overtime is left unchecked, it could lead to the catastrophic outcome of employees dying from overwork.",
     "options": [
       "かねない",
       "かねる",
@@ -47456,9 +47456,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Project scope cuts potentially necessitated depending on fiscal constraints.",
+    "context": "Preparing legal countermeasures depending on the opposing party's maneuvers.",
     "question": "相手の出方（　）、こちらも法的な対抗措置を辞さない構えで準備を進めている。",
-    "translation": "Depending on budget constraints and scheduling, reducing the project scope might become necessary.",
+    "translation": "Depending on how the other party acts, we are making preparations with a stance of not shrinking from legal countermeasures.",
     "options": [
       "次第では",
       "恐れがある",
@@ -47506,9 +47506,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Aging bridge collapse hazards demanding urgent structural repairs.",
+    "context": "Urgent meteorological warning that rivers risk flooding due to an approaching typhoon.",
     "question": "大型で非常に強い台風が接近しており、今夜遅くから明日未明にかけて河川が氾濫する（　）。",
-    "translation": "Unless urgent repairs are made to this aging bridge, a catastrophic collapse accident risks occurring.",
+    "translation": "A very strong, large typhoon is approaching, and rivers risk overflowing from late tonight into the early hours of tomorrow.",
     "options": [
       "恐れがある",
       "次第では",
@@ -47556,9 +47556,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Transaction profit margins salvageable depending on client negotiations.",
+    "context": "Politely refusing to make a definitive commitment at the current stage in business.",
     "question": "誠に心苦しい限りですが、現段階での確約はいたし（　）ので、何卒ご容赦ください。",
-    "translation": "Depending on future negotiations with clients, securing profitability in this deal remains possible.",
+    "translation": "We truly regret it, but as we are unable to make a firm commitment at the current stage, we kindly ask for your understanding.",
     "options": [
       "かねます",
       "かねません",
@@ -47606,9 +47606,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Excessive daily overtime hours risking severe physical and mental breakdown.",
+    "context": "Warning that a careless remark could trigger an irreparable brawl.",
     "question": "不用意な一言が相手の自尊心を深く傷つけ、取り返しのつかない大喧嘩に発展し（　）。",
-    "translation": "If you continue excessive overtime every single day, you risk ruining your mental and physical health completely.",
+    "translation": "A careless remark could deeply hurt the other person's self-esteem and develop into an irreparable fierce quarrel.",
     "options": [
       "かねない",
       "かねる",
@@ -47656,9 +47656,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Fireworks festival postponement potential contingent upon weather conditions.",
+    "context": "Planning to relocate an outdoor music festival indoors depending on weather forecast trends.",
     "question": "天気予報の推移（　）、明日の野外音楽フェスティバルを屋内ホールへ変更する予定だ。",
-    "translation": "Depending on weather conditions tomorrow, the fireworks festival might be postponed to next week.",
+    "translation": "Depending on the progression of the weather forecast, we plan to move tomorrow's outdoor music festival to an indoor hall.",
     "options": [
       "次第では",
       "恐れがある",
@@ -47706,9 +47706,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Banking trust collapse hazards resulting from data breach recurrences.",
+    "context": "Warning that the medical care system risks complete collapse in the event of an explosive virus outbreak.",
     "question": "新型ウイルスの感染爆発が起これば、医療提供体制が完全に崩壊する（　）。",
-    "translation": "If financial data leaks continue, public trust in our bank risks plummeting sharply.",
+    "translation": "If an explosive outbreak of the novel virus occurs, the medical healthcare provision system risks completely collapsing.",
     "options": [
       "恐れがある",
       "次第では",
@@ -47756,9 +47756,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Early hospital discharge prospects contingent upon post-op recovery.",
+    "context": "Politely deferring an immediate answer to consult with superiors back at the office.",
     "question": "私の一存では即答いたし（　）ので、社に持ち帰って上長と協議させていただきます。",
-    "translation": "Depending on patient recovery speed after surgery, hospital discharge might be brought forward by several days.",
+    "translation": "As I am unable to answer immediately on my own discretion, please allow me to take this back to the company and consult with my supervisor.",
     "options": [
       "かねます",
       "かねません",
@@ -47806,9 +47806,9 @@
     "bookId": "skm-n2",
     "chapter": "Part 1 · Chapter 20",
     "type": "multiple-choice",
-    "context": "Volcanic pyroclastic flow hazards inflicting catastrophic human casualties.",
+    "context": "Warning that even slight negligence in inspection could cause a major aviation incident.",
     "question": "点検作業をわずかでも怠れば、航空機の運航に関わる重大インシデントを引き起こし（　）。",
-    "translation": "In regions with deficient volcanic hazard management, unforeseen pyroclastic flows risk causing immense human casualties.",
+    "translation": "If inspection work is neglected even slightly, it could cause a major safety incident involving aircraft operation.",
     "options": [
       "かねない",
       "かねる",
@@ -50157,42 +50157,42 @@
     "chapter": "Part 1 · Chapter 24",
     "type": "multiple-choice",
     "context": "Reassuring a client: since specialists will support you kindly, you do not need to worry needlessly alone.",
-    "question": "締め切りまではまだ十分な日数があるのだから、それほど焦ってパニックになる（　）。",
+    "question": "専門家が手厚くサポートしてくれるのだから、一人で余計な心配を（　）。",
     "translation": "Since specialists will kindly support you, there is no need for you to worry needlessly all by yourself.",
     "options": [
-      "ることはない",
-      "ることだ",
-      "ようではないか",
-      "るまい"
+      "することはない",
+      "することだ",
+      "しようではないか",
+      "するまい"
     ],
     "correctIndex": 0,
     "grammarPointId": "skm2-c24-koto-da",
     "grammarPointTitle": "Chapter 24: 助言・勧誘・意志",
     "explanation": {
-      "overall": "専門家がサポートしてくれるのだから「余計な心配をすることはない（必要はない）」と安心させます。",
+      "overall": "専門家がサポートしてくれるのだから「余計な心配をすることはない（する必要はない）」と相手の不安を解消して安心させます。",
       "options": [
         {
-          "text": "ることはない",
+          "text": "することはない",
           "isCorrect": true,
-          "reason": "【正解】サ変動詞「心配する」に接続し、「余計な心配をすることはない（する必要はない）」と不要を告げて安心させる表現です。",
+          "reason": "【正解】「専門家が手厚くサポートしてくれるのだから、一人で余計な心配をすることはない」となり、「〜する必要はない」と相手の不安を解消して安心させる文脈に合致します。",
           "trapCategory": ""
         },
         {
-          "text": "ることだ",
+          "text": "することだ",
           "isCorrect": false,
-          "reason": "【不正解】「心配することだ」とすると「余計な心配をしなさい」という助言になり、専門家の支援がある文脈と矛盾します。",
+          "reason": "【不正解】「一人で余計な心配をすることだ」とすると、「余計な心配をしなさい」という強い助言になり、手厚いサポートがある安心の文脈と矛盾します。",
           "trapCategory": "meaning"
         },
         {
-          "text": "ようではないか",
+          "text": "しようではないか",
           "isCorrect": false,
-          "reason": "【不正解】「心配しようではないか」という勧誘になり、心配することを勧める不自然な文になります。",
+          "reason": "【不正解】「一人で余計な心配をしようではないか」という勧誘になり、心配することを呼びかける不自然な文になります。",
           "trapCategory": "meaning"
         },
         {
-          "text": "るまい",
+          "text": "するまい",
           "isCorrect": false,
-          "reason": "【不正解】「〜まい」は話者の否定意志を表すため、相手に対する慰め・アドバイスには使えません。",
+          "reason": "【不正解】「一人で余計な心配をするまい」では話者自身の否定の意志表明になり、相手へのアドバイス・慰めの文脈には適合しません。",
           "trapCategory": "modality"
         }
       ]
@@ -50207,42 +50207,42 @@
     "chapter": "Part 1 · Chapter 24",
     "type": "multiple-choice",
     "context": "Unyielding study pledge: until I fulfill the dream of passing my target school, I will never abandon my exam studies.",
-    "question": "あの誠実な彼が、故意に仲間を陥れるような悪事を企むはずはある（　）。",
+    "question": "志望校合格の夢を果たすまで、いかなることがあろうとも受験勉強を（　）。",
     "translation": "Until I fulfill my dream of passing my target school, I will never abandon my exam studies under any circumstances.",
     "options": [
-      "すまい",
-      "すことだ",
-      "そうではないか",
-      "すことはない"
+      "投げ出すまい",
+      "投げ出すことだ",
+      "投げ出そうではないか",
+      "投げ出すことはない"
     ],
     "correctIndex": 0,
     "grammarPointId": "skm2-c24-koto-da",
     "grammarPointTitle": "Chapter 24: 助言・勧誘・意志",
     "explanation": {
-      "overall": "合格の夢を果たすまで絶対に受験勉強を投げ出さないという不退転の決意を表す「〜まい」を用います。",
+      "overall": "合格の夢を果たすまで絶対に受験勉強を投げ出さないという話者自身の固い否定の決意を表す「〜まい」を用います。",
       "options": [
         {
-          "text": "すまい",
+          "text": "投げ出すまい",
           "isCorrect": true,
-          "reason": "【正解】動詞五段「投げ出す」に接続し、「絶対に投げ出すまい（絶対に投げ出さないぞ）」と強い否定の決意を表す表現です。",
+          "reason": "【正解】動詞五段「投げ出す」に接続し、「受験勉強を投げ出すまい（絶対に投げ出さないぞ）」と話者自身の不退転の強い否定決意を表します。",
           "trapCategory": ""
         },
         {
-          "text": "すことだ",
+          "text": "投げ出すことだ",
           "isCorrect": false,
-          "reason": "【不正解】「投げ出すことだ」では「投げ出しなさい」という助言になり、合格を目指す決意の文脈と正反対になります。",
+          "reason": "【不正解】「受験勉強を投げ出すことだ」では「投げ出しなさい」という助言になり、合格を目指す決意の文脈と正反対になります。",
           "trapCategory": "meaning"
         },
         {
-          "text": "そうではないか",
+          "text": "投げ出そうではないか",
           "isCorrect": false,
-          "reason": "【不正解】「投げ出そうではないか」という勧誘になり、勉強を諦めることを勧める意味になってしまいます。",
+          "reason": "【不正解】「受験勉強を投げ出そうではないか」という勧誘になり、勉強を諦めることを周囲に呼びかける不自然な文になります。",
           "trapCategory": "meaning"
         },
         {
-          "text": "すことはない",
+          "text": "投げ出すことはない",
           "isCorrect": false,
-          "reason": "【不正解】「投げ出すことはない」は「投げ出す必要はない」という客観的な言明であり、夢に向かって自分自身を奮い立たせる主観的決意表明には「〜まい」が最適です。",
+          "reason": "【不正解】「投げ出すことはない」は「投げ出す必要はない」という客観的な不要の表現であり、自分自身を鼓舞する強い主観的決意表明には「〜まい」を用います。",
           "trapCategory": "nuance"
         }
       ]
@@ -50257,7 +50257,7 @@
     "chapter": "Part 1 · Chapter 25",
     "type": "multiple-choice",
     "context": "Severe pre-presentation anxiety causing uncontrollably rapid heartbeats.",
-    "question": "ライバル企業が画期的な新技術を発表した今、悠長に様子見など（　）。",
+    "question": "大勢の聴衆の前で発表する直前、過度の緊張で心臓がどきどきして（　）。",
     "translation": "Right before the crucial presentation, my heart was pounding so violently from extreme nerves that I could not bear it.",
     "options": [
       "たまらない",
@@ -50307,7 +50307,7 @@
     "chapter": "Part 1 · Chapter 25",
     "type": "multiple-choice",
     "context": "Deep emotional isolation returning to an empty room upon first living alone.",
-    "question": "あまりの可笑しさに、吹き出し（　）、教室中が大爆笑に包まれた。",
+    "question": "初めて一人暮らしを始めて誰もいない部屋に帰ってきた時、寂しくて（　）。",
     "translation": "When I returned to an empty room after starting to live alone for the first time, I felt uncontrollably lonely.",
     "options": [
       "ならなかった",
@@ -54992,7 +54992,7 @@
         {
           "text": "など／など",
           "isCorrect": false,
-          "reason": "【不正解】文脈として不自然です。",
+          "reason": "【不正解】「など」は名詞等の例示に用いられ、用言節を直接重ねて「〜など〜など」と不満・批判を並べ立てる列挙形式としては文法的に成立しません（不平・ケチつけの列挙には「だの／だの」を用いる）。",
           "trapCategory": "formation"
         }
       ]
