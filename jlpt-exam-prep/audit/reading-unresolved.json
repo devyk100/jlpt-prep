@@ -1,8 +1,20 @@
 [
   {
+    "word": "本問",
+    "reading": "ほんもん",
+    "base": "本問",
+    "occurrences": 21
+  },
+  {
     "word": "検査結果",
     "reading": "けんさけっか",
     "base": "検査結果",
+    "occurrences": 4
+  },
+  {
+    "word": "警告文",
+    "reading": "けいこくぶん",
+    "base": "警告文",
     "occurrences": 4
   },
   {
@@ -18,9 +30,45 @@
     "occurrences": 3
   },
   {
-    "word": "理致",
-    "reading": "りち",
-    "base": "理致",
+    "word": "引き起こし",
+    "reading": "ひきおこし",
+    "base": "引き起こし",
+    "occurrences": 3
+  },
+  {
+    "word": "言語的",
+    "reading": "げんごてき",
+    "base": "言語的",
+    "occurrences": 2
+  },
+  {
+    "word": "継続期間",
+    "reading": "けいぞくきかん",
+    "base": "継続期間",
+    "occurrences": 2
+  },
+  {
+    "word": "述定",
+    "reading": "じゅってい",
+    "base": "述定",
+    "occurrences": 2
+  },
+  {
+    "word": "複数人",
+    "reading": "ふくすうにん",
+    "base": "複数人",
+    "occurrences": 2
+  },
+  {
+    "word": "書き",
+    "reading": "かき",
+    "base": "書き",
+    "occurrences": 2
+  },
+  {
+    "word": "調査対象",
+    "reading": "ちょうさたいしょう",
+    "base": "調査対象",
     "occurrences": 2
   },
   {
@@ -42,15 +90,93 @@
     "occurrences": 2
   },
   {
+    "word": "文脈的",
+    "reading": "ぶんみゃくてき",
+    "base": "文脈的",
+    "occurrences": 2
+  },
+  {
+    "word": "都市生活",
+    "reading": "としせいかつ",
+    "base": "都市生活",
+    "occurrences": 2
+  },
+  {
+    "word": "会話体",
+    "reading": "かいわたい",
+    "base": "会話体",
+    "occurrences": 1
+  },
+  {
+    "word": "危険箇所",
+    "reading": "きけんかしょ",
+    "base": "危険箇所",
+    "occurrences": 1
+  },
+  {
+    "word": "懐疑的",
+    "reading": "かいぎてき",
+    "base": "懐疑的",
+    "occurrences": 1
+  },
+  {
+    "word": "組み込め",
+    "reading": "くみこめ",
+    "base": "組み込める",
+    "occurrences": 1
+  },
+  {
+    "word": "自立的",
+    "reading": "じりつてき",
+    "base": "自立的",
+    "occurrences": 1
+  },
+  {
+    "word": "果たせ",
+    "reading": "はたせ",
+    "base": "果たせる",
+    "occurrences": 1
+  },
+  {
+    "word": "就業状況",
+    "reading": "しゅうぎょうじょうきょう",
+    "base": "就業状況",
+    "occurrences": 1
+  },
+  {
+    "word": "自明性",
+    "reading": "じめいせい",
+    "base": "自明性",
+    "occurrences": 1
+  },
+  {
     "word": "重ね使い",
     "reading": "かさねづかい",
     "base": "重ね使い",
     "occurrences": 1
   },
   {
+    "word": "下品",
+    "reading": "げぼん",
+    "base": "下品",
+    "occurrences": 1
+  },
+  {
+    "word": "評価者",
+    "reading": "ひょうかしゃ",
+    "base": "評価者",
+    "occurrences": 1
+  },
+  {
     "word": "後接",
     "reading": "こうせつ",
     "base": "後接",
+    "occurrences": 1
+  },
+  {
+    "word": "コスト削減",
+    "reading": "こすとさくげん",
+    "base": "コスト削減",
     "occurrences": 1
   },
   {
@@ -72,21 +198,21 @@
     "occurrences": 1
   },
   {
+    "word": "体力的",
+    "reading": "たいりょくてき",
+    "base": "体力的",
+    "occurrences": 1
+  },
+  {
     "word": "動機付け",
     "reading": "どうきつけ",
     "base": "動機付け",
     "occurrences": 1
   },
   {
-    "word": "時間短縮",
-    "reading": "じかんたんしゅく",
-    "base": "時間短縮",
-    "occurrences": 1
-  },
-  {
-    "word": "勤務態度",
-    "reading": "きんむたいど",
-    "base": "勤務態度",
+    "word": "氷冷",
+    "reading": "ひょうれい",
+    "base": "氷冷",
     "occurrences": 1
   },
   {
@@ -96,9 +222,9 @@
     "occurrences": 1
   },
   {
-    "word": "受付時間",
-    "reading": "うけつけじかん",
-    "base": "受付時間",
+    "word": "指示命令",
+    "reading": "しじめいれい",
+    "base": "指示命令",
     "occurrences": 1
   },
   {
@@ -108,15 +234,15 @@
     "occurrences": 1
   },
   {
-    "word": "演奏力",
-    "reading": "えんそうりょく",
-    "base": "演奏力",
+    "word": "支援法",
+    "reading": "しえんほう",
+    "base": "支援法",
     "occurrences": 1
   },
   {
-    "word": "就労条件",
-    "reading": "しゅうろうじょうけん",
-    "base": "就労条件",
+    "word": "演奏力",
+    "reading": "えんそうりょく",
+    "base": "演奏力",
     "occurrences": 1
   },
   {
@@ -126,15 +252,15 @@
     "occurrences": 1
   },
   {
-    "word": "築け",
-    "reading": "きずけ",
-    "base": "築ける",
+    "word": "建物内",
+    "reading": "たてものない",
+    "base": "建物内",
     "occurrences": 1
   },
   {
-    "word": "情報流出",
-    "reading": "じょうほうりゅうしゅつ",
-    "base": "情報流出",
+    "word": "心打た",
+    "reading": "こころうた",
+    "base": "心打つ",
     "occurrences": 1
   },
   {
@@ -144,15 +270,21 @@
     "occurrences": 1
   },
   {
-    "word": "美味しさ",
-    "reading": "おいしさ",
-    "base": "美味しさ",
+    "word": "採用広告",
+    "reading": "さいようこうこく",
+    "base": "採用広告",
     "occurrences": 1
   },
   {
-    "word": "新治",
-    "reading": "にいはり",
-    "base": "新治",
+    "word": "上不",
+    "reading": "じょうふ",
+    "base": "上不",
+    "occurrences": 1
+  },
+  {
+    "word": "忘れ",
+    "reading": "わすれ",
+    "base": "忘れ",
     "occurrences": 1
   },
   {
@@ -162,15 +294,33 @@
     "occurrences": 1
   },
   {
-    "word": "治せる",
-    "reading": "なおせる",
-    "base": "治せる",
+    "word": "管理下",
+    "reading": "かんりか",
+    "base": "管理下",
     "occurrences": 1
   },
   {
-    "word": "守備力",
-    "reading": "しゅびりょく",
-    "base": "守備力",
+    "word": "歴史的建造物",
+    "reading": "れきしてきけんぞうぶつ",
+    "base": "歴史的建造物",
+    "occurrences": 1
+  },
+  {
+    "word": "運行状況",
+    "reading": "うんこうじょうきょう",
+    "base": "運行状況",
+    "occurrences": 1
+  },
+  {
+    "word": "理致",
+    "reading": "りち",
+    "base": "理致",
+    "occurrences": 1
+  },
+  {
+    "word": "生かせ",
+    "reading": "いかせ",
+    "base": "生かせる",
     "occurrences": 1
   },
   {
@@ -210,21 +360,9 @@
     "occurrences": 1
   },
   {
-    "word": "知ったか",
-    "reading": "しったか",
-    "base": "知ったか",
-    "occurrences": 1
-  },
-  {
     "word": "引き寄せ",
     "reading": "ひきよせ",
     "base": "引き寄せ",
-    "occurrences": 1
-  },
-  {
-    "word": "継続期間",
-    "reading": "けいぞくきかん",
-    "base": "継続期間",
     "occurrences": 1
   },
   {
@@ -234,9 +372,9 @@
     "occurrences": 1
   },
   {
-    "word": "言語的",
-    "reading": "げんごてき",
-    "base": "言語的",
+    "word": "縮約形",
+    "reading": "しゅくやくけい",
+    "base": "縮約形",
     "occurrences": 1
   },
   {
@@ -246,9 +384,39 @@
     "occurrences": 1
   },
   {
+    "word": "深い",
+    "reading": "ぶかい",
+    "base": "深い",
+    "occurrences": 1
+  },
+  {
     "word": "恩着せ",
     "reading": "おんきせ",
     "base": "恩着せ",
+    "occurrences": 1
+  },
+  {
+    "word": "言い換え表現",
+    "reading": "いいかえひょうげん",
+    "base": "言い換え表現",
+    "occurrences": 1
+  },
+  {
+    "word": "計画立案",
+    "reading": "けいかくりつあん",
+    "base": "計画立案",
+    "occurrences": 1
+  },
+  {
+    "word": "教え伝える",
+    "reading": "おしえつたえる",
+    "base": "教え伝える",
+    "occurrences": 1
+  },
+  {
+    "word": "運転中",
+    "reading": "うんてんちゅう",
+    "base": "運転中",
     "occurrences": 1
   },
   {
@@ -261,18 +429,6 @@
     "word": "高校卒業",
     "reading": "こうこうそつぎょう",
     "base": "高校卒業",
-    "occurrences": 1
-  },
-  {
-    "word": "鏡湖",
-    "reading": "きょうこ",
-    "base": "鏡湖",
-    "occurrences": 1
-  },
-  {
-    "word": "飛べる",
-    "reading": "とべる",
-    "base": "飛べる",
     "occurrences": 1
   },
   {

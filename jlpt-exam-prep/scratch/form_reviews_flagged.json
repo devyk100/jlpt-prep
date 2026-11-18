@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "skm3-fa-q1",
+    "chapter": "Part 1 · Form review A",
+    "question": "次の電車が来るまでまだ30分あるから、駅前のカフェでコーヒー（　）飲んで待とうか。",
+    "correct": "でも",
+    "opt_text": "さえ",
+    "current_reason": "【不正解】極端な例の提示のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q1",
+    "chapter": "Part 1 · Form review A",
+    "question": "次の電車が来るまでまだ30分あるから、駅前のカフェでコーヒー（　）飲んで待とうか。",
+    "correct": "でも",
+    "opt_text": "しか",
+    "current_reason": "【不正解】否定文と呼応（しか飲まない）のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q2",
+    "chapter": "Part 1 · Form review A",
+    "question": "今年（　）絶対にJLPT N3に合格してみせると、心に強く誓った。",
+    "correct": "こそ",
+    "opt_text": "でも",
+    "current_reason": "【不正解】譲歩・例示のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q2",
+    "chapter": "Part 1 · Form review A",
+    "question": "今年（　）絶対にJLPT N3に合格してみせると、心に強く誓った。",
+    "correct": "こそ",
+    "opt_text": "まで",
+    "current_reason": "【不正解】範囲・終点のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q2",
+    "chapter": "Part 1 · Form review A",
+    "question": "今年（　）絶対にJLPT N3に合格してみせると、心に強く誓った。",
+    "correct": "こそ",
+    "opt_text": "くらい",
+    "current_reason": "【不正解】程度の概数のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q3",
+    "chapter": "Part 1 · Form review A",
+    "question": "この問題はあまりに簡単すぎて、小学生（　）すぐに解ける。",
+    "correct": "でさえ",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】排他的強調のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q4",
+    "chapter": "Part 1 · Form review A",
+    "question": "激しい暴風雨で、頑丈な大木（　）根元から倒れてしまった。",
+    "correct": "まで",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】排他のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q5",
+    "chapter": "Part 1 · Form review A",
+    "question": "自分の食べた食器（　）、自分で流しに持って行って洗いなさい。",
+    "correct": "くらい",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】強調のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q6",
+    "chapter": "Part 1 · Form review A",
+    "question": "私（　）のような未熟者が、このような栄誉ある賞をいただいて恐縮です。",
+    "correct": "なんか",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】自分を強調すると自画自賛になるのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q7",
+    "chapter": "Part 1 · Form review A",
+    "question": "あんな根拠のない噂話（　）、気にする必要は全くありませんよ。",
+    "correct": "なんて",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】噂話こそ気にするべきだになり逆のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q7",
+    "chapter": "Part 1 · Form review A",
+    "question": "あんな根拠のない噂話（　）、気にする必要は全くありませんよ。",
+    "correct": "なんて",
+    "opt_text": "まで",
+    "current_reason": "【不正解】範囲のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q8",
+    "chapter": "Part 1 · Form review A",
+    "question": "いつも助けてもらって感謝しています。こちら（　）お礼を言わなければなりません。",
+    "correct": "こそ",
+    "opt_text": "でも",
+    "current_reason": "【不正解】提案・例示のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q8",
+    "chapter": "Part 1 · Form review A",
+    "question": "いつも助けてもらって感謝しています。こちら（　）お礼を言わなければなりません。",
+    "correct": "こそ",
+    "opt_text": "まで",
+    "current_reason": "【不正解】範囲のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q9",
+    "chapter": "Part 1 · Form review A",
+    "question": "毎日同じオフィスで働いているのに、隣の人の名前（　）知らない。",
+    "correct": "さえ",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】肯定の強調のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q9",
+    "chapter": "Part 1 · Form review A",
+    "question": "毎日同じオフィスで働いているのに、隣の人の名前（　）知らない。",
+    "correct": "さえ",
+    "opt_text": "ほど",
+    "current_reason": "【不正解】程度のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q10",
+    "chapter": "Part 1 · Form review A",
+    "question": "挨拶（　）は、どんなに機嫌が悪くてもきちんとするべきだ。",
+    "correct": "ぐらい",
+    "opt_text": "まで",
+    "current_reason": "【不正解】範囲のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q11",
+    "chapter": "Part 1 · Form review A",
+    "question": "食後に、もしよろしければ季節のフルーツ（　）召し上がりませんか。",
+    "correct": "でも",
+    "opt_text": "こそ",
+    "current_reason": "【不正解】強調のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fa-q12",
+    "chapter": "Part 1 · Form review A",
+    "question": "その大ヒット曲は若者だけでなく、80歳のおじいちゃん（　）口ずさんでいる。",
+    "correct": "まで",
+    "opt_text": "だけ",
+    "current_reason": "【不正解】若者だけでなく〜だけ、は矛盾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q1",
+    "chapter": "Part 1 · Form review B",
+    "question": "日本語学習者（　）、漢字の習得は避けて通れない最大の難関の一つだ。",
+    "correct": "にとって",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】態度を向ける対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q2",
+    "chapter": "Part 1 · Form review B",
+    "question": "彼は環境問題の専門家（　）、国連の国際シンポジウムに招聘された。",
+    "correct": "として",
+    "opt_text": "によって",
+    "current_reason": "【不正解】手段・原因のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q3",
+    "chapter": "Part 1 · Form review B",
+    "question": "小説『坊っちゃん』は、明治時代の文豪・夏目漱石（　）執筆された。",
+    "correct": "によって",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】態度や行為の対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q5",
+    "chapter": "Part 1 · Form review B",
+    "question": "本日のゼミでは、日本の伝統芸能である歌舞伎の歴史（　）発表いたします。",
+    "correct": "について",
+    "opt_text": "によって",
+    "current_reason": "【不正解】手段・原因のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q7",
+    "chapter": "Part 1 · Form review B",
+    "question": "他人にはガラクタに見えるかもしれないが、私（　）かけがえのない宝物だ。",
+    "correct": "にとって",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q8",
+    "chapter": "Part 1 · Form review B",
+    "question": "兄が社交的で友人が多いの（　）、弟は内向的で一人で読書を好む。",
+    "correct": "に対して",
+    "opt_text": "によって",
+    "current_reason": "【不正解】原因・手段のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q9",
+    "chapter": "Part 1 · Form review B",
+    "question": "最近は紙の辞書を持ち歩かず、スマートフォンを電子辞書代わり（　）活用している。",
+    "correct": "として",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q10",
+    "chapter": "Part 1 · Form review B",
+    "question": "増税方針が発表されると、世論調査では政府の経済政策（　）批判が急増した。",
+    "correct": "に対する",
+    "opt_text": "にとっての",
+    "current_reason": "【不正解】評価基準の修飾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q10",
+    "chapter": "Part 1 · Form review B",
+    "question": "増税方針が発表されると、世論調査では政府の経済政策（　）批判が急増した。",
+    "correct": "に対する",
+    "opt_text": "としての",
+    "current_reason": "【不正解】資格修飾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q10",
+    "chapter": "Part 1 · Form review B",
+    "question": "増税方針が発表されると、世論調査では政府の経済政策（　）批判が急増した。",
+    "correct": "に対する",
+    "opt_text": "によった",
+    "current_reason": "【不正解】文法的に不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q11",
+    "chapter": "Part 1 · Form review B",
+    "question": "昨晩の激しい大雪（　）、今朝の首都圏の鉄道網は完全に麻痺した。",
+    "correct": "によって",
+    "opt_text": "として",
+    "current_reason": "【不正解】資格のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q11",
+    "chapter": "Part 1 · Form review B",
+    "question": "昨晩の激しい大雪（　）、今朝の首都圏の鉄道網は完全に麻痺した。",
+    "correct": "によって",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】態度を向ける対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q12",
+    "chapter": "Part 1 · Form review B",
+    "question": "マーケティング部門では、若者の消費動向（　）詳細なアンケート調査を実施した。",
+    "correct": "についての",
+    "opt_text": "にとっての",
+    "current_reason": "【不正解】評価視点の修飾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q12",
+    "chapter": "Part 1 · Form review B",
+    "question": "マーケティング部門では、若者の消費動向（　）詳細なアンケート調査を実施した。",
+    "correct": "についての",
+    "opt_text": "としての",
+    "current_reason": "【不正解】資格修飾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fb-q12",
+    "chapter": "Part 1 · Form review B",
+    "question": "マーケティング部門では、若者の消費動向（　）詳細なアンケート調査を実施した。",
+    "correct": "についての",
+    "opt_text": "に対する",
+    "current_reason": "【不正解】対象修飾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q1",
+    "chapter": "Part 1 · Form review C",
+    "question": "夜空を見上げたら、きれいな流れ星がすーっと流れていく（　）を見た。",
+    "correct": "の",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】場面・局面のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q2",
+    "chapter": "Part 1 · Form review C",
+    "question": "私の長年の夢は、世界中を旅してたくさんの人々と交流する（　）です。",
+    "correct": "こと",
+    "opt_text": "の",
+    "current_reason": "【不正解】内容定義の文末に「〜のだ」は使えないのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q4",
+    "chapter": "Part 1 · Form review C",
+    "question": "銀行の窓口に並ばずに、24時間スマホで送金できる（　）は本当に便利だ。",
+    "correct": "の",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】局面のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q5",
+    "chapter": "Part 1 · Form review C",
+    "question": "私が日本語の勉強を始めた（　）は、高校１年生の夏休みのことでした。",
+    "correct": "の",
+    "opt_text": "こと",
+    "current_reason": "【不正解】「始めたことは夏休みのことだった」は不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q6",
+    "chapter": "Part 1 · Form review C",
+    "question": "スマホを見ながら歩いていたので、危うく電柱に（　）ところだった。",
+    "correct": "ぶつかる",
+    "opt_text": "ぶつかった",
+    "current_reason": "【不正解】過去形は不可のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q6",
+    "chapter": "Part 1 · Form review C",
+    "question": "スマホを見ながら歩いていたので、危うく電柱に（　）ところだった。",
+    "correct": "ぶつかる",
+    "opt_text": "ぶつかって",
+    "current_reason": "【不正解】て形不可のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q7",
+    "chapter": "Part 1 · Form review C",
+    "question": "真夏の暑い午後なので、自販機で何か冷たい（　）を買って飲もう。",
+    "correct": "もの",
+    "opt_text": "こと",
+    "current_reason": "【不正解】抽象的事柄・事実のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q7",
+    "chapter": "Part 1 · Form review C",
+    "question": "真夏の暑い午後なので、自販機で何か冷たい（　）を買って飲もう。",
+    "correct": "もの",
+    "opt_text": "の",
+    "current_reason": "【不正解】文脈上「冷たいもの」が標準のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q7",
+    "chapter": "Part 1 · Form review C",
+    "question": "真夏の暑い午後なので、自販機で何か冷たい（　）を買って飲もう。",
+    "correct": "もの",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】場所・局面のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q9",
+    "chapter": "Part 1 · Form review C",
+    "question": "このレストランの最大の特徴は、有機野菜のみを使用している（　）だ。",
+    "correct": "こと",
+    "opt_text": "の",
+    "current_reason": "【不正解】「特徴は〜のだ」は誤りのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q9",
+    "chapter": "Part 1 · Form review C",
+    "question": "このレストランの最大の特徴は、有機野菜のみを使用している（　）だ。",
+    "correct": "こと",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】局面のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q10",
+    "chapter": "Part 1 · Form review C",
+    "question": "振込先の口座番号を一桁押し間違えて、赤の他人に送金する（　）だった。",
+    "correct": "ところ",
+    "opt_text": "はず",
+    "current_reason": "【不正解】予測のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q10",
+    "chapter": "Part 1 · Form review C",
+    "question": "振込先の口座番号を一桁押し間違えて、赤の他人に送金する（　）だった。",
+    "correct": "ところ",
+    "opt_text": "もの",
+    "current_reason": "【不正解】物体のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fc-q11",
+    "chapter": "Part 1 · Form review C",
+    "question": "外国語を学ぶ上で、ネイティブ並みの自然な発音を身につける（　）は極めて難しい。",
+    "correct": "の",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】局面のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q2",
+    "chapter": "Part 1 · Form review D",
+    "question": "真冬だというのに、日差しがポカポカしてまるで春が（　）ようだ。",
+    "correct": "来た",
+    "opt_text": "来るの",
+    "current_reason": "【不正解】「の」の過剰挿入のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q2",
+    "chapter": "Part 1 · Form review D",
+    "question": "真冬だというのに、日差しがポカポカしてまるで春が（　）ようだ。",
+    "correct": "来た",
+    "opt_text": "来れば",
+    "current_reason": "【不正解】条件形のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q3",
+    "chapter": "Part 1 · Form review D",
+    "question": "健康診断の後、担当の医師から「毎日30分は散歩を（　）」ようにと厳しく指導された。",
+    "correct": "する",
+    "opt_text": "しろ",
+    "current_reason": "【不正解】命令形とし「ように」を重ねるのは不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q4",
+    "chapter": "Part 1 · Form review D",
+    "question": "初詣の神社で、家族全員が今年一年健康で無事に（　）ようにと手を合わせた。",
+    "correct": "過ごせます",
+    "opt_text": "過ごす",
+    "current_reason": "【不正解】祈願の語調として弱く不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q5",
+    "chapter": "Part 1 · Form review D",
+    "question": "後で大事な連絡事項を（　）ように、手帳にしっかりメモを取っておいた。",
+    "correct": "忘れない",
+    "opt_text": "忘れる",
+    "current_reason": "【不正解】忘れるためにメモを取ることになり矛盾のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q7",
+    "chapter": "Part 1 · Form review D",
+    "question": "山の湧き水は、まるで（　）のように冷たくて澄み切っていた。",
+    "correct": "氷",
+    "opt_text": "冷凍庫",
+    "current_reason": "【不正解】比喩として不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q7",
+    "chapter": "Part 1 · Form review D",
+    "question": "山の湧き水は、まるで（　）のように冷たくて澄み切っていた。",
+    "correct": "氷",
+    "opt_text": "冬",
+    "current_reason": "【不正解】比喩として焦点がぼやけるのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q7",
+    "chapter": "Part 1 · Form review D",
+    "question": "山の湧き水は、まるで（　）のように冷たくて澄み切っていた。",
+    "correct": "氷",
+    "opt_text": "雪だるま",
+    "current_reason": "【不正解】不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q9",
+    "chapter": "Part 1 · Form review D",
+    "question": "先生は生徒たちに、宿題を明日の朝一番に（　）ように指示した。",
+    "correct": "提出する",
+    "opt_text": "提出しろ",
+    "current_reason": "【不正解】命令形との重複不可のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q10",
+    "chapter": "Part 1 · Form review D",
+    "question": "毎日シャドーイングの練習を続けたおかげで、自然なスピードの日本語が（　）ようになった。",
+    "correct": "聞き取れる",
+    "opt_text": "聞き取る",
+    "current_reason": "【不正解】意志動詞では習慣変化になり能力向上を表せないのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q10",
+    "chapter": "Part 1 · Form review D",
+    "question": "毎日シャドーイングの練習を続けたおかげで、自然なスピードの日本語が（　）ようになった。",
+    "correct": "聞き取れる",
+    "opt_text": "聞き取れ",
+    "current_reason": "【不正解】命令形のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q11",
+    "chapter": "Part 1 · Form review D",
+    "question": "風邪を（　）ように、帰宅後はすぐに手洗いとうがいを徹底している。",
+    "correct": "ひかない",
+    "opt_text": "ひく",
+    "current_reason": "【不正解】意味が逆のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fd-q12",
+    "chapter": "Part 1 · Form review D",
+    "question": "彼は歩き方や話し方が、本当にお父さん（　）そっくりだ。",
+    "correct": "のように",
+    "opt_text": "に対して",
+    "current_reason": "【不正解】対象のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q4",
+    "chapter": "Part 1 · Form review E",
+    "question": "足をひどく骨折してしまったので、今日は（　）。",
+    "correct": "歩くことができない",
+    "opt_text": "歩くわけだ",
+    "current_reason": "【不正解】文脈矛盾ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q6",
+    "chapter": "Part 1 · Form review E",
+    "question": "医師には守秘義務があるため、友人から頼まれても患者の病状を話す（　）。",
+    "correct": "わけにはいかない",
+    "opt_text": "わけだ",
+    "current_reason": "【不正解】当然話すのだ、となり倫理義務違反になりますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q6",
+    "chapter": "Part 1 · Form review E",
+    "question": "医師には守秘義務があるため、友人から頼まれても患者の病状を話す（　）。",
+    "correct": "わけにはいかない",
+    "opt_text": "はずだ",
+    "current_reason": "【不正解】話すはずだ、となり文脈に反しますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q7",
+    "chapter": "Part 1 · Form review E",
+    "question": "今回のトラブルは私の不注意が原因なのだから、自ら謝罪に（　）。",
+    "correct": "行かないわけにはいかない",
+    "opt_text": "行くわけではない",
+    "current_reason": "【不正解】部分否定となり、謝罪の決意が示せませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q10",
+    "chapter": "Part 1 · Form review E",
+    "question": "私的な用事はあるが、実行委員長を務めている手前、途中で（　）。",
+    "correct": "帰るわけにはいかない",
+    "opt_text": "帰るわけだ",
+    "current_reason": "【不正解】当然帰るのだ、となり立場への責任と矛盾しますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q10",
+    "chapter": "Part 1 · Form review E",
+    "question": "私的な用事はあるが、実行委員長を務めている手前、途中で（　）。",
+    "correct": "帰るわけにはいかない",
+    "opt_text": "帰るわけではない",
+    "current_reason": "【不正解】部分否定となり、立場の自制が表現できませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q11",
+    "chapter": "Part 1 · Form review E",
+    "question": "彼が社内コンテストで優勝できたのは、日頃から誰よりも熱心な（　）わけだ。",
+    "correct": "努力家である",
+    "opt_text": "努力家で",
+    "current_reason": "【不正解】て形での接続は文法的に破綻していますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fe-q12",
+    "chapter": "Part 1 · Form review E",
+    "question": "課長から直々に頼まれた重要プロジェクトだから、いくら忙しくても引き受け（　）。",
+    "correct": "ないわけにはいかない",
+    "opt_text": "るわけがない",
+    "current_reason": "【不正解】引き受けるはずがない、となり文脈に反しますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q3",
+    "chapter": "Part 1 · Form review F",
+    "question": "荷造りも電車の切符の手配も完了した。あとは明日の朝（　）ばかりだ。",
+    "correct": "出発する",
+    "opt_text": "出発して",
+    "current_reason": "【不正解】て形＋ばかりだは接続違反ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q6",
+    "chapter": "Part 1 · Form review F",
+    "question": "「今、電話してもいいですか」「すみません、今（　）ところなので、5分後にかけ直していただけますか」",
+    "correct": "お風呂から上がった",
+    "opt_text": "お風呂から上がって",
+    "current_reason": "【不正解】接続文法違反のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q6",
+    "chapter": "Part 1 · Form review F",
+    "question": "「今、電話してもいいですか」「すみません、今（　）ところなので、5分後にかけ直していただけますか」",
+    "correct": "お風呂から上がった",
+    "opt_text": "お風呂から上がっている",
+    "current_reason": "【不正解】上がっているところだ＝動作進行中となり不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q7",
+    "chapter": "Part 1 · Form review F",
+    "question": "お肉（　）食べていないで、野菜もしっかりバランスよく食べなさい。",
+    "correct": "ばかり",
+    "opt_text": "ほど",
+    "current_reason": "【不正解】程度を表す助詞であり、選択肢の偏食を表せませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q7",
+    "chapter": "Part 1 · Form review F",
+    "question": "お肉（　）食べていないで、野菜もしっかりバランスよく食べなさい。",
+    "correct": "ばかり",
+    "opt_text": "くらい",
+    "current_reason": "【不正解】最低限・軽視を表す助詞であり不適ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q8",
+    "chapter": "Part 1 · Form review F",
+    "question": "彼はいつも不平不満（　）言って、自分からは何一つ改善しようとしない。",
+    "correct": "ばかり",
+    "opt_text": "さえ",
+    "current_reason": "【不正解】極端な例示（さえ）となり文意が通じませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q9",
+    "chapter": "Part 1 · Form review F",
+    "question": "入社した（　）の頃は右も左も分からず、毎日が緊張の連続だった。",
+    "correct": "ばかり",
+    "opt_text": "はず",
+    "current_reason": "【不正解】推量になり不適切のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q10",
+    "chapter": "Part 1 · Form review F",
+    "question": "事故により、運転手（　）同乗していた家族全員が怪我を負った。",
+    "correct": "ばかりでなく",
+    "opt_text": "ばかりだから",
+    "current_reason": "【不正解】因果関係となり意味不明になりますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q10",
+    "chapter": "Part 1 · Form review F",
+    "question": "事故により、運転手（　）同乗していた家族全員が怪我を負った。",
+    "correct": "ばかりでなく",
+    "opt_text": "ばかりなのに",
+    "current_reason": "【不正解】逆接助詞の誤接続ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q11",
+    "chapter": "Part 1 · Form review F",
+    "question": "不況の長期化に伴い、生活必需品の物価は上がる（　）で、家計への負担が増大している。",
+    "correct": "ばかり",
+    "opt_text": "ところ",
+    "current_reason": "【不正解】アスペクトの誤用のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q11",
+    "chapter": "Part 1 · Form review F",
+    "question": "不況の長期化に伴い、生活必需品の物価は上がる（　）で、家計への負担が増大している。",
+    "correct": "ばかり",
+    "opt_text": "わけ",
+    "current_reason": "【不正解】『上がるわけで』は接続として破綻していますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q11",
+    "chapter": "Part 1 · Form review F",
+    "question": "不況の長期化に伴い、生活必需品の物価は上がる（　）で、家計への負担が増大している。",
+    "correct": "ばかり",
+    "opt_text": "はず",
+    "current_reason": "【不正解】推量となり文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-ff-q12",
+    "chapter": "Part 1 · Form review F",
+    "question": "「会議の資料の印刷も会場の設営も終わりました」「ご苦労様。これで（　）ばかりですね」",
+    "correct": "参加者の到着を待つ",
+    "opt_text": "参加者の到着を待っている",
+    "current_reason": "【不正解】接続文法違反のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q1",
+    "chapter": "Part 1 · Form review G",
+    "question": "この学生寮では、防犯のため夜11時に玄関のドアが施錠される（　）。",
+    "correct": "ことになっている",
+    "opt_text": "わけだ",
+    "current_reason": "【不正解】当然の論理的帰結となり、規則の伝達になりませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q2",
+    "chapter": "Part 1 · Form review G",
+    "question": "健康を維持するため、毎朝朝食の前に5キロ走る（　）。",
+    "correct": "ことにしている",
+    "opt_text": "わけにはいかない",
+    "current_reason": "【不正解】道義的自制表現であり不適ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q5",
+    "chapter": "Part 1 · Form review G",
+    "question": "この自動ドアは、人を感知すると自動的に開く（　）。",
+    "correct": "ようになっている",
+    "opt_text": "ことにしている",
+    "current_reason": "【不正解】個人の主観的ポリシーであり機械には適用不能ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q6",
+    "chapter": "Part 1 · Form review G",
+    "question": "運動不足を解消するため、できるだけエレベーターを使わず階段を（　）。",
+    "correct": "使うようにしている",
+    "opt_text": "使ったところだ",
+    "current_reason": "【不正解】完了直後アスペクトとなり文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q8",
+    "chapter": "Part 1 · Form review G",
+    "question": "法律により、20歳未満の者は酒やタバコを購入してはならない（　）。",
+    "correct": "ことになっている",
+    "opt_text": "ようにしている",
+    "current_reason": "【不正解】努力目標になり、法律の強行規定に合いませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q8",
+    "chapter": "Part 1 · Form review G",
+    "question": "法律により、20歳未満の者は酒やタバコを購入してはならない（　）。",
+    "correct": "ことになっている",
+    "opt_text": "わけだ",
+    "current_reason": "【不正解】論理的帰結となり、法規の規定文言として不適切のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q10",
+    "chapter": "Part 1 · Form review G",
+    "question": "明日の午後、本社で社長と面談する（　）。",
+    "correct": "ことになっている",
+    "opt_text": "ようになっている",
+    "current_reason": "【不正解】機械の機能構造表現のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q10",
+    "chapter": "Part 1 · Form review G",
+    "question": "明日の午後、本社で社長と面談する（　）。",
+    "correct": "ことになっている",
+    "opt_text": "わけだ",
+    "current_reason": "【不正解】論理的帰結となり予定の伝達になりませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q11",
+    "chapter": "Part 1 · Form review G",
+    "question": "セキュリティ保護のため、パスワードを3回間違えるとアカウントが自動ロックされる（　）。",
+    "correct": "仕組みになっている",
+    "opt_text": "ことにしている",
+    "current_reason": "【不正解】個人の習慣表現のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q11",
+    "chapter": "Part 1 · Form review G",
+    "question": "セキュリティ保護のため、パスワードを3回間違えるとアカウントが自動ロックされる（　）。",
+    "correct": "仕組みになっている",
+    "opt_text": "ようにしている",
+    "current_reason": "【不正解】個人の努力心掛け表現のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fg-q12",
+    "chapter": "Part 1 · Form review G",
+    "question": "私は毎日夜11時には寝る（ ① ）が、社宅の規則では12時に消灯する（ ② ）。",
+    "correct": "① ことにしている ・ ② ことになっている",
+    "opt_text": "① ことになっている ・ ② ことにしている",
+    "current_reason": "【不正解】個人ルールと社宅規則の主客が逆転していますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q1",
+    "chapter": "Part 1 · Form review H",
+    "question": "朝起きて窓を（　）、外は一面の銀世界になっていた。",
+    "correct": "開けると",
+    "opt_text": "開けるように",
+    "current_reason": "【不正解】目的表現となり文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q2",
+    "chapter": "Part 1 · Form review H",
+    "question": "急いで駅のホームに（　）、乗るはずだった電車はすでに出発していた。",
+    "correct": "着いたら",
+    "opt_text": "着くように",
+    "current_reason": "【不正解】目的表現のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q3",
+    "chapter": "Part 1 · Form review H",
+    "question": "公園を（　）ていると、突然雷が鳴って激しい雨が降り出した。",
+    "correct": "散歩し",
+    "opt_text": "散歩した",
+    "current_reason": "【不正解】過去形接続不可のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q4",
+    "chapter": "Part 1 · Form review H",
+    "question": "彼は部屋に（　）と、何も言わずにソファに倒れ込んだ。",
+    "correct": "入る",
+    "opt_text": "入るなら",
+    "current_reason": "【不正解】文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q5",
+    "chapter": "Part 1 · Form review H",
+    "question": "駅前の新しいビストロは、料理（　）おいしければ値段（　）手頃で、連日大盛況だ。",
+    "correct": "も・も",
+    "opt_text": "は・は",
+    "current_reason": "【不正解】対比助詞の重複となり、並立累加構文になりませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q5",
+    "chapter": "Part 1 · Form review H",
+    "question": "駅前の新しいビストロは、料理（　）おいしければ値段（　）手頃で、連日大盛況だ。",
+    "correct": "も・も",
+    "opt_text": "が・が",
+    "current_reason": "【不正解】主格助詞の連続で並立呼応になりませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q5",
+    "chapter": "Part 1 · Form review H",
+    "question": "駅前の新しいビストロは、料理（　）おいしければ値段（　）手頃で、連日大盛況だ。",
+    "correct": "も・も",
+    "opt_text": "も・が",
+    "current_reason": "【不正解】後件助詞が「も」と呼応していませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q6",
+    "chapter": "Part 1 · Form review H",
+    "question": "カーテンを開けると、庭で小鳥たちが（　）。",
+    "correct": "楽しそうに鳴いていた",
+    "opt_text": "楽しそうに鳴くつもりだ",
+    "current_reason": "【不正解】小鳥の意志推量になり文脈破綻のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q6",
+    "chapter": "Part 1 · Form review H",
+    "question": "カーテンを開けると、庭で小鳥たちが（　）。",
+    "correct": "楽しそうに鳴いていた",
+    "opt_text": "楽しそうに鳴きなさい",
+    "current_reason": "【不正解】命令文は「と」の後件に置けませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q6",
+    "chapter": "Part 1 · Form review H",
+    "question": "カーテンを開けると、庭で小鳥たちが（　）。",
+    "correct": "楽しそうに鳴いていた",
+    "opt_text": "楽しそうに鳴くべきだ",
+    "current_reason": "【不正解】当為表現は置けませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q8",
+    "chapter": "Part 1 · Form review H",
+    "question": "体調を崩して以来、食欲も（　）、外出しようという気力も湧かない。",
+    "correct": "なければ",
+    "opt_text": "ないと",
+    "current_reason": "【不正解】並立相関構文として呼応しませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q8",
+    "chapter": "Part 1 · Form review H",
+    "question": "体調を崩して以来、食欲も（　）、外出しようという気力も湧かない。",
+    "correct": "なければ",
+    "opt_text": "ないなら",
+    "current_reason": "【不正解】条件推量となり並立の文脈に合いませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q8",
+    "chapter": "Part 1 · Form review H",
+    "question": "体調を崩して以来、食欲も（　）、外出しようという気力も湧かない。",
+    "correct": "なければ",
+    "opt_text": "なくて",
+    "current_reason": "【不正解】「もなくて」は相関並立として不自然ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q9",
+    "chapter": "Part 1 · Form review H",
+    "question": "この課題は、深く（　）掘り下げるほど、新たな謎が見つかる。",
+    "correct": "掘り下げれば",
+    "opt_text": "掘り下げると",
+    "current_reason": "【不正解】「〜と…ほど」という相関構文は存在しませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q10",
+    "chapter": "Part 1 · Form review H",
+    "question": "デパートで買い物を（　）、偶然高校時代の担任の先生にお会いした。",
+    "correct": "していたら",
+    "opt_text": "すれば",
+    "current_reason": "【不正解】過去の事実出来事には使えませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q10",
+    "chapter": "Part 1 · Form review H",
+    "question": "デパートで買い物を（　）、偶然高校時代の担任の先生にお会いした。",
+    "correct": "していたら",
+    "opt_text": "するなら",
+    "current_reason": "【不正解】仮定前提となり、過去の出来事の描写に合いませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q11",
+    "chapter": "Part 1 · Form review H",
+    "question": "富士山に（　）、夏でも防寒着をしっかり準備していったほうがいいですよ。",
+    "correct": "登るなら",
+    "opt_text": "登れば",
+    "current_reason": "【不正解】意志動詞の「ば」の後件に助言・忠告は置けませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fh-q12",
+    "chapter": "Part 1 · Form review H",
+    "question": "秘書は受話器を（　）と、素早く手元のメモ帳にペンを走らせた。",
+    "correct": "取る",
+    "opt_text": "取れば",
+    "current_reason": "【不正解】過去の一回的連続動作には使えませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q1",
+    "chapter": "Part 1 · Form review I",
+    "question": "社長は仕事熱心で、週末でも（　）休むことはない。",
+    "correct": "めったに",
+    "opt_text": "かならず",
+    "current_reason": "【不正解】肯定呼応副詞であり、否定形と矛盾しますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q1",
+    "chapter": "Part 1 · Form review I",
+    "question": "社長は仕事熱心で、週末でも（　）休むことはない。",
+    "correct": "めったに",
+    "opt_text": "たいてい",
+    "current_reason": "【不正解】「大抵（普段は）」は通常肯定文で用いられますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q2",
+    "chapter": "Part 1 · Form review I",
+    "question": "空が急に真っ暗になり、黒い雲から（　）大雨が降り出しそうだ。",
+    "correct": "今にも",
+    "opt_text": "いまさら",
+    "current_reason": "【不正解】今更（手遅れのニュアンス）となり文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q2",
+    "chapter": "Part 1 · Form review I",
+    "question": "空が急に真っ暗になり、黒い雲から（　）大雨が降り出しそうだ。",
+    "correct": "今にも",
+    "opt_text": "いまごろ",
+    "current_reason": "【不正解】今頃（時期・時間帯の推測）となり合いませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q3",
+    "chapter": "Part 1 · Form review I",
+    "question": "新雪に覆われた冬の山は、（　）巨大な白い城のようだ。",
+    "correct": "まるで",
+    "opt_text": "どうしても",
+    "current_reason": "【不正解】強い願望や不可能性を表す副詞であり不適ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q3",
+    "chapter": "Part 1 · Form review I",
+    "question": "新雪に覆われた冬の山は、（　）巨大な白い城のようだ。",
+    "correct": "まるで",
+    "opt_text": "案外",
+    "current_reason": "【不正解】案外（予想外に）となり比喩を導けませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q4",
+    "chapter": "Part 1 · Form review I",
+    "question": "仲間と交わした大切な約束は、（　）破りません。",
+    "correct": "決して",
+    "opt_text": "せいぜい",
+    "current_reason": "【不正解】最大限の見積もり副詞であり不適ですのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q6",
+    "chapter": "Part 1 · Form review I",
+    "question": "（　）火災や地震が発生した場合は、係員の指示に従って落ち着いて避難してください。",
+    "correct": "万一",
+    "opt_text": "どうやら",
+    "current_reason": "【不正解】推量表現（〜らしい）と呼応するため不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q6",
+    "chapter": "Part 1 · Form review I",
+    "question": "（　）火災や地震が発生した場合は、係員の指示に従って落ち着いて避難してください。",
+    "correct": "万一",
+    "opt_text": "せめて",
+    "current_reason": "【不正解】最低限の願望（せめて〜だけでも）であり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q7",
+    "chapter": "Part 1 · Form review I",
+    "question": "ここから彼の家までは、（　）歩いて10分くらいのものだ。",
+    "correct": "せいぜい",
+    "opt_text": "とうとう",
+    "current_reason": "【不正解】最終結果の達成（とうとう完成した）となり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q8",
+    "chapter": "Part 1 · Form review I",
+    "question": "（　）親族全員に反対されても、私は彼と結婚する決意を変えません。",
+    "correct": "たとえ",
+    "opt_text": "まるで",
+    "current_reason": "【不正解】比喩呼応副詞（〜ようだ）のため不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q8",
+    "chapter": "Part 1 · Form review I",
+    "question": "（　）親族全員に反対されても、私は彼と結婚する決意を変えません。",
+    "correct": "たとえ",
+    "opt_text": "果たして",
+    "current_reason": "【不正解】疑問呼応副詞（〜だろうか）のため不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q9",
+    "chapter": "Part 1 · Form review I",
+    "question": "冷たい風が吹き始めた。（　）今夜は雨になりそうだ。",
+    "correct": "どうやら",
+    "opt_text": "決して",
+    "current_reason": "【不正解】断固たる否定誓い副詞のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q10",
+    "chapter": "Part 1 · Form review I",
+    "question": "前例のないこの経済対策で、（　）景気は回復するだろうか。",
+    "correct": "果たして",
+    "opt_text": "まるで",
+    "current_reason": "【不正解】比喩呼応副詞のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q10",
+    "chapter": "Part 1 · Form review I",
+    "question": "前例のないこの経済対策で、（　）景気は回復するだろうか。",
+    "correct": "果たして",
+    "opt_text": "せいぜい",
+    "current_reason": "【不正解】上限見積もり副詞のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q11",
+    "chapter": "Part 1 · Form review I",
+    "question": "値段が非常に高い商品が、（　）頑丈で長持ちするとは限らない。",
+    "correct": "必ずしも",
+    "opt_text": "まったく",
+    "current_reason": "【不正解】完全否定になり文意崩壊のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q12",
+    "chapter": "Part 1 · Form review I",
+    "question": "学年トップの秀才である彼が、（　）不合格になるとは夢にも思わなかった。",
+    "correct": "まさか",
+    "opt_text": "どうやら",
+    "current_reason": "【不正解】推量表現になり驚愕の文脈と不調和のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q12",
+    "chapter": "Part 1 · Form review I",
+    "question": "学年トップの秀才である彼が、（　）不合格になるとは夢にも思わなかった。",
+    "correct": "まさか",
+    "opt_text": "せめて",
+    "current_reason": "【不正解】最低限の願望であり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fi-q12",
+    "chapter": "Part 1 · Form review I",
+    "question": "学年トップの秀才である彼が、（　）不合格になるとは夢にも思わなかった。",
+    "correct": "まさか",
+    "opt_text": "次第に",
+    "current_reason": "【不正解】推移副詞であり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q1",
+    "chapter": "Part 1 · Form review J",
+    "question": "彼はもう立派な大人なのに、思い通りにならないとすぐ（　）態度をとる。",
+    "correct": "子供っぽい",
+    "opt_text": "子供だらけ",
+    "current_reason": "【不正解】空間が子供で充満している意味になり文脈破綻のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q3",
+    "chapter": "Part 1 · Form review J",
+    "question": "雨上がりの庭で犬が走り回ったため、体中が（　）になってしまった。",
+    "correct": "泥だらけ",
+    "opt_text": "泥らしい",
+    "current_reason": "【不正解】泥の典型性質という意味になり不条理のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q6",
+    "chapter": "Part 1 · Form review J",
+    "question": "急な呼び出しの電話がかかってきたため、夕食を（　）のまま家を飛び出した。",
+    "correct": "食べかけ",
+    "opt_text": "食べとおし",
+    "current_reason": "【不正解】最初から最後まで食べ続けたことになり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q6",
+    "chapter": "Part 1 · Form review J",
+    "question": "急な呼び出しの電話がかかってきたため、夕食を（　）のまま家を飛び出した。",
+    "correct": "食べかけ",
+    "opt_text": "食べすぎ",
+    "current_reason": "【不正解】過剰摂取になり文脈不一致のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q7",
+    "chapter": "Part 1 · Form review J",
+    "question": "42.195キロの過酷なコースを走り終え、すべての体力を（　）倒れ込んだ。",
+    "correct": "使いきって",
+    "opt_text": "使いづらくて",
+    "current_reason": "【不正解】使用が不便という意味になり意味不明のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q8",
+    "chapter": "Part 1 · Form review J",
+    "question": "先輩に多額の借金を申し込むのは、心理的にとても（　）。",
+    "correct": "頼みづらい",
+    "opt_text": "頼みやすい",
+    "current_reason": "【不正解】容易という意味になり、文脈と正反対のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q8",
+    "chapter": "Part 1 · Form review J",
+    "question": "先輩に多額の借金を申し込むのは、心理的にとても（　）。",
+    "correct": "頼みづらい",
+    "opt_text": "頼みきれない",
+    "current_reason": "【不正解】頼み尽くせない、となり不自然のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q8",
+    "chapter": "Part 1 · Form review J",
+    "question": "先輩に多額の借金を申し込むのは、心理的にとても（　）。",
+    "correct": "頼みづらい",
+    "opt_text": "頼みかけだ",
+    "current_reason": "【不正解】中断アスペクトになり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q9",
+    "chapter": "Part 1 · Form review J",
+    "question": "周囲から激しい非難を浴びても、彼は自らの信念を最後まで（　）。",
+    "correct": "貫きとおした",
+    "opt_text": "貫きかけた",
+    "current_reason": "【不正解】途中で中断したことになり文意崩壊のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q9",
+    "chapter": "Part 1 · Form review J",
+    "question": "周囲から激しい非難を浴びても、彼は自らの信念を最後まで（　）。",
+    "correct": "貫きとおした",
+    "opt_text": "貫ききれなかった",
+    "current_reason": "【不正解】最後まで貫けなかったという挫折になり矛盾しますのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q9",
+    "chapter": "Part 1 · Form review J",
+    "question": "周囲から激しい非難を浴びても、彼は自らの信念を最後まで（　）。",
+    "correct": "貫きとおした",
+    "opt_text": "貫きだした",
+    "current_reason": "【不正解】開始アスペクトになり不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q11",
+    "chapter": "Part 1 · Form review J",
+    "question": "慌てて作成したレポートを読み直したら、計算間違いや誤字（　）で恥ずかしかった。",
+    "correct": "だらけ",
+    "opt_text": "っぽい",
+    "current_reason": "【不正解】誤字っぽい、とは言えませんのため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q11",
+    "chapter": "Part 1 · Form review J",
+    "question": "慌てて作成したレポートを読み直したら、計算間違いや誤字（　）で恥ずかしかった。",
+    "correct": "だらけ",
+    "opt_text": "らしい",
+    "current_reason": "【不正解】典型性を表すため欠点の充満に不適のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  },
+  {
+    "id": "skm3-fj-q11",
+    "chapter": "Part 1 · Form review J",
+    "question": "慌てて作成したレポートを読み直したら、計算間違いや誤字（　）で恥ずかしかった。",
+    "correct": "だらけ",
+    "opt_text": "がち",
+    "current_reason": "【不正解】名詞に直接付く語法として不調和のため不適切です。本問の文脈に挿入すると、文意や文法的呼応が成立しません。"
+  }
+]
